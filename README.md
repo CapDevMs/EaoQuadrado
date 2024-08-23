@@ -1,1 +1,5 @@
-Aqui ficarão os arquivos do CAPDEV, favor não subirem nada para a MAIN, façam a pull request!
+# Favor **NÃO** subirem nada para a MAIN
+
+## Façam um pull request!
+
+## Aqui ficarão os arquivos do CAPDEV
