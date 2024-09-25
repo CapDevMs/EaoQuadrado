@@ -35,6 +35,7 @@ CREATE TABLE enderecos (
     foreign key fk_cidade(id_cidade) references cidade(id_cidade)
 );
 
+
 CREATE TABLE clientes (
     id_cliente INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(20) NOT NULL,
@@ -44,7 +45,9 @@ CREATE TABLE clientes (
     numero_telefone VARCHAR(12) not null,
     email varchar(100) unique not null,
     id_endereco int,
-    foreign key fk_endereco(id_endereco) references endereco(id_endereco)
+    id_sexo int,
+    foreign key fk_endereco(id_endereco) references endereco(id_endereco),
+    foreign key fk_sexo(id_sexo) references sexo(id_sexo)
 );
 
 
