@@ -3,12 +3,10 @@ https://senacmsedu-my.sharepoint.com/:w:/g/personal/rafael54098576_aluno_ms_sena
 
 
 ---- Link para Documentação do Vendedor
-
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/gabriel54099536_aluno_ms_senac_br/ER1uVRQWc6BLltmLXfWONZUBaWGATxylFMfqwVQtlct5Cw?e=KVYmHa
 
 
 ---- Link para Documentação do Administrador
-
-
 
 
 
@@ -24,9 +22,9 @@ https://senacmsedu-my.sharepoint.com/:w:/g/personal/rafael54098576_aluno_ms_sena
 
 
 ---- Link para Diagrama do Vendedor
+https://app.brmodeloweb.com/#!/publicview/66c899a89ab8ae5889ea8c5d
 
 
 
 ---- Link para Diagrama do Administrador
-
-
+https://app.brmodeloweb.com/#!/publicview/66c89cfa9ab8ae5889ea8e46
