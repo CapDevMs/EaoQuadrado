@@ -14,40 +14,40 @@ CREATE TABLE sexos(
 );
 
 create table estados(
-id_estado int auto_increment primary key,
-estado varchar(100)
+	id_estado int auto_increment primary key,
+	estado varchar(100)
 );
 
 create table cidades(
-id_cidade int auto_increment primary key,
-id_estado int,
-cidade varchar(100),
-foreign key fk_estado(id_estado) references estado(id_estado)
+	id_cidade int auto_increment primary key,
+	id_estado int,
+	cidade varchar(100),
+	foreign key fk_estado(id_estado) references estados(id_estado)
 );
 
 CREATE TABLE enderecos (
-	id_endereco int auto_increment primary key,
-	id_cidade int,
-	cep VARCHAR(8),    
-	endereco VARCHAR(100),
-	bairro VARCHAR(100),
-    complemento VARCHAR(100),
-    foreign key fk_cidade(id_cidade) references cidade(id_cidade)
+		id_endereco int auto_increment primary key,
+		id_cidade int,
+		cep varchar(8),    
+		endereco varchar(100),
+		bairro varchar(100),
+		complemento varchar(100),
+		foreign key fk_cidade(id_cidade) references cidades(id_cidade)
 );
 
-
 CREATE TABLE clientes (
-    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(20) NOT NULL,
+    id_cliente int auto_increment primary key,
+    nome varchar(20) not null,
     sobrenome VARCHAR(60) NOT NULL,
     nascimento DATE NOT NULL,
-    cpf CHAR(11) NOT NULL,
+    cpf varchar(11) not null,
     numero_telefone VARCHAR(12) not null,
     email varchar(100) unique not null,
+    senha varchar(50) not null,
     id_endereco int,
     id_sexo int,
-    foreign key fk_endereco(id_endereco) references endereco(id_endereco),
-    foreign key fk_sexo(id_sexo) references sexo(id_sexo)
+    foreign key fk_endereco(id_endereco) references enderecos(id_endereco),
+    foreign key fk_sexo(id_sexo) references sexos(id_sexo)
 );
 
 
