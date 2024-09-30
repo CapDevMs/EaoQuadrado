@@ -15,7 +15,8 @@ CREATE TABLE sexos(
 
 create table estados(
 	id_estado int auto_increment primary key,
-	estado varchar(100)
+	estado varchar(100),
+    sigla varchar(2)
 );
 
 create table cidades(
@@ -28,22 +29,22 @@ create table cidades(
 CREATE TABLE enderecos (
 		id_endereco int auto_increment primary key,
 		id_cidade int,
-		cep varchar(8),    
-		endereco varchar(100),
-		bairro varchar(100),
+		cep varchar(8) NOT NULL,
+		endereco varchar(100) NOT NULL,
+		bairro varchar(100) NOT NULL,
 		complemento varchar(100),
 		foreign key fk_cidade(id_cidade) references cidades(id_cidade)
 );
 
 CREATE TABLE clientes (
     id_cliente int auto_increment primary key,
-    nome varchar(20) not null,
-    sobrenome VARCHAR(60) NOT NULL,
+    nome varchar(50) not null,
+    sobrenome VARCHAR(100) NOT NULL,
     nascimento DATE NOT NULL,
     cpf varchar(11) not null,
     numero_telefone VARCHAR(12) not null,
-    email varchar(100) unique not null,
-    senha varchar(50) not null,
+    email varchar(200) unique not null,
+    senha varchar(150) not null,
     id_endereco int,
     id_sexo int,
     foreign key fk_endereco(id_endereco) references enderecos(id_endereco),
