@@ -8,19 +8,19 @@ CREATE TABLE Usuarios (
 CREATE TABLE Cliente (
 	id_cliente INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT,
-    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario) 
+    FOREIGN KEY fk_usuario(id_usuario) REFERENCES Usuarios(id_usuario) 
 );
 
 CREATE TABLE Vendedor (
 	id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT,
-    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario) 
+    FOREIGN KEY fk_usuario(id_usuario) REFERENCES Usuarios(id_usuario) 
 );
 
 CREATE TABLE Administrador (
 	id_administrador INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT,
-    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario) 
+    FOREIGN KEY fk_usuario(id_usuario) REFERENCES Usuarios(id_usuario) 
 );
 
 
