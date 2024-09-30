@@ -16,7 +16,7 @@ create table cidades(
 CREATE TABLE enderecos (
 		id_endereco int auto_increment primary key,
 		id_cidade int,
-		cep varchar(8),    
+		cep varchar(9),    
 		endereco varchar(100),
 		bairro varchar(100),
 		complemento varchar(100),
@@ -27,7 +27,6 @@ create table minha_loja(
     id_loja int auto_increment primary key,
     nome_loja varchar(100) not null,
     email varchar(255) not null,
-    cep varchar(9) not null,
     telefone varchar(14) not null,
     id_endereco int,
     cpf_cnpj varchar(14) unique not null,
