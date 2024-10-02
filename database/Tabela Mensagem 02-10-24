@@ -1,0 +1,7 @@
+CREATE TABLE Mensagens (
+    id_mensagem INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR (100) NOT NULL,    
+    mensagem TEXT,
+    data_envio DATETIME,
+    FOREIGN KEY (id_remetente) REFERENCES Usuarios(id_usuario),
+);
