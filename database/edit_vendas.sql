@@ -2,24 +2,16 @@ drop database if exists e_ao_quadrado;
 create database e_ao_quadrado;
 use e_ao_quadrado;
 
-create table usuarios(
-    id int auto_increment primary key,
-    nome varchar(255) not null,
-    email varchar(255) not null unique,
-    senha varchar(255) not null
+CREATE TABLE Usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
 );
 
-
-CREATE TABLE Vendedor (
-	id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
-    id_usuario INT,
-    FOREIGN KEY fk_usuarios(id_usuario) REFERENCES usuarios(id) 
-);
-
-CREATE TABLE Cliente (
-	id_cliente INT AUTO_INCREMENT PRIMARY KEY,
-    id_usuario INT,
-    FOREIGN KEY fk_usuarios(id_usuario) REFERENCES usuarios(id) 
+CREATE TABLE Sexos(
+	id_sexo int auto_increment primary key ,
+	sexo enum('Masculino','Feminino', 'Outro') not null
 );
 
 create table estados(
@@ -45,6 +37,29 @@ CREATE TABLE enderecos (
 		foreign key fk_cidade(id_cidade) references cidades(id_cidade)
 );
 
+
+CREATE TABLE Clientes (
+    id_cliente int auto_increment primary key,
+    nome varchar(50) not null,
+    sobrenome VARCHAR(100) NOT NULL,
+    nascimento DATE NOT NULL,
+    cpf varchar(11) not null,
+    numero_telefone VARCHAR(12) not null,
+    email varchar(200) unique not null,
+    senha varchar(150) not null,
+    id_endereco int,
+    id_sexo int,
+    id_usuario int,
+    foreign key fk_endereco(id_endereco) references enderecos(id_endereco),
+    foreign key fk_sexo(id_sexo) references Sexos(id_sexo),
+    foreign key fk_usuario(id_usuario) references Usuarios(id_usuario)
+);
+
+CREATE TABLE Vendedores (
+    id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT,
+    FOREIGN KEY fk_usuario(id_usuario) REFERENCES Usuarios(id_usuario)
+);
 
 create table minha_loja(
     id_loja int auto_increment primary key,
