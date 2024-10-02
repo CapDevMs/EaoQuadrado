@@ -147,6 +147,41 @@ CREATE TABLE Permissoes_Usuarios (
 	FOREIGN KEY fk_permissao(id_permissao) REFERENCES Permissoes(id_permissao)
 );
 
+CREATE TABLE Status_Devolucao (
+    id_status_devolucao int auto_increment primary key,
+    status varchar(50)
+);
+
+CREATE TABLE Devolucoes (
+    id_devolucao int auto_increment primary key,
+    id_venda int,
+    id_produto int,
+    motivo varchar(255),
+    id_status_devolucao int,
+
+    FOREIGN KEY fk_venda(id_venda) REFERENCES Vendas(id_venda),
+    FOREIGN KEY fk_produto(id_produto) REFERENCES Produtos(id_produto),
+    FOREIGN KEY fk_status_devolucao(id_status_devolucao) REFERENCES Status_Devolucao(id_status_devolucao)
+);
+
+CREATE TABLE Status_Troca (
+    id_status_troca int auto_increment primary key,
+    status varchar(50)
+);
+
+CREATE TABLE Trocas (
+    id_troca int auto_increment primary key,
+    id_venda int,
+    id_produto int,
+    motivo varchar(255),
+    id_status_troca int,
+
+    FOREIGN KEY fk_venda(id_venda) REFERENCES Vendas(id_venda),
+    FOREIGN KEY fk_produto(id_produto) REFERENCES Produtos(id_produto),
+    FOREIGN KEY fk_status_troca(id_status_troca) REFERENCES Status_Troca(id_status_troca)
+);
+
+
 -- DELIMITER //
 -- CREATE TRIGGER valida_vendedor
 -- AFTER INSERT ON vendedores
