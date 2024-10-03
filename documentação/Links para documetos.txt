@@ -38,3 +38,10 @@ https://www.figma.com/board/mqwy5qqrBThXFwy3IrkAeE/diagrama-adm?node-id=0-1&t=Fh
 ---- Link para Diagrama de Produto
 https://www.figma.com/board/QaItRAet4w4e5PX7w9Z8AE/diagrama-produto?node-id=0-1&t=EJ4YzuQnpI9EaGNb-1
 
+
+---- Link para Diagrama de Mensagens
+https://app.brmodeloweb.com/#!/publicview/66fd5bc7ad83641ae227626c
+
+
+---- Link para Diagrama de Vendas
+https://app.brmodeloweb.com/#!/publicview/66fd5bbcad83641ae2276267
