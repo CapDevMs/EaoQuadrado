@@ -5,6 +5,7 @@ use e_ao_quadrado;
 CREATE TABLE Vendas(
     id_vendas INT AUTO_INCREMENT PRIMARY KEY,
     quantidade INT,
+    frete DECIMAL,
     id_produto INT,
     id_cliente INT,
     id_vendedor INT,
