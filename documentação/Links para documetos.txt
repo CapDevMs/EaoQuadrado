@@ -19,6 +19,9 @@ https://senacmsedu-my.sharepoint.com/:w:/g/personal/anna4937666_aluno_ms_senac_b
 ---- Link para Documentação da Loja
 https://senacmsedu-my.sharepoint.com/:w:/g/personal/ricardo54097716_aluno_ms_senac_br/EQkX-iw0DH1Jl5T_3bKkNOABQfdh9RGbqLue9dFvPy3n5w?e=HDPEHC
 
+---- Link para Documentação da Edição do site
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/ricardo54097716_aluno_ms_senac_br/EQkX-iw0DH1Jl5T_3bKkNOAB8R1FKQAU1uUddIUJOSC_wQ?e=MVNxCc
+
 
 ---------------------------------------------------------------------
 
@@ -45,3 +48,7 @@ https://app.brmodeloweb.com/#!/publicview/66fd5bc7ad83641ae227626c
 
 ---- Link para Diagrama de Vendas
 https://app.brmodeloweb.com/#!/publicview/66fd5bbcad83641ae2276267
+
+
+---- Link para Diagrama de Vendas
+https://app.brmodeloweb.com/#!/publicview/66fe963c3e6238df6cd0279f
