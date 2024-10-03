@@ -1,3 +1,10 @@
+======================================================================================================================================================
+---- DOCUMENTAÇÃO OFICIAL
+
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/anna4937666_aluno_ms_senac_br/EYzdhvURfBBGnf8hAOqi-1UBAPqFULrIMh04RAWfVEMPxQ
+
+=======================================================================================================================================================
+
 ---- Link para Documentação do Cliente
 https://senacmsedu-my.sharepoint.com/:w:/g/personal/rafael54098576_aluno_ms_senac_br/EYHWS03r_FJCq-pXrvxCme4B8W_YzmNni3ZJaYngvaGZDg?e=0djlvC
 
@@ -58,3 +65,4 @@ https://app.brmodeloweb.com/#!/publicview/66fd5bbcad83641ae2276267
 
 ---- Link para Diagrama de Vendas
 https://app.brmodeloweb.com/#!/publicview/66fe963c3e6238df6cd0279f
+
