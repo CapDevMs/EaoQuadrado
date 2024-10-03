@@ -14,9 +14,9 @@ CREATE TABLE admin (
     FOREIGN KEY fk_usuario(id_usuario) REFERENCES usuarios(id_usuario) 
 );
 
-CREATE TABLE edit_site(
+CREATE TABLE Edit_Site(
     id_edit_site INT AUTO_INCREMENT PRIMARY KEY,
-    id_elemento_site VARCHAR(100),
+    id_elemento_site VARCHAR(100) NOT NULL,
     texto_elemento varchar(255),
     imagem_elemento varchar(255)
 );

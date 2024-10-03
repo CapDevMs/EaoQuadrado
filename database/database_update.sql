@@ -220,6 +220,13 @@ CREATE TABLE Mensagens (
     data_envio DATETIME
 );
 
+CREATE TABLE Edit_Site(
+    id_edit_site INT AUTO_INCREMENT PRIMARY KEY,
+    id_elemento_site VARCHAR(100) NOT NULL,
+    texto_elemento varchar(255),
+    imagem_elemento varchar(255)
+);
+
 -- DELIMITER //
 -- CREATE TRIGGER valida_vendedor
 -- AFTER INSERT ON vendedores
