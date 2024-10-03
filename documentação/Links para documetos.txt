@@ -20,6 +20,10 @@ https://senacmsedu-my.sharepoint.com/:w:/g/personal/anna4937666_aluno_ms_senac_b
 https://senacmsedu-my.sharepoint.com/:w:/g/personal/ricardo54097716_aluno_ms_senac_br/EQkX-iw0DH1Jl5T_3bKkNOABQfdh9RGbqLue9dFvPy3n5w?e=HDPEHC
 
 
+---- Link para Documentação da Mensagem
+https://senacmsedu-my.sharepoint.com/:w:/r/personal/paulo54098136_aluno_ms_senac_br/_layouts/15/Doc.aspx?sourcedoc=%7B45E53B66-ECDB-4560-ABFE-F6956DBB552C%7D&file=Documento_Mensagem.docx&action=default&mobileredirect=true&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1727958581571&web=1
+
+
 ---------------------------------------------------------------------
 
 
@@ -33,6 +37,8 @@ https://app.brmodeloweb.com/#!/publicview/66c899a89ab8ae5889ea8c5d
 
 ---- Link para Diagrama do Administrador
 https://www.figma.com/board/mqwy5qqrBThXFwy3IrkAeE/diagrama-adm?node-id=0-1&t=FhmFoZQLcz20XABU-1
+
+
 
 
 ---- Link para Diagrama de Produto
