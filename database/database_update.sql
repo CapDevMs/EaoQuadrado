@@ -48,7 +48,7 @@ CREATE TABLE Clientes (
     id_endereco int,
     id_sexo int,
     id_usuario int,
-    foreign key fk_endereco(id_endereco) references enderecos(id_endereco),
+    foreign key fk_endereco(id_endereco) references Enderecos(id_endereco),
     foreign key fk_sexo(id_sexo) references Sexos(id_sexo),
     foreign key fk_usuario(id_usuario) references Usuarios(id_usuario)
 );
@@ -82,6 +82,39 @@ CREATE TABLE Comentario (
 	FOREIGN KEY fk_cliente(id_cliente) REFERENCES Clientes(id_cliente)
 );
 
+create table Lojas(
+    id_loja int auto_increment primary key,
+    nome_loja varchar(100) not null,
+    email varchar(255) not null,
+    telefone varchar(14) not null,
+    id_endereco int,
+    cpf_cnpj varchar(14) unique not null,
+    loja_imagem varchar(255),
+    foreign key fk_endereco(id_endereco) references Enderecos(id_endereco)
+);
+
+CREATE TABLE Categorias (
+    id_categoria INT PRIMARY KEY auto_increment,
+    nome VARCHAR (255),
+    descricao VARCHAR (100)
+);
+
+CREATE TABLE Produtos (
+    id_produto INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    descricao VARCHAR (255),
+    marca VARCHAR(100),
+    preco DECIMAL(10, 2) NOT NULL,
+    imagens JSON,  
+    cores VARCHAR(255),  
+    quantidade INT NOT NULL,
+    id_loja INT,  
+    id_categoria INT,  
+    frete DECIMAL(10, 2),  
+    FOREIGN KEY fk_loja(id_loja) REFERENCES Lojas(id_loja),  
+    FOREIGN KEY fk_categoria(id_categoria) REFERENCES Categorias(id_categoria)  
+);
+
 CREATE TABLE Avaliacao (
 	id_avaliacao INT PRIMARY KEY AUTO_INCREMENT,
     id_cliente int,
@@ -93,23 +126,6 @@ CREATE TABLE Avaliacao (
 	FOREIGN KEY fk_vendedor(id_vendedor) REFERENCES Vendedores(id_vendedor),
 	FOREIGN KEY fk_produto(id_produto) REFERENCES Produtos(id_produto)
 );
-
-create table Lojas(
-    id_loja int auto_increment primary key,
-    nome_loja varchar(100) not null,
-    email varchar(255) not null,
-    telefone varchar(14) not null,
-    id_endereco int,
-    cpf_cnpj varchar(14) unique not null,
-    loja_imagem varchar(255),
-    foreign key fk_endereco(id_endereco) references enderecos(id_endereco)
-);
-
-CREATE TABLE Categorias (
-    id_categoria INT PRIMARY KEY auto_increment,
-    nome VARCHAR (255),
-    descricao VARCHAR (100)
-);
  
 CREATE TABLE Permissoes (
     id_permissao INT PRIMARY KEY AUTO_INCREMENT,
@@ -118,14 +134,14 @@ CREATE TABLE Permissoes (
 );
  
 CREATE TABLE Status_Vendedor (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    status ENUM('pendente', 'teste','aprovado', 'reprovado', 'cancelado', 'bloqueado') NOT NULL,
+    id_status_vendedor INT AUTO_INCREMENT PRIMARY KEY,
+    status ENUM('pendente', 'teste','aprovado', 'reprovado', 'cancelado', 'bloqueado') NOT NULL
 );
 
 CREATE TABLE Valida_Colaboradores (
     id_validacao_colaborador INT PRIMARY KEY AUTO_INCREMENT,
     id_vendedor int,
-    id_status_vendedor
+    id_status_vendedor int,
     observacao varchar (255),
 	FOREIGN KEY fk_vendedor(id_vendedor) REFERENCES Vendedores(id_vendedor),
 	FOREIGN KEY fk_status_vendedor(id_status_vendedor) REFERENCES Status_Vendedor(id_status_vendedor)
@@ -134,9 +150,9 @@ CREATE TABLE Valida_Colaboradores (
 CREATE TABLE Chamados (
 	id_chamado int auto_increment primary key,
     id_vendedor int,
-    id_cliente int
-	FOREIGN KEY (id_vendedor) REFERENCES vendedor(id_vendedor),
-	FOREIGN KEY (id_clinte) REFERENCES cliente(id_cliente)
+    id_cliente int,
+	FOREIGN KEY fk_vendedor(id_vendedor) REFERENCES Vendedores(id_vendedor),
+	FOREIGN KEY fk_cliente(id_cliente) REFERENCES Clientes(id_cliente)
 );
 
 CREATE TABLE Permissoes_Usuarios (
@@ -147,8 +163,25 @@ CREATE TABLE Permissoes_Usuarios (
 	FOREIGN KEY fk_permissao(id_permissao) REFERENCES Permissoes(id_permissao)
 );
 
+CREATE TABLE Vendas(
+    id_venda INT AUTO_INCREMENT PRIMARY KEY,
+    quantidade INT,
+    frete DECIMAL,
+    id_produto INT,
+    id_cliente INT,
+    id_vendedor INT,
+    FOREIGN KEY fk_produto(id_produto) REFERENCES Produtos(id_produto),
+    FOREIGN KEY fk_cliente(id_cliente) REFERENCES Clientes(id_cliente),
+    FOREIGN KEY fk_vendedor(id_vendedor) REFERENCES Vendedores(id_vendedor)
+);
+
 CREATE TABLE Status_Devolucao (
     id_status_devolucao int auto_increment primary key,
+    status varchar(50)
+);
+
+CREATE TABLE Status_Troca (
+    id_status_troca int auto_increment primary key,
     status varchar(50)
 );
 
@@ -164,10 +197,6 @@ CREATE TABLE Devolucoes (
     FOREIGN KEY fk_status_devolucao(id_status_devolucao) REFERENCES Status_Devolucao(id_status_devolucao)
 );
 
-CREATE TABLE Status_Troca (
-    id_status_troca int auto_increment primary key,
-    status varchar(50)
-);
 
 CREATE TABLE Trocas (
     id_troca int auto_increment primary key,
@@ -181,6 +210,15 @@ CREATE TABLE Trocas (
     FOREIGN KEY fk_status_troca(id_status_troca) REFERENCES Status_Troca(id_status_troca)
 );
 
+
+CREATE TABLE Mensagens (
+    id_mensagem INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR (100) NOT NULL,    
+    email VARCHAR (100) NOT NULL,
+    telefone VARCHAR(50),
+    mensagem TEXT NOT NULL,
+    data_envio DATETIME
+);
 
 -- DELIMITER //
 -- CREATE TRIGGER valida_vendedor

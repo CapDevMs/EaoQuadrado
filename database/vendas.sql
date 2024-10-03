@@ -3,7 +3,7 @@ create database e_ao_quadrado;
 use e_ao_quadrado;
 
 CREATE TABLE Vendas(
-    id_vendas INT AUTO_INCREMENT PRIMARY KEY,
+    id_venda INT AUTO_INCREMENT PRIMARY KEY,
     quantidade INT,
     frete DECIMAL,
     id_produto INT,
