@@ -163,6 +163,18 @@ CREATE TABLE Permissoes_Usuarios (
 	FOREIGN KEY fk_permissao(id_permissao) REFERENCES Permissoes(id_permissao)
 );
 
+CREATE TABLE Vendas(
+    id_venda INT AUTO_INCREMENT PRIMARY KEY,
+    quantidade INT,
+    frete DECIMAL,
+    id_produto INT,
+    id_cliente INT,
+    id_vendedor INT,
+    FOREIGN KEY fk_produto(id_produto) REFERENCES Produtos(id_produto),
+    FOREIGN KEY fk_cliente(id_cliente) REFERENCES Clientes(id_cliente),
+    FOREIGN KEY fk_vendedor(id_vendedor) REFERENCES Vendedores(id_vendedor)
+);
+
 CREATE TABLE Status_Devolucao (
     id_status_devolucao int auto_increment primary key,
     status varchar(50)
