@@ -7,7 +7,7 @@ https://senacmsedu-my.sharepoint.com/:w:/g/personal/gabriel54099536_aluno_ms_sen
 
 
 ---- Link para Documentação do Administrador
-
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/rafaela54099596_aluno_ms_senac_br/ES_r83eWbGBMiBDLd7ROCYgBD5OZlr-IxREUWiGmAAAO6w?e=Pzevih
 
 ---- Link para Documentação da Loja
 https://senacmsedu-my.sharepoint.com/:w:/r/personal/rafael54098576_aluno_ms_senac_br/_layouts/15/Doc.aspx?sourcedoc=%7B7abd267b-7495-444c-b633-b9fc07bf82f7%7D&action=edit&wdPreviousSession=e58b3d03-d08c-98e0-87f5-347f95219438
@@ -32,7 +32,7 @@ https://app.brmodeloweb.com/#!/publicview/66c899a89ab8ae5889ea8c5d
 
 
 ---- Link para Diagrama do Administrador
-
+https://www.figma.com/board/mqwy5qqrBThXFwy3IrkAeE/diagrama-adm?node-id=0-1&t=FhmFoZQLcz20XABU-1
 
 
 ---- Link para Diagrama de Produto
