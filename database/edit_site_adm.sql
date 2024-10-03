@@ -15,10 +15,8 @@ CREATE TABLE admin (
 );
 
 CREATE TABLE edit_site(
-    id_admin int not null,
-    imagem varchar(255),
-    descricao varchar(255)
-    
-    FOREIGN KEY fk_administrador(id_administrador) REFERENCES Administrador(id_administrador) 
-
+    id_edit_site INT AUTO_INCREMENT PRIMARY KEY,
+    id_elemento_site VARCHAR(100),
+    texto_elemento varchar(255),
+    imagem_elemento varchar(255)
 );
