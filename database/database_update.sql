@@ -60,13 +60,14 @@ CREATE TABLE Cargos (
 
 CREATE TABLE Administradores (
     id_administrador int primary key auto_increment,
-    id_usuario varchar(255) not null,
+    id_usuario int not null,
     id_cargo int,
     email varchar(255) not null unique,
     senha varchar(255) not null,
     data_nasc date not null,
     cpf varchar(18) not null unique,
-    FOREIGN KEY fk_cargo(id_cargo) REFERENCES Cargos(id_cargo)
+    FOREIGN KEY fk_cargo(id_cargo) REFERENCES Cargos(id_cargo),
+    FOREIGN KEY fk_usuario(id_usuario) REFERENCES Usuarios(id_usuario)
 );
 
 CREATE TABLE Vendedores (
