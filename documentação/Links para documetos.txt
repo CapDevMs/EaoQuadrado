@@ -1,3 +1,10 @@
+======================================================================================================================================================
+---- DOCUMENTAÇÃO OFICIAL
+
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/anna4937666_aluno_ms_senac_br/EYzdhvURfBBGnf8hAOqi-1UBAPqFULrIMh04RAWfVEMPxQ
+
+=======================================================================================================================================================
+
 ---- Link para Documentação do Cliente
 https://senacmsedu-my.sharepoint.com/:w:/g/personal/rafael54098576_aluno_ms_senac_br/EYHWS03r_FJCq-pXrvxCme4B8W_YzmNni3ZJaYngvaGZDg?e=0djlvC
 
@@ -7,14 +14,24 @@ https://senacmsedu-my.sharepoint.com/:w:/g/personal/gabriel54099536_aluno_ms_sen
 
 
 ---- Link para Documentação do Administrador
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/rafaela54099596_aluno_ms_senac_br/ES_r83eWbGBMiBDLd7ROCYgBD5OZlr-IxREUWiGmAAAO6w?e=Pzevih
 
-
----- Link para Documentação da Loja
-https://senacmsedu-my.sharepoint.com/:w:/r/personal/rafael54098576_aluno_ms_senac_br/_layouts/15/Doc.aspx?sourcedoc=%7B7abd267b-7495-444c-b633-b9fc07bf82f7%7D&action=edit&wdPreviousSession=e58b3d03-d08c-98e0-87f5-347f95219438
+---- Link para Documentação da tabela Minha Loja
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/rafael54098576_aluno_ms_senac_br/EXsmvXqVdExEtjO5_Ae_gvcBd1FU2UQoVV6ZTaEBZADahQ?e=JpIE7v
 
 
 ---- Link para Documentação de Produto
 https://senacmsedu-my.sharepoint.com/:w:/g/personal/anna4937666_aluno_ms_senac_br/EaFTMZ-q5RpIhARxFI7MteUB26NgMjATwrRHI_3-PX-gfg?e=j5fED4
+
+---- Link para Documentação da Loja
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/ricardo54097716_aluno_ms_senac_br/EQkX-iw0DH1Jl5T_3bKkNOABQfdh9RGbqLue9dFvPy3n5w?e=HDPEHC
+
+---- Link para Documentação da Edição do site
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/ricardo54097716_aluno_ms_senac_br/EQkX-iw0DH1Jl5T_3bKkNOAB8R1FKQAU1uUddIUJOSC_wQ?e=MVNxCc
+
+
+---- Link para Documentação da Mensagem
+https://senacmsedu-my.sharepoint.com/:w:/g/personal/paulo54098136_aluno_ms_senac_br/EWY75UXb7GBFq_72lW27VSwBZ_m70pmU4NdAUVA1bAdRxQ?e=eFzK3a
 
 
 ---------------------------------------------------------------------
@@ -29,9 +46,23 @@ https://app.brmodeloweb.com/#!/publicview/66c899a89ab8ae5889ea8c5d
 
 
 ---- Link para Diagrama do Administrador
+https://www.figma.com/board/mqwy5qqrBThXFwy3IrkAeE/diagrama-adm?node-id=0-1&t=FhmFoZQLcz20XABU-1
+
 
 
 
 ---- Link para Diagrama de Produto
 https://www.figma.com/board/QaItRAet4w4e5PX7w9Z8AE/diagrama-produto?node-id=0-1&t=EJ4YzuQnpI9EaGNb-1
+
+
+---- Link para Diagrama de Mensagens
+https://app.brmodeloweb.com/#!/publicview/66fd5bc7ad83641ae227626c
+
+
+---- Link para Diagrama de Vendas
+https://app.brmodeloweb.com/#!/publicview/66fd5bbcad83641ae2276267
+
+
+---- Link para Diagrama de Vendas
+https://app.brmodeloweb.com/#!/publicview/66fe963c3e6238df6cd0279f
 
