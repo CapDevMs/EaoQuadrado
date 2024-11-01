@@ -1,0 +1,18 @@
+.grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+
+
+#caixa{
+    width: 30%;
+    border-style: solid;
+}
+#email{
+    margin-top: 20px;
+    
+}
+#senha{
+    margin-top: 20px;
+}
