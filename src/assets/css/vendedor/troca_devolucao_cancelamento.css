@@ -1,0 +1,26 @@
+.container-main{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.grid-cols-5 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 10px;
+}
+.container-metade {
+    width: 50%;
+}
+.grid-itens > a {
+    text-decoration-line: none;
+    color: #7D8184;
+}
+.active > a {
+    color: #00BFA5;
+}
+.card {
+    margin-top: 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* padding: 15px 19px; */
+}
