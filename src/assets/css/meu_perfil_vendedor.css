@@ -1,0 +1,46 @@
+body {
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.manuzin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; 
+}
+
+.mi_cont_tittle {
+    font-size: 15px; 
+    color: #000000; 
+    margin-bottom: 16px; 
+    margin: 20px;
+}
+
+.mi_cont {
+    text-decoration: none;
+    list-style-type: none; 
+    padding: 0;
+    color: #000000; 
+    margin: 20px;
+}
+
+.mi_cont li {
+    font-size: 13px;
+    margin: 8px 0;
+    transition: 0.3s;
+}
+
+.mi_cont:hover {
+    color: #49BF9E;
+    transition: 0.3s;
+}
+
+.frame {
+    position: absolute;
+    margin-left: 350px;
+    border-color: lightgray;
+    height: 500px;
+    width: 500px;
+}
+
