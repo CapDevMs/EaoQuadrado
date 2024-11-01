@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/minha_loja.css">
+    <title>Eao Quadrado</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#">
+                    <img src="../../assets/img/logo.png" class="logo" alt="Logo">
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="O que você procura hoje?">
+                <img src="../../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
+            </div>
+            <ul class="menu-opcoes">
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/pessoa.svg" alt="Pessoa">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/carrinho.svg" alt="Carrinho">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/informacao.svg" alt="Informações">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/suporte.svg" alt="suporte">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- Início do main principal que contém o layout da página de edição da loja -->
+<main class="main-content">
+    
+    <!-- Seção lateral esquerda (sidebar) com links de navegação para gerenciamento da conta e vendas -->
+    <section class="sidebar">
+        <h2>Gerenciar Minha Conta</h2> <!-- Título da seção de gerenciamento da conta -->
+        <ul> <!-- Lista não ordenada de links de navegação para a conta -->
+            <li><a href="#">Meu Perfil</a></li> <!-- Link para "Meu Perfil" -->
+            <li><a href="#" class="active">Minha Loja</a></li> <!-- Link ativo para "Minha Loja" -->
+            <li><a href="#">Cadastrar Produtos</a></li> <!-- Link para "Cadastrar Produtos" -->
+        </ul>
+        
+        <h2>Vendas</h2> <!-- Título da seção de vendas -->
+        <ul> <!-- Lista não ordenada de links de navegação para vendas -->
+            <li><a href="#">Histórico de Vendas</a></li> <!-- Link para "Histórico de Vendas" -->
+            <li><a href="#">Trocas/Cancelamentos</a></li> <!-- Link para "Trocas/Cancelamentos" -->
+            <li><a href="#">Gerenciamento de estoque</a></li> <!-- Link para "Gerenciamento de estoque" -->
+        </ul>
+    </section> <!-- Fim da seção lateral (sidebar) -->
+
+    <!-- Seção principal de edição da loja -->
+    <section class="edit-store">
+        <h1>Edite Sua Loja</h1> <!-- Título principal da seção de edição da loja -->
+
+        <!-- Banner da loja com uma imagem ilustrativa -->
+        <div class="banner">
+            <img src="../../assets/img/banner-loja.png" alt="Banner da Loja"> <!-- Imagem do banner da loja -->
+        </div>
+
+        <!-- Formulário para editar informações da loja -->
+        <form class="form-layout">
+            
+            <!-- Linha 1 do formulário -->
+            <div class="form-group">
+                <label>Nome da Loja</label> <!-- Rótulo para o campo "Nome da Loja" -->
+                <input type="text" value="Studio" readonly> <!-- Campo de entrada para o nome da loja (somente leitura) -->
+            </div>
+            <div class="form-group">
+                <label>Telefone</label> <!-- Rótulo para o campo "Telefone" -->
+                <input type="text" value="(67) 992346578" readonly> <!-- Campo de entrada para o telefone (somente leitura) -->
+            </div>
+    
+            <!-- Linha 2 do formulário -->
+            <div class="form-group">
+                <label>Email</label> <!-- Rótulo para o campo "Email" -->
+                <input type="email" value="studio@gmail.com" readonly> <!-- Campo de entrada para o email (somente leitura) -->
+            </div>
+            <div class="form-group">
+                <label>Endereço</label> <!-- Rótulo para o campo "Endereço" -->
+                <input type="text" value="Av. 15 de agosto, 506" readonly> <!-- Campo de entrada para o endereço (somente leitura) -->
+            </div>
+    
+            <!-- Linha 3 do formulário -->
+            <div class="form-group">
+                <label>CEP</label> <!-- Rótulo para o campo "CEP" -->
+                <input type="text" value="79113560" readonly> <!-- Campo de entrada para o CEP (somente leitura) -->
+            </div>
+            <div class="form-group">
+                <label>Número</label> <!-- Rótulo para o campo "Número" -->
+                <input type="text" value="506" readonly> <!-- Campo de entrada para o número (somente leitura) -->
+            </div>
+    
+            <!-- Linha 4 - Opções de seleção entre CPF e CNPJ -->
+            <div class="form-group-radio">
+                <label>
+                    <input type="radio" name="document" checked> CPF <!-- Opção de rádio para "CPF", selecionada por padrão -->
+                </label>
+                <label>
+                    <input type="radio" name="document"> CNPJ <!-- Opção de rádio para "CNPJ" -->
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="000.000.000-00" readonly> <!-- Campo de entrada para CPF/CNPJ (somente leitura) -->
+            </div>
+    
+            <!-- Botões de ação para cancelar ou salvar as mudanças -->
+            <div class="buttons">
+                <button type="button" class="btn-cancel">Cancelar</button> <!-- Botão para cancelar as mudanças -->
+                <button type="submit" class="btn-save">Salvar Mudanças</button> <!-- Botão para salvar as mudanças -->
+            </div>
+        </form> <!-- Fim do formulário -->
+    </section> <!-- Fim da seção principal de edição da loja -->
+</main> <!-- Fim do elemento main -->
+
+    <footer>
+        <div class="footer-links">
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Suporte</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Senac Hub Academy</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">eaoquadado@gmail.com</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">+55 67 99999-9999</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">
+                                R. do Parque, 75 - Centro Campo Grande - MS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Conta</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Minha Conta</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Entre/Cadastre</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Carrinho</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Lista de Desejos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Acesso</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Nossa Política</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Termos de Uso</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">FAQ</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../../assets/js/script.js"></script>
+</html>
