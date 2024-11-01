@@ -89,12 +89,15 @@ main {
 
 .roadmap {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    position: sticky;
-    margin: auto;
+    width: 300px;
+    position: relative;
     margin-top: 45px;
     margin-bottom: 30px;
-    margin-left: 100px;
+    left: 200px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
 }
 
 .register_client {
@@ -108,10 +111,13 @@ main {
     font-family: 'Poppins', sans-serif;
 }
 
-.register_client h1 {
+.register_client p {
+    font-family: 'Poppins', sans-serif;
     color: black;
     font-size: 24px;
+    font-style: normal;
     position: relative;
+    width: 250px;
     left: 46px;
     top: 26px;
     margin-bottom: 36px;
@@ -120,6 +126,8 @@ main {
 .register_client img {
     position: relative;
     margin-left: 100px;
+    width: 257.75px;
+    height: 259px;
 }
 
 .names-container {
@@ -132,6 +140,10 @@ main {
 
 .names-container h2 {
     font-size: medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px
 }
 
 .input1-container {
@@ -154,10 +166,12 @@ main {
 }
 
 .subtitle {
-    color: black;
-    font-size: 15px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
     position: relative;
-    left: 35px;
+    left: 42px;
     top: 26px;
     margin-bottom: 35px;
 }
@@ -167,55 +181,45 @@ main {
     grid-template-columns: auto auto auto;
     max-width: 400px;
     margin-left: 40px;
-    column-gap: 30px;
+    column-gap: 35px;
 }
 
 
 .counter {
-    position: relative;
     display: grid;
-    gap: 10px;
+    /* grid-template-columns: auto auto auto; */
+    width: 95px;
+    height: 44px;
+    position: relative;
+    padding: 0;
     border: 2px solid black;
-    padding: 20px;
     border-radius: 10px;
+    column-gap: 10px;
     text-align: center;
-    width: 85px;
-    height: 25px;
 }
-.number {
+.dia-mes {
+    /* grid-column-start: 2; */
     position: relative;
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    font-size: 25px;
-    top: -5px;
-    left: 5px;
-}
-.increment {
-    background: none;
-    grid-column: 2;
-    grid-row: 1;
-    color: black;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    outline: none;
     position: relative;
-    top: -10px;
-    left: 10px;
+    margin: auto;
+    text-align: center;
+    left: 8px;
 }
-.decrease {
-    background: none;
-    grid-column: 2;
-    grid-row: 2;
-    padding: 5px;
-    color: black;
+.ano {
+   
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    place-items: center;
+    position: relative;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    top: -15px;
-    left: 10px;
-}
+    text-align: center;
 
+}
 
 .inform1-container {
     display: grid;
@@ -227,7 +231,10 @@ main {
 }
 
 .inform1-container h2 {
-    font-size: medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 24px;
 }
 
 .input2-container {
@@ -240,27 +247,26 @@ main {
     width: 450px;
     height: 32px;
     border-radius: 25px;
-
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    font-weight: 400px;
-    
     padding: 10px 15px;
-    
 }
 
 .inform2-container {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-template-rows: auto auto;
     gap: 20px; 
     max-width: 450px; 
-    left: 1070px;
-    top: 200px;
+    top: -1020px;
+    left: 600px;
 }
 
 .inform2-container h2 {
-    font-size: medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 24px;
 }
 
 .input3-container {
@@ -273,28 +279,26 @@ main {
     width: 450px;
     height: 32px;
     border-radius: 25px;
-
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    font-weight: 400px;
-    
     padding: 10px 15px;
-    
 }
 
 
 .password-container {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-template-rows: auto auto;
     gap: 20px; 
-    max-width: 450px;
-    left: 1070px;
-    top: 710px;
+    top: -980px;
+    left: 600px;
 }
 
 .password-container h2 {
-    font-size: medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 24px;
 }
 
 .input4-container {
@@ -310,20 +314,18 @@ main {
 
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    font-weight: 400px;
-    
     padding: 10px 15px;
     
 }
 
 .terms-container {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-template-rows: auto auto;
     gap: 20px; 
     max-width: 450px;
-    left: 1070px;
-    top: 1050px;
+    top: -915px;
+    left: 640px;
 }
 
 .checkbox-container {
@@ -355,32 +357,36 @@ main {
 .buttons-container {
     display: grid;
     grid-template-columns: auto, auto;
-    column-gap: 20px;
-    position: absolute;
-    max-width: 400px;
-    margin-left: 40px;
-    column-gap: 30px;
-    left: 1070px;
-    top: 1150px;
+    column-gap: 0px;
+    position: relative;
+    max-width: 265px;
+    column-gap: 0cm;
+    top: -890px;
+    left: 695px;
 }
 
 .button-cancel {
+    grid-column-start: 1;
     color: white;
-    border: none;
-    border-radius: 5px;
+    width: 113px;
+    height: 39px;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 5px;
+    border: none;
     background-color: #F44336;
 }
 
 .button-confirm {
+    grid-column-start: 2;
     color: white;
-    border: none;
-    border-radius: 5px;
+    width: 113px;
+    height: 39px;
     cursor: pointer;
-    font-size: 16px;
-    background-color: #F44336;
+    border-radius: 5px;
+    border: none;
+    background-color: #00BFA5;
 }
+
 /* Css do Footer */
 footer {
     position: relative;

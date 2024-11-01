@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Eao Quadrado</title>
@@ -46,73 +47,67 @@
 
     <main>
         <div class="roadmap">Home / Cadastro de Cliente</div>
-        <div class="register_client">
-            <h1>Cadastro de Cliente</h1>
-            <img src="../src/assets/img/foto_cliente.png" alt="foto do cliente">
+            <div class="register_client">
+                <p>Cadastro de Cliente</p>
+                <img src="../src/assets/img/foto_cliente.png" alt="foto do cliente">
 
-            <div class="names-container">
-                <h2>Nome</h2>
-                <input type="text" class="input1-container" placeholder="John">
-                <h2>Sobrenome</h2>
-                <input type="text" class="input1-container" placeholder="Doe">
+                <div class="names-container">
+                    <h2>Nome</h2>
+                    <input type="text" name="Nome" class="input1-container" placeholder="John" required>
+                    <h2>Sobrenome</h2>
+                    <input type="text" name="Sobrenome" class="input1-container" placeholder="Doe" required>
             </div>
 
             <h2 class="subtitle">Data de Nascimento</h2>
             <div class="date-container">
                 <div class="counter">
-                    <div class="number">1</div>
-                    <button class="increment">∧</button>
-                    <button class="decrease">∨</button>
+                    <input type="number" class="dia-mes" max="12" value="1" required></input>
                 </div>
 
                 <div class="counter">
-                    <div class="number">1</div>
-                    <button class="increment">∧</button>
-                    <button class="decrease">∨</button>
+                    <input type="number" class="dia-mes" value="1" max="12" required></input>
                 </div>
 
                 <div class="counter">
-                    <div class="number">2024</div>
-                    <button class="increment">∧</button>
-                    <button class="decrease">∨</button>
+                    <input type="number" class="ano" value="2024" max="2024" required></input>
                 </div>
             </div>
 
             <div class="inform1-container">
                 <h2>CPF</h2>
-                <input type="text" class="input2-container" placeholder="000.000.000-00">
+                <input type="text" name="cpf" class="input2-container" placeholder="000.000.000-00" required>
                 <h2>E-mail</h2>
-                <input type="text" class="input2-container" placeholder="johndoe@gmail.com">
+                <input type="text" name="email" class="input2-container" placeholder="johndoe@gmail.com" required>
                 <h2>Número de Telefone</h2>
-                <input type="text" class="input2-container" placeholder="(67) 99999-9999">
+                <input type="text" name="telefone" class="input2-container" placeholder="(67) 99999-9999" required>
             </div>
 
             <div class="inform2-container">
                 <h2>CEP</h2>
-                <input type="text" class="input3-container" placeholder="7900000">
+                <input type="text" name="cep" class="input3-container" placeholder="7900000" required>
                 <h2>Endereço</h2>
-                <input type="text" class="input3-container" placeholder="R.cebolinha">
+                <input type="text" name="endereco" class="input3-container" placeholder="R.cebolinha" required>
                 <h2>Bairro</h2>
-                <input type="text" class="input3-container" placeholder="Pioneiro">
+                <input type="text" name="rua" class="input3-container" placeholder="Pioneiro" required>
                 <h2>Complemento (opcional)</h2>
-                <input type="text" class="input3-container" placeholder="casa da mãe joana">
+                <input type="text" name="Complemento" class="input3-container" placeholder="casa da mãe joana">
             </div>
 
             <div class="password-container">
                 <h2>Senha</h2>
-                <input type="text" class="input1-container" placeholder="*********">
+                <input type="text" class="input1-container" placeholder="*********" required>
                 <h2>Confirmar Senha</h2>
-                <input type="text" class="input1-container" placeholder="*********">
+                <input type="text" class="input1-container" placeholder="*********" required>
             </div>
 
             <div class="terms-container">
                 <div class="checkbox-container">
-                    <input type="checkbox" class="checkbox" id="confirmCheckbox">
-                    <label for="confirmCheckbox">Li e concordo com os <a class="term-link" href="#">Termos de Serviço</a></label>
+                    <input type="checkbox" name="termos" class="checkbox" id="confirmCheckbox" required>
+                    <label for="confirm_termos">Li e concordo com os <a class="term-link" href="#">Termos de Serviço</a></label>
                 </div>
                 <div class="checkbox-container">
-                    <input type="checkbox" class="checkbox" id="confirmCheckbox">
-                    <label for="confirmCheckbox">Li e concordo com as <a class="term-link" href="#">Politicas da Empresa</a></label>
+                    <input type="checkbox" name="politicas" class="checkbox" id="confirmCheckbox" required>
+                    <label for="confirm_politica">Li e concordo com as <a class="term-link" href="#">Politicas da Empresa</a></label>
                 </div>
             </div>
 
@@ -120,6 +115,7 @@
                 <button class="button-cancel">Cancelar</button>
                 <button class="button-confirm">Registrar</button>
             </div>
+    
     </main>
 
     <footer>
