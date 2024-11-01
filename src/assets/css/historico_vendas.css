@@ -146,34 +146,25 @@ footer {
     line-height: 24px; /* 184.615% */
 }
 
+/* menu nav  */
 
-/* Espaço para separar os nav  */
-
-
-
-.minha-lista {
-    display: flex;
-    align-items: center;
+.menu-nav {
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    margin-left: 70px;
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menu-nav a {
+    text-decoration: none;
 }
 
 
-.conta {
-    width: 0px;
-    padding-right: 40px;
+/* menu lateral  */
 
-}
-
-.minha-conta {
-    margin: 3px;
-
-   
-}
-
-.historico-vendas {
-    width: 10;
-}
- */
-
+/* .menu-lateral {
+    list-style-type: none;
+    margin-left: 200px;
+    margin-t */
