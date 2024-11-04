@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/carrinho.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
     <title>Eao Quadrado / Carrinho</title>
 </head>
 <body>
@@ -13,32 +13,32 @@
         <nav class="navbar">
             <div class="navbar-logo">
                 <a href="#">
-                    <img src="./assets/img/logo.png" class="logo" alt="Logo">
+                    <img src="../assets/img/logo.png" class="logo" alt="Logo">
                 </a>
             </div>
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="O que você procura hoje?">
-                <img src="./assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
+                <img src="../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
             </div>
             <ul class="menu-opcoes">
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/pessoa.svg" alt="Pessoa">
+                        <img src="../assets/img/pessoa.svg" alt="Pessoa">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/carrinho.svg" alt="Carrinho">
+                        <img src="../assets/img/carrinho.svg" alt="Carrinho">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/informacao.svg" alt="Informações">
+                        <img src="../assets/img/informacao.svg" alt="Informações">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/suporte.svg" alt="suporte">
+                        <img src="../assets/img/suporte.svg" alt="suporte">
                     </a>
                 </li>
             </ul>
@@ -47,11 +47,25 @@
 
     <main>
         <div class="container">
-            <span id = 'a_light_gray'>Home</span> / <span>Carrinho</span>
+            <span id = 'a_light_gray'>Home</span> <span>/ </span><span>Carrinho</span>
             <div class = 'title'>
                 <h1>Carrinho</h1>
             </div>
+        </div>  
+        
+        <div class = 'container_produtos'>
+            <div class = 'produto_1'>
+                <img src = '../assets/img/AccerNitro5 1.png' alt = 'AcerNitro5' class = 'img1'>
+                <span class = 'sub-1'>Nome do Produto</span>
+                <span class = 'sub-1'>Preço</span>
+                <span class = 'sub-1'>Quantidade</span>
+                <span class = 'sub-1'>Subtotal</span>
+                <img src = '../assets/img/lixeira.png' alt = 'lixeira' class = 'lixeira'>
+            </div>
+
+            
         </div>
+        
 
         <div class = 'container_carrinho'>
             <div class = 'total_carrinho'>
@@ -59,43 +73,43 @@
                     <h3>Finalize sua compra</h3><br>
                 </div>
                 <div class = 'linha1'>
-                    <div>
-                        <spam>Subtotal:</spam>
+                    <div class = 'fn_compra_1'>
+                        <span>Subtotal:</span>
                     </div>
-
-                    <div></div><div></div><div></div><div></div>
-
-                    <div>
-                        <spam>R$  0</spam>
+                    <div class = 'fn_compra_2'>
+                        <spam >R$  0</spam>
                     </div>
                 </div>
                 <hr>
                 <div class = 'linha1'>
-                    <div>
-                        <spam>Frete:</spam>
+                    <div class = 'fn_compra_1'>
+                        <span>Frete:</span>
                     </div>
-                    <div></div><div></div><div></div><div></div>
-                    <div>
-                        <spam>A combinar</spam>
+                    <div class = 'fn_compra_2'>
+                        <spam >A combinar</spam>
                     </div>
                 </div>
                 <hr>
                 <div class = 'linha1'>
-                    <div>
-                        <spam>Total:</spam>
+                    <div class = 'fn_compra_1'>
+                        <span>Total:</span>
                     </div>
-                    <div></div><div></div><div></div><div></div>
-                    <div>
-                        <spam id = 'bold'>R$  0</spam>
+                    <div class = 'fn_compra_2'>
+                        <spam class = bold >R$  0</spam>
                     </div>
                 </div>
-                <hr>
                 <div class = 'bts_carrinho'>
                     <a href = '#'>
                     <div class = 'bt_retornar'>
                         <p>Retornar as compras</p>
                     </div>
                     </a>
+                    <a href = ''>
+                        <div class = 'bt_whatsapp'>
+                            <p>Ir para Whatsapp</p>
+                        </div>
+                    </a>
+                    
                 </div>
             </div>
         </div>

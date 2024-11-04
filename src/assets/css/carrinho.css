@@ -1,0 +1,169 @@
+
+
+
+.class {
+    font-family: 'Poppins', sans-serif;
+}
+
+#a_light_gray{
+    opacity: 50%;
+}
+
+.title h1{
+    margin: 15%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: underline gray;
+    max-width: max-content;
+}
+
+.container_carrinho{
+    position:relative;
+    bottom:0;
+
+
+    margin: 27.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    max-width: 45%;
+    padding:24px;  
+    min-width: max-content;
+}
+
+.linha1{
+    margin:0;
+    display:grid;
+    grid-template-columns: auto auto;
+    /* gap:60%; */
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.fn_compra_1 {
+    display: grid;
+    place-content: start;
+}
+
+.fn_compra_2 {
+    display: grid;
+    place-content: end;
+}
+
+.total_carrinho{
+    display:grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.bold{
+    padding-top: 10%;
+    font-weight: bold;  
+    font-size: 150%;
+
+}
+
+.bt_retornar{
+    margin: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    max-width: max-content;
+    padding:12px;
+    gap: 16px;
+
+    color:black;
+    text-decoration: underline white;
+
+    box-shadow: -3px 3px 2px #e9e9e9;
+}
+
+.bt_whatsapp{
+    margin:10px;
+    border:1px;
+    border-style:solid;
+    border-radius: 5px;
+    border-color: #16A18E;
+    background-color: #16A18E;
+    max-width:  132px;
+    padding:12px;
+    gap: 16px;
+    text-decoration:underline #16A18E ;
+    text-align: center;
+    margin-right: 20px;
+
+}
+
+.bt_whatsapp p{
+    color:white;
+}
+
+.bt_whatsapp:hover{
+    background-color: #00EDCC;
+    text-decoration: underline #00EDCC;
+    border-color: #00EDCC;
+}
+
+.bt_retornar:hover{
+    background-color: #f5f5f5;
+}
+
+.bts_carrinho{
+    display:grid;
+    grid-template-columns: auto max-content;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;  
+}
+
+span{
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+.container_produtos{
+    display:grid;
+    grid-template-rows: auto auto;
+    gap:11px;
+
+}
+
+.produto_1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 5%;
+
+    margin: 27.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    max-width: 45%;
+    padding:24px;  
+    min-width: max-content;
+}
+
+img{
+    text-align: center;
+    margin-left:15px;
+    width: 100%;
+    height: 100%;
+    max-width: 79px;
+    max-height: 111px;
+}
+
+.lixeira{
+    text-align: center; 
+    margin-top: 15%;
+    width: 100%;
+    height: 100%;
+    max-width: 24px;
+    max-height: 27px;
+}
