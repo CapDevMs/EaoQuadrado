@@ -83,14 +83,14 @@
 }
 
 /* Css do Main */
-main {
+/* main {
     margin-top: calc(95px + 2vh);
     min-height: calc(100vh - (calc(95px + 2vh) + 280px));
 }
 .container {
     width: 95%;
     margin: auto;
-}
+} */
 
 /* Css do Footer */
 footer {
@@ -146,85 +146,99 @@ footer {
     line-height: 24px; /* 184.615% */
 }
 
-/* menu nav  */
+/* MENU NAV  */
 
 .menu-nav {
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 70px;
     display: inline-block;
     list-style-type: none;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .menu-nav a {
     text-decoration: none;
+    color: #BFC2C5;
+}
+
+.menu-nav a.historico-menu {
+    color: black;
 }
 
 
+
+/* MENU LATERAL  */
 
 .menu-lateral {
     list-style-type: none;
-    margin-left: 70px;
-    padding-top: 50px;
     color: #BFC2C5;
     font-size: 16px;
-   
+    width: 150px;
+    padding-top: 50px;
+
 }
 
-.titulo-gerenciar {
-    color: var(--Text2, #000);
-    font-size: 16px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; 
-}
-
-.menu-vendas {
+.menu-lateral-items{
     list-style-type: none;
-    margin-left: 70px;
-    padding-top: 50px;
     color: #BFC2C5;
     font-size: 16px;
+    padding-left: 20px;
 }
 
-.venda {
-    color: var(--Text2, #000);
-    font-size: 16px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; 
+.menu-lateral-items li {
+    margin-bottom: 10px;
 }
+
+h2 {
+    width: 250px;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+}
+
+/* ASIDE  */
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 375px auto;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.conteudo-main {
+    padding: 20px;
+}
+
+/* CONTEUDO PRINCIPAL  */
 
 h1 {
-    font-size: 16px;
-    padding-left: 30%;
-    padding-top: 0;
+    font-size: 20px;
+    width: 207px;
+    height: 23px;
+}
+
+.lista-geral {
+    font-size: 14px;
+    width: 50px;
+}
+
+#lista-produtos {
+    width: 57px;
+    height: 15px;
+    padding-right: 537px;
+} 
+
+#lista-status {
     width: 200px;
+    padding-left: 50px;
+
 }
 
-table {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-        /* width: 100%;
-        text-align: center;
-        align-items: center;
-        padding-top: 80px; */
-    }
 
-th {
-    font-weight: bold;
-    padding: 8px;
-    text-align: left;
-    padding-top: 300px;
-    }
-   
 
-.produto {
-    padding-top: 0px;
-    font-size: 16px;
-}
+

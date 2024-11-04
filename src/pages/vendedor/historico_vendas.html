@@ -43,56 +43,47 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="menu-nav">
-         <a class="conta-menu" href="#">Conta /</a>
-         <a class="minha-conta-menu" href="#">Minha Conta /</a>
-         <a class="historico-menu" href="#">Histórico de Vendas</a>
-        </div>
 
+    <br><br><br><br><br>
 
-        <div class="menu-lateral">
-            <ul class="menu-lateral">
-                <li class="titulo-gerenciar" id="titulo-gerenciar">Gerenciar Minha Conta</li>
-                <li class="perfil" id="titulo-gerenciar">Meu Perfil</li>
-                <li class="minha-loja" id="titulo-gerenciar">Minha Loja</li>
-                <li class="cadastro-produto" id="titulo-gerenciar">Cadastrar Produtos</li>
-            </ul>
-            <ul class="menu-vendas">
-                <li class="venda" id="venda-menu">Vendas</li>
-                <li class="historico-vendas" id="hisotico-venda-menu">Histórico de Vendas</li>
-                <li class="troca-cancelamento" id="troca-cancelamento-menu">Trocas/Cancelamentos</li>
-                <li class="gerenciamneto-estoque" id="gerenciamneto-estoque-menu">Gerenciamento de Estoque</li>
-            </ul>
-        </div>
-        <h1>Histórico de Vendas</h1>
+    <div class="conteudo">
 
-        <div>
-            <table class="container">
-                <thead>
-                    <tr >
-                        <th class="produto">Produto</th>
-                        <th>Status do Pedido</th>
-                        <th>Preço</th>
-                        <th>Comprado por</th>
-                        <th>Quantidade</th>
+        <aside>
+            <div class="menu-nav">
+                <a class="conta-menu" href="#">Conta /</a>
+                <a class="minha-conta-menu" href="#">Minha Conta /</a>
+                <a class="historico-menu" href="#">Histórico de Vendas</a>
+               </div>
+               <div class="menu-lateral">
+                <h2>Gerenciar Minha Conta</h2>
+                   <ul class="menu-lateral-items">
+                       <li class="tabela_menu " class="meu-perfil" id="meu-perfil">Meu Perfil</li>
+                       <li class="tabela_menu " class="minha-loja" id="minha-loja">Minha Loja</li>
+                       <li class="tabela_menu " class="cadastar-produto" id="cadastar-produto">Cadastrar Produtos</li>
+                   </ul>
+                <h2>Vendas</h2>
+                   <ul class="menu-lateral-items">
+
+                       <li class="tabela_lateral"  class="historico-vendas" id="hisotico-venda-menu">Histórico de Vendas</li>
+                       <li class="tabela_lateral"  class="troca-cancelamento" id="troca-cancelamento-menu">Trocas/Cancelamentos</li>
+                       <li class="tabela_lateral"  class="gerenciamneto-estoque" id="gerenciamneto-estoque-menu">Gerenciamento de Estoque</li>
+                   </ul>
+               </div>
+        </aside>
+        <main class="conteudo-main">
+                <h1>Histórico de Vendas</h1>
+                <table class="container">
+                    <tr class="lista-geral">
+                        <th class="itens-geral" id="lista-produtos">Produto</th>
+                        <th class="itens-geral" id="lista-status">Status do pedido</th>
+                        <th class="itens-geral" id="lista-preco">Preço</th>
+                        <th class="itens-geral" id="lista-comprado">Comprado por</th>
+                        <th class="itens-geral" id="lista-quantidade">Quantidade</th>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>LCD Monitor</td>
-                        <td>Entregue</td>
-                        <td>R$ 999,99</td>
-                        <td>username</td>
-                        <td>1 Unidade</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-    </main>
-
-
+                </table>
+    
+        </main>
+    </div>
 
     <footer>
         <div class="footer-links">
