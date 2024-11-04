@@ -45,20 +45,50 @@
     </header>
     <main>
         <div class="menu-nav">
-         <a href="#">Conta /</a>
-         <a href="#">Minha Conta /</a>
-         <a href="#">Histórico de Vendas</a>
+         <a class="conta-menu" href="#">Conta /</a>
+         <a class="minha-conta-menu" href="#">Minha Conta /</a>
+         <a class="historico-menu" href="#">Histórico de Vendas</a>
         </div>
 
 
         <div class="menu-lateral">
-            <ul>
+            <ul class="menu-lateral">
                 <li class="titulo-gerenciar" id="titulo-gerenciar">Gerenciar Minha Conta</li>
-                <li class="titulo-gerenciar" id="titulo-gerenciar">Meu Perfil</li>
-                <li class="titulo-gerenciar" id="titulo-gerenciar">Minha Loja</li>
-                <li class="titulo-gerenciar" id="titulo-gerenciar">Cadastrar Produtos</li>
+                <li class="perfil" id="titulo-gerenciar">Meu Perfil</li>
+                <li class="minha-loja" id="titulo-gerenciar">Minha Loja</li>
+                <li class="cadastro-produto" id="titulo-gerenciar">Cadastrar Produtos</li>
             </ul>
-            
+            <ul class="menu-vendas">
+                <li class="venda" id="venda-menu">Vendas</li>
+                <li class="historico-vendas" id="hisotico-venda-menu">Histórico de Vendas</li>
+                <li class="troca-cancelamento" id="troca-cancelamento-menu">Trocas/Cancelamentos</li>
+                <li class="gerenciamneto-estoque" id="gerenciamneto-estoque-menu">Gerenciamento de Estoque</li>
+            </ul>
+        </div>
+        <h1>Histórico de Vendas</h1>
+
+        <div>
+            <table class="container">
+                <thead>
+                    <tr >
+                        <th class="produto">Produto</th>
+                        <th>Status do Pedido</th>
+                        <th>Preço</th>
+                        <th>Comprado por</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LCD Monitor</td>
+                        <td>Entregue</td>
+                        <td>R$ 999,99</td>
+                        <td>username</td>
+                        <td>1 Unidade</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
     </main>
 

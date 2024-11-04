@@ -162,9 +162,69 @@ footer {
 }
 
 
-/* menu lateral  */
 
-/* .menu-lateral {
+.menu-lateral {
     list-style-type: none;
-    margin-left: 200px;
-    margin-t */
+    margin-left: 70px;
+    padding-top: 50px;
+    color: #BFC2C5;
+    font-size: 16px;
+   
+}
+
+.titulo-gerenciar {
+    color: var(--Text2, #000);
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+
+.menu-vendas {
+    list-style-type: none;
+    margin-left: 70px;
+    padding-top: 50px;
+    color: #BFC2C5;
+    font-size: 16px;
+}
+
+.venda {
+    color: var(--Text2, #000);
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+
+h1 {
+    font-size: 16px;
+    padding-left: 30%;
+    padding-top: 0;
+    width: 200px;
+}
+
+table {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        /* width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-top: 80px; */
+    }
+
+th {
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    padding-top: 300px;
+    }
+   
+
+.produto {
+    padding-top: 0px;
+    font-size: 16px;
+}
