@@ -18,9 +18,75 @@
     color: #00BFA5;
 }
 .card {
-    margin-top: 20px;
-    border: 1px solid #000;
+    margin-top: 5%;
     border-radius: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    /* padding: 15px 19px; */
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+}
+.card-items {
+    width: calc(100% - (19px * 2));
+    margin: auto;
+}
+.card-inside {
+    border-radius: 20px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.card-header {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+    border-radius: 20px;
+}
+.img-card, .img-notificacao {
+    max-width: 90px; 
+    max-height: 90px;
+}
+.img-card {
+    border-radius: 45px;
+}
+.notificacao-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    place-content: end;
+    margin-right: 10%;
+}
+.tipo-card {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+.troca{
+    background-color: #FFE600;
+}
+.devolucao{
+    background-color: #EBB135;
+    color: #FAFAFA;
+}
+.cancelamento{
+    background-color: #F00;
+    color: #FAFAFA;
+}
+.img-notificacao {
+    max-width: 20px;
+}
+.card-body {
+    margin-top: 33px;
+    /* background-color: #F5F5F5; */
+    border-radius: 20px;
+    width: 99%;
+}
+.card-text {
+    text-indent: 2%;
+    text-align: justify;
+    margin: auto;
+}
+.finalizado {
+    opacity: 0.3;
+}
+.encerrado {
+    background-color: #00af26c0;
 }
