@@ -158,7 +158,7 @@ main {
     border-radius: 25px;
 
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400px;
     
     padding: 10px 15px;
@@ -192,33 +192,27 @@ main {
     height: 44px;
     position: relative;
     padding: 0;
-    border: 2px solid black;
-    border-radius: 10px;
+
     column-gap: 10px;
     text-align: center;
 }
 .dia-mes {
-    /* grid-column-start: 2; */
-    position: relative;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    position: relative;
-    margin: auto;
-    text-align: center;
-    left: 8px;
-}
-.ano {
-   
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
+    padding: auto;
     place-items: center;
     position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
     font-size: 16px;
-    border: none;
     text-align: center;
-
+}
+.ano {
+    padding: auto;
+    place-items: center;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
 }
 
 .inform1-container {
@@ -248,7 +242,7 @@ main {
     height: 32px;
     border-radius: 25px;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     padding: 10px 15px;
 }
 
@@ -280,7 +274,7 @@ main {
     height: 32px;
     border-radius: 25px;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     padding: 10px 15px;
 }
 
@@ -313,7 +307,7 @@ main {
     border-radius: 25px;
 
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     padding: 10px 15px;
     
 }
