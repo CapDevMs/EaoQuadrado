@@ -1,6 +1,5 @@
 .sub-menu {
     display: inline; 
-    
 }
 #minha-conta{
     color: grey;
@@ -40,7 +39,35 @@
 
 .ativa {
     text-decoration: underline; 
-    text-decoration-color: green; 
     font-weight: bold; 
-    color: green;
+    color: #00edcc;
+}
+
+#cadastrar-produtos{  /*redundante, mas vai servir por enquanto */
+    color: #00edcc;
+}
+
+
+.container-main {
+    display: flex; /* Mantém os elementos lado a lado */
+    justify-content: flex-start; /* Alinha itens à esquerda */
+    gap: 0px;
+}
+
+
+.quadrado-grande {
+    width: 300px; /* Defina a largura desejada */
+    height: 300px; /* Defina a altura desejada */
+    background-color: lightblue; /* Cor de fundo do quadrado */
+    margin-left: 30px; /* Espaçamento à esquerda do quadrado */
+}
+
+.menu-lateral {
+    width: 200px; /* Defina uma largura fixa para o menu lateral */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-right: 10%;
+}
+
+.coluna-menu {
+    flex: 1; /* Permite que a coluna do menu ocupe o espaço restante */
 }
