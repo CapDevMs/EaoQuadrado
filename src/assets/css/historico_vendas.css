@@ -244,36 +244,32 @@ h1 {
 .lista-geral {
     font-size: 14px;
     width: 50px;
-    /* padding: 20px; */
+
 }
 
 #lista-produtos {
-    width: 200px;
-    /* padding: 20px; */
-    /* height: 15px; */
-    /* padding-right: 537px; */
+
 }
 
 #lista-status {
     width: 170px;
     padding: 50px;
-    /* padding-left: 50px; */
+
 
 }
 
 #lista-preco {
     width: 50px;
-    /* padding: 50px; */
 }
 
 #lista-comprado {
     width: 110px;
-    /* padding: 20px; */
+  
 }
 
 #lista-quantidade {
     width: 88px;
-    /* padding: 20px; */
+   /* padding: 20px; */
 }
 
 .table {
