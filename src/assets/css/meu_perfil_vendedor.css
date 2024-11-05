@@ -1,50 +1,55 @@
-body {
-    margin: 0; 
-    font-family: Arial, sans-serif; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.menuzin {
-    display: flex;
-    align-items: center;
-    margin: 0; 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 250px 300px;
+    gap: 20px;
+}
+
+.menu-lateral {
+    padding-top: 50px;
 }
 
 .menuzin .mi-cont {
     display: inline;
-    margin: 0;
-    padding: 0%;
+    padding: 0;
+    left: 17px;
 }
 
-.manuzin2 {
+.menuzin, .menuzin2 {
     display: flex;
-    align-items: center;
-    padding-top: 20px; 
+    flex-direction: column;
+    max-width: 200px;
 }
 
-#home {
-    position: absolute;
-    top: 100px;
+.menuzin2 {
+    padding-top: 30px;
 }
 
 .mi-cont-tittle {
     position: relative;
-    left: 23px;
-    top: 70px;
-    font-size: 15px; 
-    color: #000000; 
-    margin-bottom: 16px; 
+    padding-left: 30px;
+    font-size: 15px;
+    color: #000000;
     margin: 20px;
 }
 
 .mi-cont {
     position: relative;
-    left: 20px;
-    top: 20px;
     text-decoration: none;
-    list-style-type: none; 
-    padding: 0;
-    color: #000000; 
-    margin: 0%;
+    list-style-type: none;
+    padding-bottom: 5px;
+    color: #000000;
+    margin: 0;
     height: auto;
 }
 
@@ -52,6 +57,7 @@ body {
     font-size: 13px;
     margin: 8px 0;
     transition: 0.3s;
+    padding-left: 50px;
 }
 
 .mi-cont:hover {
@@ -59,16 +65,12 @@ body {
     transition: 0.3s;
 }
 
-.frame {
-    position: absolute;
+/* .frame {
+    position: relative;
     margin: 0;
-    border: 3px;
-    border-style: solid;
-    border-color: gray;
+    border: 3px solid gray;
     border-radius: 20px;
     height: 500px;
     width: 500px;
-    left: 300px;
-    top: 20%;
-}
-
+    top: 20px;
+} */
