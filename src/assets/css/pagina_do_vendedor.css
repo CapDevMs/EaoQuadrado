@@ -62,12 +62,16 @@
     font-size: 19px;
 }
 
+.avaliacao-telefone{
+    display: grid;
+    place-content: end;
+}
 #avaliacao{
     font-size: 16px;
-    padding-left: 25%;
 }
 
 #telefone{
     padding-top: 20%;
-    margin-left: 44%;
 }
+
+/* Definir grid de infos como uma grid com 3 linhas */
