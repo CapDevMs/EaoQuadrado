@@ -516,6 +516,10 @@ main {
 
 }
 
+.checkbox2:checked {
+    background-color: gray;
+}
+
 .checkbox-container2 p {
     color: gray;
     grid-column-start: 2;
