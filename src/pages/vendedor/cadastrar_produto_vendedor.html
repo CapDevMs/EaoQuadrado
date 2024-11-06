@@ -74,7 +74,68 @@
                 <h1>Trocas/Cancelamentos</h1>
                 <h1>Gerenciamento de estoque</h1>
             </div>
-            <div class="quadrado-grande"></div>
+            <div class="painel-conteudo">
+                <form action="#" method="post">
+                    
+                    <div class="linha-horizontal">
+                        <div class="linha-1">
+                            <label for="mensagem">Nome do Produto</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        </div>
+                        
+                        <div class="linha-1">
+                            <label for="mensagem">Link do Produto</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        </div>
+                    </div>
+            
+                    
+                    <div class="linha-horizontal">
+                        <div class="linha-1">
+                            <label for="mensagem">Marca do Produto</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        </div>
+                        
+                        <div class="linha-2">
+                            <label for="mensagem">Modelo do Produto</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        </div>
+                    </div>
+            
+                    
+                    <div class="linha-horizontal">
+                        <div class="linha-3">
+                            <label for="mensagem">Categoria do Produto</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="2" required></textarea>
+                        </div>
+            
+                        <div class="linha-3">
+                            <label for="mensagem">Preço do Produto</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        </div>
+            
+                        <div class="linha-3">
+                            <label for="childAge">Quantidade</label><br>
+                            <input type="number" id="IdadeFilhos" name="IdadeFilhos" min="0" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Descrição -->
+                    <div class="linha-1">
+                        <label for="mensagem">Descrição</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                    </div>
+            
+                    <!-- Inserir Imagens -->
+                    <div class="linha-1">
+                        <label for="arquivo">Inserir Imagens</label><br>
+                        <input type="file" id="arquivo" name="arquivo"><br><br>
+                    </div>
+                </form>
+            </div>
+            
+            <input type="submit" value="Cadastrar">
+            <button type="reset">Limpar Formulario</button>
         </div>
     </main>
 
