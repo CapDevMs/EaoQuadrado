@@ -13,6 +13,18 @@
     margin-top: 2%;
 }
 
+.container_produtos input{
+    max-width: 70px;
+    border: 1px black solid;
+    border-radius: 5px;
+    height: 140%;
+    text-align: center;
+    position: relative;
+    bottom: 70%;
+    
+}
+
+
 .title h1{
     margin: 27%;
     margin-top: 0px;
@@ -203,6 +215,8 @@ span{
 .line3{
     grid-column-start:4;
     grid-row-start: 2;
+    bottom: 40px;
+
 }
 
 .title4{
