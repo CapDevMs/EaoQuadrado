@@ -59,10 +59,10 @@
                     <span class="separator">/</span>
                     <h6 class="sub-menu">Cadastrar Produto</h6>
                 </div>
-                <p></p>
             </div>
             <br>
-            <br>
+            
+            <div><h2 class="titulo-painel">Cadastrar Produto</h2></div>
             <div class="menu-lateral">
                 <h3>Gerenciar Minha conta</h3>
                 <h1>Meu Perfil</h1>
@@ -125,17 +125,22 @@
                         <label for="mensagem">Descrição</label><br>
                         <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
                     </div>
-            
+        
+                    <label for="arquivo">Inserir Imagens</label><br>
+                    <input type="file" id="arquivo" name="arquivo" accept="image/*" multiple><br><br>
+
                     
-                    <div class="linha-1">
-                        <label for="arquivo">Inserir Imagens</label><br>
-                        <input type="file" id="arquivo" name="arquivo"><br><br>
+                    <div id="image-preview-container" class="image-preview-container">
+                        
                     </div>
+
+
+
                 </form>
             </div>
             <div class="botoes-container">
-                <button id="salvar" type="submit">Salvar</button>
                 <button id="cancelar" type="button">Cancelar</button>
+                <button id="salvar" type="submit">Salvar</button>
             </div>
         </div>
     </main>

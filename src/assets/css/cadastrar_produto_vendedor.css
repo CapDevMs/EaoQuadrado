@@ -13,7 +13,7 @@
 
 #conta {
     color: grey;
-    margin-left: 75px;
+    margin-left: 90px;
 }
 
 .sub-menu a {
@@ -24,22 +24,22 @@
 .menu-lateral h1 {
     margin-top: 10px;
     color: gray;
-    font-size: 13px;
-    margin-left: 100px;
+    font-size: 16px;
+    margin-left: 150px;
 }
 
 .menu-lateral h3 {
     margin-top: 20px;
     color: black;
-    font-size: 18px;
-    margin-left: 75px;
+    font-size: 20px;
+    margin-left: 120px;
 }
 
 .separator {
     text-decoration: none; 
     color: black; 
     margin-left: 10px;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 .ativa {
@@ -54,11 +54,13 @@
 
 .container-main {
     display: grid;
-    grid-template-columns: 1fr 3fr; 
-    gap: 20px;
+    grid-template-columns: 1fr 1fr; 
+    gap: 3px;
     width: 100%; 
     height: 100vh; 
 }
+
+
 
 .painel-conteudo {
     width: 1300px;
@@ -68,8 +70,8 @@
     margin-right: 10%; /* Garante que o quadrado fique centralizado */
     margin-bottom: 10%;
     display: block;     /* Necessário para que a margem funcione */
-    grid-column: 2;     /* Garante que o quadrado ocupe a segunda coluna da grade */
-    grid-row: 2 / span 2; /* O quadrado ocupa duas linhas (centro e direita) */
+    grid-column: 3;     /* Garante que o quadrado ocupe a segunda coluna da grade */
+    grid-row: 2 / span 1; /* O quadrado ocupa duas linhas (centro e direita) */
     border-radius: 10px; /* valor de 10px arredonda os cantos */
 }
 
@@ -93,6 +95,8 @@ footer {
     flex-direction: column; 
     padding: 40px;
     max-width: 100%; 
+    position: relative;
+    left: 1px;
 }
 
 form {
@@ -151,9 +155,11 @@ form > div {
     display: flex; 
     justify-content: right;
     gap: 15px; 
-    margin-top: 1000px; 
-    margin-left: 99%;
+    margin-top: 900px; 
     padding-right: 0px; 
+    position: relative;
+    top: 420px;
+    left: 1350px;
 }
 
 
@@ -186,3 +192,41 @@ form > div {
 }
 
 
+
+.image-preview-container {
+    display: flex; 
+    gap: 10px; 
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: #f0f0f0; 
+    border: 2px dashed #ccc; 
+    border-radius: 8px; 
+    min-height: 120px; 
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+}
+
+
+.image-preview-container img {
+    width: 100px; /* Tamanho da imagem */
+    height: 100px;
+    object-fit: cover; /* Ajusta as imagens sem distorção */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+
+#titulo{
+    display: block;     /* Necessário para que a margem funcione */
+    grid-column: 1;     /* Garante que o quadrado ocupe a segunda coluna da grade */
+    grid-row: 1 / span 2
+}
+
+
+
+.titulo-painel {
+    text-align: left; /* Centraliza o título */
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Deixa o título em negrito */
+    margin-top: 5px; /* Espaço acima do título */
+    color: #00edcc; /* Cor do texto */
+    grid-column: 1;
+}
