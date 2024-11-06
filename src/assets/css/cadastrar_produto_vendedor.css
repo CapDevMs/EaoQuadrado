@@ -67,12 +67,12 @@
     height: 1200px;
     background-color: white;
     border-style: groove;
-    margin-right: 10%; /* Garante que o quadrado fique centralizado */
+    margin-right: 10%; 
     margin-bottom: 10%;
-    display: block;     /* Necessário para que a margem funcione */
-    grid-column: 3;     /* Garante que o quadrado ocupe a segunda coluna da grade */
-    grid-row: 2 / span 1; /* O quadrado ocupa duas linhas (centro e direita) */
-    border-radius: 10px; /* valor de 10px arredonda os cantos */
+    display: block;     
+    grid-column: 3;     
+    grid-row: 2 / span 1; /
+    border-radius: 10px; 
 }
 
 
@@ -208,25 +208,25 @@ form > div {
 
 
 .image-preview-container img {
-    width: 100px; /* Tamanho da imagem */
+    width: 100px; 
     height: 100px;
-    object-fit: cover; /* Ajusta as imagens sem distorção */
-    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    object-fit: cover; 
+    border-radius: 8px; /
 }
 
 #titulo{
-    display: block;     /* Necessário para que a margem funcione */
-    grid-column: 1;     /* Garante que o quadrado ocupe a segunda coluna da grade */
+    display: block;     
+    grid-column: 1;     
     grid-row: 1 / span 2
 }
 
 
 
 .titulo-painel {
-    text-align: left; /* Centraliza o título */
-    font-size: 24px; /* Define o tamanho da fonte */
-    font-weight: bold; /* Deixa o título em negrito */
-    margin-top: 5px; /* Espaço acima do título */
-    color: #00edcc; /* Cor do texto */
+    text-align: left; 
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-top: 5px; 
+    color: #00edcc; 
     grid-column: 1;
 }
