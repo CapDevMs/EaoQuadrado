@@ -162,24 +162,72 @@ LOGO DA LOJA - container logo e logo
     margin-top: 3%;
     column-gap: 30px;
     row-gap: 60px;
+    margin-bottom: 3%;
 }
 
 .grid-item-produtos-pagina-vendedor{
-    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 90% 10%;
+}
+    
+/* ========================================================================
+                CONTAINER GRID PRODUTO - PÁGINA DO VENDEDOR
+=========================================================================== */
+
+
+.container-foto-nome-preço{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 70% 15% 15%;
+    width: 310px;
     height: 322px;
 }
 
-#foto-produto{
-    padding: none;
+.container-coracao-carrinho{
+    padding-top: 20px;
+    display: block;
 }
 
-#nome-produto{
-    font-size: 16px; 
-    border: none;
+.icones-coracao-carrinho{
+    grid-column: 2;
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
 }
 
-#preco-produto{
+#icone-coracao{
+    grid-row: 1;
+}
+
+#icone-coracao{
+    grid-row: 1;
+}
+
+.img-produto{
+    max-width: 300px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.nome-produto{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.preco-produto{
     font-size: 16px;
+    grid-column: 1;
+    grid-row: 3;
     color: #00BFA5;
-    border: none;
-} 
+}
+
+.container-nome {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.container-preco {
+    grid-column: 1;
+    grid-row: 3;
+}
