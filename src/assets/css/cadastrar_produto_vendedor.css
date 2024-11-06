@@ -137,7 +137,7 @@ label {
 
 
 form > div {
-    width: 100%; /* Garante que as divs ocupem 100% da largura do container */
+    width: 100%; 
 }
 
 
@@ -145,24 +145,44 @@ form > div {
     width: 100%; 
 }
 
-/* Responsividade para telas pequenas */
-@media (max-width: 768px) {
-    /* Ajuste para telas pequenas, os campos serão alinhados verticalmente */
-    .painel-conteudo form > .linha-horizontal,
-    .painel-conteudo form > .linha-1,
-    .painel-conteudo form > .linha-2,
-    .painel-conteudo form > .linha-3 {
-        display: block; /* Os campos ficam empilhados em telas menores */
-        width: 100%; /* Cada campo ocupa toda a largura da tela */
-        margin-right: 0; /* Remove o espaçamento entre os campos */
-    }
 
-    /* Remove o gap entre os campos nas telas pequenas */
-    .linha-horizontal {
-        gap: 15px; /* Diminui o espaço entre os campos nas telas pequenas */
-    }
+
+.botoes-container {
+    display: flex; 
+    justify-content: right;
+    gap: 15px; 
+    margin-top: 1000px; 
+    margin-left: 99%;
+    padding-right: 0px; 
 }
 
 
+#salvar {
+    background-color: #00edcc;
+    color: white;
+    
+    border-radius: 5px;
+    width: 200px;
+    height: 70px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#cancelar {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 70px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#salvar:focus, #cancelar:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(0, 237, 204, 0.6); 
+}
 
 
