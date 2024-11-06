@@ -53,20 +53,23 @@
 }
 
 .container-main {
-    display: grid; 
-    grid-template-columns: 1fr; 
-    gap: 1px; 
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Duas colunas: conteúdo à esquerda e quadrado à direita */
+    gap: 20px;
+    width: 100%; /* Garante que o container ocupe toda a largura */
+    height: 100vh; /* O container ocupa toda a altura da tela */
 }
 
 .quadrado-grande {
-    width: 800px;
-    height: 800px;
+    width: 1300px;
+    height: 1200px;
     background-color: lightblue;
-    margin-left: 50px;  /* Empurra o quadrado para a direita */
-    margin-right: auto; /* Garante que o quadrado fique centralizado */
+    margin-left: 1%;  /* Empurra o quadrado para a direita */
+    margin-right: 5%; /* Garante que o quadrado fique centralizado */
+    margin-bottom: 10%;
     display: block;     /* Necessário para que a margem funcione */
     grid-column: 2;     /* Garante que o quadrado ocupe a segunda coluna da grade */
-
+    grid-row: 2 / span 2; /* O quadrado ocupa duas linhas (centro e direita) */
 }
 
 
