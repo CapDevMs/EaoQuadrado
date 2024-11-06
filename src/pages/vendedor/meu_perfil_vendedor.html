@@ -45,6 +45,7 @@
     </header>
 
     <main>
+
         <div class="menu-lateral">
             <div class="menuzin">
                 <div>
@@ -56,14 +57,14 @@
                             <p class="mi-cont">/</p>
                         </li>
                         <li class="mi-cont">
-                            <a href="#" class="mi-cont">Meu Perfil</a>
+                            <a href="#" class="mi-cont" id="meu-perfil">Meu Perfil</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="menuzin2">
                 <div>
-                    <div class="mi-cont-tittle">
+                    <div class="mi-cont-tittle" id="micont">
                         <h4><b>Gerenciar Minha Conta</b></h4>
                     </div>
                         <ul class="mi-cont">
@@ -104,28 +105,32 @@
                 <h4>Edite seu Perfil</h4>
             </div>
             <div class="edit-perfil">
-                <h5>Nome</h5>
-                <br>
-                    <input type="text" class="input-text" placeholder="  ...">
-                <h5>Sobrenome</h5>
-                <br>
-                    <input type="text" class="input-text" placeholder="  ...">
-                <h5>Data de Nascimento</h5>
-                <br>
-                    <input type="date" class="input-date">
-                <h5>CPF</h5>
-                <br>
-                    <input type="text" class="input-text" placeholder="  000.000.000-00">
-                <h5>Email</h5>
-                <br>
-                    <input type="text" class="input-text" placeholder="  ...">
+                <img id="edit-photo" src="../../assets/img/edit-perfil-icon.png">
+                    <a href="#">
+                        <img class="but-photo" src="../../assets/img/Camera.png">
+                    </a>
+                        <h5>Nome</h5>
+                        <br>
+                            <input type="text" class="input-text" placeholder="  ...">
+                        <h5>Sobrenome</h5>
+                        <br>
+                            <input type="text" class="input-text" placeholder="  ...">
+                        <h5>Data de Nascimento</h5>
+                        <br>
+                            <input type="date" class="input-date">
+                        <h5>CPF</h5>
+                        <br>
+                            <input type="text" class="input-text" maxlength="11" placeholder="  000.000.000-00">
+                        <h5>Email</h5>
+                        <br>
+                            <input type="text" class="input-text" placeholder="  ...">
             </div>
         </div>
 
         <div class="edit-perfil2">
             <h5>CEP</h5>
             <br>
-                <input type="text" class="input-text" placeholder="  ...">
+                <input type="text" class="input-text" maxlength="8" placeholder="  ...">
             <h5>Endereço</h5>
             <br>
                 <input type="text" class="input-text" placeholder="  ...">
@@ -134,12 +139,16 @@
                 <input type="text" class="input-text" placeholder="  ...">
             <h5>Complemento(Opcional)</h5>
             <br>
-                <input type="text" class="input-text" placeholder="  000.000.000-00">
+                <input type="text" class="input-text" placeholder="  ...">
             <h5>Senha</h5>
             <br>
-                <input type="text" class="input-text" placeholder="  ...">
+                <input type="password" class="input-text" placeholder="  ...">
+            <br>
+                <a href="#" class="alt-senha">Alterar senha</a>
+            <br>
+            <button class="but-salvar">Salvar</button>
         </div>
-        
+
     </main>
 
     <footer>
