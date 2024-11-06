@@ -107,7 +107,7 @@ main {
     width: 1114px;
     height: 1076px;
     margin: auto;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -117,10 +117,11 @@ main {
     font-size: 24px;
     font-style: normal;
     position: relative;
-    width: 275px;
+    width: 250px;
     left: 46px;
     top: 26px;
     margin-bottom: 36px;
+    width: 275px;
 }
 
 .register_client img {
@@ -237,7 +238,9 @@ main {
 }
 
 .input2-container {
+    display: flex;
     flex-direction: column;
+    margin-bottom: 5px;
     background-color: #F5F5F5;
     border: none;
     color: black;
@@ -247,13 +250,12 @@ main {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     padding: 10px 15px;
-    margin-top: 5px;
 }
 
 .inform2-container {
     position: relative;
-    display: grid;
     margin-top: 40px;
+    display: grid;
     grid-template-rows: auto auto;
     gap: 20px; 
     max-width: 450px; 
@@ -318,7 +320,6 @@ main {
     padding: 10px 15px;
     
 }
-
 
 
 .checkbox-container {
