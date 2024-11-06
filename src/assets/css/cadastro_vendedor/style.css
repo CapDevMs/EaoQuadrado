@@ -319,22 +319,29 @@ main {
     
 }
 
-.terms-container {
+
+
+.checkbox-container {
     position: relative;
     display: grid;
     grid-template-rows: auto auto;
+    grid-template-columns: 10px auto;
     gap: 20px; 
-    max-width: 450px;
-    top: -895px;
-    left: 640px;
-}
-
-.checkbox-container {
-    display: flex;
+    display: grid;
     align-items: center;
     border-radius: 50px;
+    max-width: 600px;
+
+    top: -130px;
+    left: 350px;
 }
-.checkbox {
+
+.checkbox-container label {
+    grid-column-start: 2;
+}
+
+.checkbox-container input {
+    grid-column-start: 1;
     appearance: none;
     width: 20px;
     height: 20px;
@@ -357,13 +364,11 @@ main {
 
 .buttons-container {
     display: grid;
-    grid-template-columns: auto, auto;
-    column-gap: 0px;
+    grid-template-columns: 132px;
     position: relative;
-    max-width: 265px;
-    column-gap: 0cm;
-    top: -870px;
-    left: 695px;
+    max-width: 385px;
+    left: 390px;
+    top: -109px;
 }
 
 .button-cancel {
@@ -394,7 +399,7 @@ main {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
     border-radius: 20px;
     width: 1114px;
-    height: 1076px;
+    height: 1196px;
     margin: auto;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
