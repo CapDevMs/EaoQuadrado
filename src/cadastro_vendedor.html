@@ -112,8 +112,8 @@
                 </div>
 
                 <div class="buttons-container">
-                    <button class="button-cancel">Cancelar</button>
-                    <button class="button-confirm">Registrar</button>
+                    <button type="reset" name="" class="button-cancel">Cancelar</button>
+                    <button type="submit" name="registrar" class="button-confirm">Registrar</button>
                 </div>
             </div>
     
@@ -150,18 +150,22 @@
 
                     <h2 class="subtitle">Categorias</h2>
                     <div class="checkbox-container2"> 
-                        <input type="checkbox" class="checkbox2"><p>Celulares</p>
-                        <input type="checkbox" class="checkbox2"><p>Computadores</p>
-                        <input type="checkbox" class="checkbox2"><p>Smartwaches</p>
-                        <input type="checkbox" class="checkbox2"><p>Câmera</p>
-                        <input type="checkbox" class="checkbox2"><p>Fones de Ouvido</p>
-                        <input type="checkbox" class="checkbox2"><p>Games</p>
-                        <input type="checkbox" class="checkbox2"><p>Roupas</p>
-                        <input type="checkbox" class="checkbox2"><p>Ferramentas</p>
+                        <input type="checkbox" name="celular" class="checkbox2"><p>Celulares</p>
+                        <input type="checkbox" name="computador" class="checkbox2"><p>Computadores</p>
+                        <input type="checkbox" name="smartwache" class="checkbox2"><p>Smartwaches</p>
+                        <input type="checkbox" name="camera" class="checkbox2"><p>Câmera</p>
+                        <input type="checkbox" name="fone" class="checkbox2"><p>Fones de Ouvido</p>
+                        <input type="checkbox" name="game" class="checkbox2"><p>Games</p>
+                        <input type="checkbox" name="roupa" class="checkbox2"><p>Roupas</p>
+                        <input type="checkbox" name="ferramenta" class="checkbox2"><p>Ferramentas</p>
                     </div>
                     
-                    <h2 class="subtitle">Anexar Imagens</h2>
-                    <div class="arquive"></div>
+                    <h2 class="subtitle2">Anexar Imagens (Selecionar até 5 Imagens)</h2>
+                    <div class="frame_file"> 
+                        <input type="file" name="imagens">
+                        <label for="file">Selecionar Arquivo</label> 
+                    </div>
+                    
                 </div>
             </div>
     </main>

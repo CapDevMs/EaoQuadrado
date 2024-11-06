@@ -493,8 +493,8 @@ main {
     background-size: cover;
     max-width: 225px;
     height: 203px;
-    grid-template-columns: 20px;
-    grid-template-rows:  20px 20px 20px 20px 20px 20px 20px 20px ;
+    grid-template-columns: 8% ;
+    grid-template-rows:  10%  10%  10%  10%  10%  10%  10%  10% 10% 10% ;
     align-items: center;
     border-radius: 20px;
     margin-left: 40px;
@@ -532,11 +532,52 @@ main {
     max-width: 135px;
 }
 
-
-.arquive {
-    display: grid;
+.subtitle2 {
     grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    left: 42px;
+    top: 26px;
+    margin-bottom: 35px;
+    max-width: 355px;
+}
+
+input[type="file"] {
+    height: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+
+    overflow: hidden;
+    opacity: 0;
+    z-index: 100;
+}
+
+.frame_file {
+    grid-column: 2;
+    grid-row-start: 4;
+    position: relative;
+    top: -215px;
+    left: 40px;
+
+    width: 480px;
+    height: 240px;
     background-color: #F5F5F5;
+    color: gray;
+    text-align: center;
+    vertical-align: text-top;
+    margin-top: 10px;
+    border-radius: 25px;
+    
+}
+
+.frame_file label {
+    position: relative;
+    bottom: 100px;
 }
 /* Css do Footer */
 footer {
