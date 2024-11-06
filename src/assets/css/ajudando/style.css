@@ -1,0 +1,57 @@
+.framezinho {
+    background-color: #16A18E;
+    color: #00BFA5;
+    width: 20px;
+    height: 40px;
+    border-radius: 20%;
+    
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+.framezinho h1 {
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 225px;
+
+    position: relative;
+    top: 7px;
+}
+
+.frame1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: #F5F5F5;
+    width: 850px;
+    height: 215px;
+    border-radius: 30px;
+
+    position: relative;
+    margin-top: 50px;
+    left: 70px;
+}
+
+
+.frame1 img {
+    grid-row-start: 1;
+    width: 69.605px;
+    height: 65px;
+}
+
+.frame1 h1 {
+    font-family: 'Poppins', sans-serif;
+    grid-row-start: 1;
+    position: relative;
+    left: -180px;
+    
+}
+
+.estrelinha {
+    background-image: url('/src/assets/img/Five\ star.png');
+    max-height: 20px;
+    max-width: 100px;
+    grid-row-start: 1;
+}
