@@ -68,10 +68,18 @@
     
 }
 
-.estrelinha {
+.estrelinha5 {
     max-width: 100px;
     grid-row-start: 1;
     position: relative;
     right: 35px;
+    top: 20px;
+}
+
+.estrelinha4 {
+    max-width: 100px;
+    grid-row-start: 1;
+    position: relative;
+    right: 15px;
     top: 20px;
 }
