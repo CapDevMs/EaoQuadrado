@@ -1,11 +1,17 @@
 .sub-menu {
     display: inline; 
 }
-#minha-conta{
+#minha-conta {
     color: grey;
 }
 
-#conta{
+#coluna-conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#conta {
     color: grey;
     margin-left: 25px;
 }
@@ -15,14 +21,14 @@
     color: inherit; 
 }
 
-.menu-lateral h1{
+.menu-lateral h1 {
     margin-top: 10px;
     color: gray;
     font-size: 13px;
     margin-left: 45px;
 }
 
-.menu-lateral h3{
+.menu-lateral h3 {
     margin-top: 20px;
     color: black;
     font-size: 18px;
@@ -34,7 +40,6 @@
     color: black; 
     margin-left: 10px;
     margin-right: 10px;
-
 }
 
 .ativa {
@@ -43,31 +48,34 @@
     color: #00edcc;
 }
 
-#cadastrar-produtos{  /*redundante, mas vai servir por enquanto */
+#cadastrar-produtos {
     color: #00edcc;
 }
 
-
 .container-main {
-    display: flex; /* Mantém os elementos lado a lado */
-    justify-content: flex-start; /* Alinha itens à esquerda */
-    gap: 0px;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1px; 
 }
-
 
 .quadrado-grande {
-    width: 300px; /* Defina a largura desejada */
-    height: 300px; /* Defina a altura desejada */
-    background-color: lightblue; /* Cor de fundo do quadrado */
-    margin-left: 30px; /* Espaçamento à esquerda do quadrado */
+    width: 800px;
+    height: 800px;
+    background-color: lightblue;
+    margin-left: 50px;  /* Empurra o quadrado para a direita */
+    margin-right: auto; /* Garante que o quadrado fique centralizado */
+    display: block;     /* Necessário para que a margem funcione */
+    grid-column: 2;     /* Garante que o quadrado ocupe a segunda coluna da grade */
+
 }
 
+
 .menu-lateral {
-    width: 200px; /* Defina uma largura fixa para o menu lateral */
-    text-align: left; /* Alinha o texto à esquerda */
-    margin-right: 10%;
+    width: 200px; 
+    text-align: left;
+
 }
 
 .coluna-menu {
-    flex: 1; /* Permite que a coluna do menu ocupe o espaço restante */
+    flex: 1;
 }
