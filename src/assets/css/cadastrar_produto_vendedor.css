@@ -13,7 +13,7 @@
 
 #conta {
     color: grey;
-    margin-left: 90px;
+    margin-left: 50px;
 }
 
 .sub-menu a {
@@ -93,7 +93,7 @@ footer {
 .painel-conteudo {
     display: flex;
     flex-direction: column; 
-    padding: 40px;
+    padding: 50px;
     max-width: 100%; 
     position: relative;
     left: 1px;
