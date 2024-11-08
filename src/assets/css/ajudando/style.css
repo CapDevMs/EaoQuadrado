@@ -34,16 +34,27 @@
     top: 40px; 
 }
 
-.frame1 p {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    font-size: 100%;
-    margin-left: 87px;
-    width: 100%;
-    max-width: 90%;
-    max-height: 92%;
-}
+.frame1 p {    
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;  
+    -webkit-line-clamp: 2;   
+    -webkit-box-orient: vertical;  
+    max-width: 90%;   
+    line-height: 1.5;  
+    max-height: 3em;  
+    font-family: 'Poppins', sans-serif }
+ 
+
+
+    /* width: 300px;
+
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif; */
+
+
 
 .foto {
     grid-row-start: 1;
