@@ -9,9 +9,9 @@ div {
     padding-left: 5%;
     display: flex; 
     align-items: center; 
-    gap: 10px; 
+    gap: 5px; 
     font-size: 20px;
-    width: 95%;
+    width: 15%;
 }
 
 #minha-conta {
@@ -36,6 +36,7 @@ div {
     background-color: white;
     width: 20%; 
     grid-column: 1; 
+    
 }
 
 #menu-lateral h3{
@@ -53,7 +54,7 @@ div {
     grid-column: 2; 
     margin-left: 25%; 
     position: relative;
-    margin-top: -27%;
+    margin-top: -7%;
     gap: 3px;  
     border-radius: 10px;
 }
