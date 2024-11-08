@@ -46,98 +46,90 @@
     </header>
 
     <main>
-        <div class="container-main">
-            <div class="coluna-menu">
-                <div class="coluna-conteudo">
-                    <a href="link-para-conta" id="conta">
-                        <h6 class="sub-menu">Conta</h6>
-                    </a>
-                    <span class="separator">/</span>
-                    <a href="link-para-minha-conta" id="minha-conta">
-                        <h6 class="sub-menu">Minha Conta</h6>
-                    </a>
-                    <span class="separator">/</span>
-                    <h6 class="sub-menu">Cadastrar Produto</h6>
-                </div>
-            </div>
+        <div class="sub-menu">
+            <a href="link-para-conta" id="conta">
+                <h6>Conta</h6>
+            </a>
+            <span id="separator">/</span>
+            <a href="link-para-minha-conta" id="minha-conta">
+                <h6>Minha Conta</h6>
+            </a>
+            <span id="separator">/</span>
+            <h6>Cadastrar Produto</h6>
+        </div>
+    
+        <div id="titulo">Cadastrar Produto</div>
+    
+        <div id="menu-lateral">
+            <h3>Gerenciar</h3>
+            <h1>Meu Perfil</h1>
+            <h1>Minha Loja</h1>
+            <h1 class="ativa" id="cadastrar-produtos">Cadastrar Produtos</h1>
             <br>
-            <div class="menu-lateral"><h3>Gerenciar Minha conta</h3>
-                <h1>Meu Perfil</h1>
-                <h1>minha Loja</h1>
-                <h1 class="ativa" id="cadastrar-produtos">Cadastrar Produtos</h1> 
-                <br>
-                <h3>Vendas</h3>
-                <h1>Histórico de Vendas</h1>
-                <h1>Trocas/Cancelamentos</h1>
-                <h1>Gerenciamento de estoque</h1></div>
-            <div ><h2 class="titulo-painel">Cadastrar Produto</h2> <form class="painel-conteudo" action="#" method="post">
-                    
+            <h3>Vendas</h3>
+            <h1>Histórico de Vendas</h1>
+            <h1>Trocas/Cancelamentos</h1>
+            <h1>Gerenciamento de estoque</h1>
+        </div>
+    
+        <div id="painel">
+            <form action="#" method="post">      
                 <div class="linha-horizontal">
                     <div class="linha-1">
-                        <label for="mensagem">Nome do Produto</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        <label for="nome-produto">Nome do Produto</label><br>
+                        <textarea id="nome-produto" name="nome-produto" rows="2" required></textarea><br><br>
                     </div>
                     
                     <div class="linha-1">
-                        <label for="mensagem">Link do Produto</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        <label for="link-produto">Link do Produto</label><br>
+                        <textarea id="link-produto" name="link-produto" rows="2" required></textarea><br><br>
                     </div>
                 </div>
-        
-                
+    
                 <div class="linha-horizontal">
                     <div class="linha-1">
-                        <label for="mensagem">Marca do Produto</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        <label for="marca-produto">Marca do Produto</label><br>
+                        <textarea id="marca-produto" name="marca-produto" rows="2" required></textarea><br><br>
                     </div>
                     
                     <div class="linha-2">
-                        <label for="mensagem">Modelo do Produto</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        <label for="modelo-produto">Modelo do Produto</label><br>
+                        <textarea id="modelo-produto" name="modelo-produto" rows="2" required></textarea><br><br>
                     </div>
                 </div>
-        
-                
+    
                 <div class="linha-horizontal">
                     <div class="linha-3">
-                        <label for="mensagem">Categoria do Produto</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="2" required></textarea>
+                        <label for="categoria-produto">Categoria do Produto</label><br>
+                        <textarea id="categoria-produto" name="categoria-produto" rows="2" required></textarea>
                     </div>
-        
+    
                     <div class="linha-3">
-                        <label for="mensagem">Preço do Produto</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+                        <label for="preco-produto">Preço do Produto</label><br>
+                        <textarea id="preco-produto" name="preco-produto" rows="2" required></textarea><br><br>
                     </div>
-        
+    
                     <div class="linha-3">
-                        <label for="childAge">Quantidade</label><br>
-                        <input type="number" id="IdadeFilhos" name="IdadeFilhos" min="0" required>
+                        <label for="quantidade-produto">Quantidade</label><br>
+                        <input type="number" id="quantidade-produto" name="quantidade-produto" min="0" required>
                     </div>
                 </div>
-                
-                
+    
                 <div class="linha-1">
-                    <label for="mensagem">Descrição</label><br>
-                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                    <label for="descricao-produto">Descrição</label><br>
+                    <textarea id="descricao-produto" name="descricao-produto" rows="4" required></textarea><br><br>
                 </div>
     
                 <label for="arquivo">Inserir Imagens</label><br>
                 <input type="file" id="arquivo" name="arquivo" accept="image/*" multiple><br><br>
-
-                
+    
                 <div id="image-preview-container" class="image-preview-container">
-                    
                 </div>
-
-
-
             </form>
             <div class="botoes-container">
                 <button id="cancelar" type="button">Cancelar</button>
                 <button id="salvar" type="submit">Salvar</button>
             </div>
-            </div>
-            
         </div>
     </main>
 
