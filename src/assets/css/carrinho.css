@@ -202,6 +202,8 @@ span{
     grid-column-start:2;
     grid-row-start:2;
     text-align: center;
+    bottom: 25%;
+    position: relative;
 
 }
 
@@ -214,7 +216,8 @@ span{
     grid-column-start:3;
     grid-row-start: 2;
     text-align: center;
-
+    bottom: 25%;
+    position: relative;
 }
 
 .title3{
@@ -226,9 +229,8 @@ span{
     grid-column-start:4;
     grid-row-start: 2;
     text-align: center;
-
-    bottom: 40px;
-
+    top: 10%;
+    position: relative;
 }
 
 .title4{
@@ -240,7 +242,8 @@ span{
     grid-column-start:5;
     grid-row-start: 2;
     text-align: center;
-
+    bottom: 25%;
+    position: relative;
 }
 
 
