@@ -65,15 +65,16 @@ div {
     grid-column: 2; 
     margin-left: 20%; 
     position: relative;
-    margin-top: -7%;
+    margin-top: -10%;
     gap: 3px;  
     border-radius: 10px;
+    border-style: groove;
 }
 
 form {
     width: 96.70%;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 100%;
@@ -112,11 +113,13 @@ input[type="file"] {
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
+    background-color: rgb(228, 228, 228);
 }
 
 #quantidade-produto{
-    width: 30%;
+    width: 40%;
     height: 23%;
+    
 }
 
 textarea {
@@ -132,8 +135,8 @@ input[type="file"] {
     display: flex;
     justify-content: flex-end;
     gap: 25px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 20%;
+    margin-bottom: 1%;
 }
 
 button {
