@@ -301,11 +301,23 @@ h1 {
 
 .p-30 {
     padding: 30px;
+    word-wrap: break-word;
     
 }
 
-.p-50 {
+.p-20 {
     padding: 30px;
+    word-wrap: break-word;
+
+}
+
+.p-40 {
+    padding: 30px;
+    word-wrap: break-word;
+}
+
+.p-50 {
+    padding: 50px;
     width: 200px;
     padding: 30px;
     word-wrap: break-word;
@@ -340,7 +352,7 @@ tbody {
 
 .card {
     display: grid;
-    grid-template-columns: 60% 10% 10% 10% 10%;
+    grid-template-columns: 30% 20% 15% 15% 15%;
     place-content: center;
     place-items: center;
     border: 1px solid lightgrey;
