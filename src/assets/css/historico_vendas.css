@@ -299,7 +299,7 @@ h1 {
     align-self: center;
 }
 
-.p-30 {
+/* .p-30 {
     padding: 30px;
     
 }
@@ -309,7 +309,24 @@ h1 {
     width: 200px;
     padding: 30px;
     word-wrap: break-word;
-}
+} */
+/* 
+.p-40 {
+    padding: 30px;
+    width: 200px;
+    padding: 30px;
+    word-wrap: break-word;
+    padding-right: 550px;
+} */
+
+/* .p-30 {
+    padding: 30px;
+    width: 200px;
+    padding: 30px;
+    word-wrap: break-word;
+    padding-right: 400px;
+} */
+
 
 
 tbody {
@@ -355,3 +372,15 @@ tbody {
 
 }
 
+
+/* p {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 50px;
+    align-items: center;
+  
+}
+
+p, .p-50 {
+    margin: 30px;
+} */
