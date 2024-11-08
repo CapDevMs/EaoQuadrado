@@ -1,43 +1,24 @@
-.framezinho {
-    background-color: #16A18E;
-    color: #00BFA5;
-    width: 20px;
-    height: 40px;
-    border-radius: 20%;
-    
-    position: relative;
-    left: 13%;
-    top: 20px;
-    margin-bottom: 80px;
-}
-
-.framezinho h1 {
-    margin-left: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    width: 225px;
-
-    position: relative;
-    top: 7px;
+.grid_externo {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 27%;
+    position: relative; 
+    left: 20%;
 }
 
 .frame1 {
+    grid-column-start: 1;
     display: grid;
     grid-template-columns: auto 10%;
     grid-template-rows: auto auto;
     background-color: #F5F5F5;
-    width: 1160px;
-    height: 200px;
+
+    width: 60%;
+    height: 170%;
     border-radius: 30px;
 
     position: relative;
-    margin-bottom: 25px;
-    left: 15%;
 }
-
-/* .frame1 img {
-
-} */
 
 .frame1 h1 {
     font-family: 'Poppins', sans-serif;
@@ -50,17 +31,18 @@
     grid-row-start: 1;
     position: relative;
     left: 170px;
-    top: 40px;
-    
+    top: 40px; 
 }
 
 .frame1 p {
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    font-size: 14px;
+    font-size: 100%;
     margin-left: 87px;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 90%;
+    max-height: 92%;
 }
 
 .foto {
@@ -91,3 +73,51 @@
     right: 35px;
     top: 20px;
 }
+
+.frame2 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    max-height: 50px;
+    max-width: 250px;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    position: relative;
+    left: 170px;
+    top: 40px;
+    
+}
+/* 
+.frame2 p {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 14px;
+    margin-left: 87px;
+    max-width: 1000px;
+}
+
+.frame3 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    max-height: 50px;
+    max-width: 250px;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    position: relative;
+    left: 170px;
+    top: 40px;
+    
+}
+
+.frame3 p {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 14px;
+    margin-left: 87px;
+    max-width: 1000px;
+} */
