@@ -9,7 +9,7 @@ div {
     padding-left: 5%;
     display: flex; 
     align-items: center; 
-    gap: 5px; 
+    gap: 20px; 
     font-size: 20px;
     width: 15%;
 }
