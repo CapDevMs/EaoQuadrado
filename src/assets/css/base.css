@@ -3,6 +3,8 @@
 * {
     width: 100%;
     margin: 0;
+    font-family: 'Poppins';
+    /* color: #7D8184; */
 }
 /* Css do Header */
 .header {
@@ -92,6 +94,12 @@ main {
 .container {
     width: 95%;
     margin: auto;
+}
+.container-main{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
 }
 
 /* Css do Footer */
