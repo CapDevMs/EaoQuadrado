@@ -299,10 +299,23 @@ h1 {
     align-self: center;
 }
 
-/* .p-30 {
-    padding: 30px;
+.p-30 {
+    padding: 5px;
     word-wrap: break-word;
-    
+    padding: 5px;
+    word-wrap: break-word;
+    width: 60px;
+    padding: 5px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;  
+    -webkit-line-clamp: 2;  
+    -webkit-box-orient: vertical;  
+    max-width: 90%;  
+    line-height: 1.5;  
+    max-height: 3em;  
+
 }
 
 .p-20 {
@@ -312,25 +325,47 @@ h1 {
 }
 
 .p-40 {
-    padding: 30px;
+    padding: 5px;
     word-wrap: break-word;
+    width: 160px;
+    padding: 5px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;  
+    -webkit-line-clamp: 2;  
+    -webkit-box-orient: vertical;  
+    max-width: 90%;  
+    line-height: 1.5;  
+    max-height: 3em;  
 }
 
 .p-50 {
     width: 160px;
     padding: 5px;
     word-wrap: break-word;
-} */
-/* 
-.p-40 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;  
+    -webkit-line-clamp: 2;  
+    -webkit-box-orient: vertical;  
+    max-width: 90%;  
+    line-height: 1.5;  
+    max-height: 3em;  
+
+} 
+
+
+ 
+/* .p-40 {
     padding: 30px;
     width: 200px;
     padding: 30px;
     word-wrap: break-word;
     padding-right: 550px;
-} */
+} 
 
-/* .p-30 {
+ .p-30 {
     padding: 30px;
     width: 200px;
     padding: 30px;
@@ -346,7 +381,7 @@ tbody {
 
 .table tr {
     border-radius: 20px;
-    /* box-shadow: 6px 7px 10px -7px; */
+     box-shadow: 6px 7px 10px -7px; 
     box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
 }
 
@@ -383,15 +418,3 @@ tbody {
 
 }
 
-
-/* p {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    gap: 50px;
-    align-items: center;
-  
-}
-
-p, .p-50 {
-    margin: 30px;
-} */
