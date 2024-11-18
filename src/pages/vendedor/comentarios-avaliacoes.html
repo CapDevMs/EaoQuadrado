@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/comentarios-avaliacoes.css">
     <title>Eao Quadrado</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar">
             <div class="navbar-logo">
                 <a href="#">
-                    <img src="../../assets/img/logo.png" class="logo" alt="Logo">
+                    <img src="../../assets/img/logo.png" class="logo" alt="Logo Eao Quadrado">
                 </a>
             </div>
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="O que você procura hoje?">
-                <img src="../../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
+                <img src="../../assets/img/pesquisar.svg" class="search-logo" alt="Ícone de pesquisa">
             </div>
             <ul class="menu-opcoes">
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="../../assets/img/pessoa.svg" alt="Pessoa">
+                        <img src="../../assets/img/pessoa.svg" alt="Ícone de Pessoa">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="../../assets/img/carrinho.svg" alt="Carrinho">
+                        <img src="../../assets/img/carrinho.svg" alt="Ícone de Carrinho">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="../../assets/img/informacao.svg" alt="Informações">
+                        <img src="../../assets/img/informacao.svg" alt="Ícone de Informações">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="../../assets/img/suporte.svg" alt="suporte">
+                        <img src="../../assets/img/suporte.svg" alt="Ícone de Suporte">
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    
 
     <main>
-        <div class="conteudo-main">
-            <h1>Avaliações e comentrios</h1>
+        
+
+        <div class="banner">
+            <img src="../vendedor/banner.jpg" alt="Banner da Loja">
         </div>
-        <div class="comment-session">
-            <div class="post-comment">
-                <div class="comment-list">
-                    <div class="flex">
-                        <div class="user">
-                            <img src="../../jota.png" alt="ft perfil vendedor" class="foto-perfil">
-                            <div class="user-meta">
-                                <div class="name">Alcir Junior</div>
-                                <!-- <div class="day">10day ago</div> -->
-                            </div>
-                        </div>
-                        <div class="reply">
-                            <div class="lick icon"><i class="fa fa-thumbs-o-up"></i></div>
-                            <div class="lick icon"><i class="fa fa-thumbs-o-down"></i></div>
-                        </div>
-                    </div>
-                    <div class="comment">
-                        Chegou tudo certinho, dentro do prazo, a embalagem intacta, o produto com todas as proteçoes plasticos,isopor...
-funciona perfeitamente ja fiz o teste e é ótima.
-                    </div>
-                </div> 
-               
-                </form>
+        <div class="conteudo-main">
+            <h1>Avaliações e Comentários</h1>
+        </div>
+        
+        <div class="reviews">
+            <div class="review-card">
+                <div class="user-info">
+                    <img class="user-photo" src="../usuarios/alcir.jpg" alt="Foto de Alcir Junior"><br>
+                    <span class="user-name">Alcir Junior</span><br> 
+                    <img src="../estrelas/star-filled.png" alt="Estrela preenchida">
+                </div>
+                <p>Chegou tudo certinho, dentro do prazo, a embalagem intacta, o produto com todas as proteções plásticas, isopor... funciona perfeitamente, já fiz o teste e é ótima.</p>
+                <div class="estrelas">
+                </div>
+            </div>
+        
+            <div class="review-card">
+                <div class="user-info">
+                    <img class="user-photo" src="../usuarios/andrey.jpg" alt="Foto de Andrey Silva">
+                    <span class="user-name">Andrey Silva</span><br> 
+                    <img src="../estrelas/star-filled.png" alt="Estrela preenchida">
+                </div>
+                <p>Comprei uma chuteira muito boa. Excelente! Podem comprar sem medo. Jogo bola a minha vida inteira e posso afirmar que a chuteira é boa. Não sei a durabilidade, só o tempo vai dizer, mas fica muito boa no pé.</p>
+                <div class="estrelas">
+                </div>
+            </div>
+        
+            <div class="review-card">
+                <div class="user-info">
+                    <img class="user-photo" src="../usuarios/fatima.jpg" alt="Foto de Fátima Bernardes">
+                    <span class="user-name">Fátima Bernardes</span><br> 
+                    <img src="../estrelas/star-filled.png" alt="Estrela preenchida">
+                </div>
+                <p>O produto que eu comprei veio na cor errada, mas o vendedor me ajudou e consegui fazer a troca. Apesar do ocorrido, recomendo!</p>
+                <div class="estrelas">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
     </main>
+    
 
     <footer>
         <div class="footer-links">
@@ -80,69 +104,65 @@ funciona perfeitamente ja fiz o teste e é ótima.
                 <div class="footer-links-title">
                     <p>Suporte</p>
                 </div>
-                <div>
-                    <ul class="footer-links-list">
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">Senac Hub Academy</a>
-                        </li>
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">eaoquadado@gmail.com</a>
-                        </li>
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">+55 67 99999-9999</a>
-                        </li>
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">
-                                R. do Parque, 75 - Centro Campo Grande - MS
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">Senac Hub Academy</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="mailto:eaoquadado@gmail.com" class="footer-links-link">eaoquadado@gmail.com</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="tel:+55-67-99999-9999" class="footer-links-link">+55 67 99999-9999</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">R. do Parque, 75 - Centro Campo Grande - MS</a>
+                    </li>
+                </ul>
             </div>
+
             <div class="lista">
                 <div class="footer-links-title">
                     <p>Conta</p>
                 </div>
-                <div>
-                    <ul class="footer-links-list">
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">Minha Conta</a>
-                        </li>
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">Entre/Cadastre</a>
-                        </li>
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">Carrinho</a>
-                        </li>
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">Lista de Desejos</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">Minha Conta</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">Entre/Cadastre</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">Carrinho</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">Lista de Desejos</a>
+                    </li>
+                </ul>
             </div>
+
             <div class="lista">
                 <div class="footer-links-title">
                     <p>Acesso</p>
                 </div>
-                <div>
-                    <ul class="footer-links-list">
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">Nossa Política</a>
-                        </li>
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">Termos de Uso</a>
-                        </li>
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">FAQ</a>
-                        </li>
-                        <li class="footer-links-item">
-                            <a href="#" class="footer-links-link">Contato</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">Nossa Política</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">Termos de Uso</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">FAQ</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-links-link">Contato</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
+
+    <script src="../../assets/js/script.js"></script>
 </body>
-<script src="../assets/js/script.js"></script>
+
 </html>

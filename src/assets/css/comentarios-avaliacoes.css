@@ -1,29 +1,134 @@
-*{box-sizing: border-box;
-}
-body{
-    display: block;
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    background: white;
-    margin-top: 20px;
+    background-color: #f9f9f9;
+    color: #333;
 }
-.flex{
-    display:flex;
-    justify-content: space-around;
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
-img{
-    width: 100%;
-    height: 100%;
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
-.comment-box, comment-list{
-    background:white;
-    border-radius:4px ;
-    box-shadow: 0 2 2px black;
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #008080;
 }
-.comment-list{
-    width: 100%;
-    margin-bottom: 12px;
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons span {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Main */
+main {
+    margin-top: 2px;
+}
+
+.conteudo-main {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Banner */
+.banner {
+    width: 1500px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -100px; /* Espaço abaixo do banner */
+}
+
+
+
+
+/* Reviews */
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da seção de informações do usuário */
+.user-info {
+    display: flex; /* Exibe itens lado a lado */
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    justify-content: flex-start; /* Alinha tudo à esquerda */
+    gap: 10px; /* Espaço entre a foto e o nome */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    width: 100%; /* Garante que o bloco ocupe toda a largura */
+}
+
+/* Estilo da foto do usuário */
+.user-photo {
+    width: 50px; /* Define a largura da foto */
+    height: 50px; /* Define a altura da foto */
+    border-radius: 50%; /* Faz a foto ficar redonda */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border: 2px solid #ccc; /* Borda opcional ao redor da foto */
+}
+
+/* Estilo do nome do usuário */
+.user-name {
+    font-size: 16px; /* Tamanho do texto do nome */
+    font-weight: bold; /* Deixa o nome em negrito */
+    color: #333; /* Cor do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+
+.estrelas {
+    display: flex; /* Exibe as estrelas lado a lado */
+    gap: 5px; /* Espaço entre cada estrela */
+    margin-top: 10px; /* Espaço acima da classificação */
+}
+
+.estrelas img {
+    width: 20px; /* Define a largura de cada estrela */
+    height: 20px; /* Define a altura de cada estrela */
+    object-fit: contain; /* Garante que a imagem não fique distorcida */
 }
 

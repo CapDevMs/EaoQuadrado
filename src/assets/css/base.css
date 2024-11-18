@@ -147,3 +147,8 @@ footer {
     font-weight: 400;
     line-height: 24px; /* 184.615% */
 }
+.banner {     
+    display: flex;   
+    justify-content: center;    
+    margin-bottom: 30px;
+ }
