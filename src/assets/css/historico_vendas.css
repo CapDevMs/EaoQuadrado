@@ -295,7 +295,7 @@ h1 {
 
 .img-historico {
     width: 80px;
-    padding: 5px;
+    padding: 10px;
     align-self: center;
 }
 
@@ -335,9 +335,10 @@ h1 {
     display: -webkit-box;  
     -webkit-line-clamp: 2;  
     -webkit-box-orient: vertical;  
-    max-width: 90%;  
+    max-width: 70%;  
     line-height: 1.5;  
-    max-height: 3em;  
+    max-height: 3em;
+
 }
 
 .p-50 {
@@ -352,27 +353,27 @@ h1 {
     max-width: 90%;  
     line-height: 1.5;  
     max-height: 3em;  
+    
 
 } 
 
 
  
-/* .p-40 {
-    padding: 30px;
-    width: 200px;
-    padding: 30px;
-    word-wrap: break-word;
-    padding-right: 550px;
-} 
+ .p-40 {
 
- .p-30 {
+    width: 200px;
+    word-wrap: break-word;
+    
+}  
+
+ /* .p-30 {
     padding: 30px;
     width: 200px;
     padding: 30px;
     word-wrap: break-word;
     padding-right: 400px;
-} */
-
+}  
+ */
 
 
 tbody {
@@ -417,4 +418,5 @@ tbody {
     grid-template-columns: auto auto;
 
 }
+
 
