@@ -208,17 +208,7 @@ main {
     align-items: center;
     justify-content: center;
 }
-.ano {
-    padding: auto;
-    place-items: center;
-    position: relative;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-size: 16px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .inform1-container {
     display: grid;
