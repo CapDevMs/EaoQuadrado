@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.banner{
+    margin:0;
+    max-height: 306px;
+    max-width: 1158px;
+}
+.produto{
+    border:solid black 1px;
+    width: 190px;
+    height: 180px;
+    max-width: max-content;
+    
+}
+
+.maisprodutos_linha{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin-left:10%;
+    gap:1%;
+    max-width: max-content;
+}
