@@ -1,24 +1,28 @@
-*{
-    margin:0;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
+/* footer{
+    opacity: 100%;
+}
+
+
+main{
+    position: relative;
 }
 .container{
+    margin-left: 18%;
     display: grid;
-    grid-template-columns: auto auto;
+    position: relative;
+    gap:18%;
+    text-align: center;
+
 }
 .banner{
+    display: grid;
+    text-align: center;
     margin:0;
     max-height: 306px;
     max-width: 1158px;
-}
-.produto{
-    border:solid black 1px;
-    width: 190px;
-    height: 180px;
-    max-width: max-content;
-    
+    position: relative;
+    top:-30%;
+    bottom: 0%;
 }
 
 .maisprodutos_linha{
@@ -29,3 +33,53 @@
     gap:1%;
     max-width: max-content;
 }
+
+.produto{
+    display:grid;
+    border:solid #F5F5F5 1px;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    width: 190px;
+    height: 180px;
+    max-width: max-content;
+    -webkit-line-clamp: 2;  
+    -webkit-box-orient: vertical;  
+    
+}
+.invisivel{
+    opacity: 0%;
+} */
+
+#banner_img{
+    margin:0px;
+    width: 80%;
+    height: 75%;
+    max-height: max-content;
+    border:solid black 2px;
+}
+
+.produto_img{
+    width: 190px;
+    height: 180px;
+    border:solid #F5F5F5 1px;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+}
+
+.container{
+    display: grid;
+    text-align: center;
+}
+.banner{}
+
+
+.mais_produtos_linha{}
+
+.produto{
+    display: grid;
+    
+}
+
+
+.invisivel{opacity: 0%;}
+
