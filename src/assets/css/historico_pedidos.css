@@ -17,13 +17,13 @@
     grid-template-columns: auto auto auto auto;
     align-items: center;
     align-content: center;
-    max-width: 40%;
-    left: 25%;
+    max-width: 50%;
+    left: 26%;
     margin-bottom: 1%;
 }
 
 .links{
-    font-size: 120%;
+    font-size: 130%;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
@@ -42,7 +42,7 @@
 .frame_principal {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
     background-color: white;
-    width: 50%;
+    width: 60%;
     height: 120px;
     position: relative;
     left: 20%;
@@ -59,6 +59,7 @@
     grid-template-columns: auto auto auto auto auto;
     position: relative;
     left: -1%;
+    gap: 5%;
 }
 
 .produto-img {
@@ -67,8 +68,9 @@
     grid-row-end: 2;
     width: 100px;
     height: 80px;
-    top: 20%;
-    left: 15%;
+    top: 30%;
+    left: 30%;
+    margin-left: 5px;
 }
 
 .nome-produto{
@@ -76,7 +78,6 @@
     grid-column-start: 2;
     grid-row-start: 1;
     font-size: 120%;
-
 }
 
 .data-compra{
@@ -84,6 +85,8 @@
     grid-column-start: 3;
     grid-row-start: 1;
     font-size: 120%;
+    width: 200%;
+    left: -10%;
 }
 
 .preco-compra{
@@ -97,17 +100,15 @@
     position: relative;
     grid-column-start: 2;
     grid-row-start: 2;
-    left: 2%;
     font-size: 90%;
+    width: 200px;
 }
-
 
 .data-titulo{
     position: relative;
     grid-column-start: 3;
     grid-row-start: 2;
     font-size: 90%;
-    left: 16%;
 }
 
 .preco-titulo{
@@ -115,7 +116,6 @@
     grid-column-start: 4;
     grid-row-start: 2;
     font-size: 90%;
-
 }
 
 .trocar-devolver{
@@ -138,7 +138,7 @@
     background-color: #16A18E;
     color: white;
     display: flex;
-    width: 12%;
+    width: 13%;
     height: 10%;
     border-radius: 5px;
     padding: 16px 48px;
@@ -146,6 +146,6 @@
     align-items: center;
     gap: 10px;
     margin-top: 3%;
-    left: 58%;
+    left: 67%;
     margin-bottom: 5%;
 }
