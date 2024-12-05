@@ -33,10 +33,10 @@
     
 }
 
-#entregue {
-    color: #16A18E;
+#em_rota {
     opacity: 1;
     text-decoration: underline solid;
+    color: #16A18E;
 }
 
 .frame_principal {
@@ -57,8 +57,8 @@
     display: grid;
     grid-template-rows: auto auto; 
     grid-template-columns: auto auto auto auto auto;
-    position: relative;
-    left: -1%;
+    column-gap: 3%;
+
 }
 
 .produto-img {
@@ -118,9 +118,9 @@
 
 }
 
-.trocar-devolver{
+.em_rota{
     position: relative;
-    color: red;
+    color: black;
     grid-column-start: 5;
     grid-row-start: 1 2;
     font-size: 90%;
