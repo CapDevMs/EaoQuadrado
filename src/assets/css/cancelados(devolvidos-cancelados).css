@@ -118,9 +118,9 @@
     font-size: 90%;
 }
 
-.cancelar{
+.status{
     position: relative;
-    color: red;
+    color: black;
     grid-column-start: 5;
     grid-row-start: 1 2;
     font-size: 90%;
@@ -130,7 +130,7 @@
     line-height: 21px;
     text-decoration: none;
     top: 30%;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 35px;
 }
 
