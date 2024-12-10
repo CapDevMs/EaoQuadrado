@@ -1,3 +1,7 @@
+<?php
+require_once('./config/DotEnvEnvironment.php');
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
