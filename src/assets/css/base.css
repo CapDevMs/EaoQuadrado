@@ -3,6 +3,8 @@
 * {
     width: 100%;
     margin: 0;
+    font-family: 'Poppins';
+    /* color: #7D8184; */
 }
 /* Css do Header */
 .header {
@@ -56,7 +58,7 @@
     margin: 20px 7px;
 
     /* Title/12PX Regular */
-    font-family: Poppins;
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -92,6 +94,12 @@ main {
 .container {
     width: 95%;
     margin: auto;
+}
+.container-main{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
 }
 
 /* Css do Footer */
