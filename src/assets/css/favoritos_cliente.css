@@ -82,6 +82,11 @@ main {
     padding-top: 5px;
 }
 
+.frame .mi-cont-tittle {
+    padding-left: 60px;
+    padding-top: 25px;
+}
+
 .edit-perfil {
     padding-left: 60px;
     padding-top: 30px;
