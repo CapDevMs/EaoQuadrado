@@ -1,5 +1,4 @@
 <?php
-require_once('../../config/DotEnvEnvironment.php');
 include('../../config/funcoes.php');
 ?>
 <!DOCTYPE html>

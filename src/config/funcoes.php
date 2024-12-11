@@ -1,11 +1,12 @@
 <?php
+require_once('../../config/DotEnvEnvironment.php');
 
 function get_base_url() {
     return $_ENV['APP_URL'];
 }
 
 function get_header(){
-    include_once('../../components/header.html');
+    include_once('../../components/header.php');
 }
 
 function get_footer(){
