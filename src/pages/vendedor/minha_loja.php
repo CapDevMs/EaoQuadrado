@@ -7,7 +7,7 @@ include('../../config/funcoes.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php get_css(['minha_loja','admin']) ?>
-    <title>Eao Quadrado</title>
+    <title><?= get_app_name() ?></title>
 </head>
 <body>
     <?php get_header() ?>

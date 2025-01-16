@@ -1,7 +1,10 @@
 <?php
 
+require_once('database-config.php');
+
+
 try {
-    $con = new mysqli($_ENV['HOST'], $_ENV['USERNAME'], $_ENV['PASSWORD'], $_ENV['DATABASE']);
+    $con = new mysqli($host, $username, $password, $database);
 } catch (\Throwable $th) {
     echo $th;
     exit;

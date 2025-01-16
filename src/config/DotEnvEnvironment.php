@@ -18,4 +18,4 @@ class DotEnvEnvironment
    }
 }
 
-(new DotEnvEnvironment)->load($_SERVER['DOCUMENT_ROOT'] . '/EaoQuadrado/src');
+(new DotEnvEnvironment)->load($_SERVER['DOCUMENT_ROOT'] . '/../EaoQuadrado/sistema/src');
