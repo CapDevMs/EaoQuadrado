@@ -312,7 +312,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 90%;  
     line-height: 1.5;  
@@ -330,7 +330,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 90%;  
     line-height: 1.5;  
@@ -349,7 +349,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 90%;  
     line-height: 1.5;  
@@ -366,7 +366,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 70%;  
     line-height: 1.5;  
@@ -381,7 +381,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 90%;  
     line-height: 1.5;  
@@ -443,22 +443,25 @@ tbody {
     place-self: start;
     grid-template-columns: auto auto;
 
+} 
+
+.menu-lateral {
+    display: none;
 }
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    min-width: 100vw;
-    width: 100;
-}
+
 
 
 @media (max-width: 1023px){
+    
+  
+    body {
+        margin: 0;
+    }
 
     footer {
 
         width: 100%;
-        background-color: blue;
+        background-color: red;
 
     }
 
@@ -469,15 +472,64 @@ body{
 
     .p-40{
         font-size: 10px;
-        max-width: 50px;
+        /* max-width: 50px; */
+        text-align: center;
+    }
+
+    .p-30{
+        font-size: 10px;
+        /* max-width: 50px; */
+        text-align: center;
     }
     
+    .p-20{
+        font-size: 10px;
+        /* max-width: 50px; */
+        text-align: center;
+    }
+
+    .p-10{
+        font-size: 10px;
+        /* max-width: 50px; */
+        text-align: center;
+    }
+
+    .img-historico{
+        width: 40px;
+        padding: 10px;
+        align-self: center;
+
+    }
+
+
     .menu-lateral{
         display: none;
     }
 
     .menu-aside{
         display: none;
+    }
+
+    .conteudo-main {
+        padding: 0px;
+    }
+
+    .header{
+        display: none;
+    }
+
+
+    .conteudo{
+        grid-template-columns: 320px auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+       
+    }
+
+    .cabecalho-item{
+        font-size: 12px;
+        font-weight: 600;
     }
 
 }
