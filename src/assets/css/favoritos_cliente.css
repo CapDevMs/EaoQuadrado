@@ -64,6 +64,8 @@ main {
 }
 
 .frame {
+    display: grid;
+    grid-template-rows: 50px 200px 200px 200px;
     position: relative;
     grid-column: 2 / 3;
     border: 1px solid gray;
@@ -93,25 +95,33 @@ main {
     width: 530px;
 }
 
-.but-photo {
+.containe {
     position: relative;
-    padding: 5px;
-    background-color: #49BF9E;
+    display: inline-block;
+}
+
+#edit-favorito {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    background-color: rgb(230, 230, 230);
+    padding: 30px;
+    /* left: 500px; */
+}
+
+.but-car {
+    position: absolute;
+    top: 10px;
+    background-color: transparent;
     border-radius: 20px;
     border-color: transparent;
-    height: 50px;
-    width: 50px;
-    left: 110px;
-    bottom: 150px;
+    height: 40px;
+    width: 40px;
 }
 
-#edit-photo {
-    position: relative;
-    background-color: rgb(230, 230, 230);
-    border-radius: 50px;
-    padding: 30px;
-    height: 200px;
-    width: 180px;
-    left: 165px;
+.produto-favorito {
+    /* display: grid;
+    grid-template-columns: auto; */
+    width: fit-content;
+    height: fit-content;
 }
-
