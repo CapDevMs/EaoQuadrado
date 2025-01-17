@@ -1,0 +1,15 @@
+.container{
+    margin:0;
+}
+.trail-1{
+    margin-left:5%;
+    opacity: 50%;
+    color: gray;
+    text-decoration: underline white;
+}
+
+.subtitle-1{
+    margin:0;
+    margin-left: 20%;
+    text-decoration: underline gray;
+}
