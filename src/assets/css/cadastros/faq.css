@@ -1,9 +1,41 @@
 #menu{
-color: blue;
-
+    margin-left: 6%;
+    width: 94%;
+    margin-top: 4%;
+    font-size: 17px; 
+}
+    
+#sub-menu {
+    margin-left: 6%;
+    margin-top: 4%;
+    width: 94%;
+    font-weight: bold;
+    font-size: 35px; 
 }
 
-#submenu {
-    background-color: rgb(197, 27, 27);
+#texto{
+    margin-left: 6%;
+    width: 90%;
+    margin-top: 2%;
+    font-size: 23px;
+    text-align: left; 
+}
 
+#retorno{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 15%;
+    height: 10%;
+    margin-left: 40%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+button:hover {
+    opacity: 0.9;
 }
