@@ -1,0 +1,153 @@
+.roadmap {
+    width: 300px;
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+    left: 50px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+
+.status-four{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    align-content: center;
+    max-width: 50%;
+    left: 26%;
+    margin-bottom: 1%;
+}
+
+.links{
+    font-size: 130%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none;
+    opacity: 0.5;
+    color: black;
+    
+}
+
+#preparando{
+    color: #16A18E;
+    opacity: 1;
+    text-decoration: underline solid;
+}
+
+.frame_principal {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    width: 60%;
+    height: 120px;
+    position: relative;
+    left: 20%;
+    top: 20%;
+    border-radius: 20px;
+    margin-bottom: 0.9%;
+}
+
+.container-historico {
+    align-items: center;
+    align-content: center;
+    display: grid;
+    grid-template-rows: auto auto; 
+    grid-template-columns: auto auto auto auto auto;
+    position: relative;
+    left: -1%;
+    gap: 5%;
+}
+
+.produto-img {
+    position: relative;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    width: 100px;
+    height: 80px;
+    top: 30%;
+    left: 30%;
+    margin-left: 5px;
+}
+
+.nome-produto{
+    position: relative;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size: 120%;
+}
+
+.data-compra{
+    position: relative;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    font-size: 120%;
+    width: 200%;
+    left: -10%;
+}
+
+.preco-compra{
+    position: relative;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    font-size: 120%;
+}
+
+.produto-titulo{
+    position: relative;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 90%;
+    width: 200px;
+}
+
+.data-titulo{
+    position: relative;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    font-size: 90%;
+}
+
+.preco-titulo{
+    position: relative;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    font-size: 90%;
+}
+
+.status{
+    position: relative;
+    color: black;
+    grid-column-start: 5;
+    grid-row-start: 1 2;
+    font-size: 90%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    text-decoration: none;
+    top: 30%;
+    margin-left: 11px;
+    margin-right: 35px;
+}
+
+.retornar {
+    position: relative;
+    border: none;
+    background-color: #16A18E;
+    color: white;
+    display: flex;
+    width: 13%;
+    height: 10%;
+    border-radius: 5px;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 3%;
+    left: 67%;
+    margin-bottom: 5%;
+}
