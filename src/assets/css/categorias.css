@@ -1,0 +1,114 @@
+.marca_preco{
+    display: grid;
+    grid-row: auto auto auto auto;
+    grid-column: auto auto;
+} 
+
+
+.marcas{
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 6%;
+    margin-left: 1.5%;
+    max-height: 25px;
+    max-width: 80px;
+}
+
+.search-bar-marcas {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 34px;
+    background-color: #BFC2C5;
+    border: none;
+    border-radius: 12px;
+    height: 40px;
+    max-width: 237px;
+    margin-top: 0.25%;
+    margin-left: 1.5%;
+}
+
+.search-marca {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    position: relative;
+    left: 12%;
+    top: -37px;
+
+    background-image: url("../img/pesquisar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    border: none;
+    width: 34px;
+    height: 34px;
+
+
+}
+
+.preco{
+    grid-column: 1;
+    grid-row: 3;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    max-width: 80px;
+    left: 6%;
+    margin-bottom: 1%;
+}
+
+.label-mim_max{
+    display: block;
+    grid-row: 4;
+    margin-left: 5%;
+    position: relative;
+}
+
+#min {
+    grid-column: 1;
+    margin-left: 3.3%;
+
+}
+#max {
+    grid-column: 2;
+    margin-left: 4%;
+}
+
+.min_max{
+    position: relative;
+
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
+
+}
+
+#minimo {
+    display: block;
+    grid-row: 4;
+    grid-column: 1;
+    margin-left: 2%;
+}
+
+#maximo {
+    display: block;
+    grid-row-start: 4;
+    grid-column: 2;
+    margin-left: 1%;
+    left: 10%;
+    top: -27px;
+
+}
