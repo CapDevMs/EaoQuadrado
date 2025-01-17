@@ -6,7 +6,7 @@ main {
     grid-template-columns: 20% 80%;
 }
 .container {
-    width: 95%;
+    width: 80%;
     margin: auto;
 }
 .banner img {
@@ -30,7 +30,6 @@ input {
     text-indent: 16px;
 }
 input[type='text'], input[type='email'] {
-    opacity: 0.5;
     height: 50px;
 }
 .buttons {
@@ -56,4 +55,8 @@ input[type='text'], input[type='email'] {
 .form-group-radio {
     display: grid;
     grid-template-columns: auto auto;
+}
+.title {
+    font-size: 20px;
+    color: #16A18E;
 }

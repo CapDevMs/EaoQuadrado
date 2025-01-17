@@ -1,44 +1,33 @@
 <?php
-include('../../config/funcoes.php');
+    include('../../config/funcoes.php');
+    $appName = get_app_name();
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['minha_loja','admin']) ?>
-    <title><?= get_app_name() ?></title>
+    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <?php get_css(['vendedor/minha_loja']) ?>
 </head>
 <body>
     <?php get_header() ?>
 
     <main>
         <asside class="sidebar">
-            <h2>Gerenciar Minha Conta</h2> 
-            <ul> 
-                <li><a href="#">Meu Perfil</a></li> 
-                <li><a href="#" class="active">Minha Loja</a></li> 
-                <li><a href="#">Cadastrar Produtos</a></li> 
-            </ul>
-            
-            <h2>Vendas</h2> 
-            <ul> 
-                <li><a href="#">Histórico de Vendas</a></li> 
-                <li><a href="#">Trocas/Cancelamentos</a></li> 
-                <li><a href="#">Gerenciamento de estoque</a></li> 
-            </ul>
+            <!-- Local para receber o Sidebar (Menu lateral) -->
         </asside> 
         <section class="container">
-            <h1>Edite Sua Loja</h1> 
+            <h1 class="title">Edite Sua Loja</h1> 
             
             <div class="banner">
                 <img src="../../assets/img/Banner_loja.png" alt="Banner da Loja"> 
             </div>
 
-            <form class="form">
+            <form class="form" method="post" action="">
                 <div class="form-group">
                     <label>Nome da Loja</label> 
-                    <input type="text" value="Studio"> 
+                    <input type="text" value="Estudio Center"> 
                 </div>
                 <div class="form-group">
                     <label>Telefone</label> 
@@ -46,7 +35,7 @@ include('../../config/funcoes.php');
                 </div>
                 
                 <div class="form-group">
-                    <label>Email</label> 
+                    <label>E-mail</label> 
                     <input type="email" value="studio@gmail.com"> 
                 </div>
                 <div class="form-group">
@@ -77,9 +66,9 @@ include('../../config/funcoes.php');
                 
                 <div class="buttons">
                     <button type="button" class="btn-cancel">Cancelar</button> 
-                    <button type="submit" class="btn-save">Salvar Mudanças</button> 
+                    <button onclick="teste()" class="btn-save">Salvar Mudanças</button> 
                 </div>
-            </form> 
+            </form>
         </section>
     </main>
 
