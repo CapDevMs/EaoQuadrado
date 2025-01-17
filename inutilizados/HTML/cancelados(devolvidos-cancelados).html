@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/cadastro_cliente/style.css">
+    <link rel="stylesheet" href="../assets/css/cancelados(devolvidos-cancelados).css">
+    <link rel="stylesheet" href="../assets/css/base.css">
     <title>Eao Quadrado</title>
 </head>
 <body>
@@ -12,32 +12,32 @@
         <nav class="navbar">
             <div class="navbar-logo">
                 <a href="#">
-                    <img src="./assets/img/logo.png" class="logo" alt="Logo">
+                    <img src="../assets/img/logo.png" class="logo" alt="Logo">
                 </a>
             </div>
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="O que você procura hoje?">
-                <img src="./assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
+                <img src="../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
             </div>
             <ul class="menu-opcoes">
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/pessoa.svg" alt="Pessoa">
+                        <img src="../assets/img/pessoa.svg" alt="Pessoa">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/carrinho.svg" alt="Carrinho">
+                        <img src="../assets/img/carrinho.svg" alt="Carrinho">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/informacao.svg" alt="Informações">
+                        <img src="../assets/img/informacao.svg" alt="Informações">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/suporte.svg" alt="suporte">
+                        <img src="../assets/img/suporte.svg" alt="suporte">
                     </a>
                 </li>
             </ul>
@@ -45,70 +45,73 @@
     </header>
 
     <main>
-        <div class="roadmap">Home / Cadastro de Cliente</div>
-            <div class="register_client">
-                    <p>Cadastro de Cliente</p>
-                    <img src="../src/assets/img/foto_cliente.png" alt="foto do cliente">
+            <div class="roadmap">Home / Historico de Pedidos</div>
+            <div class="status-four">
+                <a href="../pages/cancelados(preparando).html" class="links" >Preparando</a>
+                <a href="../pages/cancelados(em_andamento).html" class="links" >Em Andamento</a>
+                <a href="../pages/historico_pedidos.html" class="links" >Entregue</a>
+                <a href="#" class="links" id="preparando">Devolvidos/Cancelados</a>
+            </div>
 
-                    <div class="names-container">
-                        <h2>Nome</h2>
-                        <input type="text" name="Nome" class="input1-container" placeholder="John" required>
-                        <h2>Sobrenome</h2>
-                        <input type="text" name="Sobrenome" class="input1-container" placeholder="Doe" required>
-                    </div>
-
-                <h2 class="subtitle">Data de Nascimento</h2>
-                <div class="date-container">
-                    <div class="counter">
-                        <input type="date" class="dia-mes" max="31" value="1" required></input>
-                    </div>
-
-                </div>
-
-                <div class="inform1-container">
-                    <h2>CPF</h2>
-                    <input type="text" name="cpf" class="input2-container" placeholder="000.000.000-00" required>
-                    <h2>E-mail</h2>
-                    <input type="text" name="email" class="input2-container" placeholder="johndoe@gmail.com" required>
-                    <h2>Número de Telefone</h2>
-                    <input type="text" name="telefone" class="input2-container" placeholder="(67) 99999-9999" required>
-                </div>
-
-                <div class="inform2-container">
-                    <h2>CEP</h2>
-                    <input type="text" name="cep" class="input3-container" placeholder="7900000" required>
-                    <h2>Endereço</h2>
-                    <input type="text" name="endereco" class="input3-container" placeholder="R.cebolinha" required>
-                    <h2>Bairro</h2>
-                    <input type="text" name="rua" class="input3-container" placeholder="Pioneiro" required>
-                    <h2>Complemento (opcional)</h2>
-                    <input type="text" name="Complemento" class="input3-container" placeholder="">
-                </div>
-
-                <div class="password-container">
-                    <h2>Senha</h2>
-                    <input type="text" class="input1-container" placeholder="*********" required>
-                    <h2>Confirmar Senha</h2>
-                    <input type="text" class="input1-container" placeholder="*********" required>
-                </div>
-
-                <div class="terms-container">
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="termos" class="checkbox" id="confirmCheckbox" required>
-                        <label for="confirm_termos">Li e concordo com os <a class="term-link" href="#">Termos de Uso</a></label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="politicas" class="checkbox" id="confirmCheckbox" required>
-                        <label for="confirm_politica">Li e concordo com as <a class="term-link" href="#">Politicas da Empresa</a></label>
-                    </div>
-                </div>
-
-                <div class="buttons-container">
-                    <button class="button-cancel">Cancelar</button>
-                    <button class="button-confirm">Registrar</button>
+            <div class="frame_principal">
+                <div class="container-historico">
+                    <img src="../assets/img/teclado.png" alt="imagem do produto" class="produto-img">
+                    <p class="nome-produto">Nome do Produto</p>
+                    <p class="produto-titulo">Teclado Gamer</p>
+                    <p class="data-compra">Data da Compra</p>
+                    <p class="data-titulo">22/09/2024</p>
+                    <p class="preco-compra">Preço</p>
+                    <p class="preco-titulo">R$259,90</p>
+                    <a class="status" href="#">Devolvido</a>
                 </div>
             </div>
-    
+            <div class="frame_principal">
+                <div class="container-historico">
+                    <img src="../assets/img/caixa_de_lapis.png" alt="imagem do produto" class="produto-img">
+                    <p class="nome-produto">Nome do Produto</p>
+                    <p class="produto-titulo">Caixa de Lapis 12 Cores</p>
+                    <p class="data-compra">Data da Compra</p>
+                    <p class="data-titulo">22/09/2024</p>
+                    <p class="preco-compra">Preço</p>
+                    <p class="preco-titulo">R$259,90</p>
+                    <a class="status" href="#">Cancelado</a>
+                </div>
+            </div>
+            <div class="frame_principal">
+                <div class="container-historico">
+                    <img src="../assets/img/controle_ps5.png" alt="imagem do produto" class="produto-img">
+                    <p class="nome-produto">Nome do Produto</p>
+                    <p class="produto-titulo">Controle de PS5</p>
+                    <p class="data-compra">Data da Compra</p>
+                    <p class="data-titulo">22/09/2024</p>
+                    <p class="preco-compra">Preço</p>
+                    <p class="preco-titulo">R$259,90</p>
+                    <a class="status" href="#">Devolvido</a>
+                </div>
+            </div>
+            <div class="frame_principal">
+                <div class="container-historico">
+                    <img src="../assets/img/acer_nitro.png" alt="imagem do produto" class="produto-img">
+                    <p class="nome-produto">Nome do Produto</p>
+                    <p class="produto-titulo">Notebook Acer Nitro V15</p>
+                    <p class="data-compra">Data da Compra</p>
+                    <p class="data-titulo">22/09/2024</p>
+                    <p class="preco-compra">Preço</p>
+                    <p class="preco-titulo">R$259,90</p>
+                    <a class="status" href="#">Cancelado</a>
+                </div>
+            </div>
+
+            <button class="retornar">Retorne ao Perfil</button>
+
+            
+
+
+
+
+
+
+
     </main>
 
     <footer>
