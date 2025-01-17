@@ -1,0 +1,134 @@
+.grid_externo {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 27%;
+    position: relative; 
+    left: 20%;
+}
+
+.frame1 {
+    grid-column-start: 1;
+    display: grid;
+    grid-template-columns: auto 10%;
+    grid-template-rows: auto auto;
+    background-color: #F5F5F5;
+
+    width: 60%;
+    height: 170%;
+    border-radius: 30px;
+
+    position: relative;
+}
+
+.frame1 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    max-height: 50px;
+    max-width: 250px;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    position: relative;
+    left: 170px;
+    top: 40px; 
+}
+
+.frame1 p {    
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;  
+    -webkit-line-clamp: 2;   
+    -webkit-box-orient: vertical;  
+    max-width: 90%;   
+    line-height: 1.5;  
+    max-height: 3em;  
+    font-family: 'Poppins', sans-serif }
+ 
+
+
+    /* width: 300px;
+
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif; */
+
+
+
+.foto {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 69.605px;
+    height: 65px;
+    position: relative;
+    left: 70px;
+    top: 30px;
+    
+}
+
+.estrelinha5 {
+    max-width: 100px;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    position: relative;
+    right: 35px;
+    top: 20px;
+}
+
+.estrelinha4 {
+    max-width: 100px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    position: relative;
+    right: 35px;
+    top: 20px;
+}
+
+.frame2 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    max-height: 50px;
+    max-width: 250px;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    position: relative;
+    left: 170px;
+    top: 40px;
+    
+}
+/* 
+.frame2 p {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 14px;
+    margin-left: 87px;
+    max-width: 1000px;
+}
+
+.frame3 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    max-height: 50px;
+    max-width: 250px;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    position: relative;
+    left: 170px;
+    top: 40px;
+    
+}
+
+.frame3 p {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 14px;
+    margin-left: 87px;
+    max-width: 1000px;
+} */
