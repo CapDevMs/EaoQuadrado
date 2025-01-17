@@ -12,6 +12,7 @@ div {
     font-size: 20px;
     width: 17%;
     white-space: nowrap; 
+    display: inline; 
 }
 
 .sub-menu a, .sub-menu h6 {
@@ -163,6 +164,69 @@ button:hover {
 }
 
 
+@media (max-width: 768px) {
+    #sub_menu{
+        visibility: hidden;
+    }
+
+    #titulo {
+        color: rgb(0, 237, 204); 
+        margin-left: 4%;
+        margin-top: 6%;
+    }
+
+    #menu-lateral h3 {
+        visibility: hidden;
+    }
+
+    #menu-lateral h1 {
+        visibility: hidden;
+    }
+
+    #painel {
+        width: 90%; 
+        grid-column: 2; 
+        margin-left: 4%; 
+        margin-bottom: 10%;
+        margin-top: -27%;
+    }
+    
+    form {
+        width: 93%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+    label {
+        color: black;
+    }
+
+    textarea,
+    input[type="number"],
+    input[type="file"] {
+        color: #2e8b57; /* SeaGreen */
+    }
+
+    button {
+        color: #fff; /* Cor do texto nos botões permanece branco */
+    }
+
+    button#cancelar {
+        color: #fff; /* Cor do texto no botão cancelar permanece branco */
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .linha-horizontal {
+        color: #4169e1; /* RoyalBlue */
+    }
+
+    .botoes-container {
+        color: #9932cc; /* DarkOrchid */
+    }
+}
 
 
 
