@@ -85,7 +85,7 @@
                             <button type="button" class="btn-cancel">Cancelar</button>
                         </div>
                         <div class="col-3 col-sm-6">
-                            <button onclick="teste()" class="btn-save">Salvar Mudanças</button> 
+                            <button class="btn-save">Salvar Mudanças</button> 
                         </div>
                     </div>
                 </form>
