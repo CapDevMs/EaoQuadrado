@@ -33,7 +33,7 @@ h6, span{
 #imagem{
     display: inline-block; 
     width: 40%;  
-    vertical-align: -100px;  
+    vertical-align: -10px;  
     margin-left: 5%;
 }
 
@@ -56,4 +56,38 @@ h6, span{
     margin-right: 8%;
     width: 88%;
     margin-top: 7%;
+}
+
+
+
+@media (max-width: 1400px) {
+    #texto {
+        width: 80%; 
+        display: block; 
+        text-align: left; 
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    #título {
+        font-size: 15px; 
+    }
+
+    #descricao {
+        font-size: 80%; 
+    }
+
+    #imagem {
+        width: 80%; 
+        display: block; 
+        margin-right: 4%;
+    }
+    
+
+}    
+
+@media (max-width: 768px) {
+    #sub-menu{
+        display: none;
+    }
 }
