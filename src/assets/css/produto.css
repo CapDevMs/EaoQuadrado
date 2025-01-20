@@ -5,32 +5,43 @@
     font-size: 65%;
     }
 
+.grid-conteudo{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-left: 10%;
+    
+}
 
 .grid-produto{
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    column-gap: 10px;
+    grid-template-columns: repeat(3,auto);
+    width: 100%;
+    
 
 }
-.grid-small-img{
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
-    display: grid;
-    grid-template-rows: repeat(3,auto);
 
-}
 
 .img-small{
     background-color: rgb(239, 239, 239);
-    width: 30%;
-    margin: 1%;
+    margin-bottom: 1%;
+    width: 25%;
+    
 
 }
 
 .img-large{
+    /* position: relative; */
     background-color: rgb(239, 239, 239);
-    width: 100%;
+    width: 90%;
+    /* left: -73%; */
     
     
+    
+}
+
+.descricao{
+    padding-top: 1%;
+
 }
