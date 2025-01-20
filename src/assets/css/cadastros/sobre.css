@@ -1,6 +1,6 @@
 #sub-menu{
-    margin-left: 3.5%;
-    width: 97%;
+    margin-left: 4.5%;
+    width: 95%;
 }
 
 h6, span{
@@ -11,11 +11,11 @@ h6, span{
 }
 
 #texto{
-    margin-left: 4%;
+    margin-left: 5%;
     width: 40%;
     display: inline-block; 
     margin-top: 4%;
-    font-size: 120%; 
+    font-size: 140%; 
 }
 
 #título{
@@ -33,6 +33,27 @@ h6, span{
 #imagem{
     display: inline-block; 
     width: 40%;  
-    vertical-align: -170px;  
+    vertical-align: -100px;  
     margin-left: 5%;
+}
+
+#comparativo{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 3%;
+}
+
+#banner{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 7%;
+}
+
+#banner2{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 7%;
 }
