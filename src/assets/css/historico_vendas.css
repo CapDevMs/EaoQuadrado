@@ -371,7 +371,9 @@ h1 {
     max-width: 70%;  
     line-height: 1.5;  
     max-height: 3em;
-
+    margin-left: 140px;
+    margin:  0px;
+    
 }
 
 .p-50 {
@@ -387,6 +389,8 @@ h1 {
     line-height: 1.5;  
     max-height: 3em;
     text-align: center;
+    padding-top: 18px;
+   
     
 
 } 
@@ -397,7 +401,7 @@ h1 {
 
     width: 200px;
     word-wrap: break-word;
-    
+      
 }   
 
 
@@ -437,6 +441,7 @@ tbody {
     border-radius: 20px;
     margin-top: 15px;
     box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
+    align-items: center;
 }
 .card-items-inicio {
     display: grid;
