@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/devolucao.css">
+    <link rel="stylesheet" href="../assets/css/historico_pedidos.css">
     <link rel="stylesheet" href="../assets/css/base.css">
     <title>Eao Quadrado</title>
 </head>
@@ -46,13 +46,22 @@
 
     <main>
 
-        <div class="frame-maior">
-            <div class="frame-menor">
-                <img src="../assets/img/foto-perfil.png" alt="pessoa" class="foto-perfil">
-                <div class="status-compra" id="troca"></div>
-                <div class="linha-corte"></div>
+        <div class="container">
+            <div class="frame_principal">
+                <div class="container-historico">
+                    <img src="../assets/img/quadro_branco.png" alt="imagem do produto" class="produto-img">
+                    <p class="nome-produto">Nome do Produto</p>
+                    <p class="produto-titulo">Quadrado Branco</p>
+                    <p class="data-compra">Data da Compra</p>
+                    <p class="data-titulo">22/09/2024</p>
+                    <p class="preco-compra">Preço</p>
+                    <p class="preco-titulo">R$259,90</p>
+                    <a class="trocar-devolver" href="#">Trocar/Devolver</a>
+                </div>
             </div>
-          </div>
+
+
+        </div>
     </main>
 
     <footer>
