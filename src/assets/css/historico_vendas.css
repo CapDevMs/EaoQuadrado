@@ -461,6 +461,19 @@ tbody {
     margin: 0px;
 }
 
+.nomeP{
+    color: #000;
+    font-size: 16px;
+}
+
+.clienteP{
+    color: #636363;
+}
+
+
+
+
+
 @media (max-width: 768px){
     
   
