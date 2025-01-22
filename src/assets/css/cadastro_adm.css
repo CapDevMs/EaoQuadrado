@@ -31,7 +31,7 @@
     font-size: 24px;
     font-style: normal;
     position: relative;
-    width: 250px;
+    width: 350px;
     left: 46px;
     top: 26px;
     margin-bottom: 36px;
@@ -39,7 +39,7 @@
 
 .register_client img {
     position: relative;
-    margin-left: 100px;
+    margin-left: 38%;
     width: 257.75px;
     height: 259px;
 }
@@ -194,9 +194,9 @@
     display: grid;
     grid-template-rows: auto auto;
     gap: 20px; 
-    top: -980px;
-    left: 600px;
     max-width: 400px;
+    left: 55%;
+    bottom: 54.5%;
 }
 
 .password-container h2 {
@@ -226,24 +226,30 @@
 
 .terms-container {
     position: relative;
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 20px; 
     max-width: 450px;
-    top: -895px;
-    left: 640px;
+    left: 55%;
+    bottom: 64.35%;
+    color: #7D8184;
+}
+
+.terms-container h1{
+    color: black;
+    font-weight: 400;
+    font-size: large;
+    margin-bottom: 5%;
 }
 
 .checkbox-container {
     display: flex;
     align-items: center;
     border-radius: 50px;
+    margin-bottom: 6%;
 }
 .checkbox {
     appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid black;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #7D8184;
     border-radius: 50%;
     cursor: pointer;
     outline: none;
@@ -251,39 +257,11 @@
     margin-right: 10px;
 }
 
-.term-link {
-    text-decoration: none;
-    color: #00BFA5;
-}
-
 .checkbox:checked {
     background-color: black; 
 }
 
-.buttons-container {
-    display: grid;
-    grid-template-columns: auto, auto;
-    column-gap: 0px;
-    position: relative;
-    max-width: 265px;
-    column-gap: 0cm;
-    top: -870px;
-    left: 695px;
-}
-
-.button-cancel {
-    grid-column-start: 1;
-    color: white;
-    width: 113px;
-    height: 39px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    background-color: #F44336;
-}
-
 .button-confirm {
-    grid-column-start: 2;
     color: white;
     width: 113px;
     height: 39px;
@@ -291,58 +269,4 @@
     border-radius: 5px;
     border: none;
     background-color: #00BFA5;
-}
-
-/* Css do Footer */
-footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    height: 280px;
-    width: 100%;
-    background-color: #000;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.footer-links {
-    display: flex;
-    width: 660px;
-    justify-content: center;
-    gap: 20px;
-    align-items: flex-start;
-    margin: 34px 0 auto;
-}
-.lista {
-    display: flex;
-    flex-direction: column;
-    width: 207px;
-    gap: 24px;
-    align-items: flex-start;
-    color: #FAFAFA;
-    margin-left: 50px;
-}
-.footer-links-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.footer-links-title > p {
-    color: #FAFAFA;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px; /* 175% */
-
-    margin-left: 40px;
-}
-.footer-links-item > a {
-    color: #FAFAFA;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 184.615% */
 }
