@@ -117,3 +117,26 @@ h2{
     background-color: #000000;
     border-radius: 20%;
 }
+
+ 
+.quantidade{
+    display: inline;
+    width: 25px;
+}
+#botao_qtd{
+    width: 92px;
+    height: 27px;
+}
+ 
+#menos{
+    position: relative;
+    left: 5px;
+}
+#mais{
+    position: relative;
+    right: 5px;
+   
+    background-color: #16A18E;
+    color: white;
+ 
+}
