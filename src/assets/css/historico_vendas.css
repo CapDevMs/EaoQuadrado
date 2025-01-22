@@ -309,7 +309,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 90%;  
     line-height: 1.5;  
@@ -324,7 +324,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 90%;  
     line-height: 1.5;  
@@ -340,7 +340,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 100%;  
     line-height: 1.5;  
@@ -355,7 +355,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 160px;  
     line-height: 1.5;  
@@ -371,7 +371,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;  
-    -webkit-line-clamp: 2;  
+    /* -webkit-line-clamp: 2;   */
     -webkit-box-orient: vertical;  
     max-width: 100%;  
     line-height: 1.5;  
@@ -429,7 +429,7 @@ tbody {
 
 } 
 
-.card-items{
+.cardItems{
     width: 100%;
     height: 100%;
     display: flex;
@@ -442,7 +442,12 @@ tbody {
     display: none;
 }
 
-
+.card-details{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #0f33d1;
+}
 
 @media (max-width: 768px){
     
