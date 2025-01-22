@@ -396,7 +396,7 @@ tbody {
 
 .cabecalho {
     display: grid;
-    grid-template-columns: 30% 20% 15% 15% 15%;
+    grid-template-columns: 30% 16% 10% 24% 10% 10%;
     place-content: center;
     place-items: center;
     border-radius: 20px;
@@ -411,7 +411,7 @@ tbody {
 
 .card {
     display: grid;
-    grid-template-columns: 30% 20% 15% 20% 15%;
+    grid-template-columns: 30% 16% 10% 24% 10% 10%;
     place-content: center;
     place-items: center;
     border: 1px solid lightgrey;
@@ -420,14 +420,9 @@ tbody {
     box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
     align-items: center;
 }
-.card-items-inicio {
-    display: grid;
-    place-self: start;
-    grid-template-columns: auto auto;
-    overflow: hidden;
-    max-width: 200px;
 
-} 
+
+
 
 .cardItems{
     width: 100%;
@@ -436,7 +431,14 @@ tbody {
     text-align: center;
     align-items: center;
     justify-content: center;
+    
 }
+
+.cardItems-inicio {
+    display: grid;
+    place-self: start;
+    grid-template-columns: auto auto;
+} 
 
 .menu-lateral {
     display: none;
@@ -447,6 +449,16 @@ tbody {
     overflow: hidden;
     transition: max-height 0.3s ease;
     color: #0f33d1;
+}
+
+.expanded{
+    max-height: max-content;
+}
+
+
+.p-data{
+    background-color: #BFC2C5;
+    margin: 0px;
 }
 
 @media (max-width: 768px){
