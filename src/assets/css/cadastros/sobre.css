@@ -52,21 +52,44 @@ h6, span{
 }
 
 
-#banner{
+
+#banner {
+    position: relative; 
     margin-left: 5%;
     margin-right: 8%;
     width: 88%;
     margin-top: 7%;
 }
 
-
-#links{
-    width: 3%;
-    display: inline-flex;
-    height: 3%;
-    margin-bottom: 15px;
-
+#banner img {
+    width: 100%;  
+    height: auto;  
 }
+
+#links {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);  /* Ajustei para que fique centralizado exatamente */
+    display: flex;
+    gap: 15px;  
+}
+
+#links a {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os ícones dentro dos links */
+    justify-content: center;
+}
+
+#links a img {
+    max-width: 100%;  /* Garante que a imagem não ultrapasse o tamanho do link */
+    height: auto;  /* Mantém a proporção original da imagem */
+    width: 60px;  /* Defina um valor base de largura */
+}
+
+
+
+
 
 @media (max-width: 1400px) {
     #texto {
@@ -90,12 +113,42 @@ h6, span{
         display: block; 
         margin-right: 4%;
     }
+
+    #links a img {
+        width: 50px;  
+    }
     
 
 }    
 
+@media (max-width: 1150px) {
+    #links a img {
+        width: 40px;  
+    }
+}
+
+
+@media (max-width: 1015px) {
+    #links a img {
+        width: 30px;  
+    }
+}
+
+
+@media (max-width: 850px) {
+    #links a img {
+        width: 25px;  
+    }
+}
+
+
 @media (max-width: 768px) {
     #sub-menu{
         display: none;
+    }
+
+    #links a img {
+        width: 20px;  
+        height: 20px;  
     }
 }
