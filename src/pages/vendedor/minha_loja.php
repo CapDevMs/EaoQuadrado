@@ -1,85 +1,95 @@
 <?php
-include('../../config/funcoes.php');
+    include('../../config/funcoes.php');
+    $appName = get_app_name();
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['minha_loja','admin']) ?>
-    <title><?= get_app_name() ?></title>
+    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <?php get_css(['vendedor/minha_loja']) ?>
 </head>
 <body>
     <?php get_header() ?>
 
-    <main>
-        <asside class="sidebar">
-            <h2>Gerenciar Minha Conta</h2> 
-            <ul> 
-                <li><a href="#">Meu Perfil</a></li> 
-                <li><a href="#" class="active">Minha Loja</a></li> 
-                <li><a href="#">Cadastrar Produtos</a></li> 
-            </ul>
-            
-            <h2>Vendas</h2> 
-            <ul> 
-                <li><a href="#">Histórico de Vendas</a></li> 
-                <li><a href="#">Trocas/Cancelamentos</a></li> 
-                <li><a href="#">Gerenciamento de estoque</a></li> 
-            </ul>
-        </asside> 
-        <section class="container">
-            <h1>Edite Sua Loja</h1> 
-            
-            <div class="banner">
-                <img src="../../assets/img/Banner_loja.png" alt="Banner da Loja"> 
+    <main class="row">
+        <asside class="sidebar col-3 col-sm-hidden">
+            <div class="container">
+                <span>Local para receber o sidebar</span>
             </div>
+        </asside> 
 
-            <form class="form">
-                <div class="form-group">
-                    <label>Nome da Loja</label> 
-                    <input type="text" value="Studio"> 
-                </div>
-                <div class="form-group">
-                    <label>Telefone</label> 
-                    <input type="text" value="(67) 992346578"> 
-                </div>
+        <section class="col-9 col-sm-12">
+            <div class="container">
+            <h1 class="title ptb-1 pb-5">Edite Sua Loja</h1> 
                 
-                <div class="form-group">
-                    <label>Email</label> 
-                    <input type="email" value="studio@gmail.com"> 
-                </div>
-                <div class="form-group">
-                    <label>Endereço</label> 
-                    <input type="text" value="Av. 15 de agosto, 506"> 
-                </div>
-                
-                <div class="form-group">
-                    <label>CEP</label> 
-                    <input type="text" value="79113560"> 
-                </div>
-                <div class="form-group">
-                    <label>Número</label> 
-                    <input type="text" value="506"> 
-                </div>
-                
-                <div class="form-check">
-                    <label>
-                        <input class="form-check-input" type="radio" name="document" checked> CPF 
-                    </label>
-                    <label>
-                        <input type="radio" class="form-check-input" name="document"> CNPJ 
-                    </label>
-                    <div class="form-group">
-                        <input type="text" placeholder="000.000.000-00"> 
+                <div class="row">
+                    <div class="col-12 pb-3">
+                        <img src="../../assets/img/Banner_loja.png" class="img" alt="Banner da Loja"> 
                     </div>
                 </div>
-                
-                <div class="buttons">
-                    <button type="button" class="btn-cancel">Cancelar</button> 
-                    <button type="submit" class="btn-save">Salvar Mudanças</button> 
-                </div>
-            </form> 
+
+                <form class="form" method="post" action="">
+                    <div class="row">
+                            <div class="col-6 col-sm-12 pb-1">
+                            <label>Nome da Loja</label> 
+                            <input name="" class="input" type="text" value="Estudio Center"> 
+                        </div>
+                        <div class="col-6 col-sm-12 pb-1">
+                            <label>Telefone</label> 
+                            <input name="" class="input" type="text" value="(67) 992346578"> 
+                        </div>
+                        
+                        <div class="col-6 col-sm-12 pb-1">
+                            <label>E-mail</label> 
+                            <input name="" class="input" type="email" value="studio@gmail.com"> 
+                        </div>
+                        <div class="col-6 col-sm-12 pb-1">
+                            <label>Endereço</label> 
+                            <input name="" class="input" type="text" value="Av. 15 de agosto, 506"> 
+                        </div>
+                        
+                        <div class="col-6 col-sm-12 pb-1">
+                            <label>CEP</label> 
+                            <input name="" class="input" type="text" value="79113560"> 
+                        </div>
+                        <div class="col-6 col-sm-12 pb-1">
+                            <label>Número</label> 
+                            <input name="" class="input" type="text" value="506"> 
+                        </div>
+                        
+                        <div class="col-6 col-sm-12 pb-1">
+                            <div class="row">
+                                <div class="col-6 form-check">
+                                    <label>
+                                        <input class="form-check-input" type="radio" name="document" checked> CPF 
+                                    </label>
+                                </div>
+                                <div class="col-6 form-check">
+                                    <label>
+                                        <input type="radio" class="form-check-input" name="document"> CNPJ 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input name="" class="input" type="text" placeholder="000.000.000-00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row pb-3 float-end">
+                        <div class="col-3 col-sm-6">
+                            <button type="button" class="btn-cancel">Cancelar</button>
+                        </div>
+                        <div class="col-3 col-sm-6">
+                            <button class="btn-save">Salvar Mudanças</button> 
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
