@@ -17,6 +17,7 @@ main {
 
 a {
     text-decoration: none;
+    width: auto;
 }
 
 .menu-lateral {
@@ -86,6 +87,7 @@ a {
 .frame .fav-tittle {
     position: flex;
     padding-left: 60px;
+    padding-right: 53px;
     padding-top: 25px;
     display: flex;
     align-items: center; 
@@ -102,9 +104,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 250px;
-    margin-left: 56%;
+    width: 200px;
     height: 50px;
     cursor: pointer;
     z-index: 1000;
@@ -115,7 +115,7 @@ a {
     width: 250px; 
     height: 250px;
     border-radius: 20px;
-    background-color: rgb(230, 230, 230);
+    background-color: #fafafa;
     padding: 30px;
 }
 
@@ -156,7 +156,7 @@ a {
     width: 250px; 
     height: 250px;
     border-radius: 20px;
-    background-color: rgb(230, 230, 230);
+    background-color: #fafafa;
     padding: 20px;
 }
 
@@ -181,4 +181,8 @@ a {
     height: 50px;
     bottom: -45%;
     color: #49BF9E;
+}
+
+#penis {
+    width: fit-content;
 }
