@@ -100,6 +100,27 @@ LOGO DA LOJA - container logo e logo
     padding-bottom: 2%;
 }
 
+@media (max-width: 1610px){
+    #nome-loja {
+        font-size: 48px;
+        font-weight: normal;
+        padding-bottom: 3%;
+        place-items: center;
+    }
+    
+    #email-loja {
+        font-size: 18px;
+        color: black;
+        place-items: center;
+    }
+    
+    #endereco-loja {
+        padding-top: 3%;
+        font-size: 19px;
+        padding-bottom: 2%;
+        place-items: center;
+    }
+}
 /* ========================================================================
     GRID ROW - avaliação e telefone (+logo whatsapp)
 =========================================================================== */
@@ -110,10 +131,11 @@ LOGO DA LOJA - container logo e logo
 }
 
 #avaliacao {
+    width: 100%;
     font-size: 16px;
     grid-column: 1;
     grid-row: 1;
-    padding-left: 50%;
+    padding-left: 40%;
     padding-top: 1%;
 }
 
@@ -124,26 +146,53 @@ LOGO DA LOJA - container logo e logo
     max-width:60%;
 }
 
+@media (max-width: 1810px){
+    #avaliacao {
+        width: 100%;
+        font-size: 16px;
+        grid-column: 1;
+        grid-row: 1;
+        padding-left: 40%;
+    }
+}
+
 #telefone {
     font-size: 20px;
     padding-top: 21%;
     grid-column: 2;
     grid-row: 2;
-    color: black
+    color: black;
 }
-
 #whatsapp-logo {
-    width: 30px;
-    height: auto;
+    width: 22%;
     grid-column: 1;
     grid-row: 2;
     padding-top: 30%;
     padding-left: 76%;
 }
 
+@media (max-width: 1810px){
+    #whatsapp-logo {
+    width: 22%;
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 32%;
+    padding-left: 76%;
+    }
+}
+
+@media (max-width: 1710px){
+    #whatsapp-logo {
+    width: 22%;
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 35%;
+    padding-left: 76%;
+    }
+}
 
 /* ========================================================================
-     CONTAINER TITULO DO TÓPICO (MAIS PRODUTOS) - PÁGINA DO VENDEDOR
+CONTAINER TITULO DO TÓPICO (MAIS PRODUTOS) - PÁGINA DO VENDEDOR
 =========================================================================== */
 
 .grid-topico-mais-produtos {
