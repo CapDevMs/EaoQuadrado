@@ -19,11 +19,12 @@
     margin-top: 2%;
     font-size: 23px;
     text-align: left; 
+    font-family: 'Poppins', sans-serif;
 }
 
 #retorno{
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #16A18E;
     color: white;
     border: none;
     border-radius: 5px;
