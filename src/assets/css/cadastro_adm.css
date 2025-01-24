@@ -1,14 +1,48 @@
+* {
+    margin: 0;
+}
+
 .roadmap {
     font-family: 'Poppins', sans-serif;
     width: 455px;
     position: relative;
     margin-top: 45px;
-    margin-bottom: 30px;
-    left: 200px;
+    margin-bottom: 40px;
+    left: 2%;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
+}
+
+.container-geral{
+    display: grid;
+    grid-template-columns: 15% 75%;
+    margin-left: 2%;
+    width: auto;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-rows: repeat(21,3%);
+}
+
+.menu-container h1{
+    font-size: 18px;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.menu-container a{
+    cursor: pointer;
+    font-size: 18px;
+    max-width: fit-content;
+    max-height: fit-content;
+    opacity: 50%;
+}
+
+#pagina_atual{
+    color: #00BFA5;
 }
 
 .register_client {
@@ -21,7 +55,7 @@
     width: 1114px;
     height: 1076px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -264,11 +298,12 @@
 .button-confirm {
     position: relative;
     bottom: 45%;
-    
-    margin-bottom: 10%;
+    left: 88%;
+
+    margin-bottom: 3%;
     color: white;
-    width: 113px;
-    height: 39px;
+    width: 153px;
+    height: 52px;
     cursor: pointer;
     border-radius: 5px;
     border: none;

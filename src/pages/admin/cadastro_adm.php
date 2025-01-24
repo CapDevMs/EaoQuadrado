@@ -11,6 +11,25 @@ require('../../config/conexao.php');
 
     <main>
     <div class="roadmap">Home / Painel do Administrador / Cadastrar Novo Administrador</div>
+        <div class="container-geral">
+            <div class="menu-container">
+                <h1>Cadastro</h1>
+                <a src="#" id="pagina_atual">Cadastrar Novo Administrador</a>
+                <a src="#">Gerenciar Meu Perfil</a>
+                <h1>Colaboradores</h1>
+                <a src="#">Validar Novo Colaborador</a>
+                <a src="#">Colaboradores Aprovados</a>
+                <a src="#">Colaboradores Reprovados</a>
+                <a src="#">Listar Colaboradores Ativos</a>
+                <a src="#">Suporte ao Colaborador</a>
+                <h1>Clientes</h1>
+                <a src="#">Suporte ao Cliente</a>
+                <h1>Sistema</h1>
+                <a src="#">Abrir Chamado</a>
+                <a src="#">Criar Categoria</a>
+                <a src="#">Editar Sistema</a>
+            </div>
+            
             <div class="register_client">
                     <p>Cadastro de Administrador</p>
                     <img src="../../assets/img/foto_cliente.png" alt="foto do cliente">
@@ -79,8 +98,10 @@ require('../../config/conexao.php');
                 </div>
 
  
-                <!-- <button class="button-confirm">Registrar</button> -->
+                
             </div>
+        </div>
+                <button class="button-confirm">Registrar</button>
     </main>
 
     <?php get_footer()?>    
