@@ -122,11 +122,14 @@ h2{
 .quantidade{
     display: inline;
     width: 35px;
+    text-align: center;
 }
 #botao_qtd{
     padding-top: 7%;
     width: 130px;
     height: 30px;
+    
+    
 }
  
 #menos{
@@ -157,6 +160,7 @@ h2{
     font-size: 100%;
     color: white;
     cursor: pointer;
+    
 }
 
 h4{
