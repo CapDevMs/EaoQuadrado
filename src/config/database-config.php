@@ -1,3 +1,6 @@
 <?php
 
-// Futuro arquivo de configurações de Database
+$host = $_ENV['HOST'];
+$username = $_ENV['USERNAME'];
+$password = $_ENV['PASSWORD'];
+$database = $_ENV['DATABASE'];
