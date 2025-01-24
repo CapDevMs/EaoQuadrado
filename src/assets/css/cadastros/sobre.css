@@ -44,13 +44,6 @@ h6, span{
     margin-top: 3%;
 }
 
-#banner{
-    margin-left: 5%;
-    margin-right: 8%;
-    width: 88%;
-    margin-top: 7%;
-}
-
 #banner2{
     margin-left: 5%;
     margin-right: 8%;
@@ -59,6 +52,21 @@ h6, span{
 }
 
 
+#banner{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 7%;
+}
+
+
+#links{
+    width: 3%;
+    display: inline-flex;
+    height: 3%;
+    margin-bottom: 15px;
+
+}
 
 @media (max-width: 1400px) {
     #texto {
