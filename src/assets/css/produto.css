@@ -13,7 +13,7 @@
    
 }
 
-.grid-produto{
+#grid-produto{
     display: grid;
     grid-template-columns: 9% 40% 29%;
     width: 100%;
@@ -97,11 +97,11 @@ h2{
     margin-top: 6%;
     grid-template-columns: 2% 20%;
     left: 10%;
-    width: 80%;
+    width: 90%;
 }
 
 .text-topico{
-    max-width: 400px;
+    max-width:500px;
     color: #00BFA5;
     line-height: 260%;
 
@@ -121,11 +121,12 @@ h2{
  
 .quantidade{
     display: inline;
-    width: 25px;
+    width: 35px;
 }
 #botao_qtd{
-    width: 92px;
-    height: 27px;
+    padding-top: 7%;
+    width: 130px;
+    height: 30px;
 }
  
 #menos{
@@ -139,4 +140,25 @@ h2{
     background-color: #16A18E;
     color: white;
  
+}
+
+#comprar{
+    padding-top: 5%;
+}
+
+#btn-comprar{
+    position: relative;
+    width: 150px; 
+    height:35px;
+    padding-top:3%;
+    background-color: #16A18E;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+h4{
+    font-weight: 300;
 }
