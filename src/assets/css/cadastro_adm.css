@@ -263,7 +263,8 @@
 
 .button-confirm {
     position: relative;
-    bottom: 50%;
+    bottom: 45%;
+    
     margin-bottom: 10%;
     color: white;
     width: 113px;
