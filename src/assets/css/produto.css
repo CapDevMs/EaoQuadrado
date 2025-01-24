@@ -5,32 +5,138 @@
     font-size: 65%;
     }
 
+.grid-conteudo{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    padding-bottom: 1%;
+    padding-top: 1%;
+   
+}
 
 .grid-produto{
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    column-gap: 10px;
-
+    grid-template-columns: 9% 40% 29%;
+    width: 100%;
+    column-gap: 1%;
+    justify-content: center;
+    
 }
-.grid-small-img{
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
-    display: grid;
-    grid-template-rows: repeat(3,auto);
 
-}
+
 
 .img-small{
     background-color: rgb(239, 239, 239);
-    width: 30%;
-    margin: 1%;
+    margin-bottom: 5%;
+    width: 90%;
+    
+    
+    
 
 }
 
 .img-large{
     background-color: rgb(239, 239, 239);
+    width: 90%;
+    
+    
+    
+    
+}
+
+.descricao{
+    padding-top: 1%;
+    position: relative;
+    margin-left: 10%;
+    max-width: 70%;
+    
+}
+
+
+h2{
+    font-weight: 500;
+    
+}
+
+.preco{
+    font-size: 300%;
+    color: #16A18E;
+}
+
+.grid-color{
+    grid-template-columns: 10% 20% 10%;
+}
+
+.buttom-color{  
+    border: none;
+    width: 10%;
+    padding:1%;
+    
+}
+
+.grid-recomendar{
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17%;
     width: 100%;
+    column-gap: 1%;
+    margin-top: 5%;
+    justify-content: center;
     
-    
+}
+
+.topico{
+    position: relative;
+    width: 20px; 
+    height:40px;
+    background-color: #16A18E;
+    border-radius: 20%;
+}
+
+.grid-topico{ 
+    position: relative;
+    display: grid;
+    margin-top: 6%;
+    grid-template-columns: 2% 20%;
+    left: 10%;
+    width: 80%;
+}
+
+.text-topico{
+    max-width: 400px;
+    color: #00BFA5;
+    line-height: 260%;
+
+
+}
+.line{
+    position: relative;
+    left: 9.8%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    width: 1250px; 
+    height:1px;
+    background-color: #000000;
+    border-radius: 20%;
+}
+
+ 
+.quantidade{
+    display: inline;
+    width: 25px;
+}
+#botao_qtd{
+    width: 92px;
+    height: 27px;
+}
+ 
+#menos{
+    position: relative;
+    left: 5px;
+}
+#mais{
+    position: relative;
+    right: 5px;
+   
+    background-color: #16A18E;
+    color: white;
+ 
 }
