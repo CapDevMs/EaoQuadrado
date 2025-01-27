@@ -448,7 +448,11 @@ tbody {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    color: #0f33d1;
+    color: #00bfa5;
+    grid-area: 2 / 1 / 2 / 7;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    width: 100%;
 }
 
 .expanded{
@@ -464,10 +468,13 @@ tbody {
 .nomeP{
     color: #000;
     font-size: 16px;
+
 }
 
 .clienteP{
     color: #636363;
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 0;
 }
 
 

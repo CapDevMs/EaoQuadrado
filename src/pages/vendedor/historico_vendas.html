@@ -110,14 +110,25 @@
                     <p class="p-10">1</p>
                 </div>
                 <div class="card-details">
-                   <span class="clienteP">Cliente: </span><span class="nomeP">Yuri Ferreira</span><br>
-                    <span class="clienteP">Endereço: </span><span class="nomeP"> Rua A, Bairro Centro, São Paulo, SP</span><br>
-                    <span class="clienteP">Data: </span><span class="nomeP">12 de janeiro</span><br>
-                    <span class="clienteP"></span><span class="nomeP">1 unidade</span>
+                  <div class="elementCard">
+                    <p class="clienteP">Cliente: <span class="nomeP">Yuri Ferreira</span> </p>
+                    <p class="clienteP">Endereço: <span class="nomeP"> Rua Piratininga ,629, Jardim dos Estados Campo Grande MS</span> </p>
+                    <p class="clienteP">Data: <span class="nomeP">12 de janeiro</span></p>
+                    <p class="clienteP">CEP: <span class="nomeP">79020-240</span></p>
+                  </div> 
+
+                    <label for="statusPedido">Status de Pedido</label>
+                         <select id="statusPedido" name="statusPedido">
+                             <option value="entregue">Entregue</option>
+                             <option value="opcao2">Troca</option>
+                             <option value="opcao3">Cancelamento</option>
+                         </select>
+                    <span class="clienteP">12 de dezembro 2024</span>
                   </div>
+                 
             </div>
-            <div class="card">
-                <div class="cardItems cardItems-inicio" onclick="toggleDetails(this)">
+            <div class="card" onclick="toggleDetails(this)">
+                <div class="cardItems cardItems-inicio">
                     <img class="img-historico" 
                         src="/src/assets/img/controleUsb.png" alt="Controle Usb">
                     <p class="p-50">Controle Usb</p>
@@ -137,6 +148,7 @@
                 <div class="cardItems" >
                     <p class="p-10">1</p>
                 </div>
+
             </div>
             <div class="card"  onclick="toggleDetails(this)">
                 <div class="cardItems cardItems-inicio">
@@ -159,6 +171,7 @@
                 <div class="cardItems">
                     <p class="p-10">1</p>
                 </div>
+    
             </div>
             <div class="card"  onclick="toggleDetails(this)">
                 <div class="cardItems cardItems-inicio">
