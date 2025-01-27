@@ -73,46 +73,45 @@
             <h1>Gerenciamento de estoque</h1>
         </div>
     
-        <div id="painel">
             <form action="#" method="post">      
                 <div class="linha-horizontal">
                     <div class="linha-1">
                         <label for="nome-produto">Nome do Produto</label><br>
-                        <textarea id="nome-produto" name="nome-produto" rows="2" required></textarea><br><br>
+                        <textarea id="nome-produto" name="nome-produto" rows="2" placeholder="Programming Mug"></textarea><br><br>
                     </div>
                     
                     <div class="linha-1">
                         <label for="link-produto">Link do Produto</label><br>
-                        <textarea id="link-produto" name="link-produto" rows="2" required></textarea><br><br>
+                        <textarea id="link-produto" name="link-produto" placeholder="www.exemplo.com.br" rows="2" required></textarea><br><br>
                     </div>
                 </div>
     
                 <div class="linha-horizontal">
-                    <div class="linha-1">
+                    <div class="linha-2">
                         <label for="marca-produto">Marca do Produto</label><br>
-                        <textarea id="marca-produto" name="marca-produto" rows="2" required></textarea><br><br>
+                        <textarea id="marca-produto" name="marca-produto" placeholder="BR Tech Sistemas" rows="2" required></textarea><br><br>
                     </div>
                     
                     <div class="linha-2">
                         <label for="modelo-produto">Modelo do Produto</label><br>
-                        <textarea id="modelo-produto" name="modelo-produto" rows="2" required></textarea><br><br>
+                        <textarea id="modelo-produto" name="modelo-produto" placeholder="Caneca" rows="2" required></textarea><br><br>
                     </div>
                 </div>
     
                 <div class="linha-horizontal">
                     <div class="linha-3">
                         <label for="categoria-produto">Categoria do Produto</label><br>
-                        <textarea id="categoria-produto" name="categoria-produto" rows="2" required></textarea>
+                        <select id="categoria-produto" name="categoria-produto"  rows="2" required></select>
                     </div>
     
                     <div class="linha-3">
-                        <label for="preco-produto">Preço do Produto</label><br>
-                        <textarea id="preco-produto" name="preco-produto" rows="2" required></textarea><br><br>
+                        <label for="preco-produto" id="label-preco">Preço do Produto</label><br>
+                        <textarea id="preco-produto" name="preco-produto" rows="2"></textarea><br><br>
                     </div>
     
                     <div class="linha-3">
-                        <label id="quantidade-produto">Quantidade</label><br>
-                        <input type="number" id="quantidade-produto" name="quantidade-produto" min="0" required>
+                        <label id="label-quantidade-produto">Quantidade</label><br>
+                        <input type="number" id="quantidade-produto"  name="quantidade-produto" min="0" required>
                     </div>
                 </div>
     
@@ -131,7 +130,7 @@
                 <button id="cancelar" type="button">Cancelar</button>
                 <button id="salvar" type="submit">Salvar</button>
             </div>
-        </div>
+        
     </main>
 
     <footer>
