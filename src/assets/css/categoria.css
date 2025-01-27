@@ -51,22 +51,24 @@ header,body{
    left: 50%;
    transform: translate(-50%, -50%);
    color: transparent;
-   font-weight: bold;
+   /* font-weight: bold; */
    pointer-events: none;
    transition: color 0.3s ease;
-   opacity: 0;
+   z-index: 2;
+   
 }
 .categoria button:hover{
    background-color: #00BFA5;
 }
 .categoria button:hover img{
-   opacity: 0.2;
+   filter: brightness(0.2);
+   
 }
 .categoria button:hover span{
    color: white;
-   opacity: 1;
 }
 
+/* categoria por avaliacoes */
 
 .marca_preco{
    display: grid;
