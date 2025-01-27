@@ -17,7 +17,8 @@
 }
 
 
-.container{}
+.container{
+}
 
 .trail-1{
     color: gray;
@@ -32,12 +33,12 @@
 
 }
 
-.products{
+.cartProducts{
     display: grid;
-    grid-template-columns: repeat(3,auto);
-}
+    grid-template-columns: repeat(3,auto);}
 
-.product{
+.cartProduct{
+    margin-top: 1%;
     width: 999px;
     height: 110px;
 
@@ -48,48 +49,49 @@
     border-radius: 20px;
 }
 
-.product-1{
+.cartProduct-1{
     text-align: center;
-    margin-top: 8%;
+    margin-top: 9%;
     position: relative;
-    /* background-color: blue; */
 }
 
-.product-2{
+.cartProduct-2{
     margin-top: 4%;
     text-align: center;
     max-height: 110px;
     text-overflow: ellipsis;
     overflow: hidden;
-    
-    background-color: red;
 }
 
-.product-3{
-    display: grid;
-    margin-top:4%;
+.cartProductPrice{
+    margin-top: 4%;
     text-align: center;
-    background-color: blue;
+    max-height: 110px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-.product-4{
-    margin-top:4%;
+.cartProduct-4{
+    margin-top: 4%;
     text-align: center;
-    background-color: red;
+    max-height: 110px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-.product-5{
-    margin-top:4%;
 
+.cartProduct-5{
+    margin-top: 4%;
     text-align: center;
-    background-color: blue;
+    max-height: 110px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-.product-6{
+.cartProduct-6{
     margin-top:25%;
     text-align: center;
     position: relative;
-    background-color: red;
 }
 
 .product-1-1{
@@ -99,7 +101,22 @@
 
 .product-1-2{
     position: relative;
-    top: 8%;
+    top: 25%;
     grid-row-start: 2;
     grid-row-end: 2;
+}
+.product-1-2-price{
+    position: relative;
+    top: 25%;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.counter{
+    position: relative;
+    top: 19%;
+    text-align: center;
+    max-width: 40%;
+    height: 30%;
+    border: solid rgba(0, 0, 0, 0.600) 2px;
+    border-radius: 5px;
 }
