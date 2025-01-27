@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 250px 285px 285px 285px;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    width: auto;
+}
+
+.menu-lateral {
+    padding-top: 20px;
+}
+
+.menuzin .mi-cont {
+    display: inline;
+    padding: 0;
+    left: 17px;
+}
+
+.menuzin {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+#micont {
+    margin-top: 80px;
+}
+
+#favorito:hover {
+    color: #2e7762;
+}
+
+#favorito {
+    color: black;
+}
+
+.mi-cont {
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    color: gray;
+    margin: 0;
+}
+
+.mi-cont li {
+    font-size: 13px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    transition: 0.3s;
+}
+
+.mi-cont:hover {
+    color: #49BF9E;
+    transition: 0.3s;
+}
+
+.frame {
+    display: grid;
+    grid-template-rows: 50px 400px 50px 400px;
+    position: relative;
+    grid-column: 2 / 3;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-left: 270px;
+    margin-top: 75px;
+    margin-bottom: 200px;
+    height: 950px;
+    width: 1440px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.frame .fav-tittle {
+    position: flex;
+    padding-left: 60px;
+    padding-right: 53px;
+    padding-top: 25px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container {
+    position: relative; 
+    display: inline-block;
+}
+
+.but1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.edit-favorito {
+    position: relative;
+    width: 250px; 
+    height: 250px;
+    border-radius: 20px;
+    background-color: #fafafa;
+    padding: 30px;
+}
+
+.but2 {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    bottom: -10%;
+    cursor: pointer;
+    background-color:#49BF9E;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    z-index: 10;
+}
+
+.but-car {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 25px;
+    left: 90%;
+    top: 5%;
+    cursor: pointer; 
+}
+
+.produto-favorito {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    left: 50px;
+}
+
+.edit-loja-favorito {
+    position: relative;
+    width: 250px; 
+    height: 250px;
+    border-radius: 20px;
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.loja-favorita {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    left: 50px;
+}
+
+.name-prod {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    bottom: -35%;
+}
+
+.preco-prod {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    bottom: -45%;
+    color: #49BF9E;
+}
+
+#penis {
+    width: fit-content;
+}
