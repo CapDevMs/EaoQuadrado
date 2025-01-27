@@ -133,6 +133,14 @@ label {
     
 }
 
+.previas{
+    display: inline;
+    background-color: grey;
+}
+
+
+
+
 textarea, select,
 input[type="number"],
 input[type="file"] {
