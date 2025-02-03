@@ -61,17 +61,6 @@ div {
     
 }
 
-/* #painel {
-    width: 75%; 
-    grid-column: 2; 
-    margin-left: 20%; 
-    position: relative;
-    margin-top: -10%;
-    gap: 3px;  
-    border-radius: 10px;
-    border-style: groove;
-    font-family: 'Poppins', sans-serif;
-} */
 
 form {
     width: 73%;
@@ -125,7 +114,7 @@ label {
 }
 
 #quantidade-produto , #label-quantidade-produto{
-    width: 40%;
+    width: 25%;
     height: 25%;
     background-color: white;
     margin-left: 60%;
