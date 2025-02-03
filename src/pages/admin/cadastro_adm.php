@@ -92,9 +92,9 @@ require('../../config/conexao.php');
 
                 <div class="password-container">
                     <h2>Senha</h2>
-                    <input type="text" class="input1-container" placeholder="*********" required>
+                    <input type="text" class="input3-container" placeholder="*********" required>
                     <h2>Confirmar Senha</h2>
-                    <input type="text" class="input1-container" placeholder="*********" required>
+                    <input type="text" class="input3-container" placeholder="*********" required>
                 </div>
 
  
