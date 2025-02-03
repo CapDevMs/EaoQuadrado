@@ -14,28 +14,31 @@
     <?php get_header() ?>
 
     <main>
+
         <div class="container-video">
+            <div class="video-celular">
             <video autoplay muted loop>
                 <source src="../assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">        
-            </video>      
+            </video>
+            </div>      
         </div> 
         <div class="categoria">
-            <button>
+            <button class="categoria-celular">
                 <img src="../assets/img/CATEGORIA/Categoria-celular.png"id="Categoria-celular" alt="categoria-celular">
             </button> 
-            <button>
+            <button class="categoria-computador">
                 <img src="../assets/img/CATEGORIA/Categoria-computador.png" id="Categoria-computador" alt="Categoria-computador">
             </button>
-            <button>   
+            <button class="categoria-smartwatche">   
                 <img src="../assets/img/CATEGORIA/Categoria-smartwatche.png" id="Categoria-smartwatche" alt="Categoria-smartwache">
             </button>
-            <button>
+            <button class="categoria-camera">
                 <img src="../assets/img/CATEGORIA/Categoria-camera.png" alt="Categoria-camera" id="Categoria-camera">
             </button>
-            <button>    
+            <button class="categoria-fone-de-ouvido">    
                 <img src="../assets/img/CATEGORIA/Categoria-fone_de_ouvido.png" alt="Categoria fone de ouvido" id="Categoria-fone_de_ouvido">
             </button>
-            <button>    
+            <button class="categoria-gamer">    
                 <img src="../assets/img/CATEGORIA/Categoria-gamer.png"alt="categoria gamer" id="Categoria-gamer">
             </button>    
         </div>
