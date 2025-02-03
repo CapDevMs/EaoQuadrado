@@ -1,49 +1,17 @@
+<?php
+    include('../../config/funcoes.php');
+    $appName = get_app_name();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/base.css">
-    <link rel="stylesheet" href="../../assets/css/cadastros/sobre.css">
-    <title>Eao Quadrado</title>
+    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <?php get_css(['cadastros/sobre']) ?>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <a href="#">
-                    <img src="../../assets/img/logo.png" class="logo" alt="Logo">
-                </a>
-            </div>
-            <div class="search-bar">
-                <input type="text" class="search-input" placeholder="O que você procura hoje?">
-                <img src="../../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
-            </div>
-            <ul class="menu-opcoes">
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../../assets/img/pessoa.svg" alt="Pessoa">
-                    </a>
-                </li>
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../../assets/img/carrinho.svg" alt="Carrinho">
-                    </a>
-                </li>
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../../assets/img/informacao.svg" alt="Informações">
-                    </a>
-                </li>
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../../assets/img/suporte.svg" alt="suporte">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <?php get_header() ?>
 
     <main>
         <div id="sub-menu">
@@ -68,7 +36,7 @@
         </div>
         </div>
         <div id="imagem">
-            <img src="/src/assets/img/imagem-sobre-1.png">
+            <img src="../../assets/img/imagem-sobre-1.png">
             
         </div>
             
