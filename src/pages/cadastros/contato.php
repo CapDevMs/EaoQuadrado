@@ -14,34 +14,36 @@
     <?php get_header() ?>
 
     <main>
-        <div id="menu">FAQ</div>
-        <div id="sub-menu">FAQ</div>
-        <div id="texto">Perguntas Frequentes sobre o nosso E-commerce <br> <br>
-
-            1 - Como faço para vender no site? <br> <br> 
-            • Para começar a vender, você precisa se cadastrar e passar por uma avaliação inicial. Novos vendedores são submetidos a uma avaliação durante suas primeiras vendas antes de se tornarem permanentes na plataforma.<br><br>
-            
-            2 - Como funciona o processo de compra?<br><br>
-            • Todas as compras são intermediadas pelo nosso site. Após a confirmação do pedido ocorre direcionamento para cliente falar com vendedor e combinar entrega, após recebido o pedido o cliente podera avaliar sua compra.<br><br>
-            
-            3 - Como os vendedores adicionam produtos ao site?<br><br>
-            • Os vendedores têm acesso para listar e gerenciar seus produtos diretamente no site. Nosso sistema facilita a comunicação entre vendedores e clientes durante todo o processo de venda.<br><br>
-            
-            4 - Existe um sistema de avaliações para os vendedores?<br><br>
-            • Sim, temos um sistema de avaliação onde os clientes podem avaliar os vendedores. Todas as avaliações são moderadas para garantir a qualidade dos serviços prestados.<br><br>
-            
-            5 - Quais são as opções de entrega disponíveis?<br><br>
-            • Oferecemos entrega local com taxa fixa dentro de nossa área de serviço. Além disso, disponibilizamos opções para retirada na loja ou combinação de entrega direta entre vendedor e cliente.<br><br>
-            
-            6 - Quais métodos de pagamento são aceitos?<br><br>
-            • Os métodos de pagamento são a combinar com o vendedor. Isso proporciona flexibilidade para adaptar-se às necessidades de ambos os lados da transação.<br><br>
-            
-            7 - Como é garantida a segurança das transações?<br><br>
-            • Implementamos rigorosas medidas de segurança para proteger as transações e garantir a conformidade com nossos termos de serviço.<br><br>
-            
+        <a id="menu" href="home-page">Pagina Inicial</a>
+        <span>/</span>
+        <div id="sub-menu"><a>Contato</a></div>     
+        
+        <img src="../../assets/img/contato.jpg" alt="contato" id="contato">
+        <form action="#" method="post">      
+                <div class="titulo">
+                        <label>Nome</label><br>
+                        <textarea id="preco-produto" name="preco-produto" rows="2"></textarea><br><br>
+                </div>
+                <div class="titulo">
+                        <label>E-mail</label><br>
+                        <textarea id="preco-produto" name="preco-produto" rows="2"></textarea><br><br>
+                </div>
+                <div class="titulo">
+                        <label>Telefone/WhatsApp</label><br>
+                        <textarea id="preco-produto" name="preco-produto" rows="2"></textarea><br><br>
+                </div>
+                <div class="linha-1">
+                    <label for="descricao-produto">Descrição</label><br>
+                    <textarea id="descricao-produto" name="descricao-produto" rows="15" required></textarea><br><br>
+                </div>
+                    
+                </div>
+            </form>
+            <div class="botoes-container">
+                <button id="salvar" type="submit">Enviar Mensagem</button>
             </div>
 
-            <button id="retorno" type="button">Retorne ao início</button>
+
     </main>
 
     <?php get_footer() ?>

@@ -1,0 +1,33 @@
+#menu, span, #sub-menu{
+    width: 94%;
+    margin-top: 4%;
+    font-size: 17px; 
+    display: inline;
+    margin-left: 1%;
+}
+    
+#menu{
+    margin-left: 5%;
+    color: grey;
+    font-style: inherit;
+}
+
+
+#contato {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide o container em 2 colunas de igual largura */
+    width: 100%; /* Ajuste a largura do container */
+    height: 40%;
+    margin-left: 6%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.titulo {
+    grid-column: 1; /* Coloca o elemento na primeira coluna */
+    width: 100%; /* Ajusta a largura para preencher o espaço disponível */
+}
+
+.outroElemento { /* Exemplo para o segundo elemento */
+    grid-column: 2; /* Coloca o outro elemento na segunda coluna */
+}
