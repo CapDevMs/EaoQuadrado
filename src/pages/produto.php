@@ -51,7 +51,7 @@
                         <div id="comprar">
                             <div id="btn-comprar"><a>Comprar</a></div>
                             <div><img src="../assets/img/tela-produtos/carrinhooo.png""></div>
-                            <div><img src="../assets/img/tela-produtos/coraçao.png""></div>
+                            <div><img src="../assets/img/tela-produtos/coracao.png""></div>
                         </div>
                         <div id="troca">
                             <img src="../assets/img/tela-produtos/Icon-return.png">
@@ -61,6 +61,7 @@
                         <div id="loja">
                             <img src="../assets/img/tela-produtos/loja.png">
                             <a><span style="color: #16A18E;">Loja</span> Studio Center</a>
+                            <img src="../assets/img/tela-produtos/coracao.png">
                         </div>
                         
                     </div>
