@@ -2,6 +2,10 @@ div {
     display: grid;
 }
 
+a{
+    color: grey;
+
+}
 .sub-menu {
     grid-column: 1 / -1;
     color: grey;
@@ -74,6 +78,11 @@ form {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+#descricao-produto{
+    width: 200%;
     height: 100%;
 }
 
