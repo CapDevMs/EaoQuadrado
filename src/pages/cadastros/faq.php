@@ -12,42 +12,6 @@
 </head>
 <body>
     <?php get_header() ?>
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <a href="#">
-                    <img src="../../assets/img/logo.png" class="logo" alt="Logo">
-                </a>
-            </div>
-            <div class="search-bar">
-                <input type="text" class="search-input" placeholder="O que você procura hoje?">
-                <img src="../../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
-            </div>
-            <ul class="menu-opcoes">
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../../assets/img/pessoa.svg" alt="Pessoa">
-                    </a>
-                </li>
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../../assets/img/carrinho.svg" alt="Carrinho">
-                    </a>
-                </li>
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../../assets/img/informacao.svg" alt="Informações">
-                    </a>
-                </li>
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../../assets/img/suporte.svg" alt="suporte">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
     <main>
         <div id="menu">FAQ</div>
