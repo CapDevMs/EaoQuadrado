@@ -31,14 +31,14 @@
     
         <div id="menu-lateral">
             <h3>Gerenciar Minha Conta</h3>
-            <h1>Meu Perfil</h1>
-            <h1>Minha Loja</h1>
-            <h1 class="ativa" id="cadastrar-produtos">Cadastrar Produtos</h1>
+            <h1><a href="link-para-meu-perfil">Meu Perfil</a></h1>
+            <h1><a href="link-para-minha-loja">Minha Loja</a></h1>
+            <h1 class="ativa" id="cadastrar-produtos"><a href="link-para-cadastrar-produto">Cadastrar Produtos</a></h1>
             <br>
             <h3>Vendas</h3>
-            <h1>Histórico de Vendas</h1>
-            <h1>Trocas/Cancelamentos</h1>
-            <h1>Gerenciamento de estoque</h1>
+            <h1><a href="link-para-minha-loja">Histórico de Vendas</a></h1>
+            <h1><a href="link-para-minha-loja">Trocas/Cancelamentos</a></h1>
+            <h1><a href="link-para-minha-loja">Gerenciamento de estoque</a></h1>
         </div>
     
             <form action="#" method="post">      
@@ -85,7 +85,7 @@
     
                 <div class="linha-1">
                     <label for="descricao-produto">Descrição</label><br>
-                    <textarea id="descricao-produto" name="descricao-produto" rows="4" required></textarea><br><br>
+                    <textarea id="descricao-produto" name="descricao-produto" rows="15" required></textarea><br><br>
                 </div>
     
                 <label for="arquivo">Inserir Imagens</label><br>
