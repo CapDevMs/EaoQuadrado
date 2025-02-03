@@ -41,26 +41,26 @@
         </div>
             
         <div id="comparativo">
-            <img src="/src/assets/img/comparativo-sobre.png" >
+            <img src="../../assets/img/comparativo-sobre.png" >
         </div>
 
         <div id="banner">
-            <img src="/src/assets/img/banner-sobre.png" alt="Banner">
+            <img src="../../assets/img/banner-sobre.png" alt="Banner">
             <div id="links">
                 <a href="https://twitter.com" target="_blank">
-                    <img src="/src/assets/img/link-twitter.png" alt="Twitter">
-                    <img src="/src/assets/img/link-instagram.png" alt="Instagram">
-                    <img src="/src/assets/img/link-likedin.png" alt="LinkedIn">
+                    <img src="../../assets/img/link-twitter.png" alt="Twitter">
+                    <img src="../../assets/img/link-instagram.png" alt="Instagram">
+                    <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="/src/assets/img/link-twitter.png" alt="Twitter">
-                    <img src="/src/assets/img/link-instagram.png" alt="Instagram">
-                    <img src="/src/assets/img/link-likedin.png" alt="LinkedIn">
+                    <img src="../../assets/img/link-twitter.png" alt="Twitter">
+                    <img src="../../assets/img/link-instagram.png" alt="Instagram">
+                    <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
                 </a>
                 <a href="https://linkedin.com" target="_blank">
-                    <img src="/src/assets/img/link-twitter.png" alt="Twitter">
-                    <img src="/src/assets/img/link-instagram.png" alt="Instagram">
-                    <img src="/src/assets/img/link-likedin.png" alt="LinkedIn">
+                    <img src="../../assets/img/link-twitter.png" alt="Twitter">
+                    <img src="../../assets/img/link-instagram.png" alt="Instagram">
+                    <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
                 </a>
             </div>
         </div>
@@ -68,7 +68,7 @@
         
 
         <div id="banner2">
-            <img src="/src/assets/img/banner2-sobre.png" >
+            <img src="../../assets/img/banner2-sobre.png" >
         </div>
             
     </main>
