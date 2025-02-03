@@ -16,12 +16,14 @@ h6, span{
     display: inline-block; 
     margin-top: 4%;
     font-size: 140%; 
+    font-family: Poppins;
 }
 
 #título{
     display: inline;
     font-weight: bold;
-    font-size: 40px;         
+    font-size: 40px;   
+    font-family: Poppins;      
 }
 
 #descricao{
@@ -70,21 +72,21 @@ h6, span{
     position: absolute; 
     bottom: 20px; 
     left: 50%; 
-    transform: translateX(-50%);  /* Ajustei para que fique centralizado exatamente */
+    transform: translateX(-50%);  
     display: flex;
     gap: 15px;  
 }
 
 #links a {
     display: flex;
-    align-items: center; /* Centraliza verticalmente os ícones dentro dos links */
+    align-items: center; 
     justify-content: center;
 }
 
 #links a img {
-    max-width: 100%;  /* Garante que a imagem não ultrapasse o tamanho do link */
-    height: auto;  /* Mantém a proporção original da imagem */
-    width: 60px;  /* Defina um valor base de largura */
+    max-width: 100%;  
+    height: auto;  
+    width: 60px;  
 }
 
 
@@ -98,10 +100,12 @@ h6, span{
         text-align: left; 
         margin-left: 5%;
         margin-top: 0;
+        font-family: Poppins; 
     }
 
     #título {
         font-size: 15px; 
+        font-family: Poppins; 
     }
 
     #descricao {
