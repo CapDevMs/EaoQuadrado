@@ -40,7 +40,7 @@ require('../config/conexao.php');
                     </div>
 
                     <div class='cartProduct-5'>
-                        <span class='product-1-1'>Subtotal</span><br><span class='product-1-2 subTotal'>R$</span>
+                        <span class='product-1-1'>Subtotal</span><br><span class='product-1-2 subTotal'>...</span>
                     </div>
 
                     <div class='cartProduct-6'>
