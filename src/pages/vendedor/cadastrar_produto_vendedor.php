@@ -90,14 +90,13 @@
     
                 <label for="arquivo">Inserir Imagens</label><br>
                 <input type="file" id="arquivo" name="arquivo" accept="image/*" multiple><br><br>
-    
+
                 <div id="image-preview-container" class="image-preview-container">
                 </div>
-            <div class="previas">
-                <img id="previa1" alt="img1">
-                <img id="previa2" alt="img2">
-                <img id="previa3" alt="img3">
-            </div>    
+
+                <div class="previas">
+                    
+                </div>
             </form>
             <div class="botoes-container">
                 <button id="cancelar" type="button">Cancelar</button>
@@ -107,6 +106,31 @@
     </main>
     <?php get_footer() ?>
 </body>
-<script src="../../assets/js/script.js"></script>
+<script src="../../assets/js/script.js">
+</script>
+<script>
+       document.getElementById('arquivo').addEventListener('change', function(event) {
+        var files = event.target.files;
+        var previasContainer = document.querySelector('.previas');
+
+        
+        for (var i = 0; i < files.length; i++) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                
+                var img = document.createElement('img');
+                img.src = e.target.result;
+                img.alt = 'img' + (previasContainer.children.length + 1);
+                img.style.width = '300px';  
+                img.style.height = '500px';
+                img.style.objectFit = 'cover';
+
+                
+                previasContainer.appendChild(img);
+            }
+            reader.readAsDataURL(files[i]);
+        }
+    });
+</script>
 </html>
 
