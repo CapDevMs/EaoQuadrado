@@ -2,6 +2,7 @@
     display: grid;
     width: 90%;
     justify-self: center;
+    margin-bottom: 10%;
 }
 
 .container{
@@ -17,7 +18,7 @@
 
 .items{
     display: grid;
-    grid-template-columns: repeat(6,auto);
+    grid-template-columns: 17% 17% 17% 17% 16% 16%;
     place-items: center;
 
     width: 100%;
@@ -41,6 +42,7 @@ h1{
     font-size: 14px;
     margin-top: 5%;
     margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .text-items{
@@ -50,14 +52,42 @@ h1{
 
 
 #icone_edicao{
-    height: 20%;
-    width: 20%;
+    height: 25px;
+    width: 25px;
 }
 
 #barra_lateral{
     font-size: 15px
 }
 
+/*BOTÕES DE "EXCLUIR" E "ADICIONAR PRODUTO"*/
+
+#div-btn{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 430px;
+    justify-self: right;
+}
+
+.btn{
+    display: inline;
+    width: 200px;
+    height: 50px;
+
+    border-style: none;
+    border-radius: 5px;
+
+}
+
+#btn1{
+    color: white;
+    background-color: #E85252;
+}
+
+#btn2{
+    color: white;
+    background-color: #16A18E;
+}
 /*BOTÃO DE QUANTIDADE*/
 
 .quantidade{
@@ -80,4 +110,15 @@ h1{
     background-color: #16A18E;
     color: white;
 
+}
+
+@media (max-width: 768px){
+
+.container{
+    display: block;
+}
+
+#barra_lateral{
+    display: none;
+}
 }
