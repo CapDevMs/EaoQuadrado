@@ -66,6 +66,13 @@ require('../config/conexao.php');
             </li>
         </ul>
         <script src="../../src/assets/js/tela_inicial.js"></script>
+
+        <div class="mosaico">
+            <div class="itens" id="item1"><img src="" alt=""></div>
+            <div class="itens" id="item2"></div>
+            <div class="itens" id="item3"></div>
+            <div class="itens" id="item4"></div>
+        </div>
     </main>
 
     <footer>

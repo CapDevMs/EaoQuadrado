@@ -28,7 +28,7 @@
     vertical-align: top;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease-in;
 }
 
 .slider input {
@@ -44,7 +44,7 @@
     z-index: 10;
     border-radius: 50%;
     margin: 0 5px;  
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in;
 }
 
 .slider .navigation {
@@ -81,7 +81,6 @@
     background-color: #FF6347;  
 }
 
-
 .slider img {
     opacity: 0;
     visibility: hidden;
@@ -92,6 +91,23 @@
     visibility: visible;
 }
 
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in; 
+}
+
 .btn-slide {
     background-color: white;
+}
+
+
+.mosaico {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2,auto);
+}
+
+.itens{
+    background-color: black;
 }
