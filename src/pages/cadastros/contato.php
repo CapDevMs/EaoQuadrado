@@ -33,7 +33,7 @@
                         <textarea class="caixa" id="preco-produto" placeholder="(67) 99999-9999" rows="2"></textarea><br><br>
                 </div>
                 <div class="titulo">
-                    <textarea class="caixa" id="descricao-produto" placeholder="Sua mensagem"  rows="15" required></textarea><br><br>
+                    <textarea class="caixa2" id="descricao" placeholder="Sua mensagem"  rows="15" required></textarea><br><br>
                 </div>
                 <button id="salvar" type="submit">Enviar Mensagem</button>
                 </div>
