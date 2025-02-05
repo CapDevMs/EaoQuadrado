@@ -5,6 +5,7 @@ require('../config/conexao.php');
 ?>
 <?php get_base_head(); ?>
 <body>
+    <link rel="stylesheet" href="../assets/css/tela_inicial.css">
     <header class="header">
         <nav class="navbar">
             <div class="navbar-logo">
@@ -46,25 +47,25 @@ require('../config/conexao.php');
             <li>  
                 <input type="radio" id="slide1" class="btn-slide" name="slide" checked>
                 <label for="slide1"></label>
-                <img src="../Property 1=Frame 1000005973.png" />
+                <img src="../assets/img/slide1.png" />
             </li>
             <li>
                 <input type="radio" id="slide2" class="btn-slide" name="slide">
                 <label for="slide2"></label>
-                <img src="../Property 1=Frame 1000005974.png"/>
+                <img src="../assets/img/slide2.png"/>
             </li>
             <li>
                 <input type="radio" id="slide3" class="btn-slide" name="slide">
                 <label for="slide3"></label>
-                <img src="../Property 1=Frame 1000005975.png" />
+                <img src="../assets/img/slide3.png" />
             </li>
             <li>
                 <input type="radio" id="slide4" class="btn-slide" name="slide">
                 <label for="slide4"></label>
-                <img src="../Property 1=Frame 1000005976.png" />
+                <img src="../assets/img/slide4.png" />
             </li>
         </ul>
-        <script src="script.js"></script>
+        <script src="../../src/assets/js/tela_inicial.js"></script>
     </main>
 
     <footer>
