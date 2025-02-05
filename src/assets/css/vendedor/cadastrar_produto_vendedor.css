@@ -90,7 +90,7 @@ form {
 .linha-horizontal {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 
 .linha-1, 
@@ -145,7 +145,7 @@ input[type="number"],
 input[type="file"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #F5F5F5;
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
