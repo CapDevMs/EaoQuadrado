@@ -92,23 +92,66 @@
                  </div>
                  
                  <div class="grid-recomendar">
-                    <div class="img-small">
-                        <img src="../assets/img/tela-produtos/bolsa.png" >
+
+                    <div class="produto-recomendar">
+                        <div class="img-small-recomendar">
+                            <img src="../assets/img/tela-produtos/bolsa.png" >
+                            <div class="icon">
+                                <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
+                                <img src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                            </div>
+                        </div>
                         <div class="text-produto">
-                            <p>afadad</p>
+                            <h3>HAVIT HV-G92 Controle USB</h3>
+                            <a class="preco-recomendar">R$400</a>
+                        </div>
+                    </div>
+                    
+
+
+
+
+                    <div class="produto-recomendar">
+                        <div class="img-small-recomendar">
+                            <img src="../assets/img/tela-produtos/bolsa.png" >
+                            <div class="icon">
+                                <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
+                                <img src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                            </div>
+                        </div>
+                        
+                        <div class="text-produto">
+                            <h3>HAVIT HV-G92 Controle USB</h3>
+                            <a class="preco-recomendar">R$400</a>
                         </div>
                     </div>
 
-                    <div class="img-small">
-                        <img src="../assets/img/tela-produtos/bolsa.png" >
+                    <div class="produto-recomendar">
+                        <div class="img-small-recomendar">
+                            <img src="../assets/img/tela-produtos/bolsa.png" >
+                            <div class="icon">
+                                <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
+                                <img src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                            </div>
+                        </div>
+                        <div class="text-produto">
+                            <h3>HAVIT HV-G92 Controle USB</h3>
+                            <a class="preco-recomendar">R$400</a>
+                        </div>
                     </div>
 
-                    <div class="img-small">
-                        <img src="../assets/img/tela-produtos/bolsa.png" >
-                    </div>
-
-                    <div class="img-small">
-                        <img src="../assets/img/tela-produtos/bolsa.png" >
+                     <div class="produto-recomendar">
+                        <div class="img-small-recomendar">
+                            <img src="../assets/img/tela-produtos/bolsa.png" >
+                            <div class="icon">
+                                <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
+                                <img src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                            </div>
+                        </div>
+                        <div class="text-produto">
+                            <h3>HAVIT HV-G92 Controle USB</h3>
+                            <a class="preco-recomendar">R$400</a>
+                        </div>
                     </div>
                  </div>
             </div>
