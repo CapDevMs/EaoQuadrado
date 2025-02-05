@@ -40,3 +40,12 @@
 button:hover {
     opacity: 0.8;
 }
+
+.subtitulo{
+    opacity: 200%;
+    font-weight: bold;
+}
+
+.texto{
+    opacity: 50%;
+}
