@@ -17,31 +17,31 @@
         <a id="menu" href="home-page">Pagina Inicial</a>
         <span>/</span>
         <div id="sub-menu"><a>Contato</a></div>     
-        
+        <div class="container">
         <img src="../../assets/img/contato.jpg" alt="contato" id="contato">
         <form action="#" method="post">      
                 <div class="titulo">
                         <label>Nome</label><br>
-                        <textarea id="preco-produto" name="preco-produto" rows="2"></textarea><br><br>
+                        <textarea class="caixa" placeholder="John Doe" id="preco-produto"  rows="2"></textarea><br><br>
                 </div>
                 <div class="titulo">
                         <label>E-mail</label><br>
-                        <textarea id="preco-produto" name="preco-produto" rows="2"></textarea><br><br>
+                        <textarea class="caixa" id="preco-produto" placeholder="johndoe@gmail.com"  rows="2"></textarea><br><br>
                 </div>
                 <div class="titulo">
                         <label>Telefone/WhatsApp</label><br>
-                        <textarea id="preco-produto" name="preco-produto" rows="2"></textarea><br><br>
+                        <textarea class="caixa" id="preco-produto" placeholder="(67) 99999-9999" rows="2"></textarea><br><br>
                 </div>
-                <div class="linha-1">
-                    <label for="descricao-produto">Descrição</label><br>
-                    <textarea id="descricao-produto" name="descricao-produto" rows="15" required></textarea><br><br>
+                <div class="titulo">
+                    <textarea class="caixa" id="descricao-produto" placeholder="Sua mensagem"  rows="15" required></textarea><br><br>
                 </div>
-                    
+                <button id="salvar" type="submit">Enviar Mensagem</button>
                 </div>
             </form>
-            <div class="botoes-container">
-                <button id="salvar" type="submit">Enviar Mensagem</button>
             </div>
+            
+                
+            
 
 
     </main>

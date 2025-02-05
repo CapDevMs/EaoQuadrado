@@ -10,24 +10,41 @@
     margin-left: 5%;
     color: grey;
     font-style: inherit;
+
 }
 
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 50%;  
+    gap: 15%;  
+    align-items: start;  
+    margin-top: 5%;  
+}
 
 #contato {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Divide o container em 2 colunas de igual largura */
-    width: 100%; /* Ajuste a largura do container */
+    margin-left: 30%;
+}
+
+#form {
+    margin-left: 30%;
+}
+
+
+.titulo{
+    display: inline-block;
     height: 40%;
-    margin-left: 6%;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    width:28%;
+    margin-left: 3%;
+    color: #7D8184;
+    font-family: Poppins;
 }
 
-.titulo {
-    grid-column: 1; /* Coloca o elemento na primeira coluna */
-    width: 100%; /* Ajusta a largura para preencher o espaço disponível */
+#descricao-produto{
+    width:350%;
 }
 
-.outroElemento { /* Exemplo para o segundo elemento */
-    grid-column: 2; /* Coloca o outro elemento na segunda coluna */
+.caixa{
+    border-radius: 10px;
+    background-color: #F5F5F5;
 }
