@@ -38,7 +38,8 @@
     height: 100%;
     /* opacity: 40%; */
     color: black;
-    background-color: #BFC2C5;
+    /* background-color: #BFC2C5; */
+    background-color: #F5F5F5;
     background-clip: border-box;
     border: 1px solid white;
     border-radius: 20px;
@@ -69,12 +70,65 @@
     max-width: fit-content;
 }
 
-.figure-img {
-    margin-bottom: 0.5rem;
-    line-height: 1;
-}
-
 .img-fluid {
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    aspect-ratio: 1/1;
+    margin: auto;
+}
+
+.icone {
+    width: 24px;
+}
+
+.icone_selecionado {
+    display: flex;
+    /* background-color: red; */
+}
+.stars {
+    display: flex;
+    flex-direction: row;
+}
+.estrela_0{
+    background: linear-gradient(90deg, #16A18E 0%, #989898 100%);
+}
+.estrela_5{
+    background: linear-gradient(90deg, #16A18E 10%, #989898 90%);
+}
+.estrela_10{
+    background: linear-gradient(90deg, #16A18E 20%, #989898 80%);
+}
+.estrela_15{
+    background: linear-gradient(90deg, #16A18E 30%, #989898 70%);
+}
+.estrela_20{
+    background: linear-gradient(90deg, #16A18E 40%, #989898 60%);
+}
+.estrela_25{
+    background: linear-gradient(90deg, #16A18E 50%, #989898 50%);
+}
+.estrela_30{
+    background: linear-gradient(90deg, #16A18E 60%, #989898 40%);
+}
+.estrela_35{
+    background: linear-gradient(90deg, #16A18E 70%, #989898 30%);
+}
+.estrela_40{
+    background: linear-gradient(90deg, #16A18E 80%, #989898 20%);
+}
+.estrela_45{
+    background: linear-gradient(90deg, #16A18E 90%, #989898 10%);
+}
+.estrela_50{
+    background: linear-gradient(90deg, #16A18E 100%, #989898 0%);
+}
+
+.card_estrela_texto{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card_estrela_texto, .card_estrela_quantidade{
+    width: fit-content;
 }
