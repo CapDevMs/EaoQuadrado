@@ -1,6 +1,6 @@
 <?php
-require_once('./config/funcoes.php');
-require('./config/conexao.php');
+require_once('../config/funcoes.php');
+require('../config/conexao.php');
 
 ?>
 <?php get_base_head(); ?>
@@ -9,32 +9,32 @@ require('./config/conexao.php');
         <nav class="navbar">
             <div class="navbar-logo">
                 <a href="#">
-                    <img src="./assets/img/logo.png" class="logo" alt="Logo">
+                    <img src="../assets/img/logo.png" class="logo" alt="Logo">
                 </a>
             </div>
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="O que você procura hoje?">
-                <img src="./assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
+                <img src="../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
             </div>
             <ul class="menu-opcoes">
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/pessoa.svg" alt="Pessoa">
+                        <img src="../assets/img/pessoa.svg" alt="Pessoa">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/carrinho.svg" alt="Carrinho">
+                        <img src="../assets/img/carrinho.svg" alt="Carrinho">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/informacao.svg" alt="Informações">
+                        <img src="../assets/img/informacao.svg" alt="Informações">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="./assets/img/suporte.svg" alt="suporte">
+                        <img src="../assets/img/suporte.svg" alt="suporte">
                     </a>
                 </li>
             </ul>
@@ -42,9 +42,29 @@ require('./config/conexao.php');
     </header>
 
     <main>
-        <div class="container">
-            <h1>Conteúdo da página</h1>
-        </div>
+        <ul class="slider">
+            <li>  
+                <input type="radio" id="slide1" class="btn-slide" name="slide" checked>
+                <label for="slide1"></label>
+                <img src="../Property 1=Frame 1000005973.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide2" class="btn-slide" name="slide">
+                <label for="slide2"></label>
+                <img src="../Property 1=Frame 1000005974.png"/>
+            </li>
+            <li>
+                <input type="radio" id="slide3" class="btn-slide" name="slide">
+                <label for="slide3"></label>
+                <img src="../Property 1=Frame 1000005975.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide4" class="btn-slide" name="slide">
+                <label for="slide4"></label>
+                <img src="../Property 1=Frame 1000005976.png" />
+            </li>
+        </ul>
+        <script src="script.js"></script>
     </main>
 
     <footer>
