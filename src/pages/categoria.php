@@ -13,56 +13,29 @@
 <body>
     <?php get_header() ?>
 
-    <main>
-
-        <div class="container-video">
-            <div class="video-celular">
-            <video autoplay muted loop>
-                <source src="../assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">        
-            </video>
-            </div>      
-        </div> 
-        <div class="categoria">
-            <button class="categoria-celular">
-                <img src="../assets/img/CATEGORIA/Categoria-celular.png"id="Categoria-celular" alt="categoria-celular">
-            </button> 
-            <button class="categoria-computador">
-                <img src="../assets/img/CATEGORIA/Categoria-computador.png" id="Categoria-computador" alt="Categoria-computador">
-            </button>
-            <button class="categoria-smartwatche">   
-                <img src="../assets/img/CATEGORIA/Categoria-smartwatche.png" id="Categoria-smartwatche" alt="Categoria-smartwache">
-            </button>
-            <button class="categoria-camera">
-                <img src="../assets/img/CATEGORIA/Categoria-camera.png" alt="Categoria-camera" id="Categoria-camera">
-            </button>
-            <button class="categoria-fone-de-ouvido">    
-                <img src="../assets/img/CATEGORIA/Categoria-fone_de_ouvido.png" alt="Categoria fone de ouvido" id="Categoria-fone_de_ouvido">
-            </button>
-            <button class="categoria-gamer">    
-                <img src="../assets/img/CATEGORIA/Categoria-gamer.png"alt="categoria gamer" id="Categoria-gamer">
-            </button>    
-        </div>
-
+    <div class ="sidebar">
         <div class="marcas_preco">
-            <h1 class="marcas">Marcas</h1>
-            <input class="search-bar-marcas" placeholder="Buscar Produtos">
-            <button class="search-marca" alt="Pesquisar_Marca"></button>
-            <h1 class="preco">Preço</h1>
-            <label for="minimo" class="label-min_max" id="min">Mínimo</label>
-            <label for="maximo" class="label-min_max" id="max">Máximo</label>
-            <input type="text" id="minimo" class="min_max">
-            <input type="text" id="maximo" class="min_max">
-        </div>
-        
-        <div class="categorias">
-            <h3>Categorias</h3>
-            <a href="">Celulares</a>
-            <a href="">Computadores</a>
-            <a href="">Smartwatches</a>
-            <a href="">Câmera</a>
-            <a href="">Fones de Ouvido</a>
-            <a href="">Games</a>
-        </div>
+                <h1 class="marcas">Marcas</h1>
+                <input class="search-bar-marcas" placeholder="Buscar Produtos">
+                <button class="search-marca" alt="Pesquisar_Marca"></button>
+                <h1 class="preco">Preço</h1>
+                <label for="minimo" class="label-min_max" id="min">Mínimo</label>
+                <label for="maximo" class="label-min_max" id="max">Máximo</label>
+                <input type="text" id="minimo" class="min_max">
+                <input type="text" id="maximo" class="min_max">
+            </div>
+            
+            <div class="sidebar__categoria">
+                <nav class ="sidebar__navigation">
+                    <h3>Categorias</h3>
+                    <a href="">Celulares</a>
+                    <a href="">Computadores</a>
+                    <a href="">Smartwatches</a>
+                    <a href="">Câmera</a>
+                    <a href="">Fones de Ouvido</a>
+                    <a href="">Games</a>
+                </nav>
+            </div>
         <h1 class="titulo">Avaliação dos Vendedores</h1>
         <div class="checkbox-container"> 
             
@@ -73,8 +46,39 @@
             <input type="checkbox" name="5-star"><label for="5-star" id="star2"><img src="../assets/img/CATEGORIA/Two_Star.png" id="5_star" alt=""></label>
             <input type="checkbox" name="5-star"><label for="5-star" id="star1"><img src="../assets/img/CATEGORIA/One_Star.png" id="5_star" alt=""></label>
         </div>
-        
-       
+    </div>
+    <main>
+
+        <div class="container-video">
+            <div class="video-celular">
+            <video autoplay muted loop>
+                <source src="../assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">        
+            </video>
+            </div>      
+        </div> 
+        <section class="section-categoria">
+            <div class="section-categoria__button">
+                <button class="categoria-celular">
+                    <img src="src\assets\img\CATEGORIA\ICONE_CATEGORIA\Category-CellPhone.png"id="Categoria-celular" alt="categoria-celular">
+                </button> 
+                <button class="categoria-computador">
+                    <img src="../assets/img/CATEGORIA/Categoria-computador.png" id="Categoria-computador" alt="Categoria-computador">
+                </button>
+                <button class="categoria-smartwatche">   
+                    <img src="../assets/img/CATEGORIA/Categoria-smartwatche.png" id="Categoria-smartwatche" alt="Categoria-smartwache">
+                </button>
+                <button class="categoria-camera">
+                    <img src="../assets/img/CATEGORIA/Categoria-camera.png" alt="Categoria-camera" id="Categoria-camera">
+                </button>
+                <button class="categoria-fone-de-ouvido">    
+                    <img src="../assets/img/CATEGORIA/Categoria-fone_de_ouvido.png" alt="Categoria fone de ouvido" id="Categoria-fone_de_ouvido">
+                </button>
+                <button class="categoria-gamer">    
+                    <img src="../assets/img/CATEGORIA/Categoria-gamer.png"alt="categoria gamer" id="Categoria-gamer">
+                </button>    
+            </div>
+        </section>
+                       
     </main>
 
     <?php get_footer() ?>
