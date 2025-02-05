@@ -122,8 +122,8 @@
                 var img = document.createElement('img');
                 img.src = e.target.result;
                 img.alt = 'img' + (previasContainer.children.length + 1);
-                img.style.width = '300px';  
-                img.style.height = '500px';
+                img.style.width = '200px';  
+                img.style.height = '300px';
                 img.style.objectFit = 'cover';
 
                 
