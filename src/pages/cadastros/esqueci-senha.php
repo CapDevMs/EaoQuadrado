@@ -21,7 +21,7 @@
     <div class="container">
     <form action="#" method="post">
     <div id="email">Email</div>
-    <textarea id="preco-produto" placeholder="johndoe@gmail.com" name="preco-produto" rows="2"></textarea><br><br>
+    <textarea id="texto-digitado" placeholder="johndoe@gmail.com" name="preco-produto" rows="2"></textarea><br><br>
     <button type="submit">Recuperar Senha</button>
     </form>
     <img src="../../assets/img/esqueci-senha.png " alt="esqueci-senha" id="esqueci">
