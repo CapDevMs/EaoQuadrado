@@ -2,12 +2,14 @@
 
 .slider {
     display: block;
-    height: 293px;
-    width: 1600px;
+    height: 500px;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
     position: relative;
     overflow: hidden; 
+    bottom: 43px;
+    margin-bottom: 30%;
 }
 
 .slider li {
