@@ -4,7 +4,7 @@ div {
 
 a{
     color: grey;
-
+    text-decoration: none;
 }
 .sub-menu {
     grid-column: 1 / -1;
@@ -16,6 +16,7 @@ a{
     width: 17%;
     white-space: nowrap; 
     display: inline; 
+    
 }
 
 .sub-menu a, .sub-menu h6 {
