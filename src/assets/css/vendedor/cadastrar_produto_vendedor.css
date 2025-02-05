@@ -6,6 +6,8 @@ a{
     color: grey;
     text-decoration: none;
 }
+
+
 .sub-menu {
     grid-column: 1 / -1;
     color: grey;
@@ -22,6 +24,7 @@ a{
 .sub-menu a, .sub-menu h6 {
     display: inline; 
 }
+
 
 #separator {
     display: inline; 
@@ -66,6 +69,10 @@ a{
     
 }
 
+
+#cadastrar{
+    color: #16A18E;
+}
 
 form {
     width: 73%;
@@ -131,6 +138,8 @@ label {
 
     
 }
+
+
 
 #arquivo{
     width: 30%;
@@ -200,6 +209,7 @@ button:hover {
 }
 
 
+
 @media (max-width: 1300px) {
     #sub_menu{
         visibility: hidden;
@@ -227,6 +237,9 @@ button:hover {
 
     
 }
+
+
+
 
 @media (max-width: 1180px) {
     #titulo {
