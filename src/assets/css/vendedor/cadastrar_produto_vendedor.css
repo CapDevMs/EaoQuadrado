@@ -132,6 +132,10 @@ label {
     
 }
 
+#arquivo{
+    width: 30%;
+}
+
 .previas{
     display: inline;
     background-color: grey;
