@@ -42,6 +42,7 @@ CONTAINER TITULO DO TÓPICO (MAIS PRODUTOS) - PÁGINA DO VENDEDOR
     column-gap: 30px;
     row-gap: 60px;
     margin-bottom: 2%;
+    margin-top:5%;
 }
 
 .grid-item-produtos-pagina-vendedor {
@@ -64,9 +65,8 @@ CONTAINER TITULO DO TÓPICO (MAIS PRODUTOS) - PÁGINA DO VENDEDOR
 }
 
 .img-produto {
-    max-width: 300px;
-    max-height: 300px;
-
+    width: 300px;
+    height: 300px;
 }
 
 .container-foto {
