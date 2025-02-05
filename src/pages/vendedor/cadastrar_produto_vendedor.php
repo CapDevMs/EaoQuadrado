@@ -34,7 +34,7 @@
             <h3>Gerenciar Minha Conta</h3>
             <h1><a href="link-para-meu-perfil">Meu Perfil</a></h1>
             <h1><a href="link-para-minha-loja">Minha Loja</a></h1>
-            <h1 class="ativa" id="cadastrar-produtos"><a href="link-para-cadastrar-produto">Cadastrar Produtos</a></h1>
+            <h1 class="ativa" id="cadastrar-produtos"><a href="link-para-cadastrar-produto" id="cadastrar">Cadastrar Produtos</a></h1>
             <br>
             <h3>Vendas</h3>
             <h1><a href="link-para-minha-loja">Histórico de Vendas</a></h1>
