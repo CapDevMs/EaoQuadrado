@@ -1,0 +1,87 @@
+body{
+    font-family: Poppins;
+}
+.menu{
+    display: inline;
+    margin-left: 1%;
+}
+
+#home{
+    margin-left: 5%;
+}
+
+h4{
+    margin-left: 10%;
+    margin-top: 4%;
+    font-size: 36px;
+    font-family: Inter;
+}
+ 
+
+label{
+    margin-left: 10%;
+}
+
+#titulo{
+    margin-top: 5%;
+    margin-left: 10%;
+    
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 40%;  
+    gap: 10%;  
+    align-items: start;  
+    margin-top: 1%; 
+    margin-bottom: 11%; 
+    margin-left: 10%;
+}
+
+
+form {
+    margin-bottom: 5%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #CFCFCF;
+    width: 140%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+
+#esqueci {
+    margin-left: 30%;
+}
+
+#email{
+   margin-left: 10%;
+   margin-top: 10%;
+}
+
+#preco-produto{
+    margin-left: 10%;
+    border-radius: 10px;
+    width: 80%;
+}
+
+
+button{
+    background-color: #16A18E;
+    width: 114px;
+    height: 38px;
+    color: white;
+    margin-left: 35%;
+    margin-top: -5%;
+    border-color: #16A18E;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+    
