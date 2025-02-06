@@ -4,16 +4,21 @@ header,body{
 
 }
 .container-video{
+   display: flex;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
    width: 100%;
-   height: auto;
+   height: 30vh;
    overflow: hidden;
-   position: relative;
+
 }
 .container-video video{
-   width: 100%;
-   height: auto;
-   object-fit: cover;
    margin-top: 0;
+   object-fit: cover;
+   
 }
 .categoria{
    display: flex;
@@ -66,9 +71,12 @@ header,body{
 .categoria button:hover span{
    color: white;
 <<<<<<< HEAD
+<<<<<<< HEAD
    opacity: 1;
 } 
 =======
+=======
+>>>>>>> c034c0e48908badefc9cb30ae34bacbcc36f2b1f
 }
 >>>>>>> dc5e757d0ffb7e39a49f965e747a5463f555f76b
 
