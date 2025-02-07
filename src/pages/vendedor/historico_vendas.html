@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/historico_vendas.css">
+    <script src="/src/assets/js/script.js"></script>
+    <title>Eao Quadrado</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#">
+                    <img src="../../assets/img/logo.png" class="logo" alt="Logo">
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="O que você procura hoje?">
+                <img src="../../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
+            </div>
+            <ul class="menu-opcoes">
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/pessoa.svg" alt="Pessoa">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/carrinho.svg" alt="Carrinho">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/informacao.svg" alt="Informações">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/suporte.svg" alt="suporte">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br><br><br><br>
+
+    <div class="conteudo">
+
+        <aside class="menu-aside">
+            <div class="menu-nav">
+                <a class="conta-menu" href="#">Conta /</a>
+                <a class="minha-conta-menu" href="#">Minha Conta /</a>
+                <a class="historico-menu" href="#">Histórico de Vendas</a>
+            </div>
+            <div class="menu-lateral">
+                <h2>Gerenciar Minha Conta</h2>
+                <ul class="menu-lateral-items">
+                    <li class="meu-perfil" id="meu-perfil">Meu Perfil</li>
+                    <li class="minha-loja" id="minha-loja">Minha Loja</li>
+                    <li class="cadastar-produto" id="cadastar-produto">Cadastrar Produtos</li>
+                </ul>
+                <h2>Vendas</h2>
+                <ul class="menu-lateral-items">
+                    <li class="tabela-lateral" class="historico-vendas" id="hisotico-venda-menu">Histórico de Vendas
+                    </li>
+                    <li class="tabela-lateral" class="troca-cancelamento" id="troca-cancelamento-menu">
+                        Trocas/Cancelamentos</li>
+                    <li class="tabela-lateral" class="gerenciamneto-estoque" id="gerenciamneto-estoque-menu">
+                        Gerenciamento de Estoque</li>
+                </ul>
+            </div>
+        </aside>
+        <main class="conteudo-main">
+            <h1>Histórico de Vendas</h1>
+                <!-- Cabecalho da Tabela!! -->
+            <div class="cabecalho">
+                <div class="cabecalho-item">Produto</div>
+                <div class="cabecalho-item">Status do pedido</div>
+                <div class="cabecalho-item">Preço</div>
+                <div class="cabecalho-item">Cliente</div>
+                <div class="cabecalho-item">Data</div>
+                <div class="cabecalho-item">Quantidade</div>
+            </div>
+
+            <!-- CARDS DA TABELA -->
+            <div class="card" onclick="toggleDetails(this)">
+                <div class="cardItems cardItems-inicio"  >
+                    <img class="img-historico" 
+                        src="/src/assets/img/lcdMonitor.png" alt="Monitor">
+                    <p class="p-50">LCD Monitor</p>
+                </div>
+                <div class="cardItems"  >
+                    <p class="p-40">Entregue</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-30">R$ 999,99</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-20">Yuri Ferreira</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-data">22/01/2025</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-10">1</p>
+                </div>
+                <div class="card-details">
+                  <div class="elementCard">
+                    <p class="clienteP">Cliente: <span class="nomeP">Yuri Ferreira</span> </p>
+                    <p class="clienteP">Endereço: <span class="nomeP"> Rua Piratininga ,629, Jardim dos Estados Campo Grande MS</span> </p>
+                    <p class="clienteP">Data: <span class="nomeP">12 de janeiro</span></p>
+                    <p class="clienteP">CEP: <span class="nomeP">79020-240</span></p>
+                  </div> 
+
+                    <label for="statusPedido">Status de Pedido</label>
+                         <select id="statusPedido" name="statusPedido">
+                             <option value="entregue">Entregue</option>
+                             <option value="opcao2">Troca</option>
+                             <option value="opcao3">Cancelamento</option>
+                         </select>
+                    <span class="clienteP">12 de dezembro 2024</span>
+                  </div>
+                 
+            </div>
+            <div class="card" onclick="toggleDetails(this)">
+                <div class="cardItems cardItems-inicio">
+                    <img class="img-historico" 
+                        src="/src/assets/img/controleUsb.png" alt="Controle Usb">
+                    <p class="p-50">Controle Usb</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-40">Em Andamento</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-30">R$ 999,99</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-20">Paulo Morais</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-data">22/01/2025</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-10">1</p>
+                </div>
+
+            </div>
+            <div class="card"  onclick="toggleDetails(this)">
+                <div class="cardItems cardItems-inicio">
+                    <img class="img-historico" 
+                        src="/src/assets/img/ps5Controle.png" alt="PS5 Controle">
+                    <p class="p-50">PS5 Controle</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-40">Cancelado</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-30">R$ 499,99</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-20">Monique Silva</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-data">22/01/2025</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-10">1</p>
+                </div>
+    
+            </div>
+            <div class="card"  onclick="toggleDetails(this)">
+                <div class="cardItems cardItems-inicio">
+                    <img class="img-historico" 
+                        src="/src/assets/img/iphone14.png" alt="Iphone 14">
+                    <p class="p-50">Iphone 14</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-40">Entregue</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-30">R$ 3.999</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-20">Andrey Gomes</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-data">22/01/2025</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-10">1</p>
+                </div>
+            </div>
+            <div class="card"  onclick="toggleDetails(this)">
+                <div class="cardItems cardItems-inicio">
+                    <img class="img-historico" 
+                        src="/src/assets/img/coolerRgb.png" alt="Cooler Rgb">
+                    <p class="p-50">Cooler RGB</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-40">Entrgue</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-30">R$ 299,00</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-20">Ana Clara</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-data">22/01/2025</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-10">1</p>
+                </div>
+            </div>
+            
+            <div class="card"  onclick="toggleDetails(this)">
+                <div class="cardItems cardItems-inicio">
+                    <img class="img-historico" 
+                        src="/src/assets/img/lapisFCastell.png" alt="Lapis FCastell">
+                    <p class="p-50">Lápis de cor Faber Castell</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-40">Em Andamento</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-30">R$ 18,90</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-20">Elias Silva</p>
+                </div>
+                <div class="cardItems" >
+                    <p class="p-data">22/01/2025</p>
+                </div>
+                <div class="cardItems">
+                    <p class="p-10">1</p>
+                </div>
+            </div>
+        </main>
+    </div>
+<br><br><br><br>
+    <footer>
+        <div class="footer-links">
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Suporte</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Senac Hub Academy</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">eaoquadado@gmail.com</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">+55 67 99999-9999</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">
+                                R. do Parque, 75 - Centro Campo Grande - MS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Conta</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Minha Conta</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Entre/Cadastre</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Carrinho</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Lista de Desejos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Acesso</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Nossa Política</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Termos de Uso</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">FAQ</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
