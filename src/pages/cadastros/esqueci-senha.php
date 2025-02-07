@@ -16,7 +16,7 @@
     <div class="menu" id="home">Home</div>
     <span class="menu">/</span>
     <div class="menu">Esqueci a Senha</div>
-    <div id="sub-menu"><h4>Esqueci a Senha</h4></div>
+    <div id="sub-menu"><h1>Esqueci a Senha</h1></div>
     <div id="titulo">Informe o Email cadastrado</div>
     <div class="container">
     <form action="#" method="post">

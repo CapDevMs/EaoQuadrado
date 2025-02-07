@@ -1,5 +1,6 @@
 body{
     font-family: Poppins;
+    margin-right: 5%;
 }
 .menu{
     display: inline;
@@ -8,13 +9,15 @@ body{
 
 #home{
     margin-left: 5%;
+    color: grey;
 }
 
-h4{
+h1{
     margin-left: 10%;
     margin-top: 4%;
     font-size: 36px;
     font-family: Inter;
+    width: 40%;
 }
  
 
@@ -25,19 +28,21 @@ label{
 #titulo{
     margin-top: 5%;
     margin-left: 10%;
+    width: 30%;
     
 }
 
 
 .container {
     display: grid;
-    grid-template-columns: 20% 35%;  
+    grid-template-columns: 20% 20%;  
     gap: 10%;  
     align-items: start;  
     margin-top: 1%; 
-    margin-bottom: 11%; 
+    margin-bottom: 5%; 
     margin-left: 10%;
-}
+    width: 80%;
+    }
 
 
 form {
@@ -53,6 +58,7 @@ form {
 
 #esqueci {
     margin-left: 30%;
+    width: 40%;
 }
 
 #email{
@@ -65,6 +71,7 @@ form {
     border-radius: 10px;
     width: 80%;
     background-color: #F5F5F5;
+    border-color: #F5F5F5;
 }
 
 
@@ -73,7 +80,7 @@ button{
     width: 130px;
     height: 38px;
     color: white;
-    margin-left: 35%;
+    margin-left: 33%;
     margin-top: -5%;
     border-color: #16A18E;
     border-radius: 5px;
@@ -81,15 +88,38 @@ button{
 }
 
 #esqueci{
-    width: 500px;
-    height: 400px;
+    width: 800px;
+    height: 550px;
+    margin-top: -40%;
+    
 }
 
 button:hover {
     opacity: 0.9;
 }
 
+@media (max-width: 1450px) {
+    .container {
+    display: inline-block;
+    width: 50%;
+    margin-left: 10%;
+    }
+
+    #esqueci{
+        display: inline;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 500px;
+    }
+
+    button{
+        margin-bottom: 5%;
+        margin-left: 35%;
+    }
 
 
+
+}
 
     
