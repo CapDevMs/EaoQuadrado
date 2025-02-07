@@ -8,4 +8,4 @@ function changeSlide() {
 
     document.getElementById(`slide${currentSlide}`).checked = true;
 }
-setInterval(changeSlide, 5000);
+setInterval(changeSlide, 3500);

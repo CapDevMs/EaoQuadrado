@@ -67,14 +67,59 @@ require('../config/conexao.php');
         </ul>
         <script src="../../src/assets/js/tela_inicial.js"></script>
 
+        <!-- 
         <div class="mosaico">
             <div class="itens" id="item1"><img src="" alt=""></div>
             <div class="itens" id="item2"></div>
             <div class="itens" id="item3"></div>
             <div class="itens" id="item4"></div>
-        </div>
-    </main>
+        </div> -->
 
+
+        <div class="frame_container_categoria">
+            <div class="frame_categoria"></div>
+            <h1 class="titulo">Categorias</h1>
+        </div>
+        
+        <div class="categorias_container">
+            <div class="categoria"><img src="../assets/img/cellphone_icon.svg" alt="celulares"><p>Celulares</p></div>
+            <div class="categoria"><img src="../assets/img/computer_icon.svg" alt="computer"><p>Computadores</p></div>
+            <div class="categoria"><img src="../assets/img/smartwatches_icon.svg" alt="smartwatches"><p>Smartwatches</p></div>
+            <div class="categoria"><img src="../assets/img/camera_icon.svg" alt="cameras"><p>Câmeras</p></div>
+            <div class="categoria"><img src="../assets/img/headphone_icon.svg" alt="headphone"><p>Fone de Ouvido</p></div>
+            <div class="categoria"><img src="../assets/img/games_icon.svg" alt="games"><p>Games</p></div>
+        </div>
+
+        <div class="frame_container_categoria">
+            <div class="frame_categoria"></div>
+            <h1 class="titulo2">Vendedor Destaque</h1>
+        </div>
+
+        <div class="img_container">
+            <img src="../assets/img/Banner_loja.png" class="img" alt="Banner da Loja">
+        </div>
+
+        <div class="frame_container_categoria">
+            <div class="frame_categoria"></div>
+            <h1 class="titulo3">Nossos Produtos</h1>
+        </div>
+
+        <div class="produtos_container">
+            <div class="produtos" id="produto_line1"><img src="../assets/img/racao_cesar_cachorro.svg" alt=""></div>
+            <div class="produtos" id="produto_line1"><img src="../assets/img/camera_canon.svg" alt=""></div>
+            <div class="produtos" id="produto_line1"><img src="../assets/img/asus_notebook.png" alt=""></div>
+            <div class="produtos" id="produto_line1"><img src="../assets/img/curology_product.svg" alt=""></div>
+            <div class="produtos" id="produto_line2"><img src="../assets/img/carro_eletrico.svg" alt=""></div>
+            <div class="produtos" id="produto_line2"><img src="../assets/img/chuteira_adidas.svg" alt=""></div>
+            <div class="produtos" id="produto_line2"><img src="../assets/img/controle_ps5.png" alt=""></div>
+            <div class="produtos" id="produto_line2"><img src="../assets/img/jaqueta.svg" alt=""></div>
+        </div>
+        
+    </main>
+    
+
+
+    
     <footer>
         <div class="footer-links">
             <div class="lista">
