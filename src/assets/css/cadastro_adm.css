@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+}
+
+.roadmap {
+    font-family: 'Poppins', sans-serif;
+    width: 455px;
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    left: 2%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.container-geral{
+    display: grid;
+    grid-template-columns: 35% 45%;
+    margin-left: 2%;
+    width: auto;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-rows: repeat(21,3%);
+}
+
+.menu-container h1{
+    font-size: 18px;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.menu-container a{
+    cursor: pointer;
+    font-size: 18px;
+    max-width: fit-content;
+    max-height: fit-content;
+    opacity: 50%;
+}
+
+#pagina_atual{
+    color: #00BFA5;
+}
+
+.register_client {
+    position: relative;
+    background-color: #ffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+    border-radius: 20px;
+    width: 1114px;
+    height: 1076px;
+    margin: auto;
+    margin-bottom: 3%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register_client p {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 24px;
+    font-style: normal;
+    position: relative;
+    width: 350px;
+    left: 46px;
+    top: 26px;
+    margin-bottom: 36px;
+}
+
+.register_client img {
+    position: relative;
+    margin-left: 38%;
+    width: 257.75px;
+    height: 259px;
+}
+
+.names-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px; 
+    max-width: 450px; 
+    margin-left: 40px;
+}
+
+.names-container h2 {
+    font-size: medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.input1-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    background-color: #F5F5F5;
+    border: none;
+    color: black;
+    width: 450px;
+    height: 32px;
+    border-radius: 25px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    
+    padding: 10px 15px;
+    
+}
+
+.subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    left: 42px;
+    top: 26px;
+    margin-bottom: 35px;
+    max-width: 165px;
+}
+
+.date-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 400px;
+    margin-left: 40px;
+    column-gap: 35px;
+}
+
+
+.counter {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    width: 95px;
+    height: 44px;
+    position: relative;
+    padding: 0;
+
+    column-gap: 10px;
+    text-align: center;
+}
+.dia-mes {
+    padding: auto;
+    place-items: center;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inform1-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px; 
+    max-width: 450px; 
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.inform1-container h2 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 24px;
+}
+
+.input2-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    background-color: #F5F5F5;
+    border: none;
+    color: black;
+    width: 450px;
+    height: 32px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.inform2-container {
+    position: relative;
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px; 
+    max-width: 450px; 
+    top: -1020px;
+    left: 600px;
+}
+
+.inform2-container h2 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 24px;
+}
+
+.password-container {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px; 
+    max-width: 400px;
+    left: 53%;
+    bottom: 54.3%;
+}
+
+.password-container h2 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 1;
+    line-height: 24px;
+    max-width: 145px;
+}
+
+.input3-container {
+    flex-direction: column;
+    margin-bottom: 5px;
+    background-color: #F5F5F5;
+    border: none;
+    color: black;
+    width: 450px;
+    height: 32px;
+    border-radius: 25px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 10px 15px;
+    
+}
+
+.terms-container {
+    position: relative;
+    max-width: 450px;
+    left: 55%;
+    bottom: 64.35%;
+    color: #7D8184;
+}
+
+.terms-container h1{
+    color: black;
+    font-weight: 400;
+    font-size: large;
+    margin-bottom: 5%;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 6%;
+}
+.checkbox {
+    appearance: none;
+    width: 20.1px;
+    height: 20px;
+    border: 2px solid #7D8184;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    margin-right: 10px;
+}
+
+.checkbox:checked {
+    margin-right: 10px;
+    background-image: url(../img/Radio\ Button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.button-confirm {
+    position: relative;
+    bottom: 45%;
+    left: 85%;
+    margin-bottom: 3%;
+    color: white;
+    width: 153px;
+    height: 52px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #00BFA5;
+}
+
+@media(max-width:768px){
+    .register_client{
+        left: 19%;
+    }
+    .menu-container {
+        display: none;
+    }
+    .names-container{
+        margin-left: 4%;
+    }
+    .terms-container{
+       left: 52%;
+    }
+    .inform1-container{
+        margin-left: 4%;
+    }
+    .register_client {
+        width: 768px;
+    }
+    .register_client p{
+        font-size: 20px;
+    }
+    .register_client img{
+        width: 225px;
+        height: 225px;
+        margin-bottom: 2%;
+    }
+    .input1-container{
+        width: 300px;
+    }
+    .input2-container{
+        width: 300px;
+    }
+    .input3-container{
+        width: 300px;
+    }
+    .password-container{
+        left: 400px;
+    }
+    .button-confirm{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        left: 88%;
+    }
+}
