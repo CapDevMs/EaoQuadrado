@@ -4,19 +4,20 @@ header,body{
 
 }
 .container-video{
-   display: flex;
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   z-index: 1000;
+   position: relative;
    width: 100%;
-   height: 30vh;
+   height: 40vw;
    overflow: hidden;
-
+   margin-top: 80px ;
+   background-color: #000;
 }
 .container-video video{
-   margin-top: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100vw;
+   height: 100vh;
+   transform: translate(-50%,-50%);
    object-fit: cover;
    
 }
@@ -70,17 +71,7 @@ header,body{
 }
 .categoria button:hover span{
    color: white;
-<<<<<<< HEAD
-<<<<<<< HEAD
-   opacity: 1;
-} 
-=======
-=======
->>>>>>> c034c0e48908badefc9cb30ae34bacbcc36f2b1f
 }
->>>>>>> dc5e757d0ffb7e39a49f965e747a5463f555f76b
-
-/* categoria por avaliacoes */
 
 .marca_preco{
    display: grid;
