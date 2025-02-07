@@ -1,0 +1,101 @@
+#sub-menu{
+    margin-left: 4.5%;
+    width: 95%;
+}
+
+h6, span{
+    display: inline;
+    margin-left: 0.5%;
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+#texto{
+    margin-left: 5%;
+    width: 40%;
+    display: inline-block; 
+    margin-top: 4%;
+    font-size: 140%; 
+}
+
+#título{
+    display: inline;
+    font-weight: bold;
+    font-size: 40px;         
+}
+
+#descricao{
+    margin-top: 5%;
+    display: inline;
+    
+}
+
+#imagem{
+    display: inline-block; 
+    width: 40%;  
+    vertical-align: -10px;  
+    margin-left: 5%;
+}
+
+#comparativo{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 3%;
+}
+
+#banner2{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 7%;
+}
+
+
+#banner{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 7%;
+}
+
+
+#links{
+    width: 3%;
+    display: inline-flex;
+    height: 3%;
+    margin-bottom: 15px;
+
+}
+
+@media (max-width: 1400px) {
+    #texto {
+        width: 80%; 
+        display: block; 
+        text-align: left; 
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    #título {
+        font-size: 15px; 
+    }
+
+    #descricao {
+        font-size: 80%; 
+    }
+
+    #imagem {
+        width: 80%; 
+        display: block; 
+        margin-right: 4%;
+    }
+    
+
+}    
+
+@media (max-width: 768px) {
+    #sub-menu{
+        display: none;
+    }
+}
