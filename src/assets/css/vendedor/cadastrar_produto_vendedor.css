@@ -4,8 +4,10 @@ div {
 
 a{
     color: grey;
-
+    text-decoration: none;
 }
+
+
 .sub-menu {
     grid-column: 1 / -1;
     color: grey;
@@ -16,11 +18,13 @@ a{
     width: 17%;
     white-space: nowrap; 
     display: inline; 
+    
 }
 
 .sub-menu a, .sub-menu h6 {
     display: inline; 
 }
+
 
 #separator {
     display: inline; 
@@ -66,6 +70,10 @@ a{
 }
 
 
+#cadastrar{
+    color: #16A18E;
+}
+
 form {
     width: 73%;
     height: 80%;
@@ -89,7 +97,7 @@ form {
 .linha-horizontal {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 
 .linha-1, 
@@ -131,6 +139,12 @@ label {
     
 }
 
+
+
+#arquivo{
+    width: 30%;
+}
+
 .previas{
     display: inline;
     background-color: grey;
@@ -144,7 +158,7 @@ input[type="number"],
 input[type="file"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #F5F5F5;
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
@@ -195,6 +209,7 @@ button:hover {
 }
 
 
+
 @media (max-width: 1300px) {
     #sub_menu{
         visibility: hidden;
@@ -222,6 +237,9 @@ button:hover {
 
     
 }
+
+
+
 
 @media (max-width: 1180px) {
     #titulo {

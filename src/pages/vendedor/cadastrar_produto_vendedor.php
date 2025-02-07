@@ -13,6 +13,7 @@
 <body>
     <?php get_header() ?>
 
+    
     <main>
         <div class="sub-menu">
             <a href="link-para-conta" id="conta">
@@ -33,7 +34,7 @@
             <h3>Gerenciar Minha Conta</h3>
             <h1><a href="link-para-meu-perfil">Meu Perfil</a></h1>
             <h1><a href="link-para-minha-loja">Minha Loja</a></h1>
-            <h1 class="ativa" id="cadastrar-produtos"><a href="link-para-cadastrar-produto">Cadastrar Produtos</a></h1>
+            <h1 class="ativa" id="cadastrar-produtos"><a href="link-para-cadastrar-produto" id="cadastrar">Cadastrar Produtos</a></h1>
             <br>
             <h3>Vendas</h3>
             <h1><a href="link-para-minha-loja">Histórico de Vendas</a></h1>
@@ -121,8 +122,8 @@
                 var img = document.createElement('img');
                 img.src = e.target.result;
                 img.alt = 'img' + (previasContainer.children.length + 1);
-                img.style.width = '300px';  
-                img.style.height = '500px';
+                img.style.width = '200px';  
+                img.style.height = '300px';
                 img.style.objectFit = 'cover';
 
                 
