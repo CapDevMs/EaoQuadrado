@@ -98,17 +98,26 @@ button:hover {
     opacity: 0.9;
 }
 
+
+@media (max-width: 1450px) {
+    .container {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10%;
+        }
+}
+
 @media (max-width: 1450px) {
     .container {
     display: inline-block;
-    width: 50%;
+    width: 60%;
     margin-left: 10%;
     }
 
     #esqueci{
         display: inline;
         margin-top: 10%;
-        margin-left: 10%;
+        margin-left: 7%;
         margin-right: 10%;
         width: 500px;
     }
@@ -118,7 +127,9 @@ button:hover {
         margin-left: 35%;
     }
 
-
+    #email{
+        width: 30%;
+     }
 
 }
 
