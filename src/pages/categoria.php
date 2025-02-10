@@ -1,5 +1,5 @@
 <?php
-    include('../config/funcoes.php');
+    include('../../config/funcoes.php');
     $appName = get_app_name();
 ?>
 <!DOCTYPE html>
@@ -48,6 +48,7 @@
         </div>
     </div>
     <main>
+<<<<<<< HEAD
         <div class="main-content">
             <div class="container-video">
                 <div class="container-video__video-celular">
@@ -79,6 +80,39 @@
                 </div>
             </section>
         </div>               
+=======
+
+        <div class="container-video">
+            <div class="video-celular">
+            <video autoplay muted loop>
+                <source src="../assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">        
+            </video>
+            </div>      
+        </div> 
+        <section class="section-categoria">
+            <div class="section-categoria__button">
+                <button class="categoria-celular">
+                    <img src="../assets/img/categoria/icone-categoria/Category-CellPhone.png"id="Categoria-celular" alt="categoria-celular">
+                </button> 
+                <button class="categoria-computador">
+                    <img src="../assets/img/categoria/icone-categoria/Category-Computer.png" id="Categoria-computador" alt="Categoria-computador">
+                </button>
+                <button class="categoria-smartwatche">   
+                    <img src="../assets/img/categoria/icone-categoria/Category-SmartWatch.png" id="Categoria-smartwatche" alt="Categoria-smartwache">
+                </button>
+                <button class="categoria-camera">
+                    <img src="../assets/img/categoria/icone-categoria/Category-Camera.png" alt="Categoria-camera" id="Categoria-camera">
+                </button>
+                <button class="categoria-fone-de-ouvido">    
+                    <img src="../assets/img/categoria/icone-categoria/Category-Headphone.png" alt="Categoria fone de ouvido" id="Categoria-fone_de_ouvido">
+                </button>
+                <button class="categoria-gamer">    
+                    <img src="../assets/img/categoria/Category-Gamepad.png"alt="categoria gamer" id="Categoria-gamer">
+                </button>    
+            </div>
+        </section>
+                       
+>>>>>>> 24ca8dfde53726bbf37e59b3673bfaf32369c7ea
     </main>
 
     <?php get_footer() ?>
