@@ -4,20 +4,15 @@ header,body{
 
 }
 .container-video{
-<<<<<<< HEAD
-<<<<<<< HEAD
+
    display: flex;
    position: fixed;
    top: 0;
    left: 0;
    right: 0; 
    z-index: 1000;
-=======
    position: relative;
->>>>>>> 24ca8dfde53726bbf37e59b3673bfaf32369c7ea
-=======
    position: relative;
->>>>>>> 24ca8dfde53726bbf37e59b3673bfaf32369c7ea
    width: 100%;
    height: 40vw;
    overflow: hidden;
