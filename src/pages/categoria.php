@@ -1,17 +1,13 @@
 <?php
-    include('../../config/funcoes.php');
-    $appName = get_app_name();
+require_once('../../config/funcoes.php');
+require('../../config/conexao.php');
+
 ?>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['categoria']) ?>
-</head>
+<?php get_base_head(); ?>
+
 <body>
     <?php get_header() ?>
+    <link rel = 'stylesheet' href="../../assets/css/categoria.css">
 
     <div class ="sidebar">
         <div class="sidebar__marcas-preco">
@@ -48,7 +44,6 @@
         </div>
     </div>
     <main>
-<<<<<<< HEAD
         <div class="main-content">
             <div class="container-video">
                 <div class="container-video__video-celular">
@@ -80,8 +75,6 @@
                 </div>
             </section>
         </div>               
-=======
-
         <div class="container-video">
             <div class="video-celular">
             <video autoplay muted loop>
@@ -112,7 +105,6 @@
             </div>
         </section>
                        
->>>>>>> 24ca8dfde53726bbf37e59b3673bfaf32369c7ea
     </main>
 
     <?php get_footer() ?>
