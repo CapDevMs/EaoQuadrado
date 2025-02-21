@@ -44,12 +44,12 @@ $appName = get_app_name();
                                             <h2>Studio Center</h2>
                                         </div>
                                     </div>
-                                    <div class="row pt-3">
+                                    <div class="row">
                                         <div class="col-12">
                                             <a href="mailto:studiocenterpy@gmail.com">studiocenterpy@gmail.com</a>
                                         </div>
                                     </div>
-                                    <div class="row pt-2">
+                                    <div class="row">
                                         <div class="col-12">
                                             <p>Av. 15 de Agosto, 506, Centro</p>
                                             <p>Campo Grande - MS</p>
@@ -89,19 +89,28 @@ $appName = get_app_name();
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row ptb-2">
                     <div class="col-3">
-                        <p>card aqui</p>
+                        <div class="card">
+                            <div class="card-body ptb-1 plr-1">
+                                <div class="container-foto">
+                                    <img class="img-produto" src="../../assets/img/imgs-produtos/racao.avif">
+                                </div>
+                                <div class="container-coracao-carrinho">
+                                    <img class="icones-coracao-carrinho" src="../../assets/img/icone-coracao.svg" alt="like" />
+                                    <img class="icones-coracao-carrinho" src="../../assets/img/icone-carrinho.svg" alt="cart" />
+                                </div>
+                                <div class="container-nome-produto">
+                                    <h3 class="nome-produto">Ração Cachorro Pedigree 20kg</h3>
+                                </div>
+                                <div class="container-preco-produto">
+                                    <h3 class="preco-produto">R$119,90</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <p>card aqui</p>
-                    </div>
-                    <div class="col-3">
-                        <p>card aqui</p>
-                    </div>
-                    <div class="col-3">
-                        <p>card aqui</p>
-                    </div>
+                    
+                    
                 </div>
 
             </div>

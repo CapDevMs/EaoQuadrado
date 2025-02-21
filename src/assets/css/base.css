@@ -188,6 +188,8 @@ footer {
     line-height: 24px; /* 184.615% */
 }
 
-.row {
-    
+.row:before, .row:after{
+    display: table;
+    content: " ";
+    clear:both
 }
