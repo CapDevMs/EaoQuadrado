@@ -3,6 +3,7 @@ header,body{
    padding: 0;
 
 }
+/* video da categoria */
 .container-video{
    display: flex;
    position: fixed;
@@ -28,6 +29,9 @@ header,body{
    object-fit: cover;
    
 }
+
+/* botoes de categoria */
+
 .categoria{
    display: flex;
    justify-content: center;
@@ -63,7 +67,6 @@ header,body{
    left: 50%;
    transform: translate(-50%, -50%);
    color: transparent;
-   /* font-weight: bold; */
    pointer-events: none;
    transition: color 0.3s ease;
    z-index: 2;
@@ -79,6 +82,8 @@ header,body{
 .categoria button:hover span{
    color: white;
 }
+
+/* filtro */
 
 .marca_preco{
    display: grid;

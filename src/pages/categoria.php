@@ -1,6 +1,6 @@
 <?php
-require_once('../../config/funcoes.php');
-require('../../config/conexao.php');
+require_once('../config/funcoes.php');
+require('../config/conexao.php');
 
 ?>
 <?php get_base_head(); ?>
