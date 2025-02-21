@@ -1,0 +1,51 @@
+#menu{
+    margin-left: 6%;
+    width: 94%;
+    margin-top: 4%;
+    font-size: 17px; 
+}
+    
+#sub-menu {
+    margin-left: 6%;
+    margin-top: 4%;
+    width: 94%;
+    font-weight: bold;
+    font-size: 35px; 
+}
+
+#texto{
+    margin-left: 6%;
+    width: 90%;
+    margin-top: 2%;
+    font-size: 23px;
+    text-align: left; 
+    font-family: 'Poppins', sans-serif;
+}
+
+#retorno{
+    padding: 10px 20px;
+    background-color: #16A18E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 15%;
+    height: 10%;
+    margin-left: 40%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.subtitulo{
+    opacity: 200%;
+    font-weight: bold;
+}
+
+.texto{
+    opacity: 50%;
+}

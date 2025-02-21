@@ -1,0 +1,269 @@
+@import url(../../assets/css/base.css);
+html{
+    font-family: Poppins;
+
+}
+.map{
+    width: 95%;
+    margin: auto;
+    font-size: 65%;
+    }
+
+.grid-conteudo{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    padding-bottom: 1%;
+    padding-top: 1%;
+   
+}
+
+#grid-produto{
+    display: grid;
+    grid-template-columns: 9% 40% 29%;
+    width: 100%;
+    column-gap: 1%;
+    justify-content: center;
+    
+}
+
+
+
+.img-small{
+    background-color: rgb(239, 239, 239);
+    margin-bottom: 5%;
+    width: 90%;
+    
+    
+    
+
+}
+
+.img-large{
+    background-color: rgb(239, 239, 239);
+    width: 90%;
+    
+    
+    
+    
+}
+
+.descricao{
+    padding-top: 1%;
+    position: relative;
+    margin-left: 10%;
+    max-width: 70%;
+    
+}
+
+
+h2{
+    font-weight: 500;
+    
+}
+
+.preco{
+    font-size: 300%;
+    color: #16A18E;
+}
+
+.grid-color{
+    grid-template-columns: 10% 20% 10%;
+}
+
+.buttom-color{  
+    border: none;
+    width: 10%;
+    padding:1%;
+    
+}
+
+.grid-recomendar{
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17%;
+    width: 100%;
+    column-gap: 1%;
+    margin-top: 5%;
+    justify-content: center;
+    
+}
+
+.topico{
+    position: relative;
+    width: 20px; 
+    height:40px;
+    background-color: #16A18E;
+    border-radius: 20%;
+}
+
+.grid-topico{ 
+    position: relative;
+    display: grid;
+    margin-top: 6%;
+    grid-template-columns: 2% 30%;
+    left: 10%;
+    width: 90%;
+}
+
+.text-topico{
+    max-width:500px;
+    color: #00BFA5;
+    line-height: 260%;
+    font-weight: 600;
+
+
+}
+.line{
+    position: relative;
+    left: 9.8%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    width: 75%; 
+    height:1px;
+    background-color: #000000;
+    border-radius: 20%;
+}
+
+ 
+.quantidade{
+    display: inline;
+    width: 40px;
+    text-align: center;
+    height: 19px;
+}
+#botao_qtd{
+    padding-top: 7%;
+    width: 50%;
+    height: 10%;
+}
+ 
+#menos{
+    position: relative;
+    left: 3%;
+    border-radius: 2px;
+    border-width: 1px;
+    height: 50%;
+    
+}
+#mais{
+    position: relative;
+    right: 3%;
+    border-width: 1px;
+    border-radius: 2px;
+    background-color: #16A18E;
+    color: white;
+    height: 50%;
+ 
+}
+
+#comprar{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 30% 6% 6%;
+    gap: 1%;
+    
+}
+
+#btn-comprar{
+    position: relative;
+    width: 150px; 
+    height:35px;
+    padding-top:3%;
+    background-color: #16A18E;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 100%;
+    color: white;
+    cursor: pointer;
+    
+}
+
+h4{
+    font-weight: 300;
+}
+#troca{
+    display: grid;
+    grid-template-columns: 8% 50%;
+    grid-template-rows: 20% 20%;
+    gap: 2%;
+    padding-top: 7%;
+    
+}
+#dias{
+    grid-column-start: 2;
+    padding-top: 4%;
+    
+}
+#loja{
+    display: grid;
+    grid-template-columns: 20% 50% 10% 10%;
+    align-items: center;
+    gap: 2%;
+    width: 1fr;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    max-width: 60%;
+    font-size: 13px;
+    
+    
+}
+
+
+.text-produto{
+    display: grid;
+}
+
+.icon{
+    position: relative;
+    width: 20px;
+    top: 5%;
+    z-index: 10;
+}
+
+
+
+.img-small-recomendar{
+    position: relative;
+    display: flex;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.img-small-recomendar > img {
+    background-color: rgb(239, 239, 239);
+    z-index: -10;
+}
+
+.img-small-recomendar > .icon > img  {
+    position: relative;
+    width: 20px;
+    z-index: 100;
+    top: 5%;
+    right: 130%;
+}
+
+.produto-recomendar{
+    
+    margin-bottom: 20%;
+    
+}
+
+.preco-recomendar{
+    color: #00BFA5;
+    font-weight: 600;
+
+}
+
+h3{
+    font-weight: 600;
+}
+
+#loja-coracao{
+    width: 30px;
+    position: relative;
+    
+}
+#loja-whats{
+    width: 30px;
+    
+}
+
