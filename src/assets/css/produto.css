@@ -1,4 +1,8 @@
+@import url(../../assets/css/base.css);
+html{
+    font-family: Poppins;
 
+}
 .map{
     width: 95%;
     margin: auto;
@@ -113,7 +117,7 @@ h2{
     left: 9.8%;
     margin-top: 4%;
     margin-bottom: 2%;
-    width: 1250px; 
+    width: 75%; 
     height:1px;
     background-color: #000000;
     border-radius: 20%;
@@ -122,27 +126,32 @@ h2{
  
 .quantidade{
     display: inline;
-    width: 35px;
+    width: 40px;
     text-align: center;
+    height: 19px;
 }
 #botao_qtd{
     padding-top: 7%;
-    width: 130px;
-    height: 30px;
-    
-    
+    width: 50%;
+    height: 10%;
 }
  
 #menos{
     position: relative;
-    left: 5px;
+    left: 3%;
+    border-radius: 2px;
+    border-width: 1px;
+    height: 50%;
+    
 }
 #mais{
     position: relative;
-    right: 5px;
-   
+    right: 3%;
+    border-width: 1px;
+    border-radius: 2px;
     background-color: #16A18E;
     color: white;
+    height: 50%;
  
 }
 
@@ -160,7 +169,7 @@ h2{
     height:35px;
     padding-top:3%;
     background-color: #16A18E;
-    border-radius: 5%;
+    border-radius: 5px;
     text-align: center;
     font-size: 100%;
     color: white;
@@ -186,8 +195,14 @@ h4{
 }
 #loja{
     display: grid;
-    grid-template-columns: 13% 30% 10% 10%;
+    grid-template-columns: 20% 50% 10% 10%;
+    align-items: center;
     gap: 2%;
+    width: 1fr;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    max-width: 60%;
+    font-size: 13px;
     
     
 }
@@ -241,3 +256,14 @@ h4{
 h3{
     font-weight: 600;
 }
+
+#loja-coracao{
+    width: 30px;
+    position: relative;
+    
+}
+#loja-whats{
+    width: 30px;
+    
+}
+
