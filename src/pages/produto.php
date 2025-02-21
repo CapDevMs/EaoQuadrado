@@ -50,8 +50,9 @@
                         </div>
                         <div id="comprar">
                             <div id="btn-comprar"><a>Comprar</a></div>
-                            <div><img src="../assets/img/tela-produtos/carrinhooo.png""></div>
-                            <div><img src="../assets/img/tela-produtos/coracao.png""></div>
+                            <div id="icons-comprar"><img src="../assets/img/tela-produtos/carrinhooo.png">
+                            <img src="../assets/img/tela-produtos/coracao.png"></div>
+                            
                         </div>
                         <div id="troca">
                             <img src="../assets/img/tela-produtos/Icon-return.png">
