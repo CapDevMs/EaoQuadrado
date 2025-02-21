@@ -7,9 +7,9 @@
     --cor-terciaria: #000000; /* Cor terciária */
     
     /* Paleta Verde Eaoquadrado */
-    --cor-principal: #00BFA5; /* Cor primária - ton médio - base principal*/
-    --cor-secundaria:#00EDCC; /* Cor secundária - ton claro */
-    --cor-terciaria: #16A18E; /* Cor terciária - ton escuro*/
+    --cor-verde-principal: #00BFA5; /* Cor primária - ton médio - base principal*/
+    --cor-verde-claro:#00EDCC; /* Cor secundária - ton claro */
+    --cor-verde-escuro: #16A18E; /* Cor terciária - ton escuro*/
     
     /* Cores de fundo */
     --cor-fundo: #ffffff;
