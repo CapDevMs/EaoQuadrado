@@ -2,6 +2,7 @@ div {
     display: grid;
 }
 
+<<<<<<< HEAD
 a{
     color: grey;
     text-decoration: none;
@@ -12,23 +13,39 @@ a{
     grid-column: 1 / -1;
     color: grey;
     margin-left: 4%;
+=======
+.sub-menu {
+    background-color: white;
+    grid-column: 1 / -1;
+    color: grey;
+    padding-left: 4%;
+>>>>>>> 9f71684 (Pagina + CSS desktop)
     display: flex; 
     align-items: center; 
     font-size: 20px;
     width: 17%;
     white-space: nowrap; 
+<<<<<<< HEAD
     display: inline; 
     
+=======
+>>>>>>> 9f71684 (Pagina + CSS desktop)
 }
 
 .sub-menu a, .sub-menu h6 {
     display: inline; 
 }
 
+<<<<<<< HEAD
 
 #separator {
     display: inline; 
     margin-left: 10px; 
+=======
+#separator {
+    display: inline; 
+    margin-left: 20px; 
+>>>>>>> 9f71684 (Pagina + CSS desktop)
 }
 
 
@@ -42,11 +59,18 @@ a{
     background-color: white(255, 251, 0);
     margin-left: 20%;
     width: 80%;
+<<<<<<< HEAD
     color: #16A18E;
     font-size: 25px;
     margin-top: 1%;
     font-family: 'Poppins', sans-serif;
     
+=======
+    color: #00edcc;
+    font-size: 25px;
+    font-weight: bold; 
+    margin-top: 1%;
+>>>>>>> 9f71684 (Pagina + CSS desktop)
 }
 
 #menu-lateral {
@@ -69,6 +93,7 @@ a{
     
 }
 
+<<<<<<< HEAD
 
 #cadastrar{
     color: #16A18E;
@@ -82,6 +107,21 @@ form {
     margin-left: 20%; 
     margin-right: 1%;
     position: relative;
+=======
+#painel {
+    width: 75%; 
+    grid-column: 2; 
+    margin-left: 20%; 
+    position: relative;
+    margin-top: -10%;
+    gap: 3px;  
+    border-radius: 10px;
+    border-style: groove;
+}
+
+form {
+    width: 96.70%;
+>>>>>>> 9f71684 (Pagina + CSS desktop)
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -89,6 +129,7 @@ form {
     height: 100%;
 }
 
+<<<<<<< HEAD
 #descricao-produto{
     width: 200%;
     height: 100%;
@@ -101,6 +142,15 @@ form {
 }
 
 .linha-1, 
+=======
+.linha-horizontal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.linha-1,
+>>>>>>> 9f71684 (Pagina + CSS desktop)
 .linha-2,
 .linha-3 {
     display: flex;
@@ -108,6 +158,7 @@ form {
     width: 48%; 
 }
 
+<<<<<<< HEAD
 label {
     font-size: 16px;
     font-weight: bold;
@@ -154,10 +205,24 @@ label {
 
 
 textarea, select,
+=======
+.linha-3 {
+    width: 32%; 
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+textarea,
+>>>>>>> 9f71684 (Pagina + CSS desktop)
 input[type="number"],
 input[type="file"] {
     width: 100%;
     padding: 10px;
+<<<<<<< HEAD
     border: 1px solid #F5F5F5;
     border-radius: 5px;
     font-size: 14px;
@@ -170,6 +235,24 @@ input[type="file"] {
 textarea , select {
     resize: vertical; 
     border-radius: 20px;
+=======
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: rgb(228, 228, 228);
+}
+
+#quantidade-produto{
+    width: 40%;
+    height: 23%;
+    
+}
+
+textarea {
+    resize: vertical; 
+    border-radius: 25px;
+>>>>>>> 9f71684 (Pagina + CSS desktop)
 }
 
 input[type="file"] {
@@ -179,18 +262,28 @@ input[type="file"] {
 .botoes-container {
     display: flex;
     justify-content: flex-end;
+<<<<<<< HEAD
     margin-top: 2%;
+=======
+    gap: 25px;
+    margin-top: 20%;
+>>>>>>> 9f71684 (Pagina + CSS desktop)
     margin-bottom: 1%;
 }
 
 button {
     padding: 10px 20px;
+<<<<<<< HEAD
     background-color: #16A18E;
+=======
+    background-color: #4CAF50;
+>>>>>>> 9f71684 (Pagina + CSS desktop)
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
+<<<<<<< HEAD
     width: 207px;
     height: 60px;
     margin-right: 4%;
@@ -198,6 +291,13 @@ button {
 
 button#cancelar {
     background-color: #e85252;
+=======
+    width: 15%;
+}
+
+button#cancelar {
+    background-color: #f44336;
+>>>>>>> 9f71684 (Pagina + CSS desktop)
 }
 
 button:hover {
@@ -210,6 +310,7 @@ button:hover {
 
 
 
+<<<<<<< HEAD
 @media (max-width: 1300px) {
     #sub_menu{
         visibility: hidden;
@@ -279,6 +380,8 @@ button:hover {
 }
 
 
+=======
+>>>>>>> 9f71684 (Pagina + CSS desktop)
 
 
 
