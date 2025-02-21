@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #16A18E;
+    --secondary-color: #fff
+}
+
 /* Arquivo com estilos Bases para todo o Sistema */
 .pt-0, .ptb-0 {
     padding-top: 0;

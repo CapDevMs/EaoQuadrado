@@ -132,3 +132,23 @@
 .card_estrela_texto, .card_estrela_quantidade{
     width: fit-content;
 }
+
+.block-green {
+    width: 100%;
+    max-width: 20px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.text-primary {
+    color: var(--primary-color);
+    margin-left: 1vw;
+}
+
+.content-header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}

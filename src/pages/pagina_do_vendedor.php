@@ -79,6 +79,31 @@ $appName = get_app_name();
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="content-header-section">
+                            <div class="block-green"></div>
+                            <p class="text-primary">Nossos Produtos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <p>card aqui</p>
+                    </div>
+                    <div class="col-3">
+                        <p>card aqui</p>
+                    </div>
+                    <div class="col-3">
+                        <p>card aqui</p>
+                    </div>
+                    <div class="col-3">
+                        <p>card aqui</p>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
