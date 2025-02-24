@@ -276,22 +276,17 @@ h3{
 }
 
 @media (max-width: 1790px) and (min-width: 1590px) {
-    #icons-comprar{
-        display: flex;
-        height: 100%;
-        gap: 15%;
-        align-items: center;
-        margin-left: 5%;
-        
-        
-    }
-    #comprar{
-        grid-template-columns: 33% 10%;
-        
-    }
+    #grid-produto{
+            display: grid;
+            grid-template-columns: 9% 40% 29%;
+            width: 100%;
+            column-gap: 1%;
+            justify-content: center;
+        }
+
+     }
     
 
-}
 @media (max-width: 1590px) {
     #icons-comprar{
         display: flex;
