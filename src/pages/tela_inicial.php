@@ -67,32 +67,45 @@ require('../config/conexao.php');
         </ul>
         <script src="../../src/assets/js/tela_inicial.js"></script>
 
-        <!-- 
+        <div class="frame_container_categoria">
+            <hr class="frame_categoria">
+            <h1>Lançamentos</h1>
+        </div>
+
+        
         <div class="mosaico">
-            <div class="itens" id="item1"><img src="" alt=""></div>
-            <div class="itens" id="item2"></div>
-            <div class="itens" id="item3"></div>
-            <div class="itens" id="item4"></div>
-        </div> -->
+            <div class="itens1" id="item1">
+                <img src="../assets/img/ps5_reflex.png" alt="">
+            </div>
+            <div class="itens2" id="item2">
+                <img src="../assets/img/woman_with_hat.png" alt="">
+            </div>
+            <div class="itens3" id="item3">
+                <img src="../assets/img/caixa_de_som.png" alt="">
+            </div>
+            <div class="itens3" id="item4">
+                <img src="../assets/img/gucci_bolsa_intense.png" alt="">
+            </div>
+        </div>
 
 
         <div class="frame_container_categoria">
-            <div class="frame_categoria"></div>
-            <h1 class="titulo">Categorias</h1>
+            <hr class="frame_categoria">
+            <h1>Categorias</h1>
         </div>
         
         <div class="categorias_container">
-            <div class="categoria"><img src="../assets/img/cellphone_icon.svg" alt="celulares"><p>Celulares</p></div>
-            <div class="categoria"><img src="../assets/img/computer_icon.svg" alt="computer"><p>Computadores</p></div>
-            <div class="categoria"><img src="../assets/img/smartwatches_icon.svg" alt="smartwatches"><p>Smartwatches</p></div>
-            <div class="categoria"><img src="../assets/img/camera_icon.svg" alt="cameras"><p>Câmeras</p></div>
-            <div class="categoria"><img src="../assets/img/headphone_icon.svg" alt="headphone"><p>Fone de Ouvido</p></div>
-            <div class="categoria"><img src="../assets/img/games_icon.svg" alt="games"><p>Games</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/cellphone_icon.svg" alt="celulares"><p>Celulares</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/computer_icon.svg" alt="computer"><p>Computadores</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/smartwatches_icon.svg" alt="smartwatches"><p>Smartwatches</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/camera_icon.svg" alt="cameras"><p>Câmeras</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/headphone_icon.svg" alt="headphone"><p>Fone de Ouvido</p></div>
+            <div class="categoria" href="https://teams.microsoft.com/v2/"><img src="../assets/img/games_icon.svg" alt="games"><p>Games</p></div>
         </div>
 
         <div class="frame_container_categoria">
-            <div class="frame_categoria"></div>
-            <h1 class="titulo2">Vendedor Destaque</h1>
+            <hr class="frame_categoria">
+            <h1>Vendedor Destaque</h1>
         </div>
 
         <div class="img_container">
@@ -100,8 +113,8 @@ require('../config/conexao.php');
         </div>
 
         <div class="frame_container_categoria">
-            <div class="frame_categoria"></div>
-            <h1 class="titulo3">Nossos Produtos</h1>
+            <hr class="frame_categoria">
+            <h1>Nossos Produtos</h1>
         </div>
 
         <div class="produtos_container">
