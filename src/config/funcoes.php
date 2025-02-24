@@ -38,7 +38,7 @@ function get_css_components() {
         array_push($css_files, $arquivo);
     }
 
-    if (!empty($css_files)){
+    if(!empty($css_files)){
         include_once(__DIR__ . '/../components/css_components.php');
     }
 }
