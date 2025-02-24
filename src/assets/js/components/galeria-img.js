@@ -1,5 +1,6 @@
 const galeriaImg = ({ image }) => {
     return `
+    <div class="galeria-grid">
         <div class="grid-small">
             <div class="img-small">
                 <img src="${image}" >
@@ -19,6 +20,7 @@ const galeriaImg = ({ image }) => {
                 <img src="${image}">
             </div>
         </div>
+    </div>
     `;
 }
 

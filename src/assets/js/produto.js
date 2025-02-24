@@ -1,4 +1,4 @@
-import galeriaImg from "./components/galeria-img";
+import galeriaImg from "./components/galeria-img.js";
 
 let mais = document.getElementById("mais");
 let menos = document.getElementById("menos");
@@ -25,10 +25,10 @@ qtd.addEventListener("change", ()=>{
 
 const docTag = document.querySelector('galeria-img');
 
-let image = [{
+let images = [{
     'image':'../assets/img/tela-produtos/bolsa.png'
 }];
 
-image.forEach((image) => {
+images.forEach((image) => {
     docTag.innerHTML += galeriaImg(image)
 });

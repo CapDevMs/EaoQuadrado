@@ -148,5 +148,5 @@
     <?php get_footer(); ?>    
     
 </body>
-<script src="../assets/js/produto.js"></script>
+<script type="module" src="../assets/js/produto.js?<?= time() ?>"></script>
 </html>
