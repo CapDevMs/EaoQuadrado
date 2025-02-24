@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <?php get_css(['produto']) ?>
+    <?php get_css_components() ?>
 </head>
 <body>
     <?php get_header(); ?>
@@ -17,25 +18,7 @@
             <h1 class="map">Home / Bolsas / Bolsas</h1>
             <div class="grid-conteudo">
                 <div id="grid-produto">
-                    <div class="grid-small">
-                        <div class="img-small">
-                            <img src="../assets/img/tela-produtos/bolsa.png" >
-                        </div>
-                        <div class="img-small">
-                            <img src="../assets/img/tela-produtos/bolsa.png" >
-                        </div>
-                        <div class="img-small">
-                            <img src="../assets/img/tela-produtos/bolsa.png" >
-                        </div>
-                        <div class="img-small">
-                            <img src="../assets/img/tela-produtos/bolsa.png" >
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img-large">
-                            <img src="../assets/img/tela-produtos/bolsa.png">
-                        </div>
-                    </div>
+                    <galeria-img></galeria-img>
                     <div>
                         <h2>Bolsa Gucci</h2>
                         <h1 class="preco">R$ 989,00</h1>
