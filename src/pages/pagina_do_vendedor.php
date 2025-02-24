@@ -90,7 +90,7 @@ $appName = get_app_name();
                     </div>
                 </div>
 
-                <div class="row ptb-2">
+                <div class="row">
                     <card-produto></card-produto>
                 </div>
 
@@ -99,7 +99,7 @@ $appName = get_app_name();
     </main>
 
 
-    <script type="module" src="../assets/js/pagina_do_vendedor.js"></script>
+    <script type="module" src="../assets/js/pagina_do_vendedor.js?<?= time() ?>"></script>
     <?php get_footer(); ?>
 </body>
 

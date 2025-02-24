@@ -6,22 +6,43 @@ let produtos = [
     {
         'titulo': 'Ração de cachorro',
         'imagem': '../assets/img/acer_nitro.png',
+        'preco': '99,90'
+    },
+    {
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/asus_notebook.png',
+        'preco': '119,90'
+    },
+    {
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/acer_nitro.png',
+        'preco': '99,90'
+    },
+    {
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/controle_usb.png',
         'preco': '119,90'
     },
     {
         'titulo': 'Ração de cachorro',
         'imagem': '../assets/img/asus_notebook.png',
         'preco': '119,90'
-    }, {
+    },
+    {
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/controle_ps5.png',
+        'preco': '99,90'
+    },
+    {
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/asus_notebook.png',
+        'preco': '119,90'
+    },
+    {
         'titulo': 'Ração de cachorro',
         'imagem': '../assets/img/acer_nitro.png',
         'preco': '119,90'
     },
-    {
-        'titulo': 'Ração de cachorro',
-        'imagem': '../assets/img/asus_notebook.png',
-        'preco': '119,90'
-    }
 ]
 
 produtos.forEach((produto) => {

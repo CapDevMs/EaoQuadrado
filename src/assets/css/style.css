@@ -217,6 +217,72 @@
 
 /* Sistema de Grid (colunas) responsividade - Tela é calculada como tendo 12 colunas */
 @media screen and (max-width: 768px) {
+    .col-md-1 {
+        width: 8.33333%;
+        display: block;
+    }
+    .col-md-2 {
+        float: left;
+        width: calc((8.33333% * 2) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-3 {
+        float: left;
+        width: calc((8.33333% * 3) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-4 {
+        float: left;
+        width: calc((8.33333% * 4) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-5 {
+        float: left;
+        width: calc((8.33333% * 5) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-6 {
+        float: left;
+        width: calc((8.33333% * 6) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-7 {
+        float: left;
+        width: calc((8.33333% * 7) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-8 {
+        float: left;
+        width: calc((8.33333% * 8) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-9 {
+        float: left;
+        width: calc((8.33333% * 9) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-10 {
+        float: left;
+        width: calc((8.33333% * 10) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-11 {
+        float: left;
+        width: calc((8.33333% * 11) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-12 {
+        float: left;
+        width: calc((8.33333% * 12) - 0.25em);
+        margin-right: 0.25em;
+    }
+    .col-md-hidden {
+        display: none;
+    }
+}
+
+/* Sistema de Grid (colunas) responsividade - Tela é calculada como tendo 12 colunas */
+@media screen and (max-width: 425px) {
     .col-sm-1 {
         width: 8.33333%;
         display: block;
