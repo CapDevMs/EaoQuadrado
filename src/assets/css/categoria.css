@@ -3,22 +3,27 @@ header,body{
    padding: 0;
 
 }
+/* video da categoria */
 .container-video{
+<<<<<<< HEAD
+=======
 
+>>>>>>> e45ce667d12cc8493ee897117454b88f59d6918f
    display: flex;
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0; 
+   position: relative;
    z-index: 1000;
+<<<<<<< HEAD
+=======
    position: relative;
    position: relative;
+>>>>>>> e45ce667d12cc8493ee897117454b88f59d6918f
    width: 100%;
    height: 40vw;
    overflow: hidden;
    margin-top: 80px ;
    background-color: #000;
 }
+
 .container-video video{
    position: absolute;
    top: 50%;
@@ -29,6 +34,9 @@ header,body{
    object-fit: cover;
    
 }
+
+/* botoes de categoria */
+
 .categoria{
    display: flex;
    justify-content: center;
@@ -64,7 +72,6 @@ header,body{
    left: 50%;
    transform: translate(-50%, -50%);
    color: transparent;
-   /* font-weight: bold; */
    pointer-events: none;
    transition: color 0.3s ease;
    z-index: 2;
@@ -80,6 +87,8 @@ header,body{
 .categoria button:hover span{
    color: white;
 }
+
+/* filtro */
 
 .marca_preco{
    display: grid;
