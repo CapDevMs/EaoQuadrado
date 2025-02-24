@@ -26,3 +26,14 @@ function get_footer(){
 function get_css(array $telas = []){
     include_once(__DIR__ . '/../components/head_css.php');
 }
+
+function get_css_components() {
+    $arquivos = scandir(__DIR__ . '/../assets/css/components/');
+
+    foreach ($arquivos as $arquivo) {
+
+        if ($arquivo == "." || $arquivo == "..") continue;
+
+        include_once($arquivo);
+    }
+}
