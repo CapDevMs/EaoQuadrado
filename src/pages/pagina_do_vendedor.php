@@ -10,6 +10,7 @@ $appName = get_app_name();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <?php get_css(['cliente/pagina_vendedor']) ?>
+    <?php get_css_components() ?>
 </head>
 
 <body>
@@ -90,27 +91,7 @@ $appName = get_app_name();
                 </div>
 
                 <div class="row ptb-2">
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-body ptb-1 plr-1">
-                                <div class="container-foto">
-                                    <img class="img-produto" src="../../assets/img/imgs-produtos/racao.avif">
-                                </div>
-                                <div class="container-coracao-carrinho">
-                                    <img class="icones-coracao-carrinho" src="../../assets/img/icone-coracao.svg" alt="like" />
-                                    <img class="icones-coracao-carrinho" src="../../assets/img/icone-carrinho.svg" alt="cart" />
-                                </div>
-                                <div class="container-nome-produto">
-                                    <h3 class="nome-produto">Ração Cachorro Pedigree 20kg</h3>
-                                </div>
-                                <div class="container-preco-produto">
-                                    <h3 class="preco-produto">R$119,90</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
+                    <card-produto></card-produto>
                 </div>
 
             </div>
@@ -118,6 +99,7 @@ $appName = get_app_name();
     </main>
 
 
+    <script type="module" src="../assets/js/pagina_do_vendedor.js"></script>
     <?php get_footer(); ?>
 </body>
 

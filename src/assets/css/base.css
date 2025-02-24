@@ -32,6 +32,9 @@
     --cor-sombra-clara: rgba(0, 0, 0, 0.1); /* Sombra clara */
     --cor-sombra-media: rgba(0, 0, 0, 0.3); /* Sombra média */
     --cor-sombra-escura: rgba(0, 0, 0, 0.5); /* Sombra escura */
+
+    /* Cor utilizada para estrela de favorito */
+    --cor-fundo-estrela: #989898;
 }
 
 /* Exemplo de uso das variáveis */

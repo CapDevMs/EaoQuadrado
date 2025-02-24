@@ -71,37 +71,37 @@
     flex-direction: row;
 }
 .estrela_0{
-    background: linear-gradient(90deg, var(--cor-secundaria) 0%, #989898 100%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 0%, var(--cor-fundo-estrela) 100%);
 }
 .estrela_5{
-    background: linear-gradient(90deg, var(--cor-secundaria) 10%, #989898 90%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 10%, var(--cor-fundo-estrela) 90%);
 }
 .estrela_10{
-    background: linear-gradient(90deg, var(--cor-secundaria) 20%, #989898 80%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 20%, var(--cor-fundo-estrela) 80%);
 }
 .estrela_15{
-    background: linear-gradient(90deg, var(--cor-secundaria) 30%, #989898 70%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 30%, var(--cor-fundo-estrela) 70%);
 }
 .estrela_20{
-    background: linear-gradient(90deg, var(--cor-secundaria) 40%, #989898 60%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 40%, var(--cor-fundo-estrela) 60%);
 }
 .estrela_25{
-    background: linear-gradient(90deg, var(--cor-secundaria) 50%, #989898 50%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 50%, var(--cor-fundo-estrela) 50%);
 }
 .estrela_30{
-    background: linear-gradient(90deg, var(--cor-secundaria) 60%, #989898 40%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 60%, var(--cor-fundo-estrela) 40%);
 }
 .estrela_35{
-    background: linear-gradient(90deg, var(--cor-secundaria) 70%, #989898 30%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 70%, var(--cor-fundo-estrela) 30%);
 }
 .estrela_40{
-    background: linear-gradient(90deg, var(--cor-secundaria) 80%, #989898 20%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 80%, var(--cor-fundo-estrela) 20%);
 }
 .estrela_45{
-    background: linear-gradient(90deg, var(--cor-secundaria) 90%, #989898 10%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 90%, var(--cor-fundo-estrela) 10%);
 }
 .estrela_50{
-    background: linear-gradient(90deg, var(--cor-secundaria) 100%, #989898 0%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 100%, var(--cor-fundo-estrela) 0%);
 }
 
 .card_estrela_texto{
