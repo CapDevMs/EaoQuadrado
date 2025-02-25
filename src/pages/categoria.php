@@ -42,7 +42,7 @@ require('../config/conexao.php');
                 </nav>
             </div>
             <h1 class="titulo">Avaliação dos Vendedores</h1>
-            <div class="checkbox-container"> 
+            <!-- <div class="checkbox-container"> 
                 <input type="checkbox" name="tudo" id="tudo">
                 <label for="tudo">Tudo</label>
             
@@ -70,34 +70,14 @@ require('../config/conexao.php');
                 <label for="star1">
                     <img src="../assets/img/CATEGORIA/One_Star.png" alt="1 estrela">
                 </label>
-            </div>
+            </div> -->
     <main>
 
         <section class="section-categoria">
             <div class="section-categoria__button">
-                <button class="categoria" id="categoria-celular">
-                    <img src="../assets/img/categoria/icone-categoria/Category-CellPhone.png" alt="Categoria Celular">
-                </button> 
+                <buttonCategoria>
 
-                <button class="categoria" id="categoria-computador">
-                    <img src="../assets/img/categoria/icone-categoria/Category-Computer.png" alt="Categoria Computador">
-                </button>
-
-                <button class="categoria" id="categoria-smartwatch">
-                    <img src="../assets/img/categoria/icone-categoria/Category-SmartWatch.png" alt="Categoria Smartwatch">
-                </button>
-
-                <button class="categoria" id="categoria-camera">
-                    <img src="../assets/img/categoria/icone-categoria/Category-Camera.png" alt="Categoria Câmera">
-                </button>
-
-                <button class="categoria" id="categoria-fone">
-                    <img src="../assets/img/categoria/icone-categoria/Category-Headphone.png" alt="Categoria Fone de Ouvido">
-                </button>
-
-                <button class="categoria" id="categoria-gamer">
-                    <img src="../assets/img/categoria/icone-categoria/Category-Gamepad.png" alt="Categoria Gamer">
-                </button>    
+                </buttonCategoria>
             </div>
         </section>
 
