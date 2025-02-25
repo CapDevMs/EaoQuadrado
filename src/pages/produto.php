@@ -46,8 +46,10 @@
                             <fieldset id="loja">
                                 <img src="../assets/img/tela-produtos/loja.png">
                                 <a><span style="color: #16A18E;">Loja</span> Studio Center</a>
-                                <img src="../assets/img/tela-produtos/coracao.png" id="loja-coracao">
-                                <img src="../assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
+                                <div id="icons-loja">
+                                    <img src="../assets/img/tela-produtos/coracao.png" id="loja-coracao">
+                                    <img src="../assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
+                                </div>
                             </fieldset>
                         </div>
                         
