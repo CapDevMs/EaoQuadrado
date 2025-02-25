@@ -1,8 +1,3 @@
-if (document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded')
-}
-
-
 const removeProductButton = document.getElementsByClassName('removeProductButton')
 for (i = 0; i< removeProductButton.length; i++){
     removeProductButton[i].addEventListener("click", function(event){
@@ -11,7 +6,7 @@ for (i = 0; i< removeProductButton.length; i++){
 }
 
 let subTotalValue = 0
-const cartProduct = document.getElementsByClassName('cartProduct')
+const cartProduct = document.getElementsByClassName('cart')
 for (var i = 0; i < cartProduct.length; i++){
     console.log(cartProduct[i])
     const productPrice = cartProduct[i].getElementsByClassName('product-1-2-price')[0].innerText.replace('R$','').replace(',','.')
