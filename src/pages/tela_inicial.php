@@ -67,7 +67,7 @@ require('../config/conexao.php');
         </ul>
         <script src="../../src/assets/js/tela_inicial.js"></script>
 
-        <!-- <div class="frame_container_categoria">
+        <div class="frame_container_categoria">
             <hr class="frame_categoria">
             <h1>Lançamentos</h1>
         </div>
@@ -77,25 +77,26 @@ require('../config/conexao.php');
             <div class="itens1" id="item1">
                 <h1>PlayStation 5</h1>
                 <p>Versão em preto e branco do PS5 chegando à venda</p>
-                <img src="../assets/img/ps5_reflex.png" alt="">
-                
+                <h1>Compre Agora!<h1>
             </div>
             <div class="itens2" id="item2">
+
                 <h1>Roupas</h1>
-                <p>Coleções  em destaque que dão outra vibe</p>
-                <img src="../assets/img/woman_with_hat.png" alt="">
+                <p>Coleções  em destaque que dão outra vibe<p>
+                <h1>Compre Agora!<h1>
             </div>
             <div class="itens3" id="item3">
                 <h1>Caixa de Som</h1>
                 <p>Alto-falantes sem fio</p>
-                <img src="../assets/img/caixa_de_som.png" alt="">
+                <h1>Compre Agora!<h1>
             </div>
-            <div class="itens3" id="item4">
+
+            <div class="itens4" id="item4">
                 <h1>Bolsa</h1>
                 <p>GUCCI INTENSE </p>
-                <img src="../assets/img/gucci_bolsa_intense.png" alt="">
+                <h1>Compre Agora!<h1>
             </div>
-        </div> -->
+        </div>
 
 
         <div class="frame_container_categoria">
