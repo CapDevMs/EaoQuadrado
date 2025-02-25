@@ -5,9 +5,18 @@ header,body{
 }
 /* video da categoria */
 .container-video{
+<<<<<<< HEAD
+=======
+
+>>>>>>> e45ce667d12cc8493ee897117454b88f59d6918f
    display: flex;
    position: relative;
    z-index: 1000;
+<<<<<<< HEAD
+=======
+   position: relative;
+   position: relative;
+>>>>>>> e45ce667d12cc8493ee897117454b88f59d6918f
    width: 100%;
    height: 40vw;
    overflow: hidden;
