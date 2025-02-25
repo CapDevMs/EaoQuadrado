@@ -19,36 +19,51 @@ require('../config/conexao.php');
 
             <div class='cartProducts'>
 
-                <div class='cart'>
 
-                    <div class='cartProduct-1 cartProduct'>
+                <div class='product'>
+
+                    <div class='productDiv'>
+
                         <img src='../assets/img/acer_nitro.png' class='image '>
+                    
+                    </div>  
+
+                    <div class='productDiv'>
+
+                        <span class=''>Nome do produto</span>
+                        <span class=''>Acer nitro V5</span>
+                    
                     </div>
 
-                    <div class='cartProduct-2 cartProduct'>
-
-                        <span class='cartProduct-1-1'>Nome do produto</span><br>
-                        <span class='product-1-2'>Acer nitro V5</span>
+                    <div class='productDiv'>
+                    
+                        <span class=''>Preço</span>
+                        <span class='price'>R$ 4690,00</span>
+                    
                     </div>
 
-                    <div class='cartProductPrice cartProduct'>
-                        <span class='product-1-1 cartProduct'>Preço</span><br>
-                        <span class='product-1-2-price product-1-2'>R$ 4690,00</span>
+                    <div class='productDiv'>
+                    
+                        <span class='product-1-1'>Quantidade</span>
+                        <input type="Number" class='counter' min='0' value = 1>
+                    
                     </div>
 
-                    <div class='cartProduct-4 cartProduct'>
-                        <span class='product-1-1'>Quantidade</span><br><input type="Number" class='product-1-2 counter' min='0' value = 1>
+                    <div class='productDiv'>
+                    
+                        <span class=''>Subtotal</span>
+                        <span class='subTotal'>...</span>
+                    
                     </div>
 
-                    <div class='cartProduct-5 cartProduct'>
-                        <span class='product-1-1'>Subtotal</span><br><span class='product-1-2 subTotal'>...</span>
-                    </div>
-
-                    <div class='cartProduct-6 cartProduct'>
+                    <div class='cartProduct-6'>
+                    
                         <a href='#' class = 'a'><img src='../assets/img/lixeira-icon.png' class='icon removeProductButton'></a>
+                    
                     </div>
 
                 </div>
+
 
             </div>
         </div>

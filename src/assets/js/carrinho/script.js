@@ -6,10 +6,10 @@ for (i = 0; i< removeProductButton.length; i++){
 }
 
 let subTotalValue = 0
-const cartProduct = document.getElementsByClassName('cart')
+const cartProduct = document.getElementsByClassName('product')
 for (var i = 0; i < cartProduct.length; i++){
     console.log(cartProduct[i])
-    const productPrice = cartProduct[i].getElementsByClassName('product-1-2-price')[0].innerText.replace('R$','').replace(',','.')
+    const productPrice = cartProduct[i].getElementsByClassName('price')[0].innerText.replace('R$','').replace(',','.')
     console.log(productPrice)
     const productQuantity = cartProduct[i].getElementsByClassName('counter')[0].value
     console.log(productQuantity)
