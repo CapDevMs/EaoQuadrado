@@ -137,15 +137,14 @@
 
 .mosaico {
     display: grid;
-    grid-template-columns: repeat(3, 50%);
+    grid-template-columns: repeat(3, 45%);
     grid-template-rows: repeat(2,100%); 
-    gap: 4%; 
-
+    gap: 4.5%;
     margin-left: 12.5%;
-    justify-items: center;
     margin-bottom: 15%;
     width: fit-content;
     height: fit-content;
+    margin-bottom: 20%;
 }
 
 .mosaico > div {
@@ -153,37 +152,36 @@
     border-radius: 5px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-align: center; 
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
-.mosaico h1 {
+.texto{
+    margin-top: auto;
+    text-align: left;
+}
+
+.mosaico h1, p {
+
     color: white;
     height: fit-content;
     width: fit-content;
     position: relative;
     font-size: larger;
-    margin-bottom: 5px;
+} .mosaico p{
+    font-size: 13px;
 }
-
-.mosaico p {
-    color: white;
-    height: fit-content;
-    width: fit-content;
-    position: relative;
-    font-size: large;
-    margin-bottom: 5px;
-}
-
 
 .itens1 {
     grid-column: 1; 
     grid-row: 1 / span 2; 
     background-image: url("../img/ps5_reflex.png");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-position: center;
     background-color: black;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .itens2 {
@@ -191,9 +189,10 @@
     grid-row: 1; 
     background-image: url("../img/woman_with_hat.png");
     background-repeat: no-repeat;
-    background-size: fill; 
     background-position: center;
     background-color: black;
+    background-size: contain;
+    display: flex;
 }
 
 .itens3 {
@@ -201,8 +200,10 @@
     grid-row: 2; 
     background-image: url("../img/caixa_de_som.png");
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-position: center;
     background-color: black;
+    background-size: contain;
+    display: flex;
 }
 
 .itens4 {
@@ -210,8 +211,10 @@
     grid-row: 2;
     background-image: url("../img/gucci_bolsa_intense.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
     background-color: black;
+    background-size: contain;
+    display: flex;
 }
 
 
@@ -253,7 +256,6 @@
 
 .categorias_container {
     display: grid;
-    /* grid-template-columns: repeat(6, 20%); */
     grid-template-rows: auto;
     position: relative;
     left: 12%;
@@ -263,8 +265,8 @@
 
 .categoria{
     background-color: white;
-    width: 170px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border: 2px solid var(--cor-principal);
     border-radius: 20px;
     display: flex;
@@ -413,108 +415,20 @@
 .produtos img{
     width: 115px;
     height: 180px;
-flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 @media (min-width: 1920px) and (max-width: 1440px) {
 
-    .produtos_container {
-        grid-template-columns: repeat(4, 35%);
-    }
-
-    .produtos {
-        width: 270px;
-        height: 322px;
-    }
-
-    .categoria {
-        width: 170px;
-        height: 140px;
-    }
 }
 
 @media (max-width: 992px) {
-
-
-    .produtos_container {
-        grid-template-columns: repeat(2, 50%);
-    }
-
-    .produtos {
-        width: 270px;
-        height: 322px;
-    }
-
-    .categoria {
-        width: 160px;
-        height: 130px;
-    }
-
-    .frame_container_categoria {
-        left: 0;
-        width: 100%;
-        grid-template-columns: 30% 70%;
-    }
-
-    .frame_categoria {
-        height: 50px;
-        width: 100%;
-    }
 }
 
 @media (max-width: 768px) {
 
-    .produtos_container {
-        grid-template-columns: 100%;
-    }
-
-    .categoria {
-        width: 90%;
-        height: 120px;
-    }
-
-    .img {
-        width: 100%;
-        height: auto;
-    }
-
-    .produtos {
-        width: 90%;
-        height: auto;
-    }
-
-    .frame_container_categoria {
-        grid-template-columns: 40% 60%;
-    }
 }
 
 @media (max-width: 425px) {
-    .frame_container_categoria {
-        grid-template-columns: 100%;
 
-    }
-
-
-    .categorias_container {
-        grid-template-columns: 100%;
-    }
-
-    .categoria {
-        width: 100%;
-        height: 100px;
-    }
-
-    .produtos_container {
-        grid-template-columns: 100%;
-    }
-
-    .produtos {
-        width: 100%;
-        height: auto;
-    }
-
-    .img {
-        width: 100%;
-        height: auto;
-    }
 }
