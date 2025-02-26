@@ -137,14 +137,15 @@
 
 .mosaico {
     display: grid;
-    grid-template-columns: repeat(3, 45%);
+    grid-template-columns: 55% 40% 40%;
     grid-template-rows: repeat(2,100%); 
-    gap: 4.5%;
-    margin-left: 12.5%;
+    gap: 7%;
+    margin-left: 25%;
     margin-bottom: 15%;
     width: fit-content;
     height: fit-content;
     margin-bottom: 20%;
+    cursor: pointer;
 }
 
 .mosaico > div {
@@ -152,7 +153,11 @@
     border-radius: 5px; 
     display: flex;
     flex-direction: column;
-    border-radius: 2%;
+    border-radius: 20px;
+}
+
+.mosaico > div:hover{
+    transform: scale(1.05);
 }
 
 .texto{
@@ -161,7 +166,6 @@
 }
 
 .mosaico h1, p {
-
     color: white;
     height: fit-content;
     width: fit-content;
