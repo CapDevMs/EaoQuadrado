@@ -26,6 +26,35 @@
     
 }
 
+@media (max-width:1670px) {
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: 20% 89%;
+        width: 100%;
+        
+    }
 
+    
+}
+@media (max-width:1260px) {
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: 20% 90%;
+        width: 100%;
+        
+    }
+
+    
+}
+@media (max-width:1024px) {
+    .galeria-grid{
+        display: grid;
+        grid-template-columns: 20% 88%;
+        width: 100%;
+        
+    }
+
+    
+}
     
 

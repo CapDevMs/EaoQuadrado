@@ -138,7 +138,7 @@ h2{
 #comprar{
     padding-top: 5%;
     display: grid;
-    grid-template-columns: 35% 10%;
+    grid-template-columns: 50% 10%;
     gap: 5%;
     
 }
@@ -274,6 +274,13 @@ h3{
         
         
     }
+    #comprar{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 50% 10%;
+        gap: 5%;
+        
+    }
 
 
 
@@ -288,6 +295,33 @@ h3{
         font-size: 14px;
         
         
+    }
+    #comprar{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 50% 10%;
+        gap: 5%;
+        
+    }
+    .quantidade{
+        display: inline;
+        width: 24%;
+        text-align: center;
+        height: 53%;
+    }
+    #botao_qtd{
+        padding-top: 7%;
+        width: 50%;
+        height: 10%;
+    }
+     
+    #menos{
+        height: 65%;
+        
+    }
+    #mais{
+        height: 65%;
+     
     }
     
 }
@@ -308,6 +342,22 @@ h3{
         left: 10%;
         width: 90%;
     }
+    #comprar{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 50% 10%;
+        gap: 5%;
+        
+    }
+     
+    #menos{
+        height: 68%;
+        
+    }
+    #mais{
+        height: 68%;
+     
+    }
     
 
 }
@@ -323,13 +373,38 @@ h3{
         grid-template-columns: 24% 49% 16%;
         font-size: 68%;
     }
+    #comprar{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 50% 10%;
+        gap: 5%;
+        
+    }
+    #menos{
+        height: 69%;
+        left: 4%;
+        
+    }
+    #mais{
+        height: 69%;
+        right: 4%;
+     
+    }
 }
 @media (max-width: 1135px) {
     .preco {
-        font-size: 290%;
+        font-size: 275%;
+    }
+    #comprar{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 50% 10%;
+        gap: 5%;
+        
     }
     #btn-comprar {
         font-size: 15px;
+        width: 100%;
     }
     #loja {
         grid-template-columns: 24% 49% 16%;
