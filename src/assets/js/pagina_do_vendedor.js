@@ -27,13 +27,3 @@ let produtos = [
 produtos.forEach((produto) => {
     docTag.innerHTML += cardProduto(produto)
 });
-
-for x in produtos:
-
-    n = 3
-    if x == n:
-        break
-
-for produtos (i=0, i <=3, i++){
-    
-}
