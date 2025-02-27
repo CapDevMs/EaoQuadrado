@@ -69,6 +69,7 @@
 .stars {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .estrela_0{
     background: linear-gradient(90deg, var(--cor-secundaria) 0%, var(--cor-fundo-estrela) 100%);
@@ -111,7 +112,7 @@
 }
 
 .card_estrela_texto, .card_estrela_quantidade{
-    width: fit-content;
+    width: 100%;
 }
 
 .block-green {
@@ -136,4 +137,10 @@
 
 .container-coracao-carrinho {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .stars {
+        flex-direction: column;
+    }
 }

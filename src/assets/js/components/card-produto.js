@@ -1,4 +1,4 @@
-const cardProduto = ({ titulo, imagem, preco }) => {
+const cardProduto = ({ id, titulo, imagem, preco }) => {
     return `
     <div class="col-3 col-md-6 col-sm-12">
         <div class="container">
@@ -8,8 +8,8 @@ const cardProduto = ({ titulo, imagem, preco }) => {
                         <img class="img-produto" src="${imagem}">
                     </div>
                     <div class="container-coracao-carrinho">
-                        <img class="icones-coracao-carrinho" src="../../assets/img/icone-coracao.svg" alt="like" />
-                        <img class="icones-coracao-carrinho" src="../../assets/img/icone-carrinho.svg" alt="cart" />
+                        <i class="fa-regular fa-heart pointer" id="like_prod_${id}"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                     <div class="container-nome-produto">
                         <h3 class="nome-produto">${titulo}</h3>

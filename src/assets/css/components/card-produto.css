@@ -22,18 +22,27 @@
 }
 
 .img-produto {
-    max-width: 100%;
+    width: 100%;
 }
 
 .container-foto {
     display: flex;
     width: 33.333%;
-    padding: 0px 37px 0px 38px;
     justify-content: center;
     align-items: center;
+}
+
+.container-coracao-carrinho {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
 }
 
 .container-coracao-carrinho,
 .container-nome-produto {
     padding-top: 1rem;
+}
+
+.pointer {
+    cursor: pointer;
 }

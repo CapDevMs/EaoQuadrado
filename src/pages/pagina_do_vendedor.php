@@ -9,12 +9,13 @@ $appName = get_app_name();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?php get_css(['cliente/pagina_vendedor']) ?>
     <?php get_css_components() ?>
 </head>
 
 <body>
-    <?php get_header(); ?>
+    <?php //get_header(); ?>
 
     <main class="row">
         <!-- <asside class="sidebar col-3 col-sm-hidden">
@@ -99,8 +100,8 @@ $appName = get_app_name();
     </main>
 
 
-    <script type="module" src="../assets/js/pagina_do_vendedor.js?<?= time() ?>"></script>
-    <?php get_footer(); ?>
+    <script type="module" src="../assets/js/pagina_do_vendedor.js?<?= time();?>"></script>
+    <?php //get_footer(); ?>
 </body>
 
 </html>
