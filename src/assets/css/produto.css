@@ -263,7 +263,7 @@ h3{
     width: 30px;
     
 }
-
+/* 
 @media (max-width: 1790px) and (min-width: 1590px) {
     #loja{
         display: grid;
@@ -413,19 +413,46 @@ h3{
 }
 
 @media (max-width: 1024px) {
+    #comprar{
+        padding-top: 5%;
+        display: grid;
+
+        grid-template-columns: 50% 10%;
+        gap: 5%;
+        
+    }
+    #btn-comprar {
+        font-size: 15px;
+        width: 100%;
+    }
+    
     #grid-produto{
-        grid-template-columns: 100%;
+        display: grid;
+        grid-template-columns: 80%;
+        width: 100%;
+        column-gap: 4%;
+        justify-content: center;
+        
+    }
+    .desc-produto {
+        max-width: 90%;
+        padding-bottom: 5%;
+        
     }
     .preco {
-        font-size: 260%;
+        font-size: 200%;
     }
     .descricao {
         max-width: 80%;
         margin-left: 10%;
     }
+    #loja{
+        width: 40%;
+    }
 
     #troca{
-        font-size: 60%;
+        font-size: 80%;
+        
     }
 
     .grid-topico{ 
@@ -443,11 +470,38 @@ h3{
 }
 
 @media (max-width: 768px) {
+
+    .grid-conteudo{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 90%;
+        padding-bottom: 1%;
+        padding-top: 3%;
+        
+        
+        
+       
+    }
+    #grid-produto{
+        width: 100%;
+    
+        
+        
+    }
+    .descricao {
+        max-width: 80%;
+        font-size: 12px;
+        margin-left: 10%;
+    }
     .preco {
         font-size: 25px;
     }
     .grid-recomendar {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        gap: 1%;
+        
     }
     #btn-comprar {
         font-size: 14px;
@@ -465,6 +519,7 @@ h3{
         font-size: 12px;
         padding: 8px;
     }
+    
 }
 
 @media (max-width: 350px) {
@@ -479,4 +534,4 @@ h3{
         padding: 6px;
     }
 }
-
+ */

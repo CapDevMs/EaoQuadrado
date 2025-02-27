@@ -17,9 +17,9 @@
         <div class="container">
             <h1 class="map">Home / Bolsas / Bolsas</h1>
             <div class="grid-conteudo">
-                <div id="grid-produto">
+                <div id="grid-produto" class="col-sm-2">
                     <galeria-img></galeria-img>
-                    <div>
+                    <div class="desc-produto">
                         <h2>Bolsa Gucci</h2>
                         <h1 class="preco">R$ 989,00</h1>
                         <div>
@@ -147,7 +147,7 @@
         </div>
     </main>
     
-    <?php get_footer(); ?>    
+    <!-- <?php get_footer(); ?>     -->
     
 </body>
 <script type="module" src="../assets/js/produto.js?<?= time() ?>"></script>
