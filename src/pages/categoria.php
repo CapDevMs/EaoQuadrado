@@ -75,9 +75,7 @@ require('../config/conexao.php');
 
         <section class="section-categoria">
             <div class="section-categoria__button">
-                <buttonCategoria>
-
-                </buttonCategoria>
+                <buttonCategoria></buttonCategoria>
             </div>
         </section>
 
@@ -217,5 +215,6 @@ require('../config/conexao.php');
 
     <?php get_footer() ?>
 </body>
-<script src="../assets/js/script.js"></script>
+
+<script type ="module" src="../assets/js/categoria.js"></script>
 </html>

@@ -1,7 +1,7 @@
 import buttonCategoria from "./components/button-categoria";
 const docTag = document.querySelector(buttonCategoria);
 
-let categoria = [
+let categorias= [
     {
         'imagem':'../assets/img/categoria/icone-categoria/camera_icon.svg',
         'nome':'Camera'       
@@ -27,6 +27,6 @@ let categoria = [
         'nome':'Smartwatche'       
     },
 ]
-categoria.forEach((imagem, nome)=>{
+categorias.forEach((imagem,nome)=>{
     docTag.innerHTML += buttonCategoria(imagem,nome)
-});
+}); 
