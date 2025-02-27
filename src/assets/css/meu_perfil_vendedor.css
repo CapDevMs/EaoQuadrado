@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 250px 550px 850px;
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .frame {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+    }
+
+    .input-text, .input-text2, .input-date, .but-salvar {
+        width: 80%;
+    }
+
+    .edit-perfil2 {
+        margin-left: 15%;
+    }
+
+    .but-photo {
+        width: 5%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .frame {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+    }
+
+    .input-text, .input-text2, .input-date, .but-salvar {
+        width: 90%;
+    }
+
+    .edit-perfil2 {
+        margin-left: 10%;
+        margin-top: 20%;
+    }
+
+    .but-photo {
+        width: 7%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .frame {
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+    }
+
+    .input-text, .input-text2, .input-date, .but-salvar {
+        width: 95%;
+    }
+
+    .but-photo {
+        width: 10%;
+        left: 40%;
+    }
+
+    .edit-perfil2 {
+        margin-left: 5%;
+        margin-top: 25%;
+    }
+
+    .menu-lateral {
+        padding-top: 5%;
+    }
+}
+
+.menu-lateral {
+    padding-top: 10%;
+}
+
+.menuzin .mi-cont {
+    display: inline;
+    padding: 0;
+    left: 6%;
+}
+
+.menuzin, .menuzin2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 200%;
+}
+
+.mi-cont-tittle {
+    position: relative;
+    padding-left: 8%;
+    font-size: 100%;
+    color: #000000;
+    margin: 5%;
+}
+
+.mi-cont-tittle2 {
+    position: relative;
+    padding-left: 3%;
+    font-size: 100%;
+    color: #000000;
+    margin: 2%;
+}
+
+#micont {
+    margin-top: 28%;
+}
+
+#meu-perfil {
+    color: #000;
+}
+#meu-perfil:hover {
+    color: #2e7762;
+}
+
+.mi-cont {
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    color: gray;
+    margin: 0;
+}
+
+.mi-cont li {
+    font-size: 80%;
+    padding-bottom: 3%;
+    padding-left: 20%;
+}
+
+.mi-cont:hover {
+    color: #49BF9E;
+    transition: 0.3s;
+}
+
+.frame {
+    position: relative;
+    grid-column: 2 / 3;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 20%;  
+    margin-bottom: 20%; 
+    height: 85%;  
+    width: 260%;  
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.edit-perfil {
+    padding-left: 4%;
+    padding-top: 2%;
+}
+
+.but-photo {
+    position: relative;
+    padding: 0.35%;
+    background-color: #49BF9E;
+    border-radius: 20px;
+    border-color: transparent;
+    height: 5.5%;
+    width: 3.70%;
+    left: 7.5%;
+    margin-bottom: 10.3%;
+}
+
+#edit-photo {
+    position: relative;
+    background-color: rgb(230, 230, 230);
+    border-radius: 50px;
+    padding: 2.0%;
+    height: 20%;
+    width: 12.5%;
+    left: 11.5%;
+}
+
+.edit-perfil2 {
+    position: relative;
+    margin-top: 16%;
+    margin-left: 38%;
+    grid-column: 3 / 4;
+    z-index: 100;
+}
+
+.input-text {
+    position: relative;
+    background-color: rgb(230, 230, 230);
+    border-color: transparent;
+    border-radius: 20px;
+    height: 50px;
+    width: 38%;
+    font-size: 100%;
+    margin-bottom: 2%;
+}
+
+.input-text2 {
+    position: relative;
+    background-color: rgb(230, 230, 230);
+    border-color: transparent;
+    border-radius: 20px;
+    height: 50px;
+    width: 55%;
+    font-size: 100%;
+    margin-bottom: 2%;
+}
+
+.input-date {
+    background-color: rgb(230, 230, 230);
+    border-color: transparent;
+    border-radius: 20px;
+    height: 50px;
+    width: 13%;
+    font-size: 100%;
+    margin-bottom: 2%;
+}
+
+.alt-senha {
+    text-decoration: none;
+    color: #000;
+}
+
+.alt-senha:hover {
+    color: #49BF9E;
+    transition: 0.3s;
+}
+
+.but-salvar {
+    position: relative;
+    background-color: #49BF9E;
+    border-color: transparent;
+    border-radius: 10px;
+    height: 50px;
+    width: 20%;
+    top: 23.3%;
+    margin-left: 35%;
+    color: white;
+    cursor: pointer;
+}
+
+.but-salvar:hover {
+    background-color: #2e7762;
+    transition: 0.3s;
+}
