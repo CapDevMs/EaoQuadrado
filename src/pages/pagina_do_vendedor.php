@@ -95,6 +95,8 @@ $appName = get_app_name();
                     <card-produto></card-produto>
                 </div>
 
+                
+
             </div>
         </section>
     </main>

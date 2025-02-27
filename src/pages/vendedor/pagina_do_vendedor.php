@@ -24,10 +24,14 @@
         <h4 id="roadmap">Home / Studio Center</h4>
         <img src="../../assets/img/img-pagina-do-vendedor/foto_banner_pagina_vendedor.png" id="foto-banner" alt="foto-banner-vendedor">
         
+        <div class="container-comentarios">
+            <container-comentarios>
+            </container-comentarios>
+        </div>
     </main>
 
     <?php get_footer() ?>
 </body>
-<script src="../../assets/js/script.js"></script>
+<script type="module" src="../../assets/js/vendedor/pagina_do_vendedor.js"></script>
 
 </html>

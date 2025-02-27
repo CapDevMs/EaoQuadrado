@@ -1,6 +1,6 @@
 const componenteComentario = ({ cliente, comentario }) => {
-    return 
-    `<div class="container-comentarios">
+    return `
+    <div class="container-comentarios">
         <div class="comentario">
             <img src="../../assets/img/icone_perfil.png" class="foto" alt="alguem">
             <h1>${cliente}</h1>
@@ -8,7 +8,7 @@ const componenteComentario = ({ cliente, comentario }) => {
             <p>${comentario}</p>
         </div>
     </div>
-    `
+    `;
 
 }
 
