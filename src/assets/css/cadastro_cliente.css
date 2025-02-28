@@ -315,7 +315,7 @@ main {
 @media (max-width: 425px) {
     .roadmap {
         font-size: 18px;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .register_client {
@@ -327,7 +327,7 @@ main {
     .register_client img {
         width: 160px;
         height: 160px;
-        left: 20%;
+        margin-left: 20%;
     }
 
     .register_client h2 {
