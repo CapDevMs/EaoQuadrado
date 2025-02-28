@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: calc(95px + 2vh);
+    min-height: calc(100vh - (calc(95px + 2vh) + 280px));
+}
+
+.roadmap {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.register_client {
+    background-color: #fff;
+    box-shadow: 0.5px 0.5px 0.5px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+.register_client img {
+    position: relative;
+    left: 33%;
+    width: 257.75px;
+    height: 259px;
+    margin-bottom: 3%;
+}
+
+.register_client h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.client-image {
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.password-group {
+    margin-top: 5%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-container input {
+    width: 80%;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.form-container input[type="date"] {
+    background-color: #f5f5f5;
+    width: 30%;
+    padding: 12px;
+}
+
+.form-container input[type="email"],
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    background-color: #f5f5f5;
+    padding: 12px;
+}
+
+.terms-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-container {
+    margin-left: 30%;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: auto 100%;
+    gap: 5%;
+}
+
+.checkbox-container a{
+    color: #00BFA5;
+    text-decoration: none;
+}
+
+.checkbox-container input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    margin-right: 10px;
+}
+
+.checkbox-container input:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.form-container > button {
+    padding: 0px;
+    width: 20%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.buttons-container{
+    margin-left: 35%;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 5%;
+}
+
+.button-cancel {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    width: 113px;
+    height: 39px;
+
+}
+
+.button-confirm {
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    width: 113px;
+    height: 39px;
+}
+
+
+/* Cadastro da Empresa */
+.register_shop {
+    background-color: #ffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+    border-radius: 20px;
+    width: 1114px;
+    height: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register_shop p {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 24px;
+    font-style: normal;
+    position: relative;
+    width: 275px;
+    left: 46px;
+    top: 26px;
+    margin-bottom: 41px;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.label-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 450px; 
+    margin-left: 40px;
+}
+
+.label-container h2 {
+    font-size: medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.input-shop-container {
+    flex-direction: column;
+    margin-bottom: 5px;
+    background-color: #F5F5F5;
+    border: none;
+    color: black;
+    width: 450px;
+    height: 32px;
+    border-radius: 25px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    
+    padding: 10px 15px;
+}
+
+.label2-container {
+    display: grid;
+    gap: 20px; 
+    max-width: 450px; 
+    margin-left: 40px;
+}
+
+.label2-container h2 {
+    font-size: medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.input2-shop-container {
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 5px;
+    background-color: #F5F5F5;
+    border: none;
+    color: black;
+    width: 450px;
+    height: 32px;
+    border-radius: 25px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    
+    padding: 10px 15px;
+}
+
+
+
+.checkbox-container2 {
+    display: grid;
+    grid-column-start: 1;
+    background-color: #F5F5F5;
+    background-size: cover;
+    max-width: 225px;
+    height: 203px;
+    grid-template-columns: 8% ;
+    grid-template-rows:  10%  10%  10%  10%  10%  10%  10%  10% 10% 10% ;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+.checkbox2 {
+    grid-column-start: 1;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    margin-left: 35px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+}
+
+.checkbox2:checked {
+    background-color: gray;
+}
+
+.checkbox-container2 p {
+    color: gray;
+    grid-column-start: 2;
+    font-size: 16px;
+    top: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 40px;
+    max-width: 135px;
+}
+
+.subtitle2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    left: 42px;
+    top: 26px;
+    margin-bottom: 35px;
+    max-width: 355px;
+}
+
+input[type="file"] {
+    height: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+
+    overflow: hidden;
+    opacity: 0;
+    z-index: 100;
+}
+
+.frame_file {
+    grid-column: 2;
+    grid-row-start: 4;
+    position: relative;
+    top: -215px;
+    left: 40px;
+
+    width: 480px;
+    height: 240px;
+    background-color: #F5F5F5;
+    color: gray;
+    text-align: center;
+    vertical-align: text-top;
+    margin-top: 10px;
+    border-radius: 25px;
+    
+}
+
+.frame_file label {
+    position: relative;
+    bottom: 100px;
+}
