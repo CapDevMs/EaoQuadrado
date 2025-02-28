@@ -32,14 +32,6 @@ main {
     margin-bottom: 10%;
 }
 
-.register_client img {
-    position: relative;
-    left: 33%;
-    width: 257.75px;
-    height: 259px;
-    margin-bottom: 3%;
-}
-
 .register_client h2 {
     font-size: 24px;
     color: #333;
@@ -49,11 +41,12 @@ main {
 
 .form-container {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    margin-left: 4.5%;
 }
 
 .client-image {
+    margin-left: 33%;
     max-width: 250px;
     border-radius: 8px;
 }
@@ -170,6 +163,213 @@ main {
     height: 39px;
 }
 
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .roadmap {
+        font-size: 16px;
+        margin-left: 8%;
+    }
+
+    .register_client {
+        max-width: 1000px;
+        padding: 18px;
+    }
+
+    .register_client img {
+        width: 230px;
+        height: 230px;
+        left: 30%;
+    }
+
+    .register_client h2 {
+        font-size: 22px;
+    }
+
+    .form-container input {
+        font-size: 15px;
+    }
+
+    .form-container input[type="date"] {
+        width: 35%;
+        padding: 10px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="text"],
+    .form-container input[type="password"] {
+        padding: 10px;
+    }
+
+    .form-container > button {
+        width: 20%;
+    }
+
+    .buttons-container {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .roadmap {
+        font-size: 18px;
+        margin-left: 10%;
+    }
+
+    .register_client {
+        max-width: 900px;
+        padding: 16px;
+    }
+
+    .register_client img {
+        width: 210px;
+        height: 210px;
+        left: 28%;
+    }
+
+    .register_client h2 {
+        font-size: 20px;
+    }
+
+    .form-container input {
+        font-size: 14px;
+    }
+
+    .form-container input[type="date"] {
+        width: 40%;
+        padding: 8px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="text"],
+    .form-container input[type="password"] {
+        padding: 8px;
+    }
+
+    .form-container > button {
+        width: 30%;
+    }
+
+    .checkbox-container{
+        margin-left: 20%;
+    }
+
+    .buttons-container {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 425px) {
+    .roadmap {
+        font-size: 20px;
+        margin-left: 12%;
+    }
+
+    .register_client {
+        max-width: 85%;
+        padding: 14px;
+        margin-left: 15%
+    }
+
+    .register_client img {
+        width: 190px;
+        height: 190px;
+        margin-left: 25%;
+    }
+
+    .register_client h2 {
+        font-size: 18px;
+    }
+
+    .form-container input {
+        font-size: 13px;
+    }
+
+    .form-container input[type="date"] {
+        width: 50%;
+        padding: 8px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="text"],
+    .form-container input[type="password"] {
+        padding: 8px;
+    }
+
+    .form-container > button {
+        width: 35%;
+    }
+
+    .checkbox-container {
+        margin-left: 19%;
+
+    }
+
+    .checkbox-container label{
+        font-size: 10px;
+    }
+
+    .buttons-container {
+        margin-left: 28%;
+    }
+}
+
+@media (max-width: 425px) {
+    .roadmap {
+        font-size: 18px;
+        margin-left: 10%;
+    }
+
+    .register_client {
+        max-width: 100%;
+        padding: 12px;
+        margin-left: 25%
+    }
+
+    .register_client img {
+        width: 160px;
+        height: 160px;
+        margin-left: 20%;
+    }
+
+    .register_client h2 {
+        font-size: 16px;
+    }
+
+    .form-container input {
+        font-size: 12px;
+    }
+
+    .form-container input[type="date"] {
+        width: 50%;
+        padding: 8px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="text"],
+    .form-container input[type="password"] {
+        padding: 8px;
+    }
+
+    .form-container > button {
+        width: 40%;
+    }
+
+    .form-container > button {
+        width: 35%;
+    }
+
+    .checkbox-container {
+        margin-left: 10%;
+
+    }
+
+    .checkbox-container label{
+        font-size: 12px;
+    }
+
+    .buttons-container {
+        margin-left: 18%;
+    }
+}
 
 /* Cadastro da Empresa */
 .register_shop {
