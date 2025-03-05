@@ -57,16 +57,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.register_client p {
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-size: 24px;
-    font-style: normal;
-    position: relative;
-    width: 350px;
-    left: 46px;
-    top: 26px;
-    margin-bottom: 36px;
+.register_client h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    margin: 1%;
+    font-size: 22px;
 }
 
 .register_client img {
@@ -294,7 +290,7 @@
     background-color: #00BFA5;
 }
 
-@media(max-width:768px){
+@media(max-width:1000px) and (min-width: 425px){
     .register_client{
         left: 19%;
     }
