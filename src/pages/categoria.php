@@ -18,6 +18,13 @@ require('../config/conexao.php');
         </div>      
     </div> 
 
+    <div class="buttonCategoria">
+        <button-categoria nome="Computadores" imagem="assets/img/categoria/icone-categoria/computer_icon.svg"></button-categoria>
+        <button-categoria nome="Celulares" imagem="assets/img/categoria/icone-categoria/computer_icon.svg"></button-categoria>
+        <button-categoria nome="Cameras" imagem="assets/img/categoria/icone-categoria/computer_icon.svg"></button-categoria>   
+    </div>
+
+
     <div class ="sidebar">
         <div class="marcas_preco">
                 <h1 class="marcas">Marcas</h1>
@@ -73,17 +80,6 @@ require('../config/conexao.php');
             </div> -->
     <main>
 
-    <div class="categoria">
-    <script type="module">
-        import ButtonCategoria from './buttonCategoria.js';
-
-        document.querySelector('.categoria').innerHTML = `
-            ${ButtonCategoria({ texto: 'Computadores', imagem: '../../assets/img/categoria-computadores.png' })}
-            ${ButtonCategoria({ texto: 'Celulares', imagem: '../../assets/img/categoria-celulares.png' })}
-            ${ButtonCategoria({ texto: 'Smartwatches', imagem: '../../assets/img/categoria-smartwatches.png' })}
-        `;
-    </script>
-</div>
 
         <div class="grid-produtos-pagina-vendedor">
             <div class="grid-item-produtos-pagina-vendedor">
@@ -221,6 +217,6 @@ require('../config/conexao.php');
 
     <?php get_footer() ?>
 </body>
-
-<script type ="module" src="../assets/js/categoria.js"></script>
+<script type = "module" src ="../assets/js/button-categoria.js"></script>
+<script type ="module" src="../assets/js/categoria.js?<?= time();?>"></script>
 </html>

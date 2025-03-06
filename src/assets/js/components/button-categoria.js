@@ -1,8 +1,8 @@
 const buttonCategoria = ({ imagem, nome }) => {
     return `
-    <div class="col-3">
-        <button class="button">
-            <div class="button-body ptb-1 plr-1">
+    <div class="container">
+        <button class="buttonCategoria">
+            <div class="button-body">
                 <div class="container-imagem">
                     <img class="img-produto" src="${imagem}" alt="Ícone de ${nome}">
                 </div>
@@ -14,5 +14,6 @@ const buttonCategoria = ({ imagem, nome }) => {
     </div>
     `;
 }
+customElements.define("button-categoria", ButtonCategoria);
 
 export default buttonCategoria;

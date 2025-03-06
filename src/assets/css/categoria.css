@@ -30,7 +30,7 @@ header,body{
 
 /* botoes de categoria */
 
-.categoria-button {
+.buttonCategoria {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -43,21 +43,21 @@ header,body{
    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.categoria-button:hover {
+.buttonCategoria:hover {
    transform: scale(1.05);
 }
 
-.categoria-button img {
+.buttonCategoria img {
    width: 80px;
    height: auto;
    transition: filter 0.3s ease;
 }
 
-.categoria-button:hover img {
+.buttonCategoria:hover img {
    filter: brightness(0.7);
 }
 
-.categoria-button span {
+.buttonCategoria span {
    position: absolute;
    bottom: 10px;
    color: white;
@@ -67,7 +67,7 @@ header,body{
    transition: opacity 0.3s ease;
 }
 
-.categoria-button:hover span {
+.buttonCategoria:hover span {
    opacity: 1;
 }
 
