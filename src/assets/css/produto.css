@@ -20,9 +20,9 @@ html{
 
 #grid-produto{
     display: grid;
-    grid-template-columns: 50% 25%;;
+    grid-template-columns: 55% 25%;
     width: 100%;
-    column-gap: 4%;
+    column-gap: 1%;
     justify-content: center;
     
 }
@@ -263,8 +263,16 @@ h3{
     width: 30px;
     
 }
-/* 
+
 @media (max-width: 1790px) and (min-width: 1590px) {
+    #grid-produto{
+        display: grid;
+        grid-template-columns: 55% 25%;
+        width: 100%;
+        column-gap: 1%;
+        justify-content: center;
+        
+    }
     #loja{
         display: grid;
         grid-template-columns: 25% 45% 15%;
@@ -287,6 +295,14 @@ h3{
 }
 
 @media (max-width: 1590px ) and (min-width: 1484px) {
+    #grid-produto{
+        display: grid;
+        grid-template-columns: 55% 25%;
+        width: 100%;
+        column-gap: 1%;
+        justify-content: center;
+        
+    }
     #loja{
         display: grid;
         grid-template-columns: 25% 50% 15%;
@@ -327,6 +343,14 @@ h3{
 }
 
 @media (max-width: 1484px ) {
+    #grid-produto{
+        display: grid;
+        grid-template-columns: 55% 25%;
+        width: 100%;
+        column-gap: 1%;
+        justify-content: center;
+        
+    }
     #loja{
         display: grid;
         grid-template-columns: 25% 49% 15%;
@@ -363,6 +387,14 @@ h3{
 }
 
 @media (max-width: 1353px) {
+    #grid-produto{
+        display: grid;
+        grid-template-columns: 55% 25%;
+        width: 100%;
+        column-gap: 1%;
+        justify-content: center;
+        
+    }
     .preco {
         font-size: 290%;
     }
@@ -392,8 +424,21 @@ h3{
     }
 }
 @media (max-width: 1135px) {
+    #grid-produto{
+        display: grid;
+        grid-template-columns: 55% 25%;
+        width: 100%;
+        column-gap: 1%;
+        justify-content: center;
+        
+    }
+    
+    #troca{
+        font-size: 70%;
+        
+    }
     .preco {
-        font-size: 275%;
+        font-size: 265%;
     }
     #comprar{
         padding-top: 5%;
@@ -408,30 +453,90 @@ h3{
     }
     #loja {
         grid-template-columns: 24% 49% 16%;
-        font-size: 60%;
+        font-size: 50%;
     }
 }
 
 @media (max-width: 1024px) {
+    .line{
+        position: relative;
+        left: 5%;
+        margin-top: 4%;
+        margin-bottom: 2%;
+        width: 90%; 
+        height:1px;
+        background-color: #000000;
+        border-radius: 20%;
+    }
+    #loja {
+        font-size: 80%;
+        width: 100%;
+        gap: 2%;
+    }
+    .quantidade{
+        display: inline;
+        width: 20%;
+        text-align: center;
+        height: 80%;
+        
+    }
+    #botao_qtd{
+        padding-top: 2%;
+        width: 50%;
+        height: 10%;
+        padding-bottom: 2%;
+    }
+     
+    #menos{
+        position: relative;
+        left: 3%;
+        border-radius: 2px;
+        border-width: 1px;
+        height: 95%;
+        
+    }
+    #mais{
+        position: relative;
+        right: 3%;
+        border-width: 1px;
+        border-radius: 2px;
+        background-color: #16A18E;
+        color: white;
+        height:95%;
+     
+    }
     #comprar{
-        padding-top: 5%;
-        display: grid;
+        display: flex;
+        justify-content: center;
+        padding-top: 1%;
+        width: 65%;
+        height: 9%;
+        
+        
 
-        grid-template-columns: 50% 10%;
-        gap: 5%;
         
     }
     #btn-comprar {
-        font-size: 15px;
-        width: 100%;
+        font-size: 20px;
+        
+        
+        
+    }
+    #icons-comprar{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        width: 30%;
+        
+        
     }
     
     #grid-produto{
         display: grid;
-        grid-template-columns: 80%;
+        grid-template-columns: 100%;
         width: 100%;
-        column-gap: 4%;
         justify-content: center;
+        margin-left: 5%;
         
     }
     .desc-produto {
@@ -443,15 +548,16 @@ h3{
         font-size: 200%;
     }
     .descricao {
-        max-width: 80%;
-        margin-left: 10%;
+        max-width: 90%;
+        margin-left: 5%;
     }
     #loja{
         width: 40%;
     }
 
     #troca{
-        font-size: 80%;
+        font-size: 90%;
+        width: 70%;
         
     }
 
@@ -460,22 +566,85 @@ h3{
         display: grid;
         margin-top: 6%;
         grid-template-columns: 4% 50%;
-        left: 10%;
-        width: 80%;
+        left:5%;
+        width: 90%;
         
     }
+    .grid-recomendar {
+        display: grid;
+        grid-template-columns: 22% 22% 22% 22%;
+        gap: 1%;
+        
+        
+    }
+    
     
 
     
 }
 
 @media (max-width: 768px) {
+    .quantidade{
+        display: inline;
+        width: 25%;
+        text-align: center;
+        height: 70%;
+        
+    }
+    #botao_qtd{
+        padding-top: 2%;
+        width: 60%;
+        height: 12%;
+        padding-bottom: 5%;
+    }
+     
+    #menos{
+        position: relative;
+        left: 3%;
+        border-radius: 2px;
+        border-width: 1px;
+        height: 80%;
+        
+    }
+    #mais{
+        position: relative;
+        right: 3%;
+        border-width: 1px;
+        border-radius: 2px;
+        background-color: #16A18E;
+        color: white;
+        height:80%;
+     
+    }
+    #comprar{
+        display: flex;
+        justify-content: center;
+        padding-top: 1%;
+        width: 80%;
+        height: 9%;
+        
+        
+
+    }
+    #icons-comprar{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        width: 30%;
+        
+        
+    }
+    
+    #loja{
+        width: 70%;
+        
+    }
 
     .grid-conteudo{
         display: flex;
         position: relative;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         padding-bottom: 1%;
         padding-top: 3%;
         
@@ -490,48 +659,105 @@ h3{
         
     }
     .descricao {
-        max-width: 80%;
-        font-size: 12px;
-        margin-left: 10%;
+        max-width: 90%;
+        font-size: 18spx;
+        
     }
     .preco {
-        font-size: 25px;
+        font-size: 30px;
     }
     .grid-recomendar {
         display: grid;
-        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-columns: 22% 22% 22% 22%;
         gap: 1%;
+        font-size: 12px;
         
     }
     #btn-comprar {
+        font-size: 20px;
+        height: 115%;
+    }
+    .grid-topico{ 
+        position: relative;
+        display: grid;
+        margin-top: 6%;
+        grid-template-columns: 6% 60%;
+        left:5%;
         font-size: 14px;
+        
     }
 }
 
 @media (max-width: 480px) {
+    .icon{
+        position: relative;
+        width: 15px;
+        top: 5%;
+        z-index: 10;
+    }
+    .grid-recomendar {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 1%;
+        font-size: 10px;
+        
+    }
+    #loja{
+        width: 90%;
+        justify-self: center;
+    }
     .preco {
-        font-size: 22px;
+        font-size: 25px;
     }
     .descricao {
-        max-width: 95%;
+        max-width: 90%;
     }
     #btn-comprar {
-        font-size: 12px;
-        padding: 8px;
+        font-size: 20px;
+        
+        
     }
+    #troca{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 20% 20%;
+        gap: 2%;
+        padding-top: 10%;
+        align-self: center;
+        font-size: 80%;
+    }
+    .grid-topico{ 
+        position: relative;
+        display: grid;
+        margin-top: 6%;
+        grid-template-columns: 8% 80%;
+        left:5%;
+        font-size: 13px;
+        
+    }
+        
+        
     
 }
 
 @media (max-width: 350px) {
+    .grid-recomendar {
+        display: grid;
+        grid-template-columns: 40% 40% ;
+        gap: 3%;
+        font-size: 10px;
+        
+    }
     .preco {
-        font-size: 18px;
+        font-size: 20px;
     }
     .descricao {
         font-size: 14px;
     }
     #btn-comprar {
-        font-size: 10px;
-        padding: 6px;
+        font-size: 18px;
+        
     }
 }
- */
+
+
