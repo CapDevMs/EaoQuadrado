@@ -1,4 +1,8 @@
 *{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
     margin:0px;
     padding: 0px;
     gap: 0;
@@ -21,14 +25,22 @@
 
 .product{
     border: 2px solid rgb(0, 0, 0,0.5);
+    border-radius: 20px;
     display: flex;
     justify-content: center;
+    gap:0;
+    width: 999px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    
+
 }
 
 .productDiv{
     display: grid;
     grid-template-columns: auto;
     text-align: center;
+    width: 16.6666666667%;
 }
 
 .cartProduct-6{
@@ -38,3 +50,74 @@
     text-align: center;
 
 }
+
+.counter{
+    width: 80px;
+    height: 25px;
+    border: solid rgb(0, 0, 0,0.5) 1px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.counterDiv{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.cartProducts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.totalizador{
+    max-width: 80%;
+    border: 2px solid rgb(0, 0, 0,0.5);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    position: relative;
+    bottom:0px;
+}
+
+
+.span{
+    max-width: max-content;
+    margin: 10px;
+}
+
+.totalLine{
+    display: flex;
+    justify-content:space-between;
+}
+
+hr{
+    max-width: 99%;
+    margin: 0 auto;
+}
+
+main{
+    max-height:fit-content;
+}
+
+@media only screen and (max-widht:1200px){
+    .product{
+        width: 85%;
+        font-size:large ;
+    }
+}
+
+@media only screen and (max-widht:992px){}
+
+@media only screen and (max-widht:768px){
+
+}
+
+@media only screen and (max-widht:425px){}
+
+@media only screen and (max-widht:365px){}
