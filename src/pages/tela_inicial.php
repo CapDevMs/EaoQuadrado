@@ -6,6 +6,10 @@ require('../config/conexao.php');
 <?php get_base_head(); ?>
 <body>
     <link rel="stylesheet" href="../assets/css/tela_inicial.css">
+    <?php get_css(['termos_de_uso_e_nossa_politica','cliente/pagina_vendedor','base', 'style']) ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <?php get_css(['cliente/pagina_vendedor']) ?>
+    <?php get_css_components() ?>
     <header class="header">
         <nav class="navbar">
             <div class="navbar-logo">
@@ -134,18 +138,16 @@ require('../config/conexao.php');
             <h1>Nossos Produtos</h1>
         </div>
 
-        <div class="produtos_container">
-            <div class="produtos" id="produto_line1"><img src="../assets/img/racao_cesar_cachorro.svg" alt=""></div>
-            <div class="produtos" id="produto_line1"><img src="../assets/img/camera_canon.svg" alt=""></div>
-            <div class="produtos" id="produto_line1"><img src="../assets/img/asus_notebook.png" alt=""></div>
-            <div class="produtos" id="produto_line1"><img src="../assets/img/curology_product.svg" alt=""></div>
-            <div class="produtos" id="produto_line2"><img src="../assets/img/carro_eletrico.svg" alt=""></div>
-            <div class="produtos" id="produto_line2"><img src="../assets/img/chuteira_adidas.svg" alt=""></div>
-            <div class="produtos" id="produto_line2"><img src="../assets/img/controle_ps5.png" alt=""></div>
-            <div class="produtos" id="produto_line2"><img src="../assets/img/jaqueta.svg" alt=""></div>
+        <div class="row">
+            <card-produto></card-produto>
         </div>
+
         
+        </section>
     </main>
+
+
+    <script type="module" src="../assets/js/pagina_do_vendedor.js?<?= time();?>"></script>
     
 
 
