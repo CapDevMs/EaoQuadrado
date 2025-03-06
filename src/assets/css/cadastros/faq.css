@@ -49,3 +49,11 @@ button:hover {
 .texto{
     opacity: 50%;
 }
+
+
+@media (max-width: 765px) {
+    #retorno{
+        width: 120px;
+        height: 60px;
+    }
+}
