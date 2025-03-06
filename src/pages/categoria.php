@@ -73,11 +73,17 @@ require('../config/conexao.php');
             </div> -->
     <main>
 
-        <section class="section-categoria">
-            <div class="section-categoria__button">
-                <buttonCategoria></buttonCategoria>
-            </div>
-        </section>
+    <div class="categoria">
+    <script type="module">
+        import ButtonCategoria from './buttonCategoria.js';
+
+        document.querySelector('.categoria').innerHTML = `
+            ${ButtonCategoria({ texto: 'Computadores', imagem: '../../assets/img/categoria-computadores.png' })}
+            ${ButtonCategoria({ texto: 'Celulares', imagem: '../../assets/img/categoria-celulares.png' })}
+            ${ButtonCategoria({ texto: 'Smartwatches', imagem: '../../assets/img/categoria-smartwatches.png' })}
+        `;
+    </script>
+</div>
 
         <div class="grid-produtos-pagina-vendedor">
             <div class="grid-item-produtos-pagina-vendedor">
