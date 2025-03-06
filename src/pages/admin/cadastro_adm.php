@@ -4,11 +4,17 @@ require('../../config/conexao.php');
 
 ?>
 <?php get_base_head(); ?>
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <?php get_header(); ?>
     <link rel = 'stylesheet' href="../../assets/css/cadastro_adm.css">
-
+    <title>Eao Quadrado</title>
+</head>
     <main>
     <div class="roadmap">Home / Painel do Administrador / Cadastrar Novo Administrador</div>
         <div class="container-geral">
