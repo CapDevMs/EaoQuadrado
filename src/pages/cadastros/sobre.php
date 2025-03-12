@@ -73,7 +73,7 @@
             
     </main>
 
-    <?php get_footer() ?>
+    <?php get_footer() ?> 
 </body>
 <script src="../../assets/js/script.js"></script>
 </html>
