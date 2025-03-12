@@ -104,10 +104,10 @@
     background: linear-gradient(90deg, var(--cor-secundaria) 70%, var(--cor-fundo-estrela) 30%);
 }
 .estrela_40{
-    background: linear-gradient(90deg, var(--cor-secundaria) 80%, var(--cor-fundo-estrela) 20%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 90%, var(--cor-fundo-estrela) 20%);
 }
 .estrela_45{
-    background: linear-gradient(90deg, var(--cor-secundaria) 90%, var(--cor-fundo-estrela) 10%);
+    background: linear-gradient(90deg, var(--cor-secundaria) 95%, var(--cor-fundo-estrela) 10%);
 }
 .estrela_50{
     background: linear-gradient(90deg, var(--cor-secundaria) 100%, var(--cor-fundo-estrela) 0%);
