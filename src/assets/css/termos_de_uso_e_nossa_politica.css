@@ -1,0 +1,28 @@
+.container {
+    width: 70%;
+    margin-bottom: 6%;
+}
+ 
+ 
+/* ========================================================================
+                             ROADMAP
+=========================================================================== */
+#roadmap {
+    font-size: 11px;
+    font-weight: lighter;
+    margin-bottom: 3%;
+    margin-top: 10%;
+}
+ 
+#titulo {
+    font-size: 20px;
+    margin-bottom: 2%;
+    font-size: 22px;
+}
+ 
+.texto {
+    text-align: left;
+    color: #7D8184;
+    font-size: 16px;
+}
+ 

@@ -1,0 +1,166 @@
+#sub-menu{
+    margin-left: 4.5%;
+    width: 95%;
+    
+}
+
+h6, span{
+    display: inline;
+    margin-left: 0.5%;
+    font-weight: bold;
+    font-size: 15px; 
+    color: black;
+    text-decoration: none; 
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+#texto{
+    margin-left: 5%;
+    width: 40%;
+    display: inline-block; 
+    margin-top: 4%;
+    font-size: 140%; 
+    font-family: Poppins;
+}
+
+#título{
+    display: inline;
+    font-weight: bold;
+    font-size: 40px;   
+    font-family: Poppins;      
+}
+
+#descricao{
+    margin-top: 5%;
+    display: inline;
+    
+}
+
+#imagem{
+    display: inline-block; 
+    width: 40%;  
+    vertical-align: 100px;  
+    margin-left: 5%;
+}
+
+#comparativo{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 3%;
+}
+
+#banner2{
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 7%;
+}
+
+
+
+#banner {
+    position: relative; 
+    margin-left: 5%;
+    margin-right: 8%;
+    width: 88%;
+    margin-top: 7%;
+}
+
+#banner img {
+    width: 100%;  
+    height: auto;  
+}
+
+#links {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);  
+    display: flex;
+    gap: 15px;  
+}
+
+#links a {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#links a img {
+    max-width: 100%;  
+    height: auto;  
+    width: 60px;  
+}
+
+
+
+
+
+@media (max-width: 1400px) {
+    #texto {
+        width: 80%; 
+        display: block; 
+        text-align: left; 
+        margin-left: 5%;
+        margin-top: 0;
+        font-family: Poppins; 
+    }
+
+    #título {
+        font-size: 15px; 
+        font-family: Poppins; 
+    }
+
+    #descricao {
+        font-size: 80%; 
+    }
+
+    #imagem {
+        width: 80%; 
+        display: block; 
+        margin-right: 4%;
+    }
+
+    #links a img {
+        width: 50px;  
+    }
+    
+
+}    
+
+@media (max-width: 1150px) {
+    #links a img {
+        width: 40px;  
+    }
+}
+
+
+@media (max-width: 1015px) {
+    #links a img {
+        width: 30px;  
+    }
+}
+
+
+@media (max-width: 850px) {
+    #links a img {
+        width: 25px;  
+    }
+}
+
+
+@media (max-width: 768px) {
+    #sub-menu{
+        display: none;
+    }
+
+    #links a img {
+        width: 20px;  
+        height: 20px;  
+    }
+}
