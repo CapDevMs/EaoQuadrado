@@ -164,3 +164,18 @@ a{
         height: 20px;  
     }
 }
+
+@media (max-width: 600px) {
+    #título {
+        font-size: 18px; 
+    }
+
+    #descricao {
+        font-size: 13px; 
+    }
+
+    #links a img {
+        width: 9px; 
+        height: 10px; 
+    }
+}
