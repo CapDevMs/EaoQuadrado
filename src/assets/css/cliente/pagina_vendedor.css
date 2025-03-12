@@ -135,10 +135,6 @@
     margin-bottom: 2vh;
 }
 
-.container-coracao-carrinho {
-    display: block;
-}
-
 @media (max-width: 768px) {
     .stars {
         flex-direction: column;
