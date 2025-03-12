@@ -7,7 +7,7 @@ const cardProduto = ({ id, titulo, imagem, preco, link }) => {
                     <img class="img-produto" src="${imagem}">
                 </div>
                 <div class="pt-2 col-1">
-                    <i class="fa-regular fa-heart pointer pb-1" id="like_prod_${id}"></i>
+                    <i class="fa-regular fa-heart pointer pb-1 like" data-id="like_prod_${id}"></i>
                     <a href="${link}">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>

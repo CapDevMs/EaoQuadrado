@@ -65,9 +65,19 @@ let produtos = [
     },
 ]
 
-produtos.forEach((produto) => {
-    docTag.innerHTML += cardProduto(produto)
-    document.getElementById('like_prod_' + produto.id).addEventListener('click', () => {
-        alert('teste');
+await exibirProdutos();
+
+let likeBtns = document.querySelectorAll('i.like');
+
+likeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        alert('Produto favoritado com sucesso!');
     })
 });
+
+
+async function exibirProdutos() {
+    produtos.forEach((produto) => {
+        docTag.innerHTML += cardProduto(produto)
+    });
+}
