@@ -1,5 +1,5 @@
 <?php 
-    include('../config/funcoes.php');
+    include ('../../config/funcoes.php');
     $appName = get_app_name();
 ?>
 
@@ -8,9 +8,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="stylesheet" href="../assets/css/base.css">
-        <link rel="stylesheet" href="../assets/css/cliente/meu_perfil_cliente.css">
+        <script src="../../../assets/css/base.css"></script>
+        <script src="../../../assets/css/cliente/meu_perfil_cliente.css"></script>
+        <?php get_css(['base',  'cliente/meu_perfil_cliente'])?>
         <title>Eao Quadrado</title>
     </head>
 <body>
@@ -18,54 +18,60 @@
 
     <main>
         <div class="roadmap">Home / Minha Conta</div>
-        <div class="container">
-            <aside class="sidebar">
-                <ul class="sidebar-menu">
-                    <li><a href="#" class="active">Gerenciar Minha Conta</a></li>
-                    <li><a href="#">Meus Pedidos</a></li>
-                    <li><a href="#">Histórico de Pedidos</a></li>
-                </ul>
-            </aside>
-            <div class="profile-section">
-                <h1>Edite Seu Perfil</h1>
-                <div class="profile-avatar">
-                    <img src="../assets/img/foto_cliente.png" alt="Foto do Perfil" class="avatar">
+            <div class="register_client">
+                    <p>Edite seu Perfil</p>
+                    <img src="../../assets/img/foto_cliente.png" alt="foto do cliente">
+
+                    <div class="names-container">
+                        <h2>Nome</h2>
+                        <input type="text" name="Nome" class="input1-container" placeholder="John" required>
+                        <h2>Sobrenome</h2>
+                        <input type="text" name="Sobrenome" class="input1-container" placeholder="Doe" required>
+                    </div>
+
+                <h2 class="subtitle">Data de Nascimento</h2>
+                <div class="date-container">
+                    <div class="counter">
+                        <input type="date" class="dia-mes" max="31" value="1" required></input>
+                    </div>
+
                 </div>
-                <form class="profile-form">
-                    <div class="form-group">
-                        <label>CEP</label>
-                        <input type="text" name="cep" value="7900000" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Endereço</label>
-                        <input type="text" name="endereco" value="R. Cebolinha" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Bairro</label>
-                        <input type="text" name="bairro" value="Pioneiro" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Complemento (opcional)</label>
-                        <input type="text" name="complemento" value="">
-                    </div>
-                    <div class="form-group">
-                        <label>Senha</label>
-                        <input type="password" name="senha" value="*********" required>
-                    </div>
-                    <div class="form-group">
-                        <a href="#" class="change-password">Alterar Senha?</a>
-                    </div>
-                    <div class="form-actions">
-                        <button type="button" class="delete-account">Excluir conta</button>
-                        <button type="submit" class="save-changes">Salvar Mudanças</button>
-                    </div>
-                </form>
+
+                <div class="inform1-container">
+                    <h2>CPF</h2>
+                    <input type="text" name="cpf" class="input2-container" placeholder="000.000.000-00" required>
+                    <h2>E-mail</h2>
+                    <input type="text" name="email" class="input2-container" placeholder="johndoe@gmail.com" required>
+                    <h2>Número de Telefone</h2>
+                    <input type="text" name="telefone" class="input2-container" placeholder="(67) 99999-9999" required>
+                </div>
+
+                <div class="inform2-container">
+                    <h2>CEP</h2>
+                    <input type="text" name="cep" class="input3-container" placeholder="7900000" required>
+                    <h2>Endereço</h2>
+                    <input type="text" name="endereco" class="input3-container" placeholder="R.cebolinha" required>
+                    <h2>Bairro</h2>
+                    <input type="text" name="rua" class="input3-container" placeholder="Pioneiro" required>
+                    <h2>Complemento (opcional)</h2>
+                    <input type="text" name="Complemento" class="input3-container" placeholder="">
+                </div>
+
+                <div class="password-container">
+                    <h2>Senha</h2>
+                    <input type="text" class="input1-container" placeholder="*********" required>                       
+                    <h2>Alterar senha?</h2><h2>Excluir conta<h2> 
+                </div>
+
+                </div class 
+               
+                <div class="buttons-container">                    
+                    <button class="button-confirm">Salvar mudanças</button>
+                </div>
             </div>
-            <div class="welcome-message">
-                <p>Bem-vindo, John Doe!</p>
-            </div>
-        </div>
+    
     </main>
+
 
     <?php get_footer() ?>
 </body>
