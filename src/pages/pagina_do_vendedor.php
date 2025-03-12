@@ -28,7 +28,7 @@ $appName = get_app_name();
             <div class="container">
                 <div class="row">
                     <div class="col-12 pb-3">
-                        <img src="../assets/img/Banner_loja.png" class="img" alt="Banner da Loja">
+                        <img src="../assets/img/Banner_loja.png" class="img banner_loja" alt="Banner da Loja">
                     </div>
                 </div>
                 <div class="row">

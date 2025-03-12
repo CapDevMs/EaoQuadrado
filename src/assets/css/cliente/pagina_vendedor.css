@@ -4,9 +4,13 @@
 }
 
 .img {
-    max-height: 306px;
     border-radius: 20px;
     background-color: black;;
+}
+
+.banner_loja {
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .card {
