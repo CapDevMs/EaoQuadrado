@@ -1,11 +1,34 @@
-let currentSlide = 1;
-const totalSlides = 4;
+const container = document.querySelector('.container_carrossel');
+const slides = document.querySelectorAll('.item_carrossel');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
 
-function changeSlide() {
-    document.getElementById(`slide${currentSlide}`).checked = false;
+let index = 0;
 
-    currentSlide = (currentSlide % totalSlides) + 1;
-
-    document.getElementById(`slide${currentSlide}`).checked = true;
+function updateCarousel() {
+    container.style.transform = `translateX(${-index * 33.34}%)`;
 }
-setInterval(changeSlide, 3500);
+
+function autoPlay() {
+    index = (index + 1) % slides.length; 
+    updateCarousel();
+}
+
+next.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+    resetAutoPlay();
+});
+
+prev.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateCarousel();
+    resetAutoPlay();
+});
+
+let autoSlide = setInterval(autoPlay, 5000);
+
+function resetAutoPlay() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(autoPlay, 5000);
+}

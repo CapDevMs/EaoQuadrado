@@ -8,67 +8,57 @@ require('../config/conexao.php');
     <link rel="stylesheet" href="../assets/css/tela_inicial.css">
     <?php get_css(['termos_de_uso_e_nossa_politica','cliente/pagina_vendedor','base', 'style']) ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <?php get_css(['cliente/pagina_vendedor']) ?>
     <?php get_css_components() ?>
-    <header class="header">
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <a href="#">
-                    <img src="../assets/img/logo.png" class="logo" alt="Logo">
-                </a>
-            </div>
-            <div class="search-bar">
-                <input type="text" class="search-input" placeholder="O que você procura hoje?">
-                <img src="../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
-            </div>
-            <ul class="menu-opcoes">
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../assets/img/pessoa.svg" alt="Pessoa">
-                    </a>
-                </li>
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../assets/img/carrinho.svg" alt="Carrinho">
-                    </a>
-                </li>
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../assets/img/informacao.svg" alt="Informações">
-                    </a>
-                </li>
-                <li class="menu-opcoes-icons">
-                    <a href="#">
-                        <img src="../assets/img/suporte.svg" alt="suporte">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <header >
+    <?php get_header() ?>
     </header>
 
     <main>
-        <ul class="slider">
-            <li>  
-                <input type="radio" id="slide1" class="btn-slide" name="slide" checked>
-                <label for="slide1"></label>
-                <img src="../assets/img/slide1.png" />
-            </li>
-            <li>
-                <input type="radio" id="slide2" class="btn-slide" name="slide">
-                <label for="slide2"></label>
-                <img src="../assets/img/slide2.png"/>
-            </li>
-            <li>
-                <input type="radio" id="slide3" class="btn-slide" name="slide">
-                <label for="slide3"></label>
-                <img src="../assets/img/slide3.png" />
-            </li>
-            <li>
-                <input type="radio" id="slide4" class="btn-slide" name="slide">
-                <label for="slide4"></label>
-                <img src="../assets/img/slide4.png" />
-            </li>
-        </ul>
+    <div class="carrossel">
+        <div class="container_carrossel">
+            <div class="item_carrossel">
+                <div class="bg_carrossel">
+                </div>
+                <img src="../assets/img/slide1.png" alt="">
+                <div class="text_carrossel">
+                    <h1>Aproveite o melhor dos games!</h1>
+                    <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="item_carrossel">
+                <div class="bg_carrossel"></div>
+                <img src="../assets/img/slide2.png" alt="">
+                <div class="text_carrossel">
+                    <h1>Confira os melhores celulares!</h1>
+                    <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="item_carrossel">
+                <div class="bg_carrossel"></div>
+                <img src="../assets/img/slide3.png" alt="">
+                <div class="text_carrossel">
+                    <h1>Aproveite nossa coleção feminina!</h1>
+                    <div class="link">
+                        <a href="#">Compre Agora</a>
+                        <i class="fas fa-arrow-right"></i> 
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+        
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+        <script src="./js/slider.js"></script>
+    </div>
         <script src="../../src/assets/js/tela_inicial.js"></script>
 
         <div class="frame_container_categoria">
