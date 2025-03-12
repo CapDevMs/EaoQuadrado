@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/base.css">
+        <link rel="stylesheet" href="../assets/css/cliente/meu_perfil_cliente.css">
+        <title>Eao Quadrado</title>
+    </head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#">
+                    <img src="../assets/img/logo.png" class="logo" alt="Logo">
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="O que você procura hoje?">
+                <img src="../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
+            </div>
+            <ul class="menu-opcoes">
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../assets/img/pessoa.svg" alt="Pessoa">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../assets/img/carrinho.svg" alt="Carrinho">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../assets/img/informacao.svg" alt="Informações">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../assets/img/suporte.svg" alt="Suporte">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="roadmap">Home / Minha Conta</div>
+        <div class="container">
+            <aside class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="active">Gerenciar Minha Conta</a></li>
+                    <li><a href="#">Meus Pedidos</a></li>
+                    <li><a href="#">Histórico de Pedidos</a></li>
+                </ul>
+            </aside>
+            <div class="profile-section">
+                <h1>Edite Seu Perfil</h1>
+                <div class="profile-avatar">
+                    <img src="../assets/img/foto_cliente.png" alt="Foto do Perfil" class="avatar">
+                </div>
+                <form class="profile-form">
+                    <div class="form-group">
+                        <label>CEP</label>
+                        <input type="text" name="cep" value="7900000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Endereço</label>
+                        <input type="text" name="endereco" value="R. Cebolinha" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Bairro</label>
+                        <input type="text" name="bairro" value="Pioneiro" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Complemento (opcional)</label>
+                        <input type="text" name="complemento" value="">
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input type="password" name="senha" value="*********" required>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="change-password">Alterar Senha?</a>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="delete-account">Excluir conta</button>
+                        <button type="submit" class="save-changes">Salvar Mudanças</button>
+                    </div>
+                </form>
+            </div>
+            <div class="welcome-message">
+                <p>Bem-vindo, John Doe!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Suporte</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Senac Hub Academy</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">eaoquadado@gmail.com</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">+55 67 99999-9999</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">
+                                R. do Parque, 75 - Centro Campo Grande - MS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Conta</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Minha Conta</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Entre/Cadastre</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Carrinho</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Lista de Desejos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Acesso</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Nossa Política</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Termos de Uso</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">FAQ</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+</html>

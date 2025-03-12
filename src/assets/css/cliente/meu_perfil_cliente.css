@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Css do Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 92px;
+    width: 100%;
+    z-index: 9999;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 164px 0 164px;
+}
+
+.navbar-logo {
+    display: flex;
+}
+
+.logo {
+    width: 45px;
+    height: 60px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #BFC2C5;
+    border-radius: 20px;
+    height: 24px;
+    width: 213px;
+}
+
+.search-input {
+    background-color: #BFC2C5;
+    border: none;
+    color: #000;
+    width: 100%;
+    padding: 0 7px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.search-input:focus {
+    outline: none;
+    border: none;
+}
+
+.search-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.menu-opcoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu-opcoes-icons {
+    width: 30px;
+    height: 30px;
+}
+
+/* Css do Main */
+main {
+    margin-top: 95px;
+    min-height: calc(100vh - 375px);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background: #F5F5F5;
+}
+
+.roadmap {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #757575;
+    margin: 0 0 30px 200px;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background: #E0F7F5;
+    padding: 20px 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 15px 20px;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.sidebar-menu .active {
+    background: #00BFA5;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.profile-section {
+    flex: 1;
+    padding: 40px;
+}
+
+.profile-section h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.profile-avatar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #E0E0E0;
+    border: 4px solid #00BFA5;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.form-group input {
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #000;
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 1px solid #00BFA5;
+}
+
+.change-password {
+    color: #F44336;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.delete-account {
+    background: #F44336;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.save-changes {
+    background: #00BFA5;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.welcome-message {
+    width: 200px;
+    padding: 40px;
+    text-align: right;
+}
+
+.welcome-message p {
+    font-size: 16px;
+    color: #000;
+}
+
+/* Css do Footer */
+footer {
+    height: 280px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 34px 0;
+}
+
+.footer-links {
+    display: flex;
+    width: 660px;
+    gap: 20px;
+    color: #FAFAFA;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    width: 207px;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.footer-links-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-links-title p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.footer-links-item a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
