@@ -30,8 +30,8 @@
     border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
-    width: 15%;
-    height: 10%;
+    width: 200px;
+    height: 80px;
     margin-left: 40%;
     margin-bottom: 10%;
     margin-top: 5%;
@@ -55,5 +55,26 @@ button:hover {
     #retorno{
         width: 120px;
         height: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    #sub-menu {
+        font-size: 18px; 
+    }
+    
+    #texto{
+        font-size: 13px;
+    }
+    #retorno{
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        width: 140px;
+        height: 60px;
+        margin-left: 30%;
+        margin-bottom: 10%;
+        margin-top: 5%;
     }
 }
