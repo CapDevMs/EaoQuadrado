@@ -11,48 +11,50 @@ require('../config/conexao.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <?php get_css(['cliente/pagina_vendedor']) ?>
     <?php get_css_components() ?>
+    
     <header >
     <?php get_header() ?>
     </header>
 
     <main>
-    <div class="carrossel">
-        <div class="container_carrossel">
-            <div class="item_carrossel">
-                <div class="bg_carrossel">
-                </div>
-                <img src="../assets/img/slide1.png" alt="">
-                <div class="text_carrossel">
-                    <h1>Aproveite o melhor dos games!</h1>
-                    <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <div class="item_carrossel">
-                <div class="bg_carrossel"></div>
-                <img src="../assets/img/slide2.png" alt="">
-                <div class="text_carrossel">
-                    <h1>Confira os melhores celulares!</h1>
-                    <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
+        <div class="carrossel">
+            <div class="container_carrossel">
 
-            <div class="item_carrossel">
-                <div class="bg_carrossel"></div>
-                <img src="../assets/img/slide3.png" alt="">
-                <div class="text_carrossel">
-                    <h1>Aproveite nossa coleção feminina!</h1>
-                    <div class="link">
-                        <a href="#">Compre Agora</a>
-                        <i class="fas fa-arrow-right"></i> 
+                <div class="item_carrossel">
+                    <div class="bg_carrossel">
                     </div>
-                    
+                    <img src="../assets/img/slide1.png" alt="">
+                    <div class="text_carrossel">
+                        <h1>Aproveite o melhor dos games!</h1>
+                        <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
+                
+                <div class="item_carrossel">
+                    <div class="bg_carrossel"></div>
+                    <img src="../assets/img/slide2.png" alt="">
+                    <div class="text_carrossel">
+                        <h1>Confira os melhores celulares!</h1>
+                        <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="item_carrossel">
+                    <div class="bg_carrossel"></div>
+                    <img src="../assets/img/slide3.png" alt="">
+                    <div class="text_carrossel">
+                        <h1>Aproveite nossa coleção feminina!</h1>
+                        <div class="link">
+                            <a href="#">Compre Agora</a>
+                            <i class="fas fa-arrow-right"></i> 
+                        </div>
+                        
+                    </div>
+                </div>
+
+
             </div>
-
-
         </div>
-    </div>
     
         
         <button id="prev">&#10094;</button>
