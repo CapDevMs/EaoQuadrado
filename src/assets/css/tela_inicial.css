@@ -64,9 +64,9 @@
 }
 
 .item_carrossel img {
-    width: 80%;
+    width: 500px;
     height: auto;
-    max-width: 30%;  
+    max-width: 40%;  
     position: relative;
     bottom: 20%;
     left: 20%;
@@ -133,46 +133,19 @@
 }
 
 button {
-    /* position: absolute;
-    top: 50%;
-    color: white;
-    border: none;
-    padding: 30px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 30px;
-    background-color: transparent;
-    transition: all 0.5s ease;
-    transform: translateY(-50%); */
     overflow: hidden;
     display: none;
 }
 
-/* button:hover {
-    display: none;
-    transform: translateX(-30%) scale(1.2);
-}
-/* 
-#prev {
-    left: 10px;
-}
-
-#next {
-    right: 10px;
-} */
-
-
-
 .mosaico {
     display: grid;
     grid-template-columns: 55% 40% 40%;
-    grid-template-rows: repeat(2,100%); 
+    grid-template-rows: 200px 200px; 
     column-gap: 5%;
-    row-gap: 5%;
+    row-gap: 6%;
     margin-left: 10%;
     width: fit-content;
     height: fit-content;
-    margin-bottom: 20%;
     cursor: pointer;
     width: 55%;
     height: auto;
@@ -258,7 +231,7 @@ button {
 
 .frame_container_categoria{
     display: grid;
-    grid-template-columns: 20% 100%;
+    grid-template-columns: auto 100%;
     grid-template-rows: auto;
     height: 40px;
     width: 15%;
@@ -266,15 +239,7 @@ button {
     position: relative;
     left: 10%;
     margin-bottom: 5%;
-}
-
-.frame_categoria{
-    display: flex;
-    align-items: center;
-    height: 55px;
-    width: 60%;
-    background-color: var(--cor-principal);
-    border-radius: 5px;
+    margin-top: 5%;
 }
 
 .frame_container_categoria h1{
@@ -284,8 +249,24 @@ button {
     height: fit-content;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 5%;
+    margin-left: 20px;
+}
 
+.frame_categoria{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 30px;
+    background-color: var(--cor-principal);
+    border-radius: 5px;
+}
+
+.categorias_container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 90%;
+    left: 7%;
 }
 
 .categoria{
@@ -315,15 +296,6 @@ button {
     height: fit-content;
 }
 
-.categorias_container {
-    display: flex;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: auto;
-    position: relative;
-    margin-bottom: 10%;
-    width: 90%;
-    left: 7%;
-}
 
 .categoria{
     background-color: white;
@@ -415,7 +387,6 @@ button {
     .mosaico {
         gap: 6%;
         margin-left: 7.5%;
-        margin-bottom: 25%;
     }
     
     .frame_container_categoria{
@@ -428,15 +399,20 @@ button {
     }
     .frame_categoria{
         height: 40px;
+        width: 25px;
     }
 
     .categorias_container{
-        left: 3%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 90%;
+        left: 7%;
     }
 
     .categoria{
-        width: 8%;
-        height: auto;
+        max-width: 80px;
+        max-height: 80px;
         padding: 2% 2%;
     }
 
@@ -448,43 +424,6 @@ button {
 }
 
 @media (max-width: 992px) {
-    .mosaico {
-        gap: 5.5%;
-        margin-left: 7.5%;
-        margin-bottom: 30%;
-    }
-    
-    .frame_container_categoria{
-        left: 7.5%;
-    }
-
-    .frame_container_categoria h1{
-        width: fit-content;
-        white-space: nowrap;
-    }
-
-    .frame_categoria{
-        height: 40px;
-    }
-
-    .categorias_container{
-        left: 3%;
-    }
-
-    .categoria{
-        width: 8%;
-        height: auto;
-        padding: 2% 2%;
-    }
-
-    .categoria p{
-        white-space: nowrap;
-        font-size: 12px;
-    }
-
-}
-
-@media (max-width: 768px) {
     .carrossel {
         height: 500px;
     }
@@ -498,10 +437,82 @@ button {
         height: 500px;
     }
 
+    .item_carrossel img{
+        top: 0%;
+    }
+
     .text_carrossel {
         top: 55%;
-        left: 5%;
-        width: 80%;
+        width: 30%;
+        padding: 20px;
+    }
+
+    .text_carrossel h1 {
+        font-size: 35px;
+    }
+
+    .text_carrossel h2 {
+        font-size: 16px;
+    }
+
+
+    .mosaico {
+        column-gap: 30px;
+        margin-left: 7.5%;
+        row-gap: 15px;
+    }
+    
+    .frame_container_categoria{
+        left: 7.5%;
+    }
+
+    .frame_container_categoria h1{
+        width: fit-content;
+        white-space: nowrap;
+        font-size: 18px;
+    }
+
+    .frame_categoria{
+        height: 40px;
+        width: 25px;
+    }
+
+    .categorias_container{
+        left: 3%;
+        margin-top: 10%;
+    }
+
+    .categoria{
+        width: 8%;
+        height: auto;
+        padding: 20px 20px;
+    }
+
+    .categoria p{
+        white-space: nowrap;
+        max-width: 120px;
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .carrossel {
+        height: 100%;
+    }
+
+    .container_carrossel {
+        width: 300%;
+    }
+
+    .item_carrossel {
+        width: 100%;
+        height: 500px;
+    }
+
+    .text_carrossel {
+        top: 55%;
+        width: 40%;
         padding: 20px;
     }
 
@@ -509,14 +520,17 @@ button {
         font-size: 30px;
     }
 
-    .text_carrossel h2 {
-        font-size: 16px;
+    .text_carrossel a {
+        font-size: 14px;
+        white-space: nowrap;
     }
 
     .mosaico {
-        gap: 7%;
+        column-gap: 7%;
+        grid-template-columns: 55% 40% 40%;
+        grid-template-rows: 100px 100px;
         margin-left: 7.5%;
-        margin-bottom: 30%;
+        row-gap: 5%;
     }
     
     .frame_container_categoria{
@@ -529,6 +543,7 @@ button {
     }
     .frame_categoria{
         height: 40px;
+        width: 24px;
     }
 
     .categoria{
@@ -560,8 +575,7 @@ button {
 
     .text_carrossel {
         top: 50%;
-        left: 5%;
-        width: 90%;
+        width: 40%;
         padding: 15px;
     }
 
