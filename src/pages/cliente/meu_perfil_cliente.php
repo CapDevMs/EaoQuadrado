@@ -58,16 +58,20 @@
                 </div>
 
                 <div class="password-container">
-                    <h2>Senha</h2>
-                    <input type="text" class="input1-container" placeholder="*********" required>                       
-                    <h2>Alterar senha?</h2><h2>Excluir conta<h2> 
-                </div>
+                    <h2 id="h2-senha">Senha</h2>
+                    <input type="text" class="input1-container" placeholder="*********" required>
+                    <div class = 'opcoes-conta'>                       
+                        <a href='' id = "alterar-senha">Alterar senha?</a>
+                        <a href='' id = "excluir-conta" >Excluir conta</a>
+                    </div>
 
-                </div class 
-               
-                <div class="buttons-container">                    
+                    <div class="buttons-container">                    
                     <button class="button-confirm">Salvar mudanças</button>
                 </div>
+
+
+                </div>
+
             </div>
     
     </main>
