@@ -7,7 +7,7 @@ require('../config/conexao.php');
 
 <body>
     <?php get_header() ?>
-    <link rel = 'stylesheet' href="../../assets/css/categoria.css">
+    <link rel = 'stylesheet' href="../assets/css/categoria.css">
 
     <div class="container-video">
         <div class="video-celular">
@@ -17,6 +17,13 @@ require('../config/conexao.php');
         <p>Computadores</p>
         </div>      
     </div> 
+
+    <section class="section-categoria">
+            <div class="section-categoria__button">
+                <buttonCategoria>
+                    <a href="">Celulares</a></buttonCategoria>
+            </div>
+    </section>
 
     <div class ="sidebar">
         <div class="marcas_preco">
@@ -73,11 +80,7 @@ require('../config/conexao.php');
             </div> -->
     <main>
 
-        <section class="section-categoria">
-            <div class="section-categoria__button">
-                <buttonCategoria></buttonCategoria>
-            </div>
-        </section>
+ 
 
         <div class="grid-produtos-pagina-vendedor">
             <div class="grid-item-produtos-pagina-vendedor">
@@ -133,8 +136,8 @@ require('../config/conexao.php');
                     <img class="img-produto" src="../../assets/img/imgs-produtos/foto-curology-kit.png">
                 </div>
                 <div class="container-coracao-carrinho">
-                    <img src="../../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../../assets/img/icone-carrinho.svg" alt="cart" />
+                    <img src="../assets/img/icone-coracao.svg" alt="like" />
+                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
                 </div>
                 <div class="container-nome-produto">
                     <h3 class="nome-produto">Curology Product Set</h3>
@@ -147,11 +150,11 @@ require('../config/conexao.php');
             <div class="grid-item-produtos-pagina-vendedor">
                 <div class="container-foto">
                     <div class="etiqueta-produto-novo">Novo</div>
-                    <img class="img-produto" src="../../assets/img/imgs-produtos/foto-carrinho-infantil.png">
+                    <img class="img-produto" src="../assets/img/imgs-produtos/foto-carrinho-infantil.png">
                 </div>
                 <div class="container-coracao-carrinho">
-                    <img src="../../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../../assets/img/icone-carrinho.svg" alt="cart" />
+                    <img src="../assets/img/icone-coracao.svg" alt="like" />
+                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
                 </div>
                 <div class="container-nome-produto">
                     <h3 class="nome-produto">Carrinho Infantil Turbo</h3>
@@ -166,8 +169,8 @@ require('../config/conexao.php');
                     <img class="img-produto" src="../../assets/img/imgs-produtos/foto-chuteira-adidas.png">
                 </div>
                 <div class="container-coracao-carrinho">
-                    <img src="../../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../../assets/img/icone-carrinho.svg" alt="cart" />
+                    <img src="../assets/img/icone-coracao.svg" alt="like" />
+                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
                 </div>
                 <div class="container-nome-produto">
                     <h3 class="nome-produto">Chuteira Adidas</h3>
@@ -183,8 +186,8 @@ require('../config/conexao.php');
                     <img class="img-produto" src="../../assets/img/imgs-produtos/foto-controle-ps5.png">
                 </div>
                 <div class="container-coracao-carrinho">
-                    <img src="../../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../../assets/img/icone-carrinho.svg" alt="cart" />
+                    <img src="../assets/img/icone-coracao.svg" alt="like" />
+                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
                 </div>
                 <div class="container-nome-produto">
                     <h3 class="nome-produto">Controle Dualsense PS5</h3>
@@ -198,8 +201,8 @@ require('../config/conexao.php');
                     <img class="img-produto" src="../../assets/img/imgs-produtos/foto-camiseta-tommy.png">
                 </div>
                 <div class="container-coracao-carrinho">
-                    <img src="../../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../../assets/img/icone-carrinho.svg" alt="cart" />
+                    <img src="../assets/img/icone-coracao.svg" alt="like" />
+                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
                 </div>
                 <div class="container-nome-produto">
                     <h3 class="nome-produto">Camiseta Tommy Hilfiger</h3>
@@ -213,8 +216,8 @@ require('../config/conexao.php');
                        
     </main>
 
+    <script type ="module" src="../assets/js/categoria.js?<?= time();?>"></script>
     <?php get_footer() ?>
 </body>
 
-<script type ="module" src="../assets/js/categoria.js"></script>
 </html>

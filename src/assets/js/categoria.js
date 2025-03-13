@@ -1,4 +1,4 @@
-import buttonCategoria from "./components/button-categoria";
+import buttonCategoria from "./components/button-categoria.js";
 const docTag = document.querySelector(buttonCategoria);
 
 let categorias= [
@@ -25,8 +25,8 @@ let categorias= [
     {
         'imagem':'../assets/img/categoria/icone-categoria/smartwatches_icon.svg',
         'nome':'Smartwatche'       
-    },
+    },  
 ]
-categorias.forEach((imagem,nome)=>{
-    docTag.innerHTML += buttonCategoria(imagem,nome)
+categorias.forEach((categoriaComponent)=>{
+    docTag.innerHTML += buttonCategoria(categoriaComponent)
 }); 
