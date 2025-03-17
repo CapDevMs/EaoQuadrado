@@ -60,10 +60,7 @@ $appName = get_app_name();
         
         <button id="prev">&#10094;</button>
         <button id="next">&#10095;</button>
-        <script src="./js/slider.js"></script>
     </div>
-        <script src="../../src/assets/js/tela_inicial.js"></script>
-
         <div class="frame_container_categoria">
             <hr class="frame_categoria">
             <h1>Lançamentos</h1>
@@ -139,8 +136,8 @@ $appName = get_app_name();
         </section>
     </main>
 
-
-    <script type="module" src="../assets/js/pagina_do_vendedor.js?<?= time();?>"></script>
+    <script src="<?= get_base_url(); ?>/assets/js/slider.js"></script>
+    <script src="<?= get_base_url(); ?>/assets/js/tela_inicial.js" type="module"></script>
     
     <?php get_footer() ?>
 </body>

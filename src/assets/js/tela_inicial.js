@@ -1,34 +1,61 @@
-const container = document.querySelector('.container_carrossel');
-const slides = document.querySelectorAll('.item_carrossel');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
+import cardProduto from '../js/components/card-produto.js';
 
-let index = 0;
+const docTag = document.querySelector('card-produto');
 
-function updateCarousel() {
-    container.style.transform = `translateX(${-index * 33.34}%)`;
-}
+let produtos = [
+    {
+        'id': 1,
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/acer_nitro.png',
+        'preco': '99,90'
+    },
+    {
+        'id': 2,
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/asus_notebook.png',
+        'preco': '119,90'
+    },
+    {
+        'id': 3,
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/acer_nitro.png',
+        'preco': '99,90'
+    },
+    {
+        'id': 4,
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/controle_usb.png',
+        'preco': '119,90'
+    },
+    {
+        'id': 5,
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/asus_notebook.png',
+        'preco': '119,90'
+    },
+    {
+        'id': 6,
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/controle_ps5.png',
+        'preco': '99,90'
+    },
+    {
+        'id': 7,
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/asus_notebook.png',
+        'preco': '119,90'
+    },
+    {
+        'id': 8,
+        'titulo': 'Ração de cachorro',
+        'imagem': '../assets/img/acer_nitro.png',
+        'preco': '119,90'
+    },
+]
 
-function autoPlay() {
-    index = (index + 1) % slides.length; 
-    updateCarousel();
-}
-
-next.addEventListener('click', () => {
-    index = (index + 1) % slides.length;
-    updateCarousel();
-    resetAutoPlay();
+produtos.forEach((produto) => {
+    docTag.innerHTML += cardProduto(produto)
+    document.getElementById('like_prod_' + produto.id).addEventListener('click', () => {
+        alert('teste');
+    })
 });
-
-prev.addEventListener('click', () => {
-    index = (index - 1 + slides.length) % slides.length;
-    updateCarousel();
-    resetAutoPlay();
-});
-
-let autoSlide = setInterval(autoPlay, 5000);
-
-function resetAutoPlay() {
-    clearInterval(autoSlide);
-    autoSlide = setInterval(autoPlay, 5000);
-}
