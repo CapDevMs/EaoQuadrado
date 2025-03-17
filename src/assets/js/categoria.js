@@ -1,5 +1,5 @@
 import buttonCategoria from "./components/button-categoria.js";
-const docTag = document.querySelector(buttonCategoria);
+const docTag = document.querySelector("buttonCategoria");
 
 let categorias= [
     {
@@ -8,7 +8,7 @@ let categorias= [
     },
     {
         'imagem':'../assets/img/categoria/icone-categoria/cellphone_icon.svg',
-        'nome':'Celular'       
+        'nome':'Celulares'       
     },
     {
         'imagem':'../assets/img/categoria/icone-categoria/computer_icon.svg',

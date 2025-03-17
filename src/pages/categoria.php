@@ -1,9 +1,18 @@
 <?php
-require_once('../config/funcoes.php');
-require('../config/conexao.php');
-
+include(__DIR__ . '/../config/funcoes.php');
+$appName = get_app_name();
 ?>
-<?php get_base_head(); ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <?php get_css(['cliente/categoria']) ?>
+    <?php get_css_components() ?>
+</head>
+
 
 <body>
     <?php get_header() ?>
@@ -20,8 +29,7 @@ require('../config/conexao.php');
 
     <section class="section-categoria">
             <div class="section-categoria__button">
-                <buttonCategoria>
-                    <a href="">Celulares</a></buttonCategoria>
+                <buttonCategoria></buttonCategoria>
             </div>
     </section>
 
