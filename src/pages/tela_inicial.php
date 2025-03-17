@@ -105,7 +105,7 @@ $appName = get_app_name();
             <h1>Categorias</h1>
         </div>
         
-        <div class="categorias_container">
+        <div class="container">
             <div class="categoria" href="#"><img src="../assets/img/cellphone_icon.svg" alt="celulares"><p>Celulares</p></div>
             <div class="categoria" href="#"><img src="../assets/img/computer_icon.svg" alt="computer"><p>Computadores</p></div>
             <div class="categoria" href="#"><img src="../assets/img/smartwatches_icon.svg" alt="smartwatches"><p>Smartwatches</p></div>
