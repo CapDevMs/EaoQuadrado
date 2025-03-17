@@ -5,57 +5,75 @@ const docTag = document.querySelector('card-produto');
 let produtos = [
     {
         'id': 1,
-        'titulo': 'Ração de cachorro',
-        'imagem': '../assets/img/acer_nitro.png',
-        'preco': '99,90'
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../assets/img/caneca1.png',
+        'preco': '99,90',
+        'link': './produto.php'
     },
     {
         'id': 2,
-        'titulo': 'Ração de cachorro',
-        'imagem': '../assets/img/asus_notebook.png',
-        'preco': '119,90'
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../assets/img/caneca2.png',
+        'preco': '119,90',
+        'link': './produto.php'
     },
     {
         'id': 3,
-        'titulo': 'Ração de cachorro',
-        'imagem': '../assets/img/acer_nitro.png',
-        'preco': '99,90'
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../assets/img/caneca1.png',
+        'preco': '99,90',
+        'link': './produto.php'
     },
     {
         'id': 4,
-        'titulo': 'Ração de cachorro',
-        'imagem': '../assets/img/controle_usb.png',
-        'preco': '119,90'
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../assets/img/caneca3.png',
+        'preco': '119,90',
+        'link': './produto.php'
     },
     {
         'id': 5,
-        'titulo': 'Ração de cachorro',
-        'imagem': '../assets/img/asus_notebook.png',
-        'preco': '119,90'
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../assets/img/caneca2.png',
+        'preco': '119,90',
+        'link': './produto.php'
     },
     {
         'id': 6,
-        'titulo': 'Ração de cachorro',
-        'imagem': '../assets/img/controle_ps5.png',
-        'preco': '99,90'
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../assets/img/caneca3.png',
+        'preco': '99,90',
+        'link': './produto.php'
     },
     {
         'id': 7,
-        'titulo': 'Ração de cachorro',
-        'imagem': '../assets/img/asus_notebook.png',
-        'preco': '119,90'
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../assets/img/caneca2.png',
+        'preco': '119,90',
+        'link': './produto.php'
     },
     {
         'id': 8,
-        'titulo': 'Ração de cachorro',
-        'imagem': '../assets/img/acer_nitro.png',
-        'preco': '119,90'
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../assets/img/caneca1.png',
+        'preco': '119,90',
+        'link': './produto.php'
     },
 ]
 
-produtos.forEach((produto) => {
-    docTag.innerHTML += cardProduto(produto)
-    document.getElementById('like_prod_' + produto.id).addEventListener('click', () => {
-        alert('teste');
+await exibirProdutos();
+
+let likeBtns = document.querySelectorAll('i.like');
+
+likeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        alert('Produto favoritado com sucesso!');
     })
 });
+
+
+async function exibirProdutos() {
+    produtos.forEach((produto) => {
+        docTag.innerHTML += cardProduto(produto)
+    });
+}

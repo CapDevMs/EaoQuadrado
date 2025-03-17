@@ -9,7 +9,7 @@ $appName = get_app_name();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <?php get_css(['tela_inicial']) ?>
+    <?php get_css(['tela_inicial', 'components/card-produto']) ?>
     <?php get_css_components() ?>
 </head>
 <body>
@@ -128,8 +128,8 @@ $appName = get_app_name();
             <h1>Nossos Produtos</h1>
         </div>
 
-        <div class="row">
-            <card-produto></card-produto>
+        <div class="container">
+            <card-produto class="row"></card-produto>
         </div>
 
         
