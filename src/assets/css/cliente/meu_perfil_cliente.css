@@ -18,6 +18,15 @@ main {
     line-height: 21px;
 }
 
+.bemvindo {
+    display: flex;
+    justify-content:end;
+    font-family: 'Poppins', sans-serif;
+    margin-left: -480px;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
 .register_client {
     background-color: #ffff;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
@@ -223,13 +232,10 @@ main {
 
 .buttons-container {
     display: flex;
-    grid-template-columns: auto;
-    column-gap: 0px;
-    position: relative;
-    max-width: 265px;
-    column-gap: 0cm;
-    top: -870px;
-    left: 695px;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    margin-top: 60px; /* Adiciona um espaço acima do botão */
+    position: relative; /* Mantém o posicionamento relativo */
+    max-width: 550px;
 }
 
 .button-confirm {
