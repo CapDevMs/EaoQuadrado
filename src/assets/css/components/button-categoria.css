@@ -1,7 +1,11 @@
 /* componente botão cartegoria */
 
+.container{
+    
+}
 .button{
     display: flex;  
     justify-content: space-between;
-    color:;
+    color: #16A18E;
+   
 }
