@@ -39,7 +39,3 @@
 .preco-produto {
     color: var(--cor-verde-principal);
 }
-
-a:visited {
-    color: transparent;
-}
