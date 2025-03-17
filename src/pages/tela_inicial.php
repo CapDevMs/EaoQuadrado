@@ -1,20 +1,21 @@
 <?php
-require_once('../config/funcoes.php');
-require('../config/conexao.php');
-
+include(__DIR__ . '/../config/funcoes.php');
+$appName = get_app_name();
 ?>
-<?php get_base_head(); ?>
-<body>
-    <link rel="stylesheet" href="../assets/css/tela_inicial.css">
-    <?php get_css(['termos_de_uso_e_nossa_politica','cliente/pagina_vendedor','base', 'style']) ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <?php get_css(['cliente/pagina_vendedor']) ?>
+    <?php get_css(['tela_inicial']) ?>
     <?php get_css_components() ?>
-    
-    <header >
-    <?php get_header() ?>
-    </header>
+</head>
+<body>
+    <?php
+        get_header();
+    ?>
 
     <main>
         <div class="carrossel">
@@ -141,12 +142,7 @@ require('../config/conexao.php');
 
     <script type="module" src="../assets/js/pagina_do_vendedor.js?<?= time();?>"></script>
     
-
-
-    
-    <footer>
     <?php get_footer() ?>
-    </footer>
 </body>
 <script src="assets/js/script.js"></script>
 </html>
