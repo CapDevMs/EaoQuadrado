@@ -1,6 +1,8 @@
 import inserirDados from "./components/inserir_dados.js";
+import permissoesAdm from "./components/permissoes-adm.js";
 
 const docTagDados = document.querySelector('inserir_dados');
+const docTagPermissoes= document.querySelector('permissoesAdm')
 
 let inputDados = [{
     'categoria':'Nome',
@@ -33,16 +35,22 @@ let inputDados = [{
     'classe':'input-text',
     'exemp':'johndoe@gmail.com'
 },
-{   'categoria':'Númeo de telefone',
+{   'categoria':'Número de telefone',
     'tipo':'text',
     'classe':'input-text',
     'exemp':'(67) 99999-9999'
 }
-
-
-
 ];
+let inputPermissoes=[{
+    'nome':'validarNovasContas',
+    'valor':'validarContas',
+    'nomePermissao':'Válidar Novas Contas de Vendedores'
+}];
+
 
 inputDados.forEach((categoria, tipo, classe, exemp) => {
     docTagDados.innerHTML += inserirDados(categoria, tipo, classe, exemp)
+});
+inputPermissoes.forEach((nome, valor, nomePermissao) => {
+    docTagPermissoes.innerHTML += permissoesAdm(nome, valor, nomePermissao)
 });

@@ -14,9 +14,14 @@
 <body>
     <?php get_header(); ?>
     <main>
-        <div class="container">
-            <inserir_dados></inserir_dados>
-
+        <div class="container-info">
+            <div class='frame-direita'>
+                <inserir_dados></inserir_dados>
+            </div>
+            <div class='frame-esquerda'>
+                 <img src="../../assets/img/foto_cliente.png" alt="foto do cliente">
+                 <permissoesAdm></permissoesAdm>
+            </div>
 
         </div>
     </main>
