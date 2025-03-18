@@ -22,7 +22,7 @@ main {
     display: flex;
     justify-content:end;
     font-family: 'Poppins', sans-serif;
-    margin-left: -480px;
+    margin-left: -440px;
     font-size: 16px;
     padding: 10px 15px;
 }
