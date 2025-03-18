@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
+    <title>EaoQuadrado</title>
     <?php get_css(['admin/meu_perfil_adm']) ?>
     <?php get_css_components() ?>
 </head>
