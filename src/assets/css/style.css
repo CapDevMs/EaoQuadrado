@@ -263,7 +263,7 @@
 .row>* {
     flex-shrink: 0;
     width: 100%;
-    max-width: 100%;
+    min-width: 100%;
     padding-right: calc(var(--bs-gutter-x) * 0.5);
     padding-left: calc(var(--bs-gutter-x) * 0.5);
     margin-top: 0;
@@ -352,7 +352,7 @@
 }
 
 /* Sistema de Grid (colunas) responsividade - Tela é calculada como tendo 12 colunas */
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     .col-sm {
         flex: 1 0 0%;
     }
@@ -439,7 +439,7 @@
 }
 
 /* Sistema de Grid (colunas) responsividade - Tela é calculada como tendo 12 colunas */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .col-md {
         flex: 1 0 0%;
     }
@@ -526,7 +526,7 @@
     
 
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
     .col-lg {
         flex: 1 0 0%;
     }
@@ -608,7 +608,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .col-xl {
         flex: 1 0 0%;
     }
