@@ -1,22 +1,26 @@
-const cardProduto = ({ id, titulo, imagem, preco }) => {
+const cardProduto = ({ id, titulo, imagem, preco, link }) => {
     return `
-    <div class="col-3 col-md-6 col-sm-12">
-        <div class="container">
-            <div class="card-produto">
-                <div class="card-body pl-1">
-                    <div class="container-foto pt-1">
-                        <img class="img-produto" src="${imagem}">
-                    </div>
-                    <div class="container-coracao-carrinho">
-                        <i class="fa-regular fa-heart pointer" id="like_prod_${id}"></i>
+    <div class="card-produto col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card-body pb-1">
+            <div class="row">
+                <div class="pt-2 col-11 ratio ratio-1x1">
+                    <img class="img-produto" src="${imagem}">
+                </div>
+                <div class="pt-2 col-1">
+                    <i class="fa-regular fa-heart pointer pb-1 like" data-id="like_prod_${id}"></i>
+                    <a href="${link}">
                         <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <div class="container-nome-produto">
-                        <h3 class="nome-produto">${titulo}</h3>
-                    </div>
-                    <div class="container-preco-produto">
-                        <h3 class="preco-produto">R$ ${preco}</h3>
-                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="container-nome-produto">
+                    <h3 class="nome-produto">${titulo}</h3>
+                </div>
+                <div class="container-preco-produto">
+                    <h3 class="preco-produto">R$ ${preco}</h3>
                 </div>
             </div>
         </div>
