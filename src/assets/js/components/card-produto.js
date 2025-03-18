@@ -1,15 +1,21 @@
-const cardProduto = ({ titulo, imagem, preco }) => {
+const cardProduto = ({ id, titulo, imagem, preco, link }) => {
     return `
-    <div class="col-3">
-        <div class="card">
-            <div class="card-body ptb-1 plr-1">
-                <div class="container-foto">
+    <div class="card-produto col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card-body pb-1">
+            <div class="row">
+                <div class="pt-2 col-11 ratio ratio-1x1">
                     <img class="img-produto" src="${imagem}">
                 </div>
-                <div class="container-coracao-carrinho">
-                    <img class="icones-coracao-carrinho" src="../../assets/img/icone-coracao.svg" alt="like" />
-                    <img class="icones-coracao-carrinho" src="../../assets/img/icone-carrinho.svg" alt="cart" />
+                <div class="pt-2 col-1">
+                    <i class="fa-regular fa-heart pointer pb-1 like" data-id="like_prod_${id}"></i>
+                    <a href="${link}">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
                 </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="row">
                 <div class="container-nome-produto">
                     <h3 class="nome-produto">${titulo}</h3>
                 </div>

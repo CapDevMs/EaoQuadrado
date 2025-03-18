@@ -1,0 +1,84 @@
+body{
+    font-family: Poppins;
+}
+
+
+#menu, span, #sub-menu{
+    width: 94%;
+    margin-top: 4%;
+    font-size: 17px; 
+    display: inline;
+    margin-left: 1%;
+}
+    
+#menu{
+    margin-left: 5%;
+    color: grey;
+    font-style: inherit;
+
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 50%;  
+    gap: 15%;  
+    align-items: start;  
+    margin-top: 5%; 
+    margin-bottom: 11%; 
+}
+
+#contato {
+    margin-left: 30%;
+}
+
+#form {
+    margin-left: 30%;
+    margin-bottom: 10%;
+}
+
+
+.titulo{
+    display: inline-block;
+    height: 40%;
+    width:28%;
+    margin-left: 3%;
+    color: #7D8184;
+    
+}
+
+#descricao{
+    width:330%;
+}
+
+.caixa{
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    margin-top: 3%;
+}
+
+.caixa2{
+    background-color: #F5F5F5;
+    margin-top: 3%;
+}
+
+#salvar{
+    background-color: #16A18E;
+    width: 30%;
+    height: 56px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 66%;
+}
+
+
+
+@media (max-width: 1000px) {
+    .caixa::placeholder {
+        color: transparent;  
+    }
+
+    .titulo{
+        font-size: 10px;
+    }
+}
