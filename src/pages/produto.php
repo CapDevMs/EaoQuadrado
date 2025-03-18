@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <title>EaoQuadrado</title>
     <?php get_css(['produto']) ?>
     <?php get_css_components() ?>
 </head>
