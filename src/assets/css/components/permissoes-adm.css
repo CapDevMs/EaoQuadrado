@@ -1,7 +1,10 @@
 
 .container-permissoes{
-    display: flex;
-    font-size: 12px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    font-size: 14px;
+    color: #737070;
+    
     
 }
 

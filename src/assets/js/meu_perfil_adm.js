@@ -45,7 +45,37 @@ let inputPermissoes=[{
     'nome':'validarNovasContas',
     'valor':'validarContas',
     'nomePermissao':'Válidar Novas Contas de Vendedores'
-}];
+},
+{
+    'nome':'suporteAoCliente',
+    'valor':'suporteCliente',
+    'nomePermissao':'Suporte ao Cliente'
+},
+{
+    'nome':'suporteAoVendedor',
+    'valor':'suporteVendedor',
+    'nomePermissao':'Suporte ao Vendedor'
+},
+{
+    'nome':'desativarPerfilVendedor',
+    'valor':'desativarVendedor',
+    'nomePermissao':'Desativar vendedor'
+},
+{
+    'nome':'criarAnuncio',
+    'valor':'criarAnuncioAdm',
+    'nomePermissao':'Criar Anúncio'
+},
+{
+    'nome':'criarCategoria',
+    'valor':'criarCategoriaAdm',
+    'nomePermissao':'Criar Categoria'
+},
+{
+    'nome':'editarSistema',
+    'valor':'editarSistemaAdm',
+    'nomePermissao':'Editar Sistema'
+},];
 
 
 inputDados.forEach((categoria, tipo, classe, exemp) => {
