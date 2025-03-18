@@ -29,16 +29,15 @@ body {
 
 .container-geral{
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 50px 500px;
     margin-left: 5%;
-    margin-bottom: 5%;
-    column-gap: 5%;
+    column-gap: 10%;
+    margin-bottom: 10%;
     width: fit-content;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
 }
 
 .menu-container {
@@ -49,6 +48,7 @@ body {
     grid-auto-flow: row; 
     gap: 10px;
     white-space: nowrap; 
+    width: fit-content;
 }
 
 .menu-container h1 {
@@ -81,26 +81,27 @@ body {
     align-items: center;
 }
 
-.chamados h1, a{
+.chamados h1, button{
     font-size: 18px;
     text-decoration: none;
     text-decoration: none;
     color: black;
+    background-color: transparent;
+    border: none;
+} .chamados button{
+    cursor: pointer;
 }
 
-.chamados a{
-    max-width: fit-content;
-}
-
-.container {
+.container-accordion {
     width: 800px;
     height: 400px;
-    overflow-y: scroll;
+    overflow-y: auto;
     border: 1px solid #ccc;
     padding: 10px;
     background: white;
     position: relative;
     bottom: 8%;
+    border-radius: 20px;
 }
 
 .accordion {
@@ -111,6 +112,8 @@ body {
     background: #F6F6F6;
     margin-bottom: 5px;
     width: 762px;
+    margin-bottom: 2%;
+    margin-top: 1%;
 }
 
 .accordion img {
@@ -167,7 +170,7 @@ body {
 }
 
 .file-container {
-    width: 250px;
+    width: 190px;
     display: flex;
     align-items: center;
 }
@@ -203,13 +206,15 @@ body {
 }
 
 .submit-button {
-    height: 40px;
     flex-shrink: 0;
     border-radius: 10px;
     cursor: pointer;
-    display: block;
-    text-align: left;
+    display: flex;             
+    justify-content: center;     
+    align-items: center;         
+    text-align: center;         
     width: 165px;
+    height: 42px;              
     background: #C0F894;
     border: 1px solid #D4D4D4;
 }
@@ -242,6 +247,18 @@ body {
     gap: 10px;
 }
 
+#Viewed {
+    background-color: #C0F894;
+}
+
+#Viewed .submit-button {
+    display: none;
+}
+
+#nome{
+    font-weight: bold;
+}
+
 #texto {
     max-width: fit-content;
     white-space: nowrap;
@@ -259,42 +276,114 @@ body {
     text-align: center;
 }
 
-/* woriking progress
+#selected {
+    color: #16A18E;
+}
 
-/* @media (max-width: 1024px) {
-    .container {
-        width: 100%;
-        max-width: 95%;
+
+@media (max-width: 1440px) {
+
+    .container-geral {
+        margin-bottom: 15%
+    }
+
+    .menu-container h1, a {
+        font-size: 16px;
+    }
+
+    .container-accordion{
+        width: 90%;
+    }
+
+    .user-info {
+        gap: 1%;
+        font-size: 14px;
+    }
+
+    .accordion-content p{
+        font-size: 14px;
     }
 
     .accordion {
-        width: 100%;
         max-width: 95%;
+    }
+
+    .accordion .open{
+        max-width: 572px;
+    }
+
+    .file-container {
+        width: 180px;
+    }
+
+    .submit-button {
+        width: 145px;
+    }
+
+    .file-label a, .submit-button a{
+        font-size: 14px;
     }
 }
 
-@media (max-width: 768px) {
-    .container-geral {
-        margin-left: 0;
-        margin-right: 0;
-    }
+@media (max-width: 992px) {
 
-    .menu-container {
-        align-items: center;
-        text-align: center;
+    .container-geral {
+        margin-left: 15%;
+        grid-template-rows: 50px 500px;
+        margin-bottom: 15%;
+        max-height: 1000px;
+        max-height: fit-content;
     }
 
     .chamados {
-        grid-template-columns: 1fr;
-        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
     }
 
-    .container {
+    .container-accordion{
+        grid-column: 1;
+        grid-row: 2;
         padding: 5px;
+    }
+
+    .menu-container {
+        display: none
     }
 
     .accordion {
         padding: 8px;
+    }
+
+    .submit-button {
+        width: 140px;
+    }
+
+    .file-label a, .submit-button a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .roadmap {
+        width: 100%;
+        font-size: 12px; 
+        margin-top: 20px;
+    }
+
+    .menu-container {
+        grid-column: span 2; 
+        margin-bottom: 15px;
+    }
+
+    .chamados button, h1 {
+        font-size: 16px;
+    } 
+
+    .container-accordion {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
     }
 
     .buttons-container {
@@ -303,9 +392,56 @@ body {
         text-align: center;
     }
 
+    .submit-button {
+        width: 140px;
+        height: 42px;
+    }
+
+    .file-container {
+        max-width: 160px;
+    }
+
+    .file-label a, .submit-button a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .roadmap {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 20%;
+    }
+
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .submit-button {
+        width: 100%;
+        font-size: 14px; 
+        padding: 12px;
+    }
+
+    .container-geral {
+        margin-left: 22%;
+        max-height: fit-content;
+    }
+
     .file-container {
         width: 100%;
         justify-content: center;
+        margin-top: 15px;
+    }
+
+    .container-accordion {
+        padding: 10px;
+        width: 100%;
     }
 }
- */
