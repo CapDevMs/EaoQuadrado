@@ -15,10 +15,10 @@
 
     <main>
         <div id="sub-menu">
-        <a href="home.html"></a>
+        <a href="home.php"></a>
         <h6>Início</h6>
         <span>/</span>
-        <a href="sobre.html">
+        <a href="sobre.php">
         <h6>Sobre</h6>
         </a>
         </div>
