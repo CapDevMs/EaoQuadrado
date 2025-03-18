@@ -15,8 +15,8 @@
 
     <main>
         <div id="sub-menu">
-        <a href="home.php"></a>
-        <h6>Início</h6>
+        <a href="index.php">
+        <h6>Início</h6></a>
         <span>/</span>
         <a href="sobre.php">
         <h6>Sobre</h6>

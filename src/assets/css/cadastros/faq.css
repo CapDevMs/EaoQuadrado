@@ -39,6 +39,10 @@
     margin-top: 5%;
 }
 
+a {
+    text-decoration: none;
+  }
+
 button:hover {
     opacity: 0.8;
 }
@@ -57,6 +61,7 @@ button:hover {
     #retorno{
         width: 120px;
         height: 60px;
+        font-size: 15px;
     }
 }
 
