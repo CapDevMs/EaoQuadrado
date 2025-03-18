@@ -18,13 +18,26 @@ main {
     line-height: 21px;
 }
 
-.bemvindo {
+.bem-vindo-container{
     display: flex;
-    justify-content:end;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    
+}
+
+.texto-fixo {
+    font-size: 18px; /* Tamanho da fonte */
+    margin-bottom: 5px;
     font-family: 'Poppins', sans-serif;
-    margin-left: -440px;
+}
+
+.texto-bemvindo {
     font-size: 16px;
-    padding: 10px 15px;
+    align-self: flex-end; /* Alinha à direita */
+    margin-right: -1200px; /* Espaço da borda direita - ajustável */
+    font-family: 'Poppins', sans-serif;
+    display: flex; /* Mesma fonte, se desejar */
 }
 
 .register_client {
