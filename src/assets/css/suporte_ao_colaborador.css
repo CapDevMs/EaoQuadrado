@@ -21,6 +21,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
+    max-width: fit-content;
 }
 
 #pagina_atual{
@@ -438,8 +439,7 @@ body {
     }
 } 
 
-@media (max-width: 375px) {
-
+@media (max-width: 430px) {
     .roadmap {
         width: 100%;
         font-size: 12px;
@@ -448,10 +448,10 @@ body {
 
     .chamados {
         display: grid;
-            grid-template-columns: repeat(4, 100px);
-            gap: 10px;
-            justify-items: center;
-            align-items: center;
+        grid-template-columns: 20% 20% 20% 24%;
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
     }
 
     .buttons-container {
@@ -468,7 +468,8 @@ body {
     }
 
     .container-geral {
-        margin-left: 10%;
+        width: 200px;
+        margin-left: 30%;
         max-height: fit-content;
     }
 
@@ -480,11 +481,119 @@ body {
 
     .container-accordion {
         padding: 10px;
-        width: 500px;
+        width: 350px;
     }
 
     .accordion {
-        width: 520px;
+        width: 95%;
         padding: 8px;
+    }
+
+    .accordion-content {
+        font-size: 12px;
+    }
+
+    .table {
+        height: 50px;
+    }
+
+    .user-info {
+        font-size: 12px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #nome {
+        font-size: 12px;
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    #texto {
+        display: block;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .roadmap {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .chamados {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 24%;
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .submit-button {
+        width: 100%;
+        font-size: 14px; 
+        padding: 12px;
+    }
+
+    .container-geral {
+        width: 200px;
+        margin-left: 30%;
+        max-height: fit-content;
+    }
+
+    .file-container {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .container-accordion {
+        padding: 10px;
+        width: 350px;
+    }
+
+
+
+    .accordion {
+        width: 95%;
+        padding: 8px;
+    }
+
+    .accordion-content {
+        font-size: 12px;
+    }
+
+    .table {
+        height: 50px;
+    }
+
+    .user-info {
+        font-size: 12px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #nome {
+        font-size: 12px;
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    #texto {
+        display: block;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
