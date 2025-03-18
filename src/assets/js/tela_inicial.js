@@ -1,8 +1,4 @@
-let limpa_cache = Date.now();
-
-let { default: cardProduto } = await import( `./components/card-produto.js?v=${ limpa_cache }` );
-
-// import cardProduto from "./components/card-produto.js";
+import cardProduto from '../js/components/card-produto.js';
 
 const docTag = document.querySelector('card-produto');
 
