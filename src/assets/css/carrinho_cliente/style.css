@@ -12,6 +12,7 @@
 
 .image{
     max-width: 112px;
+    max-height: 90px;
     margin: 10px;
 }
 
@@ -111,6 +112,18 @@ main{
         font-size:large ;
     }
 }
+
+.nomeProduto{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.nomeProduto:hover {
+    white-space: inherit;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}   
+
 
 @media only screen and (max-widht:992px){}
 
