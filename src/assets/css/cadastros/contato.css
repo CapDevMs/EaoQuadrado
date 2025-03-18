@@ -67,6 +67,7 @@ body{
     width: 30%;
     height: 56px;
     border-radius: 10px;
+    border-color: transparent;
     color: white;
     margin-left: 66%;
 }
