@@ -1,0 +1,18 @@
+
+.img-small{
+    margin-bottom: 10%;
+}
+.img-small>img{
+    background-color: rgb(239, 239, 239);
+    width: 100%;
+}
+
+.img-large>img{
+    background-color: rgb(239, 239, 239);
+    width: 89%;
+    margin-left: 1%;
+    
+    
+    
+    
+}
