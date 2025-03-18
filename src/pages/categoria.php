@@ -57,7 +57,7 @@ $appName = get_app_name();
                 </nav>
             </div>
             <h1 class="titulo">Avaliação dos Vendedores</h1>
-            <!-- <div class="checkbox-container"> 
+            <div class="checkbox-container"> 
                 <input type="checkbox" name="tudo" id="tudo">
                 <label for="tudo">Tudo</label>
             
@@ -85,147 +85,16 @@ $appName = get_app_name();
                 <label for="star1">
                     <img src="../assets/img/CATEGORIA/One_Star.png" alt="1 estrela">
                 </label>
-            </div> -->
+            </div>
     <main>
-
- 
-
-        <div class="grid-produtos-pagina-vendedor">
-            <div class="grid-item-produtos-pagina-vendedor">
-                <div class="container-foto">
-                    <img class="img-produto" src="../../assets/img/imgs-produtos/racao.avif">
-                </div>
-                <div class="container-coracao-carrinho">
-                    <img class="icones-coracao-carrinho" src="../../assets/img/icone-coracao.svg" alt="like" />
-                    <img class="icones-coracao-carrinho" src="../../assets/img/icone-carrinho.svg" alt="cart" />
-                </div>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">Ração Cachorro Pedigree 20kg</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$119,90</h3>
-                </div>
-            </div>
-           
-            <div class="grid-item-produtos-pagina-vendedor">
-                <div class="container-foto">
-                    <img class="img-produto" src="../../assets/img/imgs-produtos/foto-camera.png">
-                </div>
-                <div class="container-coracao-carrinho">
-                    <img src="../../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../../assets/img/icone-carrinho.svg" alt="cart" />
-                </div>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">CANON EOS DSLR Camera</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$499,90</h3>
-                </div>
-            </div>
-            
-            <div class="grid-item-produtos-pagina-vendedor">
-                <div class="container-foto">
-                    <img class="img-produto" src="../../assets/img/imgs-produtos/foto-notebook.png">
-                </div>
-                <div class="container-coracao-carrinho">
-                    <img src="../../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../../assets/img/icone-carrinho.svg" alt="cart" />
-                </div>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">Notebook Gamer ASUS</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$1.119,90</h3>
-                </div>
-            </div>
-
-            <div class="grid-item-produtos-pagina-vendedor">
-                <div class="container-foto">
-                    <img class="img-produto" src="../../assets/img/imgs-produtos/foto-curology-kit.png">
-                </div>
-                <div class="container-coracao-carrinho">
-                    <img src="../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
-                </div>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">Curology Product Set</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$259,90</h3>
-                </div>
-            </div>
-
-            <div class="grid-item-produtos-pagina-vendedor">
-                <div class="container-foto">
-                    <div class="etiqueta-produto-novo">Novo</div>
-                    <img class="img-produto" src="../assets/img/imgs-produtos/foto-carrinho-infantil.png">
-                </div>
-                <div class="container-coracao-carrinho">
-                    <img src="../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
-                </div>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">Carrinho Infantil Turbo</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$389,90</h3>
-                </div>
-            </div>
-
-            <div class="grid-item-produtos-pagina-vendedor">
-                <div class="container-foto">
-                    <img class="img-produto" src="../../assets/img/imgs-produtos/foto-chuteira-adidas.png">
-                </div>
-                <div class="container-coracao-carrinho">
-                    <img src="../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
-                </div>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">Chuteira Adidas</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$99,90</h3>
-                </div>
-            </div>
-
-            
-            <div class="grid-item-produtos-pagina-vendedor">
-                <div class="container-foto">
-                    <img class="img-produto" src="../../assets/img/imgs-produtos/foto-controle-ps5.png">
-                </div>
-                <div class="container-coracao-carrinho">
-                    <img src="../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
-                </div>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">Controle Dualsense PS5</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$329,50</h3>
-                </div>
-            </div>
-            <div class="grid-item-produtos-pagina-vendedor">
-                <div class="container-foto">
-                    <img class="img-produto" src="../../assets/img/imgs-produtos/foto-camiseta-tommy.png">
-                </div>
-                <div class="container-coracao-carrinho">
-                    <img src="../assets/img/icone-coracao.svg" alt="like" />
-                    <img src="../assets/img/icone-carrinho.svg" alt="cart" />
-                </div>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">Camiseta Tommy Hilfiger</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$199,90</h3>
-                </div>
-            </div>
-        </div>
-
+        <card-produto class="row"></card-produto>
                        
     </main>
 
     <script type ="module" src="../assets/js/categoria.js?<?= time();?>"></script>
+    <script type="module" src="../assets/js/pagina_do_vendedor.js"></script>
     <?php get_footer() ?>
+    
 </body>
 
 </html>
