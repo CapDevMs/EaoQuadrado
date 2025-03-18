@@ -52,7 +52,7 @@ require('../../config/conexao.php');
                                 <button id="nome" onclick="toggleAccordion(this)">Fernando Abreu</button>
                                 <p id="texto">venho relatar um bug na minha conta na...</p>
                                 <p id="data">30 de junho, 2024</p>
-                                <p id="status">Não Visto</p>
+                                <p id="status">Visto</p>
                             </div>
                         </div>
                         <div class="accordion-content" id="nonViewd">
@@ -83,7 +83,7 @@ require('../../config/conexao.php');
                             <div class="user-info">
                                 <button id="nome" onclick="toggleAccordion(this)">Matheus Aguiar</button>
                                 <p id="texto">Estou enfrentando alguns problemas com...</p>
-                                <p id="data">30 de junho, 2024</p>
+                                <p id="data">31 de maio, 2024</p>
                                 <p id="status">Não Visto</p>
                             </div>
                         </div>

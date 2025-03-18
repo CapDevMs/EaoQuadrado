@@ -380,6 +380,10 @@ body {
         font-size: 16px;
     } 
 
+    .container-geral {
+        margin-left: 15%;
+    }
+
     .container-accordion {
         width: 100%;
         padding: 15px;
@@ -416,6 +420,7 @@ body {
     }
 
 
+
     .buttons-container {
         flex-direction: column;
         align-items: center;
@@ -430,7 +435,7 @@ body {
     }
 
     .container-geral {
-        margin-left: 22%;
+        margin-left: 8%;
         max-height: fit-content;
     }
 
