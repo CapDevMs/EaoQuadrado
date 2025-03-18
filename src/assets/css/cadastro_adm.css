@@ -279,8 +279,8 @@
 
 .button-confirm {
     position: relative;
-    bottom: 45%;
-    left: 85%;
+    margin-top: 5%;
+    left: 1200px;
     margin-bottom: 3%;
     color: white;
     width: 153px;
@@ -293,8 +293,12 @@
 
 @media (max-width: 1440px) {
     .container-geral {
-        grid-template-columns: 230px 900px;
+        grid-template-columns: auto 1fr;
         justify-items: center;
+    }
+
+    .menu-container a{
+        font-size: 16px;
     }
 
     .register_client {
@@ -308,6 +312,10 @@
     .inform2-container {
         margin-left: 5%;
         width: 90%;
+    }
+
+    .input1-container, .input2-container {
+        width: 250px;
     }
 
     .password-container {
@@ -318,7 +326,7 @@
     .button-confirm {
         margin-top: 5%;
         margin-bottom: 5%;
-        left: 50%;
+        left: 1100px;
         transform: translateX(-50%);
     }
 }
@@ -329,11 +337,10 @@
         justify-items: center;
     }
 
-    .register_client {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    .menu-container {
+        display: none;
     }
+
 
     .names-container,
     .inform1-container,
@@ -342,6 +349,11 @@
         width: 90%;
     }
 
+    
+    .input1-container, .input2-container {
+        width: 250px;
+    }
+    
     .password-container {
         left: 0;
         bottom: 0;
