@@ -78,11 +78,11 @@ a{
 
 #links {
     position: absolute; 
-    bottom: 20px; 
+    bottom: 25px; 
     left: 50%; 
     transform: translateX(-50%);  
     display: flex;
-    gap: 15px;  
+    gap: 50px;  
 }
 
 #links a {
@@ -133,6 +133,14 @@ a{
 
 }    
 
+@media (max-width: 1300px) {
+    #links {
+        bottom: 20px; 
+        gap: 35px;
+    }
+}
+
+
 @media (max-width: 1150px) {
     #links a img {
         width: 40px;  
@@ -165,6 +173,13 @@ a{
     }
 }
 
+
+@media (max-width: 700px) {
+    #links {
+        gap: 30px;
+    }
+}
+
 @media (max-width: 600px) {
     #título {
         font-size: 18px; 
@@ -177,5 +192,19 @@ a{
     #links a img {
         width: 9px; 
         height: 10px; 
+    }
+}
+
+@media (max-width: 475px) {
+    #links {
+        bottom: 20px; 
+        gap: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #links {
+        bottom: 15px; 
+        gap: 15px;
     }
 }
