@@ -16,25 +16,25 @@
     
     <main>
         <div class="sub-menu">
-            <a href="link-para-conta" id="conta">
+            <a href="meu_perfil_vendedor.php" id="conta">
                 <h6>Conta</h6>
             </a>
             <span id="separator">/</span>
-            <a href="link-para-minha-conta" id="minha-conta">
+            <a href="minha_loja.php" id="minha-conta">
                 <h6>Minha Conta</h6>
             </a>
             <span id="separator">/</span>
-            <a href="link-para-cadastrar-produto" id="cadastrar-produto"></a>
-                <h6>Cadastrar Produto</h6>
+            <a href="cadastrar_produto_vendedor.php" id="cadastrar-produto">
+                <h6>Cadastrar Produto</h6></a>
         </div>
     
         <div id="titulo">Cadastrar Produto</div>
     
         <div id="menu-lateral">
             <h3>Gerenciar Minha Conta</h3>
-            <h1><a href="link-para-meu-perfil">Meu Perfil</a></h1>
-            <h1><a href="link-para-minha-loja">Minha Loja</a></h1>
-            <h1 class="ativa" id="cadastrar-produtos"><a href="link-para-cadastrar-produto" id="cadastrar">Cadastrar Produtos</a></h1>
+            <h1><a href="meu_perfil_vendedor.php">Meu Perfil</a></h1>
+            <h1><a href="minha_loja.php">Minha Loja</a></h1>
+            <h1 class="ativa" id="cadastrar-produtos"><a href="cadastrar_produto_vendedor.php" id="cadastrar">Cadastrar Produtos</a></h1>
             <br>
             <h3>Vendas</h3>
             <h1><a href="link-para-minha-loja">Histórico de Vendas</a></h1>
