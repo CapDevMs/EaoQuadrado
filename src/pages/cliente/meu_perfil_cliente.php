@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../../../assets/css/base.css"></script>
         <script src="../../../assets/css/cliente/meu_perfil_cliente.css"></script>
-        <?php get_css(['base',  'cliente/meu_perfil_cliente'])?>
+        <?php get_css(['base','style','cliente/meu_perfil_cliente'])?>
         <title>Eao Quadrado</title>
     </head>
 <body>
