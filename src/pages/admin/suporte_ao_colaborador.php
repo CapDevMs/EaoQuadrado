@@ -16,7 +16,7 @@ require('../../config/conexao.php');
     <?php get_header() ?>
  
     <main>
-    <div class="roadmap">Home / Painel do Administrador / Cadastrar Novo Administrador</div>
+    <div class="roadmap">Home / Painel do Administrador / Suporte ao Colaborador</div>
             <div class="container-geral">
                 <div class="menu-container">
                     <h1>Cadastro</h1>
