@@ -13,9 +13,9 @@
 <body>
     <?php get_header() ?>
 <main>
-    <div class="menu" id="home">Home</div>
+    <div class="menu" ><a href="index.php" id="home">Home</a></div>
     <span class="menu">/</span>
-    <div class="menu">Esqueci a Senha</div>
+    <div class="menu"><a href="esqueci-senha.php" id="sub">Esqueci a Senha</a></div>
     <div id="sub-menu"><h1>Esqueci a Senha</h1></div>
     <div id="titulo">Informe o Email cadastrado</div>
     <div class="container">
