@@ -11,8 +11,8 @@
 }
 
 .image{
-    max-width: 112px;
-    max-height: 90px;
+    max-width: 90%;
+    max-height: 95%;
     margin: 10px;
 }
 
@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     gap:0;
-    width: 999px;
+    width: 84%;
     margin: 0 auto;
     margin-bottom: 13px;
     
@@ -53,7 +53,7 @@
 }
 
 .counter{
-    width: 80px;
+    width: 50%;
     height: 25px;
     border: solid rgb(0, 0, 0,0.5) 1px;
     border-radius: 5px;
@@ -106,12 +106,6 @@ main{
     max-height:fit-content;
 }
 
-@media only screen and (max-widht:1200px){
-    .product{
-        width: 85%;
-        font-size:large ;
-    }
-}
 
 .nomeProduto{
     white-space: nowrap;
@@ -123,14 +117,3 @@ main{
     text-overflow: ellipsis;
     overflow: hidden;
 }   
-
-
-@media only screen and (max-widht:992px){}
-
-@media only screen and (max-widht:768px){
-
-}
-
-@media only screen and (max-widht:425px){}
-
-@media only screen and (max-widht:365px){}
