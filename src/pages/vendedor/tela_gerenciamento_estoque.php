@@ -17,9 +17,16 @@
     <main class="coluna-menu">
         <div>
             <h1>Home / Gerenciamento de Estoque</h1>
+                
+
             <div class="container">
                 <div id="barra_lateral">
                     <h2>Gerenciar Minha Conta</h2>
+                    <h2 id="barra_lateral">    Meu Perfil</h2>
+                    <h2 id="barra_lateral">    Minha Loja</h2>
+                    <h2 id="barra_lateral">    Cadastrar Produtos</h2>
+
+                    <h2>Vendas</h2>
                     <h2 id="barra_lateral">    Meu Perfil</h2>
                     <h2 id="barra_lateral">    Minha Loja</h2>
                     <h2 id="barra_lateral">    Cadastrar Produtos</h2>
