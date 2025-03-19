@@ -137,13 +137,18 @@ button {
 }
 
 .mosaico h1, p {
-    color: white;
+    color: var(--cor-fundo);
     height: fit-content;
     width: fit-content;
     position: relative;
     font-size: larger;
-} .mosaico p{
+} 
+.mosaico p{
     font-size: 13px;
+}
+.link_mosaico {
+    color: var(--cor-fundo);
+    text-decoration: none;
 }
 
 .itens1 {
