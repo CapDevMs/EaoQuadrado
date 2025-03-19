@@ -138,7 +138,6 @@ $titulo = 'Homepage';
     </main>
 
     <script src="<?= get_base_url(); ?>/assets/js/slider.js"></script>
-    <script src="<?= get_base_url(); ?>/assets/js/tela_inicial.js" type="module"></script>
     
     <?php get_footer() ?>
 </body>
@@ -147,10 +146,9 @@ $titulo = 'Homepage';
     const base_url = '<?= get_base_url(); ?>';
     const categorias = document.querySelectorAll('.categoria');
 
-    console.log(categorias);
-
     categorias.forEach(categoria => {
         categoria.addEventListener('click', () => location = base_url + '/pages/categoria.php')
     });
 </script>
+<script src="<?= get_base_url(); ?>/assets/js/tela_inicial.js" type="module"></script>
 </html>

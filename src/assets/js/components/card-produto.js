@@ -4,7 +4,9 @@ const cardProduto = ({ id, titulo, imagem, preco, link }) => {
         <div class="card-body pb-1">
             <div class="row">
                 <div class="pt-2 col-11 ratio ratio-1x1">
-                    <img class="img-produto" src="${imagem}">
+                    <a href="${link}">
+                        <img class="img-produto" src="${imagem}">
+                    </a>
                 </div>
                 <div class="pt-2 col-1">
                     <i class="fa-regular fa-heart pointer pb-1 like" data-id="like_prod_${id}"></i>
@@ -16,12 +18,14 @@ const cardProduto = ({ id, titulo, imagem, preco, link }) => {
         </div>
         <div class="card-footer">
             <div class="row">
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">${titulo}</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$ ${preco}</h3>
-                </div>
+            <div class="container-nome-produto">
+            <a class="link_produto" href="${link}">
+                        <h3 class="nome-produto">${titulo}</h3>
+                    </div>
+                    <div class="container-preco-produto">
+                        <h3 class="preco-produto">R$ ${preco}</h3>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

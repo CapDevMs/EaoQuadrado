@@ -39,3 +39,12 @@
 .preco-produto {
     color: var(--cor-verde-principal);
 }
+
+.fa-cart-shopping {
+    color: black;
+}
+
+.link_produto{
+    text-decoration: none;
+    color: none;
+}
