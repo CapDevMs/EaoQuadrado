@@ -101,37 +101,48 @@
             </form>
             <div class="botoes-container">
                 <button id="cancelar" type="button">Cancelar</button>
-                <button id="salvar" type="submit">Salvar</button>
+                <button id="salvar" type="button">Salvar</button> 
+            </div>
+            <div id="mensagem-sucesso" style="display: none; color: green; padding: 10px; border: 1px solid green; margin-top: 20px;">
+                Produto salvo com sucesso!
             </div>
         
     </main>
     <?php get_footer() ?>
-</body>
-<script src="../../assets/js/script.js">
-</script>
-<script>
-       document.getElementById('arquivo').addEventListener('change', function(event) {
-        var files = event.target.files;
-        var previasContainer = document.querySelector('.previas');
 
-        
-        for (var i = 0; i < files.length; i++) {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                
-                var img = document.createElement('img');
-                img.src = e.target.result;
-                img.alt = 'img' + (previasContainer.children.length + 1);
-                img.style.width = '200px';  
-                img.style.height = '300px';
-                img.style.objectFit = 'cover';
+    <script src="../../assets/js/script.js"></script>
+    <script>
+        document.getElementById('salvar').addEventListener('click', function() {
+            
+            var mensagemSucesso = document.getElementById('mensagem-sucesso');
+            mensagemSucesso.style.display = 'block';
 
-                
-                previasContainer.appendChild(img);
+            
+            setTimeout(function() {
+                mensagemSucesso.style.display = 'none';
+            }, 3000);  
+        });
+
+        document.getElementById('arquivo').addEventListener('change', function(event) {
+            var files = event.target.files;
+            var previasContainer = document.querySelector('.previas');
+
+            for (var i = 0; i < files.length; i++) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.alt = 'img' + (previasContainer.children.length + 1);
+                    img.style.width = '200px';  
+                    img.style.height = '300px';
+                    img.style.objectFit = 'cover';
+
+                    previasContainer.appendChild(img);
+                }
+                reader.readAsDataURL(files[i]);
             }
-            reader.readAsDataURL(files[i]);
-        }
-    });
-</script>
+        });
+    </script>
+</body>
 </html>
 
