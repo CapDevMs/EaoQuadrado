@@ -18,89 +18,6 @@
     </header>
 
     <main>
-        <div class="roadmap">Home / Cadastro de Cliente</div>
-            <div class="register_client">
-                <h2>Cadastro de Cliente</h2>
-                <div class="form-container">
-                    <img src="../assets/img/foto_cliente.png" alt="foto do cliente" class="client-image">
-                    
-                    <form class="form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="nome" name="nome" placeholder="John" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="sobrenome">Sobrenome</label>
-                                <input type="text" id="sobrenome" name="sobrenome" placeholder="Doe" required>
-                            </div>
-                        </div>
-        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="nascimento">Data de Nascimento</label>
-                                <input type="date" id="nascimento" name="nascimento" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="cpf">CPF</label>
-                                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
-                            </div>
-                        </div>
-        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="telefone">Número de Telefone</label>
-                                <input type="text" id="telefone" name="telefone" placeholder="(67) 99999-9999" required>
-                            </div>
-                        </div>
-        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="cep">CEP</label>
-                                <input type="text" id="cep" name="cep" placeholder="7900000" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="endereco">Endereço</label>
-                                <input type="text" id="endereco" name="endereco" placeholder="R.Clovis" required>
-                            </div>
-                        </div>
-        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="bairro">Bairro</label>
-                                <input type="text" id="bairro" name="bairro" placeholder="Pioneiro" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="complemento">Complemento (opcional)</label>
-                                <input type="text" id="complemento" name="complemento">
-                            </div>
-                        </div>
-        
-                        <div class="password-group">
-                            <div class="form-group">
-                                <label for="senha">Senha</label>
-                                <input type="password" id="senha" name="senha" placeholder="*********" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="confirmar-senha">Confirmar Senha</label>
-                                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="*********" required>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-    
-                </form>
-            </div>
-        </div>
-
-
-            </div>
-    
-
         <div class="roadmap">Home / Cadastro de Vendedor</div>
         <div class="register_client" id="pessoal">
             <h2>Cadastro de Vendedor</h2>
@@ -175,7 +92,6 @@
             </div>
         </div>
     
-
         <form class="register_client" id="loja">
             <h2>Cadastro de Loja</h2>
             <div class="shop-container">
