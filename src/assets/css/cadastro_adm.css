@@ -29,17 +29,20 @@
 }
 
 .menu-container h1 {
+    white-space: nowrap;
     font-size: 18px;
     max-width: fit-content;
     max-height: fit-content;
 }
 
 .menu-container a {
+    white-space: nowrap;
     cursor: pointer;
     font-size: 18px;
     max-width: fit-content;
     max-height: fit-content;
     opacity: 50%;
+    text-decoration: none;
 }
 
 #pagina_atual {
@@ -280,7 +283,7 @@
 .button-confirm {
     position: relative;
     margin-top: 5%;
-    left: 1200px;
+    left: 100%;
     margin-bottom: 3%;
     color: white;
     width: 153px;

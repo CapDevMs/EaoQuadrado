@@ -24,7 +24,7 @@
             <div class="form-container">
                 <img src="../assets/img/foto_cliente.png" alt="foto do cliente" class="client-image">
                 
-                <form class="form">
+                <form class="form" action="#">
  
                     <div class="nome-group">
                         <label for="nome">Nome</label>
