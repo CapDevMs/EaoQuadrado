@@ -17,7 +17,7 @@
         
 
         <div class="banner">
-            <img src="../vendedor/Banner_loja.png" alt="Banner da Loja">
+            <img src="../../assets/img/banner_loja.png"alt="Banner da Loja">
         </div>
         <div class="conteudo-main">
             <h1>Avaliações e Comentários</h1>
