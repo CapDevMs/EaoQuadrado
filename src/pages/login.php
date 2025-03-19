@@ -1,15 +1,18 @@
 <?php
-require_once('../config/funcoes.php');
-require('../config/conexao.php');
+    include('../config/funcoes.php');
+    $appName = get_app_name();
 ?>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<?php get_base_head(); ?>
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php get_css(['base', 'style', 'login']) ?>
+    <title>Eao Quadrado</title>
+</head>
 <body>
     <?php get_header() ?>
-    
     <main>
         <div class="container grid">
             <div>
@@ -31,11 +34,8 @@ require('../config/conexao.php');
             </div>
         </div>
     </main>
-    
+
     <?php get_footer() ?>
 </body>
 <script src="assets/js/script.js"></script>
-<link rel="stylesheet" href="../assets/css/style.css">
-<link rel="stylesheet" href="../assets/css/base.css">
-<link rel="stylesheet" href="../assets/css/login.css">
 </html>
