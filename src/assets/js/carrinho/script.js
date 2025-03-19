@@ -1,4 +1,5 @@
-var listaProdutos = ['acer_nitro.png','Accer Nitro V5','4650','caneca1-removebg.png','Caneca Programadora com nome irritantemente grande','99,90','logo.png','Logo ilegal','1000']
+let listaProdutos = JSON.parse(localStorage.getItem("listaProdutos")) || [];
+
 
 var conter = 0
 var image = ''
@@ -20,7 +21,7 @@ listaProdutos.forEach(element => {
         conter = 0
         console.log(value,'value')
 
-        document.getElementById('container').innerHTML += `<div class='product'><div class='productDiv'><img src='../assets/img/carrinhoImagens/${image}' class='image '></div><div class='productDiv'><span class='nomeProduto'>Nome do produto</span><span class='nomeProduto'>${name}</span></div><div class='productDiv'><span class='nomeProduto'>Preço</span><span class='price nomeProduto'>R$ ${value}</span></div><div class='productDiv counterDiv'><div><span class='nomeProduto product-1-1'>Quantidade</span></div><div><input type="Number" class='counter' min='0' value = 1></div></div><div class='productDiv'><span class='nomeProduto'>Subtotal</span><span class='subTotal'>...</span></div><div class='productDiv cartProduct-6'><a href='#' class = 'a'><img src='../assets/img/lixeira-icon.png' class='icon removeProductButton'></a></div></div> `
+        document.getElementById('container').innerHTML += `<div class='product'><div class='productDiv divImagem'><img src='../assets/img/carrinhoImagens/${image}' class='image '></div><div class='productDiv'><span class='nomeProduto'>Nome</span><span class='nomeProduto'>${name}</span></div><div class='productDiv'><span class='nomeProduto'>Preço</span><span class='price nomeProduto'>R$ ${value}</span></div><div class='productDiv counterDiv'><div><span class='nomeProduto product-1-1'>Quantidade</span></div><div><input type="Number" class='counter' min='0' value = 1></div></div><div class='productDiv sumivel'><span class='nomeProduto'>Subtotal</span><span class='subTotal'>...</span></div><div class='productDiv cartProduct-6'><a href='#' class = 'a'><img src='../assets/img/lixeira-icon.png' class='icon removeProductButton'></a></div></div> `
     }
 
 });

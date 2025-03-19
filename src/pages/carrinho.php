@@ -11,8 +11,8 @@ require('../config/conexao.php');
     <?php get_header() ?>
     <link rel='stylesheet' href="../assets/css/base.css ">
     <link rel='stylesheet' href="../assets/css/carrinho_cliente/style.css">
-    <link rel='stylesheet' href="../assets/css/carrinho_cliente/headerCarrinho.css">
-    <link rel='stylesheet' href="../assets/css/carrinho_cliente/footerCarrinho.css">
+    <!-- <link rel='stylesheet' href="../assets/css/carrinho_cliente/headerCarrinho.css">
+    <link rel='stylesheet' href="../assets/css/carrinho_cliente/footerCarrinho.css"> -->
 
 
 
@@ -45,8 +45,18 @@ require('../config/conexao.php');
                     <span class = 'span'>Total:</span>
                     <span class="span">...</span>
                 </div>
+
+                <div class="totalLine">
+                    <button class = 'botao1' onclick="voltarPagina()">Retorne as compras</button>
+                    <script>function voltarPagina(){
+                        window.history.back();
+                        
+                    }</script>
+                    <a href = 'https://web.whatsapp.com' style="max-width: fit-content;"><button class = 'botao2'>Ir ao Whatsapp</button></a>
+                </div>
             </div> 
     <?php get_footer() ?>
     <script src="../../src/assets/js/script.js"></script>
+    <script src="../../src/assets/js/carrinho/apiCarrinho.js"></script>
     <script src="../../src/assets/js/carrinho/script.js"></script>
 </body>

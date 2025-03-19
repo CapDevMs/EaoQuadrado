@@ -5,7 +5,7 @@ $base_url = get_base_url();
 <header class="header">
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href="#">
+            <a href="../pages/tela_inicial.php">
                 <img src="<?=$base_url;?>/assets/img/logo.png" class="logo" alt="Logo">
             </a>
         </div>
@@ -15,22 +15,22 @@ $base_url = get_base_url();
         </div>
         <ul class="menu-opcoes">
             <li class="menu-opcoes-icons">
-                <a href="#">
+                <a href="../pages/login.php">
                     <img src="<?=$base_url;?>/assets/img/pessoa.svg" alt="Pessoa">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="#">
+                <a href="../../src/pages/carrinho.php">
                     <img src="<?=$base_url;?>/assets/img/carrinho.svg" alt="Carrinho">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="#">
+                <a href="../pages/cadastros/sobre.php">
                     <img src="<?=$base_url;?>/assets/img/informacao.svg" alt="Informações">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="#">
+                <a href="../pages/cadastros/contato.php">
                     <img src="<?=$base_url;?>/assets/img/suporte.svg" alt="suporte">
                 </a>
             </li>
