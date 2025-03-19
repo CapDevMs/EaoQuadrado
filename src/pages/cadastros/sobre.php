@@ -15,10 +15,10 @@
 
     <main>
         <div id="sub-menu">
-        <a href="home.html"></a>
-        <h6>Início</h6>
+        <a href="index.php">
+        <h6>Início</h6></a>
         <span>/</span>
-        <a href="sobre.html">
+        <a href="sobre.php">
         <h6>Sobre</h6>
         </a>
         </div>
@@ -49,17 +49,29 @@
             <div id="links">
                 <a href="https://twitter.com" target="_blank">
                     <img src="../../assets/img/link-twitter.png" alt="Twitter">
-                    <img src="../../assets/img/link-instagram.png" alt="Instagram">
-                    <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="../../assets/img/link-twitter.png" alt="Twitter">
                     <img src="../../assets/img/link-instagram.png" alt="Instagram">
+                </a>                
+                <a href="https://linkedin.com" target="_blank">
                     <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
                 </a>
-                <a href="https://linkedin.com" target="_blank">
+                <a href="https://twitter.com" target="_blank">
                     <img src="../../assets/img/link-twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
                     <img src="../../assets/img/link-instagram.png" alt="Instagram">
+                </a>                
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="../../assets/img/link-twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="../../assets/img/link-instagram.png" alt="Instagram">
+                </a>                
+                <a href="https://linkedin.com" target="_blank">
                     <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
                 </a>
             </div>
@@ -73,7 +85,7 @@
             
     </main>
 
-    <?php get_footer() ?>
+    <?php get_footer() ?> 
 </body>
 <script src="../../assets/js/script.js"></script>
 </html>
