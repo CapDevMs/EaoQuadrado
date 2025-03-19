@@ -38,18 +38,20 @@ for (i = 0; i< removeProductButton.length; i++){
     })
 }
 
-// let subTotalValue = 0
-// const cartProduct = document.getElementsByClassName('product')
-// for (var i = 0; i < cartProduct.length; i++){
-//     console.log(cartProduct[i])
-//     const productPrice = cartProduct[i].getElementsByClassName('price')[0].innerText.replace('R$','').replace(',','.')
-//     console.log(productPrice)
-//     const productQuantity = cartProduct[i].getElementsByClassName('counter')[0].value
-//     console.log(productQuantity)
+let TotalValue = 0
+const cartProduct = document.getElementsByClassName('container')
 
-//     subTotalValue = productPrice * productQuantity
-//     subTotalValue = subTotalValue.toFixed(2).replace('.',',')
-//     console.log(subTotalValue)
+for (var i = 0; i < cartProduct.length; i++){
+    console.log(cartProduct[i])
+    const productPrice = cartProduct[i].getElementsByClassName('price')[0].innerText.replace('R$','').replace(',','.')
+    console.log(productPrice)
+    const productQuantity = cartProduct[i].getElementsByClassName('counter')[0].value
+    console.log(productQuantity)
 
-//     document.querySelector('.subTotal').innerText = 'R$ ' + subTotalValue
-// }
+    subTotalValue = productPrice * productQuantity
+    subTotalValue = subTotalValue.toFixed(2).replace('.',',')
+    console.log(subTotalValue)
+
+    document.querySelector('.total').innerText = 'R$ ' + subTotalValue
+    document.querySelector('.total2').innerText = 'R$ ' + subTotalValue
+}

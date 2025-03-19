@@ -35,7 +35,7 @@ require('../config/conexao.php');
             <div class="totalizador">
                 <div class="totalLine">
                     <span class = 'span'>Subtotal</span>
-                    <span class="span">...</span>
+                    <span class="span total">...</span>
                 </div><hr>
                 <div class="totalLine">
                     <span class = 'span'>Frete:</span>
@@ -43,7 +43,7 @@ require('../config/conexao.php');
                 </div><hr>
                 <div class="totalLine">
                     <span class = 'span'>Total:</span>
-                    <span class="span">...</span>
+                    <span class="span total2">...</span>
                 </div>
 
                 <div class="totalLine">
