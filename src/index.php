@@ -28,7 +28,7 @@ $titulo = 'Homepage';
                     <img src="<?= get_base_url(); ?>/assets/img/slide1.png" alt="">
                     <div class="text_carrossel">
                         <h1>Aproveite o melhor dos games!</h1>
-                        <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
+                        <a href="<?= get_base_url(); ?>/pages/produto.php">Compre Agora <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 
@@ -37,7 +37,7 @@ $titulo = 'Homepage';
                     <img src="<?= get_base_url(); ?>/assets/img/slide2.png" alt="">
                     <div class="text_carrossel">
                         <h1>Confira os melhores celulares!</h1>
-                        <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
+                        <a href="<?= get_base_url(); ?>/pages/produto.php">Compre Agora <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -47,7 +47,7 @@ $titulo = 'Homepage';
                     <div class="text_carrossel">
                         <h1>Aproveite nossa coleção feminina!</h1>
                         <div class="link">
-                            <a href="#">Compre Agora</a>
+                            <a href="<?= get_base_url(); ?>/pages/produto.php">Compre Agora</a>
                             <i class="fas fa-arrow-right"></i> 
                         </div>
                         
