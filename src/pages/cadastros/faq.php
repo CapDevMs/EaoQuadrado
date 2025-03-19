@@ -25,7 +25,7 @@
             <span class = 'texto'>• Todas as compras são intermediadas pelo nosso site. Após a confirmação do pedido ocorre direcionamento para cliente falar com vendedor e combinar entrega, após recebido o pedido o cliente podera avaliar sua compra.</span><br><br>
             
             <span class = 'subtitulo'>3 - Como os vendedores adicionam produtos ao site?</span><br><br>
-            <span>• Os vendedores têm acesso para listar e gerenciar seus produtos diretamente no site. Nosso sistema facilita a comunicação entre vendedores e clientes durante todo o processo de venda.</span><br><br>
+            <span class = 'texto'>• Os vendedores têm acesso para listar e gerenciar seus produtos diretamente no site. Nosso sistema facilita a comunicação entre vendedores e clientes durante todo o processo de venda.</span><br><br>
             
             <span class = 'subtitulo'>4 - Existe um sistema de avaliações para os vendedores?</span><br><br>
             <span class = 'texto'>• Sim, temos um sistema de avaliação onde os clientes podem avaliar os vendedores. Todas as avaliações são moderadas para garantir a qualidade dos serviços prestados.</span><br><br>
