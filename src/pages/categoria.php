@@ -28,9 +28,7 @@ $appName = get_app_name();
     </div> 
 
     <section class="section-categoria">
-            <div class="section-categoria__button">
-                <buttonCategoria></buttonCategoria>
-            </div>
+        <buttonCategoria></buttonCategoria>
     </section>
 
     <div class ="sidebar">
