@@ -1,5 +1,3 @@
-
-/* Css do Main */
 main {
     margin-top: calc(95px + 2vh);
     min-height: calc(100vh - (calc(95px + 2vh) + 280px));
@@ -8,251 +6,131 @@ main {
 .roadmap {
     font-family: 'Poppins', sans-serif;
     width: 300px;
-    position: relative;
     margin-top: 45px;
+    position: relative;
     margin-bottom: 30px;
-    left: 200px;
-    font-size: 14px;
-    font-style: normal;
+    margin-left: 10%;
+    font-size: 16px;
     font-weight: 400;
     line-height: 21px;
 }
 
-.bem-vindo-container{
+.bem-vindo-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 70%;
-    
 }
 
 .texto-fixo {
-    font-size: 18px; /* Tamanho da fonte */
+    font-size: 16px;
     margin-bottom: 5px;
     font-family: 'Poppins', sans-serif;
 }
 
 .texto-bemvindo {
     font-size: 16px;
-    align-self: flex-end; /* Alinha à direita */
-    margin-right: -1200px; /* Espaço da borda direita - ajustável */
+    width: 60%;
+    text-align: right;
     font-family: 'Poppins', sans-serif;
-    display: flex; /* Mesma fonte, se desejar */
 }
 
 .register_client {
-    background-color: #ffff;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.9);
     border-radius: 20px;
-    width: 1114px;
-    height: 1076px;
-    margin: auto;
-    margin-bottom: 30px;
+    width: 60%;
+    margin: 0 auto 30px;
+    padding: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
 .register_client p {
-    font-family: 'Poppins', sans-serif;
     color: black;
     font-size: 24px;
-    font-style: normal;
-    position: relative;
-    width: 250px;
-    left: 46px;
-    top: 26px;
-    margin-bottom: 36px;
+    margin: 0 0 36px 26px;
 }
 
 .register_client img {
-    position: relative;
-    margin-left: 100px;
+    display: block;
+    margin: 0 auto;
     width: 257.75px;
     height: 259px;
 }
 
-.names-container {
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 20px; 
-    max-width: 450px; 
-    margin-left: 40px;
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 20px 0;
 }
 
-.names-container h2 {
-    font-size: medium;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px
+.left-column, .right-column {
+    width: 48%;
 }
 
-.input1-container {
+.names-container, .inform1-container, .inform2-container, .password-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5px;
+    gap: 20px;
+    margin-top: 15px
+}
+
+.names-container h2, .inform1-container h2, .inform2-container h2, .password-container h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 10%;
+    
+}
+
+.input1-container, .input2-container, .input3-container {
     background-color: #F5F5F5;
     border: none;
-    color: black;
-    width: 450px;
+    width: 100%;
+    max-width: 400px;
     height: 32px;
     border-radius: 25px;
-
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 400px;
-    
     padding: 10px 15px;
-    
+    margin-left: 10%;
+    width: 60%;
 }
 
 .subtitle {
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    position: relative;
-    left: 42px;
-    top: 26px;
-    margin-bottom: 35px;
-    max-width: 165px;
+    margin: 26px 0 15px;
+    margin-left: 10%;
 }
 
 .date-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    max-width: 400px;
-    margin-left: 40px;
-    column-gap: 35px;
+    display: flex;
+    gap: 35px;
+    margin-left: 10%;
 }
-
 
 .counter {
-    display: grid;
-    /* grid-template-columns: auto auto auto; */
-    width: 95px;
-    height: 44px;
-    position: relative;
-    padding: 0;
-
-    column-gap: 10px;
-    text-align: center;
+    width: 100%;
+    max-width: 150px;
 }
+
 .dia-mes {
-    padding: auto;
-    place-items: center;
-    position: relative;
+    width: 100%;
     border: 2px solid black;
     border-radius: 10px;
     font-size: 16px;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.inform1-container {
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 20px; 
-    max-width: 450px; 
-    margin-left: 40px;
-    margin-top: 20px;
-}
-
-.inform1-container h2 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 1;
-    line-height: 24px;
-}
-
-.input2-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-    background-color: #F5F5F5;
-    border: none;
-    color: black;
-    width: 450px;
-    height: 32px;
-    border-radius: 25px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    padding: 10px 15px;
-}
-
-.inform2-container {
-    position: relative;
-    margin-top: 40px;
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 20px; 
-    max-width: 450px; 
-    top: -1020px;
-    left: 600px;
-}
-
-.inform2-container h2 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 1;
-    line-height: 24px;
-}
-
-.input3-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-    background-color: #F5F5F5;
-    border: none;
-    color: black;
-    width: 450px;
-    height: 32px;
-    border-radius: 25px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    padding: 10px 15px;
-}
-
-
-.password-container {
-    position: relative;
-    display: grid;
-    grid-template-rows: auto;
-    gap: 20px; 
-    top: -980px;
-    left: 600px;
-    max-width: 400px;
-}
-
-
-.input4-container {
-
-    flex-direction: column;
-    margin-bottom: 5px;
-    background-color: #F5F5F5;
-    border: none;
-    color: black;
-    width: 450px;
-    height: 32px;
-    border-radius: 25px;
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    padding: 10px 15px;
-    
+    padding: 5px;
 }
 
 .buttons-container {
     display: flex;
-    justify-content: center; /* Centraliza o botão horizontalmente */
-    margin-top: 60px; /* Adiciona um espaço acima do botão */
-    position: relative; /* Mantém o posicionamento relativo */
-    max-width: 550px;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .button-confirm {
-    grid-column-start: 2;
     color: white;
     width: 227px;
     height: 56px;
@@ -260,31 +138,65 @@ main {
     border-radius: 5px;
     border: none;
     background-color: #16A18E;
-
-    
 }
 
-#h2-senha{
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 1;
-    line-height: 24px;
-}
-
-.opcoes-conta { 
+.opcoes-conta {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 #alterar-senha {
     color: black;
     text-decoration: none;
+    margin-left: 10%;
 }
 
 #excluir-conta {
-    margin-left: 40%;
     color: red;
     text-decoration: none;
+    margin-left: 10%;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .roadmap {
+        margin-left: 5%;
+        width: 250px;
+    }
 
+    .texto-bemvindo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .register_client {
+        width: 80%;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .input1-container, .input2-container, .input3-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .roadmap {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .register_client {
+        width: 95%;
+        padding: 15px;
+    }
+}
