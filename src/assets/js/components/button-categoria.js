@@ -1,7 +1,7 @@
 const buttonCategoria = ({ imagem, nome }) => {
     return `
-    <div class="col-3">
-        <button class="button">
+    <div class="button-categoria">
+        <button class="button" type="button">
             <div class="button-body ptb-1 plr-1">
                 <div class="container-imagem">
                     <img class="img-produto" src="${imagem}" alt="Ícone de ${nome}">
