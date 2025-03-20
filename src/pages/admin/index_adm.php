@@ -20,7 +20,7 @@
             <button class="btn" id="btn2"><img src="../../assets/img/imagem-historico.png " alt="" class="imagens"></button>
             <button class="btn" id="btn3"><img src="../../assets/img/imagem-contas-inativas.png " alt="" class="imagens"></button>
             <button class="btn" id="btn4"><img src="../../assets/img/imagem-abrir-chamado.png" alt="" class="imagens"></button>
-            <button class="btn" id="btn5"><img src="../../assets/img/imagem-editar-sistema.png " alt="" class="imagens"></button>
+            <button class="btn" id="btn5"><img src="../../assets/img/imagem-editar-sistema.png " alt="" class="imagens" id="botao5"></button>
             <button class="btn" id="btn6"><img src="../../assets/img/imagem-suporte.png " alt="" class="imagens"></button>
         </div>
     </main>
