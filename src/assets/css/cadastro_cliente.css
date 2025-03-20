@@ -176,7 +176,7 @@
 }
 
 .content {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -346,12 +346,16 @@
         height: 15px;
     }
 
-    .buttons-container .button-confirm {
+    .content {
+        margin-left: 20%;
+    }
+
+    .buttons-cont .button-confirm {
         font-size: 10px;
         width: 90px;
     }
 
-    .buttons-container .button-cancel {
+    .buttons-cont .button-cancel {
         font-size: 10px;
         width: 90px;
     }
@@ -362,7 +366,13 @@
         margin-left: 5%;
     }
     .buttons-container{
-        margin-left: 26%;
+        margin-left: 10%;
+    }
+
+    .buttons-container .button-cancel, .buttons-container .button-confirm {
+        font-size: 12px;
+        width: 90px;
+        height: 30px;
     }
 }
 
@@ -371,6 +381,20 @@
         position: relative;
         right: 12%;
     }
+
+    .buttons-cont .button-confirm, .buttons-cont .button-cancel {
+        width: 60px;
+    }
+
+    .buttons-cont {
+        margin-left: 20%;
+    }
+
+    .button-cancel, .button-confirm {
+        width: 90px;
+        height: 20px;
+    }
+
 }
 
 @media (max-width: 430px) {
@@ -384,6 +408,10 @@
 
     .register_client h2 {
         font-size: 16px;
+    }
+
+    .client-image {
+        margin-left: 25%;
     }
 
     .form {
@@ -424,14 +452,24 @@
         height: 12px;
     }
 
-    .buttons-container {
+    .buttons-cont {
         margin-left: 5%;
     }
 
-    .buttons-container button {
+    .buttons-cont button {
         width: 80px;
         height: 30px;
         font-size: 10px;
     }
 
+}
+
+@media (max-width: 375px) {
+    .terms {
+        margin-left: 40%;
+    }
+
+    .client-image {
+        margin-left: 20%;
+    }
 }
