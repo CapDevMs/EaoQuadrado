@@ -8,11 +8,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['vendedor/minha_loja']) ?>
+    <?php get_css(['vendedor/minha_loja', 'style', 'base']) ?>
 </head>
 <body>
     <?php get_header() ?>
 
+<<<<<<< HEAD
     <main >
         <h6>Home / Minha Conta / Minha Loja</h6>
 
@@ -30,6 +31,23 @@
                     <h1><a href="link-para-minha-loja">Trocas/Cancelamentos</a></h1>
                     <h1><a href="link-para-minha-loja">Gerenciamento de estoque</a></h1>
         </div>
+=======
+    <main class="row">
+        <asside class="col-md-3 col-sm-hidden">
+            
+            <?php get_sidebar_vendedor('minha_loja'); ?>
+            
+        </asside> 
+
+        <section class="col-md-9 col-sm-12">
+            <div class="container">
+            <h1 class="title ptb-1 pb-5">Edite Sua Loja</h1> 
+                
+                <div class="row">
+                    <div class="col-12 pb-3">
+                        <img src="../../assets/img/Banner_loja.png" class="img" alt="Banner da Loja"> 
+                    </div>
+>>>>>>> 69a5dbdbceca6d95f25aa131abe3b045ee004e07
                 </div>
             </asside> 
 

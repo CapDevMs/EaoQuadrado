@@ -16,25 +16,39 @@
 
     <main class="coluna-menu">
         <div>
-            <h1>Home / Gerenciamento de Estoque</h1>
+            <div id="roadmap" class="pt-2 pb-3">
+                <span>Home </span>/
+                <span><b>Gerenciamento de Estoque</b></span>
+            </div>
                 
 
             <div class="container">
-                <div id="barra_lateral">
-                    <h2>Gerenciar Minha Conta</h2>
-                    <h2 id="barra_lateral">    Meu Perfil</h2>
-                    <h2 id="barra_lateral">    Minha Loja</h2>
-                    <h2 id="barra_lateral">    Cadastrar Produtos</h2>
-
-                    <h2>Vendas</h2>
-                    <h2 id="barra_lateral">    Meu Perfil</h2>
-                    <h2 id="barra_lateral">    Minha Loja</h2>
-                    <h2 id="barra_lateral">    Cadastrar Produtos</h2>
+                <div>
+                    <div class="pb-2">
+                        <h2 id="menu-lateral">Gerenciar Minha Conta</h2>
+                        <h2 class="barra_lateral btn-lateral">Meu Perfil</h2>
+                        <h2 class="barra_lateral btn-lateral">Minha Loja</h2>
+                        <h2 class="barra_lateral btn-lateral">Cadastrar Produtos</h2>
+                    </div>
+                    <div class="pb-2">
+                        <h2 id="menu-lateral">Vendas</h2>
+                        <h2 class="barra_lateral btn-lateral">Histórico de Vendas</h2>
+                        <h2 class="barra_lateral btn-lateral">Trocas / Cancelamentos</h2>
+                        <h2 id="pg-atual" class="barra_lateral btn-lateral">Gerenciamento de estoque</h2>
+                    </div>
                 </div>
 
                 <div>
                     <h2>gerenciamento de estoque</h2><br><br>
                     
+                    <div id="sessoes-itens">
+                        <span class="sessoes-itens">Produto</span>
+                        <span class="sessoes-itens">Quantidade</span>
+                        <span class="sessoes-itens">Preço</span>
+                        <span class="sessoes-itens">Selecionar</span>
+                        <span class="sessoes-itens">Editar</span>
+                    </div>
+
                     <div class="items">
                         <img class="img-item" src="../../assets/img/img-gerenciamento_estoque/item-1.png" alt="erro">
 
