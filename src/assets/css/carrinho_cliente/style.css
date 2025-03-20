@@ -2,12 +2,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-*{
-    margin:0px;
-    padding: 0px;
-    gap: 0;
+.trail-1{
     text-decoration: none;
-    list-style: none;
+    color: rgb(0, 0, 0,0.5);
 }
 
 .image{
@@ -103,12 +100,12 @@
     justify-content:space-between;
 }
 
-hr{
+.hr{
     max-width: 99%;
     margin: 0 auto;
 }
 
-main{
+.main{
     max-height:fit-content;
 }
 
@@ -127,6 +124,13 @@ main{
     font-size: 10px;
 }   
 .botao1{
+    
+        margin:0px;
+        padding: 0px;
+        gap: 0;
+        text-decoration: none;
+        list-style: none;    
+    
     margin: 5px;
     width: 150px;
     height: 40px;
@@ -148,7 +152,6 @@ main{
     color: white;
     border-color: #00BFA5;
 }
-
 
 
 @media screen and (max-width: 1000px) {
@@ -173,4 +176,8 @@ main{
         overflow: hidden;
         text-overflow:ellipsis;
     }
+}
+
+.logo{
+    margin-bottom: 8px;
 }

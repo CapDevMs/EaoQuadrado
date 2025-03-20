@@ -5,7 +5,7 @@ $base_url = get_base_url();
 <header class="header">
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href="<?=$base_url;?>pages/index.php">
+            <a href="<?=$base_url;?>/pages/index.php">
                 <img src="<?=$base_url;?>/assets/img/logo.png" class="logo" alt="Logo">
             </a>
         </div>
@@ -15,22 +15,22 @@ $base_url = get_base_url();
         </div>
         <ul class="menu-opcoes">
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>pages/login.php">
+                <a href="<?=$base_url;?>/pages/login.php">
                     <img src="<?=$base_url;?>/assets/img/pessoa.svg" alt="Pessoa">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>pages/carrinho.php">
+                <a href="<?=$base_url;?>/pages/carrinho.php">
                     <img src="<?=$base_url;?>/assets/img/carrinho.svg" alt="Carrinho">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>pages/cadastros/sobre.php">
+                <a href="<?=$base_url;?>/pages/cadastros/sobre.php">
                     <img src="<?=$base_url;?>/assets/img/informacao.svg" alt="Informações">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>pages/cadastros/contato.php">
+                <a href="<?=$base_url;?>/pages/cadastros/contato.php">
                     <img src="<?=$base_url;?>/assets/img/suporte.svg" alt="suporte">
                 </a>
             </li>
