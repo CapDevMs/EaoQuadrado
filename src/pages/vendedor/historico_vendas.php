@@ -15,7 +15,7 @@
     <?php get_header() ?>
 
     <main>
-        <div class="container col-md-3 col-sm-hidden">
+        <div class="col-sm-3">
             <? get_sidebar_vendedor('historico_vendas'); ?>
         </div>
 
