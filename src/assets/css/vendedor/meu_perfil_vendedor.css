@@ -41,6 +41,7 @@ main {
     margin: 0 auto 30px;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-top: -13%;
 }
 
 .register_client p {
@@ -200,3 +201,6 @@ main {
         padding: 15px;
     }
 }
+
+
+

@@ -21,6 +21,10 @@
         <div class="bem-vindo-container">
             <div class="texto-bemvindo">Bem-vindo, John Doe!</div>
         </div>
+
+        <?php
+            get_sidebar_vendedor("meu_perfil");
+        ?>
     
         <div class="register_client">
             <p>Edite seu Perfil</p>
