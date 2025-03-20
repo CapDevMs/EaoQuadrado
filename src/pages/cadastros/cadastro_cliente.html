@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/cadastro_cliente/style.css">
     <title>Eao Quadrado</title>
 </head>
 <body>
@@ -46,25 +45,70 @@
     </header>
 
     <main>
-        <div class="container grid">
-            <div>
-                <img id="foto_tela_login" src="../assets/img/foto_tela_login tras.png" style="max-width: 100v;">
-            </div>
-            <div>
-                <div id="caixa">
-                    <h1 id="titulo">Entre no E².com</h1>
-                    <h3>coloque suas credenciais abaixo:</h3>
-                    <form action="">
-                        <input id="email" type="email" placeholder="johndoe@gmail.com"><br>
-                        <input id="senha" type="password" placeholder="********"><br>
-                    </form>
-                    <label for="senha">Esqueceu sua senha?</label><br>
+        <div class="roadmap">Home / Cadastro de Cliente</div>
+            <div class="register_client">
+                    <p>Cadastro de Cliente</p>
+                    <img src="../assets/img/foto_cliente.png" alt="foto do cliente">
 
-                    <button class="button">Entrar</button>
-                    <button class="button">Cadastrar</button>
+                    <div class="names-container">
+                        <h2>Nome</h2>
+                        <input type="text" name="Nome" class="input1-container" placeholder="John" required>
+                        <h2>Sobrenome</h2>
+                        <input type="text" name="Sobrenome" class="input1-container" placeholder="Doe" required>
+                    </div>
+
+                <h2 class="subtitle">Data de Nascimento</h2>
+                <div class="date-container">
+                    <div class="counter">
+                        <input type="date" class="dia-mes" max="31" value="1" required></input>
+                    </div>
+
+                </div>
+
+                <div class="inform1-container">
+                    <h2>CPF</h2>
+                    <input type="text" name="cpf" class="input2-container" placeholder="000.000.000-00" required>
+                    <h2>E-mail</h2>
+                    <input type="text" name="email" class="input2-container" placeholder="johndoe@gmail.com" required>
+                    <h2>Número de Telefone</h2>
+                    <input type="text" name="telefone" class="input2-container" placeholder="(67) 99999-9999" required>
+                </div>
+
+                <div class="inform2-container">
+                    <h2>CEP</h2>
+                    <input type="text" name="cep" class="input3-container" placeholder="7900000" required>
+                    <h2>Endereço</h2>
+                    <input type="text" name="endereco" class="input3-container" placeholder="R.cebolinha" required>
+                    <h2>Bairro</h2>
+                    <input type="text" name="rua" class="input3-container" placeholder="Pioneiro" required>
+                    <h2>Complemento (opcional)</h2>
+                    <input type="text" name="Complemento" class="input3-container" placeholder="">
+                </div>
+
+                <div class="password-container">
+                    <h2>Senha</h2>
+                    <input type="text" class="input1-container" placeholder="*********" required>
+                    <h2>Confirmar Senha</h2>
+                    <input type="text" class="input1-container" placeholder="*********" required>
+                </div>
+
+                <div class="terms-container">
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="termos" class="checkbox" id="confirmCheckbox" required>
+                        <label for="confirm_termos">Li e concordo com os <a class="term-link" href="#">Termos de Uso</a></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="politicas" class="checkbox" id="confirmCheckbox" required>
+                        <label for="confirm_politica">Li e concordo com as <a class="term-link" href="#">Politicas da Empresa</a></label>
+                    </div>
+                </div>
+
+                <div class="buttons-container">
+                    <button class="button-cancel">Cancelar</button>
+                    <button class="button-confirm">Registrar</button>
                 </div>
             </div>
-        </div>
+    
     </main>
 
     <footer>

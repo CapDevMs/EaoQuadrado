@@ -3,42 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/base.css">
-    <link rel="stylesheet" href="../../assets/css/tela_gerenciamento_estoque.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/historico_pedidos.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <title>Eao Quadrado</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
             <div class="navbar-logo">
                 <a href="#">
-                    <img src="../../assets/img/logo.png" class="logo" alt="Logo">
+                    <img src="../assets/img/logo.png" class="logo" alt="Logo">
                 </a>
             </div>
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="O que você procura hoje?">
-                <img src="../../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
+                <img src="../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
             </div>
             <ul class="menu-opcoes">
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="../../assets/img/pessoa.svg" alt="Pessoa">
+                        <img src="../assets/img/pessoa.svg" alt="Pessoa">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="../../assets/img/carrinho.svg" alt="Carrinho">
+                        <img src="../assets/img/carrinho.svg" alt="Carrinho">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="../../assets/img/informacao.svg" alt="Informações">
+                        <img src="../assets/img/informacao.svg" alt="Informações">
                     </a>
                 </li>
                 <li class="menu-opcoes-icons">
                     <a href="#">
-                        <img src="../../assets/img/suporte.svg" alt="suporte">
+                        <img src="../assets/img/suporte.svg" alt="suporte">
                     </a>
                 </li>
             </ul>
@@ -46,26 +45,76 @@
     </header>
 
     <main>
-        <div class="coluna-menu">
-            <h1>Home / Gerenciamento de Estoque</h1>
-            <div class="container">
-                <div>
-                    <h2>Barra lateral</h2>
-                </div>
+            <div class="roadmap">Home / Historico de Pedidos</div>
 
-                <div>
-                    <h2>gerenciamento de estoque</h2>
-                    <div class="items">
-                        <h3>item1</h3>
-                    </div>
-                    <div class="items">item2</div>
-                    <div class="items">item3</div>
-                    <div class="items">item4</div>
+            <div class="status-four">
+                <a href="../pages/cancelados(preparando).html" class="links">Preparando</a>
+                <a href="../pages/cancelados(em_andamento).html" class="links">Em Andamento</a>
+                <a href="#" class="links" id="entregue">Entregue</a>
+                <a href="../pages/cancelados(devolvidos-cancelados).html" class="links">Devolvidos/Cancelados</a>
+            </div>
+
+            <div class="frame_principal">
+                <div class="container-historico">
+                    <img src="../assets/img/quadro_branco.png" alt="imagem do produto" class="produto-img">
+                    <p class="nome-produto">Nome do Produto</p>
+                    <p class="produto-titulo">Quadrado Branco</p>
+                    <p class="data-compra">Data da Compra</p>
+                    <p class="data-titulo">22/09/2024</p>
+                    <p class="preco-compra">Preço</p>
+                    <p class="preco-titulo">R$259,90</p>
+                    <a class="trocar-devolver" href="#">Trocar/Devolver</a>
                 </div>
             </div>
+            <div class="frame_principal">
+                <div class="container-historico">
+                    <img src="../assets/img/caixa_de_lapis.png" alt="imagem do produto" class="produto-img">
+                    <p class="nome-produto">Nome do Produto</p>
+                    <p class="produto-titulo">Caixa de Lapis 12 Cores</p>
+                    <p class="data-compra">Data da Compra</p>
+                    <p class="data-titulo">22/09/2024</p>
+                    <p class="preco-compra">Preço</p>
+                    <p class="preco-titulo">R$259,90</p>
+                    <a class="trocar-devolver" href="#">Trocar/Devolver</a>
+                </div>
             </div>
+            <div class="frame_principal">
+                <div class="container-historico">
+                    <img src="../assets/img/controle_ps5.png" alt="imagem do produto" class="produto-img">
+                    <p class="nome-produto">Nome do Produto</p>
+                    <p class="produto-titulo">Controle de PS5</p>
+                    <p class="data-compra">Data da Compra</p>
+                    <p class="data-titulo">22/09/2024</p>
+                    <p class="preco-compra">Preço</p>
+                    <p class="preco-titulo">R$259,90</p>
+                    <a class="trocar-devolver" href="#">Trocar/Devolver</a>
+                </div>
+            </div>
+            <div class="frame_principal">
+                <div class="container-historico">
+                    <img src="../assets/img/acer_nitro.png" alt="imagem do produto" class="produto-img">
+                    <p class="nome-produto">Nome do Produto</p>
+                    <p class="produto-titulo">Notebook Acer Nitro V15</p>
+                    <p class="data-compra">Data da Compra</p>
+                    <p class="data-titulo">22/09/2024</p>
+                    <p class="preco-compra">Preço</p>
+                    <p class="preco-titulo">R$259,90</p>
+                    <a class="trocar-devolver" href="#">Trocar/Devolver</a>
+                </div>
+            </div>
+
+            <button class="retornar">Retorne ao Perfil</button>
+
+            
+
+
+
+
+
+
+
     </main>
-    
+
     <footer>
         <div class="footer-links">
             <div class="lista">
@@ -136,4 +185,5 @@
         </div>
     </footer>
 </body>
+<script src="assets/js/script.js"></script>
 </html>
