@@ -64,7 +64,7 @@ a{
 #menu-lateral h1{
     margin-left: 30%;
     margin-top: 1%;
-    font-size: 16px;
+    font-size: 15px;
     color: gray
     
 }
@@ -181,6 +181,7 @@ input[type="file"] {
     justify-content: flex-end;
     margin-top: 2%;
     margin-bottom: 1%;
+    margin-left: 1%;
 }
 
 button {
@@ -208,7 +209,25 @@ button:hover {
     margin-top: 20px;
 }
 
+@media (max-width: 1500px) {
+    #menu-lateral h3 {
+        font-size: 10px;
+    }
 
+    #menu-lateral h1 {
+        font-size: 10px;
+    }
+
+    form {
+        margin-top: -10%;
+    }
+}
+
+@media (max-width: 1400px) {
+    form {
+        margin-top: -10%;
+    }
+}
 
 @media (max-width: 1300px) {
     #sub_menu{
@@ -232,7 +251,7 @@ button:hover {
         margin-left: 4%; 
         margin-right: 1%;
         width: 90%;
-        margin-top: -13%;
+        margin-top: -10%;
     }
 
     
@@ -248,7 +267,7 @@ button:hover {
     }
 
     form{
-        margin-top: -15%;
+        margin-top: -13%;
     }
 }
 
@@ -259,23 +278,21 @@ button:hover {
         margin-top: 2%;
     }
     form{
-        margin-top: -20%;
+        margin-top: -15%;
     }
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     #titulo {
         margin-left: 4%;
         margin-top: 2%;
     }
     form{
-        margin-top: -27%;
+        margin-top: -15%;
+        width: 83%;
     }
 
-    .sub-menu {
-        visibility: hidden;
-    }
 }
 
 @media (max-width: 600px) {
@@ -285,10 +302,77 @@ button:hover {
         margin-bottom: 1px;
         font-family: 'Poppins', sans-serif;
     }
+    
+    form{
+        width: 83%;
+    }
 }
 
 
+@media (max-width: 750px) {
+    form{
+        margin-top: -20%;
+        margin-right: 2%;
+        width: 85%;
+    }
+
+    #label-quantidade-produto {
+        margin-left: 40%;
+    }
 
 
 
+}
+
+@media (max-width: 650px) {
+    form{
+        margin-top: -25%;
+    }
+
+    label{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    form{
+        margin-top: -30%;
+    }
+
+    label{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    form{
+        margin-top: -40%;
+        width: 81%;
+        height: 80%;
+    }
+
+    textarea{
+        width: 130px;
+        height: 50px;
+    }
+
+    select{
+        width: 130px;
+        height: 50px;
+    }
+
+    textarea::placeholder {
+        color: transparent;  
+    }
+
+    .botoes-container {
+        width: 420px;
+
+    }
+
+    #quantidade-produto{
+        width: 40px;
+        height: 40px;
+    }
+}
 
