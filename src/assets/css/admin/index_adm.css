@@ -1,5 +1,5 @@
 h6{
-    margin-left: 15%;
+    margin-left: 20%;
     font-size: 20px;
     margin-top: 10%;
     width: 40%;
@@ -9,10 +9,10 @@ h6{
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr auto; 
-    grid-gap: 5px;
-    width: 70%;
+    grid-gap: 7px;
+    width: 60%;
     height: 80%;
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
   .btn {
@@ -30,46 +30,52 @@ h6{
   }
 
 
-  .btn1 {
+  #btn1 {
     grid-column: 1;
     grid-row: span 2;
-    height: 560px;
-    width: 546px;
-  }
-
-  img{
-    height: 200px;
-    width: 200px;
+    height: 460px;
+    width: 540px;
   }
   
-  .btn2, .btn3 {
-    height: 547px;
-    width: 269px;
+  #btn2, #btn3 {
+    height: 231px;
+    width: 500px;
   }
 
 
-  .btn4, .btn5 {
-    padding: 10px; 
+  #btn4, #btn5 {
+    padding: 5px; 
   }
 
-  .btn4 {
+  #btn4 {
     grid-column: 1; 
     grid-row: 3; 
-    width: 265px; 
-    height: 269px;
-    margin-left: 48%;
+    width: 255px; 
+    height: 240px;
+    margin-left: 50%;
   }
 
-  .btn5 {
+  #btn5 {
     grid-column: 1; 
     grid-row: 3; 
     padding: 10px; 
-    width: 265px; 
-    height: 269px;
+    width: 255px; 
+    height: 240px;
   }
   
 
-  .btn6 {
+  #btn6 {
     grid-column: 2;
     grid-row: 3;
+    height: 231px;
+    width: 500px;
+    margin-top: 5px;
+  }
+
+  .imagens{
+    width: 150px;
+  }
+
+  #botao1{
+    width: 300px;
   }
