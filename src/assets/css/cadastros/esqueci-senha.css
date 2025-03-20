@@ -1,0 +1,185 @@
+body{
+    font-family: Poppins;
+    margin-right: 5%;
+}
+.menu{
+    display: inline;
+    margin-left: 1%;
+}
+
+
+
+h1{
+    margin-left: 10%;
+    margin-top: 4%;
+    font-size: 36px;
+    width: 40%;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+#home{
+    margin-left: 5%;
+    color: grey;
+}
+
+#sub{
+    color: black;
+}
+
+ 
+
+label{
+    margin-left: 10%;
+}
+
+#titulo{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 30%;
+    
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 20%;  
+    gap: 10%;  
+    align-items: start;  
+    margin-top: 1%; 
+    margin-bottom: 5%; 
+    margin-left: 10%;
+    width: 80%;
+    }
+
+
+form {
+    margin-bottom: 5%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #CFCFCF;
+    width: 140%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+#esqueci {
+    margin-left: 30%;
+    width: 40%;
+}
+
+#email{
+   margin-left: 10%;
+   margin-top: 10%;
+}
+
+#texto-digitado{
+    margin-left: 10%;
+    border-radius: 10px;
+    width: 80%;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+}
+
+
+button{
+    background-color: #16A18E;
+    width: 130px;
+    height: 38px;
+    color: white;
+    margin-left: 33%;
+    margin-top: -5%;
+    border-color: #16A18E;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: lighter;
+    
+}
+
+#esqueci{
+    width: 800px;
+    height: 550px;
+    margin-top: -40%;
+    
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+@media (max-width: 1450px) {
+    .container {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10%;
+        }
+}
+
+@media (max-width: 1450px) {
+    .container {
+    display: inline-block;
+    width: 60%;
+    margin-left: 10%;
+    }
+
+    #esqueci{
+        display: inline;
+        margin-top: 10%;
+        margin-left: 3%;
+        margin-right: 10%;
+        width: 600px;
+    }
+
+    button{
+        margin-bottom: 5%;
+        margin-left: 35%;
+    }
+
+    #email{
+        width: 30%;
+     }
+
+}
+
+@media (max-width: 1450px) {
+    #esqueci {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 95%;
+        height: 80%;
+    }
+
+}
+
+@media (max-width: 750px) {
+    h1{
+        font-size: 25px;
+    }
+    #titulo{
+        font-size: 14px;
+        
+    }
+}
+
+@media (max-width: 520px) {
+    h1{
+        font-size: 20px;
+    }
+    #titulo{
+        font-size: 11px;
+        
+    }
+}
+
+@media (max-width: 520px) {
+    #titulo{
+        font-size: 8px;
+        
+    }
+}
