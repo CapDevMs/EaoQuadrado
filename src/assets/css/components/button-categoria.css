@@ -9,7 +9,10 @@
     margin-left: 2%;
     text-decoration: none;
 }
-
+.button-categoria a {
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-block; /* Faz com que o link se comporte como um bloco */
+}
 
 /* Estilização dos botões */
 .button {
