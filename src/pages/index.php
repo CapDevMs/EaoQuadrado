@@ -1,7 +1,6 @@
 <?php
-include(__DIR__ . '/config/funcoes.php');
+include(__DIR__ . '/../config/funcoes.php');
 $appName = get_app_name();
-$titulo = 'Homepage';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -25,29 +24,29 @@ $titulo = 'Homepage';
                 <div class="item_carrossel">
                     <div class="bg_carrossel">
                     </div>
-                    <img src="<?= get_base_url(); ?>/assets/img/slide1.png" alt="">
+                    <img src="../assets/img/slide1.png" alt="">
                     <div class="text_carrossel">
                         <h1>Aproveite o melhor dos games!</h1>
-                        <a href="<?= get_base_url(); ?>/pages/produto.php">Compre Agora <i class="fas fa-arrow-right"></i></a>
+                        <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 
                 <div class="item_carrossel">
                     <div class="bg_carrossel"></div>
-                    <img src="<?= get_base_url(); ?>/assets/img/slide2.png" alt="">
+                    <img src="../assets/img/slide2.png" alt="">
                     <div class="text_carrossel">
                         <h1>Confira os melhores celulares!</h1>
-                        <a href="<?= get_base_url(); ?>/pages/produto.php">Compre Agora <i class="fas fa-arrow-right"></i></a>
+                        <a href="#">Compre Agora <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <div class="item_carrossel">
                     <div class="bg_carrossel"></div>
-                    <img src="<?= get_base_url(); ?>/assets/img/slide3.png" alt="">
+                    <img src="../assets/img/slide3.png" alt="">
                     <div class="text_carrossel">
                         <h1>Aproveite nossa coleção feminina!</h1>
                         <div class="link">
-                            <a href="<?= get_base_url(); ?>/pages/produto.php">Compre Agora</a>
+                            <a href="#">Compre Agora</a>
                             <i class="fas fa-arrow-right"></i> 
                         </div>
                         
@@ -73,21 +72,21 @@ $titulo = 'Homepage';
                 <div class="texto">
                     <h1>PlayStation 5</h1>
                     <p>Versão em preto e branco do PS5 chegando à venda</p>
-                    <h1><a href="<?= get_base_url(); ?>/pages/produto.php" class="link_mosaico">Compre Agora!</a><h1>
+                    <h1>Compre Agora!<h1>
                 </div>
             </div>
             <div class="itens2" id="item2">
                 <div class="texto">
                     <h1>Roupas</h1>
                     <p>Coleções  em destaque que dão outra vibe<p>
-                    <h1><a href="<?= get_base_url(); ?>/pages/produto.php" class="link_mosaico">Compre Agora!</a><h1>
+                    <h1>Compre Agora!<h1>
                 </div>
             </div>
             <div class="itens3" id="item3">
                 <div class="texto">
                     <h1>Caixa de Som</h1>
                     <p>Alto-falantes sem fio</p>
-                    <h1><a href="<?= get_base_url(); ?>/pages/produto.php" class="link_mosaico">Compre Agora!</a><h1>
+                    <h1>Compre Agora!<h1>
                 </div>
             </div>
 
@@ -95,7 +94,7 @@ $titulo = 'Homepage';
                 <div class="texto">
                     <h1>Bolsa</h1>
                     <p>GUCCI INTENSE </p>
-                    <h1><a href="<?= get_base_url(); ?>/pages/produto.php" class="link_mosaico">Compre Agora!</a><h1>
+                    <h1>Compre Agora!<h1>
                 </div>
             </div>
         </div>
@@ -107,12 +106,12 @@ $titulo = 'Homepage';
         </div>
         
         <div class="categorias_container">
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/cellphone_icon.svg" alt="celulares"><p>Celulares</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/computer_icon.svg" alt="computer"><p>Computadores</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/smartwatches_icon.svg" alt="smartwatches"><p>Smartwatches</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/camera_icon.svg" alt="cameras"><p>Câmeras</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/headphone_icon.svg" alt="headphone"><p>Fone de Ouvido</p></div>
-            <div class="categoria" href="https://teams.microsoft.com/v2/"><img src="<?= get_base_url(); ?>/assets/img/games_icon.svg" alt="games"><p>Games</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/cellphone_icon.svg" alt="celulares"><p>Celulares</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/computer_icon.svg" alt="computer"><p>Computadores</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/smartwatches_icon.svg" alt="smartwatches"><p>Smartwatches</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/camera_icon.svg" alt="cameras"><p>Câmeras</p></div>
+            <div class="categoria" href="#"><img src="../assets/img/headphone_icon.svg" alt="headphone"><p>Fone de Ouvido</p></div>
+            <div class="categoria" href="https://teams.microsoft.com/v2/"><img src="../assets/img/games_icon.svg" alt="games"><p>Games</p></div>
         </div>
 
         <div class="frame_container_categoria">
@@ -121,7 +120,7 @@ $titulo = 'Homepage';
         </div>
 
         <div class="img_container">
-            <img src="<?= get_base_url(); ?>/assets/img/Banner_loja.png" class="img" alt="Banner da Loja">
+            <img src="../assets/img/Banner_loja.png" class="img" alt="Banner da Loja">
         </div>
 
         <div class="frame_container_categoria">
@@ -142,15 +141,5 @@ $titulo = 'Homepage';
     
     <?php get_footer() ?>
 </body>
-<script src="<?= get_base_url(); ?>/assets/js/script.js"></script>
-<script>
-    const base_url = '<?= get_base_url(); ?>';
-    const categorias = document.querySelectorAll('.categoria');
-
-    console.log(categorias);
-
-    categorias.forEach(categoria => {
-        categoria.addEventListener('click', () => location = base_url + '/pages/categoria.php')
-    });
-</script>
+<script src="assets/js/script.js"></script>
 </html>

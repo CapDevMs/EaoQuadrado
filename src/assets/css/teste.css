@@ -1,0 +1,249 @@
+/* Reset de margem e padding */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+:root {
+    --cor-principal: #00BFA5;
+    --cor-secundaria: #16A18E;
+    --cor-terciaria: #000000;
+    --cor-verde-principal: #00BFA5;
+    --cor-verde-claro: #00EDCC;
+    --cor-verde-escuro: #16A18E;
+    --cor-fundo: #ffffff;
+    --cor-fundo-area-pesquisa: #cacaca;
+    --cor-fundo-img-produtos: #F5F5F5;
+    --cor-texto: #000000;
+    --cor-texto-deselecionado: #737070;
+    --cor-titulo-preço: #00EDCC;
+    --cor-titulo-categorias: #16A18E;
+    --cor-texto-botao: #ffffff;
+    --cor-botao-primario: #16A18E;
+    --cor-botao-adm-verde: #C0F894;
+    --cor-botao-adm-vermelho: #E85252;
+    --cor-sombra-clara: rgba(0, 0, 0, 0.1);
+    --cor-sombra-media: rgba(0, 0, 0, 0.3);
+    --cor-sombra-escura: rgba(0, 0, 0, 0.5);
+}
+
+/* Carrossel */
+.carrossel {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.container_carrossel {
+    display: flex;
+    width: 300%;
+    transition: transform 1s ease-in-out;
+}
+
+.item_carrossel {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.item_carrossel img {
+    width: 80%;
+    height: auto;
+    max-width: 30%;
+    position: relative;
+    bottom: 20%;
+    left: 20%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0.25px 0.25px 5px white);
+}
+
+.text_carrossel {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 5%;
+    width: 25%;
+    height: auto;
+    transform: translateY(-50%);
+    padding: 0 60px;
+    color: white;
+    text-align: left;
+}
+
+.text_carrossel h1 {
+    font-size: 50px;
+    margin-bottom: 2%;
+    user-select: none;
+    margin-top: 2%;
+    text-shadow: 5px 2px 2px black;
+}
+
+.text_carrossel a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    user-select: none;
+    text-shadow: 5px 5px 5px black;
+}
+
+button {
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 1440px) {
+    .mosaico {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mosaico > div {
+        width: 100%;
+    }
+
+    .text_carrossel h1 {
+        font-size: 40px;
+    }
+
+    .text_carrossel a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mosaico {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .mosaico > div {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .text_carrossel h1 {
+        font-size: 35px;
+    }
+
+    .text_carrossel a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carrossel {
+        height: 400px;
+    }
+
+    .container_carrossel {
+        width: 500%;
+    }
+
+    .item_carrossel img {
+        width: 70%;
+        max-width: 80%;
+    }
+
+    .text_carrossel {
+        left: 10%;
+        width: 60%;
+        padding: 0 20px;
+    }
+
+    .text_carrossel h1 {
+        font-size: 30px;
+    }
+
+    .text_carrossel a {
+        font-size: 14px;
+    }
+
+    .mosaico {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .carrossel {
+        height: 300px;
+    }
+
+    .item_carrossel img {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .text_carrossel h1 {
+        font-size: 28px;
+    }
+
+    .text_carrossel a {
+        font-size: 14px;
+    }
+
+    .mosaico {
+        grid-template-columns: 1fr;
+    }
+
+    .mosaico > div {
+        width: 100%;
+    }
+
+    .mosaico h1, p {
+        font-size: 16px;
+    }
+
+    .categorias_container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categoria {
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .carrossel {
+        height: 250px;
+    }
+
+    .text_carrossel h1 {
+        font-size: 25px;
+    }
+
+    .text_carrossel a {
+        font-size: 12px;
+    }
+
+    .mosaico {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .mosaico > div {
+        width: 100%;
+    }
+
+    .mosaico h1, p {
+        font-size: 14px;
+    }
+
+    .categorias_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoria {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+}
