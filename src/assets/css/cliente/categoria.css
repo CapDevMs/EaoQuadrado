@@ -76,7 +76,7 @@ header,body{
    position: relative;
    left: 12%;
    top: -39px;
-   background-image: url("../img/pesquisar.svg");
+   background-image: url("../../img/pesquisar.svg");
    background-repeat: no-repeat;
    background-position: center;
    justify-content: center;

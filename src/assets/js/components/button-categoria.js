@@ -1,16 +1,19 @@
-const buttonCategoria = ({ imagem, nome }) => {
+const buttonCategoria = ({ imagem, nome, link }) => {
     return `
     <div class="button-categoria">
+        <a href="${link}">
         <button class="button" type="button">
             <div class="container-imagem">
-                <img class="img-produto" src="${imagem}" alt="Ícone de ${nome}">
+                <img class="img-CategoriaButton" src="${imagem}" alt="Ícone de ${nome}">
             </div>
             <div class="container-nome-produto">
                 <h3 class="nome-produto">${nome}</h3>
             </div>
-        </button>
+        </button></a>
     </div>
     `;
 };
+
+
 
 export default buttonCategoria;

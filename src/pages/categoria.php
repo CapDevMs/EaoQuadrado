@@ -8,7 +8,7 @@ $appName = get_app_name();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <title><?= $appName . ' - ' . $titulo ?? '' ?>  </title>
     <?php get_css(['cliente/categoria']) ?>
     <?php get_css_components() ?>
 </head>
@@ -16,7 +16,7 @@ $appName = get_app_name();
 
 <body>
     <?php get_header() ?>
-    <!-- <link rel = 'stylesheet' href="../assets/css/cliente/categoria.css"> -->
+  
 
     <div class="container-video">
         <div class="video-celular">
@@ -91,6 +91,7 @@ $appName = get_app_name();
 
     <script type ="module" src="../assets/js/categoria.js?<?= time();?>"></script>
     <script type="module" src="../assets/js/pagina_do_vendedor.js"></script>
+    <script type="module" src="../assets/js/components/button-categoria.js"></script>
     <?php get_footer() ?>
     
 </body>
