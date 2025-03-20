@@ -1,13 +1,13 @@
 <?php
 require_once('../../config/funcoes.php');
 require('../../config/conexao.php');
-
 ?>
 <?php get_base_head(); ?>
 
 <body>
     <?php get_header(); ?>
     <link rel = 'stylesheet' href="../../assets/css/cadastro_adm.css">
+    <link rel = 'stylesheet' href="../../assets/css/base.css">
 
     <main>
     <div class="roadmap">Home / Painel do Administrador / Cadastrar Novo Administrador</div>
@@ -30,8 +30,8 @@ require('../../config/conexao.php');
                 <a src="#">Editar Sistema</a>
             </div>
             
-            <div class="register_client">
-                    <p>Cadastro de Administrador</p>
+            <form class="register_client">
+                    <h1>Cadastro de Administrador</h1>
                     <img src="../../assets/img/foto_cliente.png" alt="foto do cliente">
 
                     <div class="names-container">
@@ -99,7 +99,7 @@ require('../../config/conexao.php');
 
  
                 
-            </div>
+            </form>
         </div>
                 <button class="button-confirm">Registrar</button>
     </main>

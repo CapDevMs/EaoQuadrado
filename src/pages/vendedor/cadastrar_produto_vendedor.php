@@ -16,25 +16,25 @@
     
     <main>
         <div class="sub-menu">
-            <a href="link-para-conta" id="conta">
+            <a href="meu_perfil_vendedor.php" id="conta">
                 <h6>Conta</h6>
             </a>
             <span id="separator">/</span>
-            <a href="link-para-minha-conta" id="minha-conta">
+            <a href="minha_loja.php" id="minha-conta">
                 <h6>Minha Conta</h6>
             </a>
             <span id="separator">/</span>
-            <a href="link-para-cadastrar-produto" id="cadastrar-produto"></a>
-                <h6>Cadastrar Produto</h6>
+            <a href="cadastrar_produto_vendedor.php" id="cadastrar-produto">
+                <h6>Cadastrar Produto</h6></a>
         </div>
     
         <div id="titulo">Cadastrar Produto</div>
     
         <div id="menu-lateral">
             <h3>Gerenciar Minha Conta</h3>
-            <h1><a href="link-para-meu-perfil">Meu Perfil</a></h1>
-            <h1><a href="link-para-minha-loja">Minha Loja</a></h1>
-            <h1 class="ativa" id="cadastrar-produtos"><a href="link-para-cadastrar-produto" id="cadastrar">Cadastrar Produtos</a></h1>
+            <h1><a href="meu_perfil_vendedor.php">Meu Perfil</a></h1>
+            <h1><a href="minha_loja.php">Minha Loja</a></h1>
+            <h1 class="ativa" id="cadastrar-produtos"><a href="cadastrar_produto_vendedor.php" id="cadastrar">Cadastrar Produtos</a></h1>
             <br>
             <h3>Vendas</h3>
             <h1><a href="link-para-minha-loja">Histórico de Vendas</a></h1>
@@ -101,37 +101,48 @@
             </form>
             <div class="botoes-container">
                 <button id="cancelar" type="button">Cancelar</button>
-                <button id="salvar" type="submit">Salvar</button>
+                <button id="salvar" type="button">Salvar</button> 
+            </div>
+            <div id="mensagem-sucesso" style="display: none; color: green; padding: 10px; border: 1px solid green; margin-top: 20px;">
+                Produto salvo com sucesso!
             </div>
         
     </main>
     <?php get_footer() ?>
-</body>
-<script src="../../assets/js/script.js">
-</script>
-<script>
-       document.getElementById('arquivo').addEventListener('change', function(event) {
-        var files = event.target.files;
-        var previasContainer = document.querySelector('.previas');
 
-        
-        for (var i = 0; i < files.length; i++) {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                
-                var img = document.createElement('img');
-                img.src = e.target.result;
-                img.alt = 'img' + (previasContainer.children.length + 1);
-                img.style.width = '200px';  
-                img.style.height = '300px';
-                img.style.objectFit = 'cover';
+    <script src="../../assets/js/script.js"></script>
+    <script>
+        document.getElementById('salvar').addEventListener('click', function() {
+            
+            var mensagemSucesso = document.getElementById('mensagem-sucesso');
+            mensagemSucesso.style.display = 'block';
 
-                
-                previasContainer.appendChild(img);
+            
+            setTimeout(function() {
+                mensagemSucesso.style.display = 'none';
+            }, 3000);  
+        });
+
+        document.getElementById('arquivo').addEventListener('change', function(event) {
+            var files = event.target.files;
+            var previasContainer = document.querySelector('.previas');
+
+            for (var i = 0; i < files.length; i++) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.alt = 'img' + (previasContainer.children.length + 1);
+                    img.style.width = '200px';  
+                    img.style.height = '300px';
+                    img.style.objectFit = 'cover';
+
+                    previasContainer.appendChild(img);
+                }
+                reader.readAsDataURL(files[i]);
             }
-            reader.readAsDataURL(files[i]);
-        }
-    });
-</script>
+        });
+    </script>
+</body>
 </html>
 
