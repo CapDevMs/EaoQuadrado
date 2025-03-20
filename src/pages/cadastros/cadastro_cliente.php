@@ -1,5 +1,5 @@
 <?php 
-    include('../config/funcoes.php');
+    include('../../config/funcoes.php');
 ?>
 
 
@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['cadastro_cliente', 'base', 'style']) ?>
+    <?php get_css(['/cadastros/cadastro_cliente', 'base', 'style']) ?>
        
     <title>Eao Quadrado</title>
 </head>
@@ -24,7 +24,7 @@
         <div class="register_client">
             <h2>Cadastro de Cliente</h2>
             <div class="form-container">
-                <img src="../assets/img/foto_cliente.png" alt="foto do cliente" class="client-image">
+                <img src="../../assets/img/foto_cliente.png" alt="foto do cliente" class="client-image">
                 
                 <form class="form" action="#">
  

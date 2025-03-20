@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['cadastro_cliente', 'cadastro_vendedor', 'base', 'style']) ?>
+    <?php get_css(['/cadastros/cadastro_cliente', '/cadastros/cadastro_vendedor', 'base', 'style']) ?>
     
     <title>Eao Quadrado</title>
 </head>

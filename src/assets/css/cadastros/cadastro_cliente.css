@@ -23,7 +23,7 @@
     height: 1300px;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
-    margin-left: 20%;
+    margin-left: 24%;
     margin-bottom: 10%;
 }
 
@@ -102,11 +102,12 @@
     gap: 10px;
     width: max-content;
     margin-left: 15%;
+    margin-bottom: 2%;
 }
 
 .checkbox-container {
     grid-row: 7;
-    margin-left: 30%;
+    margin-left: 22%;
     max-width: fit-content;
     display: grid;
     grid-template-columns: auto 100%;
