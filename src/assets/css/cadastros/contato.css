@@ -121,6 +121,10 @@ a{
     cursor: pointer;
 }
 
+button{
+    cursor: pointer;
+}
+
 
 
 
@@ -138,8 +142,6 @@ a{
         font-size: 8px;
     }
 }
-
-
 
 
 
@@ -170,5 +172,6 @@ a{
 
     #salvar{
         margin-bottom: 5%;
+        
     }
 }
