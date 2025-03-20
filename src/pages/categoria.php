@@ -16,7 +16,7 @@ $appName = get_app_name();
 
 <body>
     <?php get_header() ?>
-    <link rel = 'stylesheet' href="../assets/css/categoria.css">
+    <!-- <link rel = 'stylesheet' href="../assets/css/cliente/categoria.css"> -->
 
     <div class="container-video">
         <div class="video-celular">
