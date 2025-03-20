@@ -1,6 +1,7 @@
 <?php
     include('../../config/funcoes.php');
     $appName = get_app_name();
+    $titulo = 'Minha loja';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
