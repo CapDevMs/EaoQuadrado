@@ -201,6 +201,10 @@
         width: 100%;
     }
 
+    .terms-container {
+        margin-left: 5%;
+    }
+
     .form-container input,
     .form-container input[type="date"] {
         font-size: 14px;
@@ -315,6 +319,7 @@
 
     .date-group input[type="date"] {
         width: 25%;
+        height: 7.2%;
     }
 
     .form input[type="email"],
@@ -400,7 +405,7 @@
 @media (max-width: 430px) {
     .register_client {
         width: 75%;
-        height: 900px;
+        height: 850px;
         margin-left: 0;
         padding: 10px;
         margin-left: 15%;
@@ -419,11 +424,15 @@
         right: 3%;
         width: 100%;
     }
+    .form input[type="email"], .form input[type="text"], .form input[type="password"] {
+        font-size: 10px;
+    }
 
     .form-container input,
     .form-container input[type="date"] {
         font-size: 10px;
         padding: 5px;
+        height: 6.5%;
     }
 
     .form-container label {

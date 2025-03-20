@@ -1,5 +1,5 @@
 <?php 
-    include('../config/funcoes.php');
+    include('../../config/funcoes.php');
 ?>
 
 
@@ -23,7 +23,7 @@
                 <div class="menu-container">
                     <h1>Cadastro</h1>
                     <a href="#" id="pagina_atual">Cadastrar Novo Administrador</a>
-                    <a href="#">Gerenciar Meu Perfil</a>
+                    <a href="./meu_perfil_adm.php">Gerenciar Meu Perfil</a>
                     <h1>Colaboradores</h1>
                     <a href="#">Validar Novo Colaborador</a>
                     <a href="#">Colaboradores Aprovados</a>
