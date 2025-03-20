@@ -207,9 +207,33 @@ main {
     margin-top: calc(95px + 2vh);
     min-height: calc(100vh - (calc(95px + 2vh) + 280px));
 }
+
 .container {
     width: 95%;
     margin: auto;
+}
+
+/*BARRA LATERAL*/
+.barra_lateral{
+    font-size: 15px;
+    margin-top: 5px;
+
+    color: gray;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+ 
+    padding-left: 20px;
+}
+
+.ativo{
+    color: var(--cor-secundaria);
+}
+
+.menu-lateral{
+    font-size: 16px;
+   
 }
 
 /* Css do Footer */
