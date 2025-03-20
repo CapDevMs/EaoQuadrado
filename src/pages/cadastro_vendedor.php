@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 
-                <div class="content">
+                <div class="content_vend">
                     <div class="terms">
                         <div class="checkbox-container">
                             <input type="checkbox" name="termos" class="checkbox" required>
