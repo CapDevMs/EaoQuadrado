@@ -17,7 +17,7 @@ $base_url = get_base_url();
                         <a href="https://mail.google.com/mail?hl=pt-BR" class="footer-links-link">eaoquadrado@gmail.com</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="#" class="footer-links-link">+55 67 99999-9999</a>
+                        <a href="https://wa.me/+55 67 8169-7437" class="footer-links-link">+55 67 99999-9999</a>
                     </li>
                     <li class="footer-links-item">
                         <a href="https://www.google.com/maps/place/Senac+Hub+Academy/@-20.4683201,-54.6244079,17z/data=!3m1!4b1!4m6!3m5!1s0x9486e617979c013d:0x1f2202ac2245b2bb!8m2!3d-20.4683251!4d-54.6218276!16s%2Fg%2F11b635xpgc?entry=ttu&g_ep=EgoyMDI1MDMxNi4wIKXMDSoASAFQAw%3D%3D" class="footer-links-link">
