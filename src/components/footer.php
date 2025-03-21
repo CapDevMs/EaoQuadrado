@@ -43,7 +43,7 @@ $base_url = get_base_url();
                         <a href="<?=$base_url;?>/pages/carrinho.php" class="footer-links-link">Carrinho</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="#" class="footer-links-link">Lista de Desejos</a>
+                        <a href="<?=$base_url;?>/pages/cliente/favoritos.php" class="footer-links-link">Lista de Desejos</a>
                     </li>
                 </ul>
             </div>
