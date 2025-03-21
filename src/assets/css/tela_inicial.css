@@ -379,6 +379,7 @@ button {
     width: 15%;
     padding: 10px;
     transition: transform 0.3s; 
+    cursor: pointer;
 }
 
 .categoria img {
