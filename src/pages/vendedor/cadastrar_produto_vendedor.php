@@ -30,17 +30,7 @@
     
         <div id="titulo">Cadastrar Produto</div>
     
-        <div id="menu-lateral">
-            <h3>Gerenciar Minha Conta</h3>
-            <h1><a href="meu_perfil_vendedor.php">Meu Perfil</a></h1>
-            <h1><a href="minha_loja.php">Minha Loja</a></h1>
-            <h1 class="ativa" id="cadastrar-produtos"><a href="cadastrar_produto_vendedor.php" id="cadastrar">Cadastrar Produtos</a></h1>
-            <br>
-            <h3>Vendas</h3>
-            <h1><a href="link-para-minha-loja">Histórico de Vendas</a></h1>
-            <h1><a href="link-para-minha-loja">Trocas/Cancelamentos</a></h1>
-            <h1><a href="link-para-minha-loja">Gerenciamento de estoque</a></h1>
-        </div>
+        <?php get_sidebar_vendedor('cadastrar_produtos'); ?>
     
             <form action="#" method="post">      
                 <div class="linha-horizontal">
