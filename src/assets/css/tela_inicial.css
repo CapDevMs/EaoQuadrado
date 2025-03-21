@@ -101,103 +101,6 @@ button {
     display: none;
 }
 
-.mosaico {
-    display: grid;
-    grid-template-columns: 55% 40% 40%;
-    grid-template-rows: 200px 200px; 
-    column-gap: 5%;
-    row-gap: 6%;
-    margin-left: 10%;
-    width: fit-content;
-    height: fit-content;
-    cursor: pointer;
-    width: 55%;
-    height: auto;
-}
-
-.mosaico > div {
-    padding: 10px;
-    border-radius: 5px; 
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-}
-
-.mosaico > div:hover{
-    transform: scale(1.02);
-}
-
-.texto{
-    margin-top: auto;
-    text-align: left;
-}
-
-.texto img{
-    object-fit: fill;
-}
-
-.mosaico h1, p {
-    color: var(--cor-fundo);
-    height: fit-content;
-    width: fit-content;
-    position: relative;
-    font-size: larger;
-} 
-.mosaico p{
-    font-size: 13px;
-}
-.link_mosaico {
-    color: var(--cor-fundo);
-    text-decoration: none;
-}
-
-.itens1 {
-    grid-column: 1; 
-    grid-row: 1 / span 2; 
-    background-image: url("../img/ps5_reflex.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itens2 {
-    grid-column: 2 / span 2; 
-    grid-row: 1; 
-    background-image: url("../img/woman_with_hat.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: contain;
-    display: flex;
-}
-
-.itens3 {
-    grid-column: 2; 
-    grid-row: 2; 
-    background-image: url("../img/caixa_de_som.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: contain;
-    display: flex;
-}
-
-.itens4 {
-    grid-column: 3; 
-    grid-row: 2;
-    background-image: url("../img/gucci_bolsa_intense.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: contain;
-    display: flex;
-}
-
-
 .frame_container_categoria{
     display: grid;
     grid-template-columns: auto 100%;
@@ -228,6 +131,224 @@ button {
     width: 30px;
     background-color: var(--cor-principal);
     border-radius: 5px;
+}
+
+
+/*****************/
+/*    Mosaico    */
+/*****************/
+
+.mosaico {
+    display: grid;
+    grid-template-columns: 40% repeat(2, 1fr);
+    grid-template-rows: 50% 50%; 
+    column-gap: 5%;
+    row-gap: 6%;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    width: 80%;
+    height: 90%;
+    max-height: 400px;
+}
+
+.mosaico > div {
+    padding: 10px;
+    border-radius: 5px; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.mosaico > div:hover{
+    transform: scale(1.02);
+}
+
+.texto{
+    margin-top: auto;
+    text-align: left;
+}
+
+.texto img{
+    object-fit: fill;
+}
+
+.mosaico h1, p {
+    color: var(--cor-fundo);
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    font-size: 16px;
+}
+
+.mosaico p{
+    font-size: 13px;
+}
+
+.link_mosaico {
+    color: var(--cor-fundo);
+    text-decoration: none;
+}
+
+.itens1, .itens2, .itens3, .itens4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: contain;
+    display: flex;
+}
+
+.itens1 {
+    grid-column: 1; 
+    grid-row: 1 / span 2; 
+    background-image: url("../img/ps5_reflex.png");
+    background-size: 60%;
+    background-position: center bottom;
+}
+
+.itens2 {
+    grid-column: 2 / span 2; 
+    grid-row: 1; 
+    background-image: url("../img/woman_with_hat.png");
+    background-size: 35%;
+}
+
+.itens3 {
+    grid-column: 2; 
+    grid-row: 2; 
+    background-image: url("../img/caixa_de_som.png");
+    background-size: 45%;
+}
+
+.itens4 {
+    grid-column: 3; 
+    grid-row: 2;
+    background-image: url("../img/gucci_bolsa_intense.png");
+    background-size: 45%;
+}
+
+@media (max-width: 1440px) {
+    .mosaico {
+        height: 90%;
+        width: 90%;
+    }
+
+    .itens1 {
+        background-size: 70%;
+    }
+
+    .itens2 {
+        background-size: 40%;
+    }
+
+    .itens1 {
+        background-size: 80%;
+    }
+
+    .itens1 {
+        background-size: 80%;
+    }
+}
+
+@media (max-width: 1096px) {
+    .itens2 {
+        background-size: 45%;
+    }
+}
+
+@media (max-width: 886px) {
+    .mosaico {
+        column-gap: 6.5%;
+        row-gap: 7.5%;
+    }
+
+    .mosaico h1, .mosaico a {
+        font-size: 14px;
+    }
+
+    .mosaico p {
+        font-size: 10px;
+    }
+
+    .itens2 {
+        background-size: 68%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .mosaico {
+        width: 80%;
+        height: 70%;
+    }
+
+    .mosaico h1, .mosaico a {
+        font-size: 12px;
+    }
+
+    .itens1 {
+        background-size: 100%;
+    }
+
+    .itens2 {
+        background-size: 70%;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .mosaico {
+        width: 70%;
+        height: 100%;
+        max-height: 450px;
+    }
+
+    .mosaico {
+        column-gap: 40px;
+        row-gap: 20px;
+    }
+
+    .mosaico {
+        display: grid;
+        grid-template-columns: repeat(2, 42%); 
+        grid-template-rows: auto; 
+    }
+    
+    .itens1 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        background-size: 30%;
+    }
+    
+    .itens2 {
+        grid-column: 1 / span 2; 
+        grid-row: 2;
+        background-size: 40%;
+    }
+    
+    .itens3 {
+        grid-column: 1; 
+        grid-row: 3;
+        background-size: 40%;
+    }
+    
+    .itens4 {
+        grid-column: 2;
+        grid-row: 3;
+        background-size: 40%;
+    }
+    
+}
+
+@media (max-width: 510px) {
+    .itens1 {
+        background-size: 35%;
+    }
+
+    .itens2 {
+        background-size: 55%;
+    }
 }
 
 /****************************
@@ -410,11 +531,7 @@ button {
 }
 
 @media (max-width: 1440px) {
-    .mosaico {
-        gap: 6%;
-        margin-left: 7.5%;
-    }
-    
+
     .frame_container_categoria{
         left: 7.5%;
     }
@@ -427,9 +544,6 @@ button {
         height: 40px;
         width: 25px;
     }
-
-
-
 }
 
 @media (max-width: 992px) {
@@ -464,13 +578,6 @@ button {
         font-size: 16px;
     }
 
-
-    .mosaico {
-        column-gap: 30px;
-        margin-left: 7.5%;
-        row-gap: 15px;
-    }
-    
     .frame_container_categoria{
         left: 7.5%;
     }
@@ -516,14 +623,6 @@ button {
         white-space: nowrap;
     }
 
-    .mosaico {
-        column-gap: 7%;
-        grid-template-columns: 55% 40% 40%;
-        grid-template-rows: 100px 100px;
-        margin-left: 7.5%;
-        row-gap: 5%;
-    }
-    
     .frame_container_categoria{
         left: 7.5%;
     }
