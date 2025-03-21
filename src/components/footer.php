@@ -11,10 +11,10 @@ $base_url = get_base_url();
             <div>
                 <ul class="footer-links-list">
                     <li class="footer-links-item">
-                        <a href="#" class="footer-links-link">Senac Hub Academy</a>
+                        <a href="https://ww3.ms.senac.br/" class="footer-links-link">Senac Hub Academy</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="#" class="footer-links-link">eaoquadado@gmail.com</a>
+                        <a href="https://mail.google.com/mail?hl=pt-BR" class="footer-links-link">eaoquadrado@gmail.com</a>
                     </li>
                     <li class="footer-links-item">
                         <a href="#" class="footer-links-link">+55 67 99999-9999</a>
@@ -34,7 +34,7 @@ $base_url = get_base_url();
             <div>
                 <ul class="footer-links-list">
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>/pages/cadastros/cadastro_cliente.html" class="footer-links-link">Minha Conta</a>
+                        <a href="<?=$base_url;?>/pages/cadastros/cadastro_cliente.php" class="footer-links-link">Minha Conta</a>
                     </li>
                     <li class="footer-links-item">
                         <a href="<?=$base_url;?>/pages/login.php" class="footer-links-link">Entre/Cadastre</a>
