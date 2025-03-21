@@ -23,7 +23,7 @@
     height: 1300px;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
-    margin-left: 20%;
+    margin-left: 24%;
     margin-bottom: 10%;
 }
 
@@ -102,11 +102,12 @@
     gap: 10px;
     width: max-content;
     margin-left: 15%;
+    margin-bottom: 2%;
 }
 
 .checkbox-container {
     grid-row: 7;
-    margin-left: 30%;
+    margin-left: 22%;
     max-width: fit-content;
     display: grid;
     grid-template-columns: auto 100%;
@@ -176,7 +177,7 @@
 }
 
 .content {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -199,6 +200,10 @@
 
     .form-group {
         width: 100%;
+    }
+
+    .terms-container {
+        margin-left: 5%;
     }
 
     .form-container input,
@@ -315,6 +320,7 @@
 
     .date-group input[type="date"] {
         width: 25%;
+        height: 7.2%;
     }
 
     .form input[type="email"],
@@ -346,12 +352,16 @@
         height: 15px;
     }
 
-    .buttons-container .button-confirm {
+    .content {
+        margin-left: 20%;
+    }
+
+    .buttons-cont .button-confirm {
         font-size: 10px;
         width: 90px;
     }
 
-    .buttons-container .button-cancel {
+    .buttons-cont .button-cancel {
         font-size: 10px;
         width: 90px;
     }
@@ -362,7 +372,13 @@
         margin-left: 5%;
     }
     .buttons-container{
-        margin-left: 26%;
+        margin-left: 10%;
+    }
+
+    .buttons-container .button-cancel, .buttons-container .button-confirm {
+        font-size: 12px;
+        width: 90px;
+        height: 30px;
     }
 }
 
@@ -371,12 +387,26 @@
         position: relative;
         right: 12%;
     }
+
+    .buttons-cont .button-confirm, .buttons-cont .button-cancel {
+        width: 60px;
+    }
+
+    .buttons-cont {
+        margin-left: 20%;
+    }
+
+    .button-cancel, .button-confirm {
+        width: 90px;
+        height: 20px;
+    }
+
 }
 
 @media (max-width: 430px) {
     .register_client {
         width: 75%;
-        height: 900px;
+        height: 850px;
         margin-left: 0;
         padding: 10px;
         margin-left: 15%;
@@ -386,16 +416,24 @@
         font-size: 16px;
     }
 
+    .client-image {
+        margin-left: 25%;
+    }
+
     .form {
         position: relative;
         right: 3%;
         width: 100%;
+    }
+    .form input[type="email"], .form input[type="text"], .form input[type="password"] {
+        font-size: 10px;
     }
 
     .form-container input,
     .form-container input[type="date"] {
         font-size: 10px;
         padding: 5px;
+        height: 6.5%;
     }
 
     .form-container label {
@@ -424,14 +462,24 @@
         height: 12px;
     }
 
-    .buttons-container {
+    .buttons-cont {
         margin-left: 5%;
     }
 
-    .buttons-container button {
+    .buttons-cont button {
         width: 80px;
         height: 30px;
         font-size: 10px;
     }
 
+}
+
+@media (max-width: 375px) {
+    .terms {
+        margin-left: 40%;
+    }
+
+    .client-image {
+        margin-left: 20%;
+    }
 }
