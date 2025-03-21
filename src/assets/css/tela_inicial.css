@@ -110,7 +110,7 @@ button {
     align-items: center;
     position: relative;
     left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-top: 5%;
 }
 
@@ -141,7 +141,7 @@ button {
 .mosaico {
     display: grid;
     grid-template-columns: 40% repeat(2, 1fr);
-    grid-template-rows: 50% 50%; 
+    grid-template-rows: 220px 200px; 
     column-gap: 5%;
     row-gap: 6%;
     margin: 0 auto;
@@ -149,7 +149,7 @@ button {
     height: fit-content;
     cursor: pointer;
     width: 80%;
-    height: 90%;
+    height: 100%;
     max-height: 400px;
 }
 
@@ -275,6 +275,9 @@ button {
         background-size: 68%;
     }
 
+    .frame_container_categoria{
+        margin-top: 10%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -299,20 +302,14 @@ button {
 @media (max-width: 670px) {
 
     .mosaico {
-        width: 70%;
-        height: 100%;
-        max-height: 450px;
-    }
-
-    .mosaico {
-        column-gap: 40px;
-        row-gap: 20px;
-    }
-
-    .mosaico {
         display: grid;
         grid-template-columns: repeat(2, 42%); 
         grid-template-rows: auto; 
+        width: 70%;
+        height: 100%;
+        max-height: 450px;
+        column-gap: 40px;
+        row-gap: 20px;
     }
     
     .itens1 {
@@ -580,6 +577,7 @@ button {
 
     .frame_container_categoria{
         left: 7.5%;
+        margin-top: 10%;
     }
 
     .frame_container_categoria h1{
