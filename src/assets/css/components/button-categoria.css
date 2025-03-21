@@ -31,6 +31,8 @@
     cursor: pointer;
     transition: 0.3s;
     background-color: white;
+        
+  
 
 }
 
@@ -38,11 +40,10 @@
 .button:hover {
     background-color: #16A18E;
     color: white;
-    
-    img {
-        color: white;
-
-    };
+}
+.button:hover  .container-imagem img{
+    color: white;
+    filter: brightness(0) invert(1);
 }
 
 /* Estilização do botão ativo */

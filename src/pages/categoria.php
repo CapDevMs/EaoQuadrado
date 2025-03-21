@@ -1,6 +1,6 @@
 <?php
-include(__DIR__ . '/../config/funcoes.php');
-$appName = get_app_name();
+    include('../config/funcoes.php');
+    $appName = get_app_name();
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -9,7 +9,7 @@ $appName = get_app_name();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?>  </title>
-    <?php get_css(['cliente/categoria']) ?>
+    <?php get_css(['base','style','cliente/categoria']) ?>
     <?php get_css_components() ?>
 </head>
 
@@ -20,12 +20,14 @@ $appName = get_app_name();
 
     <div class="container-video">
         <div class="video-celular">
-        <video autoplay muted loop>
-            <source src="../assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">        
-        </video>
-        <p>Computadores</p>
+            <video autoplay muted loop>
+                <source src="../assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">        
+            </video>
         </div>      
     </div> 
+    <div class="marcador-titulo"> 
+        <p class="titulo-celular"></p>
+    </div>
 
     <section class="section-categoria">
         <buttonCategoria></buttonCategoria>

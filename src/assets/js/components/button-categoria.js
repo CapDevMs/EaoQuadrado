@@ -1,4 +1,4 @@
-const buttonCategoria = ({ imagem, nome, link }) => {
+    const buttonCategoria = ({ imagem, nome, link }) => {
     return `
     <div class="button-categoria">
         <a href="${link}">
@@ -13,7 +13,6 @@ const buttonCategoria = ({ imagem, nome, link }) => {
     </div>
     `;
 };
-
 
 
 export default buttonCategoria;
