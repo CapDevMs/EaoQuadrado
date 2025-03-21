@@ -1,17 +1,16 @@
-/* Contêiner principal dos botões */
 .button-categoria {
-    display: inline-block;
-    width: 30px;
-    gap: 2%; /* Espaçamento entre os botões */
-    margin-top: 20px; /* Espaço após o banner */
-    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
-    margin-left: 2%;
-    text-decoration: none;
+    margin: 20px auto;
+    padding: 0 15px;
+    max-width: 1200px;
 }
+
 .button-categoria a {
-    text-decoration: none; /* Remove o sublinhado */
-    display: inline-block; /* Faz com que o link se comporte como um bloco */
+    text-decoration: none;
+    display: block;
 }
 
 /* Estilização dos botões */
@@ -20,10 +19,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 150PX;
-    height: 140px;
+    width: 110px;
+    height: 110px;
     border: 2px solid #16A18E;
-    border-radius: 10px;
+    border-radius: 15px;
     color: #16A18E;
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -31,9 +30,8 @@
     cursor: pointer;
     transition: 0.3s;
     background-color: white;
-        
-  
-
+    padding: 10px;
+    margin: 0;
 }
 
 /* Efeito ao passar o mouse */
@@ -41,8 +39,8 @@
     background-color: #16A18E;
     color: white;
 }
-.button:hover  .container-imagem img{
-    color: white;
+
+.button:hover .container-imagem img {
     filter: brightness(0) invert(1);
 }
 
@@ -52,38 +50,121 @@
     color: white;
 }
 
+.button.active .container-imagem img {
+    filter: brightness(0) invert(1);
+}
+
 /* Estilização da imagem dentro do botão */
 .button .container-imagem {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
 }
 
 /* Ajusta a imagem para não ultrapassar o espaço */
 .button .container-imagem .img-ButtonCategoria {
-    max-width: 100%;    
+    max-width: 100%;
     max-height: 100%;
-    align-items: center;
     object-fit: contain;
-    
 }
 
 /* Nome do produto */
 .button .container-nome-produto {
     text-align: center;
-    text-decoration: none;
-   
 }
 
 .button .container-nome-produto .nome-produto {
     font-size: 14px;
     font-weight: 500;
     color: inherit;
-    text-decoration: none;
+    margin: 0;
 }
-.nome-produto h3{
-    text-decoration: none;
+
+.nome-produto h3 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
 }
+
+/* Responsividade */
+@media screen and (max-width: 992px) {
+    .button-categoria {
+        gap: 8px;
+    }
+    
+    .button {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button-categoria {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    
+    .button {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .button .container-imagem {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .button .container-nome-produto .nome-produto {
+        font-size: 12px;
+    }
+    
+    .nome-produto h3 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .button-categoria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .button {
+        width: 100%;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .button-categoria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .button {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .button-categoria {
+        gap: 6px;
+    }
+    
+    .button .container-imagem {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .button .container-nome-produto .nome-produto {
+        font-size: 11px;
+    }
+    
+    .nome-produto h3 {
+        font-size: 11px;
+    }
+} 

@@ -25,28 +25,44 @@
             </video>
         </div>      
     </div> 
+    
     <div class="marcador-titulo"> 
         <p class="titulo-celular"></p>
     </div>
 
+    <!-- Botões de categoria -->
     <section class="section-categoria">
         <buttonCategoria></buttonCategoria>
     </section>
 
-    <div class ="sidebar">
-        <div class="marcas_preco">
+    <div class="content-container">
+        <!-- Sidebar com filtros -->
+        <div class="sidebar">
+            <!-- Filtro de marcas -->
+            <div class="marcas_preco">
                 <h1 class="marcas">Marcas</h1>
-                <input class="search-bar-marcas" placeholder="Buscar Produtos">
-                <button class="search-marca" alt="Pesquisar_Marca"></button>
+                <div class="search-group">
+                    <input class="search-bar-marcas" placeholder="Buscar Produtos">
+                    <button class="search-marca" alt="Pesquisar_Marca"></button>
+                </div>
+                
+                <!-- Filtro de preço -->
                 <h1 class="preco">Preço</h1>
-                <label for="minimo" class="label-min_max" id="min">Mínimo</label>
-                <label for="maximo" class="label-min_max" id="max">Máximo</label>
-                <input type="text" id="minimo" class="min_max">
-                <input type="text" id="maximo" class="min_max">
+                <div class="price-range-container">
+                    <div class="price-input-group">
+                        <label for="minimo" class="label-min_max">Mínimo</label>
+                        <input type="text" id="minimo" class="min_max">
+                    </div>
+                    <div class="price-input-group">
+                        <label for="maximo" class="label-min_max">Máximo</label>
+                        <input type="text" id="maximo" class="min_max">
+                    </div>
+                </div>
             </div>
             
+            <!-- Categorias -->
             <div class="sidebar__categoria">
-                <nav class ="sidebar__navigation">
+                <nav class="sidebar__navigation">
                     <h3>Categorias</h3>
                     <a href="">Celulares</a>
                     <a href="">Computadores</a>
@@ -56,6 +72,8 @@
                     <a href="">Games</a>
                 </nav>
             </div>
+            
+            <!-- Avaliações -->
             <h1 class="titulo">Avaliação dos Vendedores</h1>
             <div class="checkbox-container"> 
                 <input type="checkbox" name="tudo" id="tudo">
@@ -86,16 +104,18 @@
                     <img src="../assets/img/CATEGORIA/One_Star.png" alt="1 estrela">
                 </label>
             </div>
-    <main>
-        <card-produto class="row"></card-produto>
-                       
-    </main>
+        </div>  
 
-    <script type ="module" src="../assets/js/categoria.js?<?= time();?>"></script>
+        <!-- Produtos -->
+        <main>
+            <card-produto class="row"></card-produto>
+        </main>
+    </div>
+
+    <script type="module" src="../assets/js/categoria.js?<?= time();?>"></script>
     <script type="module" src="../assets/js/pagina_do_vendedor.js"></script>
     <script type="module" src="../assets/js/components/button-categoria.js"></script>
     <?php get_footer() ?>
     
 </body>
-
 </html>
