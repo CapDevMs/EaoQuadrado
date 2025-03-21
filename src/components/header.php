@@ -5,7 +5,7 @@ $base_url = get_base_url();
 <header class="header">
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href="<?=$base_url;?>/pages/index.php">
+            <a href="<?=$base_url;?>/index.php">
                 <img src="<?=$base_url;?>/assets/img/logo.png" class="logo" alt="Logo">
             </a>
         </div>
