@@ -150,7 +150,9 @@
     border-radius: 10PX;
     background-color: #00BFA5;
     color: white;
-    border-color: #00BFA5;
+    border-color: rgb(0, 0, 0,0);
+    box-shadow: none;
+    border: none;
 }
 
 
