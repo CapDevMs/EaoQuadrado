@@ -30,16 +30,15 @@ body {
 
 .container-geral{
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 50px 500px;
-    margin-left: 5%;
-    column-gap: 10%;
+    grid-template-columns: 20% 75%;
+    grid-template-rows: 100%;
+    margin: 0% auto;
+    column-gap: 5%;
     margin-bottom: 10%;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
+    width: 1400px;
     height: 100vh;
 }
+
 
 .menu-container {
     grid-column: 1;
@@ -80,6 +79,7 @@ body {
     gap: 20px;
     justify-items: center;
     align-items: center;
+    width: fit-content;
 }
 
 .chamados h1, button{
@@ -101,7 +101,6 @@ body {
     padding: 10px;
     background: white;
     position: relative;
-    bottom: 8%;
     border-radius: 20px;
 }
 
@@ -282,7 +281,7 @@ body {
 }
 
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
 
     .container-geral {
         margin-bottom: 15%
@@ -617,4 +616,4 @@ body {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-}
+} */
