@@ -440,6 +440,9 @@
 
 /* Sistema de Grid (colunas) responsividade - Tela é calculada como tendo 12 colunas */
 @media (min-width: 768px) {
+    .col-sm-hidden {
+        display: block;
+    }
     .col-md {
         flex: 1 0 0%;
     }
@@ -527,6 +530,9 @@
 
 
 @media (min-width: 992px) {
+    .col-sm-hidden, .col-md-hidden {
+        display: block;
+    }
     .col-lg {
         flex: 1 0 0%;
     }
