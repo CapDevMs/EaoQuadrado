@@ -1,278 +1,261 @@
-header,body{
-   margin: 0;
-   padding: 0;
-
-}
-/* video da categoria */
-.container-video{
-   display: flex;
-   position: relative;
-   z-index: 1000;
-
-   position: relative;
+.container-video {
    position: relative;
    width: 100%;
-   height: 40vw;
+   height: 50vh;
    overflow: hidden;
-   margin-top: 80px ;
-   background-color: #000;
+   margin-top: 95px;
+   z-index: 1;
 }
 
-.container-video video{
+.container-video video {
    position: absolute;
-   top: 50%;
+   top: 40%;
    left: 50%;
-   width: 100vw;
-   height: 100vh;
-   transform: translate(-50%,-50%);
+   width: 100%;
+   height: 100%;
+   transform: translate(-50%, -50%);
    object-fit: cover;
-   
+   object-position: center 10%;
 }
 
-/* botoes de categoria */
+/* Layout principal */
+.section-categoria {
+   margin: 20px 0;
+}
 
+main {
+   display: flex;
+   flex-direction: column;
+   margin-left: 260px; /* Ajustado para dar espaço à sidebar */
+}
 
-/* filtro */
+/* Sidebar e filtros */
+.sidebar {
+   position: absolute;
+   width: 240px;
+   padding: 0 10px;
+   left: 0;
+   top: calc(50vh + 95px); /* Posiciona abaixo do vídeo */
+}
 
-.marca_preco{
-   display: grid;
-   grid-row: repeat(4, auto);
-   grid-column: auto auto;
-} 
+/* Seção de marcas e preço */
+.marcas_preco {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+}
 
-
-.marcas{
-   grid-row: 1;
-   grid-column: 1;
+.marcas {
    font-size: 16px;
    font-weight: 600;
-   margin-top: 6%;
-   margin-left: 1.5%;
-   max-height: 25px;
-   max-width: 80px;
+   margin-top: 20px;
+   margin-bottom: 10px;
 }
 
 .search-bar-marcas {
-   grid-row: 2;
-   grid-column: 1;
    display: flex;
-   justify-content: center;
    align-items: center;
-   text-align: center;
-   gap: 34px;
    background-color: #BFC2C5;
    border: none;
    border-radius: 12px;
    height: 40px;
-   max-width: 237px;
-   margin-top: 1%;
-   margin-left: 1.5%;
+   width: 100%;
+   max-width: 220px;
+   padding: 0 10px;
+   margin-bottom: 5px;
 }
 
 .search-marca {
-   grid-row: 2;
-   grid-column: 2;
-   display: flex;
-   position: relative;
-   left: 12%;
-   top: -39px;
-   background-image: url("../img/pesquisar.svg");
+   position: absolute;
+   background-image: url("../../img/pesquisar.svg");
    background-repeat: no-repeat;
    background-position: center;
-   justify-content: center;
    background-color: transparent;
-   align-items: center;
    border: none;
    width: 34px;
    height: 34px;
+   right: 25px;
+   margin-top: -40px;
 }
 
-.preco{
-   grid-column: 1;
-   grid-row: 3;
+.preco {
    font-size: 16px;
    font-weight: 600;
-   position: relative;
-   max-width: 80px;
-   left: 7%;
-   margin-bottom: 1%;
+   margin-top: 20px;
+   margin-bottom: 10px;
 }
 
-.label-mim_max{
-   display: block;
-   grid-row: 4;
-   position: relative;
+/* Container de min/max */
+.price-range-container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-bottom: 20px;
 }
 
-#min {
-   grid-column: 1;
-   margin-left: 3.3%;
-
-}
-#max {
-   grid-column: 2;
-   margin-left: 3.50%;
+.price-input-group {
+   display: flex;
+   flex-direction: column;
 }
 
-.min_max{
-   position: relative;
-   place-items: center;
-   border: 1px solid black;
+.label-min_max {
+   font-size: 14px;
+   margin-bottom: 5px;
+}
+
+.min_max {
+   border: 1px solid #ccc;
    border-radius: 10px;
-   font-size: 16px;
+   font-size: 14px;
    text-align: center;
-   align-items: center;
-   justify-content: center;
-   max-width: 100px;
+   padding: 5px;
+   width: 100px;
 }
 
-#minimo {
-   display: block;
-   grid-row: 4;
-   grid-column: 1;
-   margin-left: 2%;
+/* Categorias */
+.sidebar__categoria {
+   margin: 20px 0;
 }
 
-#maximo {
-   display: block;
-   grid-row-start: 4;
-   grid-column: 2;
-   margin-left: 1%;
-   left: 8%;
-   top: -29px;
+.sidebar__navigation {
+   display: flex;
+   flex-direction: column;
 }
 
-.categorias{
-   display: grid;
-   grid-row: repeat(6, auto);
-}
-
-.categorias h3{
-   position: relative;
+.sidebar__navigation h3 {
    font-weight: 600;
    font-size: 16px;
-   margin-bottom: 0.60%;
-   max-width: 8%;
-   margin-left: 1.5%;
+   margin-bottom: 10px;
 }
 
-.categorias a{
-   position: relative;
+.sidebar__navigation a {
    text-decoration: none;
-   font-size: 16px;
+   font-size: 14px;
    color: black;
    cursor: pointer;
-   max-width: 8%;
-   max-height: 1%;
-   margin-left: 1.5%;
-   margin-bottom: 0.20%;
+   margin-bottom: 8px;
 }
 
-.titulo{
-   position: relative;
+.titulo {
    font-weight: 600;
    font-size: 16px;
-   margin-bottom: 1%;
-   margin-top: 1%;
-   font-size: 16px;
-   margin-left: 1.3%;
+   margin-top: 20px;
+   margin-bottom: 10px;
 }
 
-.checkbox-container{
+/* Checkbox de avaliações */
+.checkbox-container {
    display: grid;
-   background-size: cover;
-   max-width: 225px;
-   height: 203px;
-   grid-template-columns: repeat(2,30px) ;
-   grid-template-rows:  repeat(6,30px);
+   grid-template-columns: 30px 1fr;
+   grid-template-rows: repeat(6, 30px);
    align-items: center;
-   border-radius: 20px;
-   margin-left: 1.3%;
-   margin-bottom: 5%;
+   gap: 5px;
+   margin-bottom: 30px;
 }
 
-.checkbox-container input{
-   grid-column-start: 1;
+.checkbox-container input {
    appearance: none;
-   width: 16px;
-   height: 16px;
+   width: 18px;
+   height: 18px;
    border: 2px solid #00BFA5;
    border-radius: 50%;
    cursor: pointer;
    outline: none;
-   position: relative;
-   width: 19px;
-   height: 19px;
+   margin: 0;
 }
 
-.checkbox-container label{
-   grid-column-start: 2;
-   position: relative;
+.checkbox-container label {
+   display: flex;
+   align-items: center;
 }
 
-
-.checkbox-container img{
-   position: relative;
-   background-repeat: none;
-
+.checkbox-container img {
+   max-width: 110px;
+   height: auto;
 }
 
-.checkbox-container #star5,#star4 {
-   width: 120px;
-   height:20px;
-}
-
-.checkbox-container #star3,#star2,#star1{
-   width: 112px;
-   height:20px;
-}
-
-
-.checkbox-container input:checked{
+.checkbox-container input:checked {
    background-color: #00BFA5;
 }
 
-.products-grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   gap: 20px;
-   width: 100%;
-}
-
-.product-card {
-   background: white;
-   padding: 15px;
-   border-radius: 8px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   text-align: center;
-}
-
-.product-card img {
-   max-width: 100%;
-   border-radius: 5px;
-   margin-bottom: 10px;
-}
-
-.product-card h3 {
-   font-size: 18px;
-   margin-bottom: 5px;
-}
-
-.product-card p {
-   font-size: 14px;
-   color: #777;
-}
-
-.product-card button {
-   background: #28a745;
-   color: white;
-   border: none;
-   padding: 10px 15px;
-   border-radius: 5px;
-   cursor: pointer;
-   transition: all 0.3s;
-}
-
+/* Produtos */
 .product-card button:hover {
    background: #218838;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+   .container-video {
+      height: 40vh;
+      margin-top: 50px;
+   }
+
+   main {
+      margin-left: 0;
+      padding: 0 15px;
+      margin-top: 350px; /* Espaço para sidebar em mobile */
+   }
+
+   .sidebar {
+      position: relative;
+      width: 100%;
+      top: calc(40vh + 50px);
+      padding: 0 15px;
+   }
+
+   .search-bar-marcas {
+      max-width: 100%;
+   }
+
+   .price-range-container {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+   
+   .price-input-group {
+      width: 45%;
+   }
+   
+   .min_max {
+      width: 100%;
+   }
+   
+   .checkbox-container {
+      grid-template-columns: 30px 1fr;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .container-video {
+      height: 30vh;
+      margin-top: 30px;
+   }
+
+   .search-bar-marcas {
+      height: 35px;
+   }
+
+   .price-range-container {
+      flex-direction: column;
+   }
+   
+   .price-input-group {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 350px) {
+   .checkbox-container img {
+      max-width: 80px;
+   }
+   
+   .checkbox-container {
+      grid-template-rows: repeat(6, auto);
+      row-gap: 10px;
+   }
+   
+   .search-marca {
+      right: 15px;
+   }
 }
