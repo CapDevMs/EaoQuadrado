@@ -3,12 +3,13 @@ include(__DIR__ . '/../config/funcoes.php');
 $appName = get_app_name();
 ?>
 <!DOCTYPE html>
-<html lang="pt-BR">
+    <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <!-- <link rel = 'stylesheet' href="../assets/css/cliente/categoria.css"> -->
     <?php get_css(['cliente/categoria']) ?>
     <?php get_css_components() ?>
 </head>
@@ -16,7 +17,7 @@ $appName = get_app_name();
 
 <body>
     <?php get_header() ?>
-    <!-- <link rel = 'stylesheet' href="../assets/css/cliente/categoria.css"> -->
+
 
     <div class="container-video">
         <div class="video-celular">
