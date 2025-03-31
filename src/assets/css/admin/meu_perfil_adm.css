@@ -100,7 +100,7 @@ h4{
     gap: 5%;
     width: 100%;
     position: relative;
-    left: 20%;
+    
 }
 
 .frame-esquerda>img{
@@ -138,9 +138,7 @@ h4{
         margin-left: 65%;
     
     }
-    .frame-esquerda{
-        left: 15%;
-    }
+    
     .container-info{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -175,9 +173,7 @@ h4{
         margin-left: 65%;
     
     }
-    .frame-esquerda{
-        left: 10%;
-    }
+    
     .container-info{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -223,9 +219,7 @@ h4{
         margin-left: 64%;
     
     }
-    .frame-esquerda{
-        left: 6%;
-    }
+    
     .map{
         display: inline;
         position: relative;
