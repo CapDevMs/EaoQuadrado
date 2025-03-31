@@ -105,6 +105,8 @@ h4{
 
 .frame-esquerda>img{
     width: 60%;
+    display: flex;
+    align-self: center;
 }
 
 #salvar {
@@ -207,10 +209,12 @@ h4{
     main {
         display: flex;
         flex-direction: column;
+        align-items: center;
         
         
         
     }
+    
     #texto-perfil{
         display: flex;
         align-items: end;
@@ -222,12 +226,22 @@ h4{
     .frame-esquerda{
         left: 6%;
     }
-    
+    .map{
+        display: inline;
+        position: relative;
+        right: 5%;
+        width: 70%;
+        margin-left: 0%;
+        color: gray;
+        font-weight: 100;
+        padding-bottom: 5%;
+        padding-top: 1%;
+    }    
     #menu-lateral{
         display: none;
     }
     #salvar {
-        width: 15%;
+        width: 20%;
         height: 40px;
         border: none;
         border-radius: 5px;
@@ -251,3 +265,84 @@ h4{
 
     }
 }
+@media (max-width:610px){
+    .frame-esquerda{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        
+        
+        
+    }
+    
+    .frame-esquerda>img{
+        width: 40%;
+        margin-bottom: 5%;
+
+    }
+    
+    #texto-perfil{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 30%;
+        margin-left: 55%;
+        font-size: 12px;
+    
+    }
+    .map{
+        display: inline;
+        position: relative;
+        right: 5%;
+        width: 70%;
+        margin-left: 0%;
+        color: gray;
+        font-weight: 100;
+        padding-bottom: 5%;
+        padding-top: 1%;
+    }    
+    #menu-lateral{
+        display: none;
+    }
+    #salvar {
+        width: 25%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: #00bfa5;
+        color: white;
+        display: flex; 
+        margin-top: 2%;
+        margin-bottom: 3%;
+         
+    }
+    .container-info{
+        display: flex;
+        flex-direction: column;
+        /* row-gap: 9%; */
+        border: 1px;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+        border-radius: 20px;
+        padding: 2%;
+        width: 90%;
+        
+        
+    }
+    
+    }
+
+@media (max-width:435px){
+    #texto-perfil{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 55%;
+        margin-left: 45%;
+        font-size: 12px;
+    
+    }
+
+}
+   

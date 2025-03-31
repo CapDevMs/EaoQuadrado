@@ -19,6 +19,18 @@
     }
 
 }
+@media (max-width:590px){
+    .container-permissoes{
+        display: grid;
+        grid-template-columns: 7% 80%;
+        font-size: 12px;
+        color: #737070;
+        gap: 2%;
+        
+        
+    }
+
+}
 
 
 
