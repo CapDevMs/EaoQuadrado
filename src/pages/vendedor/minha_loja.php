@@ -8,19 +8,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['vendedor/minha_loja']) ?>
+    <?php get_css(['vendedor/minha_loja', 'style', 'base']) ?>
 </head>
 <body>
     <?php get_header() ?>
 
     <main class="row">
-        <asside class="sidebar col-3 col-sm-hidden">
-            <div class="container">
-                <span>Local para receber o sidebar</span>
-            </div>
+        <asside class="col-md-3 col-sm-hidden">
+            
+            <?php get_sidebar_vendedor('minha_loja'); ?>
+            
         </asside> 
 
-        <section class="col-9 col-sm-12">
+        <section class="col-md-9 col-sm-12">
             <div class="container">
             <h1 class="title ptb-1 pb-5">Edite Sua Loja</h1> 
                 

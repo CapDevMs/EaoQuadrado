@@ -1,4 +1,38 @@
 /* Css do Main */
+
+h6{
+
+    font-size: 14px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+h1{
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu-lateral {
+    background-color: white;
+    width: 100%; 
+    grid-column: 1; 
+    
+}
+
+#menu-lateral h3{
+    margin-left: 20%;
+    font-size: 23px;
+}
+
+#menu-lateral h1{
+    margin-left: 30%;
+    margin-top: 1%;
+    font-size: 16px;
+    color: gray
+    
+}
+
 .input {
     margin: auto;
     width: 95%;
@@ -63,4 +97,8 @@
     content: "";
     clear: both;
     display: table;
+}
+
+@media (max-width: 1350px){
+    
 }

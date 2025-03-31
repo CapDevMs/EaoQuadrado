@@ -85,6 +85,7 @@ label{
     opacity: 0.5;
 }
 
+<<<<<<< HEAD
 @media (max-width: 920px){
     .grid{
         display: flex;
@@ -95,4 +96,8 @@ label{
     #caixa{
         margin-top: 10%;
     }
+=======
+@media screen and (max-width: 700px){
+    #foto_tela_login{display: none;}
+>>>>>>> 2e4e6acd50b92988cb2ce3ed3a4c5d0b81b17742
 }

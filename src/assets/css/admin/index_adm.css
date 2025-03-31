@@ -1,0 +1,281 @@
+h6 {
+  font-size: 20px;
+  margin-top: 10%;
+  width: 40%;
+  margin-left: 20%;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  grid-gap: 7px;
+  width: 60%;
+  height: 80%;
+  margin-left: 20%;
+}
+
+
+.btn {
+  padding: 15px;
+  background-color: #F6F6F6;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 10px 6px 15px rgba(0, 0.5, 0, 0.2);
+}
+
+#btn1 {
+  grid-column: 1;
+  grid-row: span 2;
+  height: 460px;
+  width: 540px;
+}
+
+
+#btn2, #btn3 {
+  height: 231px;
+  width: 500px;
+}
+
+#btn4, #btn5 {
+  padding: 5px;
+}
+
+#btn4 {
+  grid-column: 1;
+  grid-row: 3;
+  width: 255px;
+  height: 240px;
+  margin-left: 50%;
+}
+
+#btn5 {
+  grid-column: 1;
+  grid-row: 3;
+  padding: 10px;
+  width: 255px;
+  height: 240px;
+}
+
+#btn6 {
+  grid-column: 2;
+  grid-row: 3;
+  height: 231px;
+  width: 500px;
+  margin-top: 5px;
+}
+
+.imagens {
+  width: 150px;
+}
+
+#botao1 {
+  width: 300px;
+}
+
+#botao5 {
+  margin-top: 5%;
+}
+
+.btn:hover {
+  background-color: #F9F9F9;
+}
+
+
+@media (max-width: 1600px) {
+  h6 {
+    margin-left: 20%;
+  }
+
+  .grid-container {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 1400px) {
+  h6 {
+    margin-left: 10%;
+  }
+
+  .grid-container {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 1300px) {
+  h6 {
+    margin-left: 5%;
+  }
+
+  .grid-container {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  h6 {
+    margin-left: 20%;
+  }
+
+  .grid-container {
+    margin-left: 20%;
+  }
+
+  #btn1 {
+    width: 365px;
+    height: 250px;
+  }
+
+  #btn2, #btn3 {
+    width: 255px;
+    height: 120px;
+  }
+
+  #btn4, #btn5 {
+    width: 175px;
+    height: 125px;
+  }
+
+  #btn6 {
+    width: 255px;
+    height: 120px;
+  }
+
+  .imagens {
+    width: 80px;
+  }
+
+  #botao1 {
+    width: 150px;
+  }
+
+  #btn4 {
+    margin-left: 52%;
+  }
+}
+
+
+@media (max-width: 900px) {
+  h6 {
+    margin-left: 20%;
+  }
+
+  .grid-container {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 750px) {
+  h6 {
+    margin-left: 10%;
+  }
+
+  .grid-container {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 700px) {
+  h6 {
+    margin-left: 10%;
+    font-size: 15px;
+  }
+
+  .grid-container {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 630px) {
+  #btn1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  #btn2, #btn3 {
+    width: 200px;
+    height: 85px;
+  }
+
+  #btn4, #btn5 {
+    width: 85px;
+    height: 85px;
+  }
+
+  #btn6 {
+    width: 200px;
+    height: 85px;
+  }
+
+  .imagens {
+    width: 60px;
+  }
+
+  #botao1 {
+    width: 150px;
+  }
+
+  #btn4 {
+    margin-left: 52%;
+  }
+}
+
+@media (max-width: 580px) {
+  #btn1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  #btn2, #btn3 {
+    width: 150px;
+    height: 70px;
+  }
+
+  #btn4, #btn5 {
+    width: 70px;
+    height: 75px;
+  }
+
+  #btn6 {
+    width: 150px;
+    height: 70px;
+  }
+
+  .imagens {
+    width: 45px;
+  }
+
+  #botao1 {
+    width: 100px;
+  }
+
+  #btn4 {
+    margin-left: 52%;
+  }
+}
+
+@media (max-width: 500px) {
+  h6 {
+    margin-left: 15%;
+  }
+
+  .grid-container {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 400px) {
+  h6 {
+    margin-left: 10%;
+  }
+
+  .grid-container {
+    margin-left: 10%;
+  }
+}

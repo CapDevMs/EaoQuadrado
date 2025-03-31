@@ -7,8 +7,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <title>EaoQuadrado</title>
     <?php get_css(['produto']) ?>
+    <?php get_css_components() ?>
 </head>
 <body>
     <?php get_header(); ?>
@@ -16,27 +17,9 @@
         <div class="container">
             <h1 class="map">Home / Bolsas / Bolsas</h1>
             <div class="grid-conteudo">
-                <div id="grid-produto">
-                    <div class="grid-small">
-                        <div class="img-small">
-                            <img src="../assets/img/tela-produtos/bolsa.png" >
-                        </div>
-                        <div class="img-small">
-                            <img src="../assets/img/tela-produtos/bolsa.png" >
-                        </div>
-                        <div class="img-small">
-                            <img src="../assets/img/tela-produtos/bolsa.png" >
-                        </div>
-                        <div class="img-small">
-                            <img src="../assets/img/tela-produtos/bolsa.png" >
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img-large">
-                            <img src="../assets/img/tela-produtos/bolsa.png">
-                        </div>
-                    </div>
-                    <div>
+                <div id="grid-produto" class="col-sm-6">
+                    <galeria-img></galeria-img>
+                    <div class="desc-produto">
                         <h2>Bolsa Gucci</h2>
                         <h1 class="preco">R$ 989,00</h1>
                         <div>
@@ -50,8 +33,13 @@
                         </div>
                         <div id="comprar">
                             <div id="btn-comprar"><a>Comprar</a></div>
-                            <div><img src="../assets/img/tela-produtos/carrinhooo.png""></div>
-                            <div><img src="../assets/img/tela-produtos/coracao.png""></div>
+                            <div id="icons-comprar">
+                                
+                            <button id =  'MandarCarrinho' value="gucci_bolsa_intense.png|Gucci intense|400,00">
+                                <img class = 'icon iconCarrinho' src="../assets/img/tela-produtos/carrinhooo.png">
+                            </button>
+                            <img src="../assets/img/tela-produtos/coracao.png"></div>
+                            
                         </div>
                         <div id="troca">
                             <img src="../assets/img/tela-produtos/Icon-return.png">
@@ -62,8 +50,10 @@
                             <fieldset id="loja">
                                 <img src="../assets/img/tela-produtos/loja.png">
                                 <a><span style="color: #16A18E;">Loja</span> Studio Center</a>
-                                <img src="../assets/img/tela-produtos/coracao.png" id="loja-coracao">
-                                <img src="../assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
+                                <div id="icons-loja">
+                                    <img src="../assets/img/tela-produtos/coracao.png" id="loja-coracao">
+                                    <img src="../assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
+                                </div>
                             </fieldset>
                         </div>
                         
@@ -101,7 +91,7 @@
                             <img src="../assets/img/tela-produtos/bolsa.png" >
                             <div class="icon">
                                 <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
-                                <img src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                                <img class = 'icon' src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
                             </div>
                         </div>
                         <div class="text-produto">
@@ -119,7 +109,7 @@
                             <img src="../assets/img/tela-produtos/bolsa.png" >
                             <div class="icon">
                                 <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
-                                <img src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                                <img class = 'icon' src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
                             </div>
                         </div>
                         
@@ -134,7 +124,7 @@
                             <img src="../assets/img/tela-produtos/bolsa.png" >
                             <div class="icon">
                                 <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
-                                <img src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                                <img class = 'icon' src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
                             </div>
                         </div>
                         <div class="text-produto">
@@ -148,7 +138,7 @@
                             <img src="../assets/img/tela-produtos/bolsa.png" >
                             <div class="icon">
                                 <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
-                                <img src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                                <img class = 'icon' src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
                             </div>
                         </div>
                         <div class="text-produto">
@@ -164,5 +154,6 @@
     <?php get_footer(); ?>    
     
 </body>
-<script src="../assets/js/produto.js"></script>
+<script type="module" src="../assets/js/produto.js?<?= time() ?>"></script>
+<script src="../assets/js/carrinho/apiCarrinho.js"></script>
 </html>

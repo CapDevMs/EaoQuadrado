@@ -1,0 +1,21 @@
+.grid-image{
+    display: flex;
+    flex-direction: row;
+}
+.img-small{
+    margin-bottom: 18%;
+}
+.img-small>img{
+    background-color: rgb(239, 239, 239);
+    width: 100%;
+}
+
+.img-large>img{
+    background-color: rgb(239, 239, 239);
+    width: 100%;
+    margin-left: 1%;
+    
+    
+    
+    
+}

@@ -1,0 +1,36 @@
+
+.container-permissoes{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    font-size: 14px;
+    color: #737070;
+    
+    
+}
+
+@media (max-width:1200px){
+    .container-permissoes{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        font-size: 12px;
+        color: #737070;
+        
+        
+    }
+
+}
+@media (max-width:590px){
+    .container-permissoes{
+        display: grid;
+        grid-template-columns: 7% 80%;
+        font-size: 12px;
+        color: #737070;
+        gap: 2%;
+        
+        
+    }
+
+}
+
+
+
