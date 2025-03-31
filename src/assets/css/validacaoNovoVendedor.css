@@ -1,0 +1,65 @@
+.roadMap1{
+    color: rgb(0, 0, 0,0.5);
+    margin: 1%;
+    font-weight: bolder;
+}
+.redutor{
+    max-width: max-content;
+}
+
+.roadMap{
+    margin-bottom: 1%;
+}
+
+.centralizar{
+    margin: 0 auto;
+}
+
+.corpo{
+    margin: 0 auto;
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+.menuLateral{
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+}
+
+.subCorpo{
+    max-width: 95%;
+}
+
+.subSubCorpo{
+    max-width: 95%;
+    margin: 0 auto;
+
+}
+
+.roadMap2{
+    font-weight: bolder;
+    margin: -0.8%;
+}
+
+.painel{
+    background-color: rgba(0, 0, 255, 0);
+    max-width: 95%;
+    border: 2px solid #BFC2C5;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px #BFC2C5;
+}
+
+.vendedor{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    max-width: 95%;
+    margin-top: 30px;
+}
+
+.logoEmpresa{
+    max-width: 117px;
+    max-height: 117px;
+
+    
+}
