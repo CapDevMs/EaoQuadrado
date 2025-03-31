@@ -4,12 +4,13 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['base', 'style', '/cliente/favoritos_cliente']) ?>
-    <title>Eao Quadrado</title>
+    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <?php get_css(['cliente/favoritos_cliente']) ?>
+    <?php get_css_components() ?>
 </head>
 <body>
     <?php get_header() ?>
@@ -123,5 +124,5 @@
 
     <?php get_footer() ?>
 </body>
-<script src="assets/js/script.js"></script>
+<script src="../../assets/js/script.js"></script>
 </html>

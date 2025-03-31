@@ -9,45 +9,6 @@ a {
     width: auto;
 }
 
-@media (max-width: 1200px) {
-    main {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .frame {
-        width: 90%; 
-        margin-left: 5%;  
-    }
-
-    .produto-favorito, .loja-favorita {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-}
-
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;  
-    }
-
-    .menuzin {
-        max-width: 100%;  
-    }
-
-    .frame {
-        margin-left: 0;
-        margin-top: 30px;
-    }
-
-    .produto-favorito, .loja-favorita {
-        grid-template-columns: 1fr; 
-    }
-
-    .but1 {
-        width: 100%;  
-    }
-}
-
-
 .menu-lateral {
     padding-top: 20px;
 }
@@ -61,7 +22,7 @@ a {
 .menuzin {
     display: flex;
     flex-direction: column;
-    max-width: 200px;
+    /* max-width: 200px; */
 }
 
 #micont {
@@ -215,3 +176,42 @@ a {
     margin-top:7%;
     margin-bottom: 2%;
 }
+
+@media (max-width: 1200px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .frame {
+        width: 90%; 
+        margin-left: 5%;  
+    }
+
+    .produto-favorito, .loja-favorita {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;  
+    }
+
+    .menuzin {
+        max-width: 100%;  
+    }
+
+    .frame {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .produto-favorito, .loja-favorita {
+        grid-template-columns: 1fr; 
+    }
+
+    .but1 {
+        width: 100%;  
+    }
+}
+
