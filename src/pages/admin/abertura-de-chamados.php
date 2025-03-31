@@ -14,30 +14,32 @@
     <?php get_header() ?>
 
     <main>
-        <a id="menu" href="index.php">Pagina Inicial</a>
+        <a id="menu" href="../../index.php">Pagina Inicial</a>
         <span>/</span>
-        <div id="sub-menu"><a href="contato.php">Contato</a></div>     
-        <div class="container">
-        <img src="../../assets/img/contato.jpg" alt="contato" id="contato">
-      
+        <a id="sub-menu" href="index_adm.php">Painel do administrador</a>
+        <span>/</span>
+        <a id="sub-menu1" href="abertura-de-chamados.php">Abrir chamado</a>
+
+        <?php get_sidebar_vendedor('cadastrar_produtos'); ?>
         <form action="#" method="post">
             <div class="titulo">
-                <label>Nome</label><br>
-                <textarea class="caixa" placeholder="John Doe" id="nome" rows="2"></textarea><br><br>
+                <label>Nome Completo</label><br>
+                <textarea class="caixa" placeholder="John" id="nome" rows="2"></textarea>
             </div>
             <div class="titulo">
-                <label>E-mail</label><br>
-                <textarea class="caixa" id="email" placeholder="johndoe@gmail.com" rows="2"></textarea><br><br>
+                <label>Contato</label><br>
+                <textarea class="caixa" id="email" placeholder="(67) 99999-9999" rows="2"></textarea>
             </div>
             <div class="titulo">
-                <label>Telefone/WhatsApp</label><br>
-                <textarea class="caixa" id="telefone" placeholder="(67) 99999-9999" rows="2"></textarea><br><br>
+                <label>Título</label><br>
+                <textarea class="caixa" id="telefone" placeholder="Erro ao cadastrar novo administrador" rows="2"></textarea>
             </div>
-            <div class="titulo">
-                <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea><br><br>
-            </div>
-            <button id="salvar" type="submit">Enviar Mensagem</button>
         </form>
+        <div class="descricao">
+                <label>Nome Completo</label>
+                <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea><br><br>
+        </div>
+        <button id="salvar" type="submit">Enviar Mensagem</button>
 
 
         <div id="modalImagem" class="modal">
