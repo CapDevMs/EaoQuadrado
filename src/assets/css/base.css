@@ -19,7 +19,7 @@
     /* Cores de texto e títulos */
 
     --cor-texto: #000000; /* Texto padrão - cor principal*/
-    --cor-texto-deselecionado: #737070; /* Texto que não estão selecionados pelo usuário - (exemplo: menu de filtros)*/
+    --cor-texto-deselecionado: #8B8B8B; /* Texto que não estão selecionados pelo usuário - (exemplo: menu de filtros)*/
     --cor-titulo-preço: #00EDCC; /* Cor de títulos preços  */
     --cor-titulo-categorias: #16A18E; /* Cor de títulos de categorias  */
     --cor-texto-botao: #ffffff; /* Cor texto botões verdes */
@@ -35,6 +35,10 @@
 
     /* Cor utilizada para estrela de favorito */
     --cor-fundo-estrela: #989898;
+
+    /* hovers */
+    --hover-botao-verde:#18b9a4;
+    --hover-texto-menu-lateral:#00BFA5;
 
     --bs-gutter-x: 0;
 }

@@ -26,7 +26,7 @@ main {
     padding-bottom: 4%;
 }
 #minha-conta{
-    color: black;
+    color: var(--cor-texto);
     width: 40%;
 }
 
@@ -34,7 +34,7 @@ main {
     display: inline;
     width: 100%;
     margin-left: 7%;
-    color: gray;
+    color: var(--cor-texto-deselecionado);
     font-weight: 100;
     padding-bottom: 5%;
     padding-top: 1%;
@@ -42,7 +42,7 @@ main {
 }
 .map a{
     text-decoration: none;
-    color: gray;
+    color: var(--cor-texto-deselecionado);
     padding-left: 1%;
  
 }
@@ -69,7 +69,7 @@ h4{
 #menu-lateral {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--cor-fundo);
     width: 100%; 
     margin-left: 7%;
     grid-row: 2;
@@ -84,14 +84,14 @@ h4{
 }
 
 #menu-lateral a:hover{
-    color: #00bfa5;
+    color: var(--cor-verde-principal);
 }
 
 #menu-lateral a{
     text-decoration: none;
     margin-top: 1%;
     font-size: 16px;
-    color: gray;
+    color: var(--cor-texto-deselecionado);
     
 }
 .frame-esquerda{
@@ -116,8 +116,8 @@ h4{
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-    background-color: #00bfa5;
-    color: white;
+    background-color: var(--cor-botao-primario);
+    color: var(--cor-texto-botao);
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -158,7 +158,6 @@ h4{
         display: inline;
         width: 100%;
         margin-left: 7%;
-        color: gray;
         font-weight: 100;
         padding-bottom: 5%;
         padding-top: 1%;
@@ -178,7 +177,6 @@ h4{
         display: grid;
         grid-template-columns: 50% 50%;
         border: 1px;
-        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
         border-radius: 20px;
         padding: 2%;
         width: 90%;
@@ -188,7 +186,6 @@ h4{
     #menu-lateral {
         display: flex;
         flex-direction: column;
-        background-color: white;
         width: 100%; 
         margin-left: 7%;
         grid-row: 2; 
@@ -226,7 +223,6 @@ h4{
         right: 5%;
         width: 70%;
         margin-left: 0%;
-        color: gray;
         font-weight: 100;
         padding-bottom: 5%;
         padding-top: 1%;
@@ -241,8 +237,6 @@ h4{
         border-radius: 5px;
         font-size: 18px;
         cursor: pointer;
-        background-color: #00bfa5;
-        color: white;
         display: flex; 
         margin-top: 2%;
          
@@ -290,7 +284,6 @@ h4{
         right: 5%;
         width: 70%;
         margin-left: 0%;
-        color: gray;
         font-weight: 100;
         padding-bottom: 5%;
         padding-top: 1%;
@@ -305,8 +298,6 @@ h4{
         border-radius: 5px;
         font-size: 18px;
         cursor: pointer;
-        background-color: #00bfa5;
-        color: white;
         display: flex; 
         margin-top: 2%;
         margin-bottom: 3%;
