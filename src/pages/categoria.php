@@ -19,8 +19,11 @@
 
 <body>
     <?php get_header() ?>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f6eba57c24fd8c0bfbd356158caeac150b645411
 
     <div class="container-video">
         <div class="video-celular">
@@ -35,9 +38,9 @@
     </div>
 
     <!-- Botões de categoria -->
-    <section class="section-categoria">
-        <buttonCategoria></buttonCategoria>
-    </section>
+
+    <buttonCategoria></buttonCategoria>
+  
 
     <div class="content-container">
         <!-- Sidebar com filtros -->
