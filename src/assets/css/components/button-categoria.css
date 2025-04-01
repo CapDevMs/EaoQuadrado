@@ -1,11 +1,13 @@
 .button-categoria {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Impede que os botões quebrem para a próxima linha */
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
     margin: 20px auto;
     padding: 0 15px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    overflow-x: auto; /* Adiciona scroll horizontal se necessário */
 }
 
 .button-categoria a {
@@ -32,6 +34,7 @@
     background-color: white;
     padding: 10px;
     margin: 0;
+    flex-shrink: 0; /* Impede que os botões encolham */
 }
 
 /* Efeito ao passar o mouse */
@@ -94,7 +97,7 @@
     .button-categoria {
         gap: 8px;
     }
-    
+
     .button {
         width: 100px;
         height: 100px;
@@ -104,23 +107,23 @@
 @media screen and (max-width: 768px) {
     .button-categoria {
         gap: 8px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap; /* Permite que os botões quebrem para a próxima linha */
     }
-    
+
     .button {
         width: 90px;
         height: 90px;
     }
-    
+
     .button .container-imagem {
         width: 35px;
         height: 35px;
     }
-    
+
     .button .container-nome-produto .nome-produto {
         font-size: 12px;
     }
-    
+
     .nome-produto h3 {
         font-size: 12px;
     }
@@ -128,23 +131,22 @@
 
 @media screen and (max-width: 576px) {
     .button-categoria {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: nowrap; /* Mantém os botões em uma linha */
         gap: 10px;
     }
-    
+
     .button {
-        width: 100%;
+        width: 100px;
         height: 90px;
     }
 }
 
 @media screen and (max-width: 450px) {
     .button-categoria {
-        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
-    
+
     .button {
         height: 80px;
     }
@@ -154,17 +156,17 @@
     .button-categoria {
         gap: 6px;
     }
-    
+
     .button .container-imagem {
         width: 30px;
         height: 30px;
     }
-    
+
     .button .container-nome-produto .nome-produto {
         font-size: 11px;
     }
-    
+
     .nome-produto h3 {
         font-size: 11px;
     }
-} 
+}
