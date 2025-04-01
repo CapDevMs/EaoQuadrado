@@ -3,7 +3,7 @@
     $appName = get_app_name();
 ?>
 <!DOCTYPE html>
-    <html lang="pt-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -19,11 +19,6 @@
 
 <body>
     <?php get_header() ?>
-<<<<<<< HEAD
-
-
-=======
->>>>>>> f6eba57c24fd8c0bfbd356158caeac150b645411
 
     <div class="container-video">
         <div class="video-celular">
