@@ -10,7 +10,7 @@ require('../../config/conexao.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/footer.css">
     <?php get_css(['ValidacaoNovoVendedor','base', 'style']) ?>
-    <title>Eao Quadrado</title>
+    <title>Validar novo Vendedor</title>
 </head>
  
 <body>
@@ -46,7 +46,14 @@ require('../../config/conexao.php');
                 <h4 class = 'redutor'>Validação novo Vendedor</h4>
         
                 <div class = 'painel'>
-                 <div class = 'vendedor'><img src="../../../src/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'><br><br><br></div>
+                 <div class = 'vendedor'>
+                    <img src="../../../src/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'>
+                    <div class = 'blocoTitulo'>
+                        <span style="font-size: 32px;" class = 'tituloLoja'>Nome da loja</span><br>
+                        <img src = '../../assets/img/Group.png' style="max-width: 12px; Margin-left:1%;"> Loja
+                    </div>
+                </div>
+
                 </div></div>
             
             </div>
