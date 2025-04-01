@@ -1,5 +1,6 @@
-.button-categoria {
+/* .secion-categoria {
     display: flex;
+<<<<<<< HEAD
     flex-direction: row;
     flex-wrap: nowrap; /* Impede que os botões quebrem para a próxima linha */
     gap: 10px;
@@ -8,20 +9,40 @@
     padding: 0 15px;
     /* max-width: 1200px; */
     overflow-x: auto; /* Adiciona scroll horizontal se necessário */
+=======
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+} */
+
+
+.button-categoria {
+    display: flex;
+    flex-direction: row;
+    /* flex-flow: row nowrap; */
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 20%;
+    padding: 0 15px;
+    max-width: 100%;
+    padding: 10px;
+>>>>>>> 0220034d33d154e10f1a55e15012dd95b4b1c7f2
 }
 
 .button-categoria a {
     text-decoration: none;
     display: block;
+    
 }
 
 /* Estilização dos botões */
 .button {
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction : column;
     align-items: center;
     justify-content: center;
-    width: 110px;
+    max-width: 110px;
     height: 110px;
     border: 2px solid #16A18E;
     border-radius: 15px;
@@ -32,7 +53,6 @@
     cursor: pointer;
     transition: 0.3s;
     background-color: white;
-    padding: 10px;
     margin: 0;
     flex-shrink: 0; /* Impede que os botões encolham */
 }
@@ -107,7 +127,11 @@
 @media screen and (max-width: 768px) {
     .button-categoria {
         gap: 8px;
+<<<<<<< HEAD
         flex-wrap: nowrap; /* Permite que os botões quebrem para a próxima linha */
+=======
+        flex-wrap: nowrap;
+>>>>>>> 0220034d33d154e10f1a55e15012dd95b4b1c7f2
     }
 
     .button {
