@@ -8,25 +8,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <!-- <link rel = 'stylesheet' href="../assets/css/cliente/categoria.css"> -->
     <?php get_css(['cliente/categoria']) ?>
-=======
     <title><?= $appName . ' - ' . $titulo ?? '' ?>  </title>
     <?php get_css(['base','style','cliente/categoria']) ?>
->>>>>>> b2fc4aea2c6055b82ad017684c0d222a59cc2a03
     <?php get_css_components() ?>
 </head>
 
 
 <body>
     <?php get_header() ?>
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> b2fc4aea2c6055b82ad017684c0d222a59cc2a03
+
 
     <div class="container-video">
         <div class="video-celular">
