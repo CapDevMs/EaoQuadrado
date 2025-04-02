@@ -7,7 +7,7 @@
 .roadmap {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    color: #333;
+    color: var(--cor-terciaria);
     max-width: fit-content;
     max-height: fit-content;
     margin-left: 8%;
@@ -16,7 +16,7 @@
 }
 
 .register_client {
-    background-color: #fff;
+    background-color: var(--cor-fundo);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
     border-radius: 20px;
     width: 1000px;
@@ -56,7 +56,7 @@
 }
 
 .form div button {
-    background-color: #f5f5f5;
+    background-color: var(--cor-fundo);
     width: 180px;
     padding: 12px;
     font-size: 16px;
@@ -80,7 +80,7 @@
 
 .date-group input[type="date"] {
     position: absolute;
-    background-color: #f5f5f5;
+    background-color: var(--cor-fundo);
     padding: 12px;
     font-size: 16px;
     width: 15%;
@@ -89,7 +89,7 @@
 .form input[type="email"],
 .form input[type="text"],
 .form input[type="password"] {
-    background-color: #f5f5f5;
+    background-color: var(--cor-fundo);
     padding: 12px;
     font-size: 16px;
     height: 60%;
@@ -116,7 +116,7 @@
 }
 
 .checkbox-container a{
-    color: #00BFA5;
+    color: var(--cor-principal);
     text-decoration: none;
     white-space: nowrap;
 }
@@ -157,7 +157,7 @@
 }
 
 .buttons-container .button-cancel {
-    background-color: #f44336;
+    background-color: var(--cor-botao-adm-vermelho);
     color: white;
     border: none;
     width: 113px;
@@ -167,7 +167,7 @@
 }
 
 .buttons-container .button-confirm {
-    background-color: #00bfa5;
+    background-color: var(--cor-botao-primario);
     color: white;
     border: none;
     width: 113px;
