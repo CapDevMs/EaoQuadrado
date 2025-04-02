@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <title>Abertura de Chamados - ADM</title>
     <?php get_css(['admin/abertura-de-chamados']) ?>
 </head>
 <body>
