@@ -15,24 +15,24 @@ $appName = get_app_name();
 </head>
 
 <body>
-    <?php //get_header(); ?>
+    <?php get_header(); ?>
 
-    <main class="row">
+    <main>
         <!-- <asside class="sidebar col-3 col-sm-hidden">
             <div class="container">
                 <span>Local para receber o sidebar</span>
             </div>
         </asside>  -->
 
-        <section class="col-12">
+        <section class="col-sm-12">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 pb-3">
-                        <img src="../assets/img/Banner_loja.png" class="img" alt="Banner da Loja">
+                    <div class="col-sm-12 pb-3">
+                        <img src="../assets/img/Banner_loja.png" class="img banner_loja" alt="Banner da Loja">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 pb-4">
+                    <div class="col-sm-12 pb-4">
                         <div class="card">
                             <div class="card-body justify-content-center ptb-2">
                                 <div class="col-2 justify-content-center">
@@ -62,7 +62,7 @@ $appName = get_app_name();
                                     <div class="row">
                                         <div class="col-12 text-right stars">
                                             <p class="mr-1">Avaliações: </p>
-                                            <p class="card_estrela_texto estrela_30">★★★★★</p>
+                                            <p class="card_estrela_texto estrela_35">★★★★★</p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -83,7 +83,7 @@ $appName = get_app_name();
                 </div>
 
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <div class="content-header-section">
                             <div class="block-green"></div>
                             <p class="text-primary">Nossos Produtos</p>
@@ -92,8 +92,10 @@ $appName = get_app_name();
                 </div>
 
                 <div class="row">
-                    <card-produto></card-produto>
+                    
                 </div>
+
+                <card-produto class="row"></card-produto>
 
             </div>
         </section>
@@ -101,7 +103,7 @@ $appName = get_app_name();
 
 
     <script type="module" src="../assets/js/pagina_do_vendedor.js?<?= time();?>"></script>
-    <?php //get_footer(); ?>
+    <?php get_footer(); ?>
 </body>
 
 </html>
