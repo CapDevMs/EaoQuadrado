@@ -46,3 +46,8 @@ function get_css_components() {
 function get_sidebar_vendedor($page) {
     include_once(__DIR__ . '/../components/sidebar.php');
 }
+
+
+function get_sidebar_adm($page) {
+    include_once(__DIR__ . '/../components/sidebar-adm.php');
+}

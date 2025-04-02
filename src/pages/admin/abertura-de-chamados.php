@@ -20,7 +20,7 @@
         <span>/</span>
         <a id="sub-menu1" href="abertura-de-chamados.php">Abrir chamado</a>
 
-        <?php get_sidebar_vendedor('cadastrar_produtos'); ?>
+        <?php get_sidebar_adm('abrir_chamado'); ?>
         <form action="#" method="post">
             <div class="titulo">
                 <label>Nome Completo</label><br>
@@ -48,10 +48,6 @@
                 <img src="../../assets/img/chamado-enviado.png" alt="Imagem de Sucesso" />
             </div>
         </div>
-
-            
-                
-            
 
 
     </main>

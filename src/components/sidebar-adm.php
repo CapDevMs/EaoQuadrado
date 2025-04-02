@@ -35,7 +35,7 @@
     <div class="pb-2">
         <h2 class="menu-lateral">Sistema</h2>
         <h2 class="barra_lateral">
-            <a href="<?= get_base_url(); ?>/pages/administrador/abrir_chamado.php" class="<?= $page == 'abrir_chamado' ? 'ativo' : '' ?>">Abrir Chamado</a>
+            <a href="<?= get_base_url(); ?>pages/admin/abertura-de-chamados.php" class="<?= $page == 'abrir_chamado' ? 'ativo' : '' ?>">Abrir Chamado</a>
         </h2>
         <h2 class="barra_lateral">
             <a href="<?= get_base_url(); ?>/pages/administrador/criar_categoria.php" class="<?= $page == 'criar_categoria' ? 'ativo' : '' ?>">Criar Categoria</a>
