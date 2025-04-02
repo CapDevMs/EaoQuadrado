@@ -7,10 +7,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abertura de Chamados - ADM</title>
+    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <?php get_css(['admin/abertura-de-chamados']) ?>
 </head>
-<body>
+<body>  
     <?php get_header() ?>
 
     <main>
@@ -36,7 +36,7 @@
             </div>
         </form>
         <div class="descricao">
-                <label>Nome Completo</label>
+                <label>Descrição do Chamado</label>
                 <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea><br><br>
         </div>
         <button id="salvar" type="submit">Enviar Mensagem</button>
@@ -45,7 +45,7 @@
         <div id="modalImagem" class="modal">
             <div class="modal-content">
                 <span class="fechar">&times;</span>
-                <img src="../../assets/img/mens-enviada.png" alt="Imagem de Sucesso" />
+                <img src="../../assets/img/chamado-enviado.png" alt="Imagem de Sucesso" />
             </div>
         </div>
 
@@ -61,8 +61,6 @@
         
         document.getElementById('salvar').addEventListener('click', function(event) {
             event.preventDefault(); 
-
-            
             document.getElementById('modalImagem').style.display = "block";
         });
 
@@ -73,7 +71,7 @@
 
         
         window.onclick = function(event) {
-            if (event.target == document.getElementById('modalImagem')) {
+            if (event.target == document.getElementById('modalImagem') || event.target.tagName === 'IMG') {
                 document.getElementById('modalImagem').style.display = "none";
             }
         };
