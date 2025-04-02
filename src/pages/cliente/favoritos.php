@@ -18,104 +18,102 @@
     <?php get_header() ?>
 
     <main>
-        <div class="menu-lateral">
+        <div class="sidebar-menu">
             <div class="roadmap">
-                <div>
-                    <ul class="mi-cont">
-                        <li class="mi-cont">
-                            <a href="../index.php" class="mi-cont">Home</a>
-                        </li>
-                        <li class="mi-cont">
-                            <p class="mi-cont">/</p>
-                        </li>
-                        <li class="mi-cont">
-                            <a href="#" class="mi-cont" id="favorito">Favoritos</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item">
+                        <a href="../../src/index.php" class="breadcrumb-link">Home</a>
+                    </li>
+                    <li class="breadcrumb-item-separador">/</li>
+                    <li class="breadcrumb-item">
+                        <a href="#" class="breadcrumb-link" id="favorite">Favoritos</a>
+                    </li>
+                </ul>
             </div>
+        </div>
 
-            <div class="container-principal">
-                <div class="fav-tittle">
+
+            <div class="main-container">
+                <div class="produtos-fav-tittle">
                     <h4 class="title">Produtos Favoritos</h4>
                     <a href="#"><button class="button-mover-TudoCarrinho">Mover tudo para o carrinho</button></a>
                 </div>
                 <div class="produto-favorito">
-                    <div class="container">
-                        <img class="edit-favorito" src="../../assets/img/computador.png">
-                        <a href="#">
-                            <img class="but-car" src="../../assets/img/carrinho2.svg">
-                        </a>
-                        <a href="#">
-                            <button class="but2">Adicione ao carrinho</button>
-                        </a>
-                            <h4 class="nome-produto">ASUS Notebook Gamer</h4>
-                            <h5 class="preco-prod">R$960</h5>
-                    </div>
-                    <div class="container">
+                    <div class="container-produto">
                         <img class="edit-favorito" src="../../assets/img/computador.png">
                         <a href="#">
                             <img class="button-carrinho" src="../../assets/img/carrinho2.svg">
                         </a>
                         <a href="#">
-                            <button class="but2">Adicione ao carrinho</button>
+                            <button class="btn-add-carrinho">Adicione ao carrinho</button>
+                        </a>
+                            <h4 class="nome-produto">ASUS Notebook Gamer</h4>
+                            <h5 class="preco-produto">R$960</h5>
+                    </div>
+                    <div class="container-produto">
+                        <img class="edit-favorito" src="../../assets/img/computador.png">
+                        <a href="#">
+                            <img class="button-carrinho" src="../../assets/img/carrinho2.svg">
+                        </a>
+                        <a href="#">
+                            <button class="btn-add-carrinho">Adicione ao carrinho</button>
                         </a>
                         <h4 class="nome-produto">ASUS Notebook Gamer</h4>
-                        <h5 class="preco-prod">R$960</h5>
+                        <h5 class="preco-produto">R$960</h5>
                     </div>
-                    <div class="container">
+                    <div class="container-produto">
                         <img class="edit-favorito" src="../../assets/img/computador.png">
                         <a href="#">
                             <img class="but-car" src="../../assets/img/carrinho2.svg">
                         </a>
                         <a href="#">
-                            <button class="but2">Adicione ao carrinho</button>
+                            <button class="btn-add-carrinho">Adicione ao carrinho</button>
                         </a>
                         <h4 class="nome-produto">ASUS Notebook Gamer</h4>
-                        <h5 class="preco-prod">R$960</h5>
+                        <h5 class="preco-produto">R$960</h5>
                     </div>
-                    <div class="container">
+                    <div class="container-produto">
                         <img class="edit-favorito" src="../../assets/img/computador.png">
                         <a href="#">
-                            <img class="but-car" src="../../assets/img/carrinho2.svg">
+                            <img class="button-carrinho" src="../../assets/img/carrinho2.svg">
                         </a>
                         <a href="#">
-                            <button class="button2">Adicione ao carrinho</button>
+                            <button class="btn-add-carrinho">Adicione ao carrinho</button>
                         </a>
                         <h4 class="nome-produto">ASUS Notebook Gamer</h4>
                         <h5 class="preco-produto">R$960</h5>
                     </div>
                     
                 </div>
-                <div class="fav-tittle">
+                <div class="lojas-fav-tittle">
                     <h4 class="title" id="loja-fav">Lojas Favoritas</h4>
                 </div>
                 <div class="lojas-favoritas">
-                    <div class="container">
+                    <div class="container-loja-fav">
                         <img class="edit-loja-favorito" src="../../assets/img/loja-favorita.png">
                         <a href="#">
-                            <button class="but2">Visitar loja</button>
+                            <button class="button-visitarLoja">Visitar loja</button>
                         </a>
                         <h4 class="nome-produto">Studio Center</h4>
                     </div>
-                    <div class="container">
+                    <div class="container-loja-fav">
                         <img class="edit-loja-favorito" src="../../assets/img/loja-favorita.png">
                         <a href="#">
-                            <button class="but2">Visitar loja</button>
+                            <button class="button-visitarLoja">Visitar loja</button>
                         </a>
                         <h4 class="nome-produto">Studio Center</h4>
                     </div>
-                    <div class="container">
+                    <div class="container-lojaFav">
                         <img class="edit-loja-favorito" src="../../assets/img/loja-favorita.png">
                         <a href="#">
-                            <button class="but2">Visitar loja</button>
+                            <button class="button-visitarLoja">Visitar loja</button>
                         </a>
                         <h4 class="nome-produto">Studio Center</h4>
                     </div>
-                    <div class="container">
+                    <div class="container-lojaFav">
                         <img class="edit-loja-favorito" src="../../assets/img/loja-favorita.png">
                         <a href="#">
-                            <button class="but2">Visitar loja</button>
+                            <button class="button-visitarLoja">Visitar loja</button>
                         </a>
                         <h4 class="nome-produto">Studio Center</h4>
                     </div>
