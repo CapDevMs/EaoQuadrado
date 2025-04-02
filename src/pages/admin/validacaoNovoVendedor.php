@@ -46,21 +46,38 @@ require('../../config/conexao.php');
                 <h4 class = 'redutor'>Validação novo Vendedor</h4>
         
                 <div class = 'painel'>
-                 <div class = 'vendedor' id = 'vendedor'>
-                     <div class = 'bloco1'><img src="../../../src/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'>
-                     <div class = 'blocoTitulo'>
-                        <span style="font-size: 32px;" class = 'tituloLoja'>Nome da loja</span>
-                        <div><img src = '../../assets/img/Group.png' style="max-width: 12px; Margin-left:1%;"> Loja</div>
-                    </div></div>
-                    <div class = 'blocoAcordeon'>
-                        <button class = 'abrirAcordeon' type="button" onclick="abrirAcordeon()"><img src="../../../src/assets/img/fakepngCarret-fotor-bg-remover-202504029435.png" alt="carret" class = 'carret'></button>
-                        <script>
-                            var element = document.getElementById('vendedor')
-                            function abrirAcordeon(){
-                                element.innerHTML = '<style>.vendedor{background-color:blue;}</style>'
-                            }
-                        </script>
+                 <div class = 'vendedor'>
+
+                    <div class = 'acordeonFechado'>
+                        <div class = 'bloco1'><img src="../../../src/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'>
+                        <div class = 'blocoTitulo'>
+                            <span style="font-size: 32px;" class = 'tituloLoja'>Nome da loja</span>
+                            <div><img src = '../../assets/img/Group.png' style="max-width: 12px; Margin-left:1%;"> Loja</div>
+                        </div></div>
+                        <div class = 'blocoAcordeon'>
+                            <button class = 'abrirAcordeon' type="button" onclick="abrirAcordeon(0)"><img src="../../../src/assets/img/fakepngCarret-fotor-bg-remover-202504029435.png" alt="carret" class = 'carret'></button>
+                        </div>
                     </div>
+                    <div class = 'acordeonAberto'>
+                        <button type ='button' onclick = 'fecharAcordeon(0)'><img src="../../../src/assets/img/controle_usb.png" alt="" style = 'max-width:120px;'></button>
+                    </div>
+                </div>
+                 <div class = 'vendedor' >
+
+                    <div class = 'acordeonFechado'>
+                        <div class = 'bloco1'><img src="../../../src/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'>
+                        <div class = 'blocoTitulo'>
+                            <span style="font-size: 32px;" class = 'tituloLoja'>Nome da loja</span>
+                            <div><img src = '../../assets/img/Group.png' style="max-width: 12px; Margin-left:1%;"> Loja2</div>
+                        </div></div>
+                        <div class = 'blocoAcordeon'>
+                            <button class = 'abrirAcordeon' type="button" onclick="abrirAcordeon(1)"><img src="../../../src/assets/img/fakepngCarret-fotor-bg-remover-202504029435.png" alt="carret" class = 'carret'></button>
+                        </div>
+                    </div>
+                    <div class = 'acordeonAberto'>
+                        <img src="../../../src/assets/img/controle_usb.png" alt="" style = 'max-width:120px;'>
+                    </div>
+
                 </div>
 
                 </div></div>
@@ -73,3 +90,36 @@ require('../../config/conexao.php');
     <?php get_footer() ?>
 </body>
 </html>
+
+<script>
+    function abrirAcordeon(buttonID){
+        console.log(buttonID);
+        const elementos = document.querySelectorAll('.vendedor');
+        console.log(elementos);
+        const elemento = elementos[buttonID];
+        console.log(elemento)
+        const elementoSelecionado1 = elemento.querySelector('.acordeonFechado');
+        const elementoSelecionado2 = elemento.querySelector('.acordeonAberto');
+        console.log(elementoSelecionado1)
+        console.log(elementoSelecionado2)
+
+        elementoSelecionado1.classList.add('removedor')
+        elementoSelecionado2.classList.add('adicionador')
+    }
+
+    function fecharAcordeon(buttonID){
+        console.log(buttonID);
+        const elementos = document.querySelectorAll('.vendedor');
+        console.log(elementos);
+        const elemento = elementos[buttonID];
+        console.log(elemento)
+        const elementoSelecionado1 = elemento.querySelector('.acordeonFechado');
+        const elementoSelecionado2 = elemento.querySelector('.acordeonAberto');
+        console.log(elementoSelecionado1)
+        console.log(elementoSelecionado2)
+
+        elementoSelecionado1.classList.remove('removedor')
+        elementoSelecionado2.classList.add('removedor')
+        elementoSelecionado2.classList.remove('adicionador')
+    }
+</script>
