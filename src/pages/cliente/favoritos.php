@@ -8,7 +8,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <!-- <title><?= $appName . ' - ' . $titulo ?? '' ?></title> -->
+    <title>E ao Quadrado - O melhor E-commerce</title>
     <?php get_css(['cliente/favoritos_cliente']) ?>
     <?php get_css_components() ?>
 </head>
@@ -33,7 +34,7 @@
                 </div>
             </div>
 
-            <div class="frame">
+            <div class="container-principal">
                 <div class="fav-tittle">
                     <h4 class="title">Produtos Favoritos</h4>
                     <a href="#"><button class="but1">Mover tudo para o carrinho</button></a>
@@ -88,7 +89,7 @@
                 <div class="fav-tittle">
                     <h4 class="title" id="loja-fav">Lojas Favoritas</h4>
                 </div>
-                <div class="loja-favorita">
+                <div class="lojas-favoritas">
                     <div class="container">
                         <img class="edit-loja-favorito" src="../../assets/img/loja-favorita.png">
                         <a href="#">
