@@ -39,9 +39,9 @@
                 <label>Descrição do Chamado</label>
                 <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea><br><br>
         </div>
+        
+        <input type="file" id="arquivo" name="arquivo" accept="image/*" multiple><br><br>
         <button id="salvar" type="submit">Enviar Mensagem</button>
-
-
         <div id="modalImagem" class="modal">
             <div class="modal-content">
                 <span class="fechar">&times;</span>
