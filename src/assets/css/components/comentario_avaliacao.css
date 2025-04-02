@@ -1,0 +1,65 @@
+.container-comentarios{
+    width: 100%;
+    margin: auto;
+}
+
+.comentario{
+    width: 98%;
+    height: 11rem;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    margin-bottom: 2%;
+}
+
+.avaliacao-content{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+#icon-cliente{
+    width: 8%;
+}
+
+.nome-cliente{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#estrela-comentario{
+    width: 8%;
+}
+
+
+#estrela-comentario{
+    width: 10%;
+    height: 100%;
+}
+
+
+.comentario-cliente{
+    width: 95%;
+    margin-left: 2%;
+}
+
+@media (max-width:1290px){
+
+    #estrela-comentario{
+        width: 11%;
+    }
+}
+
+@media (max-width:950px){
+
+    #estrela-comentario{
+        width: 13%;
+    }
+
+    .nome-cliente{
+        font-size: 18px;
+    }
+
+    #comentario-cliente{
+        font-size: 20%;
+    }
+}
