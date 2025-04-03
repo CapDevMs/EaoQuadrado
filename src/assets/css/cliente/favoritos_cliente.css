@@ -1,12 +1,12 @@
 @import url("base.css");
+
 a {
     text-decoration: none;
     width: auto;
 }
 
 .sidebar-menu {
-    padding: 20px;
-    color: none;
+    padding: 10px;
 }
 
 .roadmap {
@@ -17,19 +17,18 @@ a {
 .breadcrumb-list {
     list-style: none;
     display: flex;
-    gap: 5px; /* Espaçamento entre os itens */
     margin: 0;
     padding: 0;
 }
 
 .breadcrumb-item {
     font-size: 14px;
-    color: var(--cor-texto-deselecionado)
+    color: var(--cor-texto-deselecionado);
 }
 
 .breadcrumb-item-separator {
     font-size: 14px;
-    color: #000;
+    color: #919191;
 }
 
 .breadcrumb-link {
@@ -38,192 +37,109 @@ a {
     transition: color 0.3s ease;
 }
 
-/* .breadcrumb-link:hover {
-    color: #0056b3;
-} */
-
 .main-container {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    box-sizing: border-box;
-    margin-left: 16%;
-    margin-top: 2%;
-    margin-bottom: 10%;
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5%;
 }
 
-.produtos-fav-tittle {
-    padding-left: 60px;
-    padding-right: 53px;
-    padding-top: 25px;
+.produtos-fav-tittle, .lojas-fav-tittle {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    padding: 20px 0;
 }
 
 .title {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
 }
 
-.produto-favorito {
-    position: relative;
+.produto-favorito, .lojas-favoritas {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5%;
-    margin-left: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
 }
 
-.container-produto {
-    position: relative;
-    display: inline-block;
+.container-produto, .container-loja-fav {
     text-align: center;
+    width: 200px;
+    height: 280px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.edit-favorito {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
+/* .button-carrinho{
+    height: 2px;
+    width: auto;
+    padding: 2px;
+} */
+
+.edit-favorito, .edit-loja-favorito {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 180px;
+    max-height: 180px;
+    height: auto;
+    border-radius: 10px;    
     background-color: #fafafa;
-    padding: 30px;
+    padding: 20px;
+    object-fit: contain;
 }
 
 .button-carrinho {
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    height: 25px;
-    width: 25px;
-    left: 90%;
-    top: 5%;
+    position: relative;
+    right: 11px;
+    width: fit-content;
+    height: auto;
+    bottom: 291px;
+    left: 106px;
     cursor: pointer;
 }
 
-.btn-add-carrinho {
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    bottom: -10%;
-    cursor: pointer;
-    background-color: #49BF9E;
-    border: none;
-    border-radius: 0px 0px 10px 10px;
-    color: white;
-}
-
-.nome-produto {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.preco-produto {
-    font-size: 16px;
-    color: #49BF9E;
-    margin-top: 5px;
-}
-
-.lojas-fav-tittle {
-    padding-left: 60px;
-    padding-top: 25px;
-    margin-top: 7%;
-    margin-bottom: 2%;
-}
-
-.lojas-favoritas {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5%;
-    margin-left: 50px;
-}
-
-.container-loja-fav {
-    text-align: center;
-}
-
-.edit-loja-favorito {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
-    background-color: #fafafa;
-    padding: 20px;
-}
-
-.button-visitarLoja {
-    display: inline-block;
-    margin-top: 10px;
+.btn-add-carrinho, .button-visitarLoja {
+    width: 100%;
+    max-width: 180px;
+    padding: 10px;
     cursor: pointer;
     background-color: #49BF9E;
     border: none;
     border-radius: 10px;
     color: white;
-    padding: 10px 20px;
+    font-weight: bold;
 }
 
-@media (max-width: 1200px) {
-    .main-container {
-        width: 90%;
-        margin-left: 5%;
-    }
+.nome-produto {
+    font-size: 16px;
+    margin-top: 10px;
+}
 
-    .produto-favorito, .lojas-favoritas {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.preco-produto {
+    font-size: 18px;
+    color: #49BF9E;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
     .main-container {
-        margin-left: 0;
-        margin-top: 30px;
+        width: 100%;
     }
-
     .produto-favorito, .lojas-favoritas {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 350px) {
-    .main-container {
-        margin: 0;
-        width: 100%;
-    }
-
+@media (max-width: 480px) {
     .produto-favorito, .lojas-favoritas {
         grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .container-produto, .container-loja-fav {
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .edit-favorito, .edit-loja-favorito {
-        width: 150px;
-        height: 150px;
-        border-radius: 10px;
-    }
-
-    .btn-add-carrinho, .button-visitarLoja {
-        width: 150px;
-        height: 40px;
-        font-size: 12px;
-    }
-
-    .nome-produto {
-        font-size: 14px;
-    }
-
-    .preco-produto {
-        font-size: 14px;
-        color: #49BF9E;
-    }
-
-    .title {
-        font-size: 16px;
     }
 }
