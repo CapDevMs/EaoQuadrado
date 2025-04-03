@@ -286,9 +286,11 @@
 
 @media (max-width: 768px) {
     .register_client {
-        width: 80%;
-        height: 950px;
-        margin-left: 12%;
+        width: 50%;
+        height: max-content;
+        max-height: none;
+        margin: 0 auto;
+        margin-bottom: 20%;
     }
 
     .register_client label input { 
@@ -302,16 +304,26 @@
 
     .client-image {
         width: 120px;
+        margin: 0 auto;
     }
 
     .form {
         width: 95%;
-        grid-template-columns: repeat(2, 50%);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .form-container {
+        margin-left: 0;
     }
 
     .form-container label {
         font-size: 12px;
     }
+
 
     .form-container input,
     .form-container input[type="date"] {
@@ -319,8 +331,8 @@
     }
 
     .date-group input[type="date"] {
-        width: 25%;
-        height: 7.2%;
+        width: 41%;
+        height: 9%;
     }
 
     .form input[type="email"],
@@ -328,6 +340,12 @@
     .form input[type="password"] {
         font-size: 12px;
         height: 50%;
+        width: 100%;
+    }
+
+    .date-group {
+        position: relative;
+        margin-bottom: 12%;
     }
 
     .date-group input{
@@ -335,22 +353,19 @@
     }
 
     .terms-container {
-        margin-left: 18%;
-    }
-
-    .buttons-container {
-        margin-left: 30%;
+        margin-left: 0;
     }
 
     .checkbox-container {
-        margin-left: 10%;
-        
+        margin-left: 0;
     }
+
 
     .checkbox-container input {
         width: 15px;
         height: 15px;
     }
+
 
     .content {
         margin-left: 20%;
@@ -365,16 +380,13 @@
         font-size: 10px;
         width: 90px;
     }
+
+    .buttons-container {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 650px) {
-    .terms-container{
-        margin-left: 5%;
-    }
-    .buttons-container{
-        margin-left: 10%;
-    }
-
     .buttons-container .button-cancel, .buttons-container .button-confirm {
         font-size: 12px;
         width: 90px;
@@ -406,10 +418,8 @@
 @media (max-width: 430px) {
     .register_client {
         width: 75%;
-        height: 850px;
         margin-left: 0;
         padding: 10px;
-        margin-left: 15%;
     }
 
     .register_client h2 {
