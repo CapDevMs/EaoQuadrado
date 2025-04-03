@@ -35,5 +35,11 @@ $base_url = get_base_url();
                 </a>
             </li>
         </ul>
+        <div class="header-mobile">
+            <a href="">
+                <img src="<?=$base_url;?>/assets/img/menu-mobile.svg" alt="Menu">
+            </a>
+
+        </div>
     </nav>
 </header>
