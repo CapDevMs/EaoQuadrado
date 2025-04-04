@@ -30,96 +30,40 @@
                     </li>
                 </ul>
             </div>
-        </div>
 
-
-            <div class="main-container">
-                <div class="produtos-fav-tittle">
-                    <h4 class="title">Produtos Favoritos</h4>
-                    <a href="#"><button class="button-mover-TudoCarrinho">Mover tudo para o carrinho</button></a>
+    <div class="card-produto col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card-body pb-1">
+            <div class="row">
+                <div class="col-sm-11">
+                    <a href="${link}">
+                        <img class="img-produto" src="../../assets/img/computador.png">
+                    </a>
                 </div>
-                <div class="produto-favorito">
-                    <div class="container-produto">
-                        <img class="edit-favorito" src="../../assets/img/computador.png">
-                        <a href="#">
-                            <img class="button-carrinho" src="../../assets/img/carrinho2.svg">
-                        </a>
-                        <a href="#">
-                            <button class="btn-add-carrinho">Adicione ao carrinho</button>
-                        </a>
-                            <h4 class="nome-produto">ASUS Notebook Gamer</h4>
-                            <h5 class="preco-produto">R$960</h5>
-                    </div>
-                    <div class="container-produto">
-                        <img class="edit-favorito" src="../../assets/img/computador.png">
-                        <a href="#">
-                            <img class="button-carrinho" src="../../assets/img/carrinho2.svg">
-                        </a>
-                        <a href="#">
-                            <button class="btn-add-carrinho">Adicione ao carrinho</button>
-                        </a>
-                        <h4 class="nome-produto">ASUS Notebook Gamer</h4>
-                        <h5 class="preco-produto">R$960</h5>
-                    </div>
-                    <div class="container-produto">
-                        <img class="edit-favorito" src="../../assets/img/computador.png">
-                        <a href="#">
-                            <img class="but-car" src="../../assets/img/carrinho2.svg">
-                        </a>
-                        <a href="#">
-                            <button class="btn-add-carrinho">Adicione ao carrinho</button>
-                        </a>
-                        <h4 class="nome-produto">ASUS Notebook Gamer</h4>
-                        <h5 class="preco-produto">R$960</h5>
-                    </div>
-                    <div class="container-produto">
-                        <img class="edit-favorito" src="../../assets/img/computador.png">
-                        <a href="#">
-                            <img class="button-carrinho" src="../../assets/img/carrinho2.svg">
-                        </a>
-                        <a href="#">
-                            <button class="btn-add-carrinho">Adicione ao carrinho</button>
-                        </a>
-                        <h4 class="nome-produto">ASUS Notebook Gamer</h4>
-                        <h5 class="preco-produto">R$960</h5>
-                    </div>
-                    
-                </div>
-                <div class="lojas-fav-tittle">
-                    <h4 class="title" id="loja-fav">Lojas Favoritas</h4>
-                </div>
-                <div class="lojas-favoritas">
-                    <div class="container-loja-fav">
-                        <img class="edit-loja-favorito" src="../../assets/img/loja-favorita.png">
-                        <a href="#">
-                            <button class="button-visitarLoja">Visitar loja</button>
-                        </a>
-                        <h4 class="nome-produto">Studio Center</h4>
-                    </div>
-                    <div class="container-loja-fav">
-                        <img class="edit-loja-favorito" src="../../assets/img/loja-favorita.png">
-                        <a href="#">
-                            <button class="button-visitarLoja">Visitar loja</button>
-                        </a>
-                        <h4 class="nome-produto">Studio Center</h4>
-                    </div>
-                    <div class="container-lojaFav">
-                        <img class="edit-loja-favorito" src="../../assets/img/loja-favorita.png">
-                        <a href="#">
-                            <button class="button-visitarLoja">Visitar loja</button>
-                        </a>
-                        <h4 class="nome-produto">Studio Center</h4>
-                    </div>
-                    <div class="container-lojaFav">
-                        <img class="edit-loja-favorito" src="../../assets/img/loja-favorita.png">
-                        <a href="#">
-                            <button class="button-visitarLoja">Visitar loja</button>
-                        </a>
-                        <h4 class="nome-produto">Studio Center</h4>
-                    </div>
-                    
+                <div class="col-sm-1 pt-2">
+                    <a href="#">
+                        <img class="icone-carrinho" src="../../assets/img/carrinho2.svg"></img>
+                    </a>
                 </div>
             </div>
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="col-sm-6">
+                    <a href="#" class="btn-add-carrinho">Adicionar ao Carrinho</a>
+                </div>
+                    <div class="container-nome-produto">
+                        <h3 class="nome-produto">ASUS Notebook Gamer</h3>
+                    </div>
+                    <div class="container-preco-produto">
+                        <h3 class="preco-produto">R$960</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
     </main>
 
     <?php get_footer() ?>
