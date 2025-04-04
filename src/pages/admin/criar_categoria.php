@@ -40,7 +40,27 @@ require_once('../../config/funcoes.php');
                 <a href="#">Editar Sistema</a>
             </div>
 
-            div.
+            <div class="create-container">
+                <div class="img-container">
+                    <img src="<?= get_base_url(); ?>/assets/img/image_color_icon.svg" alt="">
+                    <p>Categoria</p>
+                </div>
+
+                <div class="input-label">
+                    <div class="column-group1">
+                        <label for="name-categoria">Nome da Categoria</label>
+                        <input type="text" class="name-categoria">
+                    </div>
+                    
+                    <div class="column-group2">
+                        <h1>Inserir Imagem</h1>
+                        <div class="frame_file"> 
+                            <input type="file" name="imagens[]" multiple>
+                            <label for="file">Selecionar Arquivo</label> 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
