@@ -283,8 +283,7 @@
 
 @media (max-width: 768px) {
     .register_client {
-        width: max-content;
-        max-width: none;
+        max-width: 410px;
         height: max-content;
         max-height: none;
         margin: 0 auto;
@@ -381,5 +380,12 @@
 
     .buttons-container {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .register_client {
+        max-width: none;
+        width: max-content;
     }
 }

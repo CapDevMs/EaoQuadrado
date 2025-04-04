@@ -310,21 +310,16 @@
 @media (max-width: 768px) {
 
     #loja, #pessoal {
-        max-width: 310px;
-    }
-
-    #loja {
-        max-height: none;
-    }
-
-    #pessoal {
+        max-width: 410px;
         width: 100%;
+        max-height: none;
+        height: max-content;
     }
 
     .shop-container {
         grid-template-columns: 1fr;
-        width: 90%;
-        margin: 2% auto;
+        width: 100%;
+        margin: 0 auto 0 0;
         justify-content: center;
         row-gap: 10px;
     }
@@ -382,12 +377,12 @@
     }
     
     .terms {
-        margin-Right: 45%;
         font-size: 12px;
     }
 
     .label-container {
-        width: 270px;
+        width: 100%;
+        row-gap: 15px;
     }
 
     
@@ -408,8 +403,11 @@
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 475px) {
 
+    #loja, #pessoal {
+        max-width: 310px;
+    }
 
     .label-container label {
         font-size: 12px;
