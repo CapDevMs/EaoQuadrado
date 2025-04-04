@@ -1,7 +1,8 @@
 @import url("../css/cadastro_cliente.css");
+@import url("../base.css");
 
 .register {
-    background-color: #fff;
+    background-color: var(--cor-fundo);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
     border-radius: 20px;
     width: 1000px;
@@ -18,15 +19,6 @@
     height: fit-content;
     margin: 0 auto;
     margin-bottom: 5%;
-    margin-left: 24%;
-}
-
-#pessoal {
-    max-height: 1050px;
-    margin-bottom: 5%;
-    margin: 0 auto;
-    margin-bottom: 5%;
-    margin-left: 24%;
 }
 
 .register_shop h3 {
@@ -38,11 +30,12 @@
     margin-left: 24%;
 }
 
+
 .checkbox-container2 {
     display: grid;
     grid-template-columns: 5% 100%;
-    gap: 10px;
-    background-color: #f5f5f5;
+    gap: 14px;
+    background-color: var(--cor-fundo-img-produtos);
     padding: 25px 50px;
     border-radius: 10px;
     width: auto;
@@ -59,6 +52,10 @@
     margin-right: 5px;
 }
 
+#vendedor_form {
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .checkbox2:checked {
     background-color: gray;
 }
@@ -70,10 +67,10 @@
 
 .shop-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 45%);
     grid-template-rows: repeat(2, auto);
     width: 95%;
-    margin: 2% auto;
+    margin: 2% auto 5% 2%;
     justify-content: center;
     row-gap: 30px;
     column-gap: 5%;
@@ -95,30 +92,14 @@
 }
 
 .label-container input {
-    width: 90%;
+    height: 60%;
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
     border-radius: 25px;
     border: 1px solid #ccc;
 }
 
-.date-group input[type="date"] {
-    position: absolute;
-    background-color: #f5f5f5;
-    padding: 12px;
-    font-size: 16px;
-    width: 15%;
-}
-
-.label-container input[type="email"],
-.label-container input[type="text"],
-.label-container input[type="tel"],
-.label-container input[type="password"] {
-    background-color: #f5f5f5;
-    padding: 12px;
-    font-size: 16px;
-    width: 405px;
-    height: 48.59px;
-}
 
 .categorias {
     grid-column: 1;
@@ -138,7 +119,7 @@
 .frame_file {
     grid-column: 2;
     grid-template-rows: 2;
-    background-color: #f5f5f5;
+    background-color: var(--cor-fundo-img-produtos);
     color: gray;
     text-align: center;
     padding: 15px;
@@ -198,7 +179,7 @@
 }
 
 .terms-container a {
-    color: #00BFA5;
+    color: var(--cor-verde-principal);
     text-decoration: none;
 }
 
@@ -221,12 +202,12 @@
 }
 
 .button-cancel {
-    background-color: #f44336;
+    background-color: var(--cor-botao-adm-vermelho);
     color: white;
 }
 
 .button-confirm {
-    background-color: #00bfa5;
+    background-color: var(--cor-botao-primario);
     color: white;
 }
 
@@ -236,86 +217,16 @@
 }
 
 
+
+.register_client {
+    height: max-content;
+}
+
+
+
 @media (max-width: 1050px) {
     #pessoal #loja {
         margin-left: 8%;
-    }
-}
-
-@media (max-width: 992px) {
-    .input_label input[type="email"],
-    .input_label input[type="text"],
-    .input_label input[type="tel"],
-    .input_label input[type="password"] {
-        width: 90%;
-        font-size: 14px;
-    }
-
-    .subtitle {
-        font-size: 14px;
-    }
-
-    .terms {
-        font-size: 14px;
-    }
-
-
-
-    .button-confirm, .button-cancel{
-        width: 80px;
-        height: 40px;
-        font-size: 12px;
-    }
-
-    .buttons-cont {
-        margin-left: 25%;
-    }
-}
-
-@media (max-width: 768px) {
-    .input_label input[type="email"],
-    .input_label input[type="text"],
-    .input_label input[type="tel"],
-    .input_label input[type="password"] {
-        font-size: 12px;
-        height: 33.5px;
-    }
-
-    .form-container input[type="date"] {
-        font-size: 12px;
-        width: 30%;
-        height: 33.5px;
-        padding: 10px;
-    }
-
-    .register_shop h1 {
-        font-size: 16px;
-        width: fit-content;
-    }
-
-    .buttons-cont {
-        margin-left: 10%;
-    }
-
-    .button-confirm, .button-cancel{
-        width: 70px;
-        height: 35px;
-        font-size: 12px;
-    }
-    
-
-}
-
-@media (max-width: 1000px) and (min-width: 425px) {
-    .register_client {
-        width: 85%;
-        margin: 3% auto;
-        padding: 20px;
-    }
-
-    .form-container input[type="date"] {
-        width: 20%;
-        padding: 10px;
     }
 
     .register_client h2 {
@@ -345,13 +256,10 @@
         width: 100%;
     }
 
-    .input_label label {
-        font-size: 80%;
+    .input_label input {
+        width: 88%;
     }
 
-    .input_label input {
-        width: 80%;
-    }
 
     .checkbox-container2 {
         padding: 20px;
@@ -369,36 +277,69 @@
     .checkbox-container2 label {
         font-size: 100%;
     }
-}
 
-@media (max-width: 650px) {
-    .terms {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 550px) {
-    .form-container input[type="date"] {
-        width: 120px;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 1000px) and (min-width: 425px) {
     .checkbox-container label {
         font-size: 100%;
         white-space: nowrap;
     }
+    
 }
 
-@media (max-width: 450px) {
+@media (max-width: 992px) {
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .terms {
+        font-size: 14px;
+    }
+
+
+
+    .button-confirm, .button-cancel{
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .buttons-cont {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #loja, #pessoal {
+        max-width: 410px;
+        width: 100%;
+        max-height: none;
+        height: max-content;
+    }
+
     .shop-container {
         grid-template-columns: 1fr;
-        width: 90%;
-        margin: 2% auto;
+        width: 100%;
+        margin: 0 auto 0 0;
         justify-content: center;
         row-gap: 10px;
     }
+
+    .input_label input {
+        width: 100%;
+    }
+
+    .input_label label{
+        font-size: 12px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .checkbox-container2 p{
+        font-size: 12px;
+    }
+
 
     #grid1 {
         grid-row: 1;
@@ -416,6 +357,58 @@
         grid-row: 4;
     }
 
+    .register_shop h1 {
+        font-size: 16px;
+        width: fit-content;
+    }
+
+    .buttons-cont {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .button-confirm, .button-cancel{
+        width: 70px;
+        height: 35px;
+        font-size: 12px;
+    }
+    
+    .terms {
+        font-size: 12px;
+    }
+
+    .label-container {
+        width: 100%;
+        row-gap: 15px;
+    }
+
+    
+
+}
+
+@media (max-width: 650px) {
+    .terms {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 550px) {
+    .form-container input[type="date"] {
+        width: 120px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 475px) {
+
+    #loja, #pessoal {
+        max-width: 310px;
+    }
+
     .label-container label {
         font-size: 12px;
     }
@@ -428,9 +421,6 @@
         row-gap: 10px;
     }
 
-    .checkbox-container label {
-        font-size: 10px;
-    }
 
     .terms-container {
         margin-left: 1%;
