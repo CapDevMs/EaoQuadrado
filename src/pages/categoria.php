@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E ao Quadrado - O melhor E-commerce</title>
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <!-- <link rel = 'stylesheet' href="../assets/css/cliente/categoria.css"> -->
     <?php get_css(['cliente/categoria']) ?>
