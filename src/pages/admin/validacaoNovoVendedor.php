@@ -2,6 +2,9 @@
 require_once('../../config/funcoes.php');
 require('../../config/conexao.php');
 ?>
+<?php
+$base_url = get_base_url();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
  
@@ -49,33 +52,76 @@ require('../../config/conexao.php');
                  <div class = 'vendedor'>
 
                     <div class = 'acordeonFechado'>
-                        <div class = 'bloco1'><img src="../../../src/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'>
+                        <div class = 'bloco1'><img src="<?=$base_url;?>/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'>
                         <div class = 'blocoTitulo'>
                             <span style="font-size: 32px;" class = 'tituloLoja'>Nome da loja</span>
-                            <div><img src = '../../assets/img/Group.png' style="max-width: 12px; Margin-left:1%;"> Loja</div>
+                            <div><img src = '<?=$base_url;?>/assets/img/Group.png' style="max-width: 12px; Margin-left:1%;"> Loja</div>
                         </div></div>
                         <div class = 'blocoAcordeon'>
-                            <button class = 'abrirAcordeon' type="button" onclick="abrirAcordeon(0)"><img src="../../../src/assets/img/fakepngCarret-fotor-bg-remover-202504029435.png" alt="carret" class = 'carret'></button>
+                            <button class = 'abrirAcordeon' type="button" onclick="abrirAcordeon(0)"><img src="<?=$base_url;?>/assets/img/fakepngCarret-fotor-bg-remover-202504029435.png" alt="carret" class = 'carret'></button>
                         </div>
                     </div>
                     <div class = 'acordeonAberto'>
-                        <button type ='button' onclick = 'fecharAcordeon(0)'><img src="../../../src/assets/img/controle_usb.png" alt="" style = 'max-width:120px;'></button>
+                        <button type ='button' onclick = 'fecharAcordeon(0)' style="height: 500px;"><img src="<?=$base_url;?>/assets/img/controle_usb.png" alt="" style = 'max-width:120px;'></button>
                     </div>
                 </div>
+
                  <div class = 'vendedor' >
 
                     <div class = 'acordeonFechado'>
-                        <div class = 'bloco1'><img src="../../../src/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'>
+                        <div class = 'bloco1'><img src="<?=$base_url;?>/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'>
                         <div class = 'blocoTitulo'>
                             <span style="font-size: 32px;" class = 'tituloLoja'>Nome da loja</span>
-                            <div><img src = '../../assets/img/Group.png' style="max-width: 12px; Margin-left:1%;"> Loja2</div>
+                            <div><img src = '<?=$base_url;?>/assets/img/Group.png' style="max-width: 12px; Margin-left:1%;"> Loja2</div>
                         </div></div>
                         <div class = 'blocoAcordeon'>
-                            <button class = 'abrirAcordeon' type="button" onclick="abrirAcordeon(1)"><img src="../../../src/assets/img/fakepngCarret-fotor-bg-remover-202504029435.png" alt="carret" class = 'carret'></button>
+                            <button class = 'abrirAcordeon' type="button" onclick="abrirAcordeon(1)"><img src="<?=$base_url;?>/assets/img/fakepngCarret-fotor-bg-remover-202504029435.png" alt="carret" class = 'carret'></button>
                         </div>
                     </div>
                     <div class = 'acordeonAberto'>
-                        <img src="../../../src/assets/img/controle_usb.png" alt="" style = 'max-width:120px;'>
+                        <div class = 'acordeonAberto1'>
+                            <div class = 'bloco1'><img src="<?=$base_url;?>/assets/img/logoEmpresaRica.jpg" class = 'logoEmpresa'>
+                            <div class = 'blocoTitulo'><span style="font-size: 32px;" class = 'tituloLoja'>Nome da loja</span></div>
+                        </div>
+                        <div class = 'acordeonAberto2'>
+                            <div class = 'miniPainel mini1'>
+                                <div>
+
+                                    <line style="display: flex; justify-content:start;"><span class = 'redutor'>Responsável: </span><span class = 'redutor'>Carlos</span></line>
+                                    <line style="display: flex; justify-content:start;"><span class = 'redutor'>Telefone: </span><span class = 'redutor'>(67) 3437-7000</span></line>
+                                    <line style="display: flex; justify-content:start;"><span class = 'redutor'>CNPJ: </span><span class = 'redutor'>97.538.333/0001-00</span></line>
+                                    <line style="display: flex; justify-content:start;"><span class = 'redutor'>CEP: </span><span class = 'redutor'>79000-00</span></line>
+                                    <line style="display: flex; justify-content:start;"><span class = 'redutor'>E-Mail: </span><span class = 'redutor'>studiocenterpy@gmail.com</span></line>
+                                    
+                                </div>
+                                <div>
+                                    <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/camisaIcon.svg' class = 'icon'><span class = 'iconText'> Roupas</span></line>
+                                    <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/cameraIcon.svg' class = 'icon'><span class = 'iconText'> Câmeras</span></line>
+                                    <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/celularIcon.svg' class = 'icon'><span class = 'iconText'> Smartphones</span></line>
+                                    <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/computadorIcon.svg' class = 'icon'><span class = 'iconText'> Computadores</span></line>
+                                    <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/ferramentasIcon.svg' class = 'icon'><span class = 'iconText'> Ferramentas</span></line>
+                                </div>
+                            </div>  
+                            <div class = 'miniPainel mini2'></div>  
+                            <div>
+
+                                <line style="display: flex; justify-content:start;"><span class = 'redutor'>Responsável: </span><span class = 'redutor'>Carlos</span></line>
+                                <line style="display: flex; justify-content:start;"><span class = 'redutor'>Telefone: </span><span class = 'redutor'>(67) 3437-7000</span></line>
+                                <line style="display: flex; justify-content:start;"><span class = 'redutor'>CNPJ: </span><span class = 'redutor'>97.538.333/0001-00</span></line>
+                                <line style="display: flex; justify-content:start;"><span class = 'redutor'>CEP: </span><span class = 'redutor'>79000-00</span></line>
+                                <line style="display: flex; justify-content:start;"><span class = 'redutor'>E-Mail: </span><span class = 'redutor'>studiocenterpy@gmail.com</span></line>
+                                
+                            </div>
+                            <div>
+                                <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/camisaIcon.svg' class = 'icon'><span class = 'iconText'> Roupas</span></line>
+                                <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/cameraIcon.svg' class = 'icon'><span class = 'iconText'> Câmeras</span></line>
+                                <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/celularIcon.svg' class = 'icon'><span class = 'iconText'> Smartphones</span></line>
+                                <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/computadorIcon.svg' class = 'icon'><span class = 'iconText'> Computadores</span></line>
+                                <line style="display: flex; justify-content:start;"><img src= '<?=$base_url;?>/assets/img/ferramentasIcon.svg' class = 'icon'><span class = 'iconText'> Ferramentas</span></line>
+                            </div>
+                        </div>
+                        <div class = 'acordeonAberto3'></div>
+                        <div class = 'acordeonAberto4'></div>
                     </div>
 
                 </div>
