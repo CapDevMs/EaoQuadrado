@@ -45,7 +45,7 @@
 #pagina_atual { color: var(--cor-verde-principal); }
 
 .register_client {
-    background-color: var(--cor-fundo-img-produtos);
+    background-color: var(--cor-fundo);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
     border-radius: 20px;
     width: 850px;
@@ -97,7 +97,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-    background-color: color(var --cor-fundo-img-produtos);
+    background-color: var(--cor-fundo);
     border: none;
     color: black;
     width: 90%;
@@ -129,11 +129,11 @@
 }
 
 .date-group input[type="date"] {
-    position: absolute;
-    background-color: var(--cor-fundo-img-produtos);
+    background-color: var(--cor-fundo);
     padding: 12px;
     font-size: 16px;
-    width: 10%;
+    width: 50%;
+    height: 38.5%;
 }
 
 .terms-container {
@@ -263,6 +263,10 @@
         height: 15px;
     }
 
+    
+    .date-group input[type="date"] {
+        height: 20%;
+    }  
 
     .input1{
         height: 20px;
@@ -281,163 +285,51 @@
 }
 
 @media (max-width: 768px) {
+
+    .container-inter {
+        display: flex;
+        flex-direction: column;
+    }
+
     .button-confirm {
         left: 110%;
     }
 
+    .container-geral {
+        margin: 0 auto;
+        width: max-content;
+    }
+
     .register_client {
-        height: 750px;
+        height: max-content;
+        max-height: none;
+        max-width: none;
+        width: max-content;
+        margin: 0 auto;
+        margin-left: auto;
     }
 
     .register_client h2 {
         font-size: 18px;
     }
 
+    .register_client img {     
+        margin: 0 auto auto 18%;
+    }
+
     .button-confirm {
         width: 100px;
         height: 35px;
+        margin: 5% auto 5% 40%;
+        left: 0;
     }
 
     .inform-container, .inform-container2 {
         row-gap: 5px;
+        margin-bottom: 2%;
     }
 
-    
-}
-
-@media (max-width: 689px) {
-    .date-group input[type="date"] {
-        width: 15%;
-    }
-
-    .date-group {
-        height: 70px;
-    }
-}
-
-@media (max-width: 600px) {
-    .roadmap {
-        font-size: 12px;
-    }
-
-    .container-inter {
-        margin: 5% auto;
-        padding: 10px 10px;
-    }
-    .register_client img {
-        max-width: 120px;
-    }
-
-    .date-group input[type="date"] {
-        font-size: 10px;
-    }
-
-    .register_client h2 {
-        font-size: 14px;
-    }
-
-    .inform-container, .inform-container2 {
-        row-gap: 5px;
-    }
-
-    .date-group {
-        height: 52px;
-    }
-
-    .register_client img {
-        max-width: 150px;
-    }
-
-    .inform-container label, .inform-container2 label, .terms-container h1 {
-        font-size: 10px;
-    }
-
-    .register_client {
-        margin-left: 30%;
-        height: 610px;
-        width: 300px;
-    }  
-
-
-    .date-group {
-        bottom: 5px;
-    }
-
-    .date-group input[type="date"] {
-        font-size: 10px;
-        height: 5px;
-        width: 80px;
-    }   
-    
-    .checkbox-container .checkbox {
-        width: 12px;
-        height: 12px;
-    }
-
-    .input1 {
-        height: 10px;
-        font-size: 10px;
-    }
-
-    .button-confirm {
-        left: 95%;
+    .terms-container {
         margin-bottom: 5%;
-    }
-}
-
-@media (max-width: 550px) {
-    .register_client {
-        margin-left: 30%;
-    }
-}
-
-
-@media (max-width: 500px) {
-    .roadmap {
-        font-size: 10px;
-    }
-
-    .register_client {
-        max-height: 80%;
-        max-width: 80%;
-    }
-
-    .button-confirm {
-        left: 85%;
-    }
-
-    .input1{
-        height: 10px;
-        font-size: 10px;
-    }
-
-    .register_client img {
-        max-width: 120px;
-    }
-}
-
-@media (max-width: 475px) {
-    .register_client {
-        margin-left: 20%;
-    }
-
-    .button-confirm {
-        left: 80%;
-    }
-}
-
-@media (max-width: 400px) {
-    .register_client {
-        margin-left: 8%;
-    }
-
-    .button-confirm {
-        left: 65%;
-    }
-}
-
-@media (max-width: 375px) {
-    .register_client {
-        margin-left: 5%;
     }
 }

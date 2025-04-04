@@ -23,8 +23,13 @@
     height: 1300px;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
-    margin-left: 24%;
-    margin-bottom: 10%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+
+.form{
+    grid-template-rows: repeat(6, 1fr);
 }
 
 .register_client h2 {
@@ -185,7 +190,6 @@
     .register_client {
         max-width: 900px;
         max-height: 1250px;
-        margin-left: 12%;
         margin-bottom: 5%;
     }
 
@@ -220,17 +224,10 @@
     }
 }
 
-@media (max-width: 1090px) {
-    .register_client {
-        margin-left: 6%;
-    }
-}
-
 @media (max-width: 992px) {
     .register_client {
         width: 85%;
-        height: 1120px;
-        margin-left: 8%;
+        height: 1180px;
     }
 
     #pessoal {
@@ -286,11 +283,12 @@
 
 @media (max-width: 768px) {
     .register_client {
-        width: 50%;
+        width: max-content;
+        max-width: none;
         height: max-content;
         max-height: none;
         margin: 0 auto;
-        margin-bottom: 20%;
+        margin-bottom: 8%;
     }
 
     .register_client label input { 
@@ -308,7 +306,7 @@
     }
 
     .form {
-        width: 95%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -331,8 +329,8 @@
     }
 
     .date-group input[type="date"] {
-        width: 41%;
-        height: 9%;
+        width: 55%;
+        height: 44px;
     }
 
     .form input[type="email"],
@@ -371,125 +369,17 @@
         margin-left: 20%;
     }
 
-    .buttons-cont .button-confirm {
+    .buttons-container .button-confirm {
         font-size: 10px;
         width: 90px;
     }
 
-    .buttons-cont .button-cancel {
+    .buttons-container .button-cancel {
         font-size: 10px;
         width: 90px;
     }
 
     .buttons-container {
         margin-left: 0;
-    }
-}
-
-@media (max-width: 650px) {
-    .buttons-container .button-cancel, .buttons-container .button-confirm {
-        font-size: 12px;
-        width: 90px;
-        height: 30px;
-    }
-}
-
-@media (max-width: 500px) {
-    .checkbox-container {
-        position: relative;
-        right: 12%;
-    }
-
-    .buttons-cont .button-confirm, .buttons-cont .button-cancel {
-        width: 60px;
-    }
-
-    .buttons-cont {
-        margin-left: 20%;
-    }
-
-    .button-cancel, .button-confirm {
-        width: 90px;
-        height: 20px;
-    }
-
-}
-
-@media (max-width: 430px) {
-    .register_client {
-        width: 75%;
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    .register_client h2 {
-        font-size: 16px;
-    }
-
-    .client-image {
-        margin-left: 25%;
-    }
-
-    .form {
-        position: relative;
-        right: 3%;
-        width: 100%;
-    }
-    .form input[type="email"], .form input[type="text"], .form input[type="password"] {
-        font-size: 10px;
-    }
-
-    .form-container input,
-    .form-container input[type="date"] {
-        font-size: 10px;
-        padding: 5px;
-        height: 6.5%;
-    }
-
-    .form-container label {
-        font-size: 10px;
-    }
-
-    .date-group input {
-        width: 140px;
-    }
-
-    .date-group input[type="date"] {
-        width: 35%;
-    }
-
-    .buttons-container {
-        margin-left: 5%;
-    }
-
-    .checkbox-container {
-        position: relative;
-        right: 10%;
-    }
-
-    .checkbox-container input{
-        width: 12px;
-        height: 12px;
-    }
-
-    .buttons-cont {
-        margin-left: 5%;
-    }
-
-    .buttons-cont button {
-        width: 80px;
-        height: 30px;
-        font-size: 10px;
-    }
-
-}
-
-@media (max-width: 375px) {
-    .terms {
-        margin-left: 40%;
-    }
-
-    .client-image {
-        margin-left: 20%;
     }
 }
