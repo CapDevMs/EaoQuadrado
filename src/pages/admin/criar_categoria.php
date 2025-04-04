@@ -48,8 +48,8 @@ require_once('../../config/funcoes.php');
 
                 <div class="input-label">
                     <div class="column-group1">
-                        <label for="name-categoria">Nome da Categoria</label>
-                        <input type="text" class="name-categoria">
+                        <label for="name">Nome da Categoria</label>
+                        <input type="text" name="name" class="name-categoria">
                     </div>
                     
                     <div class="column-group2">
