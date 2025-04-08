@@ -270,176 +270,92 @@
 }
 
 /* Sistema de Grid (colunas) - Tela é calculada como tendo 12 colunas */
-.col {
+.col, .col-sm {
     flex: 1 0 0%;
 }
 
-.col-auto {
+.col-auto, .col-sm-auto {
     flex: 0 0 auto;
     width: auto;
 }
 
-.col-1 {
+.col-1, .col-sm-1 {
     flex: 0 0 auto;
     width: calc(8.33333333% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-2 {
+.col-2, .col-sm-2 {
     flex: 0 0 auto;
     width: calc(16.66666667% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-3 {
+.col-3, .col-sm-3 {
     flex: 0 0 auto;
     width: calc(25% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-4 {
+.col-4, .col-sm-4 {
     flex: 0 0 auto;
     width: calc(33.33333333% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-5 {
+.col-5, .col-sm-5 {
     flex: 0 0 auto;
     width: calc(41.66666667% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-6 {
+.col-6, .col-sm-6 {
     flex: 0 0 auto;
     width: calc(50% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-7 {
+.col-7, .col-sm-7 {
     flex: 0 0 auto;
     width: calc(58.33333333% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-8 {
+.col-8, .col-sm-8 {
     flex: 0 0 auto;
     width: calc(66.66666667% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-9 {
+.col-9, .col-sm-9 {
     flex: 0 0 auto;
     width: calc(75% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-10 {
+.col-10, .col-sm-10 {
     flex: 0 0 auto;
     width: calc(83.33333333% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-11 {
+.col-11, .col-sm-11 {
     flex: 0 0 auto;
     width: calc(91.66666667% - 0.5rem);
     margin-right: 0.5rem;
 }
 
-.col-12 {
+.col-12, .col-sm-12 {
     flex: 0 0 auto;
     width: calc(100% - 0.5rem);
     margin-right: 0.5rem;
 }
 
 /* Sistema de Grid (colunas) responsividade - Tela é calculada como tendo 12 colunas */
-@media (min-width: 576px) {
-    .col-sm {
-        flex: 1 0 0%;
-    }
-
-    .col-sm-auto {
-        flex: 0 0 auto;
-        width: auto;
-    }
-
-    .col-sm-1 {
-        flex: 0 0 auto;
-        width: calc(8.33333333% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-2 {
-        flex: 0 0 auto;
-        width: calc(16.66666667% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-3 {
-        flex: 0 0 auto;
-        width: calc(25% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-4 {
-        flex: 0 0 auto;
-        width: calc(33.33333333% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-5 {
-        flex: 0 0 auto;
-        width: calc(41.66666667% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-6 {
-        flex: 0 0 auto;
-        width: calc(50% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-7 {
-        flex: 0 0 auto;
-        width: calc(58.33333333% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-8 {
-        flex: 0 0 auto;
-        width: calc(66.66666667% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-9 {
-        flex: 0 0 auto;
-        width: calc(75% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-10 {
-        flex: 0 0 auto;
-        width: calc(83.33333333% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-11 {
-        flex: 0 0 auto;
-        width: calc(91.66666667% - 0.5rem);
-        margin-right: 0.5rem;
-    }
-
-    .col-sm-12 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-
-    .col-sm-hidden {
-        display: none;
-    }
-}
-
-/* Sistema de Grid (colunas) responsividade - Tela é calculada como tendo 12 colunas */
 @media (min-width: 768px) {
+    .col-sm-hidden {
+        display: block;
+    }
     .col-md {
         flex: 1 0 0%;
     }
@@ -519,9 +435,17 @@
         flex: 0 0 auto;
         width: 100%;
     }
+    .col-md-hidden {
+        display: none;
+    }
 }
+    
+
 
 @media (min-width: 992px) {
+    .col-sm-hidden, .col-md-hidden {
+        display: block;
+    }
     .col-lg {
         flex: 1 0 0%;
     }

@@ -781,3 +781,17 @@ h3{
 }
 
 
+#MandarCarrinho{
+    background: transparent;  /* Remove qualquer fundo */
+    border: none;             /* Remove a borda */
+    padding: 0;               /* Remove o padding, assim a imagem preenche totalmente */
+    cursor: pointer;
+}
+
+
+.iconCarrinho{
+    width: fit-content;
+    height: auto;
+    position: relative;
+    top: 3px;
+}

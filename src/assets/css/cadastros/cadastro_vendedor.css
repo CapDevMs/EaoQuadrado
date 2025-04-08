@@ -1,0 +1,445 @@
+@import url("../css/cadastro_cliente.css");
+@import url("../base.css");
+
+.register {
+    background-color: var(--cor-fundo);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+    border-radius: 20px;
+    width: 1000px;
+    height: 1050px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    right: 6%;
+    margin: 0 auto;
+}
+
+#loja {
+    max-height: 1300px;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.register_shop h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 24%;
+}
+
+
+.checkbox-container2 {
+    display: grid;
+    grid-template-columns: 5% 100%;
+    gap: 14px;
+    background-color: var(--cor-fundo-img-produtos);
+    padding: 25px 50px;
+    border-radius: 10px;
+    width: auto;
+    height: 88%;
+}
+
+.checkbox2 {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#vendedor_form {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.checkbox2:checked {
+    background-color: gray;
+}
+
+.checkbox-container2 p {
+    font-size: 14px;
+    color: #333;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, auto);
+    width: 95%;
+    margin: 2% auto 5% 2%;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 5%;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.label-container label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.label-container input {
+    height: 60%;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+
+.categorias {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: fit-content;
+    position: relative;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.frame_file {
+    grid-column: 2;
+    grid-template-rows: 2;
+    background-color: var(--cor-fundo-img-produtos);
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    justify-self: center;
+    margin-bottom: 5%;
+}
+
+.frame_file input {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.frame_file label {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.terms {
+    grid-row: 2;
+    grid-column: span 2;
+    text-align: left;
+    justify-self: center;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.checkbox-container {
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.checkbox-container input:checked {
+    background-color: black;
+}
+
+.checkbox-container label {
+    font-size: 14px;
+    color: #333;
+}
+
+.terms-container a {
+    color: var(--cor-verde-principal);
+    text-decoration: none;
+}
+
+.buttons-cont {
+    grid-row: 3;
+    justify-content: center;
+    grid-column: span 2;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.button-cancel,
+.button-confirm {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-cancel {
+    background-color: var(--cor-botao-adm-vermelho);
+    color: white;
+}
+
+.button-confirm {
+    background-color: var(--cor-botao-primario);
+    color: white;
+}
+
+.content_vend {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+.register_client {
+    height: max-content;
+}
+
+
+
+@media (max-width: 1050px) {
+    #pessoal #loja {
+        margin-left: 8%;
+    }
+
+    .register_client h2 {
+        font-size: 22px;
+    }
+
+    .form-group label {
+        font-size: 85%;
+    }
+
+    .form-container input {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .register_shop {
+        margin: 3% auto;
+        padding: 20px;
+        width: 85%;
+    }
+
+    .shop-container {
+        row-gap: 15px;
+    }
+
+    .input-shop-container {
+        width: 100%;
+    }
+
+    .input_label input {
+        width: 88%;
+    }
+
+
+    .checkbox-container2 {
+        padding: 20px;
+    }
+
+    .frame_file {
+        width: 90%;
+    }
+
+    .checkbox-container {
+        position: relative;
+        right: 10%;
+    }
+
+    .checkbox-container2 label {
+        font-size: 100%;
+    }
+
+    .checkbox-container label {
+        font-size: 100%;
+        white-space: nowrap;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .terms {
+        font-size: 14px;
+    }
+
+
+
+    .button-confirm, .button-cancel{
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .buttons-cont {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #loja, #pessoal {
+        max-width: 410px;
+        width: 100%;
+        max-height: none;
+        height: max-content;
+    }
+
+    .shop-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 auto 0 0;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .input_label input {
+        width: 100%;
+    }
+
+    .input_label label{
+        font-size: 12px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .checkbox-container2 p{
+        font-size: 12px;
+    }
+
+
+    #grid1 {
+        grid-row: 1;
+    }
+
+    #grid2 {
+        grid-row: 2;
+    }
+
+    .categorias {
+        grid-row: 3;
+    }
+
+    .anexar_img {
+        grid-row: 4;
+    }
+
+    .register_shop h1 {
+        font-size: 16px;
+        width: fit-content;
+    }
+
+    .buttons-cont {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .button-confirm, .button-cancel{
+        width: 70px;
+        height: 35px;
+        font-size: 12px;
+    }
+    
+    .terms {
+        font-size: 12px;
+    }
+
+    .label-container {
+        width: 100%;
+        row-gap: 15px;
+    }
+
+    
+
+}
+
+@media (max-width: 650px) {
+    .terms {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 550px) {
+    .form-container input[type="date"] {
+        width: 120px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 475px) {
+
+    #loja, #pessoal {
+        max-width: 310px;
+    }
+
+    .label-container label {
+        font-size: 12px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .label-container {
+        row-gap: 10px;
+    }
+
+
+    .terms-container {
+        margin-left: 1%;
+        white-space: nowrap;
+    }
+
+    .buttons-cont {
+        margin-left: 25%;
+    }
+
+    .content_vend {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .form-container input[type="date"] {
+        width: 120px;
+        padding: 10px;
+        height: 32.5px;
+    }
+}

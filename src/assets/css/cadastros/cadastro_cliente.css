@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roadmap {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--cor-terciaria);
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.register_client {
+    background-color: var(--cor-fundo);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+    border-radius: 20px;
+    width: 1000px;
+    height: 1300px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+
+.form{
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.register_client h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.5%;
+}
+
+.client-image {
+    margin-left: 30%;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+
+.form{
+    width: 900px;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5%;
+}
+
+.form div button {
+    background-color: var(--cor-fundo);
+    width: 180px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+
+.form-container label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    white-space: nowrap;
+}
+
+.form-container input {
+    width: 90%;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+.date-group input[type="date"] {
+    position: absolute;
+    background-color: var(--cor-fundo);
+    padding: 12px;
+    font-size: 16px;
+    width: 15%;
+}
+
+.form input[type="email"],
+.form input[type="text"],
+.form input[type="password"] {
+    background-color: var(--cor-fundo);
+    padding: 12px;
+    font-size: 16px;
+    height: 60%;
+}
+
+.terms-container {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+
+.checkbox-container {
+    grid-row: 7;
+    margin-left: 22%;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: auto 100%;
+    gap: 5%;
+    align-items: center;
+}
+
+.checkbox-container a{
+    color: var(--cor-principal);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.checkbox-container input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+
+.checkbox-container input:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.form-container > button {
+    padding: 0px;
+    width: 20%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons-container{
+    grid-column: span 2;
+    margin-left: 35%;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 5%;
+}
+
+.buttons-container .button-cancel {
+    background-color: var(--cor-botao-adm-vermelho);
+    color: white;
+    border: none;
+    width: 113px;
+    height: 39px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.buttons-container .button-confirm {
+    background-color: var(--cor-botao-primario);
+    color: white;
+    border: none;
+    width: 113px;
+    height: 39px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1445px) {
+    .register_client {
+        max-width: 900px;
+        max-height: 1250px;
+        margin-bottom: 5%;
+    }
+
+    .form-container {
+        margin-left: 5%;
+    }
+
+    .form {
+        width: 800px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .terms-container {
+        margin-left: 5%;
+    }
+
+    .form-container input,
+    .form-container input[type="date"] {
+        font-size: 14px;
+    }
+
+    .buttons-container {
+        margin-left: 30%;
+    }
+
+    .checkbox-container {
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .register_client {
+        width: 85%;
+        height: 1180px;
+    }
+
+    #pessoal {
+        height: 60%;
+    }
+
+    .register_client h2 {
+        font-size: 20px;
+    }
+
+    .client-image {
+        width: 200px;
+        height: auto;
+    }
+
+    .form {
+        width: 95%;
+        font-size: 14px;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .form-container input,
+    .form-container input[type="date"] {
+        font-size: 14px;
+    }
+
+    .date-group input[type="date"] {
+        width: 18%;
+    }
+
+    .date-group input{
+        width: 400px;
+    }
+
+    .form input[type="email"],
+    .form input[type="text"],
+    .form input[type="password"] {
+        font-size: 14px;
+    }
+
+    .buttons-container {
+        margin-left: 30%;
+    }
+
+    .checkbox-container {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .register_client {
+        max-width: 410px;
+        height: max-content;
+        max-height: none;
+        margin: 0 auto;
+        margin-bottom: 8%;
+    }
+
+    .register_client label input { 
+        font-size: 16px;
+    }
+
+    .register_client h2 {
+        font-size: 16px;
+        width: fit-content;
+    }
+
+    .client-image {
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .form-container {
+        margin-left: 0;
+    }
+
+    .form-container label {
+        font-size: 12px;
+    }
+
+
+    .form-container input,
+    .form-container input[type="date"] {
+        font-size: 12px;
+    }
+
+    .date-group input[type="date"] {
+        width: 55%;
+        height: 44px;
+    }
+
+    .form input[type="email"],
+    .form input[type="text"],
+    .form input[type="password"] {
+        font-size: 12px;
+        height: 50%;
+        width: 100%;
+    }
+
+    .date-group {
+        position: relative;
+        margin-bottom: 12%;
+    }
+
+    .date-group input{
+        width: 600px;
+    }
+
+    .terms-container {
+        margin-left: 0;
+    }
+
+    .checkbox-container {
+        margin-left: 0;
+    }
+
+
+    .checkbox-container input {
+        width: 15px;
+        height: 15px;
+    }
+
+
+    .content {
+        margin-left: 20%;
+    }
+
+    .buttons-container .button-confirm {
+        font-size: 10px;
+        width: 90px;
+    }
+
+    .buttons-container .button-cancel {
+        font-size: 10px;
+        width: 90px;
+    }
+
+    .buttons-container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .register_client {
+        max-width: none;
+        width: max-content;
+    }
+}
