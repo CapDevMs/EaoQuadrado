@@ -1,8 +1,12 @@
 let limpa_cache = Date.now();
 
 let { default: cardProduto } = await import( `./components/card-produto.js?v=${ limpa_cache }` );
-
+let { default: banner_vendedor } = await import( `./components/banner_vendedor.js?v=${ limpa_cache }` );
 // import cardProduto from "./components/card-produto.js";
+
+
+const docTag_banner = document.querySelector('banner_vendedor');
+
 
 const docTag = document.querySelector('card-produto');
 
@@ -65,11 +69,6 @@ let produtos = [
     },
 ]
 
-<<<<<<< HEAD
-produtos.forEach((produto) => {
-    docTag.innerHTML += cardProduto(produto)
-});
-=======
 await exibirProdutos();
 
 let likeBtns = document.querySelectorAll('i.like');
@@ -86,4 +85,11 @@ async function exibirProdutos() {
         docTag.innerHTML += cardProduto(produto)
     });
 }
->>>>>>> 35c94bfad1e71e19caa8a249d90858804b9f331f
+
+let banner = [{
+    'titulo' : 'Teste'
+}]
+
+banner.forEach((titulo) => {
+    docTag_banner.innerHTML += banner_vendedor(titulo)
+});
