@@ -51,4 +51,4 @@ $base_url = get_base_url();
     </ul>
 </div>
 
-<script src="../assets/js/script.js"></script>
+<script src="../assets/js/header.js"></script>
