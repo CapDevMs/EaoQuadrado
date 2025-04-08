@@ -61,19 +61,20 @@ a {
     font-size: 22px;
     font-weight: 600;
 }
-
+/* 
 .card-produto-favorito, .lojas-favoritas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     width: 100%;
     justify-content: center;
-}
+} */
 
-.container-produto, .container-loja-fav {
+.card-produto{
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 18%;
+    height: 10%;
     max-height: 30%;
     background: #fff;
     border-radius: 10px;
@@ -101,10 +102,20 @@ a {
     object-fit: contain;
 }
 
+.img-produto-favorito {           
+    width: 100%;
+    margin: auto;
+    object-fit: contain;
+    width: 120px;
+    height: auto;       
+    margin: 0 auto;        
+    object-fit: contain;    
+}
+    
 .button-carrinho {
     position: relative;
     margin-top: 25%;
-    margin-left: 95%;
+    margin-left: 95%;   
     width: fit-content;
     height: auto;
     bottom: 90%;
@@ -117,10 +128,9 @@ a {
 
 .btn-add-carrinho {
     width: 100%;
-    max-width: 180px;
+    max-width: 250px;
     padding: 10px;
-    bottom: 100%;
-    margin: 5% 0% 0% 10%;
+    margin:  10px auto 0 auto;
     background-color: #49BF9E;
     border: none;
     border-radius: 10px;

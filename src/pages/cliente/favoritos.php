@@ -32,7 +32,7 @@
             </div>
     <div class="title-fav-produtos">Produtos Favoritos</div>
     <div href="#" class="btn mover-tudo-carrinho">Mover tudo para o carrinho</div>
-    <div class="card-produto col-sm-12 col-md-6 col-lg-4 col-xl-3">
+    <div class="card-produto">
         <div class="card-body pb-1">
             <div class="row">
                 <div class="col-sm-11">
@@ -50,9 +50,7 @@
         <div class="card-footer">
             <div class="row">
                 <div class="col-sm-12">
-                <div class="col-sm-6">
                     <a href="#" class="btn-add-carrinho">Adicione ao Carrinho</a>
-                </div>
                     <div class="container-nome-produto">
                         <h3 class="nome-produto">ASUS Notebook Gamer</h3>
                     </div>
@@ -66,7 +64,7 @@
     </div>
 
     <div class="title-fav-vendedores">vendedores Favoritos</div>
-    <div class="card-produto col-sm-12 col-md-6 col-lg-4 col-xl-3">
+    <div class="card-produto">
         <div class="card-body pb-1">
             <div class="row">
                 <div class="col-sm-11">
