@@ -6,11 +6,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>Cadastro Vendedor</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php get_css(['/cadastros/cadastro_cliente', '/cadastros/cadastro_vendedor', 'base', 'style']) ?>
     
-    <title>Eao Quadrado</title>
 </head>
 <body>
     <header class="header">
