@@ -20,133 +20,32 @@
 
     <main class="main-container">
         <div class="sidebar-menu">
-            <div class="roadmap">
-                <ul class="breadcrumb-list">
-                    <li class="breadcrumb-item">
-                        <a href="#" class="breadcrumb-link">Home</a>
-                    </li>
-                    <li class="breadcrumb-item-separador">/</li>
-                    <li class="breadcrumb-item">
-                        <a href="#" class="breadcrumb-link" id="favorite">Favoritos</a>
-                    </li>
-                </ul>
-            </div>
-<<<<<<< HEAD
+            <a href="meu-perfil-cliente.php">
+                <p>Meu Perfil</p>
+            </a>
+            <span id="separator">/</span>
+            <a href="#">Meus Favoritos</a>
+            <span class="separator">/</span>
         </div>
-
-        <section class="produtos-fav-tittle">
-            <h2 class="title">Produtos Favoritos</h2>
-            <button class="btn-move-all">Mover tudo para o carrinho</button>
-        </section>
-
-        <section class="card-produto-favorito">
-            <div class="container-produto">
-                <div class="produto-img-wrapper">
-                    <img src="../../assets/img/computador.png" alt="ASUS Notebook Gamer" class="edit-favorito">
-=======
-    <div class="title-fav-produtos">Produtos Favoritos</div>
-    <div href="#" class="btn mover-tudo-carrinho">Mover tudo para o carrinho</div>
-    <div class="card-produto">
-        <div class="card-body pb-1">
-            <div class="row">
-                <div class="col-sm-11">
-                    <a href="${link}">
-                        <img class="img-produto" src="../../assets/img/computador.png">
-                    </a>
->>>>>>> 993b65b67d9c401ed030595126c729aa446073a4
-                </div>
-                <img src="../../assets/img/carrinho2.svg" alt="Carrinho" class="icone-carrinho">
-                <a href="#" class="btn-add-carrinho">Adicionar ao carrinho</a>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">ASUS Notebook Gamer</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$960</h3>
-                </div>
+      
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="container-header-section">
+                <div class="block-green"></div>
+                <p class="text-prmary">Produtos Favoritos</p>
             </div>
-<<<<<<< HEAD
-
-            <div class="container-produto">
-                <div class="produto-img-wrapper">
-                    <img src="../../assets/img/computador.png" alt="ASUS Notebook Gamer" class="edit-favorito">
-=======
-        </div>
-        <div class="card-footer">
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="#" class="btn-add-carrinho">Adicione ao Carrinho</a>
-                    <div class="container-nome-produto">
-                        <h3 class="nome-produto">ASUS Notebook Gamer</h3>
-                    </div>
-                    <div class="container-preco-produto">
-                        <h3 class="preco-produto">R$960</h3>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+        </div>    
     </div>
+    <a href="./carrinho.php">
+        <div class="btn-mover-tudo-carrinho">
+            <p class="p-text-move-carrinho">Mover tudo ao carrinho</p>
+        </div>
+    </a>
+    <card-produto-fav></card-produto-fav>
+
 
     <div class="title-fav-vendedores">vendedores Favoritos</div>
-    <div class="card-produto">
-        <div class="card-body pb-1">
-            <div class="row">
-                <div class="col-sm-11">
-                    <a href="${link}">
-                        <img class="img-produto" src="../../assets/img/loja-favorita.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="card-footer">
-            <div class="row">
-                <div class="col-sm-12">
-                <div class="col-sm-6">
-                    <a href="#" class="btn-visitar-loja">Visitar loja</a>
->>>>>>> 993b65b67d9c401ed030595126c729aa446073a4
-                </div>
-                <img src="../../assets/img/carrinho2.svg" alt="Carrinho" class="icone-carrinho">
-                <a href="#" class="btn-add-carrinho">Adicionar ao carrinho</a>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">ASUS Notebook Gamer</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$960</h3>
-                </div>
-            </div>
 
-               <div class="container-produto">
-                <div class="produto-img-wrapper">
-                    <img src="../../assets/img/computador.png" alt="ASUS Notebook Gamer" class="edit-favorito">
-                </div>
-                <img src="../../assets/img/carrinho2.svg" alt="Carrinho" class="icone-carrinho">
-                <a href="#" class="btn-add-carrinho">Adicionar ao carrinho</a>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">ASUS Notebook Gamer</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$960</h3>
-                </div>
-            </div>
-            
-            <div class="container-produto">
-                <div class="produto-img-wrapper">
-                    <img src="../../assets/img/computador.png" alt="ASUS Notebook Gamer" class="edit-favorito">
-                </div>
-                <img src="../../assets/img/carrinho2.svg" alt="Carrinho" class="icone-carrinho">
-                <a href="#" class="btn-add-carrinho">Adicionar ao carrinho</a>
-                <div class="container-nome-produto">
-                    <h3 class="nome-produto">ASUS Notebook Gamer</h3>
-                </div>
-                <div class="container-preco-produto">
-                    <h3 class="preco-produto">R$960</h3>
-                </div>
-            </div>
-        </section>
-
-        <section class="produtos-fav-tittle">
-            <h2 class="title">Vendedores Favoritos</h2>
-        </section>
 
         <section class="lojas-favoritas">
             <div class="container-loja">
@@ -179,5 +78,5 @@
 
     <?php get_footer() ?>
 </body>
-<script src="../../assets/js/script.js"></script>
+<script type="module" src="../assets/js/favoritos.js?<?= time(); ?>"></script>
 </html>
