@@ -75,11 +75,6 @@ a{
     margin-bottom: 2%;
 }
 
-textarea {
-    width: 1040px;
-    height: 78%;
-    position: relative;
-}
 
 
 .caixa{
@@ -92,6 +87,10 @@ textarea {
 
 .caixa2{
     background-color: var(--cor-fundo-img-produtos);
+    width: 1040px;
+    height: 300px;
+    position: relative;
+    resize: none;
 }
 
 #salvar{
