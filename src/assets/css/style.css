@@ -119,6 +119,10 @@
     padding-right: 5rem;
 }
 
+.m-auto {
+    margin: auto;
+}
+
 .mt-0,
 .mtb-0 {
     margin-top: 0;
@@ -356,6 +360,10 @@
     .col-sm-hidden {
         display: block;
     }
+    .col-md-hidden {
+        display: none;
+    }
+    
     .col-md {
         flex: 1 0 0%;
     }

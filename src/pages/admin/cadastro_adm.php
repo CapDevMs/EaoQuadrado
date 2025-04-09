@@ -6,11 +6,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>Cadastro ADM</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php get_css(['cadastro_adm', 'base', 'style']) ?>
-    
-    <title>Eao Quadrado</title>
 </head>
 <?php
 require_once('../../config/funcoes.php');
