@@ -18,7 +18,7 @@
     grid-template-columns: 20% 70%;
     margin-left: 2%;
     margin-bottom: 5%;
-    column-gap: 5%;
+    column-gap: 10%;
     max-width: 1500px;
     max-height: 600px;
     width: max-content;
@@ -50,8 +50,8 @@
 
 
 .create-container {
-    width: 900px;
-    height: 140px;
+    max-width: 900px;
+    max-height: 140px;
     background-color: var(--cor-fundo);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
     border-radius: 15px;
@@ -62,12 +62,10 @@
 }
 
 .input-label {
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
-
-
 
 .img-container {
     display: flex;
@@ -116,6 +114,16 @@
     color: var(--cor-texto-deselecionado);
 }
 
+.column-group1 input {
+    width: 90%;
+}
+
+.row-group {
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+}
+
 .frame_file {
     background-color: var(--cor-fundo-img-produtos);
     color: gray;
@@ -123,68 +131,213 @@
     padding: 15px;
     border-radius: 10px;
     width: 30%;
-    margin-bottom: 5%;
+    height: 10px;
 }
 
 .frame_file input {
-    width: 120px;
+    width: 110%;
     height: 40px;
     cursor: pointer;
+    border-radius: 15px;
     opacity: 0;
-    position: absolute;
+    position: relative;
     z-index: 2;
+    bottom: 20px;
+    right: 10px;
 }
 
 .frame_file label {
     position: relative;
-    font-size: 14px;
+    font-size: 1vw;
+    white-space: nowrap;
     color: #333;
     cursor: pointer;
+    bottom: 50px;
 }
 
-@media (max-width: 1255px) {
+.button-confirm {
+    position: relative;
+    font-size: 1vw;
+    white-space: nowrap;
+    color: white;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor-principal);
+}
 
+@media (max-width: 1320px) {
+    
+    .container-geral {
+        width: 80%;
+        column-gap: 20%;
+    }
+
+    .create-container {
+        width: 90%;
+    }
 }
 
 @media (max-width: 992px) {
+    .menu-container {
+        display: none;
+    }
+    .container-geral {
+        display: flex;
+        width:  80%;
+        gap: 0;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
 
+    .create-container {
+        width: 100%;
+    }
+
+    .frame_file label {
+        font-size: 14px;
+    }
+
+    .button-confirm {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 768px) {
-    .menu-container {
-        display: none;
+    .create-container {
+        gap: 6%;
+    }
+
+    .column-group1 label {
+        font-size: 14px;
+    }
+
+    .column-group1 input {
+        font-size: 14px;
+    }
+
+    .column-group2 h1 {
+        font-size: 14px;
+    }
+
+    .img-container {
+        height: auto;
+    }
+
+    .frame_file {
+        width: fit-content;
+    }
+
+    .row-group {
+        gap: 12%;
     }
 }
 
 @media (max-width: 689px) {
-
+    .row-group {
+        gap: 10%;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
     .roadmap {
         font-size: 12px;
     }
-}
 
-@media (max-width: 550px) {
+    .create-container {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-height: 1000px;
+    }
 
-}
+    .img-container {
+        width: 50%;
+        height: auto;
+        padding: 10px;
+    }
 
+    .name-categoria {
+        width: 90%;
+        font-size: 14px;
+        padding: 12px;
+    }
 
-@media (max-width: 500px) {
-    .roadmap {
-        font-size: 10px;
+    .column-group1 label, 
+    .column-group2 h1 {
+        font-size: 14px;
+    }
+
+    .frame_file {
+        width: 80%;
+    }
+
+    .button-confirm {
+        font-size: 14px;
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 520px) {
+    .create-container {
+        flex-direction: column;
+        gap: 15px;
+        max-height: 1252px;
+    }
 
+    .img-container {
+        padding: 8px;
+    }
+
+    .name-categoria {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .button-confirm {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .row-group {
+        gap: 10px;
+    }
+
+    .frame_file {
+        width: 90%;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+    .roadmap {
+        font-size: 10px;
+    }
 
-}
 
-@media (max-width: 375px) {
+    .name-categoria {
+        font-size: 12px;
+        padding: 8px;
+    }
 
+    .button-confirm {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .row-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .frame_file {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .column-group1 label, 
+    .column-group2 h1 {
+        font-size: 12px;
+    }
 }

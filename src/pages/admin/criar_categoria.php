@@ -54,9 +54,13 @@ require_once('../../config/funcoes.php');
                     
                     <div class="column-group2">
                         <h1>Inserir Imagem</h1>
-                        <div class="frame_file"> 
-                            <input type="file" name="imagens[]" multiple>
-                            <label for="file">Selecionar Arquivo</label> 
+                        <div class="row-group">
+                            <div class="frame_file">
+                                <input type="file" name="imagens" single>
+                                <label for="file">Selecionar Arquivo</label>
+                            </div>
+                            
+                            <button type="submit" class="button-confirm">Criar Categoria</button>
                         </div>
                     </div>
                 </div>
@@ -67,5 +71,5 @@ require_once('../../config/funcoes.php');
 
     <?php get_footer()?>    
 </body>
-<script src="assets/js/script.js"></script>
+    <script src=""></script>
 </html>
