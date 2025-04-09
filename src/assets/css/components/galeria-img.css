@@ -1,9 +1,9 @@
 .grid-image{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 .img-small{
-    margin-bottom: 18%;
+    margin-bottom: 14%;
 }
 .img-small>img{
     background-color: rgb(239, 239, 239);

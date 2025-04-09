@@ -36,9 +36,9 @@
                             <div id="icons-comprar">
                                 
                             <button id =  'MandarCarrinho' value="gucci_bolsa_intense.png|Gucci intense|400,00">
-                                <img class = 'icon iconCarrinho' src="../assets/img/tela-produtos/carrinhooo.png">
+                                <img class = 'icon iconCarrinho' src="../assets/img/carrinho-tela-produto.svg">
                             </button>
-                            <img src="../assets/img/tela-produtos/coracao.png"></div>
+                            <img src="../assets/img/coracao-tela-produto.svg"></div>
                             
                         </div>
                         <div id="troca">
@@ -51,7 +51,7 @@
                                 <img src="../assets/img/tela-produtos/loja.png">
                                 <a><span style="color: #16A18E;">Loja</span> Studio Center</a>
                                 <div id="icons-loja">
-                                    <img src="../assets/img/tela-produtos/coracao.png" id="loja-coracao">
+                                    <img src="../assets/img/coracao-tela-produto.svg" id="loja-coracao">
                                     <img src="../assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
                                 </div>
                             </fieldset>
