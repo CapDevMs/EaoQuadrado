@@ -18,7 +18,7 @@
     grid-template-columns: 20% 70%;
     margin-left: 2%;
     margin-bottom: 5%;
-    column-gap: 10%;
+    column-gap: 25%;
     max-width: 1500px;
     max-height: 600px;
     width: max-content;
@@ -148,7 +148,7 @@
 
 .frame_file label {
     position: relative;
-    font-size: 1vw;
+    font-size: 16px;
     white-space: nowrap;
     color: #333;
     cursor: pointer;
@@ -157,7 +157,7 @@
 
 .button-confirm {
     position: relative;
-    font-size: 1vw;
+    font-size: 16px;
     white-space: nowrap;
     color: white;
     width: 150px;
@@ -173,6 +173,14 @@
     .container-geral {
         width: 80%;
         column-gap: 20%;
+    }
+
+    .frame_file label {
+        font-size: 1vw;
+    }
+
+    .button-confirm {
+        font-size: 1vw;
     }
 
     .create-container {
