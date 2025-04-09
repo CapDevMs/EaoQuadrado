@@ -31,6 +31,7 @@
                     </li>
                 </ul>
             </div>
+<<<<<<< HEAD
         </div>
 
         <section class="produtos-fav-tittle">
@@ -42,6 +43,17 @@
             <div class="container-produto">
                 <div class="produto-img-wrapper">
                     <img src="../../assets/img/computador.png" alt="ASUS Notebook Gamer" class="edit-favorito">
+=======
+    <div class="title-fav-produtos">Produtos Favoritos</div>
+    <div href="#" class="btn mover-tudo-carrinho">Mover tudo para o carrinho</div>
+    <div class="card-produto">
+        <div class="card-body pb-1">
+            <div class="row">
+                <div class="col-sm-11">
+                    <a href="${link}">
+                        <img class="img-produto" src="../../assets/img/computador.png">
+                    </a>
+>>>>>>> 993b65b67d9c401ed030595126c729aa446073a4
                 </div>
                 <img src="../../assets/img/carrinho2.svg" alt="Carrinho" class="icone-carrinho">
                 <a href="#" class="btn-add-carrinho">Adicionar ao carrinho</a>
@@ -52,10 +64,46 @@
                     <h3 class="preco-produto">R$960</h3>
                 </div>
             </div>
+<<<<<<< HEAD
 
             <div class="container-produto">
                 <div class="produto-img-wrapper">
                     <img src="../../assets/img/computador.png" alt="ASUS Notebook Gamer" class="edit-favorito">
+=======
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="#" class="btn-add-carrinho">Adicione ao Carrinho</a>
+                    <div class="container-nome-produto">
+                        <h3 class="nome-produto">ASUS Notebook Gamer</h3>
+                    </div>
+                    <div class="container-preco-produto">
+                        <h3 class="preco-produto">R$960</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="title-fav-vendedores">vendedores Favoritos</div>
+    <div class="card-produto">
+        <div class="card-body pb-1">
+            <div class="row">
+                <div class="col-sm-11">
+                    <a href="${link}">
+                        <img class="img-produto" src="../../assets/img/loja-favorita.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="col-sm-6">
+                    <a href="#" class="btn-visitar-loja">Visitar loja</a>
+>>>>>>> 993b65b67d9c401ed030595126c729aa446073a4
                 </div>
                 <img src="../../assets/img/carrinho2.svg" alt="Carrinho" class="icone-carrinho">
                 <a href="#" class="btn-add-carrinho">Adicionar ao carrinho</a>
