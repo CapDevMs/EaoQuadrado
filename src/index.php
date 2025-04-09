@@ -107,12 +107,12 @@ $titulo = 'Homepage';
         </div>
         
         <div class="categorias_container">
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/cellphone_icon.svg" alt="celulares"><p>Celulares</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/computer_icon.svg" alt="computer"><p>Computadores</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/smartwatches_icon.svg" alt="smartwatches"><p>Smartwatches</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/camera_icon.svg" alt="cameras"><p>Câmeras</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/headphone_icon.svg" alt="headphone"><p>Fone de Ouvido</p></div>
-            <div class="categoria" href="https://teams.microsoft.com/v2/"><img src="<?= get_base_url(); ?>/assets/img/games_icon.svg" alt="games"><p>Games</p></div>
+            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/computer_icon.svg" alt="celulares"><p>Eletrônicos</p></div>
+            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/dress_icon.svg" alt="computer"><p>Moda</p></div>
+            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/home_icon.svg" alt="smartwatches"><p>Casa</p></div>
+            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/ball_icon.svg" alt="cameras"><p>Sports</p></div>
+            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>/assets/img/ring_icon.svg" alt="headphone"><p>Acessorios</p></div>
+            <div class="categoria" href="https://teams.microsoft.com/v2/"><img src="<?= get_base_url(); ?>/assets/img/games_icon.svg" alt="games"><p>Entretenimento</p></div>
         </div>
 
         <div class="frame_container_categoria">
