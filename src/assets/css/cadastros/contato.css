@@ -28,6 +28,7 @@ a{
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+    gap: 25px;
 }
 
 .contatos-container {
@@ -44,7 +45,7 @@ a{
 }
 
 .round{
-    width: 55px;
+    width: 40px;
     height: auto;
     border-radius: 25px;
     background-color: var(--cor-secundaria);
@@ -56,22 +57,30 @@ a{
     gap: 30px;
 }
 
+.contatos-title h1 {
+    font-size: 20px;
+}
+
 .input-container {
+    position: relative;
+    bottom: 40px;
     max-width: 60%;
-    gap: 15%;  
+    gap: 15%; 
+    align-items: start;
+    align-content: start;
 }
 
 
 .titulo{
     display: inline-block;
-    width:28%;
-    margin-left: 3%;
+    width: max-content;
+    height: max-content;
     color: #7D8184;
 }
 
 .caixa-container{
+    display: flex;
     width: 100%;
-    height: 20%;
     margin-bottom: 2%;
 }
 
@@ -87,15 +96,14 @@ a{
 
 .caixa2{
     background-color: var(--cor-fundo-img-produtos);
-    width: 1040px;
-    height: 300px;
+    width: 100%;
+    max-height: 300px;
     position: relative;
     resize: none;
 }
 
 #salvar{
     background-color: var(--cor-botao-primario);
-    width: 20%;
     white-space: nowrap;
     height: auto;
     font-size: 14px;
@@ -104,6 +112,9 @@ a{
     border-color: transparent;
     color: white;
     position: relative;
-    left: 43%;
-    top: 50px;
+}
+
+.button-container {
+    align-self: flex-end;
+    width: auto;
 }

@@ -31,7 +31,7 @@
                 <hr>
                 <div class="contatos-title">
                     <hr class="round">
-                    <h1>Entre em Contato</h1>
+                    <h1>Mande um Email</h1>
                 </div>
                 <p>Respondemos e-mail em 24 horas</p>
                 <p>Email: customer@exclusive.com</p>
@@ -40,27 +40,30 @@
 
 
             <form action="#" class="input-container" method="post">
-                <div class="caixa-container">
-                    <div class="titulo">
-                        <label for="nome">Nome</label>
-                        <input class="caixa" placeholder="John Doe" id="nome" rows="2"></input>
+
+                <div class="caixa-container row">
+                    
+                    <div class="container-titulos">
+                        <div class="titulo">
+                            <label for="nome">Nome</label>
+                            <input class="caixa" placeholder="John Doe" id="nome" rows="2"></input>
+                        </div>
+                        <div class="titulo">
+                            <label for="email">E-mail</label>
+                            <input class="caixa" id="email" placeholder="johndoe@gmail.com" rows="2"></input>
+                        </div>
+                        <div class="titulo">
+                            <label for="telefone">Telefone/WhatsApp</label>
+                            <input class="caixa" id="telefone" placeholder="(67) 99999-9999" rows="2"></input>
+                        </div>
                     </div>
-                    <div class="titulo">
-                        <label for="email">E-mail</label>
-                        <input class="caixa" id="email" placeholder="johndoe@gmail.com" rows="2"></input>
-                    </div>
-                    <div class="titulo">
-                        <label for="telefone">Telefone/WhatsApp</label>
-                        <input class="caixa" id="telefone" placeholder="(67) 99999-9999" rows="2"></input>
+            
+                    <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea>
+                    <div class="button-container">
+                        <button id="salvar" type="submit">Enviar Mensagem</button>
                     </div>
                 </div>
-                <div class="titulo">
 
-                <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea>
-                
-                </div>
-
-                <button id="salvar" type="submit">Enviar Mensagem</button>
             </form>
         </div>
                 
