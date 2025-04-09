@@ -1,8 +1,9 @@
-* {
+main * {
   width: auto;
 }
 
 main {
+  width: auto;
   padding: 2%;
 }
 
