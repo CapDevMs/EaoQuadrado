@@ -23,8 +23,7 @@
                         <h2>Bolsa Gucci</h2>
                         <h1 class="preco">R$ 989,00</h1>
                         <div>
-                            <h4>Cores:</h4>
-                            
+                            <h4>Cores:</h4>       
                         </div>
                         <div id="botao_qtd">
                             <button class="quantidade" id="menos">-</button>
