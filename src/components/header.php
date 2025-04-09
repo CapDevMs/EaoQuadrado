@@ -35,5 +35,20 @@ $base_url = get_base_url();
                 </a>
             </li>
         </ul>
+        <div class="header-mobile">
+                <img src="<?=$base_url;?>/assets/img/menu-mobile.svg" alt="Menu" id="hamburguer">
+
+        </div>
     </nav>
 </header>
+<!-- Menu Mobile -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="<?=$base_url;?>/pages/login.php">Login</a></li>
+        <li><a href="<?=$base_url;?>/pages/carrinho.php">Carrinho</a></li>
+        <li><a href="<?=$base_url;?>/pages/cadastros/sobre.php">Sobre</a></li>
+        <li><a href="<?=$base_url;?>/pages/cadastros/contato.php">Contato</a></li>
+    </ul>
+</div>
+
+<script src="../assets/js/header.js"></script>
