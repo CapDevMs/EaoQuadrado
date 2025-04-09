@@ -17,41 +17,54 @@
         <a id="menu" href="index.php">Pagina Inicial</a>
         <span>/</span>
         <div id="sub-menu"><a href="contato.php">Contato</a></div>     
-        <div class="container">
-        <img src="../../assets/img/contato.jpg" alt="contato" id="contato">
-      
-        <form action="#" method="post">
-            <div class="titulo">
-                <label>Nome</label><br>
-                <textarea class="caixa" placeholder="John Doe" id="nome" rows="2"></textarea><br><br>
+
+        <div class="container_geral row">
+
+            <div class="contatos-container">
+                <div class="contatos-title">
+                    <hr class="round">
+                    <h1>Entre em Contato</h1>
+                    
+                </div>
+                <p>Atendimento 24 horas</p>
+                <p>Telefone: +67991377273</p>
+                <hr>
+                <div class="contatos-title">
+                    <hr class="round">
+                    <h1>Entre em Contato</h1>
+                </div>
+                <p>Respondemos e-mail em 24 horas</p>
+                <p>Email: customer@exclusive.com</p>
+                <p>Email: support@exclusive.com</p>
             </div>
-            <div class="titulo">
-                <label>E-mail</label><br>
-                <textarea class="caixa" id="email" placeholder="johndoe@gmail.com" rows="2"></textarea><br><br>
-            </div>
-            <div class="titulo">
-                <label>Telefone/WhatsApp</label><br>
-                <textarea class="caixa" id="telefone" placeholder="(67) 99999-9999" rows="2"></textarea><br><br>
-            </div>
-            <div class="titulo">
-                <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea><br><br>
-            </div>
-            <button id="salvar" type="submit">Enviar Mensagem</button>
-        </form>
 
 
-        <div id="modalImagem" class="modal">
-            <div class="modal-content">
-                <span class="fechar">&times;</span>
-                <img src="../../assets/img/mens-enviada.png" alt="Imagem de Sucesso" />
-            </div>
+            <form action="#" class="input-container" method="post">
+                <div class="caixa-container">
+                    <div class="titulo">
+                        <label for="nome">Nome</label>
+                        <input class="caixa" placeholder="John Doe" id="nome" rows="2"></input>
+                    </div>
+                    <div class="titulo">
+                        <label for="email">E-mail</label>
+                        <input class="caixa" id="email" placeholder="johndoe@gmail.com" rows="2"></input>
+                    </div>
+                    <div class="titulo">
+                        <label for="telefone">Telefone/WhatsApp</label>
+                        <input class="caixa" id="telefone" placeholder="(67) 99999-9999" rows="2"></input>
+                    </div>
+                </div>
+                <div class="titulo">
+
+                <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea>
+                
+                </div>
+
+                <button id="salvar" type="submit">Enviar Mensagem</button>
+            </form>
         </div>
-
-            
                 
             
-
-
     </main>
 
     <?php get_footer() ?>
