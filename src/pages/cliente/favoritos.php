@@ -9,92 +9,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title><?= $appName . ' - ' . $titulo ?? '' ?></title> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>E ao Quadrado - Favoritos</title>
     <?php get_css(['cliente/favoritos_cliente']) ?>
     <?php get_css_components() ?>
 </head>
 <body>
+    <?php get_header(); ?>
 
-    <?php get_header() ?>
-
-    <main>
+    <main class="main-container">
         <div class="sidebar-menu">
-            <div class="roadmap">
-                <ul class="breadcrumb-list">
-                    <li class="breadcrumb-item">
-                        <a href="../../src/index.php" class="breadcrumb-link">Home</a>
-                    </li>
-                    <li class="breadcrumb-item-separador">/</li>
-                    <li class="breadcrumb-item">
-                        <a href="#" class="breadcrumb-link" id="favorite">Favoritos</a>
-                    </li>
-                </ul>
-            </div>
-    <div class="title-fav-produtos">Produtos Favoritos</div>
-    <div href="#" class="btn mover-tudo-carrinho">Mover tudo para o carrinho</div>
-    <div class="card-produto">
-        <div class="card-body pb-1">
-            <div class="row">
-                <div class="col-sm-11">
-                    <a href="${link}">
-                        <img class="img-produto" src="../../assets/img/computador.png">
-                    </a>
-                </div>
-                <div class="col-sm-1 pt-2">
-                    <a href="#">
-                        <img class="icone-carrinho" src="../../assets/img/carrinho2.svg"></img>
-                    </a>
-                </div>
-            </div>
+            <a href="meu-perfil-cliente.php">
+                <p>Meu Perfil</p>
+            </a>
+            <span id="separator">/</span>
+            <a href="#">Meus Favoritos</a>
+            <span class="separator">/</span>
         </div>
-        <div class="card-footer">
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="#" class="btn-add-carrinho">Adicione ao Carrinho</a>
-                    <div class="container-nome-produto">
-                        <h3 class="nome-produto">ASUS Notebook Gamer</h3>
-                    </div>
-                    <div class="container-preco-produto">
-                        <h3 class="preco-produto">R$960</h3>
-                    </div>
-                </div>
+      
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="container-header-section">
+                <div class="block-green"></div>
+                <p class="text-prmary">Produtos Favoritos</p>
             </div>
-            
-        </div>
+        </div>    
     </div>
+    <a href="./carrinho.php">
+        <div class="btn-mover-tudo-carrinho">
+            <p class="p-text-move-carrinho">Mover tudo ao carrinho</p>
+        </div>
+    </a>
+    <card-produto-fav class="row"></card-produto-fav>
+
 
     <div class="title-fav-vendedores">vendedores Favoritos</div>
-    <div class="card-produto">
-        <div class="card-body pb-1">
-            <div class="row">
-                <div class="col-sm-11">
-                    <a href="${link}">
-                        <img class="img-produto" src="../../assets/img/loja-favorita.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="card-footer">
-            <div class="row">
-                <div class="col-sm-12">
-                <div class="col-sm-6">
-                    <a href="#" class="btn-visitar-loja">Visitar loja</a>
-                </div>
-                    <div class="container-nome-produto">
-                        <h3 class="nome-produto">ASUS Notebook Gamer</h3>
-                    </div>
-                    <div class="container-preco-produto">
-                        <h3 class="preco-produto">R$960</h3>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
 
+
+        <section class="lojas-favoritas">
+            <div class="container-loja">
+                <img src="" alt="Studio Center" class="loja-img">
+                <h3 class="nome-loja">Studio Center</h3>
+                <p class="loja-info">Avaliações: ★★★★★</p>
+                <a href="#" class="btn-visitar-loja">Visitar Loja</a>
+            </div>
+            <div class="container-loja">
+                <img src="../../assets/img/loja-favorita.png" alt="Studio Center" class="loja-img">
+                <h3 class="nome-loja">Studio Center</h3>
+                <p class="loja-info">Avaliações: ★★★★★</p>
+                <a href="#" class="btn-visitar-loja">Visitar Loja</a>
+            </div>
+            <div class="container-loja">
+                <img src="../../assets/img/loja-favorita.png" alt="Studio Center" class="loja-img">
+                <h3 class="nome-loja">Studio Center</h3>
+                <p class="loja-info">Avaliações: ★★★★★</p>
+                <a href="#" class="btn-visitar-loja">Visitar Loja</a>
+            </div>
+            <div class="container-loja">
+                <img src="../../assets/img/loja-favorita.png" alt="Studio Center" class="loja-img">
+                <h3 class="nome-loja">Studio Center</h3>
+                <p class="loja-info">Avaliações: ★★★★★</p>
+                <a href="#" class="btn-visitar-loja">Visitar Loja</a>
+            </div>
+        </section>
     </main>
+    <script type="module" src="../../assets/js/favoritos.js?<?= time(); ?>"></script>
+    <script type="module" src="../../assets/js/card-prod-favoritos.js?"></script>
 
     <?php get_footer() ?>
 </body>
-<script src="../../assets/js/script.js"></script>
+
 </html>

@@ -1,4 +1,5 @@
 // componente dos produtos favoritos
+<<<<<<< HEAD
 const cardProdFavorito = ({ id, titulo, imagem, preco, link }) => {   
     return `
     <div class="card-produto col-sm-12 col-md-6 col-lg-4 col-xl-3">
@@ -40,8 +41,17 @@ const cardProdFavorito = ({ id, titulo, imagem, preco, link }) => {
     </div>
     `;
 }
+=======
+const cardProduto = ({ id, titulo, imagem, preco, link }) => {   
+    return `
+    
+>>>>>>> 6bd4daaeaf57a2941cb14c4e2c4f7bc04b1ec10c
     
     `;
 
 }
+<<<<<<< HEAD
 export default cardProdFavorito ;
+=======
+export default cardProduto;
+>>>>>>> 6bd4daaeaf57a2941cb14c4e2c4f7bc04b1ec10c
