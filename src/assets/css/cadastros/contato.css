@@ -24,80 +24,69 @@ a{
     text-decoration: none;
 }
 
-.container_geral {
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    gap: 25px;
-}
-
-.contatos-container {
-    display: grid;
-    max-width: 25%;
-    width: max-content;
-    height: max-content;
-    margin-left: 5%;
-    gap: 10px;
-}
-
-.contatos-container > hr {
-    width: 100%;
+hr {
+    width: 70%;
 }
 
 .round{
     width: 40px;
-    height: auto;
+    height: 40px;
+    flex-shrink: 0;
     border-radius: 25px;
     background-color: var(--cor-secundaria);
+    margin: 0;
+}
+
+.contatos-container {
+    margin: 0 auto;
 }
 
 .contatos-title {
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
 }
 
 .contatos-title h1 {
     font-size: 20px;
-}
-
-.input-container {
-    position: relative;
-    bottom: 40px;
-    max-width: 60%;
-    gap: 15%; 
-    align-items: start;
-    align-content: start;
+    width: fit-content;
+    height: fit-content;
 }
 
 
-.titulo{
-    display: inline-block;
+.titulo label{
+    display: block;
     width: max-content;
     height: max-content;
-    color: #7D8184;
 }
 
 .caixa-container{
     display: flex;
     width: 100%;
-    margin-bottom: 2%;
 }
 
-
+.input-group {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
 
 .caixa{
     border-radius: 15px;
     height: 25px;
+    width: 95%;
     font-size: 16px;
     background-color: var(--cor-fundo-img-produtos);
     padding: 5px;
+    border: 1px solid black;
 }
 
 .caixa2{
     background-color: var(--cor-fundo-img-produtos);
-    width: 100%;
-    max-height: 300px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 5px;
+    width: 98.5%;
     position: relative;
     resize: none;
 }
@@ -117,4 +106,15 @@ a{
 .button-container {
     align-self: flex-end;
     width: auto;
+}
+
+@media (max-width: 768px) {
+    .round {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos-title h1 {
+        font-size: 16px;
+    }
 }
