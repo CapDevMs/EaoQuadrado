@@ -15,8 +15,7 @@
     <?php get_css_components() ?>
 </head>
 <body>
-
-    <?php get_header() ?>
+    <?php get_header(); ?>
 
     <main class="main-container">
         <div class="sidebar-menu">
@@ -41,7 +40,7 @@
             <p class="p-text-move-carrinho">Mover tudo ao carrinho</p>
         </div>
     </a>
-    <card-produto-fav></card-produto-fav>
+    <card-produto-fav class="row"></card-produto-fav>
 
 
     <div class="title-fav-vendedores">vendedores Favoritos</div>
@@ -74,9 +73,10 @@
             </div>
         </section>
     </main>
-
+    <script type="module" src="../../assets/js/favoritos.js?<?= time(); ?>"></script>
+    <script type="module" src="../../assets/js/card-prod-favoritos.js?"></script>
 
     <?php get_footer() ?>
 </body>
-<script type="module" src="../assets/js/favoritos.js?<?= time(); ?>"></script>
+
 </html>
