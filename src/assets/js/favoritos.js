@@ -1,81 +1,72 @@
-// let limpa_cache = Date.now();
+// java script e componentes 
+let limpa_cache = Date.now();
 
-// let { default: cardProdutoFav} = await import( `./components/card-prod-favoritos.js?v=${ limpa_cache }`);
-import cardProdutoFav from "./components/card-prod-favoritos";
+let { default: cardProduto } = await import( `./components/card-prod-favoritos.js?v=${ limpa_cache }` );
 
-const docTag = document.querySelector('card-produto-fav');
+// import cardProduto from "./components/card-produto.js";
 
-let ProdutosFav = [
+const docTag = document.querySelector('card-prod-favorito');
+
+
+// import cardProduto from './components/card-prod-favoritos.js';
+
+// const docTag = document.querySelector("card-prod-favorito");
+
+let produtosFav = [
     {
-        'id': 1,
-        'titulo': 'Notebook Asus Gamer',
-        'imagem': '../assets/img/acer_nitro\.png',
+        'titulo': 'Notebook Acer Gamer',
+        'imagem': '../../assets/img/acer_nitro.png',
         'preco': '3,999,99',
         'link': './produto.php'
     },
     {
-        'id': 2,
-        'titulo': 'Caneca especial Programador',
-        'imagem': '../assets/img/caneca2.png',
-        'preco': '119,90',
+        'titulo': 'Notebook Asus ',
+        'imagem': '../../assets/img/asus_notebook.png',
+        'preco': '2,999,90',
         'link': './produto.php'
     },
     {
-        'id': 3,
-        'titulo': 'Notebook Asus Gamer',
-        'imagem': '../assets/img/computador.png',
-        'preco': '3,999,99',
-        'link': './produto.php'
-    },
-    {
-        'id': 4,
         'titulo': 'Caneca especial Programador',
-        'imagem': '../assets/img/caneca3.png',
-        'preco': '119,90',
-        'link': './produto.php'
-    },
-    {
-        'id': 5,
-        'titulo': 'Caneca especial Programador',
-        'imagem': '../assets/img/caneca2.png',
-        'preco': '119,90',
-        'link': './produto.php'
-    },
-    {
-        'id': 6,
-        'titulo': 'Caneca especial Programador',
-        'imagem': '../assets/img/caneca3.png',
+        'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
         'link': './produto.php'
     },
     {
-        'id': 7,
         'titulo': 'Caneca especial Programador',
-        'imagem': '../assets/img/caneca2.png',
-        'preco': '119,90',
+        'imagem': '../../assets/img/caneca1.png',
+        'preco': '99,90',
         'link': './produto.php'
     },
     {
-        'id': 8,
-        'titulo': 'Caneca especial Programador',
-        'imagem': '../assets/img/computador.png',
-        'preco': '119,90',
+        'titulo': 'Notebook Asus Gamer',
+        'imagem': '../../assets/img/asus_notebook.png',
+        'preco': '2,999,90',
         'link': './produto.php'
     },
-];
+    {
+        'titulo': 'Notebook Asus Gamer',
+        'imagem': '../../assets/img/asus_notebook.png',
+        'preco': '2,999,90',
+        'link': './produto.php'
+    },
+    {
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../../assets/img/monitor_oled.png',
+        'preco': '899,90',
+        'link': './produto.php'
+    },
+    {
+        'titulo': 'Caneca especial Programador',
+        'imagem': '../../assets/img/monitor_oled.png',
+        'preco': '899,90',
+        'link': './produto.php'
+    },
+]
 
 await exibirProdutosFav();
 
-async function exibirProdutosFav(){
-    ProdutosFav.forEach((ProdutosFav) =>{
-        docTag.innerHTML += cardProdutoFav(ProdutosFav)
+async function exibirProdutosFav() {
+    produtosFav.forEach((produtosFav) => {
+        docTag.innerHTML += cardProduto(produtosFav)
     });
-
 }
-
-// ProdutosFav.forEach((ProdutosFavComponent)=>{
-//     console.log(docTag)
-//     docTag.innerHTML += cardProdutoFav(ProdutosFavComponent);
-// });
-
-

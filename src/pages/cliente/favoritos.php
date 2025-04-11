@@ -41,7 +41,7 @@
         </div>
     </a>
     <card-prod-favorito class="row"></card-prod-favorito>
-    
+
 
     <div class="title-fav-vendedores">vendedores Favoritos</div>
 
