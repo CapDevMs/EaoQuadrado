@@ -6,7 +6,7 @@ let { default: cardProdVendedor } = await import( `./components/card-vendedor-fa
 // import cardProduto from "./components/card-produto.js";
 
 const docTagProdutos = document.querySelector('.card-prod-favorito-container');
-
+const docTagVendedor = document.querySelector('.card-vendedor-favorito');
 
 // import cardProduto from './components/card-prod-favoritos.js';
 
@@ -67,13 +67,11 @@ await exibirProdutosFav();
 await exibirProdutosVendFav();
 
 async function exibirProdutosFav() {
-    produtosFav.forEach((produtosFav) => {
-        docTagProdutos.innerHTML += cardProdFavorito(produtosFav)
+    produtosFav.forEach((produto) => {
+        docTagProdutos.innerHTML += cardProdFavorito(produto)
     });
 }
 
-
-const docTagVendedor = document.querySelector('card-vendedor-favorito');
 
 let VendedoresFav = [
     {
@@ -101,7 +99,7 @@ let VendedoresFav = [
 
 
 async function exibirProdutosVendFav() {
-    produtosFav.forEach(( VendedoresFav) => {
-        docTagVendedor.innerHTML += cardVendFavorito( VendedoresFav)
+    produtosFav.forEach(( vendedor) => {
+        docTagVendedor.innerHTML += cardVendFavorito( vendedor)
     });
 }
