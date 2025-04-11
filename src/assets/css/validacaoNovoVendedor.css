@@ -24,7 +24,7 @@
 .menuLateral{
     display: flex;
     flex-direction: column;
-    max-width: max-content;
+    max-width: 240px;
 }
 
 .subCorpo{
@@ -44,39 +44,47 @@
 
 .painel{
     background-color: rgba(0, 0, 255, 0);
-    max-width: 95%;
     height: 750PX;
     border: 2px solid #BFC2C5;
     border-radius: 20px;
     box-shadow: 1px 2px 3px #BFC2C5;
     overflow: hidden auto;
+    width: 1200px;
 }
 
 .acordeonFechado{
     display: flex;
+    justify-content: space-between;
+
     border: 2px solid rgb(0, 0, 0,0.0);
     border-radius: 20px;
+
     margin: 0 auto;
-    height: max-content ;
-    max-width: 95%;
     margin-top: 20px;
-    background-color: rgb(0,0,0,0.08);
-    justify-content: space-between;
-    box-shadow: 2px 5px 2px rgb(0, 0, 0,0.3);
     margin-bottom: 10px;
+
+    max-width: 95%;
+    height: 120px;
+    
+    background-color: rgb(0, 0, 0,0.06);
+    box-shadow: 2px 5px 2px rgb(0, 0, 0,0.3);
 }
 
 .acordeonAberto{
     display: none;
+
     border:2px solid rgb(0, 0, 0,0.0);
     border-radius: 20px;
+
     margin: 0 auto;
-    max-width: 95%;
-    height: 1200px;
     margin-top: 20px;
     margin-bottom: 10px;
-    background-color: rgb(0,0,0,0.08);
-    
+
+    max-width: 95%;
+    height: max-content;
+        
+    background-color: rgb(0, 0, 0,0.06);
+    box-shadow: 2px 5px 2px rgb(0, 0, 0,0.3);
     
 }
 
@@ -150,4 +158,109 @@
 .miniPainel{
     background-color: white;
     max-width: 40%;
+    height: 540px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0,0.2);
+    
+}
+
+.acordeonAberto2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mini2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.imagemPainel{
+    max-width: 80%;
+    max-height: max-content;
+    margin: 0 auto;
+}
+
+.painelImagem{
+    display: flex;
+    justify-content: center;
+}
+
+.painelCarrocel{
+    display: flex;
+    justify-content: start;
+}
+
+.imagemCarrocel{
+    height: 120px;
+    width: 120px;
+    
+}
+
+.acordeonAberto3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.centralizadorVertical{
+    margin-top: 20px;
+    max-width: 90%;
+    height: 12%;
+    border-radius: 20px;
+    border:1px solid rgb(0, 0, 0,0.2);
+    background-color: white;
+    height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imagemBotao{
+    background-color: rgb(0, 0, 0,0.06);
+    border: 0px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blocoFinal{
+    
+    max-width: 70%;
+    margin-top: 20px;
+    height: 30%;
+    margin-bottom: 10px;
+}
+
+.painelObservacoes{
+    border: 2px solid rgb(0, 0, 0,0.2);
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.btPadrao{
+    width: 120px;
+    border: 0px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    margin: 5px;
+}
+
+.linha{
+    display: flex;
+    justify-content: center;
+}
+
+.acordeonAberto4{
+    display: flex;
+    justify-content: center;
 }
