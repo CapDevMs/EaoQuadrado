@@ -1,7 +1,7 @@
 // componente dos produtos favoritos
 const cardProdFavorito = ({titulo, imagem, preco, link }) => {   
     return `
-     <div class="card-prod-favorito col-sm-12 col-md-6 col-lg-4 col-xl-3">
+    <div class="card-prod-favorito col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card-body">
             <div class="imagem-produto-wrapper">
                 <a href="${link}">
@@ -19,8 +19,9 @@ const cardProdFavorito = ({titulo, imagem, preco, link }) => {
                 <div class="container-preco-produto">
                     <h3 class="preco-produto">R$ ${preco}</h3>
                 </div>
-            <a href="${link}" class="btn btn-add-carrinho">Carrinho</a>
+            <a href="${link}" class="btn btn-add-carrinho">Adicionar ao Carrinho</a>
         </div>
+    </div>    
     `;
 };
                   

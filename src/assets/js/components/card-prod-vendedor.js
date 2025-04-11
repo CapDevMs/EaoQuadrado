@@ -1,6 +1,7 @@
-const cardProduto = ({ id, titulo, imagem, preco, link }) => {
+// componente card vendedor favorito
+const cardVendFavorito = ({ id, titulo, imagem, link }) => {
     return `
-    <div class="card-produto col-sm-12 col-md-6 col-lg-4 col-xl-3">
+    <div class="card-produto-vend col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card-body pb-1">
             <div class="row">
                 <div class="col-sm-11">
@@ -29,10 +30,9 @@ const cardProduto = ({ id, titulo, imagem, preco, link }) => {
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <a href="${link}" class="btn btn-comprar">Comprar</a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="${link}" class="btn btn-carrinho">Carrinho</a>
+                <a class="shopping-link"">
+                    <i class="fa-solid fa-cart-shopping"></i>
+            </a>
                 </div>
             </div>
         </div>
@@ -40,4 +40,4 @@ const cardProduto = ({ id, titulo, imagem, preco, link }) => {
     `;
 }
 
-export default cardProduto;
+export default cardVendFavorito;
