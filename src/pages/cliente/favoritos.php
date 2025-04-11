@@ -42,36 +42,10 @@
     </a>
     <card-prod-favorito class="row"></card-prod-favorito>
 
-
     <div class="title-fav-vendedores">vendedores Favoritos</div>
 
-
-        <section class="lojas-favoritas">
-            <div class="container-loja">
-                <img src="" alt="Studio Center" class="loja-img">
-                <h3 class="nome-loja">Studio Center</h3>
-                <p class="loja-info">Avaliações: ★★★★★</p>
-                <a href="#" class="btn-visitar-loja">Visitar Loja</a>
-            </div>
-            <div class="container-loja">
-                <img src="../../assets/img/loja-favorita.png" alt="Studio Center" class="loja-img">
-                <h3 class="nome-loja">Studio Center</h3>
-                <p class="loja-info">Avaliações: ★★★★★</p>
-                <a href="#" class="btn-visitar-loja">Visitar Loja</a>
-            </div>
-            <div class="container-loja">
-                <img src="../../assets/img/loja-favorita.png" alt="Studio Center" class="loja-img">
-                <h3 class="nome-loja">Studio Center</h3>
-                <p class="loja-info">Avaliações: ★★★★★</p>
-                <a href="#" class="btn-visitar-loja">Visitar Loja</a>
-            </div>
-            <div class="container-loja">
-                <img src="../../assets/img/loja-favorita.png" alt="Studio Center" class="loja-img">
-                <h3 class="nome-loja">Studio Center</h3>
-                <p class="loja-info">Avaliações: ★★★★★</p>
-                <a href="#" class="btn-visitar-loja">Visitar Loja</a>
-            </div>
-        </section>
+    <card-vendedor-favorito class="row"></card-vendedor-favorito>
+        
     </main>
     <script type="module" src="../../assets/js/favoritos.js?<?= time(); ?>"></script>
     <!-- <script type="module" src="../../assets/js/components/card-prod-favoritos.js?"></script> -->

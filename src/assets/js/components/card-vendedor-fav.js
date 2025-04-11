@@ -23,16 +23,16 @@ const cardVendFavorito = ({ id, titulo, imagem, link }) => {
                     <div class="container-nome-produto">
                         <h3 class="nome-produto">${titulo}</h3>
                     </div>
-                    <div class="container-preco-produto">
-                        <h3 class="preco-produto">R$ ${preco}</h3>
+                    <div class ="avaliacao-vendedor">
+                    <a class="icone-star">
+                        <i class="fa fa-star icone-star"></i>
+                        <i class="fa fa-star icone-star"></i>
+                        <i class="fa fa-star icone-star"></i>
+                        <i class="fa fa-star icone-star"></i>
+                        <i class="fa fa-star icone-star"></i>
+                    </a>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                <a class="shopping-link"">
-                    <i class="fa-solid fa-cart-shopping"></i>
-            </a>
+                    
                 </div>
             </div>
         </div>
