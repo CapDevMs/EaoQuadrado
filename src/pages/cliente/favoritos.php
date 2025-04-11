@@ -41,7 +41,7 @@
         </div>
     </a>
     <card-prod-favorito class="row"></card-prod-favorito>
-
+    
 
     <div class="title-fav-vendedores">vendedores Favoritos</div>
 
@@ -74,7 +74,7 @@
         </section>
     </main>
     <script type="module" src="../../assets/js/favoritos.js?<?= time(); ?>"></script>
-    <!-- <script type="module" src="../../assets/js/card-prod-favoritos.js?"></script> -->
+    <!-- <script type="module" src="../../assets/js/components/card-prod-favoritos.js?"></script> -->
 
     <?php get_footer() ?>
 </body>

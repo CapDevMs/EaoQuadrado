@@ -1,4 +1,4 @@
-const cardProduto = ({ id, titulo, imagem, preco, link }) => {
+const cardVend = ({ id, titulo, imagem, preco, link }) => {
     return `
     <div class="card-produto col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card-body pb-1">
@@ -29,10 +29,7 @@ const cardProduto = ({ id, titulo, imagem, preco, link }) => {
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <a href="${link}" class="btn btn-comprar">Comprar</a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="${link}" class="btn btn-carrinho">Carrinho</a>
+                    <a href="${link}" class="btn btn-carrinho">Adicione ao carrinho</a>
                 </div>
             </div>
         </div>
@@ -40,4 +37,4 @@ const cardProduto = ({ id, titulo, imagem, preco, link }) => {
     `;
 }
 
-export default cardProduto;
+export default cardVend;
