@@ -18,7 +18,7 @@
 }
 
 #icon-cliente{
-    width: 8%;
+    width: 7%;
 }
 
 .nome-cliente{
@@ -27,39 +27,75 @@
 }
 
 #estrela-comentario{
-    width: 8%;
-}
-
-
-#estrela-comentario{
     width: 10%;
     height: 100%;
+    margin-bottom: 6%;
 }
 
 
 .comentario-cliente{
     width: 95%;
     margin-left: 2%;
+    margin-top: 1%;
+    font-size: 15px;
 }
 
-@media (max-width:1290px){
+@media (max-width:1024px){
 
-    #estrela-comentario{
-        width: 11%;
-    }
-}
-
-@media (max-width:950px){
-
-    #estrela-comentario{
-        width: 13%;
+    #icon-cliente{
+        width: 9%;
     }
 
     .nome-cliente{
         font-size: 18px;
+        font-weight: 400;
+    }
+    
+    #estrela-comentario{
+        width: 13%;
+        margin-bottom: 7%;
+    }
+}
+
+@media (max-width:768px){
+
+    #icon-cliente{
+        width: 11%;
+    }
+    
+    .nome-cliente{
+        font-size: 18px;
     }
 
-    #comentario-cliente{
-        font-size: 20%;
+    #estrela-comentario{
+        width: 17%;
+        margin-bottom: 8%;
+    }
+
+
+    .comentario-cliente{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:425px){
+
+    #icon-cliente{
+        width: 18%;
+    }
+    
+    .nome-cliente{
+        font-size: 16px;
+    }
+
+    #estrela-comentario{
+        width: 27%;
+        margin-bottom: 0%;
+    }
+
+
+    .comentario-cliente{
+        font-size: 13px;
+        padding-top: 5%;
     }
 }

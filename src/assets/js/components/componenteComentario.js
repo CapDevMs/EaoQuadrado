@@ -5,7 +5,7 @@ const componenteComentario = ({ cliente, comentario }) => {
             <div class= "avaliacao-content">
                 <img src="../../assets/img/icone_perfil.png" class="foto" alt="alguem" id="icon-cliente">
                 <h1 class="nome-cliente pl-1">${cliente}</h1>
-                <img src="../../assets/img/Four Star.png" class="estrelinha4 pb-5 pr-1" alt="estrela4" id="estrela-comentario">
+                <img src="../../assets/img/Four Star.png" class="estrelinha4 pr-1" alt="estrela4" id="estrela-comentario">
             </div>
             <p class="comentario-cliente">${comentario}</p>
             
