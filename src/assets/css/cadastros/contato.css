@@ -109,12 +109,43 @@ hr {
 }
 
 @media (max-width: 768px) {
-    .round {
-        width: 30px;
-        height: 30px;
+    .container {
+        display: flex;
+        flex-direction: column;
     }
 
     .contatos-title h1 {
         font-size: 16px;
+    }
+
+    .info {
+        margin: 0 auto 0 32%;
+        width: calc(60% - 0.5rem);
+        margin-bottom: 5%;
+    }
+
+    .message {
+        margin: 0 auto;
+        width: calc(100% - 0.5rem);
+    }
+}
+
+@media (max-width: 425px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .info {
+        margin: 0 auto 0 20%;
+        width: calc(60% - 0.5rem);
+        margin-bottom: 10%;
+    } 
+
+    .container {
+        margin-bottom: 5%;
+    }
+
+    .caixa2 {
+        width: 95%;
     }
 }
