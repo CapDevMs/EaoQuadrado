@@ -18,20 +18,24 @@
 
         <div class="container pt-3 row">
             <div class="info col-sm-12 col-md-4 pt-1">
-                <div class="contatos-title pb-1">
-                    <span class="round"></span>
-                    <h1>Entre em Contato</h1>
+                <div class="contatos-group">
+                    <div class="contatos-title pb-1">
+                        <span class="round"></span>
+                        <h1>Entre em Contato</h1>
+                    </div>
+                    <p class="pb-1">Atendimento 24 horas</p>
+                    <p class="pb-1">Telefone: +67991377273</p>
                 </div>
-                <p class="pb-1">Atendimento 24 horas</p>
-                <p class="pb-1">Telefone: +67991377273</p>
                 <hr>
-                <div class="contatos-title pb-1 pt-1">
-                    <span class="round"></span>
-                    <h1>Mande um Email</h1>
+                <div class="contatos-group">
+                    <div class="contatos-title pb-1 pt-1">
+                        <span class="round"></span>
+                        <h1>Mande um Email</h1>
+                    </div>
+                    <p class="pb-1">Respondemos e-mail em 24 horas</p>
+                    <p class="pb-1">Email: customer@exclusive.com</p>
+                    <p>Email: support@exclusive.com</p>
                 </div>
-                <p class="pb-1">Respondemos e-mail em 24 horas</p>
-                <p class="pb-1">Email: customer@exclusive.com</p>
-                <p>Email: support@exclusive.com</p>
             </div>
 
             
