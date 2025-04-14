@@ -8,6 +8,7 @@ $appName = get_app_name();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <?php get_css(['cadastros/sobre', 'style']) ?>
     <?php get_css_components(); ?>
@@ -45,6 +46,40 @@ $appName = get_app_name();
             </div>
         </div>
         
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-status ptb-1">
+                        <div class="status-icon ptb-1">
+                            <i class="fa fa-shop"></i>
+                        </div>
+                        <p class="status-text">10.5k</p>
+                        <p class="status-subtitle">Vendedores ativos no site</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-status ptb-1">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p class="status-text">33k</p>
+                        <p class="status-subtitle">Venda mensal</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-status ptb-1">
+                        <i class="fa-solid fa-user"></i>
+                        <p class="status-text">45.5k</p>
+                        <p class="status-subtitle">Clientes ativos no site</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card-status ptb-1">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <p class="status-text">250k</p>
+                        <p class="status-subtitle">Venda bruta anual no site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="comparativo">
             <img src="../../assets/img/comparativo-sobre.png">

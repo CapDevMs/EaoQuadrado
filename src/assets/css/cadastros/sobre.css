@@ -1,3 +1,37 @@
 .text-justify {
     text-align: justify;
 }
+
+.card-status {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+
+    justify-items: center;
+    align-items: center;
+}
+
+.status-icon {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor-texto);
+    border-radius: calc(infinity * 1px);
+    width: 4rem;
+    border: 5px solid gray;
+}
+
+.status-icon > i {
+    color: var(--cor-texto-botao);
+}
+
+.status-text, .status-subtitle {
+    text-align: center;
+}
+
+.status-text {
+    font-weight: bold;
+}
+
+.status-subtitle {
+    font-size: 12px;
+}
