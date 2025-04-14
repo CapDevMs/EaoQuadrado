@@ -24,7 +24,8 @@
 .menuLateral{
     display: flex;
     flex-direction: column;
-    max-width: 240px;
+    white-space: nowrap;
+    width: 300px;
 }
 
 .subCorpo{
@@ -49,7 +50,7 @@
     border-radius: 20px;
     box-shadow: 1px 2px 3px #BFC2C5;
     overflow: hidden auto;
-    width: 1200px;
+    width: 95%;
 }
 
 .acordeonFechado{
@@ -215,8 +216,7 @@
     border-radius: 20px;
     border:1px solid rgb(0, 0, 0,0.2);
     background-color: white;
-    height: 100%;
-    height: 100%;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,3 +264,72 @@
     display: flex;
     justify-content: center;
 }
+
+.acordeonAberto{
+    flex-direction: column;
+}
+
+
+@media (max-width: 1440px) {
+    .painel{
+        width: 1009px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .painel{
+        width: 653px;
+    }
+    .acordeonAberto2{
+        flex-direction: column;
+    }
+    
+    .miniPainel{
+        max-width: 85%;
+        margin: 0 auto;
+        margin-top:10px ;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menuLateral{display: none;}
+    .painel{
+        width: 700px;
+    }
+    .acordeonAberto2{
+        flex-direction: column;
+    }
+    
+    .miniPainel{
+        max-width: 85%;
+        margin: 0 auto;
+        margin-top:10px ;
+        margin-bottom: 10px;
+        white-space: nowrap;
+     
+    }
+}
+
+@media (max-width: 425px){
+
+    .painel{
+        width: 400px;
+    }
+    
+
+}
+ 
+@media (max-width: 375px) {
+    .painel{
+        width: 340px;
+    }
+
+    .mini1{
+        display: flex;
+        flex-direction: column;     
+        overflow: hidden;
+    }
+
+}
+ 
