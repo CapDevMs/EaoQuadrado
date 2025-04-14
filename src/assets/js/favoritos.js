@@ -64,7 +64,6 @@ let produtosFav = [
 ]
 
 await exibirProdutosFav();
-await exibirProdutosVendFav();
 
 async function exibirProdutosFav() {
     produtosFav.forEach((produto) => {
@@ -97,6 +96,7 @@ let VendedoresFav = [
 
 ]
 
+await exibirProdutosVendFav();
 
 async function exibirProdutosVendFav() {
     produtosFav.forEach(( vendedor) => {

@@ -40,13 +40,15 @@
             <p class="p-text-move-carrinho">Mover tudo ao carrinho</p>
         </div>
     </a>
+    <div class="title-lojas-fav">Lojas Favoritas</div>
+
     <card-prod-favorito class="row"></card-prod-favorito>
 
     <div class="title-fav-vendedores">vendedores Favoritos</div>
 
-    <card-vendedor-favorito class="row"></card-vendedor-favorito>
+    <!-- <card-vendedor-favorito class="row"></card-vendedor-favorito> -->
         
-    </main>
+    </main> 
     <script type="module" src="../../assets/js/favoritos.js?<?= time(); ?>"></script>
     <!-- <script type="module" src="../../assets/js/components/card-prod-favoritos.js?"></script> -->
 
