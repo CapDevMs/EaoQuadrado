@@ -14,7 +14,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 5rem;
     margin-bottom: 3%;
 }
 
@@ -91,20 +91,13 @@ a {
 
 @media (max-width: 768px) {
     .main-container {
-        width: 100%;
+        width: 70%;
     }
     .produto-favorito, .lojas-favoritas {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .title-section-produtos{    
-        color:var(--cor-texto);
-        font-weight: 600;
-        font-size: 20px;
-        border-width : 0.5rem ;
-        margin-left: 5%;
-    }
-    
+   
 }
 
 @media(max-width:825){
@@ -181,7 +174,18 @@ a {
     }
     
 }
-
+@media(max-width:526px){
+    .header-favoritos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 5rem;
+        margin-bottom: 3%;
+    }
+    
+    
+}
   
 @media (max-width: 480px) {
     .produto-favorito, .lojas-favoritas {
@@ -194,7 +198,7 @@ a {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-top: 20%;
+        margin-top: 5rem;
         margin-bottom: 3%;
     }
 }
