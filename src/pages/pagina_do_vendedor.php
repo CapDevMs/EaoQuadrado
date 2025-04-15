@@ -102,6 +102,8 @@ $appName = get_app_name();
 
                 <card-produto class="row"></card-produto>
 
+                
+
             </div>
         </section>
     </main>
