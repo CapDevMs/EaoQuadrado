@@ -6,11 +6,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>Cadastro Cliente</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php get_css(['/cadastros/cadastro_cliente', 'base', 'style']) ?>
-       
-    <title>Eao Quadrado</title>
 </head>
 <body>
     <header class="header">
@@ -26,7 +25,7 @@
             <div class="form-container">
                 <img src="../../assets/img/foto_cliente.png" alt="foto do cliente" class="client-image">
                 
-                <form class="form" action="#">
+                <form class="form" id="vendedor_form" action="#">
  
                     <div class="nome-group">
                         <label for="nome">Nome</label>
