@@ -104,37 +104,6 @@ h2{
 }
 
  
-.quantidade{
-    display: inline;
-    width: 24%;
-    text-align: center;
-    height: 53%;
-}
-#botao_qtd{
-    padding-top: 7%;
-    width: 50%;
-    height: 10%;
-}
- 
-#menos{
-    position: relative;
-    left: 3%;
-    border-radius: 2px;
-    border-width: 1px;
-    height: 63%;
-    
-}
-#mais{
-    position: relative;
-    right: 3%;
-    border-width: 1px;
-    border-radius: 2px;
-    background-color: #16A18E;
-    color: white;
-    height: 63%;
- 
-}
-
 #comprar{
     padding-top: 5%;
     display: grid;
@@ -319,26 +288,6 @@ h3{
         gap: 5%;
         
     }
-    .quantidade{
-        display: inline;
-        width: 24%;
-        text-align: center;
-        height: 53%;
-    }
-    #botao_qtd{
-        padding-top: 7%;
-        width: 50%;
-        height: 10%;
-    }
-     
-    #menos{
-        height: 65%;
-        
-    }
-    #mais{
-        height: 65%;
-     
-    }
     
 }
 
@@ -366,23 +315,7 @@ h3{
         left: 10%;
         width: 90%;
     }
-    #comprar{
-        padding-top: 5%;
-        display: grid;
-        grid-template-columns: 50% 10%;
-        gap: 5%;
-        
-    }
-     
-    #menos{
-        height: 68%;
-        
-    }
-    #mais{
-        height: 68%;
-     
-    }
-    
+   
 
 }
 
@@ -412,16 +345,7 @@ h3{
         gap: 5%;
         
     }
-    #menos{
-        height: 69%;
-        left: 4%;
-        
-    }
-    #mais{
-        height: 69%;
-        right: 4%;
-     
-    }
+  
 }
 @media (max-width: 1135px) {
     #grid-produto{
@@ -473,38 +397,8 @@ h3{
         width: 100%;
         gap: 2%;
     }
-    .quantidade{
-        display: inline;
-        width: 20%;
-        text-align: center;
-        height: 80%;
-        
-    }
-    #botao_qtd{
-        padding-top: 2%;
-        width: 50%;
-        height: 10%;
-        padding-bottom: 2%;
-    }
-     
-    #menos{
-        position: relative;
-        left: 3%;
-        border-radius: 2px;
-        border-width: 1px;
-        height: 95%;
-        
-    }
-    #mais{
-        position: relative;
-        right: 3%;
-        border-width: 1px;
-        border-radius: 2px;
-        background-color: #16A18E;
-        color: white;
-        height:95%;
-     
-    }
+
+
     #comprar{
         display: flex;
         justify-content: center;
@@ -526,7 +420,7 @@ h3{
         display: flex;
         height: 100%;
         align-items: center;
-        width: 30%;
+        width: 20%;
         
         
     }
@@ -584,38 +478,8 @@ h3{
 }
 
 @media (max-width: 768px) {
-    .quantidade{
-        display: inline;
-        width: 25%;
-        text-align: center;
-        height: 70%;
-        
-    }
-    #botao_qtd{
-        padding-top: 2%;
-        width: 60%;
-        height: 12%;
-        padding-bottom: 5%;
-    }
-     
-    #menos{
-        position: relative;
-        left: 3%;
-        border-radius: 2px;
-        border-width: 1px;
-        height: 80%;
-        
-    }
-    #mais{
-        position: relative;
-        right: 3%;
-        border-width: 1px;
-        border-radius: 2px;
-        background-color: #16A18E;
-        color: white;
-        height:80%;
-     
-    }
+
+ 
     #comprar{
         display: flex;
         justify-content: center;

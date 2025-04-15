@@ -31,7 +31,6 @@ $appName = get_app_name();
                         <div id="comprar">
                             <div id="btn-comprar"><a>Comprar</a></div>
                             <div id="icons-comprar">
-
                                 <button id='MandarCarrinho' value="gucci_bolsa_intense.png|Gucci intense|400,00">
                                     <img class='icon iconCarrinho' src="../assets/img/carrinho-tela-produto.svg">
                                 </button>
