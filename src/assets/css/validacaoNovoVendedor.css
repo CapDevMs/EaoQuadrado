@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    width: 300px;
+    width: max-content;
 }
 
 .subCorpo{
@@ -42,7 +42,10 @@
     font-weight: bolder;
     margin: -0.8%;
 }
-
+:root{
+    --painel-width: 70vw;
+    --sideMenu-width: 70vw;
+}
 .painel{
     background-color: rgba(0, 0, 255, 0);
     height: 750PX;
@@ -50,7 +53,7 @@
     border-radius: 20px;
     box-shadow: 1px 2px 3px #BFC2C5;
     overflow: hidden auto;
-    width: 95%;
+    width: var(--painel-width);
 }
 
 .acordeonFechado{
@@ -271,15 +274,35 @@
 
 
 @media (max-width: 1440px) {
-    .painel{
-        width: 1009px;
+    
+}
+
+@media (max-width: 1440px) {
+    
+}
+
+@media (max-width: 833px) {
+    .menuLateral {
+        display: none;
+    }
+
+    :root{
+        --painel-width: 90vw;
+    }
+}
+
+@media (max-width: 575px) {
+    .roadMap{
+        font-size: 14px;
     }
 }
 
 @media (max-width: 1024px) {
-    .painel{
-        width: 653px;
+  
+    .menuLateral{
+        font-size: small;
     }
+
     .acordeonAberto2{
         flex-direction: column;
     }
@@ -294,9 +317,7 @@
 
 @media (max-width: 768px) {
     .menuLateral{display: none;}
-    .painel{
-        width: 700px;
-    }
+    
     .acordeonAberto2{
         flex-direction: column;
     }
@@ -313,17 +334,12 @@
 
 @media (max-width: 425px){
 
-    .painel{
-        width: 400px;
-    }
     
 
 }
  
 @media (max-width: 375px) {
-    .painel{
-        width: 340px;
-    }
+   
 
     .mini1{
         display: flex;
