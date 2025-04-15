@@ -17,49 +17,49 @@ let produtosFav = [
         'titulo': 'Caneca especial Programador',
         'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
         'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
         'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
         'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
         'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
         'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
         'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
         'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': '../../pages/produto.php'
     },
 ]
 
