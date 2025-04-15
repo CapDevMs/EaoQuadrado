@@ -42,14 +42,14 @@
     </a>
     <div class="title-lojas-fav">Lojas Favoritas</div>
 
-    <card-prod-favorito class="row"></card-prod-favorito>
+    <card-prod-favorito class="card-prod-favorito-container row"></card-prod-favorito>
 
     <div class="title-fav-vendedores">vendedores Favoritos</div>
 
-    <!-- <card-vendedor-favorito class="row"></card-vendedor-favorito> -->
+    <card-vendedor-favorito class="card-vendedor-favorito row"></card-vendedor-favorito>
         
     </main> 
-    <script type="module" src="../../assets/js/favoritos.js?<?= time(); ?>"></script>
+    <script type="module" src="../../assets/js/favoritos.js?<?= time(); ?> " defer ></script>
     <!-- <script type="module" src="../../assets/js/components/card-prod-favoritos.js?"></script> -->
 
     <?php get_footer() ?>

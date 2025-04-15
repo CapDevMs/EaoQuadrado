@@ -30,7 +30,7 @@
 
 .img-produto {
     width: 100%;
-    max-height: 15.75;
+    max-height: 15.75rem;
     margin: auto;
     object-fit: contain;
     margin-bottom: 0;
@@ -55,12 +55,13 @@
     color: var(--cor-verde-principal);
 }
 
-.btn-add-carrinho {
+a.btn-add-carrinho {
     color: var(--cor-texto-botao);
+    font-weight: bold;
     background-color: var(--cor-botao-primario);
     margin-top: 0.5rem;
     text-decoration: none;
-
+    padding: 0.375rem 1rem!important;
 }
 
 .btn-add-carrinho:hover {

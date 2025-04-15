@@ -2,11 +2,11 @@
 let limpa_cache = Date.now();
 
 let { default: cardProdFavorito } = await import( `./components/card-prod-favoritos.js?v=${ limpa_cache }` );
-let { default: cardProdVendedor } = await import( `./components/card-vendedor-fav.js?v=${ limpa_cache }` );
+let { default: cardVendFavorito } = await import( `./components/card-vendedor-fav.js?v=${ limpa_cache }` );
 // import cardProduto from "./components/card-produto.js";
 
-const docTagProdutos = document.querySelector('.card-prod-favorito-container');
-const docTagVendedor = document.querySelector('.card-vendedor-favorito');
+const docTagProdutosFav = document.querySelector('.card-prod-favorito-container');
+const docTagVendedoresFav = document.querySelector('.card-vendedor-favorito');
 
 // import cardProduto from './components/card-prod-favoritos.js';
 
@@ -63,14 +63,6 @@ let produtosFav = [
     },
 ]
 
-await exibirProdutosFav();
-
-async function exibirProdutosFav() {
-    produtosFav.forEach((produto) => {
-        docTagProdutos.innerHTML += cardProdFavorito(produto)
-    });
-}
-
 
 let VendedoresFav = [
     {
@@ -95,11 +87,21 @@ let VendedoresFav = [
     },
 
 ]
-
 await exibirProdutosVendFav();
+await exibirProdutosFav();
 
-async function exibirProdutosVendFav() {
-    produtosFav.forEach(( vendedor) => {
-        docTagVendedor.innerHTML += cardVendFavorito( vendedor)
+
+async function exibirProdutosFav() {
+    produtosFav.forEach((produtos) => {
+        docTagProdutosFav.innerHTML += cardProdFavorito(produtos);
     });
 }
+
+async function exibirProdutosVendFav() {
+    VendedoresFav.forEach((vendedores) => {
+        docTagVendedoresFav.innerHTML += cardVendFavorito(vendedores);
+    });
+}
+
+
+
