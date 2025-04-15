@@ -31,7 +31,7 @@ $appName = get_app_name();
                         <div id="comprar">
                             <div id="btn-comprar"><a>Comprar</a></div>
                             <div id="icons-comprar">
-                                <button id='MandarCarrinho' value="gucci_bolsa_intense.png|Gucci intense|400,00">
+                                <button id="MandarCarrinho" value= "gucci_bolsa_intense.png|Gucci intense|400,00">
                                     <img class='icon iconCarrinho' src="../assets/img/carrinho-tela-produto.svg">
                                 </button>
                                 <img src="../assets/img/coracao-tela-produto.svg">
@@ -45,7 +45,7 @@ $appName = get_app_name();
                         </div>
                         <div>
                             <fieldset id="loja">
-                                <img src="../assets/img/tela-produtos/loja.png">
+                                <img id='imagem-loja' src="../assets/img/tela-produtos/loja.png">
                                 <a><span style="color: #16A18E;">Loja</span> Studio Center</a>
                                 <div id="icons-loja">
                                     <img src="../assets/img/coracao-tela-produto.svg" id="loja-coracao">
