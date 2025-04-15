@@ -20,7 +20,7 @@ $appName = get_app_name();
             <h1 class="map">Home / Bolsas / Bolsas</h1>
             <div class="grid-conteudo">
                 <div id="grid-produto" class="col-sm-6">
-                    <galeria-img></galeria-img>
+                    <div id="galeria-imagem"><galeria-img></galeria-img></div>
                     <div class="desc-produto">
                         <h2>Bolsa Gucci</h2>
                         <h1 class="preco">R$ 989,00</h1>

@@ -336,6 +336,10 @@ h3 {
 }
 
 @media (max-width: 1024px) {
+  #galeria-imagem{
+    position: relative;
+    left: 5%;
+  }
   .grid-conteudo {
     display: flex;
     flex-direction: column;
@@ -428,20 +432,16 @@ h3 {
     display: flex;
     justify-content: center;
     padding-top: 1%;
-    width: 80%;
-    height: 9%;
+    
   }
   #icons-comprar {
     display: flex;
-    height: 100%;
     align-items: center;
-    width: 30%;
+    width: 10%;
   }
-
-  #loja {
-    width: 75%;
+  #icons-comprar {
+    width: 10%;
   }
-
   .grid-conteudo {
     display: flex;
     position: relative;
@@ -488,9 +488,16 @@ h3 {
 }
 
 @media (max-width: 580px) {
+
+  #icons-comprar {
+    display: flex;
+    align-items: center;
+    width: 20%;
+
+  }
   .icon {
     position: relative;
-    width: 15px;
+    width: 10px;
     top: 5%;
     z-index: 10;
   }
@@ -501,7 +508,12 @@ h3 {
     font-size: 10px;
   }
   #loja {
-    width: 80%;
+    display: flex;
+    font-size: 12px;
+    width: 90%;
+  }
+  #loja>a {
+    max-width: 50%;
   }
   .preco {
     font-size: 25px;
@@ -524,7 +536,7 @@ h3 {
     grid-template-rows: 20% 20%;
     gap: 2%;
     padding-top: 10%;
-    align-self: center;
+    align-self: auto;
     font-size: 80%;
   }
   .grid-topico {
@@ -539,7 +551,10 @@ h3 {
 
 @media (max-width: 375px) {
   #loja {
-    width: 85%;
+    width: 95%;
+  }
+  #loja>a {
+    max-width: 45%;
   }
   .grid-recomendar {
     display: grid;
