@@ -79,7 +79,7 @@ $base_url = get_base_url();
                       <line style="display: flex; justify-content:start;"><span class='redutor' style = 'margin-right:4px;'>Telefone: </span><span class='redutor'> (67) 3437-7000</span></line>
                       <line style="display: flex; justify-content:start;"><span class='redutor' style = 'margin-right:4px;'>CNPJ: </span><span class='redutor'> 97.538.333/0001-00</span></line>
                       <line style="display: flex; justify-content:start;"><span class='redutor' style = 'margin-right:4px;'>CEP: </span><span class='redutor'> 79000-00</span></line>
-                      <line style="display: flex; justify-content:start;"><span class='redutor' style = 'margin-right:4px;'>E-Mail: </span><span class='redutor'> studiocenterpy@gmail.com</span></line>
+                      <span class='redutor' style = 'margin-right:4px;'>E-Mail: </span><span class='redutor'> studiocenterpy@gmail.com</span>
 
                     </div>
                     <div style="margin:25px;">
