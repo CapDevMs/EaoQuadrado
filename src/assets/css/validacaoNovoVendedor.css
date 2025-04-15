@@ -1,15 +1,32 @@
+.roadMap{
+    text-decoration: none;
+}
 .roadMap1{
-    color: rgb(0, 0, 0,0.5);
-    margin: 1%;
-    font-weight: bolder;
+    text-decoration: none;
+    color: gray;
+}
+.linha{
+    display: flex;
+    justify-content:start;
+    max-width: max-content;
+}
+
+
+.vermelho{
+    background-color:var(--cor-botao-adm-vermelho);
+}
+
+.verde{
+    background-color:var(--cor-botao-primario);
 }
 .redutor{
     max-width: max-content;
 }
 
-.roadMap{
-    margin-bottom: 1%;
+.iconLoja{
+    max-width: 12px; Margin-left:1%;
 }
+
 
 .centralizar{
     margin: 0 auto;
@@ -38,10 +55,6 @@
 
 }
 
-.roadMap2{
-    font-weight: bolder;
-    margin: -0.8%;
-}
 :root{
     --painel-width: 70vw;
     --sideMenu-width: 70vw;
@@ -248,6 +261,10 @@
     font-size: 18px;
 }
 
+.tituloLoja{
+    font-size: 32px;
+}
+
 .btPadrao{
     width: 120px;
     border: 0px;
@@ -258,7 +275,7 @@
     margin: 5px;
 }
 
-.linha{
+.linhaBT{
     display: flex;
     justify-content: center;
 }
@@ -272,6 +289,23 @@
     flex-direction: column;
 }
 
+.internalMini1{
+    margin:25px;
+}
+
+.linhaCinza{
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+}
+
+.margem4{
+    margin-right: 4px;
+}
+
+.linhaCinzaBase{
+    margin-bottom: 10px;
+}
 
 @media (max-width: 1440px) {
     
@@ -334,24 +368,24 @@
 
 @media (max-width: 425px){
 
-    
-
-}
- 
-@media (max-width: 375px) {
-   
-
-    .mini1{
-        display: flex;
-        flex-direction: column;     
-        overflow: hidden;
-    }
-
     .internalMini1{
         max-height: 50%;
         display: flex;
         flex-direction: column;
     }
 
+    .tituloLoja{
+        font-size: 24px;
+       
+    }
+    
+
 }
  
+@media (max-width: 375px) {
+ .mini1{
+        display: flex;
+        flex-direction: column;     
+        overflow: hidden;
+    }
+}
