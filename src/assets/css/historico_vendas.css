@@ -1,0 +1,267 @@
+
+/* ASIDE  */
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 375px auto;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.conteudo-main {
+    padding: 20px;
+}
+
+/* CONTEUDO PRINCIPAL  */
+
+h1 {
+    font-size: 20px;
+    width: 207px;
+    height: 23px;
+}
+
+.lista-geral {
+    font-size: 14px;
+    width: 50px;
+
+}
+
+
+#lista-status {
+    width: 170px;
+    padding: 50px;
+
+
+}
+
+#lista-preco {
+    width: 50px;
+}
+
+#lista-comprado {
+    width: 110px;
+  
+}
+
+#lista-quantidade {
+    width: 88px;
+   /* padding: 20px; */
+}
+
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.img-historico {
+    width: 80px;
+    padding: 10px;
+    align-self: center;
+    
+}
+
+
+.p-10 {
+    word-wrap: break-word;
+    word-wrap: break-word;
+    width: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;  
+    /* -webkit-line-clamp: 2;   */
+    -webkit-box-orient: vertical;  
+    max-width: 90%;  
+    line-height: 1.5;  
+    max-height: 3em;  
+    margin: 0;
+}
+
+.p-20 {
+    margin: 0;
+    width: 120px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;  
+    /* -webkit-line-clamp: 2;   */
+    -webkit-box-orient: vertical;  
+    max-width: 90%;  
+    line-height: 1.5;  
+    max-height: 3em;  
+    
+}
+
+.p-30 {
+    margin: 0;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;  
+    /* -webkit-line-clamp: 2;   */
+    -webkit-box-orient: vertical;  
+    max-width: 100%;  
+    line-height: 1.5;  
+    max-height: 3em;  
+    width: 70px;
+
+}
+
+.p-40 {
+    margin: 0;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;  
+    /* -webkit-line-clamp: 2;   */
+    -webkit-box-orient: vertical;  
+    max-width: 160px;  
+    line-height: 1.5;  
+    max-height: 3em;
+    margin-left: 140px;
+    margin:  0px;
+    
+}
+
+.p-50 {
+    margin: 0;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;  
+    /* -webkit-line-clamp: 2;   */
+    -webkit-box-orient: vertical;  
+    max-width: 100%;  
+    line-height: 1.5;  
+    max-height: 3em;
+    text-align: center;
+   
+   
+}
+
+
+
+tbody {
+    border: 2px solid red;
+}
+
+.table tr {
+    border-radius: 20px;
+     box-shadow: 6px 7px 10px -7px; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
+}
+
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 30% 16% 10% 24% 10% 10%;
+    place-content: center;
+    place-items: center;
+    border-radius: 20px;
+    min-height: 100px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 4px 4px rgba(30, 20, 0,0.25);   
+}
+.cabecalho-item{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 30% 16% 10% 24% 10% 10%;
+    place-content: center;
+    place-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
+    align-items: center;
+}
+
+
+
+
+.cardItems{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cardItems-inicio {
+    display: grid;
+    place-self: start;
+    grid-template-columns: auto auto;
+} 
+
+.menu-lateral {
+    display: none;
+}
+
+.card-details{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #00bfa5;
+    grid-area: 2 / 1 / 2 / 7;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    width: 100%;
+}
+
+.expanded{
+    max-height: max-content;
+}
+
+
+.p-data{
+    background-color: #BFC2C5;
+    margin: 0px;
+}
+
+.nomeP{
+    color: #000;
+    font-size: 16px;
+
+}
+
+.clienteP{
+    color: #636363;
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 0;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    
+  
+    body {
+        margin: 0;
+    background-color: yellow;
+    }
+
+    
+
+}
