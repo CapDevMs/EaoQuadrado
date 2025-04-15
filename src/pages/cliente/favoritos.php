@@ -17,40 +17,35 @@
 <body>
     <?php get_header(); ?>
 
-    <main class="main-container">
-        <div class="sidebar-menu">
-            <a href="meu-perfil-cliente.php">
-                <p>Meu Perfil</p>
-            </a>
-            <span id="separator">/</span>
-            <a href="#">Meus Favoritos</a>
-            <span class="separator">/</span>
-        </div>
-      
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="container-header-section">
-                <div class="block-green"></div>
-                <p class="text-prmary">Produtos Favoritos</p>
-            </div>
-        </div>    
-    </div>
-    <a href="./carrinho.php">
-        <div class="btn-mover-tudo-carrinho">
+<main class="main-container">
+    <!-- section roadmap -->
+    <!-- <div class="sidebar-menu">
+        <a href="meu-perfil-cliente.php">
+            <p>Meu Perfil</p>
+        </a>
+        <span id="separator">/</span>
+        <a href="#">Meus Favoritos</a>
+        <span class="separator">/</span>
+    </div> -->
+
+    <div class="header-favoritos">
+        <p class="title-section-produtos">Produtos Favoritos</p>
+                <a href="./carrinho.php" class="btn-mover-tudo-carrinho">
+                <div>
             <p class="p-text-move-carrinho">Mover tudo ao carrinho</p>
-        </div>
+        </div>  
     </a>
-    <div class="title-lojas-fav">Lojas Favoritas</div>
+</div>
 
-    <card-prod-favorito class="card-prod-favorito-container row"></card-prod-favorito>
+<card-prod-favorito class="card-prod-favorito-container row"></card-prod-favorito>
 
-    <div class="title-fav-vendedores">vendedores Favoritos</div>
+<div class="title-section-lojas">Lojas Favoritas</div>
 
-    <card-vendedor-favorito class="card-vendedor-favorito row"></card-vendedor-favorito>
-        
-    </main> 
-    <script type="module" src="../../assets/js/favoritos.js?<?= time(); ?> " defer ></script>
-    <!-- <script type="module" src="../../assets/js/components/card-prod-favoritos.js?"></script> -->
+<card-vendedor-favorito class="card-vendedor-favorito row"></card-vendedor-favorito>
+    
+</main> 
+<script type="module" src="../../assets/js/favoritos.js?<?= time(); ?> " defer ></script>
+<!-- <script type="module" src="../../assets/js/components/card-prod-favoritos.js?"></script> -->
 
     <?php get_footer() ?>
 </body>

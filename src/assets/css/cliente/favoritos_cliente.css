@@ -4,47 +4,57 @@ a {
     text-decoration: none;
     width: auto;
 }
-p.container-header-section{
-    color:var(--cor-texto);
-    font-weight: 700;
-    font-size: 20px;
-    border-width : 0.5rem ;
-    margin: 0.500;
 
-}
 /* .roadmap css */
 
-.sidebar-menu {
-    padding: 10px;
-}
 
-.roadmap {
+/* conteudo da página */
+.header-favoritos {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    /* margin-top: 3%; */
+    margin-bottom: 3%;
 }
 
-.breadcrumb-list {
-    list-style: none;
+.title-section-produtos{    
+    color:var(--cor-texto);
+    font-weight: 600;
+    font-size: 20px;
+    border-width : 0.5rem ;
+
+}
+
+.btn-mover-tudo-carrinho{
     display: flex;
-    margin: 0;
-    padding: 0;
+    text-align: center; 
+    border-width: 0.5rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 3%;
 }
 
-.breadcrumb-item {
-    font-size: 14px;
-    color: var(--cor-texto-deselecionado);
-}
-
-.breadcrumb-item-separator {
-    font-size: 14px;
-    color: #919191;
-}
-
-.breadcrumb-link {
+.btn-mover-tudo-carrinho {
     text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
+    color: var( --cor-texto-botao);
+    width: 20%;
+    padding: 3px;
+    border-radius: 0.5rem;
+    background-color: var(--cor-botao-primario);
+    display: inline-block;
+    /* border: 0.1rem solid var(--cor-texto-botao); */
 }
+
+.btn-mover-tudo-carrinho:hover{
+    background-color: var(--cor-fundo-img-produtos);
+}
+
+.btn-mover-tudo-carrinho a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
 
 /* conteudo main css */
 
@@ -53,22 +63,21 @@ p.container-header-section{
     flex-direction: column;
     align-items: center;
     width: 70%;
-    margin: 0 auto;
+    margin: 5% auto;
     padding-bottom: 5%;
 }
 
-.produtos-fav-tittle, .lojas-fav-tittle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px 0;
+.title-section-lojas{    
+    color:var(--cor-texto);
+    font-weight: 600;
+    font-size: 20px;
+    border-width : 0.5rem ;
+    margin: 3%;
+
 }
 
-.title {
-    font-size: 22px;
-    font-weight: 600;
-}
+
+
 
 
 @media (max-width: 768px) {
