@@ -39,7 +39,7 @@
             <p class = 'texto'>• Implementamos rigorosas medidas de segurança para proteger as transações e garantir a conformidade com nossos termos de serviço.</p><br><br>
             
             </div>
-            <a href="index.php">
+            <a class="btn-home" href="index.php">
             <button id="retorno" type="button">Retorne ao início</button>
             </a>
     </main>
