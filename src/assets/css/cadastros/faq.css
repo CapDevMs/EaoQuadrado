@@ -50,10 +50,12 @@ button:hover {
 .subtitulo{
     opacity: 200%;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .texto{
     opacity: 50%;
+    font-size: 16px;
 }
 
 
@@ -65,14 +67,25 @@ button:hover {
     }
 }
 
+@media (max-width: 768px) {
+    #texto {
+        font-size: 14px
+    }
+
+    .subtitulo{
+        font-size: 14px;
+    }
+    
+    .texto{
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 600px) {
     #sub-menu {
         font-size: 18px; 
     }
     
-    #texto{
-        font-size: 13px;
-    }
     #retorno{
         padding: 10px 20px;
         border-radius: 5px;
