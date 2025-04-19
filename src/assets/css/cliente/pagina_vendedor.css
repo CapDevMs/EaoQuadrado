@@ -1,11 +1,11 @@
 .container {
-    width: 75%;
+    width: 90%;
     margin: auto;
 }
 
 .img {
     border-radius: 20px;
-    background-color: black;;
+    background-color: black;
 }
 
 .banner_loja {
@@ -14,26 +14,12 @@
 }
 
 .card {
-    position: relative;
     display: flex;
-    flex-direction: column;
-    word-wrap: break-word;
-    stroke-width: 1px;
-    stroke: var(--cor-fundo);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-    /* Background */
-
-    width: 100%;
-    height: 100%;
-    /* opacity: 40%; */
-    color: black;
-    /* background-color: #BFC2C5; */
-    background-color: var(--cor-fundo-img-produtos);
-    background-clip: border-box;
+    flex-flow: row wrap;
+    margin-bottom: 3.75rem;
     border: 1px solid var(--cor-fundo);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px;
-    fill: var(--cor-fundo-img-produtos);
 }
 
 .card-body {
@@ -42,14 +28,7 @@
 }
 
 .whatsapp{
-    width: 2rem;
-    min-width: 24px;
-}
-
-.justify-content-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 24px;
 }
 
 .avatar {
@@ -57,6 +36,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 50%;
     max-width: fit-content;
+    margin: auto;
 }
 
 .img-fluid {
@@ -66,60 +46,21 @@
     margin: auto;
 }
 
-.icone {
-    width: 24px;
+.m-auto {
+    margin: auto !important;
 }
 
-.icone_selecionado {
-    display: flex;
-
+.icone, .icone-star {
+    width: 0.85rem;
+    font-size: 16px;
+    color: var(--cor-principal);
 }
+
 .stars {
     display: flex;
     flex-direction: row;
-    width: 100%;
-}
-.estrela_0{
-    background: linear-gradient(90deg, var(--cor-secundaria) 0%, var(--cor-fundo-estrela) 100%);
-}
-.estrela_5{
-    background: linear-gradient(90deg, var(--cor-secundaria) 10%, var(--cor-fundo-estrela) 90%);
-}
-.estrela_10{
-    background: linear-gradient(90deg, var(--cor-secundaria) 20%, var(--cor-fundo-estrela) 80%);
-}
-.estrela_15{
-    background: linear-gradient(90deg, var(--cor-secundaria) 30%, var(--cor-fundo-estrela) 70%);
-}
-.estrela_20{
-    background: linear-gradient(90deg, var(--cor-secundaria) 40%, var(--cor-fundo-estrela) 60%);
-}
-.estrela_25{
-    background: linear-gradient(90deg, var(--cor-secundaria) 50%, var(--cor-fundo-estrela) 50%);
-}
-.estrela_30{
-    background: linear-gradient(90deg, var(--cor-secundaria) 60%, var(--cor-fundo-estrela) 40%);
-}
-.estrela_35{
-    background: linear-gradient(90deg, var(--cor-secundaria) 70%, var(--cor-fundo-estrela) 30%);
-}
-.estrela_40{
-    background: linear-gradient(90deg, var(--cor-secundaria) 90%, var(--cor-fundo-estrela) 20%);
-}
-.estrela_45{
-    background: linear-gradient(90deg, var(--cor-secundaria) 95%, var(--cor-fundo-estrela) 10%);
-}
-.estrela_50{
-    background: linear-gradient(90deg, var(--cor-secundaria) 100%, var(--cor-fundo-estrela) 0%);
-}
-
-.card_estrela_texto{
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.card_estrela_texto, .card_estrela_quantidade{
+    align-items: start;
+    justify-content: start;
     width: 100%;
 }
 
@@ -142,9 +83,29 @@
     align-items: center;
     margin-bottom: 2vh;
 }
+.contato {
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--cor-terciaria);
+}
 
-@media (max-width: 768px) {
-    .stars {
-        flex-direction: column;
+.contato-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    word-wrap: break-word;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .icone-star {
+        width: 10px;
+        font-size: 12px;
+    }
+    .contato {
+        font-size: small;
     }
 }

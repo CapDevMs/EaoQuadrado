@@ -1,4 +1,25 @@
+<<<<<<< HEAD
 /* Contêiner principal dos botões */
+=======
+/* .secion-categoria {
+    display: flex;
+<<<<<<< HEAD
+    flex-direction: row;
+    flex-wrap: nowrap; /* Impede que os botões quebrem para a próxima linha */
+    gap: 10px;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+    margin: 20px auto;
+    padding: 0 15px;
+    /* max-width: 1200px; */
+    overflow-x: auto; /* Adiciona scroll horizontal se necessário */
+=======
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+} */
+
+
+>>>>>>> f595a1b7087363e8ce06606ae94504a7bc2559bc
 .button-categoria {
     display: flex;
     flex-direction: row;
@@ -6,9 +27,13 @@
     gap: 15px;
     margin: 20px;
     padding: 10px;
+<<<<<<< HEAD
     flex-wrap: nowrap;
     overflow-x: auto;
     scrollbar-width: thin;
+=======
+>>>>>>> 0220034d33d154e10f1a55e15012dd95b4b1c7f2
+>>>>>>> f595a1b7087363e8ce06606ae94504a7bc2559bc
 }
 
 /* Estiliza a barra de rolagem (Chrome, Edge, Safari) */
@@ -47,7 +72,12 @@
     cursor: pointer;
     transition: 0.3s;
     background-color: white;
+<<<<<<< HEAD
     text-decoration: none; /* Remove sublinhado do <a> */
+=======
+    margin: 0;
+    flex-shrink: 0; /* Impede que os botões encolham */
+>>>>>>> f595a1b7087363e8ce06606ae94504a7bc2559bc
 }
 
 /* Efeito ao passar o mouse */
@@ -104,7 +134,7 @@
     .button-categoria {
         gap: 8px;
     }
-    
+
     .button {
         width: 100px;
         height: 100px;
@@ -114,31 +144,51 @@
 @media screen and (max-width: 768px) {
     .button-categoria {
         gap: 8px;
+<<<<<<< HEAD
+        flex-wrap: nowrap; /* Permite que os botões quebrem para a próxima linha */
+=======
         flex-wrap: nowrap;
+>>>>>>> 0220034d33d154e10f1a55e15012dd95b4b1c7f2
     }
-    
+
     .button {
         width: 90px;
         height: 90px;
     }
-    
+
     .button .container-imagem {
         width: 35px;
         height: 35px;
     }
-    
+
     .button .container-nome-produto .nome-produto {
         font-size: 12px;
     }
+<<<<<<< HEAD
+=======
+
+    .nome-produto h3 {
+        font-size: 12px;
+    }
+>>>>>>> f595a1b7087363e8ce06606ae94504a7bc2559bc
 }
 
 @media screen and (max-width: 576px) {
     .button-categoria {
+<<<<<<< HEAD
+=======
+        display: flex;
+        flex-wrap: nowrap; /* Mantém os botões em uma linha */
+>>>>>>> f595a1b7087363e8ce06606ae94504a7bc2559bc
         gap: 10px;
     }
-    
+
     .button {
+<<<<<<< HEAD
         width: 80px;
+=======
+        width: 100px;
+>>>>>>> f595a1b7087363e8ce06606ae94504a7bc2559bc
         height: 90px;
     }
 }
@@ -147,7 +197,7 @@
     .button-categoria {
         gap: 8px;
     }
-    
+
     .button {
         width: 70px;
         height: 80px;
@@ -158,13 +208,20 @@
     .button-categoria {
         gap: 6px;
     }
-    
+
     .button .container-imagem {
         width: 30px;
         height: 30px;
     }
-    
+
     .button .container-nome-produto .nome-produto {
         font-size: 11px;
     }
+<<<<<<< HEAD
+=======
+
+    .nome-produto h3 {
+        font-size: 11px;
+    }
+>>>>>>> f595a1b7087363e8ce06606ae94504a7bc2559bc
 }

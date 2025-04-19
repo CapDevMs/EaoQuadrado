@@ -179,9 +179,9 @@ main {
 }
 
 /* Produtos */
-.product-card button:hover {
+/* .product-card button:hover {
    background: #218838;
-}
+} */
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
