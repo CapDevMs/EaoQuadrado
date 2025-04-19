@@ -35,7 +35,9 @@
 
     <!-- Botões de categoria -->
 
-    <buttonCategoria></buttonCategoria>
+    <div class="categorias-container row">
+        <buttonCategoria></buttonCategoria>
+    </div>
   
 
     <div class="content-container">

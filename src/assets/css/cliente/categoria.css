@@ -17,6 +17,14 @@
    object-fit: cover;
    object-position: center 10%;
 }
+/* button categoria */
+
+.categorias-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   margin-bottom: 2rem;
+ }
 
 /* Layout principal */
 .section-categoria {
