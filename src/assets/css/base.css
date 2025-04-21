@@ -37,6 +37,11 @@
   --cor-fundo-estrela: #989898;
 
   --bs-gutter-x: 0;
+
+  --cor-alerta: #f8d7da; /* Cor de fundo do alerta */
+  --cor-texto-alerta: #721c24; /* Cor do texto do alerta */
+  --cor-borda-alerta: #f5c6cb; /* Cor da borda do alerta */
+  
 }
 
 /* Exemplo de uso das variáveis */
@@ -49,6 +54,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: "Poppins";
+  box-sizing: border-box;
 }
 
 /* Css do Header */

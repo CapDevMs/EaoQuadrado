@@ -1,6 +1,36 @@
 <?php
     include('../config/funcoes.php');
     $appName = get_app_name();
+
+    $baseUrl = get_base_url();
+
+    $login = 'admin@admin.com';
+    $senha = 'admin';
+
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+
+    if (isset($_SESSION['user'])) {
+        
+        logout();
+
+        header('Location: ../index.php');
+        exit();
+    }
+
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $login = $_POST['login'];
+        $senha = $_POST['senha'];
+
+        if ($login == 'admin@admin.com' && $senha == 'admin') {
+            $_SESSION['user'] = $login;
+            header('Location: ../index.php');
+            exit();
+        } else {
+            $error = "Usuário ou senha inválidos.";
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -9,27 +39,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php get_css(['base', 'style', 'login']) ?>
-    <title>Eao Quadrado</title>
+    <title>Eao Quadrado - Login</title>
 </head>
 <body>
     <?php get_header() ?>
     <main>
-        <div class="container grid">
-            <div>
-                <img id="foto_tela_login" src="../assets/img/foto_tela_login tras.png" style="max-width: 100v;">
-            </div>
-            <div>
-                <div id="caixa">
-                    <h1 id="titulo">Entre no E².com</h1>
-                    <h3>coloque suas credenciais abaixo:</h3>
-                    <form action="">
-                        <input id="email" type="email" placeholder="johndoe@gmail.com"><br>
-                        <input id="senha" type="password" placeholder="********"><br>
+        <div class="container">
+                <?php if (isset($error)): ?>
+                    <div class="row">
+                        <div class="alert pb-2" role="alert">
+                            <?= $error; ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+            <div class="row pt-2 m-auto">
+                <div class="col-sm-hidden col-md-6">
+                    <img class="img" src="../assets/img/foto_tela_login tras.png">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h1 class="titulo">Entre no E².com</h1>
+                    <p class="subtitulo">Coloque suas credenciais abaixo:</p>
+                
+                    <form method="post" class="form" action="">
+                        <div class="row">
+                            <input class="form-input" type="email" name="login" placeholder="johndoe@gmail.com">
+                            <input class="form-input" type="password" name="senha" placeholder="********">
+                        </div>
+                        <div class="row">
+                            <a class="esqueceu-senha" href="<?= $baseUrl; ?>/pages/cadastros/esqueci_senha.php">Esqueceu sua senha?</a>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <button class="btn button">Entrar</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <a class="btn button" href="<?= $baseUrl; ?>/pages/cadastros/cadastro_cliente.php">Cadastrar</a>
+                            </div>
+                        </div>
                     </form>
-                    <label for="senha">Esqueceu sua senha?</label><br>
-
-                    <button class="button">Entrar</button>
-                    <button class="button">Cadastrar</button>
                 </div>
             </div>
         </div>
