@@ -13,9 +13,9 @@
     </div>
     <div class="pb-2">
         <h2 class="menu-lateral">Vendas</h2>
-        <!-- <h2 class="barra_lateral">
+        <h2 class="barra_lateral">
             <a href="<?= get_base_url(); ?>/pages/vendedor/" class="<?= $page == 'historico_vendas' ? 'ativo' : '' ?>">Histórico de Vendas</a>
-        </h2> -->
+        </h2>
         <h2 class="barra_lateral">
             <a href="<?= get_base_url(); ?>/pages/vendedor/troca_devolucao_cancelamento.php" class="<?= $page == 'trocas_cancelamentos' ? 'ativo' : '' ?>">Trocas / Cancelamentos</a>
         </h2>
