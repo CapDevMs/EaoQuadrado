@@ -21,7 +21,7 @@ const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, cliente, da
         <p class="p-10">${quantidade}</p>
       </div>
       <div class="card-details">
-        <div class="elementCard">
+        <div class="infoCard">
           <p class="clienteP">Cliente: <span class="nomeP">${cliente}</span> </p>
           <p class="clienteP">Endereço: <span class="nomeP"> ${endereco}</span> </p>
           <p class="clienteP">Data: <span class="nomeP">${data}</span></p>

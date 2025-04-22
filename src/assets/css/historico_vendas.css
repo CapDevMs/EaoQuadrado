@@ -1,69 +1,15 @@
-
-/* ASIDE  */
-
-.conteudo {
-    display: grid;
-    grid-template-columns: 375px auto;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-
-
-.conteudo-main {
-    padding: 20px;
-}
-
-/* CONTEUDO PRINCIPAL  */
-
-h1 {
-    font-size: 20px;
-    width: 207px;
-    height: 23px;
-}
-
-.lista-geral {
-    font-size: 14px;
-    width: 50px;
-
-}
-
-
-#lista-status {
-    width: 170px;
-    padding: 50px;
-
-
-}
-
-#lista-preco {
-    width: 50px;
-}
-
-#lista-comprado {
-    width: 110px;
-  
-}
-
-#lista-quantidade {
-    width: 88px;
-   /* padding: 20px; */
-}
-
-.table {
-    display: table;
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 10px; 
-}
-
-.text-center {
-    text-align: center;
-}
-
-.display-flex {
+.infos-historico{
+    list-style-type: none;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+}
+
+.item-info-historico{
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .img-historico {
@@ -150,36 +96,6 @@ h1 {
     line-height: 1.5;  
     max-height: 3em;
     text-align: center;
-   
-   
-}
-
-
-
-tbody {
-    border: 2px solid red;
-}
-
-.table tr {
-    border-radius: 20px;
-     box-shadow: 6px 7px 10px -7px; 
-    box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
-}
-
-
-.cabecalho {
-    display: grid;
-    grid-template-columns: 30% 16% 10% 24% 10% 10%;
-    place-content: center;
-    place-items: center;
-    border-radius: 20px;
-    min-height: 100px;
-    border: 1px solid lightgrey;
-    box-shadow: 0 4px 4px rgba(30, 20, 0,0.25);   
-}
-.cabecalho-item{
-    font-size: 16px;
-    font-weight: 600;
 }
 
 .card {
@@ -193,9 +109,6 @@ tbody {
     box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
     align-items: center;
 }
-
-
-
 
 .cardItems{
     width: 100%;
@@ -228,7 +141,6 @@ tbody {
     width: 100%;
 }
 
-
 .expanded{
     max-height: max-content;
 }
@@ -251,15 +163,10 @@ tbody {
     margin: 0;
 }
 
-
-
-
-
 @media (max-width: 768px){
     
-  
     body {
-        margin: 0;
+    margin: 0;
     background-color: yellow;
     }
 

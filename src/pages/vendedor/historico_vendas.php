@@ -22,13 +22,13 @@ $appName = get_app_name();
 
     <div class="container col-sm-12 col-md-9">
       <h1>Histórico de Vendas</h1>
-      <div class="cabecalho">
-        <div class="cabecalho-item">Produto</div>
-        <div class="cabecalho-item">Status do pedido</div>
-        <div class="cabecalho-item">Preço</div>
-        <div class="cabecalho-item">Cliente</div>
-        <div class="cabecalho-item">Data</div>
-        <div class="cabecalho-item">Quantidade</div>
+      <div class="infos-historico">
+        <div class="item-info-historico">Produto</div>
+        <div class="item-info-historico">Status do pedido</div>
+        <div class="item-info-historico">Preço</div>
+        <div class="item-info-historico">Cliente</div>
+        <div class="item-info-historico">Data</div>
+        <div class="item-info-historico">Quantidade</div>
       </div>
 
       <div class="container-historico">
