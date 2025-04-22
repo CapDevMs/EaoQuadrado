@@ -1,0 +1,391 @@
+.roadMap{
+    text-decoration: none;
+}
+.roadMap1{
+    text-decoration: none;
+    color: gray;
+}
+.linha{
+    display: flex;
+    justify-content:start;
+    max-width: max-content;
+}
+
+
+.vermelho{
+    background-color:var(--cor-botao-adm-vermelho);
+}
+
+.verde{
+    background-color:var(--cor-botao-primario);
+}
+.redutor{
+    max-width: max-content;
+}
+
+.iconLoja{
+    max-width: 12px; Margin-left:1%;
+}
+
+
+.centralizar{
+    margin: 0 auto;
+}
+
+.corpo{
+    margin: 0 auto;
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+.menuLateral{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    width: max-content;
+}
+
+.subCorpo{
+    max-width: 95%;
+}
+
+.subSubCorpo{
+    max-width: 95%;
+    margin: 0 auto;
+
+}
+
+:root{
+    --painel-width: 70vw;
+    --sideMenu-width: 70vw;
+}
+.painel{
+    background-color: rgba(0, 0, 255, 0);
+    height: 750PX;
+    border: 2px solid #BFC2C5;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px #BFC2C5;
+    overflow: hidden auto;
+    width: var(--painel-width);
+}
+
+.acordeonFechado{
+    display: flex;
+    justify-content: space-between;
+
+    border: 2px solid rgb(0, 0, 0,0.0);
+    border-radius: 20px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    max-width: 95%;
+    height: 120px;
+    
+    background-color: rgb(0, 0, 0,0.06);
+    box-shadow: 2px 5px 2px rgb(0, 0, 0,0.3);
+}
+
+.acordeonAberto{
+    display: none;
+
+    border:2px solid rgb(0, 0, 0,0.0);
+    border-radius: 20px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    max-width: 95%;
+    height: max-content;
+        
+    background-color: rgb(0, 0, 0,0.06);
+    box-shadow: 2px 5px 2px rgb(0, 0, 0,0.3);
+    
+}
+
+.logoEmpresa{
+    max-width: 117px;
+    max-height: 117px;
+    margin: 0 auto;
+    margin: 3px;
+    border-radius: 100px;
+    margin-left: 2%;
+}
+
+.blocoTitulo{
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 2%;
+}
+
+.carret{
+    max-width: 40px;
+    transform: rotate(180deg);
+}
+
+.blocoAcordeon{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    max-width: max-content;
+    margin-right: 8%;
+}
+
+.bloco1{
+    display: flex;
+    flex-direction: row;
+}
+
+.abrirAcordeon{
+    border:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0, 0, 0,0.0);
+    max-height: max-content;
+    max-width: max-content;
+    margin-top: 10px;
+}
+
+.removedor{
+    display: none;
+}
+
+.adicionador{
+    display: flex;
+}
+
+.icon{
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.iconText{
+    max-width: max-content;
+    color: rgb(0, 0, 0,0.5);
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.miniPainel{
+    background-color: white;
+    max-width: 40%;
+    height: 540px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0,0.2);
+    
+}
+
+.acordeonAberto2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mini2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.imagemPainel{
+    max-width: 80%;
+    max-height: max-content;
+    margin: 0 auto;
+}
+
+.painelImagem{
+    display: flex;
+    justify-content: center;
+}
+
+.painelCarrocel{
+    display: flex;
+    justify-content: start;
+}
+
+.imagemCarrocel{
+    height: 120px;
+    width: 120px;
+    
+}
+
+.acordeonAberto3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.centralizadorVertical{
+    margin-top: 20px;
+    max-width: 90%;
+    height: 12%;
+    border-radius: 20px;
+    border:1px solid rgb(0, 0, 0,0.2);
+    background-color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imagemBotao{
+    background-color: rgb(0, 0, 0,0.06);
+    border: 0px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blocoFinal{
+    
+    max-width: 70%;
+    margin-top: 20px;
+    height: 30%;
+    margin-bottom: 10px;
+}
+
+.painelObservacoes{
+    border: 2px solid rgb(0, 0, 0,0.2);
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.tituloLoja{
+    font-size: 32px;
+}
+
+.btPadrao{
+    width: 120px;
+    border: 0px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    margin: 5px;
+}
+
+.linhaBT{
+    display: flex;
+    justify-content: center;
+}
+
+.acordeonAberto4{
+    display: flex;
+    justify-content: center;
+}
+
+.acordeonAberto{
+    flex-direction: column;
+}
+
+.internalMini1{
+    margin:25px;
+}
+
+.linhaCinza{
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+}
+
+.margem4{
+    margin-right: 4px;
+}
+
+.linhaCinzaBase{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1440px) {
+    
+}
+
+@media (max-width: 1440px) {
+    
+}
+
+@media (max-width: 833px) {
+    .menuLateral {
+        display: none;
+    }
+
+    :root{
+        --painel-width: 90vw;
+    }
+}
+
+@media (max-width: 575px) {
+    .roadMap{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+  
+    .menuLateral{
+        font-size: small;
+    }
+
+    .acordeonAberto2{
+        flex-direction: column;
+    }
+    
+    .miniPainel{
+        max-width: 85%;
+        margin: 0 auto;
+        margin-top:10px ;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menuLateral{display: none;}
+    
+    .acordeonAberto2{
+        flex-direction: column;
+    }
+    
+    .miniPainel{
+        max-width: 85%;
+        margin: 0 auto;
+        margin-top:10px ;
+        margin-bottom: 10px;
+        white-space: nowrap;
+     
+    }
+}
+
+@media (max-width: 425px){
+
+    .internalMini1{
+        max-height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tituloLoja{
+        font-size: 24px;
+       
+    }
+    
+
+}
+ 
+@media (max-width: 375px) {
+ .mini1{
+        display: flex;
+        flex-direction: column;     
+        overflow: hidden;
+    }
+}
