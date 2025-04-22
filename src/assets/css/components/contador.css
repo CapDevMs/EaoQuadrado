@@ -1,0 +1,43 @@
+@import url(../style.css);
+@import url(../base.css);
+
+.quantidade{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    border: none;
+
+    
+    
+}
+#botao_qtd{
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 40%;
+    height: 30%;
+    border: none;
+    
+
+    
+}
+ 
+#menos{
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    border: none;
+
+    
+    
+}
+#mais{
+    justify-content: center;
+    position: relative;
+    border: none;
+    background-color: #16A18E;
+    color: white;
+    
+    
+ 
+}
