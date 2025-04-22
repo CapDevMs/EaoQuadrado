@@ -1,3 +1,5 @@
+@import url("../base.css");
+
 * {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -35,28 +37,59 @@ ul {
 }
 
 li {
-margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 input[type="checkbox"] {
-display: none;
+    display: none;
 }
 
 label {
-cursor: pointer;
-display: block;
+    width: max-content;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .content {
-display: none;
+    display: none;
 }
 
 input[type="checkbox"]:checked + label + .content {
-display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.content a{
+    text-decoration: none;
+    width: max-content;
+    color: var(--cor-texto);
+    font-size: 16px;
+    opacity: 0.5;
+    margin-left: 0.5rem;
+}
+
+.content a:hover {
+    color: var(--cor-principal);
+}
+
+.name {
+    white-space: nowrap;
 }
 
 .all {
     justify-content: center;
+}
+
+.text-star {
+    white-space: nowrap;
+}
+
+.email {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: bold;
 }
 
 .card-vend {
@@ -72,6 +105,11 @@ display: block;
    white-space: nowrap;
 }
 
+.inner-container {
+    display: flex;
+    justify-items: center;
+}
+
 .lista-vendedor {
     overflow-y: auto;
     border: 1px solid #ccc;
@@ -80,4 +118,10 @@ display: block;
     bottom: 8%;
     border-radius: 20px;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-adm {
+        display: none;
+    }
 }
