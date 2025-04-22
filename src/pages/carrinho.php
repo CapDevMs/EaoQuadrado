@@ -6,7 +6,7 @@ require('../config/conexao.php');
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <?php get_base_head(); ?>
-
+<head><title>E ao quadrado</title></head>
 <body>
     <?php get_header() ?>
     <link rel='stylesheet' href="../assets/css/carrinho_cliente/style.css">
