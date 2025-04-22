@@ -70,8 +70,7 @@ $sobre_cards = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['cadastros/sobre', 'style']) ?>
-    <?php get_css_components(); ?>
+    <?php get_css(['base', 'style', 'cadastros/sobre']) ?>
 </head>
 
 <body>
@@ -109,7 +108,7 @@ $sobre_cards = [
         <div class="container">
             <div class="row">
                 <?php foreach ($comparativo as $informacao): ?>
-                    <div class="col-sm-12 col-md-6 col-lg-">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="card-status ptb-2 mb-2">
                             <div class="status-icon ptb-1">
                                 <i class="<?= $informacao['icon']; ?>"></i>
@@ -123,9 +122,9 @@ $sobre_cards = [
             
             <div class="row">
                 <?php foreach ($sobre_cards as $card): ?>
-                    <div class="col-sm-12 col-md-3 m-auto">
-                        <div class="card-sobre pt-1">
-                            <div class="card-body pt-1">
+                    <div class="col-sm-12 col-md-4 pt-1">
+                        <div class="card-sobre">
+                            <div class="card-body pt-2">
                                 <div class="card-image">
                                     <img src="<?= $card['image']; ?>" alt="">
                                 </div>
