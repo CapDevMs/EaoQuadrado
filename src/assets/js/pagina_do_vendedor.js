@@ -75,9 +75,3 @@ likeBtns.forEach(btn => {
     })
 });
 
-
-async function exibirProdutos() {
-    produtos.forEach((produto) => {
-        docTag.innerHTML += cardProduto(produto)
-    });
-}
