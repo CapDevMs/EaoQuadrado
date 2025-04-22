@@ -24,19 +24,16 @@
 
 #retorno{
     display: flex;
-    
+    justify-content: center;
     padding: 10px 20px;
     background-color: #16A18E;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
-    width: 200px;
-    height: 80px;
-    margin-left: 40%;
-    margin-bottom: 10%;
-    margin-top: 5%;
+    width: fit-content;
+    height: fit-content;
 }
 
 a {
@@ -50,18 +47,31 @@ button:hover {
 .subtitulo{
     opacity: 200%;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .texto{
     opacity: 50%;
+    font-size: 16px;
 }
 
+.btn-home {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
 
-@media (max-width: 765px) {
-    #retorno{
-        width: 120px;
-        height: 60px;
-        font-size: 15px;
+@media (max-width: 768px) {
+    #texto {
+        font-size: 14px
+    }
+
+    .subtitulo{
+        font-size: 14px;
+    }
+    
+    .texto{
+        font-size: 14px;
     }
 }
 
@@ -69,19 +79,5 @@ button:hover {
     #sub-menu {
         font-size: 18px; 
     }
-    
-    #texto{
-        font-size: 13px;
-    }
-    #retorno{
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 15px;
-        cursor: pointer;
-        width: 140px;
-        height: 60px;
-        margin-left: 30%;
-        margin-bottom: 10%;
-        margin-top: 5%;
-    }
+
 }
