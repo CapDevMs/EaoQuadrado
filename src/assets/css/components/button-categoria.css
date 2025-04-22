@@ -13,13 +13,12 @@
   flex-wrap: nowrap;
   gap: 1rem;
   max-height: 20%;
-  margin-left: 10%;
-  max-width: 37vw;
-  
-  a{
-    padding: 10px;
-  }
+  width: 30%;
 
+}
+
+.button-categoria a{
+  /* padding: 10px; */
 }
 
 
