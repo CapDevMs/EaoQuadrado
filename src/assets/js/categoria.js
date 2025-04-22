@@ -34,9 +34,9 @@ const categorias = [
     }
 ];
 
-const docTag = document.querySelector(".button-categoria-container");
+const docTag = document.querySelector(".button-categoria");
 if (docTag) {
     docTag.innerHTML = categorias.map(categoria => buttonCategoria(categoria)).join('');
 } else {
-    console.error("Elemento <buttonCategoria> não encontrado no DOM.");
+    console.error("Elemento <button-categoria> não encontrado no DOM.");
 }

@@ -33,8 +33,8 @@
 
     <!-- Botões de categoria -->
 
-    <div class="categorias-container row">
-        <div class="button-categoria-container"></div>
+    <div class="categorias-button row">
+        <div class="button-categoria"></div>
     </div>
   
 

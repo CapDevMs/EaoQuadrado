@@ -1,5 +1,5 @@
 /* css do componente button categoria */
-.categorias-container {
+.categorias-button {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -9,17 +9,30 @@
 .button-categoria {
   margin-bottom: 1rem;
   flex: 0 0 auto;
-  width: auto !important;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  max-height: 20%;
+  margin-left: 10%;
+  max-width: 37vw;
+  
+  a{
+    padding: 10px;
+  }
+
 }
 
-.container-button {
+
+/* .container-button {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-}
+} */
 
-.button {
-  width: 100%;
+button {
+  max-width: 12vw;
+  width: 12vw;
+  height: 13vh;
   background-color: #f8f8f8;
   border: none;
   padding: 1rem;
