@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+
+.roadmap {
+    font-family: 'Poppins', sans-serif;
+    width: fit-content;
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    left: 2%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    max-width: fit-content;
+}
+
+#pagina_atual{
+    color: #00BFA5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+margin-bottom: 1em;
+}
+
+input[type="checkbox"] {
+display: none;
+}
+
+label {
+cursor: pointer;
+display: block;
+}
+
+.content {
+display: none;
+}
+
+input[type="checkbox"]:checked + label + .content {
+display: block;
+}
+
+.all {
+    justify-content: center;
+}
+
+.card-vend {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+    border: 1px solid var(--cor-fundo);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+}
+
+.contato {
+   white-space: nowrap;
+}
+
+.lista-vendedor {
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: white;
+    position: relative;
+    bottom: 8%;
+    border-radius: 20px;
+    padding: 10px;
+}
