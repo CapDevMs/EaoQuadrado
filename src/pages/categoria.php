@@ -9,10 +9,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E ao Quadrado - O melhor E-commerce</title>
-    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <!-- <link rel = 'stylesheet' href="../assets/css/cliente/categoria.css"> -->
-    <?php get_css(['cliente/categoria']) ?>
-    <title><?= $appName . ' - ' . $titulo ?? '' ?>  </title>
+    <!-- <title><?= $appName . ' - ' . $titulo ?? '' ?></title> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <?php get_css(['cliente/categoria']) ?>
     <?php get_css(['base','style','cliente/categoria']) ?>
     <?php get_css_components() ?>
 </head>
@@ -36,7 +34,7 @@
     <!-- Botões de categoria -->
 
     <div class="categorias-container row">
-        <buttonCategoria></buttonCategoria>
+        <div class="button-categoria-container"></div>
     </div>
   
 
@@ -64,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Categorias -->
             <div class="sidebar__categoria">
                 <nav class="sidebar__navigation">
@@ -106,7 +104,7 @@
             
                 <input type="checkbox" name="1-star" id="star1">
                 <label for="star1">
-                    <img src="../assets/img/CATEGORIA/One_Star.png" alt="1 estrela">
+                    <img src="../assets/img/categoria/One_Star.png" alt="1 estrela">
                 </label>
             </div>
         </div>  
@@ -118,7 +116,7 @@
     </div>
 
     <script type="module" src="../assets/js/categoria.js?<?= time();?>"></script>
-    <script type="module" src="../assets/js/pagina_do_vendedor.js"></script>
+    <script type="module" src="../assets/js/components/pagina_do_vendedor.js"></script>
     <script type="module" src="../assets/js/components/button-categoria.js"></script>
     <?php get_footer() ?>
     
