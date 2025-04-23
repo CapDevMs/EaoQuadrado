@@ -1,6 +1,6 @@
 const buttonCategoria = ({ imagem, nome, link }) => {
   return `
-      <div class="button-categoria col-1 col-sm-1 col-md-3 col-lg-2 col-xl-3">
+      <div class="button-categoria">
           <a href="${link}">
               <button class="button" type="button">
                   <div class="container-imagem">
@@ -16,3 +16,4 @@ const buttonCategoria = ({ imagem, nome, link }) => {
 };
 
 export default buttonCategoria;
+// col-1 col-sm-1 col-md-3 col-lg-2 col-xl-3

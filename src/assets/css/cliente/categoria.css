@@ -21,10 +21,9 @@
 /* button categoria */
 
 .categorias-container {
+   flex: 1;
    display: flex;
-   flex-wrap: wrap;
-   gap: 1rem;
-   margin-bottom: 2rem;
+   flex-direction: row;
  }
 
 /* Layout principal */
@@ -35,11 +34,8 @@
 
 /* Sidebar e filtros */
 .sidebar {
-   position: absolute;
    width: 240px;
    padding: 0 10px;
-   left: 0;
-   top: calc(50vh + 95px); /* Posiciona abaixo do vídeo */
 }
 
 /* Seção de marcas e preço */
