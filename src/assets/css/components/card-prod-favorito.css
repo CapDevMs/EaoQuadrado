@@ -1,0 +1,96 @@
+/* Compoentente do Card produto favorito*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.card-prod-favorito {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 3.75rem;
+    /* margin-top: 1rem; */
+}
+
+
+.card-body {
+    max-height: 20.75rem;
+    height: auto;
+    background-color: var(--cor-fundo-img-produtos);
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+.card-footer {
+    background-color: var(--cor-fundo);
+    margin-top: 0rem;
+    padding: 0.5rem;
+}
+
+.img-produto {
+    width: 100%;
+    max-height: 15.75rem;
+    margin: auto;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
+.icon-top-right {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;  
+    color: var(--cor-verde-principal);
+}
+
+.container-nome-produto, .container-preco-produto{
+    margin: 0.25rem 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.preco-produto {
+    color: var(--cor-verde-principal);
+}
+
+a.btn-add-carrinho {
+    color: var(--cor-texto-botao);
+    font-weight: bold;
+    background-color: var(--cor-botao-primario);
+    margin-top: 0.5rem;
+    text-decoration: none;
+    padding: 0.375rem 1rem;
+}
+
+.btn-add-carrinho:hover {
+    background-color: var(--cor-verde-principal);
+}
+
+
+.btn {
+    --bs-btn-padding-x: 0;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-border-radius: 10px;
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 0;
+    border-radius: var(--bs-btn-border-radius);
+}
+
+.shopping-link, .like {
+    text-decoration: none;
+}
+
+.shopping-link {
+    color: var(--cor-verde-principal);
+}
+

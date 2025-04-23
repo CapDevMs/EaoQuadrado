@@ -79,6 +79,7 @@ likeBtns.forEach(btn => {
     })
 });
 
+<<<<<<< HEAD
 
 async function exibirProdutos() {
     produtos.forEach((produto) => {
@@ -93,3 +94,5 @@ let banner = [{
 banner.forEach((titulo) => {
     docTag_banner.innerHTML += banner_vendedor(titulo)
 });
+=======
+>>>>>>> 320c24dfdaaf67564eeb43565fa9816f20dca5fd
