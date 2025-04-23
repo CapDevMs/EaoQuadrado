@@ -117,11 +117,40 @@ input[type="checkbox"]:checked + label + .content {
     position: relative;
     bottom: 8%;
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px;
+}
+
+@media (max-width: 1024px) {
+    .name h2{
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .email {
+        font-size: 14px;
+    }
+
+    .text-star {
+        font-size: 14px;
+    }
+
+    .contato-container a{
+        font-size: 14px;
+        width: fit-content;
+    }
 }
 
 @media (max-width: 768px) {
     .menu-adm {
         display: none;
     }
+
+    .inner-container {
+
+        text-align: center;
+    }
+
 }
