@@ -25,7 +25,7 @@ $base_url = get_base_url();
     <div class="roadmap">Home / Painel do Administrador / Lista de Vendedores</div>
 
             <div class="all container row">
-                <ul class="menu-adm col-sm-3">
+                <ul class="menu-adm col-sm-3 col-xl-2">
                     <li>
                         <input type="checkbox" id="item1">
                         <label for="item1">Cadastro</label>
@@ -66,19 +66,19 @@ $base_url = get_base_url();
                     </li>
                 </ul>
                     
-                <div class="lista-vendedor container col-sm-10 col-md-8 ml-0">
+                <div class="lista-vendedor container col-sm-10 col-lg-8 ml-0 mb-1">
 
                     <div class="col-sm-11 ml-1">
                         <div class="card-vend">
                             <div class="card-body">
                                 <div class="container mtb-1">
                                     <div class="row inner-container">
-                                        <div class="col-sm-12 col-md-2 col-xl-2">
+                                        <div class="cont-1 col-sm-12 col-md-2 col-xl-2">
                                             <div class="avatar">
                                                 <img src="<?= get_base_url(); ?>/assets/img/cliente/studio_center.svg" alt="" class="img-fluid">
                                             </div>
                                         </div>
-                                        <div class="col-sm-12 col-md-6 col-xl-7">
+                                        <div class="cont-2 col-sm-12 col-md-6 col-xl-7">
                                             <div class="name col-sm-12 col-md-2">
                                                 <h2>
                                                     Studio Center
@@ -93,7 +93,7 @@ $base_url = get_base_url();
                                             </div>
                                             <div class="col-md-hidden col-sm-12 pb-1"></div>
                                         </div>
-                                        <div class="col-sm-12 col-md-4 col-xl-3">
+                                        <div class="cont-3 col-sm-12 col-md-4 col-xl-3">
                                             <div class="row">
                                                 <div class="col-sm-12 stars">
                                                     <p class="text-star">
