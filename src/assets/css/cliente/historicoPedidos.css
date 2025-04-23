@@ -20,14 +20,122 @@
 
 .corpoPrincipal{
     display: flex;
+    justify-content: space-between;
 
 }
 
 .lista{
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 
 .preto{
     color:black;
+}
+
+.produto{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(0, 0, 0,0.5);
+    border-radius: 20px;
+    height: 120px;
+    max-width: 95%;
+    margin-bottom: 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 5px;
+    width: 20%;
+    
+}
+
+.boxImage{
+    max-width: 120px;
+    max-height: 120px;
+    margin: 0 auto;
+}
+
+.imageBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.centralizador{
+    margin: 0 auto;
+}
+
+.centralizadorVertical{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.textoNome{
+    max-height: 80%;
+    overflow: hidden;
+}
+
+.titulo{
+    white-space:nowrap;
+}
+
+@media (max-width:768px) {
+    .menuLateral{
+        display: none;
+    }
+    .redutor300{
+        display: none;
+    }
+    .lista{
+        width: 90%;
+        margin: auto;
+    }
+    .corpoPrincipal{
+        max-width: 95%;
+        margin: auto;
+    }
+    .produto{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    .boxProduto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .baseProduto{
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left:10px ;
+        margin-right:10px ;
+    }
+
+    .box2{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 30%;
+    }
+    .baseValue{
+        margin-left: 10px;
+        width: fit-content;
+        white-space: nowrap;
+    }
+}
+@media (max-width:1160px) {
+    .box{
+        width: 33%;
+    }
+    
+    .imageBox{
+        width: 33%;
+    }
 }

@@ -1,6 +1,9 @@
 <?php
-include('../../config/funcoes.php');
+include('../config/funcoes.php');
 $appName = get_app_name();
+?>
+<?php
+$base_url = get_base_url();
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -41,23 +44,36 @@ $appName = get_app_name();
                     <h2 class='redutor preto'>Histórico</h2>
                 </div>
                 <div>
-                    <div class='preto'>
-                        <div><img src='../../assets/img/acer_nitro.png'></div>
-                        <div>
-                            <h4>Nome do produto</h4>
-                            <div>AcerNitro</div>
+                    <div class = 'preto produto'>
+                    <div class='boxProduto'>
+
+                        <div class='box imageBox'>
+                            <img src='<?= $base_url; ?>/assets/img/acer_nitro.png' class='boxImage'>
                         </div>
-                        <div>
-                            <h4>Data da Compra</h4>
-                            <div>22/09/96</div>
+                        <div class='box'>
+                            <h4 class='redutor centralizador titulo'>Nome do produto</h4>
+                            <div class='redutor centralizador centralizadorVertical textoNome'>Acer Nitro V5 </div>
                         </div>
-                        <div>
-                            <h4>
-                                Preço
-                            </h4>
+                        <div class='box'>
+                            <h4 class='redutor centralizador titulo'>Data da Compra</h4>
+                            <div class='redutor centralizador centralizadorVertical'>22/09/96</div>
                         </div>
-                        <div>R$ 4680,00</div>
                     </div>
+                    <div class = 'baseProduto'>
+                        <div class='box2'>
+                            <h4 class='redutor titulo'>
+                                Preço:
+                            </h4>
+                            <div class='baseValue'>R$ 4680,00</div>
+                        </div>
+                        <div class='box2'>
+                            <h4 class='redutor titulo'>Status:</h4>
+                            <div class='baseValue'>Cancelado</div>
+                        </div>
+                    </div></div>
+
+                </div>
+
                 </div>
             </conteudo>
         </corpoPrincipal>
