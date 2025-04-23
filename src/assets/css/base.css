@@ -42,11 +42,12 @@
   --cor-texto-alerta: #721c24; /* Cor do texto do alerta */
   --cor-borda-alerta: #f5c6cb; /* Cor da borda do alerta */
   
+  --cor-fundo-card: #7D818420
 }
 
 /* Exemplo de uso das variáveis */
 body {
-  background-color: var(--cor-fundo-claro);
+  background-color: var(--cor-fundo);
   color: var(--cor-texto-principal);
 }
 
