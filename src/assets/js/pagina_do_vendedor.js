@@ -79,7 +79,6 @@ likeBtns.forEach(btn => {
     })
 });
 
-<<<<<<< HEAD
 
 async function exibirProdutos() {
     produtos.forEach((produto) => {
@@ -88,11 +87,12 @@ async function exibirProdutos() {
 }
 
 let banner = [{
-    'titulo' : 'Teste'
+    'titulo' : 'Teste',
+    'email' : 'Studiocenter@gmail.com',
+    'endereco' : 'Av.joão Cassimiro, 628, Tiradentes',
+    'telefone' : '(67) 99299-3053'
 }]
 
-banner.forEach((titulo) => {
-    docTag_banner.innerHTML += banner_vendedor(titulo)
+banner.forEach((titulo, email, endereco, telefone) => {
+    docTag_banner.innerHTML += banner_vendedor(titulo, email, endereco, telefone)
 });
-=======
->>>>>>> 320c24dfdaaf67564eeb43565fa9816f20dca5fd

@@ -1,4 +1,4 @@
-const banner_vendedor = ({ titulo, }) => {
+const banner_vendedor = ({ titulo, email, endereco, telefone }) => {
     return`
     <div class="card">
     <div class="card-body justify-content-center ptb-2">
@@ -15,12 +15,12 @@ const banner_vendedor = ({ titulo, }) => {
             </div>
             <div class="row">
                 <div class="col-12">
-                    <a href="mailto:studiocenterpy@gmail.com">studiocenterpy@gmail.com</a>
+                    <a href="mailto:studiocenterpy@gmail.com">${email}</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p>Av. 15 de Agosto, 506, Centro</p>
+                    <p>${endereco}</p>
                     <p>Campo Grande - MS</p>
                 </div>
             </div>
@@ -35,7 +35,7 @@ const banner_vendedor = ({ titulo, }) => {
             <div class="row">
                 <div class="col-12 text-right">
                     <img class="whatsapp" src="../assets/img/icons/whatsapp.svg" alt="">
-                    <a target="_blank" href="https://wa.me/556734377000">(67) 3437-7000</a>
+                    <a target="_blank" href="https://wa.me/556734377000">${telefone}</a>
                 </div>
             </div>
             <div class="row">
