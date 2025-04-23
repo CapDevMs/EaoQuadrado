@@ -27,13 +27,13 @@ let vendasHistorico = [
   }
 ];
 
-containerHistoricoVendas.innerHTML = vendasHistorico.map(pedido => 
-  cardHistoricoVendas(pedido)
-).join('');
+// containerHistoricoVendas.innerHTML = vendasHistorico.map(pedido => 
+//   cardHistoricoVendas(pedido)
+// ).join('');
 
-// vendasHistorico.forEach((pedido) => {
-//   historicoVendas.innerHTML += cardHistoricoVendas(pedido)
-// })
+vendasHistorico.forEach((pedido) => {
+  containerHistoricoVendas.innerHTML += cardHistoricoVendas(pedido)
+})
 
 
 window.toggleDetails = function (element) {
