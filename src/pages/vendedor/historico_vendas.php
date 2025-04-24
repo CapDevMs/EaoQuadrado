@@ -9,7 +9,7 @@ $appName = get_app_name();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-  <?php get_css(['base', 'style', 'historico_vendas']) ?>
+  <?php get_css(['base', 'style', '/vendedor/historico_vendas']) ?>
 </head>
 
 <body>
@@ -20,10 +20,10 @@ $appName = get_app_name();
       <?php get_sidebar_vendedor('historico_vendas'); ?>
     </asside>
 
-    <div class="container col-sm-12 col-md-9">
+    <div class="container-historico-vendas col-sm-12 col-md-9">
       <h1>Histórico de Vendas</h1>
       <div class="infos-historico">
-        <div class="item-info-historico">Produto</div>
+        <div class="item-info-historico item-info-historico-inicio">Produto</div>
         <div class="item-info-historico">Status do pedido</div>
         <div class="item-info-historico">Preço</div>
         <div class="item-info-historico">Cliente</div>

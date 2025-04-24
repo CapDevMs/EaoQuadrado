@@ -1,0 +1,152 @@
+.container-historico-vendas {
+    width: 70%;
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.infos-historico {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.item-info-historico {
+    text-align: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.item-info-historico-inicio{
+    margin-left: 12%;
+    margin-right: 3%;
+    gap: 6%;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-content {
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+}
+
+
+.card-item {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-item-inicio {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+
+.card-item-inicio p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.img-historico {
+    width: 60%;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.card-details {
+    width: 100%;
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+}
+
+.card-details.expanded {
+    display: block;
+}
+
+.infoCard {
+    margin-bottom: 15px;
+}
+
+.info-cliente-key {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+.info-cliente-value {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#statusPedido{
+    width: 15%;
+}
+select, .btn-salvar {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.btn-salvar {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-salvar:hover {
+    background-color: #45a049;
+}
+
+.status-pedido {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.status-entregue {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-em-andamento {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-cancelado {
+    background-color: #f8d7da;
+    color: #721c24;
+}

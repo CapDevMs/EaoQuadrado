@@ -5,7 +5,7 @@ let containerHistoricoVendas = document.querySelector('containerPedidos');
 let vendasHistorico = [
   {
     'imagem': '../../assets/img/monitor_oled.png',
-    'produto': "LCD Monitor",
+    'produto': "Monitor Gamer AOC Hero '27' 165Hz 1ms Ajuste de Altura 27G2S/BK",
     'statusPedido': "Entregue",
     'preco': "R$ 999,99",
     'cliente': "Yuri Ferreira",
@@ -16,7 +16,7 @@ let vendasHistorico = [
   },
   {
     'imagem': '../../assets/img/teclado.png',
-    'produto': "Teclado Gamer",
+    'produto': "Teclado Mecânico Gamer HyperX Alloy Origins Core, RGB, Switch HyperX Red, ABNT2 - 4P5P3A2#AC4",
     'statusPedido': "Cancelado",
     'preco': "R$ 599,99",
     'cliente': "Paulo Morais",
@@ -27,13 +27,9 @@ let vendasHistorico = [
   }
 ];
 
-// containerHistoricoVendas.innerHTML = vendasHistorico.map(pedido => 
-//   cardHistoricoVendas(pedido)
-// ).join('');
-
-vendasHistorico.forEach((pedido) => {
-  containerHistoricoVendas.innerHTML += cardHistoricoVendas(pedido)
-})
+containerHistoricoVendas.innerHTML = vendasHistorico.map(pedido => 
+  cardHistoricoVendas(pedido)
+).join('');
 
 
 window.toggleDetails = function (element) {
