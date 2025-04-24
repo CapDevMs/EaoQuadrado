@@ -1,4 +1,4 @@
-const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, cliente, data, quantidade, endereco, cep }) => {
+const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, valorTotal, cliente, data, quantidade, endereco, cidade, cep }) => {
   const statusClass = statusPedido.toLowerCase().replace(' ', '-');
   
   return `
@@ -27,10 +27,18 @@ const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, cliente, da
       
       <div class="card-details">
         <div class="infoCard">
-          <p class="info-cliente-key">Produto: <span class="info-cliente-value">${produto}</span></p>
-          <p class="info-cliente-key">Cliente: <span class="info-cliente-value">${cliente}</span></p>
-          <p class="info-cliente-key">Endereço: <span class="info-cliente-value">${endereco}</span></p>
-          <p class="info-cliente-key">CEP: <span class="info-cliente-value">${cep}</span></p>
+          <div class="info-produto">
+            <p class="info-cliente-key">Produto: <span class="info-cliente-value">${produto}</span></p>
+            <p class="info-cliente-key">Quantidade: <span class="info-cliente-value">${quantidade}</span></p>
+            <p class="info-cliente-key">Preço: <span class="info-cliente-value">${preco}</span></p>
+            <p class="info-cliente-key">Total: <span class="info-cliente-value">${valorTotal}</span></p>
+          </div>
+          <div class="info-cliente">
+            <p class="info-cliente-key">Cliente: <span class="info-cliente-value">${cliente}</span></p>
+            <p class="info-cliente-key">Endereço: <span class="info-cliente-value">${endereco}</span></p>
+            <p class="info-cliente-key">Cidade: <span class="info-cliente-value">${cidade}</span></p>
+            <p class="info-cliente-key">CEP: <span class="info-cliente-value">${cep}</span></p>
+          </div>
         </div>
         
         <div class="status-action">
