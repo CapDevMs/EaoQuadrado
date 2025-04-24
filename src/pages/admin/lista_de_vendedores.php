@@ -20,7 +20,6 @@ $base_url = get_base_url();
 <body>
     <?php get_header(); ?>
  
-    <!-- col-9 col-md-5 -->
     <main>
     <div class="roadmap">Home / Painel do Administrador / Lista de Vendedores</div>
 
@@ -68,9 +67,7 @@ $base_url = get_base_url();
                     
                 <div class="lista-vendedor container col-sm-10 col-lg-8 ml-0 mb-1">
 
-
                     <listaVendedores></listaVendedores>
-
 
                 </div>
     

@@ -36,7 +36,7 @@ ul {
     padding: 0;
 }
 
-li {
+.menu-adm > li {
     margin-bottom: 1em;
 }
 
