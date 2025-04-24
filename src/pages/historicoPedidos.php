@@ -44,33 +44,17 @@ $base_url = get_base_url();
                     <h2 class='redutor preto'>Histórico</h2>
                 </div>
                 <div>
-                    <div class = 'preto produto'>
-                    <div class='boxProduto'>
-
-                        <div class='box imageBox'>
-                            <img src='<?= $base_url; ?>/assets/img/acer_nitro.png' class='boxImage'>
+                    <div class='preto produto'>
+                        <div class = 'grandeBloco1'>
+                            <img src="../assets/img/acer_nitro.png">
                         </div>
-                        <div class='box'>
-                            <h4 class='redutor centralizador titulo'>Nome do produto</h4>
-                            <div class='redutor centralizador centralizadorVertical textoNome'>Acer Nitro V5 </div>
-                        </div>
-                        <div class='box'>
-                            <h4 class='redutor centralizador titulo'>Data da Compra</h4>
-                            <div class='redutor centralizador centralizadorVertical'>22/09/96</div>
+                        <div class = 'grandeBloco2'>
+                            <div class = ''></div>
+                            <div class = ''></div>
+                            <div class = ''></div>
+                            <div class = ''></div>
                         </div>
                     </div>
-                    <div class = 'baseProduto'>
-                        <div class='box2'>
-                            <h4 class='redutor titulo'>
-                                Preço:
-                            </h4>
-                            <div class='baseValue'>R$ 4680,00</div>
-                        </div>
-                        <div class='box2'>
-                            <h4 class='redutor titulo'>Status:</h4>
-                            <div class='baseValue'>Cancelado</div>
-                        </div>
-                    </div></div>
 
                 </div>
 
