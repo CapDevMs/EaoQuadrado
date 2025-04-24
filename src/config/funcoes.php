@@ -18,6 +18,9 @@ function get_base_head() {
 function get_header(){
     include_once(__DIR__ . '/../components/header.php');
 }
+function get_breadcrumbs(){
+    include_once(__DIR__ . '/../components/breadcrumbs.php');
+}
 
 function get_footer(){
     include_once(__DIR__ . '/../components/footer.php');

@@ -12,9 +12,22 @@
 </head>
 <body>
     <?php get_header() ?>
+    <?php get_breadcrumbs()?>
 
     <main>
-        <!-- roadmap -->
+        <ul class="breadcrumbs">
+            <?php 
+            $path = 'EaoQuadrado'; // Defina o caminho desejado
+            $breadcrumbs = getBreadcrumbs($path); // Chame a função para gerar os breadcrumbs
+ 
+            foreach ($breadcrumbs as $breadcrumb): ?>
+                <li>
+                    <a href="<?= $breadcrumb['url'] ?>"><?= $breadcrumb['name'] ?></a>
+                </li>
+
+    <?php endforeach; ?>
+    </ul
+
 
         <div class="container pt-3 row">
             <div class="info col-sm-12 col-md-4 pt-1">
