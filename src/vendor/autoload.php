@@ -6,6 +6,7 @@ spl_autoload_register(function($className) {
         join(DIRECTORY_SEPARATOR, array(__DIR__, '..', 'App', 'Controllers')),
         join(DIRECTORY_SEPARATOR, array(__DIR__, '..', 'App', 'Models')),
         join(DIRECTORY_SEPARATOR, array(__DIR__, '..', 'App', 'helpers')),
+        join(DIRECTORY_SEPARATOR, array(__DIR__, '..', 'Core')),
     ];
 
     foreach ($paths as $path) {
