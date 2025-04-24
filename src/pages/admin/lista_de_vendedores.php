@@ -68,57 +68,10 @@ $base_url = get_base_url();
                     
                 <div class="lista-vendedor container col-sm-10 col-lg-8 ml-0 mb-1">
 
-                    <div class="col-sm-11 ml-1">
-                        <div class="card-vend">
-                            <div class="card-body">
-                                <div class="container mtb-1">
-                                    <div class="row inner-container">
-                                        <div class="cont-1 col-sm-12 col-md-2 col-xl-2">
-                                            <div class="avatar">
-                                                <img src="<?= get_base_url(); ?>/assets/img/cliente/studio_center.svg" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                        <div class="cont-2 col-sm-12 col-md-6 col-xl-7">
-                                            <div class="name col-sm-12 col-md-2">
-                                                <h2>
-                                                    Studio Center
-                                                    <i class="fa-regular fa-heart icone"></i>
-                                                </h2>
-                                            </div>
-                                            <div class="col-sm-12 ">
-                                                <a class="email" href="mailto:studiocenterpy@gmail.com" class="text">studiocenterpy@gmail.com</a>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <p class="text mt-1">Categorias: Roupas, Camêras, Smartphones, Computadores, Telefones</p>
-                                            </div>
-                                            <div class="col-md-hidden col-sm-12 pb-1"></div>
-                                        </div>
-                                        <div class="cont-3 col-sm-12 col-md-4 col-xl-3">
-                                            <div class="row">
-                                                <div class="col-sm-12 stars">
-                                                    <p class="text-star">
-                                                        Avaliações: 
-                                                        <i class="fa fa-star icone-star"></i>
-                                                        <i class="fa fa-star icone-star"></i>
-                                                        <i class="fa fa-star icone-star"></i>
-                                                        <i class="fa-regular fa-star icone-star"></i>
-                                                        <i class="fa-regular fa-star icone-star"></i>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="row pl-1">
-                                                <div class="col-sm-10 pt-1 contato-container">
-                                                    <img class="whatsapp" src="<?= get_base_url(); ?>/assets/img/icons/whatsapp.svg" alt="whatsapp">
-                                                    <a target="_blank" class="contato" href="https://wa.me/556734377000">(67) 3437-7000</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
+
+                    <listaVendedores></listaVendedores>
+
+
                 </div>
     
             </div>
@@ -126,5 +79,5 @@ $base_url = get_base_url();
     </main>
     <?php get_footer(); ?>
 </body>
-<script src="script.js"></script>
+<script type="module" src="../../assets/js/adm/vendedores.js"></script>
 </html>
