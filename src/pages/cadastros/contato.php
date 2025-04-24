@@ -8,50 +8,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['cadastros/contato']) ?>
+    <?php get_css(['style', 'cadastros/contato']) ?>
 </head>
 <body>
     <?php get_header() ?>
 
     <main>
-        <a id="menu" href="index.php">Pagina Inicial</a>
-        <span>/</span>
-        <div id="sub-menu"><a href="contato.php">Contato</a></div>     
-        <div class="container">
-        <img src="../../assets/img/contato.jpg" alt="contato" id="contato">
-      
-        <form action="#" method="post">
-            <div class="titulo">
-                <label>Nome</label><br>
-                <textarea class="caixa" placeholder="John Doe" id="nome" rows="2"></textarea><br><br>
-            </div>
-            <div class="titulo">
-                <label>E-mail</label><br>
-                <textarea class="caixa" id="email" placeholder="johndoe@gmail.com" rows="2"></textarea><br><br>
-            </div>
-            <div class="titulo">
-                <label>Telefone/WhatsApp</label><br>
-                <textarea class="caixa" id="telefone" placeholder="(67) 99999-9999" rows="2"></textarea><br><br>
-            </div>
-            <div class="titulo">
-                <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea><br><br>
-            </div>
-            <button id="salvar" type="submit">Enviar Mensagem</button>
-        </form>
+        <!-- roadmap -->
 
-
-        <div id="modalImagem" class="modal">
-            <div class="modal-content">
-                <span class="fechar">&times;</span>
-                <img src="../../assets/img/mens-enviada.png" alt="Imagem de Sucesso" />
+        <div class="container pt-3 row">
+            <div class="info col-sm-12 col-md-4 pt-1">
+                <div class="contatos-group">
+                    <div class="contatos-title pb-1">
+                        <span class="round"></span>
+                        <h1>Entre em Contato</h1>
+                    </div>
+                    <p class="pb-1">Atendimento 24 horas</p>
+                    <p class="pb-1">Telefone: +67991377273</p>
+                </div>
+                <hr>
+                <div class="contatos-group">
+                    <div class="contatos-title pb-1 pt-1">
+                        <span class="round"></span>
+                        <h1>Mande um Email</h1>
+                    </div>
+                    <p class="pb-1">Respondemos e-mail em 24 horas</p>
+                    <p class="pb-1">Email: customer@exclusive.com</p>
+                    <p>Email: support@exclusive.com</p>
+                </div>
             </div>
-        </div>
 
             
+            <form action="#" class="message col-sm-12 col-md-8" method="post">
+
+                <div class="caixa-container row">
+                    
+                    <div class="input-group col-md3 pb-2">
+                        <div class="titulo">
+                            <label for="nome">Nome</label>
+                            <input class="caixa" placeholder="John Doe" id="nome" ></input>
+                        </div>
+                        <div class="titulo">
+                            <label for="email">E-mail</label>
+                            <input class="caixa" id="email" placeholder="johndoe@gmail.com"></input>
+                        </div>
+                        <div class="titulo">
+                            <label for="telefone">Telefone/WhatsApp</label>
+                            <input class="caixa" id="telefone" placeholder="(67) 99999-9999"></input>
+                        </div>
+                    </div>
+
+                    <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea>
+                    <div class="button-container pt-1">
+                        <button id="salvar" type="submit">Enviar Mensagem</button>
+                    </div>
+                </div>
+            </form>
+        </div>
                 
             
-
-
     </main>
 
     <?php get_footer() ?>

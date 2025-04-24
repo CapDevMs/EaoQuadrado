@@ -355,6 +355,10 @@
     margin-right: 0.5rem;
 }
 
+.col-sm-hidden {
+    display: none;
+}
+
 /* Sistema de Grid (colunas) responsividade - Tela é calculada como tendo 12 colunas */
 @media (min-width: 768px) {
     .col-sm-hidden {
