@@ -28,15 +28,19 @@
     </div> 
     
     <div class="marcador-titulo"> 
-        <p class="titulo-celular"></p>
+        <p class="titulo-celular">Celular</p>
     </div>
 
     <!-- Botões de categoria -->
-    <div class="container categoria-layout">
-        <div class="categorias-button row">
+    <!-- <div class="container categoria-layout"> -->
+        <!-- <div class="categorias-button ">
             <div class="button-categoria"></div>
         </div>
-    
+     -->
+        <div class="container-buttons ">
+            <!-- <button-categoria></button-categoria> -->
+            <div class="button-categoria"></div>
+        </div>
 
         <div class="content-container col-sm-1 ptb-1">
             <!-- Sidebar com filtros -->
@@ -108,7 +112,7 @@
                     </label>
                 </div>
             </div>  
-        </div>
+        <!-- </div> -->
         <!-- Produtos -->
             <card-produto class="row"></card-produto>
     </div>

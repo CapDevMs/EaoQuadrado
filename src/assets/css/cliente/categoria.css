@@ -19,12 +19,21 @@
    object-position: center 10%;
 }
 /* button categoria */
+.container-buttons {
+   display: flex;  /* Coloca os botões lado a lado */
+   flex-wrap: wrap;  /* Permite que eles quebrem linha caso o espaço acabe */
+   justify-content: flex-start; /* Alinhamento horizontal dos botões */
+   max-width: 600px; /* Limite do container */
+   overflow: hidden; /* Previne que ultrapassem o container */
+   gap: 1rem; /* Espaço entre os botões */
+}
 
-.categorias-container {
+/* caso uso de uma div cobrindo os buttons e o sidebar */
+/* .categorias-container {
    flex: 1;
    display: flex;
    flex-direction: row;
- }
+ } */
 
 /* Layout principal */
 .section-categoria {

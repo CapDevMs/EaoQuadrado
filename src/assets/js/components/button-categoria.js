@@ -16,4 +16,3 @@ const buttonCategoria = ({ imagem, nome, link }) => {
 };
 
 export default buttonCategoria;
-// col-1 col-sm-1 col-md-3 col-lg-2 col-xl-3
