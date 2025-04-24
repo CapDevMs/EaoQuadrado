@@ -44,15 +44,31 @@ $base_url = get_base_url();
                     <h2 class='redutor preto'>Histórico</h2>
                 </div>
                 <div>
-                    <div class='preto produto'>
-                        <div class = 'grandeBloco1'>
-                            <img src="../assets/img/acer_nitro.png">
+                    <div class='preto produto row'>
+                        <div class='grandeBloco1 col-3 centralizar'>
+                            <img class='col-lg-8 imagem' src="../assets/img/acer_nitro.png">
                         </div>
-                        <div class = 'grandeBloco2'>
-                            <div class = ''></div>
-                            <div class = ''></div>
-                            <div class = ''></div>
-                            <div class = ''></div>
+                        <div class='grandeBloco2 col-lg-9 row'>
+                            <div class='col-lg-6 row'>
+                                <div class='col-lg-6 blocoMedio'>
+                                    <h4 class='redutor central'>Nome</h4>
+                                    <p class='redutor central2'>Acer nitro V5</p>
+                                </div>
+                                <div class='col-lg-6'>
+                                    <h4 class='redutor central titulo'>Data de compra</h4>
+                                    <p class='redutor central2'>18/12/2006</p>
+                                </div>
+                            </div>
+                            <div class='col-lg-6 row'>
+                                <div class='col-lg-6'>
+                                    <h4 class='redutor central '>Preço</h4>
+                                    <p class='redutor central2'>R$ 4650,90</p>
+                                </div>
+                                <div class='col-lg-6'>
+                                    <h4 class='redutor central'>Status</h4>
+                                    <p class='redutor central2'>Cancelado</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

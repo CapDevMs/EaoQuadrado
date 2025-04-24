@@ -1,50 +1,88 @@
-.roadMap1{
+.roadMap1 {
     opacity: 50%;
     margin: 5px;
     text-decoration: none;
 }
 
-.redutor{
+.redutor {
     max-width: max-content;
 }
 
-.redutor300{
+.redutor300 {
     max-width: 300px;
 }
-.menuLateral{
+
+.menuLateral {
     display: flex;
     flex-direction: column;
     white-space: nowrap;
     width: max-content;
 }
 
-.corpoPrincipal{
+.corpoPrincipal {
     display: flex;
     justify-content: space-between;
 
 }
 
-.lista{
+.lista {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
+    margin: 0;
 }
 
-.preto{
+.preto {
     color: black;
 }
 
-.produto{
-    max-width: 90%;
-    border:1px solid rgb(0, 0, 0, 0.5);
+.titulo {
+    margin: 5px;
+    white-space: nowrap;
+}
+
+.produto {
+    max-width: 97%;
+    border: 1px solid rgb(0, 0, 0, 0.5);
     box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
     height: 120px;
-    border-radius:20px ;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom:10px;
 }
 
-.nulificador{
+.nulificador {
     display: none;
+}
+
+.imagem {
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+}
+
+.centralizar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blocoMedio{
+    margin: 0 auto;
+}
+
+.central{
+    margin: auto;
+}
+.central2{
+    margin: auto;
+    margin-top:30px ;
+}
+
+@media (max-width:994px){
+    .produto{
+        height: 150px;
+    }
 }
