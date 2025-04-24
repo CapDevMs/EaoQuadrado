@@ -45,28 +45,28 @@ $base_url = get_base_url();
                 </div>
                 <div>
                     <div class='preto produto row'>
-                        <div class='grandeBloco1 col-3 centralizar'>
+                        <div class='grandeBloco1 col-lg-3 centralizar col-3'>
                             <img class='col-lg-8 imagem' src="../assets/img/acer_nitro.png">
                         </div>
-                        <div class='grandeBloco2 col-lg-9 row'>
-                            <div class='col-lg-6 row'>
-                                <div class='col-lg-6 blocoMedio'>
+                        <div class='grandeBloco2 col-lg-9 row col-9 column'>
+                            <div class='col-lg-6 row col-6'>
+                                <div class='col-lg-6 blocoMedio col-6'>
                                     <h4 class='redutor central'>Nome</h4>
                                     <p class='redutor central2'>Acer nitro V5</p>
                                 </div>
-                                <div class='col-lg-6'>
+                                <div class='col-lg-6 col-6'>
                                     <h4 class='redutor central titulo'>Data de compra</h4>
                                     <p class='redutor central2'>18/12/2006</p>
                                 </div>
                             </div>
-                            <div class='col-lg-6 row'>
-                                <div class='col-lg-6'>
-                                    <h4 class='redutor central '>Preço</h4>
-                                    <p class='redutor central2'>R$ 4650,90</p>
+                            <div class='col-lg-6 row col-6'>
+                                <div class='col-lg-6 col-6 rows'>
+                                    <h4 class='redutor central rows'>Preço</h4>
+                                    <p class='redutor central2 rows'>R$ 4650,90</p>
                                 </div>
-                                <div class='col-lg-6'>
-                                    <h4 class='redutor central'>Status</h4>
-                                    <p class='redutor central2'>Cancelado</p>
+                                <div class='col-lg-6 col-6 rows'>
+                                    <h4 class='redutor central rows'>Status</h4>
+                                    <p class='redutor central2 rows'>Cancelado</p>
                                 </div>
                             </div>
                         </div>

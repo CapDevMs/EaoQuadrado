@@ -1,3 +1,7 @@
+main{
+    min-height: 500px;
+}
+
 .roadMap1 {
     opacity: 50%;
     margin: 5px;
@@ -76,6 +80,7 @@
 .central{
     margin: auto;
 }
+
 .central2{
     margin: auto;
     margin-top:30px ;
@@ -85,4 +90,28 @@
     .produto{
         height: 150px;
     }
+    .column{
+        flex-direction: column;
+    }
+    .rows{
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        margin: 0px;
+    }
+}
+
+@media (max-width:768px){
+    .menuLateral{
+        display: none;
+    }
+    .redutor300{
+        width: 0;
+    }
+    .corpoPrincipal{
+        display: flex;
+        justify-content: center;
+    }
+
+    
 }
