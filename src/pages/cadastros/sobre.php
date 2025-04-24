@@ -1,6 +1,66 @@
 <?php
 include('../../config/funcoes.php');
 $appName = get_app_name();
+$baseUrl = get_base_url();
+
+$comparativo = [
+    [
+        'titulo' => 'Vendedores ativos no site',
+        'valor' => '10.5k',
+        'icon' => 'fa fa-users'
+    ],
+    [
+        'titulo' => 'Venda mensal',
+        'valor' => '33k',
+        'icon' => 'fa fa-dollar-sign'
+    ],
+    [
+        'titulo' => 'Clientes ativos no site',
+        'valor' => '45.5k',
+        'icon' => 'fa fa-user'
+    ],
+    [
+        'titulo' => 'Venda bruta anual no site',
+        'valor' => '250k',
+        'icon' => 'fa-solid fa-sack-dollar'
+    ]
+];
+
+$titulo = 'Sobre nós';
+
+$sobre_cards = [
+    [
+        'titulo' => 'Senac',
+        'subtitulo' => 'Fundador e Presidente',
+        'image' => $baseUrl . '/assets/img/sobre/logo-senac.png',
+        'links' => [
+            'twitter' => 'https://twitter.com/senac',
+            'instagram' => 'https://instagram.com/senac',
+            'linkedin' => 'https://linkedin.com/company/senac'
+        ]
+    ],
+    [
+        'titulo' => 'E²',
+        'subtitulo' => 'Gerentes',
+        'image' => $baseUrl . '/assets/img/sobre/mulher-oculos.png',
+        'links' => [
+            'twitter' => 'https://twitter.com/e2',
+            'instagram' => 'https://instagram.com/e2',
+            'linkedin' => 'https://linkedin.com/company/e2'
+        ]
+    ],
+    [
+        'titulo' => 'CapDev',
+        'subtitulo' => 'Empresa de Desenvolvimento de Software',
+        'image' => $baseUrl . '/assets/img/sobre/logo-capdev.png',
+        'links' => [
+            'twitter' => 'https://twitter.com/capdev',
+            'instagram' => 'https://instagram.com/capdev',
+            'linkedin' => 'https://linkedin.com/company/capdev'
+        ]
+    ]
+];
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -8,9 +68,9 @@ $appName = get_app_name();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['cadastros/sobre', 'style']) ?>
-    <?php get_css_components(); ?>
+    <?php get_css(['base', 'style', 'cadastros/sobre']) ?>
 </head>
 
 <body>
@@ -45,48 +105,85 @@ $appName = get_app_name();
             </div>
         </div>
         
-
-        <div id="comparativo">
-            <img src="../../assets/img/comparativo-sobre.png">
-        </div>
-
-        <div id="banner">
-            <img src="../../assets/img/banner-sobre.png" alt="Banner">
-            <div id="links">
-                <a href="https://twitter.com" target="_blank">
-                    <img src="../../assets/img/link-twitter.png" alt="Twitter">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="../../assets/img/link-instagram.png" alt="Instagram">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="../../assets/img/link-twitter.png" alt="Twitter">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="../../assets/img/link-instagram.png" alt="Instagram">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="../../assets/img/link-twitter.png" alt="Twitter">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="../../assets/img/link-instagram.png" alt="Instagram">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="../../assets/img/link-likedin.png" alt="LinkedIn">
-                </a>
+        <div class="container">
+            <div class="row">
+                <?php foreach ($comparativo as $informacao): ?>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card-status ptb-2 mb-2">
+                            <div class="status-icon ptb-1">
+                                <i class="<?= $informacao['icon']; ?>"></i>
+                            </div>
+                            <p class="status-text pt-2"><?= $informacao['valor']; ?></p>
+                            <p class="status-subtitle"><?= $informacao['titulo']; ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
-        </div>
+            
+            <div class="row">
+                <?php foreach ($sobre_cards as $card): ?>
+                    <div class="col-sm-12 col-md-4 pt-1">
+                        <div class="card-sobre">
+                            <div class="card-body pt-2">
+                                <div class="card-image">
+                                    <img src="<?= $card['image']; ?>" alt="">
+                                </div>
+                                <div class="pb-1">
+                                    <p class="card-sobre-titulo pl-1"><?= $card['titulo']; ?></p>
+                                    <p class="card-sobre-subtitulo pl-1"><?= $card['subtitulo']; ?></p>
+                                </div>
+                                <div class="links">
+                                    <a href="<?= $card['links']['twitter']; ?>" target="_blank">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="<?= $card['links']['instagram']; ?>" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="<?= $card['links']['linkedin']; ?>" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
 
-
-
-        <div id="banner2">
-            <img src="../../assets/img/banner2-sobre.png">
+            <div class="row pt-2">
+                <div class="col-sm-12 col-md-4 pb-2">
+                    <div class="info-icon m-auto ptb-1">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <p class="info-text text-uppercase pt-2">
+                        Entrega Grátis
+                    </p>
+                    <p class="info-subtitulo">
+                        Para toda Campo Grande - MS
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4 pb-2">
+                    <div class="info-icon m-auto ptb-1">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <p class="info-text text-uppercase pt-2">
+                        ATENDIMENTO AO CLIENTE 24H
+                    </p>
+                    <p class="info-subtitulo">
+                        Suporte customizado
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4 pb-2">
+                    <div class="info-icon m-auto ptb-1">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                    </div>
+                    <p class="info-text text-uppercase pt-2">
+                        7% DE CASHBACK
+                    </p>
+                    <p class="info-subtitulo">
+                        Devolução instatânea
+                    </p>
+                </div>
+            </div>
         </div>
 
     </main>

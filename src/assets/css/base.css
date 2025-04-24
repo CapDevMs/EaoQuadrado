@@ -42,11 +42,12 @@
   --cor-texto-alerta: #721c24; /* Cor do texto do alerta */
   --cor-borda-alerta: #f5c6cb; /* Cor da borda do alerta */
   
+  --cor-fundo-card: #7D818420
 }
 
 /* Exemplo de uso das variáveis */
 body {
-  background-color: var(--cor-fundo-claro);
+  background-color: var(--cor-fundo);
   color: var(--cor-texto-principal);
 }
 
@@ -450,14 +451,13 @@ footer {
     position: relative;
     bottom: 0;
     left: 0;
-    height: 100%;
+    height: fit-content;
     width: 100%;
     background-color: #000;
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr; */
   }
   .footer-links {
-    width: 100%;
     flex-direction: column;
     margin: 0;
     padding-top: 5%;
