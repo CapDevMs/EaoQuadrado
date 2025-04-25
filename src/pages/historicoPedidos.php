@@ -39,34 +39,34 @@ $base_url = get_base_url();
                     <a class='roadMap1'>Editar sistema</a>
                 </div>
             </menuLateral>
-            <conteudo class="lista">
+            <conteudo class="listaa">
                 <div>
                     <h2 class='redutor preto'>Histórico</h2>
                 </div>
                 <div>
-                    <div class='preto produto row'>
-                        <div class='grandeBloco1 col-lg-3 centralizar col-3'>
+                    <div class='produto row colum490'>
+                        <div class='grandeBloco1 col-sm-12 col-lg-3 centralizar col-3'>
                             <img class='col-lg-8 imagem' src="../assets/img/acer_nitro.png">
                         </div>
-                        <div class='grandeBloco2 col-lg-9 row col-9 column'>
-                            <div class='col-lg-6 row col-6'>
-                                <div class='col-lg-6 blocoMedio col-6'>
-                                    <h4 class='redutor central'>Nome</h4>
-                                    <p class='redutor central2'>Acer nitro V5</p>
+                        <div class='grandeBloco2 col-sm-12 col-lg-9 row column'>
+                            <div class='col-lg-6 row col-12'>
+                                <div class='col-sm-6 blocoMedio'>
+                                    <h4 class='redutor central redutorFonte'>Nome</h4>
+                                    <p class='redutor central2 redutorFonte'>Acer nitro V5</p>
                                 </div>
-                                <div class='col-lg-6 col-6'>
-                                    <h4 class='redutor central titulo'>Data de compra</h4>
-                                    <p class='redutor central2'>18/12/2006</p>
+                                <div class='col-sm-6'>
+                                    <h4 class='redutor central titulo redutorFonte'>Data de compra</h4>
+                                    <p class='redutor central2 redutorFonte'>18/12/2006</p>
                                 </div>
                             </div>
-                            <div class='col-lg-6 row col-6'>
+                            <div class='col-lg-6 row col-sm-12'>
                                 <div class='col-lg-6 col-6 rows'>
-                                    <h4 class='redutor central rows'>Preço</h4>
-                                    <p class='redutor central2 rows'>R$ 4650,90</p>
+                                    <h4 class='redutor central rows redutorFonte'>Preço</h4>
+                                    <p class='redutor central2 rows redutorFonte'>R$ 4650,90</p>
                                 </div>
                                 <div class='col-lg-6 col-6 rows'>
-                                    <h4 class='redutor central rows'>Status</h4>
-                                    <p class='redutor central2 rows'>Cancelado</p>
+                                    <h4 class='redutor central rows redutorFonte'>Status</h4>
+                                    <p class='redutor central2 rows redutorFonte'>Cancelado</p>
                                 </div>
                             </div>
                         </div>

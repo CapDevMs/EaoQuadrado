@@ -3,7 +3,7 @@ main{
 }
 
 .roadMap1 {
-    opacity: 50%;
+    /* opacity: 50%; */
     margin: 5px;
     text-decoration: none;
 }
@@ -29,7 +29,7 @@ main{
 
 }
 
-.lista {
+.listaa {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -88,7 +88,7 @@ main{
 
 @media (max-width:994px){
     .produto{
-        height: 150px;
+        height: calc(100% + 2px);
     }
     .column{
         flex-direction: column;
@@ -96,8 +96,10 @@ main{
     .rows{
         display: flex;
         flex-direction: row;
+        justify-content: center;
         white-space: nowrap;
         margin: 0px;
+        margin-right: 2px;
     }
 }
 
@@ -113,5 +115,12 @@ main{
         justify-content: center;
     }
 
+    
+}
+
+@media (max-width:425px) {
+    .redutorFonte{
+        font-size: 14px;
+    }
     
 }
