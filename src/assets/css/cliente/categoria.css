@@ -19,7 +19,35 @@
    object-fit: cover;
    object-position: center;
  }
-/* titulos */
+
+ /* titulos */
+
+ .container-title-categoria-video {
+   display: flex;
+   position: absolute; 
+   top: 50%; 
+   left: 50%; 
+   transform: translate(-50%, -50%); 
+   z-index: 2;
+   text-align: center; 
+   width: 100%;
+   padding: 0;
+   gap: 1rem;
+   flex-direction: row;
+}
+
+.container-white{
+   background-color: #fff;
+   width: 20px;
+   height: 40px;
+}
+.titulo-categoria-video{
+   font-size: 1.25rem;
+   font-weight: 700;
+   color: #fff
+}
+
+/* segundo titulo da página */
 
 .container-title-categoria{
    display: flex;
@@ -39,7 +67,7 @@
    color: var(--cor-verde-escuro);
 
 }
-.conteiner-green{
+.container-green{
    width: 20px;
    height: 40px;
    background-color: var( --cor-verde-escuro);
@@ -55,18 +83,18 @@
 
 /* button categoria */
 .container-buttons {
-   display: flex;  /* Coloca os botões lado a lado */
-   flex-wrap: wrap;  /* Permite que eles quebrem linha caso o espaço acabe */
-   justify-content: flex-start; /* Alinhamento horizontal dos botões */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
    margin-top: 10%;
-   max-height: 15%; /* Limite do container */
-   overflow: auto; /* Previne que ultrapassem o container */
-   gap: 1rem; /* Espaço entre os botões */
+   max-height: 145px;
+   overflow: hidden;
+   gap: 1rem;
    order: 2;
-}
+ }
 
 /* caso uso de uma div cobrindo os buttons e o sidebar */
-.button-categoria {
+/* .button-categoria {
    display: flex;
    flex-wrap: nowrap;
    gap: 1rem;
@@ -76,7 +104,7 @@
    width: 100%;
    max-width: 100%;
    box-sizing: border-box;
- }
+ } */
 /* Layout principal */
 .section-categoria {
    margin: 20px 0;
@@ -206,6 +234,15 @@
    margin-bottom: 30px;
 }
 
+.fa-solid.fa-star {
+   color: var(--cor-verde-escuro);
+}
+
+.fa-regular.fa-star {
+   color: #D3D3D3; 
+}
+
+
 .checkbox-container input {
    appearance: none;
    width: 18px;
@@ -229,6 +266,13 @@
 
 .checkbox-container input:checked {
    background-color: #00BFA5;
+}
+
+.container-produtos{
+   max-width: 70%;
+   position: relative;
+   left: 20%;
+   bottom: 532px;
 }
 
 /* Produtos */
