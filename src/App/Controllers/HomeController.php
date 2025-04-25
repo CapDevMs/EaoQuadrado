@@ -2,14 +2,12 @@
 
 namespace App\Controllers;
 
+use Core\View;
+
 class HomeController {
-    public function __construct()
-    {
-        echo 'teste';
-    }
 
     public function index()
     {
-        echo 'index';
+        View::render('homepage');
     }
 }

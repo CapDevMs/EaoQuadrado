@@ -1,36 +1,8 @@
 <?php
-    include('../config/funcoes.php');
+    include(__DIR__ . '/../config/funcoes.php');
     $appName = get_app_name();
 
     $baseUrl = get_base_url();
-
-    $login = 'admin@admin.com';
-    $senha = 'admin';
-
-    if (!isset($_SESSION)) {
-        session_start();
-    }
-
-    if (isset($_SESSION['user'])) {
-        
-        logout();
-
-        header('Location: ../index.php');
-        exit();
-    }
-
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $login = $_POST['login'];
-        $senha = $_POST['senha'];
-
-        if ($login == 'admin@admin.com' && $senha == 'admin') {
-            $_SESSION['user'] = $login;
-            header('Location: ../index.php');
-            exit();
-        } else {
-            $error = "Usuário ou senha inválidos.";
-        }
-    }
 ?>
 
 <!DOCTYPE html>

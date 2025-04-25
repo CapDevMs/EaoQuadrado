@@ -15,7 +15,7 @@ $base_url = get_base_url();
         </div>
         <ul class="menu-opcoes">
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>/pages/login.php">
+                <a href="<?=$base_url;?>/login">
                     <img src="<?=$base_url;?>/assets/img/pessoa.svg" alt="Pessoa">
                 </a>
             </li>
