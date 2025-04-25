@@ -1,0 +1,29 @@
+.geral {
+    flex-direction: column;
+}
+
+.col-sm-3 {
+    margin-right: 0;
+}
+
+.selector h1 {
+    font-size: 20px;
+}
+
+.status {
+    justify-content: start;
+    gap: 20px;
+}
+
+.btn-status {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.perfis-body {
+    background-color: var(--cor-fundo);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+    border-radius: 20px;
+    height: max-content;
+}
