@@ -30,18 +30,18 @@
     <div class="marcador-titulo"> 
         <p class="titulo-celular">Celular</p>
     </div>
-
+    
     <!-- Botões de categoria -->
     <!-- <div class="container categoria-layout"> -->
         <!-- <div class="categorias-button ">
             <div class="button-categoria"></div>
         </div>
-     -->
-        <div class="container-buttons ">
-            <!-- <button-categoria></button-categoria> -->
-            <div class="button-categoria"></div>
+        -->
+    <div class="section-categoria-filtros">    
+        <div class="container-buttons">
+            <button-categoria class="button-categoria "></button-categoria>
         </div>
-
+        
         <div class="content-container col-sm-1 ptb-1">
             <!-- Sidebar com filtros -->
             <div class="sidebar">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <!-- Categorias -->
                 <div class="sidebar__categoria">
                     <nav class="sidebar__navigation">
@@ -85,17 +85,17 @@
                 <div class="checkbox-container"> 
                     <input type="checkbox" name="tudo" id="tudo">
                     <label for="tudo">Tudo</label>
-                
+                    
                     <input type="checkbox" name="5-star" id="star5">
                     <label for="star5">
                         <img src="../assets/img/categoria/Five_Star.png" alt="5 estrelas">
                     </label>
-                
+                    
                     <input type="checkbox" name="4-star" id="star4">
                     <label for="star4">
                         <img src="../assets/img/categoria/Four_Star.png" alt="4 estrelas">
                     </label>
-                
+                    
                     <input type="checkbox" name="3-star" id="star3">
                     <label for="star3">
                         <img src="../assets/img/categoria/Three_Star.png" alt="3 estrelas">
@@ -105,22 +105,23 @@
                     <label for="star2">
                         <img src="../assets/img/categoria/Two_Star.png" alt="2 estrelas">
                     </label>
-                
+                    
                     <input type="checkbox" name="1-star" id="star1">
                     <label for="star1">
                         <img src="../assets/img/categoria/One_Star.png" alt="1 estrela">
                     </label>
                 </div>
+    </div>            
             </div>  
         <!-- </div> -->
         <!-- Produtos -->
+        <div>
             <card-produto class="row"></card-produto>
-    </div>
-    </main>    
-    <script type="module" src="../assets/js/categoria.js?<?= time();?>"></script>
-    <script type="module" src="../assets/js/components/pagina_do_vendedor.js"></script>
-    <script type="module" src="../assets/js/components/button-categoria.js"></script>
-
+        </div>
+        </div>
+    </main>     
+    <script type="module" src="../assets/js/categoria.js?<?= time();?>" defer></script>
+    <script type="module" src="../assets/js/pagina_do_vendedor.js?<?= time(); ?>" defer></script>
     <?php get_footer() ?>
     
 </body>

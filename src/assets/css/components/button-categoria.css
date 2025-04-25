@@ -1,55 +1,40 @@
 /* css do componente button categoria */
 
-
-/* .button-categoria {
-  margin-bottom: 1rem;
-  flex: 0 0 auto;
-  display: flex;
-  flex-wrap: nowrap;  
-  gap: 7rem;
-  max-height: 20%;
-  width: 7vw;
-
-} */
-
 .button-categoria {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  padding-left: 10rem;
-  align-items: center;
-}   
-
-.button-categoria a{
-  display: block;
-  width: fit-content;
-  height: fit-content;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* impede quebra de linha */
+  gap: 0.5rem;
+  margin-left: 5%;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+.button-categoria a {
+  flex: 1;
+  min-width: 100px;
+  max-width: 150px;
+  text-align: center;
+  word-wrap: break-word;
 
+}
 
-/* .container-button {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-} */
-
-button {
-  margin: 0;
-  width: 9vw;
-  height: 19vh;
+.button-categoria button {
+  width: 100%;
+  height: 155px;
   background-color: #f8f8f8;
   border: none;
   padding: 1rem;
   border-radius: 10px;
   transition: transform 0.2s;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
   cursor: pointer;
 }
 
-.button:hover {
+.button-categoria button:hover {
   transform: scale(1.03);
 }
 
@@ -63,4 +48,11 @@ button {
 .nome-produto {
   font-size: 1rem;
   color: #333;
+  word-wrap: break-word;   /* Permite quebrar a palavra se necessário */
+  overflow-wrap: break-word;
+  text-align: center;
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  white-space: normal;     /* Permite quebrar linha */
 }

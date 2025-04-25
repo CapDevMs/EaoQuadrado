@@ -1,5 +1,9 @@
 // js da página de categorias
-import buttonCategoria from "./components/button-categoria.js";
+let limpa_cache = Date.now();
+
+let { default: buttonCategoria } = await import(`./components/button-categoria.js?v=${limpa_cache}`);
+
+const docTag = document.querySelector('.button-categoria');
 
 const categorias = [
     {
@@ -34,9 +38,10 @@ const categorias = [
     }
 ];
 
-const docTag = document.querySelector(".button-categoria");
 if (docTag) {
-    docTag.innerHTML = categorias.map(categoria => buttonCategoria(categoria)).join('');
+    categorias.forEach((categoria) => {
+        docTag.innerHTML += buttonCategoria(categoria);
+    });
 } else {
-    console.error("Elemento <button-categoria> não encontrado no DOM.");
+    console.error("Elemento .button-categoria não encontrado.");
 }

@@ -18,23 +18,38 @@
    object-fit: cover;
    object-position: center 10%;
 }
+
+/* container envolvendo os botões e o sidebar */
+.section-categoria-filtros{
+   display: flex;
+   flex-wrap: nowrap;
+   gap: 2rem;
+ }
+
+
 /* button categoria */
 .container-buttons {
    display: flex;  /* Coloca os botões lado a lado */
    flex-wrap: wrap;  /* Permite que eles quebrem linha caso o espaço acabe */
    justify-content: flex-start; /* Alinhamento horizontal dos botões */
-   max-width: 600px; /* Limite do container */
-   overflow: hidden; /* Previne que ultrapassem o container */
+   max-height: 15%; /* Limite do container */
+   overflow: auto; /* Previne que ultrapassem o container */
    gap: 1rem; /* Espaço entre os botões */
+   order: 2;
 }
 
 /* caso uso de uma div cobrindo os buttons e o sidebar */
-/* .categorias-container {
-   flex: 1;
+.button-categoria {
    display: flex;
-   flex-direction: row;
- } */
-
+   flex-wrap: nowrap;
+   gap: 1rem;
+   margin-right: 20%;
+   justify-content: center;
+   padding: 2rem;
+   width: 100%;
+   max-width: 100%;
+   box-sizing: border-box;
+ }
 /* Layout principal */
 .section-categoria {
    margin: 20px 0;
@@ -45,7 +60,9 @@
 .sidebar {
    width: 240px;
    padding: 0 10px;
-}
+   margin-left: 5%;
+   order: 1; 
+ }
 
 /* Seção de marcas e preço */
 .marcas_preco {
@@ -83,8 +100,8 @@
    border: none;
    width: 34px;
    height: 34px;
-   right: 25px;
-   margin-top: -40px;
+   left: 193px;
+   margin-top: -41px;
 }
 
 .preco {
@@ -233,6 +250,23 @@
    .checkbox-container {
       grid-template-columns: 30px 1fr;
    }
+
+   .section-categoria-filtros {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      order: 1;
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .container-buttons {
+      order: 2;
+      width: 100%;
+      max-width: 100%;
+      justify-content: center;
+    }
 }
 
 @media screen and (max-width: 480px) {

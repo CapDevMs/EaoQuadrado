@@ -63,8 +63,8 @@ let produtos = [
         'preco': '119,90',
         'link': './produto.php'
     },
-]
 
+]
 await exibirProdutos();
 
 let likeBtns = document.querySelectorAll('i.like');
