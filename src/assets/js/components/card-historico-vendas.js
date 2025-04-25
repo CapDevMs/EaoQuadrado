@@ -5,7 +5,9 @@ const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, valorTotal,
     <div class="card" onclick="toggleDetails(this, event)">
       <div class="card-content">
         <div class="card-item card-item-inicio">
-          <img class="img-historico" src="${imagem}">
+          <div class="card-item-img">
+            <img class="img-historico" src="${imagem}">
+          </div>
           <p>${produto}</p>
         </div>
         <div class="card-item ml-1">
@@ -42,8 +44,8 @@ const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, valorTotal,
         </div>
         
         <div class="status-action">
-          <label for="statusPedido" class="info-cliente-key mr-1">Status do pedido:</label>
-          <select id="statusPedido" name="statusPedido" onclick="event.stopPropagation()">
+          <label for="statusPedido" class="info-cliente-key" id="status-pedido-label">Status do pedido:</label>
+          <select class="statusPedido" name="statusPedido" onclick="event.stopPropagation()">
             <option value="entregue" ${statusPedido === 'Entregue' ? 'selected' : ''}>Entregue</option>
             <option value="em-andamento" ${statusPedido === 'Em Andamento' ? 'selected' : ''}>Em Andamento</option>
             <option value="cancelado" ${statusPedido === 'Cancelado' ? 'selected' : ''}>Cancelado</option>

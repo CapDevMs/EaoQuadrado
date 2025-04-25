@@ -30,31 +30,30 @@
 .card {
     display: flex;
     flex-direction: column; 
-    width: 100%;
     border: 1px solid lightgrey;
     border-radius: 10px;
     margin-top: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0;
     cursor: pointer;
     position: relative;
+        
 }
 
 .card-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
 }
 
 .card-item {
     display: flex;
+    flex-direction: row;
     width: 20%;
     align-items: center;
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
     overflow: hidden;
+    font-size: 14px;
 }
 
 .card-item-inicio {
@@ -62,18 +61,28 @@
     flex-direction: row;
     width: 100%;
     align-items: center;
+    margin-left: 2%;
 }
 
-.card-item-inicio p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.card-item-img{
+    width: 26%;
+    height: 100px;
+    margin-top: 2%;
+    place-content: center;
 }
 
 .img-historico {
-    width: 20%;
+    width: 100%;
     object-fit: contain;
 }
+
+.card-item p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 2%;
+}
+
 
 .card-details {
     width: 100%;
@@ -88,9 +97,12 @@
 }
 
 .infoCard {
+    max-width: 80%;
     display: grid;
-    grid-template-columns: 47% 47%;
-    gap: 6%;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+    justify-content: center;
+    margin-left: 14%;
 }
 
 .info-produto {
@@ -111,9 +123,17 @@
     white-space: break-spaces;
 }
 
-#statusPedido{
-    width: 15%;
+#status-pedido-label{
+    margin-left: 14%;
+    
 }
+
+.statusPedido{
+    width: 15%;
+    margin-top: 2%;
+}
+
+
 select, .btn-salvar {
     padding: 8px 12px;
     border-radius: 4px;
@@ -138,6 +158,7 @@ select, .btn-salvar {
     border-radius: 4px;
     font-weight: 500;
     display: inline-block;
+    font-size: 14px;
 }
 
 .status-entregue {

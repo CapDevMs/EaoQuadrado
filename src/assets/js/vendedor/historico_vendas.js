@@ -5,7 +5,7 @@ let containerHistoricoVendas = document.querySelector('containerPedidos');
 let vendasHistorico = [
   {
     'imagem': '../../assets/img/monitor_oled.png',
-    'produto': "Monitor Gamer AOC Hero '27' 165Hz 1ms Ajuste de Altura 27G2S/BK",
+    'produto': "Monitor Gamer AOC Hero 27' 165Hz 1ms Ajuste de Altura 27G2S/BK",
     'statusPedido': "Entregue",
     'preco': "R$ 999,99",
     'valorTotal': "R$ 999,99",
