@@ -18,13 +18,13 @@
 
 <body>
     <?php get_header() ?>
-<main>
-    <div class="container-video">
+    <div class="container-video row">
         <div class="video-celular">
             <video autoplay muted loop>
                 <source src="../assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">        
             </video>
         </div>      
+<main>
     </div> 
     <div class="container-title-categoria">
         <div class="conteiner-green"></div>

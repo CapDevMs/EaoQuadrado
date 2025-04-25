@@ -36,7 +36,14 @@
 
 .button-categoria button:hover {
   transform: scale(1.03);
+  background-color: var(--cor-verde-escuro);
+
+  .img-CategoriaButton, .nome-categoria {
+    filter: brightness(0) invert(1);
+
+  }
 }
+
 
 .img-CategoriaButton {
   width: 56px;
@@ -47,7 +54,7 @@
 
 .nome-categoria {
   font-size: 1rem;
-  color: #333;
+  color: var(--cor-verde-escuro);
   text-align: center;
   width: 100%;
   display: block;
