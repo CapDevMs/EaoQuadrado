@@ -6,7 +6,7 @@ const buttonCategoria = ({ imagem, nome, link }) => {
                     <img class="img-CategoriaButton" src="${imagem}" alt="Ícone de ${nome}">
                 </div>
                 <div class="container-nome-produto">
-                    <h3 class="nome-produto">${nome}</h3>
+                    <h3 class="nome-categoria">${nome}</h3>
                 </div>
             </button>
         </a>

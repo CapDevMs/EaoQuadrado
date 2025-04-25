@@ -26,9 +26,11 @@
             </video>
         </div>      
     </div> 
-    
-    <div class="marcador-titulo"> 
-        <p class="titulo-celular">Celular</p>
+    <div class="container-title-categoria">
+        <div class="conteiner-green"></div>
+        <div class="marcador-titulo"> 
+            <p class="titulo-categoria">Celular</p>
+        </div>
     </div>
     
     <!-- Botões de categoria -->
@@ -115,9 +117,9 @@
             </div>  
         <!-- </div> -->
         <!-- Produtos -->
-        <div>
-            <card-produto class="row"></card-produto>
-        </div>
+            <!-- <div>
+                <card-produto class="row"></card-produto>
+            </div> -->
         </div>
     </main>     
     <script type="module" src="../assets/js/categoria.js?<?= time();?>" defer></script>

@@ -21,8 +21,8 @@
 }
 
 .button-categoria button {
-  width: 100%;
-  height: 155px;
+  width: 150px;
+  height: 132px;
   background-color: #f8f8f8;
   border: none;
   padding: 1rem;
@@ -30,7 +30,7 @@
   transition: transform 0.2s;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
+  border: 1px solid #00BFA5;
   cursor: pointer;
 }
 
@@ -39,20 +39,22 @@
 }
 
 .img-CategoriaButton {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
   margin-bottom: 10px;
 }
 
-.nome-produto {
+.nome-categoria {
   font-size: 1rem;
   color: #333;
-  word-wrap: break-word;   /* Permite quebrar a palavra se necessário */
-  overflow-wrap: break-word;
   text-align: center;
   width: 100%;
   display: block;
   max-width: 100%;
-  white-space: normal;     /* Permite quebrar linha */
+  white-space: normal;
+  word-break: break-word;   /* <- quebra palavras longas */
+  overflow-wrap: break-word;
+  position: relative;
+  bottom: 12px;
 }

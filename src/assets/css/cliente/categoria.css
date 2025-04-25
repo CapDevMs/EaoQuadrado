@@ -18,7 +18,32 @@
    object-fit: cover;
    object-position: center 10%;
 }
+/* titulos */
 
+.container-title-categoria{
+   display: flex;
+   gap: 1rem;
+   position: relative;
+   margin-left: 20%;
+   top: 100px;
+   justify-content: center;
+   border-radius: 10px;
+   flex-direction: row;
+   align-items: center;
+}
+
+.titulo-categoria{
+   font-size: 1.25rem;
+   font-weight: 700;
+   color: var(--cor-verde-escuro);
+
+}
+.conteiner-green{
+   width: 20px;
+   height: 40px;
+   background-color: var( --cor-verde-escuro);
+   border-radius: 2px;
+}
 /* container envolvendo os botões e o sidebar */
 .section-categoria-filtros{
    display: flex;
@@ -32,6 +57,7 @@
    display: flex;  /* Coloca os botões lado a lado */
    flex-wrap: wrap;  /* Permite que eles quebrem linha caso o espaço acabe */
    justify-content: flex-start; /* Alinhamento horizontal dos botões */
+   margin-top: 10%;
    max-height: 15%; /* Limite do container */
    overflow: auto; /* Previne que ultrapassem o container */
    gap: 1rem; /* Espaço entre os botões */
