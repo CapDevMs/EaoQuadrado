@@ -18,6 +18,7 @@ $appName = get_app_name();
 
     <main>
         <?php
+        // função para adicionar caminho no roadmap (primeiro caminho + segundo nome que irá ficar no roadmap)
         breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/pages/contato.php' => 'Contato'));
         ?>
         <div class="container pt-3 row">
