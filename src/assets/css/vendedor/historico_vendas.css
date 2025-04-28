@@ -1,17 +1,22 @@
+.container-info{
+    display: flex;
+    
+}
+
 .container-historico-vendas {
     width: 70%;
-    margin-left: 25%;
     padding: 20px;
 }
 
 .infos-historico {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
     justify-content: end;
     width: 100%;
     padding: 10px 0;
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -22,8 +27,8 @@
 }
 
 .item-info-historico-inicio{
-    margin-left: 12%;
-    margin-right: 3%;
+    /* margin-left: 12%;
+    margin-right: 3%; */
     gap: 6%;
 }
 
@@ -76,7 +81,7 @@
     object-fit: contain;
 }
 
-.card-item p {
+.card-item-p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -174,4 +179,52 @@ select, .btn-salvar {
 .status-cancelado {
     background-color: #f8d7da;
     color: #721c24;
+}
+
+@media (max-width:1024px) {
+    .card-item{
+        font-size: 13px;
+    }
+    
+    .card-item-inicio{
+        width: 65%;
+    }
+
+    .status-pedido{
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .infos-historico{
+        font-size: 11px;
+        display: grid;
+    grid-template-columns: 40% 11% 13% 13% 11% 12%;
+    }
+
+    .info-cliente-key {
+        font-size: 12px;
+    }
+    
+    .info-cliente-value {
+        font-size: 12px;
+    }
+
+    .statusPedido {
+        width: 20%;
+        padding: 2px 4px;
+        font-size: 12px;
+    }
+
+    .btn-salvar{
+        width: 10%;
+        padding: 2px 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:768px) {
+    .container-historico-vendas {
+        width: 100%;
+    }
+
 }

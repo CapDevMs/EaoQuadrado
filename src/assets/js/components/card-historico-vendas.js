@@ -8,7 +8,7 @@ const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, valorTotal,
           <div class="card-item-img">
             <img class="img-historico" src="${imagem}">
           </div>
-          <p>${produto}</p>
+          <p class="card-item-p">${produto}</p>
         </div>
         <div class="card-item ml-1">
           <span class="status-pedido status-${statusClass}">${statusPedido}</span>
@@ -19,7 +19,7 @@ const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, valorTotal,
         <div class="card-item">
           <p>${cliente}</p>
         </div>
-        <div class="card-item">
+        <div class="card-item ml-1">
           <p>${data}</p>
         </div>
         <div class="card-item">
