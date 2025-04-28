@@ -11,13 +11,16 @@ $appName = get_app_name();
     <title>EaoQuadrado</title>
     <?php get_css(['produto']) ?>
     <?php get_css_components() ?>
+    <?php get_breadcrumbs() ?>
 </head>
 
 <body>
     <?php get_header(); ?>
     <main>
         <div class="container">
-            <h1 class="map">Home / Bolsas / Bolsas</h1>
+            <?php
+            breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/produto.php' => 'Produto'));
+            ?>
             <div class="grid-conteudo">
                 <div id="grid-produto" class="col-sm-6">
                     <div id="galeria-imagem"><galeria-img></galeria-img></div>
@@ -31,7 +34,7 @@ $appName = get_app_name();
                         <div id="comprar">
                             <div id="btn-comprar"><a>Comprar</a></div>
                             <div id="icons-comprar">
-                                <button id="MandarCarrinho" value= "gucci_bolsa_intense.png|Gucci intense|400,00">
+                                <button id="MandarCarrinho" value="gucci_bolsa_intense.png|Gucci intense|400,00">
                                     <img class='icon iconCarrinho' src="../assets/img/carrinho-tela-produto.svg">
                                 </button>
                                 <img src="../assets/img/coracao-tela-produto.svg">
