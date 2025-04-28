@@ -68,3 +68,29 @@
   position: relative;
   bottom: 8px;
 }
+
+@media screen and (max-width: 480px) {
+  .button {
+    flex: 0 0 45%;
+    width: 45%;
+    min-width: 120px;
+  }
+}
+
+/* Pequenos smartphones (<= 360px) */
+@media screen and (max-width: 360px) {
+  .button {
+    flex: 0 0 48%;
+    width: 48%;
+    min-width: 100px;
+  }
+}
+
+/* Extra small (<= 320px) */
+@media screen and (max-width: 320px) {
+  .button {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: auto;
+  }
+}
