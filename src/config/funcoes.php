@@ -44,8 +44,13 @@ function get_css_components() {
 }
 
 function get_sidebar_vendedor($page) {
-    include_once(__DIR__ . '/../components/sidebar.php');
+    include_once(__DIR__ . '/../components/sidebar_vendedor.php');
 }
+
+function get_sidebar_vendedor($page) {
+    include_once(__DIR__ . '/../components/sidebar_cliente.php');
+}
+
 
 function logout() {
     if (isset($_SESSION['user'])) {
