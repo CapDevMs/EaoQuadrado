@@ -1,3 +1,5 @@
+import filtroComponent from "./components/filtro-categoria.js";
+import filtro from "./components/filtro-categoria.js";
 async function carregarPagina() {
     let limpa_cache = Date.now();
 
@@ -127,6 +129,12 @@ async function carregarPagina() {
         });
     });
 }
+
+const docTagFiltro = document.querySelector("#filtro");
+const filtroElement = document.createElement("div");
+docTagFiltro.innerHTML = filtroComponent();
+
+
 
 //  Executa tudo na ordem
 carregarPagina();

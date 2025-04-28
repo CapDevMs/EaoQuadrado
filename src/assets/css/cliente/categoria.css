@@ -13,6 +13,7 @@
   
 }
 
+
 /* === Overlay de Título no Vídeo === */
 .container-title-categoria-video {
   display: flex;
@@ -33,23 +34,31 @@
 
 .container-info{
   display: flex;
-  flex-direction: column;
+  
 }
 
 /* === Segundo Título da Página === */
 .container-title-categoria {
   display: flex;
+  margin-bottom: 2%;
+  max-width: 10%;
   
 }
 .titulo-categoria {
-  font-size: 1.25rem;
-  font-weight: 700;
+  position: relative;
+  left: 1%;
+  font-size: 20px;
+  font-weight: 600;
   color: var(--cor-verde-escuro);
+}
+.marcador-titulo{
+  max-width: 10%;
+
 }
 .container-green {
   display: flex;
   width: 20px;
-  height: 40px;
+  height: 30px;
   background-color: var(--cor-verde-escuro);
   border-radius: 3px;
 }
@@ -57,25 +66,14 @@
 /* === Estrutura de Filtros + Botões === */
 .section-categoria-filtros {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.sidebar {
-  flex: 0 0 240px;
-  padding: 0 10px;
-  order: 1;
+
 }
 
 .container-buttons {
-  flex: 1;
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
-  order: 2;
   margin-top: 10%;
 }
-
-/* === Outros Componentes === */
 .marcas_preco {
   display: flex;
   flex-direction: column;
@@ -88,7 +86,8 @@
   margin: 20px 0 10px;
 }
 .search-group {
-  position: relative;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   max-width: 220px; /* mesma largura do seu input */
 }
@@ -106,12 +105,13 @@
   opacity: 1;
   font-style: italic;
 }
-
+.content-container{
+  max-width: 15%;
+}
 .search-marca {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
+  display: flex;
+  position: relative;
+  right: 15%;
   width: 24px;
   height: 24px;
   background: url("../../img/pesquisar.svg") center/contain no-repeat;
@@ -166,11 +166,12 @@
   margin: 20px 0 10px;
 }
 .checkbox-container {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  grid-auto-rows: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
   gap: 5px;
   margin-bottom: 30px;
+
 }
 .checkbox-container input {
   appearance: none;
@@ -183,18 +184,17 @@
 .checkbox-container input:checked {
   background-color: #00bfa5;
 }
-.checkbox-container label {
-  display: flex;
-  align-items: center;
-}
+
 .checkbox-container img {
-  max-width: 110px;
+  max-width: 12%;
   height: auto;
 }
 .fa-solid.fa-star {
+  max-width: 12%;
   color: var(--cor-verde-escuro);
 }
 .fa-regular.fa-star {
+  max-width: 12%;
   color: #d3d3d3;
 }
 
@@ -206,7 +206,6 @@
 /* === Botões de Categoria === */
 .button-categoria {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.5rem;
   margin: 0 auto;
   padding: 0.5rem;
@@ -237,13 +236,13 @@
   width: 56px;
   height: 56px;
   margin-bottom: 10px;
-  object-fit: contain;
+
 }
 .nome-categoria {
   font-size: 1rem;
   color: var(--cor-verde-escuro);
   text-align: center;
-  line-height: 1.2;
+  
 }
 
 /* === Responsividade === */
@@ -253,12 +252,12 @@
     gap: 0.75rem;
   }
   .sidebar {
-    order: 1;
+   
     width: 100%;
     padding: 0 15px;
   }
   .container-buttons {
-    order: 2;
+    
     margin-left: 0;
     justify-content: center;
   }
