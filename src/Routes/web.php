@@ -8,6 +8,6 @@ $router = new Router();
 
 $router->get('/', HomeController::class, 'index');
 $router->get('/login', AuthController::class, 'index');
-$router->post('/', AuthController::class, 'login');
+$router->post('/login', AuthController::class, 'login');
 
 $router->dispatch();

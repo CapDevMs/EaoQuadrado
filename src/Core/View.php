@@ -10,6 +10,11 @@ class View
 
         extract($args);
 
+        
+        if(strpos($view, '.')){
+            $view = str_replace('.','/', $view);
+        }
+
         require_once "$viewFolder/pages/$view.php";
     }
 }
