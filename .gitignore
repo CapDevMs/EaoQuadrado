@@ -63,5 +63,7 @@ $RECYCLE.BIN/
 
 # Enviroments files
 src/.env
+docker.env
+/db_data
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,linux

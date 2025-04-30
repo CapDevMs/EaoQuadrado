@@ -6,18 +6,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>Cadastro ADM</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php get_css(['cadastro_adm', 'base', 'style']) ?>
-    
-    <title>Eao Quadrado</title>
 </head>
+<?php
+require_once('../../config/funcoes.php');
+require('../../config/conexao.php');
+
+?>
+<?php get_base_head(); ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <header class="header">
     <?php get_header() ?>
     </header>
 <main>
 
+    <?php get_header(); ?>
+    <link rel = 'stylesheet' href="../../assets/css/cadastro_adm.css">
+    <title>Eao Quadrado</title>
+</head>
+    <main>
     <div class="roadmap">Home / Painel do Administrador / Cadastrar Novo Administrador</div>
             <div class="container-geral">
                 <div class="menu-container">

@@ -47,7 +47,15 @@ function get_sidebar_vendedor($page) {
     include_once(__DIR__ . '/../components/sidebar.php');
 }
 
+<<<<<<< HEAD
 
 function get_sidebar_adm($page) {
     include_once(__DIR__ . '/../components/sidebar-adm.php');
+=======
+function logout() {
+    if (isset($_SESSION['user'])) {
+        unset($_SESSION['user']);
+        session_destroy();
+    }
+>>>>>>> c367b1796d16b553ffb198e6ff08d313791092d2
 }

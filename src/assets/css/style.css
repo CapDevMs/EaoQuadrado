@@ -119,6 +119,10 @@
     padding-right: 5rem;
 }
 
+.m-auto {
+    margin: auto;
+}
+
 .mt-0,
 .mtb-0 {
     margin-top: 0;
@@ -351,11 +355,19 @@
     margin-right: 0.5rem;
 }
 
+.col-sm-hidden {
+    display: none;
+}
+
 /* Sistema de Grid (colunas) responsividade - Tela é calculada como tendo 12 colunas */
 @media (min-width: 768px) {
     .col-sm-hidden {
         display: block;
     }
+    .col-md-hidden {
+        display: none;
+    }
+    
     .col-md {
         flex: 1 0 0%;
     }
