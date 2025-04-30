@@ -1,5 +1,5 @@
 <?php
-include(__DIR__ . '/../config/funcoes.php');
+
 $appName = get_app_name();
 $titulo = 'Homepage';
 ?>

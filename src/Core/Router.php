@@ -2,6 +2,9 @@
 
 namespace Core;
 
+use App\Controllers\Controller;
+
+
 class Router {
     // Array to store routes
     protected $routes = [];
@@ -41,9 +44,10 @@ class Router {
             // Create an instance of the controller and call the action
             $controller = new $controller();
             $controller->$action();
-        } else {
-            // Throw an exception if route not found
-            throw new \Exception("No route found for URI: $uri");
+            return;
         }
+
+        // Throw an exception if route not found
+        Controller::errorPage();
     }
 }

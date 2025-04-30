@@ -6,7 +6,7 @@ class View
 {
     public static function render($view, $args = []) 
     {
-        $viewFolder = __DIR__ . '/../';
+        $viewFolder = __DIR__ . '/../Views';
 
         extract($args);
 
@@ -15,6 +15,6 @@ class View
             $view = str_replace('.','/', $view);
         }
 
-        require_once "$viewFolder/pages/$view.php";
+        require_once "$viewFolder/$view.php";
     }
 }

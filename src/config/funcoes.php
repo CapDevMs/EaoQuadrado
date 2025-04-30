@@ -1,6 +1,5 @@
 <?php
 
-require_once(__DIR__ .'/DotEnvEnvironment.php');
 
 function get_base_url() {
     return $_ENV['APP_URL'];
@@ -27,7 +26,7 @@ function get_css(array $telas = []){
 }
 
 function get_css_components() {
-    $arquivos = scandir(__DIR__ . '/../assets/css/components/');
+    $arquivos = scandir(BASE_PROJECT . '/public/assets/css/components/');
     $css_files = [];
 
     foreach ($arquivos as $arquivo) {
