@@ -5,7 +5,7 @@ $base_url = get_base_url();
 <header class="header">
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href="<?=$base_url;?>/index.php">
+            <a href="<?=$base_url;?>">
                 <img src="<?=$base_url;?>/assets/img/logo.png" class="logo" alt="Logo">
             </a>
         </div>
@@ -20,17 +20,17 @@ $base_url = get_base_url();
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>/pages/carrinho.php">
+                <a href="<?=$base_url;?>/carrinho">
                     <img src="<?=$base_url;?>/assets/img/carrinho.svg" alt="Carrinho">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>/pages/cadastros/sobre.php">
+                <a href="<?=$base_url;?>/cadastros/sobre">
                     <img src="<?=$base_url;?>/assets/img/informacao.svg" alt="Informações">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>/pages/cadastros/contato.php">
+                <a href="<?=$base_url;?>/cadastros/contato">
                     <img src="<?=$base_url;?>/assets/img/suporte.svg" alt="suporte">
                 </a>
             </li>
@@ -44,10 +44,10 @@ $base_url = get_base_url();
 <!-- Menu Mobile -->
 <div class="mobile-menu" id="mobileMenu">
     <ul>
-        <li><a href="<?=$base_url;?>/pages/login.php">Login</a></li>
-        <li><a href="<?=$base_url;?>/pages/carrinho.php">Carrinho</a></li>
-        <li><a href="<?=$base_url;?>/pages/cadastros/sobre.php">Sobre</a></li>
-        <li><a href="<?=$base_url;?>/pages/cadastros/contato.php">Contato</a></li>
+        <li><a href="<?=$base_url;?>/login">Login</a></li>
+        <li><a href="<?=$base_url;?>/carrinho">Carrinho</a></li>
+        <li><a href="<?=$base_url;?>/cadastros/sobre">Sobre</a></li>
+        <li><a href="<?=$base_url;?>/cadastros/contato">Contato</a></li>
     </ul>
 </div>
 
