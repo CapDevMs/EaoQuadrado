@@ -5,9 +5,14 @@ $base_url = get_base_url();
 <header class="header">
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href="<?=$base_url;?>/index.php">
-                <img src="<?=$base_url;?>/assets/img/logo.png" class="logo" alt="Logo">
-            </a>
+        <div href="<?=$base_url;?>/index.php">
+            <div class="logo-container">
+                <div class="logo">
+                    <a class="logo-text">E<sup id="dois">2</sup></a>
+                </div>
+            </div>
+        </div>
+
         </div>
         <div class="search-bar">
             <input type="text" class="search-input" placeholder="O que você procura hoje?">
