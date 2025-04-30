@@ -27,8 +27,6 @@
 }
 
 .item-info-historico-inicio{
-    /* margin-left: 12%;
-    margin-right: 3%; */
     gap: 6%;
 }
 
@@ -147,7 +145,7 @@ select, .btn-salvar {
 
 .btn-salvar {
     width: 10%;
-    background-color: #4CAF50;
+    background-color: var(--cor-botao-primario);
     color: white;
     border: none;
     cursor: pointer;
@@ -227,4 +225,41 @@ select, .btn-salvar {
         width: 100%;
     }
 
+}
+
+@media (max-width:425px) {
+    .container-historico-vendas {
+        width: 100%;
+    }
+
+    .infoCard{
+        display: block;
+    }
+
+    .statusPedido{
+        display: block;
+        margin: 0%;
+        width: 30%;
+    }
+
+    .status-action{
+        place-items: center;
+        margin-top: 2%;
+        
+    }
+
+    #status-pedido-label{
+        margin: 0%;
+    }
+
+    .statusPedido{
+        width: 40%;
+    }
+
+    .btn-salvar{
+        width: 100%;
+        padding: 6px 10px;
+        margin-left: 0%;
+        margin-top: 15%;
+    }
 }
