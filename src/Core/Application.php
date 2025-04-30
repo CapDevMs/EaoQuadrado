@@ -22,13 +22,15 @@ class Application {
                 require_once $file;
             }
         });
-    }
-
-    public function run() {
+        
         // Carrega o arquivo .env
         if (file_exists(BASE_PROJECT . '.env')) {
             (new DotEnvEnvironment)->load(BASE_PROJECT);
         }
+    }
+
+    public function run() {
+        
         // Carrega as funções
         if (file_exists(BASE_PROJECT . 'config/funcoes.php')) {
             include_once BASE_PROJECT . 'config/funcoes.php';

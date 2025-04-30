@@ -45,9 +45,6 @@ function get_sidebar_vendedor($page) {
     include_once(__DIR__ . '/../components/sidebar.php');
 }
 
-function logout() {
-    if (isset($_SESSION['user'])) {
-        unset($_SESSION['user']);
-        session_destroy();
-    }
+function route($route = '/') {
+    header('location: ' .  $route);
 }

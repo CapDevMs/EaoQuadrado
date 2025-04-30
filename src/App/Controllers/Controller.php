@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Core\View;
 
-class controller
+class Controller
 {
     public static function errorPage()
     {

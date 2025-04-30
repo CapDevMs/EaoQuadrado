@@ -4,10 +4,17 @@ namespace App\Controllers;
 
 use Core\View;
 
-class AuthController
+class AuthController extends Controller
 {
     public function index()
     {
+        if (isset($_SESSION['user'])) {
+            
+            $this->logout();
+
+            return route('/');
+        }
+
         View::render('login');
     }
 
@@ -16,22 +23,13 @@ class AuthController
         $loginTeste = 'admin@admin.com';
         $senhaTeste = 'admin';
 
-        if (isset($_SESSION['user'])) {
-            
-            $this->logout();
-
-            header('Location: /');
-            return;
-        }
-
         $login = $_POST['login'];
         $senha = $_POST['senha'];
 
         if ($login == $loginTeste && $senha == $senhaTeste)
         {
             $_SESSION['user'] = $login;
-            header('Location: /');
-            return;
+            return route('/');
         }
 
         $error = "Usuário ou senha inválidos.";
@@ -45,5 +43,7 @@ class AuthController
             unset($_SESSION['user']);
             session_destroy();
         }
+
+        return route('/login');
     }
 }
