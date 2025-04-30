@@ -51,6 +51,10 @@ function get_sidebar_vendedor($page) {
     include_once(__DIR__ . '/../components/sidebar_cliente.php');
 }
 
+function get_sidebar_vendedor($page) {
+    include_once(__DIR__ . '/../components/sidebar_adm.php');
+}
+
 
 function logout() {
     if (isset($_SESSION['user'])) {
