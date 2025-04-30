@@ -1,3 +1,7 @@
+main{
+    align-items: center;
+}
+
 body{
     font-family: Poppins;
     display: grid;
@@ -74,45 +78,63 @@ a{
     margin-left: 30%;
 }
 
-form {
-    margin-bottom: 10%;
+.container-form{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    width: 70%;
-    margin-left: 25%;
-    margin-top: -17%;
     padding: 20px;
 }
 
+form {   
+    width: 100%;
+
+}
+
+label{
+    font-size: 14px;
+}
 
 .titulo{
-    display: inline;
+    display: block;
     height: 40%;
-    width:28%;
+    width: 100%;
     color: #7D8184;
-    
+    margin-bottom: 2%;
 }
 
 #descricao{
-    width:200%;
+    width:100%;
 }
 
 .descricao{
-    margin-left: 25%;
-    width: 36%;
-    margin-top: -8%;
+    width: 100%;
+    margin-top: 5%;    
+}
+
+#div-descricao{
+    display: block;
+    height: 40%;
+    width: 100%;
+    color: #7D8184;
 }
 
 .caixa{
+    padding: 10px 20px;
     border-radius: 15px;
+    border-width: 0;
     background-color: #F5F5F5;
+
 }
 
 .caixa2{
     background-color: #F5F5F5;
-    margin-top: 3%;
     border-radius: 15px;
+    border-width: 0;
 }
+
+textarea{
+    padding: 10px 20px;
+}
+
 
 #salvar{
     background-color: var(--cor-principal);
@@ -125,9 +147,31 @@ form {
     margin-bottom: 1%;
 }
 
+
+input[type="file"] {
+    display: none;
+}
+  
+.anexar-arquivo label {
+    width: 20%;
+    display: inline-block;
+    background-color: #d3d3d3; 
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+  
+.anexar-arquivo label:hover {
+    background-color: #c0c0c0; 
+}
+
 #arquivo{
-    margin-left: 25%;
     width: 40%;
+    text-decoration: none;
 }
 
 .modal {
