@@ -23,9 +23,11 @@ class AuthController extends Controller
     {
         $user = new User();
 
-        $user = $user->findAll();
+        $user->where('email', $_POST['login'])
+            ->where('senha', $_POST['senha'])
+            ->get();
         
-        var_dump($user);
+        var_dump($user->getData());
         echo '<br>';
         var_dump($_POST);
         exit;

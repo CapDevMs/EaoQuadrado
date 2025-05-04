@@ -6,8 +6,8 @@ use Core\Model;
 
 class User extends Model
 {
-
     protected string $table = 'Usuarios';
+    protected string $primaryKey = 'id_usuario';
 
     public function login($login, $senha)
     {
