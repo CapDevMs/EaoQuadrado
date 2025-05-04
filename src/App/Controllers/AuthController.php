@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\User;
 use Core\View;
 
 class AuthController extends Controller
@@ -20,8 +21,14 @@ class AuthController extends Controller
 
     public function login()
     {
-        $loginTeste = 'admin@admin.com';
-        $senhaTeste = 'admin';
+        $user = new User();
+
+        $user = $user->findAll();
+        
+        var_dump($user);
+        echo '<br>';
+        var_dump($_POST);
+        exit;
 
         $login = $_POST['login'];
         $senha = $_POST['senha'];
