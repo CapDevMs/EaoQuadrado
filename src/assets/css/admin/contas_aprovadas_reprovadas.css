@@ -25,6 +25,19 @@
     gap: 20px;
 }
 
+.foto-container {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.foto-container > img {
+    background-color: white;
+    align-content: center;
+    justify-items: center;
+    border-radius: 100px;
+    width: 100px;
+}
+
 .aprovado {
     align-content: center;
     justify-items: center;
@@ -43,7 +56,11 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    width: fit-content;
+
+}
+
+.status > button {
+        width: fit-content;
 }
 
 .interior {
