@@ -21,28 +21,23 @@ class AuthController extends Controller
 
     public function login()
     {
+
         $user = new User();
 
-        $user->where('email', $_POST['login'])
-            ->where('senha', $_POST['senha'])
-            ->get();
+        /*$user->where('email', $_POST['login'], '=')
+            ->andWhere('senha', $_POST['senha'])
+            ->get();*/
+
+        $user->insert(['nome' => 'Anna Lorena', 'email' => 'anna@gmail.com', 'senha' => '4321']);
+        return route('/produto');
         
-        var_dump($user->getData());
-        echo '<br>';
-        var_dump($_POST);
-        exit;
-
-        $login = $_POST['login'];
-        $senha = $_POST['senha'];
-
-        if ($login == $loginTeste && $senha == $senhaTeste)
+        if(!empty($user->getData()))
         {
-            $_SESSION['user'] = $login;
-            return route('/');
+            $_SESSION['user'] = $user->getData()[0];
+            return route('/produto');
         }
 
-        $error = "Usuário ou senha inválidos.";
-
+        $error = 'Usuário e/ou senha inválida';
         View::render('login', compact('error'));
     }
 

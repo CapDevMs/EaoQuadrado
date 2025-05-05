@@ -129,7 +129,6 @@ abstract class Model
             $this->sql .= " AND {$column} {$operator} :{$column}";
         }
 
-        $this->sql .= " WHERE {$column} {$operator} :{$column}";
         $this->params[$column] = $value;
         return $this;
     }

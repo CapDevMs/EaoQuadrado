@@ -46,5 +46,8 @@ function get_sidebar_vendedor($page) {
 }
 
 function route($route = '/') {
+    if (!empty($_ENV['PREFIX'])){
+        $route = $_ENV['PREFIX'] . $route;
+    }
     header('location: ' .  $route);
 }
