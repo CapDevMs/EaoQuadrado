@@ -35,7 +35,7 @@
   }
   
   .number-pages li a.active {
-    background-color: #007bff;
+    background-color: var(--cor-titulo-categorias);
     color: white;
     font-weight: bold;
   }
