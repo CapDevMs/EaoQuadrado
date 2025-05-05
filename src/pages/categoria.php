@@ -52,6 +52,7 @@ $appName = get_app_name();
     </main>
 
     <script type="module" src="../assets/js/categoria.js?<?= time(); ?>" defer></script>
+    <script src="../assets/js/components/componenteVideoCategoria.js?<?= time(); ?>"></script>
     <?php get_footer() ?>
 </body>
 
