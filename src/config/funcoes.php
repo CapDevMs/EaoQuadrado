@@ -1,7 +1,5 @@
 <?php
-session_start();
 
-require_once(__DIR__ .'/DotEnvEnvironment.php');
 
 function get_base_url() {
     return $_ENV['APP_URL'];
@@ -28,7 +26,7 @@ function get_css(array $telas = []){
 }
 
 function get_css_components() {
-    $arquivos = scandir(__DIR__ . '/../assets/css/components/');
+    $arquivos = scandir(BASE_PROJECT . '/public/assets/css/components/');
     $css_files = [];
 
     foreach ($arquivos as $arquivo) {
@@ -47,9 +45,9 @@ function get_sidebar_vendedor($page) {
     include_once(__DIR__ . '/../components/sidebar.php');
 }
 
-function logout() {
-    if (isset($_SESSION['user'])) {
-        unset($_SESSION['user']);
-        session_destroy();
+function route($route = '/') {
+    if (!empty($_ENV['PREFIX'])){
+        $route = $_ENV['PREFIX'] . $route;
     }
+    header('location: ' .  $route);
 }

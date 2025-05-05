@@ -1,0 +1,42 @@
+/* css pagina-seguinte */
+.container-componente-page-seguinte {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    width: 30%;
+    padding: 0.5rem;
+  }
+  
+  .number-pages {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+  }
+  
+  .number-pages li a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+  
+  .number-pages li a#page-seguinte,
+  .number-pages li a#page-anterior {
+    background-color: transparent;
+    font-weight: 550;
+    white-space: nowrap;
+  }
+  
+  .number-pages li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .number-pages li a.active {
+    background-color: var(--cor-titulo-categorias);
+    color: white;
+    font-weight: bold;
+  }
+  

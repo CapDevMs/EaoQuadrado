@@ -1,0 +1,38 @@
+.text-center {
+    text-align: center;
+}
+
+.text-danger{
+    color: var(--cor-alerta);
+}
+
+.text-muted {
+    color: var(--cor-texto-deselecionado);
+}
+
+/* btn btn-primary */
+.btn {
+    text-align: center;
+    color: var(--cor-texto-botao);
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.btn-primary {
+    background-color: var(--cor-principal);
+    border-color: var(--cor-principal);
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
