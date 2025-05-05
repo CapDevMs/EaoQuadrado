@@ -56,8 +56,12 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-
 }
+
+.table {
+    align-items: center;
+}
+
 
 .status > button {
         width: fit-content;
