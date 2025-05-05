@@ -29,6 +29,10 @@ class Router {
         $uri = strtok($_SERVER['REQUEST_URI'], '?');
         $method = $_SERVER['REQUEST_METHOD'];
 
+        if(strpos($uri, 'EaoQuadrado')){
+            $uri = str_replace('EaoQuadrado/', '', $uri);
+        }
+
         if (array_key_exists($uri, $this->routes[$method])) {
             $controller = $this->routes[$method][$uri]['controller'];
             $action = $this->routes[$method][$uri]['action'];
