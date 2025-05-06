@@ -1,5 +1,4 @@
 <?php
-    include('../../config/funcoes.php');
     $appName = get_app_name();
 ?>
 <!DOCTYPE html>
@@ -11,6 +10,7 @@
     <?php get_css(['admin/contas_aprovadas_reprovadas', 'base', 'style']) ?>
 </head>
 <body>
+
     <?php get_header() ?>
 
     <main>
@@ -31,7 +31,7 @@
 
                         <div class="table col-sm-12 row">
                             <div class="interior container col-sm-10"> 
-                                <div class="perfil col-sm-11 mlr-1" id="approved">
+                                <div class="perfil col-sm-12 mlr-1" id="approved">
                                     <div class="foto-container col-sm-12 col-xl-2">
                                         <img src="<?= get_base_url() ?>assets\img\foto-perfil.png" alt="foto-perfil">
                                     </div>
@@ -40,14 +40,17 @@
                                         <p>carlos_silva@gmail.com</p>
                                     </div>
                                     <div class="aprovado col-sm-12 col-xl-5">
-                                        <img src="<?= get_base_url() ?>assets\img\icons\icon-cancel.svg" alt="">
+                                        <img src="<?= get_base_url() ?>assets\img\icons\icon-checkbox.png" alt="">
                                         <p>Reprovado em 27/09/2020</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="visualizar col-sm-2">
-                                <a>Visualizar Perfil</a>
+                                <div class="btn-perfil col-sm-10 ml-1 container">
+                                    <a>Visualizar Perfil</a>
+                                </div>
+                                
                             </div>
 
 

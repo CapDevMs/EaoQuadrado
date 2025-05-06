@@ -100,11 +100,12 @@
     align-items: center;
 }
 
-.visualizar a {
+.btn-perfil {
     border-radius: 15px;
     border: 1px solid  #B3B3B3;
     padding: 5px;
     background:#E6E6E6;
+    text-align: center;
 }
 
 .hidden {
