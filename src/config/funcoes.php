@@ -45,15 +45,7 @@ function get_sidebar_vendedor($page) {
     include_once(__DIR__ . '/../components/sidebar.php');
 }
 
-<<<<<<< HEAD
 
 function get_sidebar_adm($page) {
     include_once(__DIR__ . '/../components/sidebar-adm.php');
-=======
-function route($route = '/') {
-    if (!empty($_ENV['PREFIX'])){
-        $route = $_ENV['PREFIX'] . $route;
-    }
-    header('location: ' .  $route);
->>>>>>> ae4f3d4a15596698514951070fdcfb4d69a7e49b
 }
