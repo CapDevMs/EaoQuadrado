@@ -1,47 +1,71 @@
 /* css pagina-seguinte */
 .container-componente-page-seguinte {
-    display: flex;
-    flex-direction: row;
-    height: 36px;
-    width: 30%;
-    padding: 0.5rem;
-  }
-  
-  .number-pages {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 0.5rem;
-  }
-  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.number-pages {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 1rem; 
+}
+
+.number-pages li {
+  width: auto;
+} 
+.number-pages li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.2s;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.number-pages li a#page-seguinte,
+.number-pages li a#page-anterior {
+  background-color: transparent;
+  font-weight: 550;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.number-pages li a:hover {
+  background-color: #f0f0f0;
+}
+
+.number-pages li a.active {
+  background-color: var(--cor-titulo-categorias);
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 540px) {
   .number-pages li a {
-    text-decoration: none;
-    color: black;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: 0.2s;
+    padding: 5px 8px;
+    font-size: 0.85rem;
   }
-  
-  .number-pages li a#page-seguinte,
-  .number-pages li a#page-anterior {
-    background-color: transparent;
-    font-weight: 550;
-    white-space: nowrap;
+
+  .number-pages li a#page-anterior,
+  .number-pages li a#page-seguinte {
+    padding: 5px 8px;
+    font-size: 0.85rem;
   }
-  
-  .number-pages li a:hover {
-    background-color: #f0f0f0;
+
+  .number-pages {
+    gap: 0.3rem;
   }
-  
-  .number-pages li a.active {
-    background-color: var(--cor-titulo-categorias);
-    color: white;
-    font-weight: bold;
-  }
-  
-@media(max-width:480){
-  .number-pages a{
-    font-size: 0.9;
+}
+
+@media (max-width: 400px) {
+  .number-pages li a {
+    font-size: 0.75rem;
+    padding: 4px 6px;
   }
 }
