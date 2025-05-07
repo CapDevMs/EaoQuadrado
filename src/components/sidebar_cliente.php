@@ -1,14 +1,18 @@
-<div class="container">
-    <div class="pb-2">
-        <h2 class="menu-lateral">Gerenciar Minha Conta</h2>
-        <h2 class="barra_lateral">
-            <a href="<?= get_base_url(); ?>/pages/vendedor/meu_perfil_vendedor.php" class="<?= $page == 'meu_perfil' ? 'ativo' : '' ?>">Meu Perfil</a>
-        </h2>
-        <h2 class="barra_lateral">
-            <a href="<?= get_base_url(); ?>/pages/vendedor/minha_loja.php" class="<?= $page == 'minha_loja' ? 'ativo' : '' ?>">Minha Loja</a>
-        </h2>
-        <h2 class="barra_lateral">
-            <a href="<?= get_base_url(); ?>/pages/vendedor/cadastrar_produto_vendedor.php" class="<?= $page == 'cadastrar_produtos' ? 'ativo' : '' ?>">Cadastrar Produtos</a>
-        </h2>
-    </div>
-</div>
+<ul class="menu-sidebar col-sm-3 col-xl-2">
+    <li>
+        <input type="checkbox" id="item1">
+        <label for="item1">Gerenciar Minha Conta</label>
+        <div class="content">
+            <a href="<?= get_base_url(); ?>#" class="<?= $page == '#' ? 'ativo' : '' ?>">Meu Perfil</a>
+
+        </div>
+    </li>
+
+    <li>
+        <input type="checkbox" id="item2">
+        <label for="item2">Meus Pedidos</label>
+        <div class="content">
+            <a href="<?= get_base_url(); ?>#" class="<?= $page == '#' ? 'ativo' : '' ?>">Histórico de Pedidos</a>
+        </div>
+    </li>
+</ul>
