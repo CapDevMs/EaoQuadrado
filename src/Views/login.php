@@ -1,36 +1,6 @@
 <?php
-    include('../config/funcoes.php');
     $appName = get_app_name();
-
     $baseUrl = get_base_url();
-
-    $login = 'admin@admin.com';
-    $senha = 'admin';
-
-    if (!isset($_SESSION)) {
-        session_start();
-    }
-
-    if (isset($_SESSION['user'])) {
-        
-        logout();
-
-        header('Location: ../index.php');
-        exit();
-    }
-
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $login = $_POST['login'];
-        $senha = $_POST['senha'];
-
-        if ($login == 'admin@admin.com' && $senha == 'admin') {
-            $_SESSION['user'] = $login;
-            header('Location: ../index.php');
-            exit();
-        } else {
-            $error = "Usuário ou senha inválidos.";
-        }
-    }
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php get_css(['base', 'style', 'login']) ?>
-    <title>Eao Quadrado - Login</title>
+    <title><?= $appName; ?> - Login</title>
 </head>
 <body>
     <?php get_header() ?>
@@ -66,7 +36,7 @@
                             <input class="form-input" type="password" name="senha" placeholder="********">
                         </div>
                         <div class="row">
-                            <a class="esqueceu-senha" href="<?= $baseUrl; ?>/pages/cadastros/esqueci_senha.php">Esqueceu sua senha?</a>
+                            <a class="esqueceu-senha" href="<?= $baseUrl; ?>/cadastros/esqueci_senha">Esqueceu sua senha?</a>
                         </div>
     
                         <div class="row">
@@ -74,7 +44,7 @@
                                 <button class="btn button">Entrar</button>
                             </div>
                             <div class="col-sm-6">
-                                <a class="btn button" href="<?= $baseUrl; ?>/pages/cadastros/cadastro_cliente.php">Cadastrar</a>
+                                <a class="btn button" href="<?= $baseUrl; ?>/cadastros/cadastro_cliente">Cadastrar</a>
                             </div>
                         </div>
                     </form>
