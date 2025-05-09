@@ -106,6 +106,11 @@
     padding: 5px;
     background:#E6E6E6;
     text-align: center;
+    cursor: pointer;
+}
+
+.btn-perfil:hover{
+  transform: scale(0.9)  
 }
 
 .hidden {
