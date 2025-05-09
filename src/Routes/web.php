@@ -2,6 +2,7 @@
 
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
+use App\Controllers\categoriaController;
 use App\Controllers\ProdutoController;
 use App\Controllers\favoritosController;
 use App\Controllers\meuPerfilAdmController;
