@@ -23,7 +23,7 @@ $appName = get_app_name();
         <div class="container-video">
             <div class="video-celular ">
                 <video autoplay muted loop>
-                    <source src="../assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">
+                    <source src="/assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">
                 </video>
             </div>
         </div>>
@@ -50,7 +50,7 @@ $appName = get_app_name();
 
     </main>
 
-    <script type="module" src="../assets/js/categoria.js?<?= time(); ?>" defer></script>
+    <script type="module" src="/assets/js/categoria.js?<?= time(); ?>" defer></script>
     <?php get_footer() ?>
 </body>
 
