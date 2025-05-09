@@ -13,20 +13,20 @@ const cardVendFavorito = ({titulo, imagem, link }) => {
         </div>
         <div class="card-footer">
             <div class="row">
-                    <a href="${link}" class="btn btn-visitar-loja">Visitar Loja</a>
-                    <div class="container-nome-produto">
-                        <h3 class="nome-loja">${titulo}</h3>
-                    </div>
-                    <div class ="avaliacao-vendedor">
-                       <p class="text">
-                            Avaliações: 
-                            <i class="fa fa-star icone-star"></i>
-                            <i class="fa fa-star icone-star"></i>
-                            <i class="fa fa-star icone-star"></i>
-                            <i class="fa fa-star icone-star"></i>
-                            <i class="fa fa-star icone-star"></i>
-                        </p>
-                    </div>                    
+                <div class="container-nome-produto">
+                    <h3 class="nome-loja">${titulo}</h3>
+                </div>
+                <div class ="avaliacao-vendedor">
+                    <p class="text">
+                        Avaliações: 
+                        <i class="fa fa-star icone-star"></i>
+                        <i class="fa fa-star icone-star"></i>
+                        <i class="fa fa-star icone-star"></i>
+                        <i class="fa fa-star icone-star"></i>
+                        <i class="fa fa-star icone-star"></i>
+                    </p>
+                </div>      
+                <a href="${link}" class="btn btn-visitar-loja">Visitar Loja</a>
             </div>
         </div>
     </div>
