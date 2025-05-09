@@ -1,13 +1,10 @@
-.geral {
-    flex-direction: column;
-}
-
 .col-sm-3 {
     margin-right: 0;
 }
 
 .historico {
     justify-items: center;
+    margin-right: 0;
 }
 
 /* .selector {
