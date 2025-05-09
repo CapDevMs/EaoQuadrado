@@ -4,7 +4,6 @@ use App\Controllers\AuthController;
 use App\Controllers\HomeController;
 use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
-use App\Controllers\favoritosController;
 use App\Controllers\meuPerfilAdmController;
 use Core\Router;
 

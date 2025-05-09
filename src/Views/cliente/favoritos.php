@@ -1,4 +1,5 @@
 <?php
+    include('../../config/funcoes.php');
     $appName = get_app_name();
 ?>
 
@@ -45,10 +46,10 @@
 <pagina-seguinte class="pagina-seguinte"></pagina-seguinte>    
 
 </main> 
-<script type="module" src="assets/js/favoritos.js?<?= time(); ?>" defer></script>
-<script type="module" src="assets/js/pagina-seguinte.js?<?= time(); ?>" defer></script>
+<script type="module" src="../../assets/js/favoritos.js?<?= time(); ?> " defer ></script>
+<script type="module" src="../../assets/js/pagina-seguinte.js?<?= time(); ?>" defer></script>
 
 <?php get_footer() ?>
 </body>
 
-</html>     
+</html>
