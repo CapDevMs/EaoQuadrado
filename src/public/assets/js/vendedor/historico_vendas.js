@@ -4,7 +4,7 @@ let containerHistoricoVendas = document.querySelector('containerPedidos');
 
 let vendasHistorico = [
   {
-    'imagem': '../../assets/img/monitor_oled.png',
+    'imagem': './assets/img/monitor_oled.png',
     'produto': "Monitor Gamer AOC Hero 27' 165Hz 1ms Ajuste de Altura 27G2S/BK",
     'statusPedido': "Entregue",
     'preco': "R$ 999,99",
@@ -17,7 +17,7 @@ let vendasHistorico = [
     'cep': "79020-240",
   },
   {
-    'imagem': '../../assets/img/teclado.png',
+    'imagem': './assets/img/teclado.png',
     'produto': "Teclado Mecânico Gamer HyperX Alloy Origins Core, RGB, Switch HyperX Red, ABNT2 - 4P5P3A2#AC4",
     'statusPedido': "Cancelado",
     'preco': "R$ 599,99",
