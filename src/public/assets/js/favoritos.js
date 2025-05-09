@@ -15,49 +15,49 @@ const docTagVendedoresFav = document.querySelector('.card-vendedor-favorito');
 let produtosFav = [
     {
         'titulo': 'Caneca especial Programador',
-        'imagem': 'assets/img/caneca1.png',
+        'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
-        'imagem': 'assets/img/caneca1.png',
+        'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
-        'imagem': 'assets/img/caneca1.png',
+        'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
-        'imagem': 'assets/img/caneca1.png',
+        'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
-        'imagem': 'assets/img/caneca1.png',
+        'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
-        'imagem': 'assets/img/caneca1.png',
+        'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
-        'imagem': 'assets/img/caneca1.png',
+        'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../pages/produto.php'
     },
     {
         'titulo': 'Caneca especial Programador',
-        'imagem': 'assets/img/caneca1.png',
+        'imagem': '../../assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../pages/produto.php'
     },
@@ -67,22 +67,22 @@ let produtosFav = [
 let VendedoresFav = [
     {
         'titulo': 'Studio Center',
-        'imagem': 'assets/img/loja-favorita.png',
+        'imagem': '../../assets/img/loja-favorita.png',
         'link': './produto.php'
     },
     {
         'titulo': 'Studio Center',
-        'imagem': 'assets/img/loja-favorita.png',
+        'imagem': '../../assets/img/loja-favorita.png',
         'link': './produto.php'
     },
     {
         'titulo': 'Studio Center',
-        'imagem': 'assets/img/loja-favorita.png',
+        'imagem': '../../assets/img/loja-favorita.png',
         'link': './produto.php'
     },
     {
         'titulo': 'Studio Center',
-        'imagem': 'assets/img/loja-favorita.png',
+        'imagem': '../../assets/img/loja-favorita.png',
         'link': './produto.php'
     },
 
