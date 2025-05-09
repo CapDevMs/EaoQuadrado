@@ -10,32 +10,32 @@ async function carregarPagina() {
 
     const categorias = [
         {
-            imagem: '../assets/img/categoria/icone-categoria/camera_icon.svg',
+            imagem: 'assets/img/categoria/icone-categoria/camera_icon.svg',
             nome: 'Camera',
             link: '#'
         },
         {
-            imagem: '../assets/img/categoria/icone-categoria/cellphone_icon.svg',
+            imagem: 'assets/img/categoria/icone-categoria/cellphone_icon.svg',
             nome: 'Celulares',
             link: '#'
         },
         {
-            imagem: '../assets/img/categoria/icone-categoria/computer_icon.svg',
+            imagem: 'assets/img/categoria/icone-categoria/computer_icon.svg',
             nome: 'Computador',
             link: '#'
         },
         {
-            imagem: '../assets/img/categoria/icone-categoria/games_icon.svg',
+            imagem: 'assets/img/categoria/icone-categoria/games_icon.svg',
             nome: 'Games',
             link: '#'
         },
         {
-            imagem: '../assets/img/categoria/icone-categoria/headphone_icon.svg',
+            imagem: 'assets/img/categoria/icone-categoria/headphone_icon.svg',
             nome: 'Fone de Ouvido',
             link: '#'
         },
         {
-            imagem: '../assets/img/categoria/icone-categoria/smartwatches_icon.svg',
+            imagem: 'assets/img/categoria/icone-categoria/smartwatches_icon.svg',
             nome: 'Smartwatch',
             link: '#'
         }
@@ -58,56 +58,56 @@ async function carregarPagina() {
         {
             id: 1,
             titulo: 'Caneca especial Programador',
-            imagem: '../assets/img/caneca1.png',
+            imagem: 'assets/img/caneca1.png',
             preco: '99,90',
             link: './produto.php'
         },
         {
             id: 2,
             titulo: 'Caneca especial Programador',
-            imagem: '../assets/img/caneca2.png',
+            imagem: 'assets/img/caneca2.png',
             preco: '119,90',
             link: './produto.php'
         },
         {
             id: 3,
             titulo: 'Caneca especial Programador',
-            imagem: '../assets/img/caneca1.png',
+            imagem: 'assets/img/caneca1.png',
             preco: '99,90',
             link: './produto.php'
         },
         {
             id: 4,
             titulo: 'Caneca especial Programador',
-            imagem: '../assets/img/caneca3.png',
+            imagem: 'assets/img/caneca3.png',
             preco: '119,90',
             link: './produto.php'
         },
         {
             id: 5,
             titulo: 'Caneca especial Programador',
-            imagem: '../assets/img/caneca2.png',
+            imagem: 'assets/img/caneca2.png',
             preco: '119,90',
             link: './produto.php'
         },
         {
             id: 6,
             titulo: 'Caneca especial Programador',
-            imagem: '../assets/img/caneca3.png',
+            imagem: 'assets/img/caneca3.png',
             preco: '99,90',
             link: './produto.php'
         },
         {
             id: 7,
             titulo: 'Caneca especial Programador',
-            imagem: '../assets/img/caneca2.png',
+            imagem: 'assets/img/caneca2.png',
             preco: '119,90',
             link: './produto.php'
         },
         {
             id: 8,
             titulo: 'Caneca especial Programador',
-            imagem: '../assets/img/caneca1.png',
+            imagem: 'assets/img/caneca1.png',
             preco: '119,90',
             link: './produto.php'
         }
