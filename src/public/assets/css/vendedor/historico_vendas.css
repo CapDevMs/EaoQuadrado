@@ -46,6 +46,9 @@
     display: flex;
     flex-direction: row;
 }
+.card-content-mobile{
+    display: none;
+}
 
 .card-item {
     display: flex;
@@ -196,7 +199,7 @@ select, .btn-salvar {
     .infos-historico{
         font-size: 11px;
         display: grid;
-    grid-template-columns: 40% 11% 13% 13% 11% 12%;
+        grid-template-columns: 40% 11% 13% 13% 11% 12%;
     }
 
     .info-cliente-key {
@@ -228,6 +231,26 @@ select, .btn-salvar {
 }
 
 @media (max-width:425px) {
+    .infos-historico{
+        display: none;
+    }
+    .card-content{
+        display: none;
+    }
+
+    .card-content-mobile{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-item {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
     .container-historico-vendas {
         width: 100%;
     }

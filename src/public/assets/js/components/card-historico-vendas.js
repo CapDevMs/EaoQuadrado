@@ -14,16 +14,40 @@ const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, valorTotal,
           <span class="status-pedido status-${statusClass}">${statusPedido}</span>
         </div>
         <div class="card-item">
-          <p>${preco}</p>
+          <p id="preco-card">${preco}</p>
         </div>
         <div class="card-item">
-          <p>${cliente}</p>
+          <p id="cliente-card">${cliente}</p>
         </div>
         <div class="card-item ml-1">
-          <p>${data}</p>
+          <p id="data-card">${data}</p>
         </div>
         <div class="card-item">
-          <p>${quantidade}</p>
+          <p id="quant-card">${quantidade}</p>
+        </div>
+      </div>
+
+      <div class="card-content-mobile">
+        <div class="card-item card-item-inicio">
+          <div class="card-item-img">
+            <img class="img-historico" src="${imagem}">
+          </div>
+          <p class="card-item-p">${produto}</p>
+        </div>
+        <div class="card-item ml-1">
+          <span class="status-pedido status-${statusClass}">${statusPedido}</span>
+        </div>
+        <div class="card-item">
+          <p id="preco-card">Preço: ${preco}</p>
+        </div>
+        <div class="card-item">
+          <p id="cliente-card">Cliente: ${cliente}</p>
+        </div>
+        <div class="card-item ml-1">
+          <p id="data-card">Data da Compra:${data}</p>
+        </div>
+        <div class="card-item">
+          <p id="quant-card">Quantidade: ${quantidade}</p>
         </div>
       </div>
       
@@ -33,6 +57,7 @@ const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, valorTotal,
             <p class="info-cliente-key">Produto: <span class="info-cliente-value">${produto}</span></p>
             <p class="info-cliente-key">Quantidade: <span class="info-cliente-value">${quantidade}</span></p>
             <p class="info-cliente-key">Preço: <span class="info-cliente-value">${preco}</span></p>
+            <p class="info-cliente-key">Data da Compra: <span class="info-cliente-value">${data}</span></p>
             <p class="info-cliente-key">Total: <span class="info-cliente-value">${valorTotal}</span></p>
           </div>
           <div class="info-cliente">
