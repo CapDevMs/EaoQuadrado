@@ -15,4 +15,8 @@ class HomeController extends Controller
     public function sobre() {
         View::render('sobre');
     }
+
+    public function nossaPolitica(){
+        View::render('nossa_politica');
+    }
 }
