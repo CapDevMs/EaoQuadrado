@@ -11,4 +11,8 @@ class HomeController extends Controller
     {
         View::render('homepage');
     }
+
+    public function sobre() {
+        View::render('sobre');
+    }
 }
