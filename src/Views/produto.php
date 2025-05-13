@@ -164,7 +164,7 @@ $appName = get_app_name();
     <?php get_footer(); ?>
 
 </body>
-<script type="module" src="../assets/js/produto.js?<?= time() ?>"></script>
+<script type="module" src="../../assets/js/produto.js?<?= time() ?>"></script>
 <script src="../assets/js/carrinho/apiCarrinho.js"></script>
 
 </html>
