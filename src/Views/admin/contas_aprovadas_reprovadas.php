@@ -13,7 +13,6 @@ $titulo = 'Contas Aprovadas e Reprovadas'
 </head>
 
 <body>
-
     <?php get_header() ?>
 
     <main>
@@ -100,8 +99,8 @@ $titulo = 'Contas Aprovadas e Reprovadas'
 
     <?php get_footer() ?>
 </body>
-    <script src=" ../../assets/js/adm/filtro_aprovados.js"></script>
+    <script src=" <?= get_base_url(); ?>/assets/js/adm/filtro_aprovados.js"></script>
     <script src="<?= get_base_url() ?>/assets/js/script.js"></script>
-    <script src="<?= get_base_url() ?>/assets/js/adm/contas_status"></script>
+    <script type="module" src="<?= get_base_url(); ?>/assets/js/adm/contas_status.js"></script>
 
 </html>
