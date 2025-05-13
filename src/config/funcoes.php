@@ -51,11 +51,7 @@ function get_sidebar_vendedor($page) {
 function get_sidebar_cliente($page) {
     include_once(__DIR__ . '/../components/sidebar_cliente.php');
 }
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 724b55fcaa8545d4c9d5dafeb90322bde7f2181d
 function get_sidebar_admin($page) {
     include_once(__DIR__ . '/../components/sidebar_adm.php');
 }
