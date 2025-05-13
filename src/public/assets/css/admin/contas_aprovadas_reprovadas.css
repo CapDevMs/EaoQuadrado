@@ -1,0 +1,115 @@
+.col-sm-3 {
+    margin-right: 0;
+}
+
+.historico {
+    justify-items: center;
+    margin-right: 0;
+}
+
+/* .selector {
+    /* flex: 0 0 auto;
+    width: calc(25% - 0.5rem);
+    margin-left: 15%; */
+
+
+.selector h1 {
+    font-size: 20px;
+}
+
+.status {
+    justify-content: start;
+    gap: 20px;
+}
+
+.foto-container {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.foto-container > img {
+    background-color: white;
+    align-content: center;
+    justify-items: center;
+    border-radius: 100px;
+    width: 100px;
+}
+
+.aprovado {
+    align-content: center;
+    justify-items: center;
+}
+
+.aprovado p {
+    width: fit-content;
+}
+
+.aprovado img {
+    width: 25px;
+    height: auto;
+}
+
+.btn-status {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.table {
+    align-items: center;
+}
+
+
+.status > button {
+        width: fit-content;
+}
+
+.interior {
+    padding: 10px;
+}
+
+.perfil {
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    align-items: center;
+}
+
+#approved{
+    background-color: #C0F894;
+}
+
+#repproved {
+    background-color: #E85252;
+}
+
+.perfil h1 {
+    font-size: 20px;
+}
+
+.perfis-body {
+    background-color: var(--cor-fundo);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+    border-radius: 20px;
+    height: max-content;
+    align-items: center;
+}
+
+.btn-perfil {
+    border-radius: 15px;
+    border: 1px solid  #B3B3B3;
+    padding: 5px;
+    background:#E6E6E6;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-perfil:hover{
+  transform: scale(0.9)  
+}
+
+.hidden {
+    display: none;
+}

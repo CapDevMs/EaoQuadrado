@@ -67,13 +67,13 @@ CREATE TABLE Administradores (
     data_nasc date not null,
     cpf varchar(18) not null unique,
     FOREIGN KEY fk_cargo(id_cargo) REFERENCES Cargos(id_cargo),
-    FOREIGN KEY fk_usuario(id_usuario) REFERENCES Usuarios(id_usuario)
+    FOREIGN KEY fk_usuario_administradores(id_usuario) REFERENCES Usuarios(id_usuario)
 );
 
 CREATE TABLE Vendedores (
     id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT,
-    FOREIGN KEY fk_usuario(id_usuario) REFERENCES Usuarios(id_usuario)
+    FOREIGN KEY fk_usuario_vendedores(id_usuario) REFERENCES Usuarios(id_usuario)
 );
 
 CREATE TABLE Comentario (
@@ -91,7 +91,7 @@ create table Lojas(
     id_endereco int,
     cpf_cnpj varchar(14) unique not null,
     loja_imagem varchar(255),
-    foreign key fk_endereco(id_endereco) references Enderecos(id_endereco)
+    foreign key fk_endereco_lojas(id_endereco) references Enderecos(id_endereco)
 );
 
 CREATE TABLE Categorias (
@@ -123,9 +123,9 @@ CREATE TABLE Avaliacao (
     id_produto int,
     avaliacao varchar (255),
     nota float default 0,
-	FOREIGN KEY fk_cliente(id_cliente) REFERENCES Clientes(id_cliente),
-	FOREIGN KEY fk_vendedor(id_vendedor) REFERENCES Vendedores(id_vendedor),
-	FOREIGN KEY fk_produto(id_produto) REFERENCES Produtos(id_produto)
+	FOREIGN KEY fk_cliente_avaliacao(id_cliente) REFERENCES Clientes(id_cliente),
+	FOREIGN KEY fk_vendedor_avaliacao(id_vendedor) REFERENCES Vendedores(id_vendedor),
+	FOREIGN KEY fk_produto_avaliacao(id_produto) REFERENCES Produtos(id_produto)
 );
  
 CREATE TABLE Permissoes (
@@ -152,8 +152,8 @@ CREATE TABLE Chamados (
 	id_chamado int auto_increment primary key,
     id_vendedor int,
     id_cliente int,
-	FOREIGN KEY fk_vendedor(id_vendedor) REFERENCES Vendedores(id_vendedor),
-	FOREIGN KEY fk_cliente(id_cliente) REFERENCES Clientes(id_cliente)
+	FOREIGN KEY fk_vendedor_chamados(id_vendedor) REFERENCES Vendedores(id_vendedor),
+	FOREIGN KEY fk_cliente_chamados(id_cliente) REFERENCES Clientes(id_cliente)
 );
 
 CREATE TABLE Permissoes_Usuarios (
@@ -171,9 +171,9 @@ CREATE TABLE Vendas(
     id_produto INT,
     id_cliente INT,
     id_vendedor INT,
-    FOREIGN KEY fk_produto(id_produto) REFERENCES Produtos(id_produto),
-    FOREIGN KEY fk_cliente(id_cliente) REFERENCES Clientes(id_cliente),
-    FOREIGN KEY fk_vendedor(id_vendedor) REFERENCES Vendedores(id_vendedor)
+    FOREIGN KEY fk_produto_vendas(id_produto) REFERENCES Produtos(id_produto),
+    FOREIGN KEY fk_cliente_vendas(id_cliente) REFERENCES Clientes(id_cliente),
+    FOREIGN KEY fk_vendedor_vendas(id_vendedor) REFERENCES Vendedores(id_vendedor)
 );
 
 CREATE TABLE Status_Devolucao (
@@ -206,8 +206,8 @@ CREATE TABLE Trocas (
     motivo varchar(255),
     id_status_troca int,
 
-    FOREIGN KEY fk_venda(id_venda) REFERENCES Vendas(id_venda),
-    FOREIGN KEY fk_produto(id_produto) REFERENCES Produtos(id_produto),
+    FOREIGN KEY fk_venda_trocas(id_venda) REFERENCES Vendas(id_venda),
+    FOREIGN KEY fk_produto_trocas(id_produto) REFERENCES Produtos(id_produto),
     FOREIGN KEY fk_status_troca(id_status_troca) REFERENCES Status_Troca(id_status_troca)
 );
 

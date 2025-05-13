@@ -1,0 +1,11 @@
+<svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-cancel" clip-path="url(#clip0_8856_26305)">
+<path id="Vector" d="M8.91797 19.3337L13.248 14.5003M17.5781 9.66699L13.2472 14.5003M13.2472 14.5003L8.91797 9.66699M13.248 14.5003L17.5781 19.3337" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Ellipse 26" d="M13.248 0.75C19.9326 0.750066 25.4883 6.82644 25.4883 14.5C25.4883 22.1736 19.9326 28.2499 13.248 28.25C6.56344 28.25 1.00781 22.1736 1.00781 14.5C1.00781 6.8264 6.56344 0.75 13.248 0.75Z" stroke="black" stroke-width="1.5"/>
+</g>
+<defs>
+<clipPath id="clip0_8856_26305">
+<rect width="25.9803" height="29" fill="white" transform="translate(0.257812)"/>
+</clipPath>
+</defs>
+</svg>

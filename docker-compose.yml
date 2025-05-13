@@ -1,0 +1,28 @@
+services:
+  php:
+    build: 
+      context: ./Docker
+      dockerfile: Dockerfile
+    container_name: php
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
+  mysql:
+    image: 'mysql/mysql-server:8.0'
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    env_file: 
+      - "./docker.env"
+    volumes:
+      - ./db_data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+    db_data:
+        driver: local
