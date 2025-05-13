@@ -16,6 +16,9 @@ function get_base_head() {
 function get_header(){
     include_once(__DIR__ . '/../components/header.php');
 }
+function get_breadcrumbs(){
+    include_once(__DIR__ . '/../components/breadcrumbs.php');
+}
 
 function get_footer(){
     include_once(__DIR__ . '/../components/footer.php');
@@ -48,7 +51,11 @@ function get_sidebar_vendedor($page) {
 function get_sidebar_cliente($page) {
     include_once(__DIR__ . '/../components/sidebar_cliente.php');
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 724b55fcaa8545d4c9d5dafeb90322bde7f2181d
 function get_sidebar_admin($page) {
     include_once(__DIR__ . '/../components/sidebar_adm.php');
 }
