@@ -38,16 +38,16 @@ const cardHistoricoVendas = ({ imagem, produto, statusPedido, preco, valorTotal,
           <span class="status-pedido status-${statusClass}">${statusPedido}</span>
         </div>
         <div class="card-item">
-          <p id="preco-card">Preço: ${preco}</p>
+          <p id="preco-card"><b>Preço:</b> ${preco}</p>
         </div>
         <div class="card-item">
-          <p id="cliente-card">Cliente: ${cliente}</p>
+          <p id="cliente-card"><b>Cliente:</b> ${cliente}</p>
         </div>
         <div class="card-item ml-1">
-          <p id="data-card">Data da Compra:${data}</p>
+          <p id="data-card"><b>Data da Compra:</b> ${data}</p>
         </div>
         <div class="card-item">
-          <p id="quant-card">Quantidade: ${quantidade}</p>
+          <p id="quant-card"><b>Quantidade:</b> ${quantidade}</p>
         </div>
       </div>
       

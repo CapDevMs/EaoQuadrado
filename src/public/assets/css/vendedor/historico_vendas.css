@@ -243,11 +243,18 @@ select, .btn-salvar {
         flex-wrap: wrap;
     }
 
+    .card-item-inicio{
+        margin-left: 4%;
+        margin-right: 4%;
+        font-weight: 600;
+    }
+
+    .card-title-mobile{
+        font-weight: 600;
+    }
+
     .card-item {
         width: 100%;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
         font-size: 12px;
     }
 
@@ -262,7 +269,7 @@ select, .btn-salvar {
     .statusPedido{
         display: block;
         margin: 0%;
-        width: 30%;
+        
     }
 
     .status-action{
@@ -273,6 +280,16 @@ select, .btn-salvar {
 
     #status-pedido-label{
         margin: 0%;
+    }
+
+    .status-pedido{
+        margin-right: 4%;
+        margin-left: 4%;
+        margin-bottom: 2%;
+    }
+
+    #quant-card{
+        margin-bottom: 2%;
     }
 
     .statusPedido{
