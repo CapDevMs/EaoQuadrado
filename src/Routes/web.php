@@ -6,6 +6,7 @@ use App\Controllers\HomeController;
 use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
 use App\Controllers\meuPerfilAdmController;
+use App\Controllers\faqController;
 use Core\Router;
 
 $router = new Router();
@@ -19,5 +20,6 @@ $router->get('/logout', AuthController::class, 'logout');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/loja', MinhaLojaController::class, 'loja');
+$router->get('/faq', faqController::class, 'faq');
 
 $router->dispatch();
