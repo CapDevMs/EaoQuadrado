@@ -58,7 +58,7 @@ input[type="checkbox"]:checked + label + .content {
     color: var(--cor-secundaria) !important;
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .menu-sidebar{
         display: none;
     }
