@@ -484,6 +484,19 @@ footer {
   }
 }
 
+.alert {
+  background-color: var(--cor-alerta);
+  color: var(--cor-texto-alerta);
+  padding: 10px;
+  border: 1px solid var(--cor-alerta-borda);
+  border-radius: 5px;
+  margin: 10px 0;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 @keyframes menu-open {
   0% {
     right: -1000px;
