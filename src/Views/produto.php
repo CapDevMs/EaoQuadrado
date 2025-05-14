@@ -76,7 +76,6 @@ $appName = get_app_name();
                         Além disso, seu fechamento com zíper personalizado da marca Gucci garante segurança e
                         praticidade,enquanto o forro interno personalizado oferece um toque de exclusividade.
                     </a>
-
                    
                     <?php
                     foreach ($todosProdutos as $produto): ?>
@@ -164,7 +163,7 @@ $appName = get_app_name();
     <?php get_footer(); ?>
 
 </body>
-<script type="module" src="../assets/js/produto.js?<?= time() ?>"></script>
+<script type="module" src="../../assets/js/produto.js?<?= time() ?>"></script>
 <script src="../assets/js/carrinho/apiCarrinho.js"></script>
 
 </html>
