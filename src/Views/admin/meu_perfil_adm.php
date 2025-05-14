@@ -1,5 +1,4 @@
 <?php
-    include('../../config/funcoes.php');
     $appName = get_app_name();
 ?>
 <!DOCTYPE html>
@@ -15,7 +14,7 @@
     <?php get_header(); ?>
     <main>
         <h5 class="map">
-            <a href="../../index.php">Home</a><span>/</span><a id="painel" href="">Painel do Administrador</a><span>/</span><a id="minha-conta" href="./meu_perfil_adm.php">Minha conta</a></h5>
+            <a href="/">Home</a><span>/</span><a id="painel" href="">Painel do Administrador</a><span>/</span><a id="minha-conta" href="./meu_perfil_adm.php">Minha conta</a></h5>
          <div id="menu-lateral">
             <div class="info-menu-lateral">
                 <h3>Cadastro</h3>
@@ -49,7 +48,7 @@
                 <inserir_dados></inserir_dados>
             </div>
             <div class='frame-esquerda'>
-                 <img src="../../assets/img/foto_cliente.png" alt="foto do cliente">
+                 <img src="assets/img/foto_cliente.png" alt="foto do cliente">
                  <permissoesAdm></permissoesAdm>
             </div>
         </div>
@@ -59,5 +58,5 @@
     <?php get_footer(); ?>    
     
 </body>
-<script type="module" src="../../assets/js/meu_perfil_adm.js?<?= time() ?>"></script>
+<script type="module" src="assets/js/meu_perfil_adm.js?<?= time() ?>"></script>
 </html>

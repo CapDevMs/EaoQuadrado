@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php get_css(['/cadastros/cadastro_cliente', '/cadastros/cadastro_vendedor', 'base', 'style']) ?>
-    
+    <?php get_breadcrumbs() ?>
 </head>
 <body>
     <header class="header">
@@ -19,7 +19,9 @@
 
 <main>
 
-    <div class="roadmap">Home / Cadastro de Vendedor</div>
+    <div class="roadmap"><?php
+        breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/pages/contato.php' => 'Contato'));
+        ?></div>
         <form action="#">
             <div class="register_client" id="pessoal">
                 <h2>Cadastro de Vendedor</h2>
