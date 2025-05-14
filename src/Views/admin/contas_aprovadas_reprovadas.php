@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['admin/contas_aprovadas_reprovadas', 'base', 'style','sidebar']) ?>
+    <?php get_css(['sidebar', 'admin/contas_aprovadas_reprovadas']) ?>
 </head>
 <body>
 
@@ -17,7 +17,8 @@
     <main>
         
         <div class="container row col-sm-12">
-            <?php  get_sidebar_admin('algo') ?>
+            <?php  get_sidebar_admin('contas_aprovadas_reprovadas') ?>
+
             <div class="historico col-sm-9"> 
                 <div class="selector col-sm-5">
                     <h1>Histórico de Contas</h1>

@@ -20,4 +20,8 @@ $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/loja', MinhaLojaController::class, 'loja');
 
+
+
+$router->get('/conta', aprovadosController::class, 'conta');
+
 $router->dispatch();
