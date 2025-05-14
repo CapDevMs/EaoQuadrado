@@ -11,8 +11,7 @@ use Core\Router;
 $router = new Router();
 
 $router->get('/', HomeController::class, 'index');
-$router->get('/vendas', HistoricoVendasController::class, 'vendas');
-$router->get('/favoritos', favoritosController::class, 'favoritos');
+$router->get('/historico_de_contas', aprovadosController::class, 'historico_de_contas');
 $router->get('/perfilAdm', meuPerfilAdmController::class, 'perfilAdm');
 $router->get('/produto', ProdutoController::class, 'produto');
 $router->get('/logout', AuthController::class, 'logout');
