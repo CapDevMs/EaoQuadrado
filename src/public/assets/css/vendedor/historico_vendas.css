@@ -1,0 +1,305 @@
+.container-info{
+    display: flex;
+    
+}
+
+.container-historico-vendas {
+    width: 70%;
+    padding: 20px;
+}
+
+.infos-historico {
+    display: grid;
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+    justify-content: end;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item-info-historico {
+    text-align: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.item-info-historico-inicio{
+    gap: 6%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+        
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+}
+.card-content-mobile{
+    display: none;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.card-item-inicio {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.card-item-img{
+    width: 26%;
+    height: 100px;
+    margin-top: 2%;
+    place-content: center;
+}
+
+.img-historico {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-item-p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 2%;
+}
+
+
+.card-details {
+    width: 100%;
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+}
+
+.card-details.expanded {
+    display: block;
+}
+
+.infoCard {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+    justify-content: center;
+    margin-left: 14%;
+}
+
+.info-produto {
+    display: inline-block;
+    
+}
+
+.info-cliente-key {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+.info-cliente-value {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: break-spaces;
+}
+
+#status-pedido-label{
+    margin-left: 14%;
+    
+}
+
+.statusPedido{
+    width: 15%;
+    margin-top: 2%;
+}
+
+
+select, .btn-salvar {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.btn-salvar {
+    width: 10%;
+    background-color: var(--cor-botao-primario);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-salvar:hover {
+    background-color: #45a049;
+}
+
+.status-pedido {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.status-entregue {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-em-andamento {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-cancelado {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+@media (max-width:1024px) {
+    .card-item{
+        font-size: 13px;
+    }
+    
+    .card-item-inicio{
+        width: 65%;
+    }
+
+    .status-pedido{
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .infos-historico{
+        font-size: 11px;
+        display: grid;
+        grid-template-columns: 40% 11% 13% 13% 11% 12%;
+    }
+
+    .info-cliente-key {
+        font-size: 12px;
+    }
+    
+    .info-cliente-value {
+        font-size: 12px;
+    }
+
+    .statusPedido {
+        width: 20%;
+        padding: 2px 4px;
+        font-size: 12px;
+    }
+
+    .btn-salvar{
+        width: 10%;
+        padding: 2px 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:768px) {
+    .container-historico-vendas {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:425px) {
+    .infos-historico{
+        display: none;
+    }
+    .card-content{
+        display: none;
+    }
+
+    .card-content-mobile{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-item-inicio{
+        margin-left: 4%;
+        margin-right: 4%;
+        font-weight: 600;
+    }
+
+    .card-title-mobile{
+        font-weight: 600;
+    }
+
+    .card-item {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .container-historico-vendas {
+        width: 100%;
+    }
+
+    .infoCard{
+        display: block;
+    }
+
+    .statusPedido{
+        display: block;
+        margin: 0%;
+        
+    }
+
+    .status-action{
+        place-items: center;
+        margin-top: 2%;
+        
+    }
+
+    #status-pedido-label{
+        margin: 0%;
+    }
+
+    .status-pedido{
+        margin-right: 4%;
+        margin-left: 4%;
+        margin-bottom: 2%;
+    }
+
+    #quant-card{
+        margin-bottom: 2%;
+    }
+
+    .statusPedido{
+        width: 40%;
+    }
+
+    .btn-salvar{
+        width: 100%;
+        padding: 6px 10px;
+        margin-left: 0%;
+        margin-top: 15%;
+    }
+}
