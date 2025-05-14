@@ -1,5 +1,4 @@
 <?php
-    include('../config/funcoes.php');
     $appName = get_app_name();
 ?>
 <!DOCTYPE html>
