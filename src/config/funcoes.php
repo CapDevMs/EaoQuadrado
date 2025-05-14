@@ -51,7 +51,7 @@ function get_sidebar_vendedor($page) {
 function get_sidebar_cliente($page) {
     include_once(__DIR__ . '/../components/sidebar_cliente.php');
 }
- 
+
 function get_sidebar_admin($page) {
     include_once(__DIR__ . '/../components/sidebar_adm.php');
 }

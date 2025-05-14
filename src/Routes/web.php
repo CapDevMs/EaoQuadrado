@@ -22,4 +22,8 @@ $router->get('/loja', MinhaLojaController::class, 'loja');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
 
+
+
+$router->get('/conta', aprovadosController::class, 'conta');
+
 $router->dispatch();
