@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Core\View;
 
-class cadastros_clienteControlller extends Controller
+class cadastro_clienteController extends Controller
 {
 
     public function cadastrosCliente()
