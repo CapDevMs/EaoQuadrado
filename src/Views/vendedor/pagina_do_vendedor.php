@@ -1,5 +1,5 @@
 <?php
-    include('../../config/funcoes.php');
+ 
     $appName = get_app_name();
 ?>
 
@@ -29,6 +29,6 @@
 
     <?php get_footer() ?>
 </body>
-<script type="module" src="../../assets/js/vendedor/pagina_do_vendedor.js"></script>
+<script type="module" src="<?php echo get_base_url()?>/assets/js/vendedor/pagina_do_vendedor.js"></script>
 
 </html>
