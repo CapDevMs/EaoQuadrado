@@ -3,6 +3,7 @@
 use App\Controllers\aprovadosController;
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
+use App\Controllers\PaginaVendedorController;
 use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
 use App\Controllers\meuPerfilAdmController;
@@ -11,6 +12,7 @@ use Core\Router;
 $router = new Router();
 
 $router->get('/', HomeController::class, 'index');
+$router->get('/vendedor', PaginaVendedorController::class, 'vendedor');
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
 $router->get('/favoritos', favoritosController::class, 'favoritos');
 $router->get('/perfilAdm', meuPerfilAdmController::class, 'perfilAdm');
