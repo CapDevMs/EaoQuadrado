@@ -9,8 +9,7 @@ $appName = get_app_name();
 <head><title>E ao quadrado</title></head>
 <body>
     <?php get_header() ?>
-    <link rel='stylesheet' href="../assets/css/carrinho_cliente/style.css">
-    <link rel='stylesheet' href="../assets/css/base.css ">
+    <?php get_css(['base','carrinho_cliente/style']) ?>
     <!-- <link rel='stylesheet' href="../assets/css/carrinho_cliente/headerCarrinho.css">
     <link rel='stylesheet' href="../assets/css/carrinho_cliente/footerCarrinho.css"> -->
 
@@ -60,6 +59,6 @@ $appName = get_app_name();
                 </div>
             </div> 
     <?php get_footer() ?>
-    <script src="../assets/js/carrinho/script.js"></script>
+    <script src="assets/js/carrinho/script.js"></script>
     <!-- <script src="../assets/js/carrinho/apiCarrinho.js"></script> -->
 </body>
