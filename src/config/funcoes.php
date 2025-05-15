@@ -45,12 +45,22 @@ function get_css_components() {
 }
 
 function get_sidebar_vendedor($page) {
-    include_once(__DIR__ . '/../components/sidebar.php');
+    include_once(__DIR__ . '/../components/sidebar_vendedor.php');
 }
 
-function route($route = '/') {
-    if (!empty($_ENV['PREFIX'])){
-        $route = $_ENV['PREFIX'] . $route;
+function get_sidebar_cliente($page) {
+    include_once(__DIR__ . '/../components/sidebar_cliente.php');
+}
+ 
+function get_sidebar_admin($page) {
+    include_once(__DIR__ . '/../components/sidebar_adm.php');
+}
+
+
+function logout() {
+    if (isset($_SESSION['user'])) {
+        unset($_SESSION['user']);
+        session_destroy();
     }
     header('location: ' .  $route);
 }
