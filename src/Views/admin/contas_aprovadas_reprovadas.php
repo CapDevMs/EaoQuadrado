@@ -17,7 +17,7 @@ $titulo = 'Contas Aprovadas e Reprovadas'
 
     <main>
 
-        <div class="container row col-sm-12">
+        <div class="container row geral col-sm-12">
             <?php get_sidebar_admin('algo') ?>
             <div class="historico col-sm-9">
                 <div class="selector col-sm-5">
@@ -30,7 +30,7 @@ $titulo = 'Contas Aprovadas e Reprovadas'
                 </div>
 
 
-                <div class="container col-sm-9">
+                <div class="container contas col-sm-12">
                     <div class="perfis-body container col-sm-12 row">
 
                     <validation></validation>
