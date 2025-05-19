@@ -1,10 +1,15 @@
-.col-sm-3 {
-    margin-right: 0;
+.geral {
+    align-items: center;
+    justify-content: center;
 }
 
 .historico {
     justify-items: center;
     margin-right: 0;
+}
+
+.contas {
+    margin: 0;
 }
 
 /* .selector {
@@ -73,7 +78,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
-    margin-right: calc(-0.5 * var(--bs-gutter-x));
     align-items: center;
 }
 
@@ -112,4 +116,19 @@
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 1024px) {
+    .foto-container > img {
+        width: 80px;
+    }
+    .aprovado {
+        font-size: 14px;
+    }
+    .btn-perfil {
+        font-size: 14px;
+    }
+    .nome-email h1{
+        font-size: 16px;
+    }
 }
