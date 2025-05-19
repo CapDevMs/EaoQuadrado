@@ -3,7 +3,10 @@
 $appName = get_app_name();
 $titulo = 'EaoQuadrado - Contas Inativas';
 ?>
-
+<?php
+$base_url = get_base_url();
+?>
+<!-- <?= $base_url; ?> -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -27,13 +30,32 @@ $titulo = 'EaoQuadrado - Contas Inativas';
             <a href="#" class='roadMap2'>Contas inativas</a>
         </roadMap>
         <corpo class='corpo col-12 row'>
-            <menuLateral class='col-md-3'>
+            <menuLateral class='col-md-3 col'>
 
                 <?php get_sidebar_admin('contas_inativas'); ?>
             </menuLateral>
             <conteudo class='col-md-9 col-12'>
-                <painel class='painel col-md-12'>
-                      
+                <painel class='painel painelPrincipal col-md-12'>
+
+                    <ContaSuspensa type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonAberto' onclick="abrirAcordeon()">
+                        <div class='painelCinza'>
+                            <div class = 'col-1'>
+                                <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                            </div>
+                            <div class="col-sm-7">Nome da empresa</div>
+                            <div class="col-sm-2">Status</div>
+                            <div class="col-sm-2">Reativar</div>
+                        </div>
+                        <div>
+
+                        </div>
+                    </ContaSuspensa>
+
+                    <ContaDesativada type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon()">
+                        <div></div>
+                        <div></div>
+                    </ContaDesativada>
+
                 </painel>
             </conteudo>
         </corpo>
@@ -41,5 +63,11 @@ $titulo = 'EaoQuadrado - Contas Inativas';
     </main>
     <?php get_footer() ?>
 </body>
+
+<script>
+    function abrirAcordeon() {
+        console.log('NUOOOOOOOOOOOOOOOOOOOOOOOOOOSSA')
+    };
+</script>
 
 </html>

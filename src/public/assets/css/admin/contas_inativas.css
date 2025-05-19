@@ -1,5 +1,18 @@
-main{
-    height: 100%;
+body {
+    min-height: 100vh;
+}
+
+.centralizadorflex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.centralizar {
+    margin: 0 auto;
 }
 
 .roadMap1 {
@@ -12,19 +25,62 @@ main{
     color: var(--cor-texto);
 }
 
-.corpo{
+.corpo {
     width: 97%;
     min-height: 70vh;
     margin: 0 auto;
 }
 
-.painel{
+.painel {
     display: flex;
-    width: 100%;
-    height: 100%;
     border: 2px solid var(--cor-texto-deselecionado);
     border-radius: 20px;
+    box-shadow: 2px 2px var(--cor-sombra-media);
 }
+
+.painelPrincipal {
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: start;
+    overflow: auto;
+}
+
+.painelCentral {
+    margin-top: 4px;
+}
+
+.acordeonFechado {
+    height: 220px;
+}
+
+.acordeonAberto {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.imagem{
+    width: 80px;
+    background-color: white;
+    border: 2px solid var(--cor-texto-deselecionado);
+    border-radius: 50px;
+}
+
+.painelCinza{
+     background-color: var( --cor-fundo-area-pesquisa); 
+    height: 120px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.5% ;
+}
+
+
 
 @media (max-width: 450px) {
     .roadMap {
