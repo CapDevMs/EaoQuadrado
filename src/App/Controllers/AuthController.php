@@ -74,7 +74,12 @@ class AuthController extends Controller
 
         $user->findBy('email', $login);
 
-        var_dump($user);
-        exit;
+        $mensagem = 'Caso seja encontrado um e-mail cadastrado, será enviada as informações de recuperação de senha!';
+
+        if (is_null($user->getData())){
+            return View::render('esqueci_senha', compact('mensagem'));
+        }
+
+        // Lógica de envio do e-mail de recuperação de senha!
     }
 }

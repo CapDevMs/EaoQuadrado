@@ -41,6 +41,10 @@
   --cor-alerta: #f8d7da; /* Cor de fundo do alerta */
   --cor-texto-alerta: #721c24; /* Cor do texto do alerta */
   --cor-borda-alerta: #f5c6cb; /* Cor da borda do alerta */
+
+  --cor-sucesso: #4ae245; /* Cor de fundo do sucesso */
+  --cor-texto-sucesso: #11490f; /* Cor do texto do sucesso */
+  --cor-borda-sucesso: #0a6607; /* Cor da borda do sucesso */
   
   --cor-fundo-card: #7D818420
 }
@@ -488,7 +492,20 @@ footer {
   background-color: var(--cor-alerta);
   color: var(--cor-texto-alerta);
   padding: 10px;
-  border: 1px solid var(--cor-alerta-borda);
+  border: 1px solid var(--cor-borda-alerta);
+  border-radius: 5px;
+  margin: 10px 0;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.success {
+  background-color: var(--cor-sucesso);
+  color: var(--cor-texto-sucesso);
+  padding: 10px;
+  border: 1px solid var(--cor-borda-sucesso);
   border-radius: 5px;
   margin: 10px 0;
   align-items: center;

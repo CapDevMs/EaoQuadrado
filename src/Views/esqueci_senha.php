@@ -28,6 +28,14 @@ $titulo = 'Esqueci a senha';
                     </div>
                 </div>
             <?php endif; ?>
+
+            <?php if (isset($mensagem)): ?>
+                <div class="row">
+                    <div class="success pb-2" role="success">
+                        <?= $mensagem; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
         <div class="main_content">
             <div class="texto_forms">
