@@ -2,6 +2,9 @@ body {
     min-height: 100vh;
 }
 
+:root{
+    --cinza--painel--inativa: rgb(250,250,250);
+}
 .centralizadorflex {
     display: flex;
     flex-direction: column;
@@ -60,6 +63,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    background-color: var(--cinza--painel--inativa);
 }
 
 .imagem{
@@ -70,20 +74,55 @@ body {
 }
 
 .painelCinza{
-     background-color: var( --cor-fundo-area-pesquisa); 
+    background-color: var(--cinza--painel--inativa); 
     height: 120px;
-    width: 100%;
+    width: 98%;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:0.5% ;
+    margin-top:0.5%;
 }
 
+hr{
+    max-width: 99%;
+}
+.botao{
+    border: 1px solid black;
+    width: 75px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
 
+.botao:active{
+    background-color: gray;
+    border: 0px;
+}
 
+.status1{
+    border: solid 1px yellow;
+    width: 85px;
+    background-color:   yellow;
+    text-align: center;
+}
+
+.campoTexto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 275px;
+    overflow: hidden;
+}
+
+.TextBox{
+    max-width: 98%;
+    
+}
 @media (max-width: 450px) {
     .roadMap {
         font-size: 12px;
     }
+
 }

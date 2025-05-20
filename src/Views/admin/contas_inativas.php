@@ -37,17 +37,18 @@ $base_url = get_base_url();
             <conteudo class='col-md-9 col-12'>
                 <painel class='painel painelPrincipal col-md-12'>
 
-                    <ContaSuspensa type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonAberto' onclick="abrirAcordeon()">
+                    <ContaSuspensa class='painel painelCentral col-12 centralizar mt-3 acordeonAberto'>
                         <div class='painelCinza'>
-                            <div class = 'col-1'>
+                            <div class='col-1'>
                                 <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
                             </div>
                             <div class="col-sm-7">Nome da empresa</div>
-                            <div class="col-sm-2">Status</div>
-                            <div class="col-sm-2">Reativar</div>
+                            <div class="status1 col-sm-2">Suspenso</div>
+                            <div type='button' class="botao col-sm-2" onclick="abrirAcordeon()">Reativar</div>
                         </div>
-                        <div>
-
+                        <hr>
+                        <div class = 'campoTexto'>
+                            <div class = 'TextBox'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
                         </div>
                     </ContaSuspensa>
 
