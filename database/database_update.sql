@@ -90,7 +90,7 @@ create table Lojas(
     telefone varchar(14) not null,
     id_endereco int,
     cpf_cnpj varchar(14) unique not null,
-    loja_imagem varchar(255),
+    -- loja_imagem varchar(255)
     foreign key fk_endereco_lojas(id_endereco) references Enderecos(id_endereco)
 );
 

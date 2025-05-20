@@ -7,6 +7,8 @@ use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
 use App\Controllers\meuPerfilAdmController;
 use App\Controllers\favoritosController;
+use App\Controllers\CadastroProdVendController;
+
 use Core\Router;
 
 $router = new Router();
@@ -23,5 +25,7 @@ $router->post('/login', AuthController::class, 'login');
 $router->get('/loja', MinhaLojaController::class, 'loja');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
+$router->get('/cadastrar_produto_vendedor', CadastroProdVendController::class, 'CadastroProd');
+
 
 $router->dispatch();

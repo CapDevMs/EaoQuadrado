@@ -1,5 +1,5 @@
 <?php
-    include('../../config/funcoes.php');
+    include_once('../config/funcoes.php');
     $appName = get_app_name();
 ?>
 <!DOCTYPE html>
