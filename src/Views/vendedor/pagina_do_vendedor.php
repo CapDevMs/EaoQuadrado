@@ -19,7 +19,9 @@
 
     <main class="container">
         <h4 id="roadmap">Home / Studio Center</h4>
-        <img src="assets/img/img-pagina-do-vendedor/foto_banner_pagina_vendedor.png" id="foto-banner" alt="foto-banner-vendedor">
+        <!-- <img src="assets/img/img-pagina-do-vendedor/foto_banner_pagina_vendedor.png" id="foto-banner" alt="foto-banner-vendedor"> -->
+        <banner_vendedor class="card">
+        </banner_vendedor>
         
         <div class="container-comentarios">
             <container-comentarios>
