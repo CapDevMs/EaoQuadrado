@@ -30,7 +30,7 @@ $base_url = get_base_url();
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>/cadastros/contato">
+                <a href="<?=$base_url;?>/contato">
                     <img src="<?=$base_url;?>/assets/img/suporte.svg" alt="suporte">
                 </a>
             </li>

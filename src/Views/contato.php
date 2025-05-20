@@ -1,6 +1,6 @@
 <?php
-include('../../config/funcoes.php');
 $appName = get_app_name();
+$titulo = 'Contato';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -9,7 +9,7 @@ $appName = get_app_name();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['style', 'cadastros/contato']) ?>
+    <?php get_css(['cadastros/contato']) ?>
 </head>
 
 <body>
@@ -44,7 +44,7 @@ $appName = get_app_name();
             </div>
 
 
-            <form action="#" class="message col-sm-12 col-md-8" method="post">
+            <form action="" class="message col-sm-12 col-md-8" method="post">
 
                 <div class="caixa-container row">
 
@@ -77,7 +77,7 @@ $appName = get_app_name();
     <?php get_footer() ?>
     <script>
 
-        document.getElementById('salvar').addEventListener('click', function (event) {
+        /* document.getElementById('salvar').addEventListener('click', function (event) {
             event.preventDefault();
 
 
@@ -94,9 +94,9 @@ $appName = get_app_name();
             if (event.target == document.getElementById('modalImagem')) {
                 document.getElementById('modalImagem').style.display = "none";
             }
-        };
+        }; */
     </script>
 </body>
-<script src="../../assets/js/script.js"></script>
+<script src="<?= get_base_url(); ?>/assets/js/script.js"></script>
 
 </html>

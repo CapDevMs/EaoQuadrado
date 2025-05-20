@@ -9,14 +9,29 @@ class HomeController extends Controller
 
     public function index()
     {
-        View::render('homepage');
+        return View::render('homepage');
     }
 
-    public function sobre() {
-        View::render('sobre');
+    public function sobre()
+    {
+        return View::render('sobre');
     }
 
-    public function nossaPolitica(){
-        View::render('nossa_politica');
+    public function nossaPolitica()
+    {
+        return View::render('nossa_politica');
+    }
+
+    public function contato()
+    {
+        return View::render('contato');
+    }
+
+    public function enviarContato()
+    {
+        mail('admin@admin.com', 'Contato', 'Teste');
+
+        return route('/contato');
+
     }
 }
