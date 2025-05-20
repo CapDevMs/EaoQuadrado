@@ -11,4 +11,12 @@ class HomeController extends Controller
     {
         View::render('homepage');
     }
+
+    public function sobre() {
+        View::render('sobre');
+    }
+
+    public function nossaPolitica(){
+        View::render('nossa_politica');
+    }
 }
