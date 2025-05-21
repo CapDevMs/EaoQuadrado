@@ -23,5 +23,7 @@ $router->post('/login', AuthController::class, 'login');
 $router->get('/loja', MinhaLojaController::class, 'loja');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
+$router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
+$router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
 
 $router->dispatch();
