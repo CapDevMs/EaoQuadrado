@@ -7,6 +7,7 @@ use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
 use App\Controllers\meuPerfilAdmController;
 use App\Controllers\favoritosController;
+use App\Controllers\CarrinhoController;
 use Core\Router;
 
 $router = new Router();
