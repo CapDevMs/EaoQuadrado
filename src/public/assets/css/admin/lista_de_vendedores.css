@@ -27,52 +27,6 @@ body {
     max-width: fit-content;
 }
 
-#pagina_atual{
-    color: #00BFA5;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-adm > li {
-    margin-bottom: 1em;
-}
-
-input[type="checkbox"] {
-    display: none;
-}
-
-label {
-    width: max-content;
-    cursor: pointer;
-    display: block;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.content {
-    display: none;
-}
-
-input[type="checkbox"]:checked + label + .content {
-    display: flex;
-    flex-direction: column;
-}
-
-.content a{
-    text-decoration: none;
-    width: max-content;
-    color: var(--cor-texto);
-    font-size: 16px;
-    opacity: 0.6;
-    margin-left: 0.5rem;
-}
-
-.content a:hover {
-    color: var(--cor-principal);
-}
 
 .name {
     white-space: nowrap;

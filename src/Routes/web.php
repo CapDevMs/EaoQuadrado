@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\aprovadosController;
+use App\Controllers\listaVendedoresController;
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
 use App\Controllers\HistoricoVendasController;
@@ -15,7 +16,7 @@ use Core\Router;
 $router = new Router();
 
 $router->get('/', HomeController::class, 'index');
-$router->get('/historico_de_contas', aprovadosController::class, 'historico_de_contas');
+
 $router->get('/perfilAdm', meuPerfilAdmController::class, 'perfilAdm');
 $router->get('/favoritos', favoritosController::class, 'favoritos');
 $router->get('/produto', ProdutoController::class, 'produto');
@@ -29,5 +30,10 @@ $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
 $router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
 $router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
+
+#ADM
+$router->get('/historico_de_contas', aprovadosController::class, 'historico_de_contas');
+$router->get('/lista_vendedores', listaVendedoresController::class, 'lista_vendedores');
+
 
 $router->dispatch();

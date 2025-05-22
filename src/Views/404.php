@@ -3,6 +3,9 @@
 $appName = get_app_name();
 $titulo = 'Erro 404 - Página não encontrada';
 ?>
+<?php
+$base_url = get_base_url();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -23,7 +26,7 @@ $titulo = 'Erro 404 - Página não encontrada';
             <h1 class='redutor centralizar titulo'>404 não encontrado</h1>
             <p class='redutor centralizar corSecundaria'>Página não encontrada.</p>
             <div class = 'centralFlex mt-1'>
-                <a class='button centralizar'><button class='button'>Retornar ao inicio</button></a>
+                <a class='button centralizar' href="<?=$base_url;?>"><button class='button'>Retornar ao inicio</button></a>
             </div>
         </div>
     </main>
