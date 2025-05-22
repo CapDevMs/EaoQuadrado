@@ -2,9 +2,10 @@ body {
     min-height: 100vh;
 }
 
-:root{
-    --cinza--painel--inativa: rgb(250,250,250);
+:root {
+    --cinza--painel--inativa: rgb(250, 250, 250);
 }
+
 .centralizadorflex {
     display: flex;
     flex-direction: column;
@@ -57,37 +58,30 @@ body {
     height: 220px;
 }
 
-.acordeonAberto {
-    height: 420px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    background-color: var(--cinza--painel--inativa);
-}
 
-.imagem{
+.imagem {
     width: 80px;
     background-color: white;
     border: 2px solid var(--cor-texto-deselecionado);
     border-radius: 50px;
 }
 
-.painelCinza{
-    background-color: var(--cinza--painel--inativa); 
+.painelCinza {
+    background-color: var(--cinza--painel--inativa);
     height: 120px;
     width: 98%;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:0.5%;
+    margin-top: 0.5%;
 }
 
-hr{
+hr {
     max-width: 99%;
 }
-.botao{
+
+.botao {
     border: 1px solid black;
     width: 75px;
     margin: 0 auto;
@@ -95,19 +89,19 @@ hr{
     cursor: pointer;
 }
 
-.botao:active{
-    background-color: gray;
+.botao:active {
+    background-color: var(--cor-fundo-area-pesquisa);
     border: 0px;
 }
 
-.status1{
+.status1 {
     border: solid 1px yellow;
     width: 85px;
-    background-color:   yellow;
+    background-color: yellow;
     text-align: center;
 }
 
-.campoTexto{
+.campoTexto {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -116,10 +110,46 @@ hr{
     overflow: hidden;
 }
 
-.TextBox{
-    max-width: 98%;
-    
+.campoTexto2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 275px;
+    overflow: hidden;
 }
+
+.TextBox {
+    max-width: 98%;
+
+}
+
+.acordeonFechado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--cinza--painel--inativa);
+}
+
+.acordeonAberto {
+    display: flex;
+    height: 420px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--cinza--painel--inativa);
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+}
+
+.displayNone{
+    display: none;
+}
+
 @media (max-width: 450px) {
     .roadMap {
         font-size: 12px;

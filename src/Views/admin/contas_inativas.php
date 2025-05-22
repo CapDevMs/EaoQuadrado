@@ -37,25 +37,39 @@ $base_url = get_base_url();
             <conteudo class='col-md-9 col-12'>
                 <painel class='painel painelPrincipal col-md-12'>
 
-                    <ContaSuspensa class='painel painelCentral col-12 centralizar mt-3 acordeonAberto'>
-                        <div class='painelCinza'>
-                            <div class='col-1'>
-                                <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                    <acordeon class='colum' id='1'>
+                        <AcordeonAberto type = 'button' class='painel painelCentral col-12 centralizar mt-3 acordeonAberto displayNone' onclick = "fecharAcordeon('1')">
+                            <div class='painelCinza'>
+                                <div class='col-1'>
+                                    <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                </div>
+                                <div class="col-sm-7">Nome da empresa</div>
+                                <div class="status1 col-sm-2">Suspenso</div>
+                                <botaoReativar type='button' class="botao col-sm-2" onclick="fecharAcordeon('1')">Reativar</botaoReativar>
                             </div>
-                            <div class="col-sm-7">Nome da empresa</div>
-                            <div class="status1 col-sm-2">Suspenso</div>
-                            <div type='button' class="botao col-sm-2" onclick="abrirAcordeon()">Reativar</div>
-                        </div>
-                        <hr>
-                        <div class = 'campoTexto'>
-                            <div class = 'TextBox'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
-                        </div>
-                    </ContaSuspensa>
+                            <hr>
+                            <div class='campoTexto'>
+                                <div class='TextBox'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
+                            </div>
+                            </AcordeonAberto>
 
-                    <ContaDesativada type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon()">
-                        <div></div>
-                        <div></div>
-                    </ContaDesativada>
+                            <AcordeonFechado type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon('1')">
+                                <div class='painelCinza'>
+                                    <div class='col-1'>
+                                        <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                    </div>
+                                    <div class="col-sm-7">Nome da empresa</div>
+                                    <div class="status1 col-sm-2">Suspenso</div>
+                                    <botaoReativar type='button' class="botao col-sm-2">Reativar</botaoReativar>
+                                </div>
+                                <hr>
+                                <div class='campoTexto2'>
+                                    <div class='TextBox'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
+                                </div>
+                            </AcordeonFechado>
+
+                    </acordeon>
+
 
                 </painel>
             </conteudo>
@@ -66,8 +80,37 @@ $base_url = get_base_url();
 </body>
 
 <script>
-    function abrirAcordeon() {
-        console.log('NUOOOOOOOOOOOOOOOOOOOOOOOOOOSSA')
+    function fecharAcordeon(idConta) {
+
+        console.log('oweee fechar');
+        let var1 = document.getElementById(idConta);
+        console.log(var1)
+        let var2 = var1.getElementsByTagName('AcordeonAberto');
+        console.log(var2)
+        let var3 = var1.getElementsByTagName('AcordeonFechado');
+        console.log(var3)
+        
+        var3.classList.remove('displayNone');
+        var2.classList.remove('displayNone');
+    
+        var2.classList.add('displayNone');
+
+    };
+    function abrirAcordeon(idConta) {
+        console.log('oweee abrir');
+        
+        let var1 = document.getElementById(idConta);
+        console.log(var1)
+        let var2 = var1.querySelector('.acordeonAberto');
+        console.log(var2)
+        let var3 = var1.querySelector('AcordeonFechado');
+        console.log(var3)
+
+        var3.classList.remove('displayNone');
+        var2.classList.remove('displayNone');
+
+        var3.classList.add('displayNone');
+        
     };
 </script>
 
