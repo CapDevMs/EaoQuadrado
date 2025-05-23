@@ -8,7 +8,7 @@ $appName = get_app_name();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-  <?php get_css(['base', 'style', 'vendedor/historico_vendas']) ?>
+  <?php get_css(['sidebar','base', 'style', 'vendedor/historico_vendas']) ?>
 </head>
 
 <body>
