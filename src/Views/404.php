@@ -25,7 +25,7 @@ $titulo = 'Erro 404 - Página não encontrada';
                         <h1 class="text-danger pt-4">Página não encontrada</h1>
                         <p class="text-muted">Desculpe, a página que você está procurando não existe ou foi removida.</p>
                         <div class="pt-4">
-                            <a href="<?= get_base_url(); ?>" class="btn btn-primary">Voltar para a página inicial</a>
+                            <a href="<?= get_base_url();?>" class="btn btn-primary">Voltar para a página inicial</a>
                         </div>
                     </div>
                 </div>

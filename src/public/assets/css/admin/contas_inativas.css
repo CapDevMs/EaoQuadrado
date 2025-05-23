@@ -61,6 +61,7 @@ body {
 
 .imagem {
     width: 80px;
+    height: 80px;
     background-color: white;
     border: 2px solid var(--cor-texto-deselecionado);
     border-radius: 50px;
@@ -83,10 +84,25 @@ hr {
 
 .botao {
     border: 1px solid black;
-    width: 75px;
-    margin: 0 auto;
+    width: 95px;
     text-align: center;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.blocoReativar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocoNome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
 }
 
 .botao:active {
@@ -95,9 +111,17 @@ hr {
 }
 
 .status1 {
-    border: solid 1px yellow;
-    width: 85px;
+    border: 0px;
+    border-radius: 5px;
+    width: 95px;
     background-color: yellow;
+    text-align: center;
+}
+.status2 {
+    border: 0px;
+    border-radius: 5px; 
+    width: 95px;
+    background-color: var(--cor-botao-adm-vermelho);
     text-align: center;
 }
 
@@ -146,13 +170,69 @@ hr {
     flex-direction: column;
 }
 
-.displayNone{
+.displayNone {
     display: none;
 }
 
+
+/* .subBloco1 {
+    background-color: rebeccapurple;
+    height: 100%;
+}
+
+.subBloco0 {
+    background-color: red;
+    height: 100%;
+} */
+
+.blocoColuna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    align-items: center;
+}
+
+.seletor{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+    color: var(--cor-texto);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.seletorBase{
+    font-weight: 600;
+}
+.seletorInativo{
+    font-weight: 400;
+    color: var(--cor-texto-deselecionado);
+    cursor:pointer;
+}
+
+.seletorAtivo{
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    cursor:pointer;
+}
+
+p{
+    max-width: max-content;
+}
+@media (min-width: 768px) {
+    .blocoColuna{
+        flex-direction: row;
+    }
+}
 @media (max-width: 450px) {
     .roadMap {
         font-size: 12px;
     }
+}
 
+@media (max-width:425px) {
+    .miniFonte{
+        font-size: 14px;
+    }
 }

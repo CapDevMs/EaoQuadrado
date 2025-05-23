@@ -3,6 +3,7 @@
 $appName = get_app_name();
 $titulo = 'EaoQuadrado - Contas Inativas';
 ?>
+
 <?php
 $base_url = get_base_url();
 ?>
@@ -35,40 +36,115 @@ $base_url = get_base_url();
                 <?php get_sidebar_admin('contas_inativas'); ?>
             </menuLateral>
             <conteudo class='col-md-9 col-12'>
+
+                <seletor class = 'seletor'>
+                    <p class = 'miniFonte seletorBase'>Contas:</p>
+                    <p type = 'button' onclick="mudarSeletor('seletor0')" class = 'miniFonte seletorComponente seletorAtivo' id = 'seletor0'>Todas</p>
+                    <p type = 'button' onclick="mudarSeletor('seletor1')" class = 'miniFonte seletorComponente seletorInativo' id = 'seletor1'>Suspensas</p>
+                    <p type = 'button' onclick="mudarSeletor('seletor2')" class = 'miniFonte seletorComponente seletorInativo' id = 'seletor2'>Desativadas</p>
+                </seletor>
                 <painel class='painel painelPrincipal col-md-12'>
 
-                    <acordeon class='colum' id='1'>
-                        <AcordeonAberto type = 'button' class='painel painelCentral col-12 centralizar mt-3 acordeonAberto displayNone' onclick = "fecharAcordeon('1')">
+                    <acordeonSuspenso class='colum' id='acordeonSuspenso1'>
+                        <AcordeonAberto type='button' class='painel painelCentral col-12 centralizar mt-3 acordeonAberto displayNone' onclick="fecharAcordeon('acordeonSuspenso1')">
                             <div class='painelCinza'>
-                                <div class='col-1'>
+                                <div class='blocoReativar subBloco0 col-md-2'>
                                     <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                   </div>
+                                <div class="blocoNome miniFonte subBloco1">Nome da empresa</div>
+
+                                <div class='col-5  blocoColuna'>
+
+                                    <div class="status1 col-xl-1 subBloco0 miniFonte blocoReativar">Suspenso</div>
+                                    <div class='blocoReativar subBloco1'>
+                                        <botaoReativar type='button' class="botao miniFonte">Reativar</botaoReativar>
+                                    </div>
+
                                 </div>
-                                <div class="col-sm-7">Nome da empresa</div>
-                                <div class="status1 col-sm-2">Suspenso</div>
-                                <botaoReativar type='button' class="botao col-sm-2" onclick="fecharAcordeon('1')">Reativar</botaoReativar>
+
                             </div>
                             <hr>
                             <div class='campoTexto'>
-                                <div class='TextBox'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
+                                <div class='TextBox miniFonte'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
                             </div>
-                            </AcordeonAberto>
+                        </AcordeonAberto>
 
-                            <AcordeonFechado type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon('1')">
-                                <div class='painelCinza'>
-                                    <div class='col-1'>
-                                        <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                        <AcordeonFechado type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon('acordeonSuspenso1')">
+                            <div class='painelCinza'>
+                                <div class='blocoReativar subBloco0 col-md-2'>
+                                    <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                </div>
+                                <div class=" blocoNome miniFonte subBloco1">Nome da empresa</div>
+
+                                <div class='col-5 blocoColuna'>
+
+                                    <div class="status1 col-xl-1 subBloco0 miniFonte blocoReativar">Suspenso</div>
+                                    <div class='blocoReativar subBloco1'>
+                                        <botaoReativar type='button' class="botao miniFonte">Reativar</botaoReativar>
                                     </div>
-                                    <div class="col-sm-7">Nome da empresa</div>
-                                    <div class="status1 col-sm-2">Suspenso</div>
-                                    <botaoReativar type='button' class="botao col-sm-2">Reativar</botaoReativar>
-                                </div>
-                                <hr>
-                                <div class='campoTexto2'>
-                                    <div class='TextBox'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
-                                </div>
-                            </AcordeonFechado>
 
-                    </acordeon>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class='campoTexto2'>
+                                <div class='TextBox miniFonte'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
+                            </div>
+                        </AcordeonFechado>
+
+                    </acordeonSuspenso>
+
+
+                    <acordeonDesativado class='colum' id='acordeonDesativado2'>
+                        <AcordeonAberto type='button' class='painel painelCentral col-12 centralizar mt-3 acordeonAberto displayNone' onclick="fecharAcordeon('acordeonDesativado2')">
+                            <div class='painelCinza'>
+                                <div class='blocoReativar subBloco0 col-md-2'>
+                                    <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                </div>
+                                <div class="blocoNome miniFonte subBloco1">Nome da empresa</div>
+
+                                <div class='col-5 blocoColuna'>
+
+                                    <div class="status2 col-xl-1 subBloco0 miniFonte blocoReativar">Desativado</div>
+                                    <div class='blocoReativar subBloco1'>
+                                        <botaoReativar type='button' class="botao miniFonte">Reativar</botaoReativar>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class='campoTexto'>
+                                <div class='TextBox miniFonte'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
+                            </div>
+                        </AcordeonAberto>
+
+                        <AcordeonFechado type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon('acordeonDesativado2')">
+                            <div class='painelCinza'>
+                                <div class='blocoReativar subBloco0 col-md-2'>
+                                    <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                </div>
+                                <div class=" blocoNome miniFonte subBloco1">Nome da empresa</div>
+
+                                <div class='col-5 blocoColuna'>
+
+                                    <div class="status2 col-xl-1 subBloco0 miniFonte blocoReativar">Desativado</div>
+                                    <div class='blocoReativar subBloco1'>
+                                        <botaoReativar type='button' class="botao miniFonte">Reativar</botaoReativar>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class='campoTexto2'>
+                                <div class='TextBox miniFonte'>Justificativa: Grande quantidade de reclamações referente a entrega incorreta de produtos. Suspenso para revisão.</div>
+                            </div>
+                        </AcordeonFechado>
+
+                    </acordeonDesativado>
+
+
 
 
                 </painel>
@@ -79,39 +155,8 @@ $base_url = get_base_url();
     <?php get_footer() ?>
 </body>
 
-<script>
-    function fecharAcordeon(idConta) {
+<script src='<?php $base_url; ?>src/public/assets/js/contas_inativas.js'>
 
-        console.log('oweee fechar');
-        let var1 = document.getElementById(idConta);
-        console.log(var1)
-        let var2 = var1.getElementsByTagName('AcordeonAberto');
-        console.log(var2)
-        let var3 = var1.getElementsByTagName('AcordeonFechado');
-        console.log(var3)
-        
-        var3.classList.remove('displayNone');
-        var2.classList.remove('displayNone');
-    
-        var2.classList.add('displayNone');
-
-    };
-    function abrirAcordeon(idConta) {
-        console.log('oweee abrir');
-        
-        let var1 = document.getElementById(idConta);
-        console.log(var1)
-        let var2 = var1.querySelector('.acordeonAberto');
-        console.log(var2)
-        let var3 = var1.querySelector('AcordeonFechado');
-        console.log(var3)
-
-        var3.classList.remove('displayNone');
-        var2.classList.remove('displayNone');
-
-        var3.classList.add('displayNone');
-        
-    };
 </script>
 
 </html>
