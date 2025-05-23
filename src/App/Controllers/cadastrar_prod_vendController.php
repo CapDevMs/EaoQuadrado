@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Core\View;
 
-class CadastrarProdutoVendedorController extends Controller
+class cadastrar_prod_vendController extends Controller
 {
 
     public function cadastroProdutoVendedor()
