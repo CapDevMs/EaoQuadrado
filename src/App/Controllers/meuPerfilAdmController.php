@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Core\View;
 
-class meuPerfilAdmController extends Controller
+class MeuPerfilAdmController extends Controller
 {
 
     public function perfilAdm()

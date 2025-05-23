@@ -1,9 +1,8 @@
 <?php
-include('../config/funcoes.php');
 $appName = get_app_name();
-?>
-<?php
-$base_url = get_base_url();
+$baseUrl = get_base_url();
+$titulo = 'Histórico de Pedidos';
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

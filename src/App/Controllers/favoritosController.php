@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Core\View;
 
-class favoritosController extends Controller
+class FavoritosController extends Controller
 {
 
     public function favoritos()

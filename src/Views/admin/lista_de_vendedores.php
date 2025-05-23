@@ -1,6 +1,7 @@
 <?php
-require_once('../config/funcoes.php');
-require('../config/conexao.php');
+$appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Lista de Vendedores';
 ?>
 <?php
 $base_url = get_base_url();
