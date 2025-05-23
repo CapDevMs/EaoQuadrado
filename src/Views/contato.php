@@ -21,6 +21,23 @@ $titulo = 'Contato';
         // função para adicionar caminho no roadmap (primeiro caminho + segundo nome que irá ficar no roadmap)
         breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/pages/contato.php' => 'Contato'));
         ?>
+        <div class="container">
+            <?php if (isset($error)): ?>
+                    <div class="row">
+                        <div class="alert pb-2" role="alert">
+                            <?= $error; ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+
+                <?php if (isset($mensagem)): ?>
+                    <div class="row">
+                        <div class="success pb-2" role="success">
+                            <?= $mensagem; ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+        </div>
         <div class="container pt-3 row">
             <div class="info col-sm-12 col-md-4 pt-1">
                 <div class="contatos-group">
@@ -51,19 +68,19 @@ $titulo = 'Contato';
                     <div class="input-group col-md3 pb-2">
                         <div class="titulo">
                             <label for="nome">Nome</label>
-                            <input class="caixa" placeholder="John Doe" id="nome"></input>
+                            <input class="caixa" placeholder="John Doe" id="nome" name="nome"></input>
                         </div>
                         <div class="titulo">
                             <label for="email">E-mail</label>
-                            <input class="caixa" id="email" placeholder="johndoe@gmail.com"></input>
+                            <input class="caixa" id="email" name="email" placeholder="johndoe@gmail.com"></input>
                         </div>
                         <div class="titulo">
                             <label for="telefone">Telefone/WhatsApp</label>
-                            <input class="caixa" id="telefone" placeholder="(67) 99999-9999"></input>
+                            <input class="caixa" id="telefone" name="telefone" placeholder="(67) 99999-9999"></input>
                         </div>
                     </div>
 
-                    <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea>
+                    <textarea class="caixa2" id="descricao" name="descricao" placeholder="Sua mensagem" rows="15" required></textarea>
                     <div class="button-container pt-1">
                         <button id="salvar" type="submit">Enviar Mensagem</button>
                     </div>
@@ -75,27 +92,6 @@ $titulo = 'Contato';
     </main>
 
     <?php get_footer() ?>
-    <script>
-
-        /* document.getElementById('salvar').addEventListener('click', function (event) {
-            event.preventDefault();
-
-
-            document.getElementById('modalImagem').style.display = "block";
-        });
-
-
-        document.querySelector('.fechar').addEventListener('click', function () {
-            document.getElementById('modalImagem').style.display = "none";
-        });
-
-
-        window.onclick = function (event) {
-            if (event.target == document.getElementById('modalImagem')) {
-                document.getElementById('modalImagem').style.display = "none";
-            }
-        }; */
-    </script>
 </body>
 <script src="<?= get_base_url(); ?>/assets/js/script.js"></script>
 

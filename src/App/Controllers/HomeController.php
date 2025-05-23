@@ -29,7 +29,16 @@ class HomeController extends Controller
 
     public function enviarContato()
     {
-        mail('admin@admin.com', 'Contato', 'Teste');
+        $nome = $_POST['nome'] ?? '';
+        $email = $_POST['email'] ?? '';
+        $telefone = $_POST['telefone'] ?? '';
+        $descricao = $_POST['descricao'] ?? '';
+        
+        if(empty($nome) or empty($email) or empty($telefone) or empty($descricao))
+        {
+            $error = 'Preencha os campos obrigatórios';
+            return View::render('contato', compact('error'));
+        }
 
         return route('/contato');
 
