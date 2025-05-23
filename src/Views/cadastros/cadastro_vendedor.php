@@ -1,8 +1,8 @@
-<?php 
-    include('../../config/funcoes.php');
+<?php
+$appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Cadastro de Vendedor';
 ?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

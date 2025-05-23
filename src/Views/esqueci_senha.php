@@ -1,4 +1,5 @@
 <?php
+$baseUrl = get_base_url();
 $appName = get_app_name();
 $titulo = 'Esqueci a senha';
 ?>
