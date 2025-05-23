@@ -1,5 +1,6 @@
 <?php
-
+require_once('../config/funcoes.php');
+require('../config/conexao.php');
 ?>
 <?php
 $base_url = get_base_url();

@@ -10,6 +10,7 @@ use App\Controllers\faqController;
 use App\Controllers\favoritosController;
 use App\Controllers\cadastro_clienteController;
 use App\Controllers\CarrinhoController;
+use App\Controllers\CadastrarProdutoVendedorController;
 use Core\Router;
 
 $router = new Router();
@@ -21,6 +22,7 @@ $router->get('/favoritos', favoritosController::class, 'favoritos');
 $router->get('/produto', ProdutoController::class, 'produto');
 $router->get('/cadastro_cliente', cadastro_clienteController::class, 'cadastrosCliente');
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
+$router->get('/cadastrar_produto', CadastrarProdutoVendedorController::class, 'cadastrar_produto');
 $router->get('/logout', AuthController::class, 'logout');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
@@ -32,5 +34,9 @@ $router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
 $router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
 $router->get('/contato', HomeController::class, 'contato');
 $router->post('/contato', HomeController::class, 'enviarContato');
+
+
+
+$router->get('/conta', aprovadosController::class, 'conta');
 
 $router->dispatch();
