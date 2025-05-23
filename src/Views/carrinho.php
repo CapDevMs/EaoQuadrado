@@ -1,6 +1,6 @@
 <?php
 require_once('../config/funcoes.php');
-require('../config/conexao.php');
+$appName = get_app_name();
 ?>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -9,8 +9,7 @@ require('../config/conexao.php');
 <head><title>E ao quadrado</title></head>
 <body>
     <?php get_header() ?>
-    <link rel='stylesheet' href="../assets/css/carrinho_cliente/style.css">
-    <link rel='stylesheet' href="../assets/css/base.css ">
+    <?php get_css(['base','carrinho_cliente/style']) ?>
     <!-- <link rel='stylesheet' href="../assets/css/carrinho_cliente/headerCarrinho.css">
     <link rel='stylesheet' href="../assets/css/carrinho_cliente/footerCarrinho.css"> -->
 
@@ -60,6 +59,6 @@ require('../config/conexao.php');
                 </div>
             </div> 
     <?php get_footer() ?>
-    <script src="../assets/js/carrinho/script.js"></script>
+    <script src="assets/js/carrinho/script.js"></script>
     <!-- <script src="../assets/js/carrinho/apiCarrinho.js"></script> -->
 </body>
