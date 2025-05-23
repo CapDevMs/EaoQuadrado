@@ -53,4 +53,8 @@ $router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
 
 
 
+
+
+$router->get('/conta', aprovadosController::class, 'conta');
+
 $router->dispatch();
