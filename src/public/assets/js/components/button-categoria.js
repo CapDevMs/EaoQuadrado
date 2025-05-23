@@ -1,12 +1,12 @@
 const buttonCategoria = ({ imagem, nome, link }) => {
     return `
-        <a href="${link}">
-            <button class="button" type="button">
-                <div class="container-imagem">
+        <a href="${link}" >
+            <button class="button col-sm-1 col-xl-2" type="button">
+                <div class="container-imagem col-sm-12">
                     <img class="img-CategoriaButton" src="${imagem}" alt="Ícone de ${nome}">
                 </div>
-                <div class="container-nome-produto">
-                    <h3 class="nome-categoria">${nome}</h3>
+                <div class="">
+                    <a class="nome-categoria">${nome}</a>
                 </div>
             </button>
         </a>
