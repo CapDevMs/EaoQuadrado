@@ -11,6 +11,6 @@ const buttonCategoria = ({ imagem, nome, link }) => {
             </button>
         </a>
     `;
-  };
-  
-  export default buttonCategoria;
+};
+
+export default buttonCategoria;

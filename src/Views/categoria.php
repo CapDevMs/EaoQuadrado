@@ -16,15 +16,18 @@ $appName = get_app_name();
 
 <body>
     <?php get_header() ?>
-    <main>
-        <div class="container-video">
+    <div class="container-video">
                 <video autoplay muted loop>
                     <source src="assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">
                 </video>
+    </div>
+    <div class="col-sm-12">
+        <buttonCategoria></buttonCategoria>
+        <div class="containerprodutofav col-sm-10">
+            <cardProduto></cardProduto>
         </div>
-        <div class="card-produto"></div>
 
-    </main>
+    </d>
 
     <script type="module" src="assets/js/categoria.js?<?= time(); ?>" defer></script>
     <?php get_footer() ?>

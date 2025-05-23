@@ -1,13 +1,18 @@
 .container-video {
-  position: fixed;
+  position: relative;
+  margin-bottom: 2%;
+  height: 600px;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  max-height: 60vh;
+  object-fit: cover;
   overflow: hidden;
-  z-index: 0;
 }
 .container-video video {
   display: flex;
   
+  
 }
+.containerprodutofav{
+  display: flex;
+  flex-direction: column;
 
+}

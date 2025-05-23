@@ -1,58 +1,51 @@
 import filtroComponent from "./components/filtro-categoria.js";
 import filtro from "./components/filtro-categoria.js";
+import buttonCategoria from "./components/button-categoria.js"
+import cardProdFavorito from "./components/card-prod-favoritos.js";
 async function carregarPagina() {
     let limpa_cache = Date.now();
 
-    // 1 Importa e monta os botões de categoria
-    let { default: buttonCategoria } = await import(`./components/button-categoria.js?v=${limpa_cache}`);
-
-    const docTag = document.querySelector('.button-categoria');
-
+    const docTagCategoria = document.querySelector('buttonCategoria');
     const categorias = [
         {
-            imagem: 'assets/img/categoria/icone-categoria/camera_icon.svg',
+            imagem: 'assets/img/camera_icon.svg',
             nome: 'Camera',
             link: '#'
         },
         {
-            imagem: 'assets/img/categoria/icone-categoria/cellphone_icon.svg',
+            imagem: 'assets/img/cellphone_icon.svg',
             nome: 'Celulares',
             link: '#'
         },
         {
-            imagem: 'assets/img/categoria/icone-categoria/computer_icon.svg',
+            imagem: 'assets/img/computer_icon.svg',
             nome: 'Computador',
             link: '#'
         },
         {
-            imagem: 'assets/img/categoria/icone-categoria/games_icon.svg',
+            imagem: 'assets/img/games_icon.svg',
             nome: 'Games',
             link: '#'
         },
         {
-            imagem: 'assets/img/categoria/icone-categoria/headphone_icon.svg',
+            imagem: 'assets/img/headphone_icon.svg',
             nome: 'Fone de Ouvido',
             link: '#'
         },
         {
-            imagem: 'assets/img/categoria/icone-categoria/smartwatches_icon.svg',
+            imagem: 'assets/img/smartwatches_icon.svg',
             nome: 'Smartwatch',
             link: '#'
         }
     ];
 
-    if (docTag) {
-        categorias.forEach((categoria) => {
-            docTag.innerHTML += buttonCategoria(categoria);
-        });
-    } else {
-        console.error("Elemento .button-categoria não encontrado.");
-    }
+    categorias.forEach((categoria) => {
+        docTagCategoria.innerHTML += buttonCategoria(categoria);
+    });
 
-    // 2 Depois importa e exibe os produtos
-    let { default: cardProduto } = await import(`./components/card-produto.js?v=${limpa_cache}`);
 
-    const docTagProdutos = document.querySelector('.card-produto');
+
+    const docTagProdutoFav = document.querySelector('cardProduto');
 
     const produtos = [
         {
@@ -113,13 +106,11 @@ async function carregarPagina() {
         }
     ];
 
-    if (docTagProdutos) {
-        produtos.forEach((produto) => {
-            docTagProdutos.innerHTML += cardProduto(produto);
-        });
-    } else {
-        console.error("Elemento .card-produto não encontrado.");
-    }
+    produtos.forEach((produto) => {
+        console.log("s")
+        docTagProdutoFav.innerHTML += cardProdFavorito(produto);
+    });
+
 
     // 3 Ativa botões de like
     const likeBtns = document.querySelectorAll('i.like');
@@ -130,9 +121,9 @@ async function carregarPagina() {
     });
 }
 
-const docTagFiltro = document.querySelector("#filtro");
-const filtroElement = document.createElement("div");
-docTagFiltro.innerHTML = filtroComponent();
+// const docTagFiltro = document.querySelector("#filtro");
+// const filtroElement = document.createElement("div");
+// docTagFiltro.innerHTML = filtroComponent();
 
 
 
