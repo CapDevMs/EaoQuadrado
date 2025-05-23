@@ -11,6 +11,7 @@ use App\Controllers\favoritosController;
 use App\Controllers\cadastro_clienteController;
 use App\Controllers\CarrinhoController;
 use App\Controllers\CadastrarProdutoVendedorController;
+use App\Controllers\CadastroVendedorController;
 use Core\Router;
 
 $router = new Router();
@@ -21,6 +22,7 @@ $router->get('/perfilAdm', meuPerfilAdmController::class, 'perfilAdm');
 $router->get('/favoritos', favoritosController::class, 'favoritos');
 $router->get('/produto', ProdutoController::class, 'produto');
 $router->get('/cadastro_cliente', cadastro_clienteController::class, 'cadastrosCliente');
+$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor');
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
 $router->get('/cadastrar_produto', CadastrarProdutoVendedorController::class, 'cadastrar_produto');
 $router->get('/logout', AuthController::class, 'logout');

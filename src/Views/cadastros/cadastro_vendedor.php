@@ -1,8 +1,3 @@
-<?php 
-    include('../../config/funcoes.php');
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
