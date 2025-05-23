@@ -17,16 +17,9 @@ use Core\Router;
 
 $router = new Router();
 
-$router->get('/', HomeController::class, 'index');
-$router->get('/historico-de-contas', AprovadosController::class, 'historicoDeContas');
-$router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
-$router->get('/favoritos', FavoritosController::class, 'favoritos');
-$router->get('/carrinho', CarrinhoController::class, 'carrinho');
-$router->get('/produto', ProdutoController::class, 'produto');
-$router->get('/cadastro-cliente', CadastroClienteController::class, 'cadastroCliente');
-$router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
-$router->get('/vendas', HistoricoVendasController::class, 'vendas');
-$router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+
+// área comum
+
 $router->get('/logout', AuthController::class, 'logout');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
@@ -36,5 +29,28 @@ $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
 $router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
 $router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
+$router->get('/cadastro-cliente', CadastroClienteController::class, 'cadastroCliente');
+$router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
+$router->get('/produto', ProdutoController::class, 'produto');
+
+
+// área vendedor
+
+$router->get('/vendas', HistoricoVendasController::class, 'vendas');
+$router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+
+// área cliente
+
+$router->get('/favoritos', FavoritosController::class, 'favoritos');
+$router->get('/carrinho', CarrinhoController::class, 'carrinho');
+
+// área adm
+
+$router->get('/', HomeController::class, 'index');
+$router->get('/historico-de-contas', AprovadosController::class, 'historicoDeContas');
+$router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
+
+
+
 
 $router->dispatch();
