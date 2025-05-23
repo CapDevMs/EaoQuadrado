@@ -21,7 +21,7 @@ $appName = get_app_name();
       </asside>
 
       <div class="container-historico-vendas col-sm-12 col-md-12">
-        <h1>Histórico de Vendas</h1>
+        <h1 id="historico-title">Histórico de Vendas</h1>
         <div class="infos-historico">
           <div class="item-info-historico item-info-historico-inicio">Produto</div>
           <div class="item-info-historico">Status </div>
