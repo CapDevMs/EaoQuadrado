@@ -20,6 +20,7 @@ $router->get('/', HomeController::class, 'index');
 $router->get('/historico_de_contas', aprovadosController::class, 'historico_de_contas');
 $router->get('/perfilAdm', meuPerfilAdmController::class, 'perfilAdm');
 $router->get('/favoritos', favoritosController::class, 'favoritos');
+$router->get('/carrinho', CarrinhoController::class, 'carrinho');
 $router->get('/produto', ProdutoController::class, 'produto');
 $router->get('/cadastro_cliente', cadastro_clienteController::class, 'cadastrosCliente');
 $router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor');
