@@ -1,31 +1,32 @@
 <?php
 
-use App\Controllers\aprovadosController;
+use App\Controllers\AprovadosController;
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
 use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
-use App\Controllers\meuPerfilAdmController;
+use App\Controllers\MeuPerfilAdmController;
 use App\Controllers\FaqController;
 use App\Controllers\FavoritosController;
 use App\Controllers\CadastroClienteController;
 use App\Controllers\CarrinhoController;
 use App\Controllers\CadastrarProdutoVendedorController;
 use App\Controllers\CadastroVendedorController;
+use App\Controllers\MinhaLojaController;
 use Core\Router;
 
 $router = new Router();
 
 $router->get('/', HomeController::class, 'index');
-$router->get('/historico_de_contas', aprovadosController::class, 'historico_de_contas');
-$router->get('/perfilAdm', meuPerfilAdmController::class, 'perfilAdm');
+$router->get('/historico-de-contas', AprovadosController::class, 'historicoDeContas');
+$router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
 $router->get('/favoritos', FavoritosController::class, 'favoritos');
 $router->get('/carrinho', CarrinhoController::class, 'carrinho');
 $router->get('/produto', ProdutoController::class, 'produto');
-$router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente');
-$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor');
+$router->get('/cadastro-cliente', CadastroClienteController::class, 'cadastroCliente');
+$router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
-$router->get('/cadastrar_produto', CadastrarProdutoVendedorController::class, 'cadastrar_produto');
+$router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
 $router->get('/logout', AuthController::class, 'logout');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
