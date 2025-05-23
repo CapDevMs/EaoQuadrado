@@ -21,13 +21,20 @@ $appName = get_app_name();
                     <source src="assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">
                 </video>
     </div>
-    <div class="col-sm-12">
-        <buttonCategoria></buttonCategoria>
-        <div class="containerprodutofav col-sm-10">
-            <cardProduto></cardProduto>
+    <div class="container-main col-sm-12">
+        <div class="containerLeft col-sm-1">
+            <div class="filtroCategoria">filtro</div>
+            <!-- <filtroCategoria></filtroCategoria> -->
         </div>
+        <div class="containerRight col-sm-11">
+            <buttonCategoria class="buttonCategoria col-sm-10"></buttonCategoria>
+            <div class="containerprodutofav col-sm-10">
+                <cardProduto class="cardProduto row "></cardProduto>
+            </div>
+        </div>
+        
 
-    </d>
+    </div>
 
     <script type="module" src="assets/js/categoria.js?<?= time(); ?>" defer></script>
     <?php get_footer() ?>
