@@ -33,4 +33,8 @@ $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
 $router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
 $router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
 
+
+
+$router->get('/conta', aprovadosController::class, 'conta');
+
 $router->dispatch();
