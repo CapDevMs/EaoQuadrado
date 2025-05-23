@@ -91,7 +91,7 @@
             </form>
             <div class="botoes-container">
                 <button id="cancelar" type="button">Cancelar</button>
-                <button id="salvar" type="button">Salvar</button> 
+                <button id="salvar" type="button" type="submit">Salvar</button> 
             </div>
             <div id="mensagem-sucesso" style="display: none; color: green; padding: 10px; border: 1px solid green; margin-top: 20px;">
                 Produto salvo com sucesso!
