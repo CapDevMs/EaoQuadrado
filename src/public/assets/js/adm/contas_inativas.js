@@ -26,10 +26,8 @@ function abrirAcordeon(idConta) {
 
 function mudarSeletor(chaveSeletor) {
 
-
     let removeChave = document.querySelector('.seletorAtivo');
 
-    console.log(removeChave)
     removeChave.classList.remove('seletorAtivo');
     removeChave.classList.remove('seletorInativo');
     removeChave.classList.add('seletorInativo');
@@ -38,8 +36,5 @@ function mudarSeletor(chaveSeletor) {
     adicionaChave.classList.remove('seletorAtivo');
     adicionaChave.classList.remove('seletorInativo');
     adicionaChave.classList.add('seletorAtivo');
-
-    
-
 
 };

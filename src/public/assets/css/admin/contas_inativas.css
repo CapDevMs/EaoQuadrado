@@ -48,6 +48,8 @@ body {
     flex-direction: column;
     justify-content: start;
     overflow: auto;
+    padding: 8px;
+    gap: 5px;
 }
 
 .painelCentral {

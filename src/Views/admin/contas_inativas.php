@@ -37,11 +37,11 @@ $base_url = get_base_url();
             </menuLateral>
             <conteudo class='col-md-9 col-12'>
 
-                <seletor class = 'seletor'>
-                    <p class = 'miniFonte seletorBase'>Contas:</p>
-                    <p type = 'button' onclick="mudarSeletor('seletor0')" class = 'miniFonte seletorComponente seletorAtivo' id = 'seletor0'>Todas</p>
-                    <p type = 'button' onclick="mudarSeletor('seletor1')" class = 'miniFonte seletorComponente seletorInativo' id = 'seletor1'>Suspensas</p>
-                    <p type = 'button' onclick="mudarSeletor('seletor2')" class = 'miniFonte seletorComponente seletorInativo' id = 'seletor2'>Desativadas</p>
+                <seletor class='seletor'>
+                    <p class='miniFonte seletorBase'>Contas:</p>
+                    <p type='button' onclick="mudarSeletor('seletor0'); todasContasInativas();" class='miniFonte seletorComponente seletorAtivo' id='seletor0'>Todas</p>
+                    <p type='button' onclick="mudarSeletor('seletor1'); suspensasContasInativas();" class='miniFonte seletorComponente seletorInativo' id='seletor1'>Suspensas</p>
+                    <p type='button' onclick="mudarSeletor('seletor2'); desativadasContasInativas();" class='miniFonte seletorComponente seletorInativo' id='seletor2'>Desativadas</p>
                 </seletor>
                 <painel class='painel painelPrincipal col-md-12'>
 
@@ -50,7 +50,7 @@ $base_url = get_base_url();
                             <div class='painelCinza'>
                                 <div class='blocoReativar subBloco0 col-md-2'>
                                     <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
-                                   </div>
+                                </div>
                                 <div class="blocoNome miniFonte subBloco1">Nome da empresa</div>
 
                                 <div class='col-5  blocoColuna'>
@@ -145,6 +145,8 @@ $base_url = get_base_url();
                     </acordeonDesativado>
 
 
+                   
+
 
 
                 </painel>
@@ -155,8 +157,7 @@ $base_url = get_base_url();
     <?php get_footer() ?>
 </body>
 
-<script src='<?php $base_url; ?>src/public/assets/js/contas_inativas.js'>
-
-</script>
+<script src='<?php $base_url; ?>src/public/assets/js/adm/contas_inativas.js'></script>
+<script src='<?php $base_url; ?>src/public/assets/js/components/componente_contasInativas.js'></script>
 
 </html>
