@@ -9,7 +9,7 @@ $appName = get_app_name();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E ao Quadrado - O melhor E-commerce</title>
     <!-- <title><?= $appName . ' - ' . $titulo ?? '' ?></title> -->
-    <?php get_css(['cliente/categoria']) ?>
+    <?php get_css(['filtro_categoria', 'cliente/categoria']) ?>
     <?php get_css(['base', 'style', 'cliente/categoria']) ?>
     <?php get_css_components() ?>
 </head>
@@ -23,8 +23,31 @@ $appName = get_app_name();
     </div>
     <div class="container-main col-sm-12">
         <div class="containerLeft col-sm-1">
-            <div class="filtroCategoria">filtro</div>
-            <!-- <filtroCategoria></filtroCategoria> -->
+
+            <div class="filtroCategoria row">
+                <h2 class="col-sm-12 mb-1">Marcas</h2>
+                <input class="searchCategoria col-sm-12" type="search" name="" id="" placeholder="Buscar Produto">
+                <h2 class="price col-sm-12 ml-4">Preço</h2>
+                
+                <div class="minCategoria col-sm-6">
+                    <label for="min">Minimo</label>
+                    <input class="numberInput" type="number" id=min">
+                </div>
+                <div class="maxCategoria col-sm-6">
+                    <label for="max">Maximo</label>
+                    <input class="numberInput" type="number" id="max">
+                </div>
+                <div class="row">
+                    <h3 class="categoriasFiltro col-sm-12">Categorias</h3>
+                    <a class="categoriasFiltro col-sm-12" href="">Celulares</a>
+                    <a class="categoriasFiltro col-sm-12" href=""></a>Computadores</a>
+                    <a class="categoriasFiltro col-sm-12" href=""></a>Smartwatches</a>
+                    <a class="categoriasFiltro col-sm-12" href=""></a>Câmera</a>
+                    <a class="categoriasFiltro col-sm-12" href=""></a>Fones De Ouvido</a>
+                    <a class="categoriasFiltro col-sm-12" href=""></a>Games</a>
+                </div>
+                
+            </div>
         </div>
         <div class="containerRight col-sm-11">
             <buttonCategoria class="buttonCategoria col-sm-9"></buttonCategoria>

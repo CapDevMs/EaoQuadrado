@@ -1,0 +1,47 @@
+
+.containerLeft{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.searchCategoria {
+    border-radius: 15px;
+    color: #000;
+    background-color: #BFC2C5;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.price {
+    margin-top: 5%;
+}
+
+.filtroCategoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtroCategoria > h2 {
+    font-size: 18px;
+}
+
+.numberInput {
+    border-radius: 15px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.categoriasFiltro{
+    font-size: 14px;
+    white-space: nowrap;
+}
