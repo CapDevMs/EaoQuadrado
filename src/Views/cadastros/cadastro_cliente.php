@@ -1,8 +1,8 @@
 <?php 
-    include('../../config/funcoes.php');
+$appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Cadastro de Cliente';
 ?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,7 +23,7 @@
         <div class="register_client">
             <h2>Cadastro de Cliente</h2>
             <div class="form-container">
-                <img src="../../assets/img/foto_cliente.png" alt="foto do cliente" class="client-image">
+                <img src="src\public\assets\img\foto_cliente.png" alt="foto do cliente" class="client-image">
                 
                 <form class="form" id="vendedor_form" action="#">
  
