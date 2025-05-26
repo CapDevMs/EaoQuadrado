@@ -13,9 +13,8 @@
         <label for="item2">Colaboradores</label>
         <div class="content">
             <a href="<?= get_base_url(); ?>/pages/admin/validacaoNovoVendedor.php" class="<?= $page == 'validacao_colaborador' ? 'ativo' : '' ?>">Validar Novo Colaborador</a>
-            <a href="<?= get_base_url(); ?>#" class="<?= $page == '#' ? 'ativo' : '' ?>">Colaboradores Aprovados</a>
-            <a href="<?= get_base_url(); ?>#" class="<?= $page == '#' ? 'ativo' : '' ?>">Colaboradores Reprovados</a>
-            <a id="pagina_atual" href="<?= get_base_url(); ?>#" class="<?= $page == '#' ? 'ativo' : '' ?>">Listar Colaboradores Ativos</a>
+            <a href="<?= get_base_url(); ?>/views/admin/contas_aprovadas_reprovadas " class="<?= $page == 'contas_aprovadas_reprovadas' ? 'ativo' : '' ?>">histórico de Contas</a>
+            <a href="<?= get_base_url(); ?>#" class="<?= $page == '#' ? 'ativo' : '' ?>">Listar Colaboradores Ativos</a>
             <a href="<?= get_base_url(); ?>/pages/admin/suporte_ao_colaborador" class="<?= $page == 'suporte_ao_colaborador' ? 'ativo' : '' ?>">Suporte ao Colaborador</a>
         </div>
     </li>

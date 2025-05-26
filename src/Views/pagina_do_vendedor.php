@@ -1,6 +1,7 @@
 <?php
-include(__DIR__ . '/../config/funcoes.php');
 $appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Página do Vendedor';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

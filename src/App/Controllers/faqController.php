@@ -4,11 +4,11 @@ namespace App\Controllers;
 
 use Core\View;
 
-class faqController extends Controller
+class FaqController extends Controller
 {
 
     public function faq()
     {
-        View::render('cadastros/faq');
+        View::render('faq');
     }
 }
