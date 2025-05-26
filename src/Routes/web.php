@@ -10,7 +10,7 @@ use App\Controllers\faqController;
 use App\Controllers\favoritosController;
 use App\Controllers\cadastro_clienteController;
 use App\Controllers\CarrinhoController;
-use App\Controllers\cadastrar_prod_vendController;
+use App\Controllers\CadastrarProdVendController;
 use Core\Router;
 
 $router = new Router();
@@ -31,6 +31,6 @@ $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
 $router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
 $router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
-$router->get('/cadastrar_produto_vendedor', cadastrar_prod_vendController::class, 'cadastroProdutoVendedor');
+$router->get('/cadastrar_produto_vendedor',CadastrarProdVendController::class, 'cadastroProdutoVendedor');
 
 $router->dispatch();

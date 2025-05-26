@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['vendedor/cadastrar_produto_vendedor']) ?>
+    <?php get_css(['cadastrar_prouduto_vendedor']) ?>
 </head>
 <body>
     <?php get_header() ?>
@@ -32,11 +32,11 @@
     
         <?php get_sidebar_vendedor('cadastrar_produtos'); ?>
     
-            <form action="#" method="post">      
+            <form action="/cadastrar_prod_vend/salvarProduto" method="post" enctype="multipart/form-data">      
                 <div class="linha-horizontal">
                     <div class="linha-1">
                         <label for="nome-produto">Nome do Produto</label><br>
-                        <textarea id="nome-produto" name="nome-produto" rows="2" placeholder="Programming Mug"></textarea><br><br>
+                        <textarea id="nome-produto" name="nome" rows="2" placeholder="Programming Mug"></textarea><br><br>
                     </div>
                     
                     <div class="linha-1">
@@ -59,13 +59,19 @@
     
                 <div class="linha-horizontal">
                     <div class="linha-3">
-                        <label for="categoria-produto">Categoria do Produto</label><br>
-                        <select id="categoria-produto" name="categoria-produto"  rows="2" required></select>
+                        <select id="categoria-produto" name="categoria-produto" required>
+                            <option value="">Selecione uma categoria</option>
+                                <?php foreach ($categorias as $cat): ?>
+                                <option value="<?= $cat['id'] ?>" <?= (isset($dados['categoria-produto']) && $dados['categoria-produto'] == $cat['id']) ? 'selected' : '' ?>>
+                                <?= htmlspecialchars($cat['nome']) ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
                     </div>
     
                     <div class="linha-3">
                         <label for="preco-produto" id="label-preco">Preço do Produto</label><br>
-                        <textarea id="preco-produto" name="preco-produto" rows="2"></textarea><br><br>
+                        <textarea id="preco-produto" name="preco" rows="2"></textarea><br><br>
                     </div>
     
                     <div class="linha-3">
@@ -80,7 +86,7 @@
                 </div>
     
                 <label for="arquivo">Inserir Imagens</label><br>
-                <input type="file" id="arquivo" name="arquivo" accept="image/*" multiple><br><br>
+                <input type="file" id="arquivo" name="arquivo[]" accept="image/*" multiple><br><br>
 
                 <div id="image-preview-container" class="image-preview-container">
                 </div>
@@ -88,11 +94,11 @@
                 <div class="previas">
                     
                 </div>
+                <div class="botoes-container">
+                    <button id="cancelar" type="button">Cancelar</button>
+                    <button id="salvar" type="submit">Salvar</button> 
+                </div>
             </form>
-            <div class="botoes-container">
-                <button id="cancelar" type="button">Cancelar</button>
-                <button id="salvar" type="button" type="submit">Salvar</button> 
-            </div>
             <div id="mensagem-sucesso" style="display: none; color: green; padding: 10px; border: 1px solid green; margin-top: 20px;">
                 Produto salvo com sucesso!
             </div>
