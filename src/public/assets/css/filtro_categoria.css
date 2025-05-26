@@ -5,9 +5,10 @@
 }
 
 .searchCategoria {
+    border: none;
     border-radius: 15px;
     color: #000;
-    background-color: #BFC2C5;
+    background-color: var(--cor-fundo-area-pesquisa);
     width: 100%;
     text-align: center;
     padding: 10px;
@@ -21,6 +22,11 @@
 }
 
 .filtroCategoria{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +48,88 @@
 }
 
 .categoriasFiltro{
-    font-size: 14px;
+    text-decoration: none;
+    color: black;
     white-space: nowrap;
+    width: max-content;
+    margin-bottom: 2%;
 }
+
+.radioAvaliation {
+    width: 20px;
+    height: auto;
+    border-radius: 20%;
+}
+
+.checkbox-radio {
+position: relative;
+display: inline-block;
+width: 20px;
+height: 20px;
+}
+
+.checkbox-radio input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+border: 2px solid var(--cor-principal);
+cursor: pointer;
+}
+
+.checkbox-radio input:checked ~ .checkmark::after {
+content: "";
+position: absolute;
+top: 3px;
+left: 3px;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background: var(--cor-principal);
+}
+
+.inputAvaliation {
+    align-items: center;
+}
+
+.vendedoresAvaliation {
+    display: grid;
+    row-gap: 10px;
+}
+
+.vendedoresAvaliation > h2 {
+    font-size: 18px;
+}
+
+.inputTodos {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .fa-star,.icone-star {
+        width: 12px !important; 
+        font-size: 12px !important;
+    }
+
+    .checkmark {
+        height: 16px;
+        width: 16px;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .containerLeft {
+        display: none;
+    }
+}
+
