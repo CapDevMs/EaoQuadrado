@@ -38,6 +38,8 @@ class Produto extends Model
         }
 }
 
+
+
 // <?php
 
 // namespace App\Models;
