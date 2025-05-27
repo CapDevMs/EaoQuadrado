@@ -14,13 +14,10 @@
 .containerprodutofav{
   display: flex;
   flex-direction: column;
-  
-
 }
 
 .containerLeft{
   display: flex;
-
 }
 .container-main{
   display: flex;
