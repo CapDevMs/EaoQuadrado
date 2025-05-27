@@ -48,11 +48,6 @@ function get_sidebar_vendedor($page) {
     include_once(__DIR__ . '/../components/sidebar_vendedor.php');
 }
 
-<<<<<<< HEAD
-
-function get_sidebar_adm($page) {
-    include_once(__DIR__ . '/../components/sidebar-adm.php');
-=======
 function get_sidebar_cliente($page) {
     include_once(__DIR__ . '/../components/sidebar_cliente.php');
 }
@@ -68,5 +63,4 @@ function logout() {
         session_destroy();
     }
     header('location: ' .  $route);
->>>>>>> e8b59d58cd7a8ee35f8f089d36ddb50f8a9b5771
 }

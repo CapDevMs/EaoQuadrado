@@ -3,11 +3,8 @@
 use App\Controllers\AprovadosController;
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
-<<<<<<< HEAD
-use App\Controllers\aberturaChamadosController;
-=======
+use App\Controllers\AberturaChamadosController;
 use App\Controllers\HistoricoVendasController;
->>>>>>> e8b59d58cd7a8ee35f8f089d36ddb50f8a9b5771
 use App\Controllers\ProdutoController;
 use App\Controllers\MeuPerfilAdmController;
 use App\Controllers\FaqController;
@@ -21,15 +18,12 @@ use Core\Router;
 
 $router = new Router();
 
-<<<<<<< HEAD
 $router->get('/', HomeController::class, 'index');
-$router->get('/chamados', aberturaChamadosController::class, 'chamados');
+$router->get('/chamados', AberturaChamadosController::class, 'chamados');
 $router->get('/produto', ProdutoController::class, 'produto');
-=======
 
 // área comum
 
->>>>>>> e8b59d58cd7a8ee35f8f089d36ddb50f8a9b5771
 $router->get('/logout', AuthController::class, 'logout');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
