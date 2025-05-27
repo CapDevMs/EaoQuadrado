@@ -9,7 +9,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['cadastrar_prouduto_vendedor']) ?>
+    <?php get_css(['vendedor/cadastrar_produto_vendedor']) ?>
+    <?php get_css_components() ?>
+
 </head>
 <body>
     <?php get_header() ?>
@@ -42,25 +44,25 @@
                     
                     <div class="linha-1">
                         <label for="link-produto">Link do Produto</label><br>
-                        <textarea id="link-produto" name="link-produto" placeholder="www.exemplo.com.br" rows="2" required></textarea><br><br>
+                        <textarea id="link-produto" name="link" placeholder="www.exemplo.com.br" rows="2" required></textarea><br><br>
                     </div>
                 </div>
     
                 <div class="linha-horizontal">
                     <div class="linha-2">
                         <label for="marca-produto">Marca do Produto</label><br>
-                        <textarea id="marca-produto" name="marca-produto" placeholder="BR Tech Sistemas" rows="2" required></textarea><br><br>
+                        <textarea id="marca-produto" name="marca" placeholder="BR Tech Sistemas" rows="2" required></textarea><br><br>
                     </div>
                     
                     <div class="linha-2">
                         <label for="modelo-produto">Modelo do Produto</label><br>
-                        <textarea id="modelo-produto" name="modelo-produto" placeholder="Caneca" rows="2" required></textarea><br><br>
+                        <textarea id="modelo-produto" name="modelo" placeholder="Caneca" rows="2" required></textarea><br><br>
                     </div>
                 </div>
     
                 <div class="linha-horizontal">
                     <div class="linha-3">
-                        <select id="categoria-produto" name="categoria-produto" required>
+                        <select id="id_produto" name="categoria-produto" required>
                             <option value="">Selecione uma categoria</option>
                                 <?php foreach ($categorias as $cat): ?>
                                 <option value="<?= $cat['id'] ?>" <?= (isset($dados['categoria-produto']) && $dados['categoria-produto'] == $cat['id']) ? 'selected' : '' ?>>
@@ -77,13 +79,13 @@
     
                     <div class="linha-3">
                         <label id="label-quantidade-produto">Quantidade</label><br>
-                        <input type="number" id="quantidade-produto"  name="quantidade-produto" min="0" required>
+                        <input type="number" id="quantidade-produto"  name="quantidade" min="0" required>
                     </div>
                 </div>
     
                 <div class="linha-1">
                     <label for="descricao-produto">Descrição</label><br>
-                    <textarea id="descricao-produto" name="descricao-produto" rows="15" required></textarea><br><br>
+                    <textarea id="descricao-produto" name="descricao" rows="15" required></textarea><br><br>
                 </div>
     
                 <label for="arquivo">Inserir Imagens</label><br>

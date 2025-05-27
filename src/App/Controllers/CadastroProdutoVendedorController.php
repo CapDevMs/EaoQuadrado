@@ -6,14 +6,18 @@ use Core\View;
 use App\Models\Produto;
 use App\Models\Categoria;
 
-class CadastrarProdVendController extends Controller
+class CadastroProdutoVendedorController extends Controller
 {
-    public function cadastroProdutoVendedor()
-    {
-        $categoriaModel = new \App\Models\Categoria();
-        $categorias = $categoriaModel->getCategorias();
+    public function cadastrarProduto()
+    {   
+        
+        echo("Oi");
+        // var_dump($categoriaModel);
+        // $categorias = $categoriaModel->getCategorias();
+        // var_dump($categorias);
         View::render('vendedor/cadastrar_produto_vendedor', ['categorias' => $categorias]);
     }
+
 
     public function salvarProduto() 
     {

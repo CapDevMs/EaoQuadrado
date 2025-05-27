@@ -10,7 +10,7 @@ use App\Controllers\FaqController;
 use App\Controllers\FavoritosController;
 use App\Controllers\CadastroClienteController;
 use App\Controllers\CarrinhoController;
-use App\Controllers\CadastrarProdutoVendedorController;
+use App\Controllers\CadastroProdutoVendedorController;
 use App\Controllers\CadastroVendedorController;
 use App\Controllers\MinhaLojaController;
 use Core\Router;
@@ -37,7 +37,7 @@ $router->get('/produto', ProdutoController::class, 'produto');
 // área vendedor
 
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
-$router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+$router->get('/cadastro-produto', CadastroProdutoVendedorController::class, 'cadastrarProduto');
 
 // área cliente
 
