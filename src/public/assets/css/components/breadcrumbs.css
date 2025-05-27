@@ -1,0 +1,19 @@
+@import url(assets/css/base.css);
+.breadcrumb {
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--cor-texto-deselecionado);
+  margin: 0 5px;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.breadcrumb span {
+  color: var(--cor-texto-deselecionado);
+  margin: 0 5px;
+}

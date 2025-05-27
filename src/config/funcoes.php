@@ -16,6 +16,9 @@ function get_base_head() {
 function get_header(){
     include_once(__DIR__ . '/../components/header.php');
 }
+function get_breadcrumbs(){
+    include_once(__DIR__ . '/../components/breadcrumbs.php');
+}
 
 function get_footer(){
     include_once(__DIR__ . '/../components/footer.php');
@@ -42,18 +45,34 @@ function get_css_components() {
 }
 
 function get_sidebar_vendedor($page) {
-    include_once(__DIR__ . '/../components/sidebar.php');
+    include_once(__DIR__ . '/../components/sidebar_vendedor.php');
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 function get_sidebar_adm($page) {
     include_once(__DIR__ . '/../components/sidebar-adm.php');
 =======
-function route($route = '/') {
-    if (!empty($_ENV['PREFIX'])){
-        $route = $_ENV['PREFIX'] . $route;
+=======
+>>>>>>> b011d5c2f3352e708a6ed12531a91d48ab4bb3a4
+function get_sidebar_cliente($page) {
+    include_once(__DIR__ . '/../components/sidebar_cliente.php');
+}
+
+function get_sidebar_admin($page) {
+    include_once(__DIR__ . '/../components/sidebar_adm.php');
+}
+
+
+function logout() {
+    if (isset($_SESSION['user'])) {
+        unset($_SESSION['user']);
+        session_destroy();
     }
     header('location: ' .  $route);
->>>>>>> ae4f3d4a15596698514951070fdcfb4d69a7e49b
+<<<<<<< HEAD
+>>>>>>> 7dc0a3cfe656848938c26b9789e05d50b3769615
+=======
+>>>>>>> b011d5c2f3352e708a6ed12531a91d48ab4bb3a4
 }

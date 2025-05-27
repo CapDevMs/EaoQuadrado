@@ -1,21 +1,27 @@
 <?php
-    include('../../config/funcoes.php');
-    $appName = get_app_name();
+$appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Contato';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <?php get_css(['style', 'cadastros/contato']) ?>
 </head>
+
 <body>
     <?php get_header() ?>
+    <?php get_breadcrumbs()?>
 
     <main>
-        <!-- roadmap -->
-
+        <?php
+        // função para adicionar caminho no roadmap (primeiro caminho + segundo nome que irá ficar no roadmap)
+        breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/pages/contato.php' => 'Contato'));
+        ?>
         <div class="container pt-3 row">
             <div class="info col-sm-12 col-md-4 pt-1">
                 <div class="contatos-group">
@@ -38,15 +44,15 @@
                 </div>
             </div>
 
-            
+
             <form action="#" class="message col-sm-12 col-md-8" method="post">
 
                 <div class="caixa-container row">
-                    
+
                     <div class="input-group col-md3 pb-2">
                         <div class="titulo">
                             <label for="nome">Nome</label>
-                            <input class="caixa" placeholder="John Doe" id="nome" ></input>
+                            <input class="caixa" placeholder="John Doe" id="nome"></input>
                         </div>
                         <div class="titulo">
                             <label for="email">E-mail</label>
@@ -65,27 +71,27 @@
                 </div>
             </form>
         </div>
-                
-            
+
+
     </main>
 
     <?php get_footer() ?>
     <script>
-        
-        document.getElementById('salvar').addEventListener('click', function(event) {
-            event.preventDefault(); 
 
-            
+        document.getElementById('salvar').addEventListener('click', function (event) {
+            event.preventDefault();
+
+
             document.getElementById('modalImagem').style.display = "block";
         });
 
-        
-        document.querySelector('.fechar').addEventListener('click', function() {
+
+        document.querySelector('.fechar').addEventListener('click', function () {
             document.getElementById('modalImagem').style.display = "none";
         });
 
-        
-        window.onclick = function(event) {
+
+        window.onclick = function (event) {
             if (event.target == document.getElementById('modalImagem')) {
                 document.getElementById('modalImagem').style.display = "none";
             }
@@ -93,4 +99,5 @@
     </script>
 </body>
 <script src="../../assets/js/script.js"></script>
+
 </html>

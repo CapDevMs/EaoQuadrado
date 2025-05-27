@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/cadastrar_produto_vendedor.css">
+    <title>Eao Quadrado</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#">
+                    <img src="../../assets/img/logo.png" class="logo" alt="Logo">
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="O que você procura hoje?">
+                <img src="../../assets/img/pesquisar.svg" class="search-logo" alt="Pesquisar">
+            </div>
+            <ul class="menu-opcoes">
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/pessoa.svg" alt="Pessoa">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/carrinho.svg" alt="Carrinho">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/informacao.svg" alt="Informações">
+                    </a>
+                </li>
+                <li class="menu-opcoes-icons">
+                    <a href="#">
+                        <img src="../../assets/img/suporte.svg" alt="suporte">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="sub-menu">
+            <a href="link-para-conta" id="conta">
+                <h6>Conta</h6>
+            </a>
+            <span id="separator">/</span>
+            <a href="link-para-minha-conta" id="minha-conta">
+                <h6>Minha Conta</h6>
+            </a>
+            <span id="separator">/</span>
+            <h6>Cadastrar Produto</h6>
+        </div>
+    
+        <div id="titulo">Cadastrar Produto</div>
+    
+        <div id="menu-lateral">
+            <h3>Gerenciar Minha Conta</h3>
+            <h1>Meu Perfil</h1>
+            <h1>Minha Loja</h1>
+            <h1 class="ativa" id="cadastrar-produtos">Cadastrar Produtos</h1>
+            <br>
+            <h3>Vendas</h3>
+            <h1>Histórico de Vendas</h1>
+            <h1>Trocas/Cancelamentos</h1>
+            <h1>Gerenciamento de estoque</h1>
+        </div>
+    
+        <div id="painel">
+            <form action="#" method="post">      
+                <div class="linha-horizontal">
+                    <div class="linha-1">
+                        <label for="nome-produto">Nome do Produto</label><br>
+                        <textarea id="nome-produto" name="nome-produto" rows="2" required></textarea><br><br>
+                    </div>
+                    
+                    <div class="linha-1">
+                        <label for="link-produto">Link do Produto</label><br>
+                        <textarea id="link-produto" name="link-produto" rows="2" required></textarea><br><br>
+                    </div>
+                </div>
+    
+                <div class="linha-horizontal">
+                    <div class="linha-1">
+                        <label for="marca-produto">Marca do Produto</label><br>
+                        <textarea id="marca-produto" name="marca-produto" rows="2" required></textarea><br><br>
+                    </div>
+                    
+                    <div class="linha-2">
+                        <label for="modelo-produto">Modelo do Produto</label><br>
+                        <textarea id="modelo-produto" name="modelo-produto" rows="2" required></textarea><br><br>
+                    </div>
+                </div>
+    
+                <div class="linha-horizontal">
+                    <div class="linha-3">
+                        <label for="categoria-produto">Categoria do Produto</label><br>
+                        <textarea id="categoria-produto" name="categoria-produto" rows="2" required></textarea>
+                    </div>
+    
+                    <div class="linha-3">
+                        <label for="preco-produto">Preço do Produto</label><br>
+                        <textarea id="preco-produto" name="preco-produto" rows="2" required></textarea><br><br>
+                    </div>
+    
+                    <div class="linha-3">
+                        <label id="quantidade-produto">Quantidade</label><br>
+                        <input type="number" id="quantidade-produto" name="quantidade-produto" min="0" required>
+                    </div>
+                </div>
+    
+                <div class="linha-1">
+                    <label for="descricao-produto">Descrição</label><br>
+                    <textarea id="descricao-produto" name="descricao-produto" rows="4" required></textarea><br><br>
+                </div>
+    
+                <label for="arquivo">Inserir Imagens</label><br>
+                <input type="file" id="arquivo" name="arquivo" accept="image/*" multiple><br><br>
+    
+                <div id="image-preview-container" class="image-preview-container">
+                </div>
+            </form>
+            <div class="botoes-container">
+                <button id="cancelar" type="button">Cancelar</button>
+                <button id="salvar" type="submit">Salvar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Suporte</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Senac Hub Academy</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">eaoquadado@gmail.com</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">+55 67 99999-9999</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">R. do Parque, 75 - Centro Campo Grande - MS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Conta</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Minha Conta</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Entre/Cadastre</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Carrinho</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Lista de Desejos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lista">
+                <div class="footer-links-title">
+                    <p>Acesso</p>
+                </div>
+                <div>
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Nossa Política</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Termos de Uso</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">FAQ</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a href="#" class="footer-links-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
