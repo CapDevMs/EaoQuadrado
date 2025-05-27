@@ -1,3 +1,4 @@
+
 function fecharAcordeon(idConta) {
 
     let var1 = document.getElementById(idConta);
