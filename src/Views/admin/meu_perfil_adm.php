@@ -1,5 +1,7 @@
 <?php
     $appName = get_app_name();
+    $baseUrl = get_base_url();
+    $titulo = 'Meu Perfil';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

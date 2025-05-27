@@ -1,6 +1,7 @@
 <?php
-require_once('../config/funcoes.php');
 $appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Carrinho';
 ?>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">

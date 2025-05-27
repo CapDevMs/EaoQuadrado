@@ -4,10 +4,10 @@ namespace App\Controllers;
 
 use Core\View;
 
-class cadastro_clienteController extends Controller
+class CadastroClienteController extends Controller
 {
 
-    public function cadastrosCliente()
+    public function cadastroCliente()
     {
         View::render('cadastros/cadastro_cliente');
     }
