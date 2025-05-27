@@ -4,11 +4,16 @@ use App\Controllers\AprovadosController;
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Controllers\aberturaChamadosController;
 =======
 use App\Controllers\categoriaController;
 use App\Controllers\HistoricoVendasController;
 >>>>>>> 7dc0a3cfe656848938c26b9789e05d50b3769615
+=======
+use App\Controllers\AberturaChamadosController;
+use App\Controllers\HistoricoVendasController;
+>>>>>>> b011d5c2f3352e708a6ed12531a91d48ab4bb3a4
 use App\Controllers\ProdutoController;
 use App\Controllers\MeuPerfilAdmController;
 use App\Controllers\FaqController;
@@ -22,6 +27,7 @@ use Core\Router;
 
 $router = new Router();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 $router->get('/', HomeController::class, 'index');
 <<<<<<< HEAD
@@ -40,6 +46,14 @@ $router->get('/cadastro_cliente', cadastro_clienteController::class, 'cadastrosC
 // área comum
 
 >>>>>>> e8b59d58cd7a8ee35f8f089d36ddb50f8a9b5771
+=======
+$router->get('/', HomeController::class, 'index');
+$router->get('/chamados', AberturaChamadosController::class, 'chamados');
+$router->get('/produto', ProdutoController::class, 'produto');
+
+// área comum
+
+>>>>>>> b011d5c2f3352e708a6ed12531a91d48ab4bb3a4
 $router->get('/logout', AuthController::class, 'logout');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');

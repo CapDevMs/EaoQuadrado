@@ -4,11 +4,11 @@ namespace App\Controllers;
 
 use Core\View;
 
-class aberturaChamadosController extends Controller
+class AberturaChamadosController extends Controller
 {
 
     public function chamados()
     {
-        View::render('admin.abertura-de-chamados');
+        View::render('admin/abertura-de-chamados');
     }
 }
