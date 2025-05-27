@@ -25,7 +25,7 @@ $appName = get_app_name();
     <div class="container-main col-sm-10 ">
     <div class="containerLeft col-xl-3">
         <div class="filtroCategoria">filtro</div>
-                <!-- <filtroCategoria></filtroCategoria> -->
+            <filtroComponent></filtroComponent>
         </div>
         <div class="containerCategoria row col-sm-12">
             <buttonCategoria class="buttonCategoria"></buttonCategoria>

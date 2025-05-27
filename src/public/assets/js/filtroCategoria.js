@@ -1,15 +1,15 @@
-import listaVendedores from './components/filtro-categoria.js';
+import filtroComponent from './components/filtro-categoria.js';
 
 const div = document.querySelector('filtroComponent');
 
 
-let Vendedores = [
+let Categorias = [
     {
         'categoria': ['Celulares', 'Computadores', 'Smartwatches', 'Câmera', 'Fones de ouvido','Games']
     }
 ]
 
-Vendedores.forEach(element => {
-    div.innerHTML += listaVendedores(element);
+Categorias.forEach(element => {
+    div.innerHTML += filtroComponent(element);
 });
 

@@ -1,4 +1,4 @@
-const filtroComponent = () => {
+const filtroComponent = (categoria) => {
   return `
             <div class="filtroCategoria col-sm-12 ml-3">
                 <h2 class="col-sm-12 mb-1">Marcas</h2>
@@ -17,12 +17,12 @@ const filtroComponent = () => {
 
                 <div class="row">
                     <h3 class="categoriasFiltro mb-1">Categorias</h3>
-                    <a class="categoriasFiltro" href="#">Celulares</a>
-                    <a class="categoriasFiltro" href="#">Computadores</a>
-                    <a class="categoriasFiltro" href="#">Smartwatches</a>
-                    <a class="categoriasFiltro" href="#">Câmera</a>
-                    <a class="categoriasFiltro" href="#">Fones De Ouvido</a>
-                    <a class="categoriasFiltro" href="#">Games</a>
+                    <a class="categoriasFiltro" href="#">${categoria}</a>
+                    <a class="categoriasFiltro" href="#"${categoria}</a>
+                    <a class="categoriasFiltro" href="#">${categoria}s</a>
+                    <a class="categoriasFiltro" href="#">${categoria}</a>
+                    <a class="categoriasFiltro" href="#">${categoria}</a>
+                    <a class="categoriasFiltro" href="#">${categoria}</a>
                 </div>
 
                 <div class="vendedoresAvaliation">
