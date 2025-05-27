@@ -1,86 +1,111 @@
 const filtroComponent = () => {
   return `
-    <div class="content-container">
-                <div class="sidebar">
-                    <div class="marcas_preco">
-                        <h1 class="marcas">Marcas</h1>
-                        <div class="search-group">
-                            <input class="search-bar-marcas" placeholder="Buscar Produtos">
-                            <button class="search-marca" alt="Pesquisar_Marca">
-                            </button>
-                        </div>
-                        <h1 class="preco">Preço</h1>
-                        <div class="price-range-container">
-                            <div class="price-input-group">
-                                <label for="minimo" class="label-min_max">Mínimo</label>
-                                <input type="text" id="minimo" class="min_max">
-                            </div>
-                            <div class="price-input-group">
-                                <label for="maximo" class="label-min_max">Máximo</label>
-                                <input type="text" id="maximo" class="min_max">
-                            </div>
-                        </div>
+            <div class="filtroCategoria col-sm-12 ml-3">
+                <h2 class="col-sm-12 mb-1">Marcas</h2>
+                <input class="searchCategoria col-sm-12 mb-1" type="search" name="" id="" placeholder="Buscar Produto">
+                <h2 class="price mb-1">Preço</h2>
+                <div class="priceCategoria col-sm-12 row">
+                    <div class="mediaCategoria col-sm-12 col-lg-6 mb-1">
+                        <label for="min">Minimo</label>
+                        <input class="numberInput" type="number" id=min">
                     </div>
-                    <div class="sidebar__categoria">
-                        <div class="sidebar__navigation">
-                            <h3>Categorias</h3>
-                            <a href="">Celulares</a>
-                            <a href="">Computadores</a>
-                            <a href="">Smartwatches</a>
-                            <a href="">Câmera</a>
-                            <a href="">Fones de Ouvido</a>
-                            <a href="">Games</a>
-                        </div>
-                    </div>
+                    <div class="mediaCategoria col-sm-12 col-lg-6 mb-1">
+                        <label for="max">Maximo</label>
+                        <input class="numberInput" type="number" id="max">
+                    </div> 
+                </div>
 
-                    <!-- Avaliações -->
-                    <h1 class="titulo">Avaliação dos Vendedores</h1>
-                    <div class="checkbox-container">        
-                        <label for="tudo"><input type="checkbox" name="tudo" id="tudo">Tudo</label>
-                        <label for="star5">
-                            <input type="checkbox" name="5-star" id="star5">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                <div class="row">
+                    <h3 class="categoriasFiltro mb-1">Categorias</h3>
+                    <a class="categoriasFiltro" href="#">Celulares</a>
+                    <a class="categoriasFiltro" href="#">Computadores</a>
+                    <a class="categoriasFiltro" href="#">Smartwatches</a>
+                    <a class="categoriasFiltro" href="#">Câmera</a>
+                    <a class="categoriasFiltro" href="#">Fones De Ouvido</a>
+                    <a class="categoriasFiltro" href="#">Games</a>
+                </div>
+
+                <div class="vendedoresAvaliation">
+                    <h2>Avaliação Dos Vendedores</h2>
+                    <div class="inputTodos row">
+                        <label class="checkbox-radio col-sm-2">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
                         </label>
-                        <label for="star4">
-                        <input type="checkbox" name="4-star" id="star4">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </label>   
-                        <label for="star3">
-                            <input type="checkbox" name="3-star" id="star3">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </label>   
-                        <label for="star2">
-                            <input type="checkbox" name="2-star" id="star2">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </label>                    
-                        <label for="star1">
-                            <input type="checkbox" name="1-star" id="star1">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                        <p class="col-sm-10">Todos</p>
+                    </div>
+                    <div class="inputAvaliation row">
+                        <label class="checkbox-radio col-sm-2">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
                         </label>
+                        <div class="starsFiltro col-sm-9">
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                        </div>
+
+                    </div>
+                    <div class="inputAvaliation row">
+                        <label class="checkbox-radio col-sm-2">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="starsFiltro col-sm-10">
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                    </div>
+                    <div class="inputAvaliation row">
+                        <label class="checkbox-radio col-sm-2">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="starsFiltro col-sm-10">
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="inputAvaliation row">
+                        <label class="checkbox-radio col-sm-2">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="starsFiltro col-sm-10">
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="inputAvaliation row">
+                        <label class="checkbox-radio col-sm-2">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="starsFiltro col-sm-10">
+                            <i class="fa fa-star icone-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>                            
+                        </div>
+
                     </div>
                 </div>
+                
+                
             </div>
-        </div>
     `;
 };
 
