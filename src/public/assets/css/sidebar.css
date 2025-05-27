@@ -1,4 +1,6 @@
 /*MENU LATERAL DEVE TER  "col-sm-2"  DE ESPAÇO*/
+@import url("base.css");
+
 
 .menu-sidebar > li {
     margin-bottom: 1em;
@@ -52,7 +54,11 @@ input[type="checkbox"]:checked + label + .content {
     color: var(--cor-principal);
 }
 
-@media (max-width: 768px){
+.ativo {
+    color: var(--cor-secundaria) !important;
+}
+
+@media (max-width: 767px){
     .menu-sidebar{
         display: none;
     }

@@ -14,28 +14,76 @@
 .containerprodutofav{
   display: flex;
   flex-direction: column;
-
 }
 
+.containerLeft{
+  display: flex;
+}
 .container-main{
   display: flex;
+<<<<<<< HEAD
   flex-direction: row;
   margin: 0 auto;
+=======
+  flex-direction: column;
+  margin-left: 10%;
+>>>>>>> 7dc0a3cfe656848938c26b9789e05d50b3769615
 }
 .containerRight{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  
 }
 .buttonCategoria{
   display: flex;
-  align-self: center;
+  
+  
 }
-.cardProduto{
+.containerCategoria{
+  margin-bottom: 2%;
+}
+.containerprodutofav{
   display: flex;
+  margin: 0 auto;
 }
 .filtroCategoria{
   display: flex;
   
 }
+
+@media(max-width:1024px){
+  .buttonCategoria{
+    align-self: flex-start;
+
+  
+  }
+
+}
+@media(max-width:768px){
+  .buttonCategoria{
+    align-self: center;
+
+  
+  }
+  .container-main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5%;
+
+  }
+  .container-video {
+    position: relative;
+    margin-bottom: 0%;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .containerprodutofav{
+    display: flex;
+    align-self: center;
+  
+  }
+
+}
+
 
