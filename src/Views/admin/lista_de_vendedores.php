@@ -1,14 +1,13 @@
 <?php
-require_once('../../config/funcoes.php');
-require('../../config/conexao.php');
+$appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Lista de Vendedores';
 ?>
 <?php
 $base_url = get_base_url();
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
- 
-<>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/footer.css">
@@ -44,6 +43,7 @@ $base_url = get_base_url();
                             <a href="<?= get_base_url(); ?>#">Colaboradores Reprovados</a>
                             <a id="pagina_atual" href="<?= get_base_url(); ?>#">Listar Colaboradores Ativos</a>
                             <a href="<?= get_base_url(); ?>/pages/admin/suporte_ao_colaborador">Suporte ao Colaborador</a>
+                            <img src="../../public/assets/img/" alt="">
                         </div>
                     </li>
 
@@ -76,5 +76,5 @@ $base_url = get_base_url();
     </main>
     <?php get_footer(); ?>
 </body>
-<script type="module" src="../../assets/js/adm/vendedores.js"></script>
+<script type="module" src="<?= get_base_url(); ?>/assets/js/adm/vendedores.js"></script>
 </html>

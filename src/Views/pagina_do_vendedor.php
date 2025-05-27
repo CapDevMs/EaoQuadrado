@@ -1,6 +1,7 @@
 <?php
-include(__DIR__ . '/../config/funcoes.php');
 $appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Página do Vendedor';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -33,57 +34,8 @@ $appName = get_app_name();
                 </div>
                 <div class="row">
                     <div class="col-sm-12 pb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="container mtb-1">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-2">
-                                            <div class="avatar">
-                                                <img src="../assets/img/cliente/studio_center.svg" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-7 m-auto">
-                                            <div class="col-sm-12">
-                                                <h2>
-                                                    Studio Center
-                                                    <i class="fa-regular fa-heart icone"></i>
-                                                    <!-- Quando favoritado, usar o ícone abaixo -->
-                                                    <!-- <i class="fas fa-heart icone"></i> -->
-                                                </h2>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <a href="mailto:studiocenterpy@gmail.com" class="text">studiocenterpy@gmail.com</a>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <p class="text">Av. 15 de Agosto, 506, Centro</p>
-                                                <p class="text">Campo Grande - MS</p>
-                                            </div>
-                                            <div class="col-md-hidden col-sm-12 pb-1"></div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
-                                            <div class="row">
-                                                <div class="col-sm-12 stars">
-                                                    <p class="text">
-                                                        Avaliações: 
-                                                        <i class="fa fa-star icone-star"></i>
-                                                        <i class="fa fa-star icone-star"></i>
-                                                        <i class="fa fa-star icone-star"></i>
-                                                        <i class="fa-regular fa-star icone-star"></i>
-                                                        <i class="fa-regular fa-star icone-star"></i>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12 pt-1 contato-container">
-                                                    <img class="whatsapp" src="../assets/img/icons/whatsapp.svg" alt="">
-                                                    <a target="_blank" class="contato" href="https://wa.me/556734377000">(67) 3437-7000</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <banner_vendedor class="card">
+                        </banner_vendedor>
                     </div>
                 </div>
 

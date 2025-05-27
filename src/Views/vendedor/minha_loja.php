@@ -1,6 +1,7 @@
 <?php
-    include('../../config/funcoes.php');
-    $appName = get_app_name();
+   $appName = get_app_name();
+   $baseUrl = get_base_url();
+   $titulo = 'Minha Loja';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -8,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['vendedor/minha_loja', 'style', 'base']) ?>
+    <?php get_css(['sidebar','vendedor/minha_loja', 'style', 'base']) ?>
 </head>
 <body>
     <?php get_header() ?>
