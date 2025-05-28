@@ -28,18 +28,6 @@ body {
     color: #00BFA5;
 }
 
-.container-geral{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 50px 500px;
-    margin-left: 5%;
-    column-gap: 10%;
-    margin-bottom: 10%;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
 .menu-container {
     grid-column: 1;
@@ -248,11 +236,11 @@ body {
     gap: 10px;
 }
 
-#Viewed {
+#Visto {
     background-color: #C0F894;
 }
 
-#Viewed .submit-button {
+#Visto .submit-button {
     display: none;
 }
 
@@ -572,7 +560,6 @@ body {
 
     .container-accordion {
         padding: 10px;
-        max-width: 80%;
     }
 
     
