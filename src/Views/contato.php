@@ -67,25 +67,26 @@ $titulo = 'Contato';
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-8 col-xl-9 pb-3">
-                    <form action="" class="form" method="post">
+                    <form action="/contato" class="form" method="post">
                         <div class="row pb-1">
                             <div class="col-sm-12 col-md-4 pb-1">
                                 <label class="required" for="nome">Nome</label>
-                                <input class="input" placeholder="John Doe" id="nome" name="nome"></input>
+                                <input class="input" required placeholder="John Doe" id="nome" name="nome"></input>
 
                             </div>
                             <div class="col-sm-12 col-md-4 pb-1">
                                 <label class="required" for="email">E-mail</label>
-                                <input class="input" id="email" name="email" placeholder="johndoe@gmail.com"></input>
+                                <input class="input" type="email" required id="email" name="email" placeholder="johndoe@gmail.com"></input>
                             </div>
                             <div class="col-sm-12 col-md-4 pb-1">
                                 <label class="required" for="telefone">Telefone/WhatsApp</label>
-                                <input class="input" id="telefone" name="telefone" placeholder="(67) 99999-9999"></input>
+                                <input class="input" required id="telefone" name="telefone" placeholder="(67) 99999-9999"></input>
                             </div>
                         </div>
 
                         <div class="row pb-1">
                             <div class="col-sm-12">
+                                <label class="required" for="descricao">Mensagem</label>
                                 <textarea class="input-textarea" id="descricao" name="descricao" placeholder="Sua mensagem" rows="15" required></textarea>
                             </div>
                         </div>
