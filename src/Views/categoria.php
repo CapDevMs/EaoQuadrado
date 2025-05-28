@@ -22,9 +22,9 @@ $appName = get_app_name();
                     <source src="assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">
                 </video>
     </div>
-    <div class="container-main col-sm-10 ">
-    <div class="containerLeft col-xl-3">
-        <div class="filtroCategoria">filtro</div>
+
+    <div class="container-main col-sm-12 ">
+        <div class="containerLeft col-sm-2">
             <filtroComponent></filtroComponent>
         </div>
         <div class="containerCategoria row col-sm-12">

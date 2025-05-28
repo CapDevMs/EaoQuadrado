@@ -21,13 +21,8 @@
 }
 .container-main{
   display: flex;
-<<<<<<< HEAD
-  flex-direction: row;
-  margin: 0 auto;
-=======
   flex-direction: column;
   margin-left: 10%;
->>>>>>> 7dc0a3cfe656848938c26b9789e05d50b3769615
 }
 .containerRight{
   display: flex;

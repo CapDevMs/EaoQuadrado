@@ -19,7 +19,7 @@ const filtroComponent = (categoria) => {
                     <h3 class="categoriasFiltro mb-1">Categorias</h3>
                     <a class="categoriasFiltro" href="#">${categoria}</a>
                     <a class="categoriasFiltro" href="#"${categoria}</a>
-                    <a class="categoriasFiltro" href="#">${categoria}s</a>
+                    <a class="categoriasFiltro" href="#">${categoria}</a>
                     <a class="categoriasFiltro" href="#">${categoria}</a>
                     <a class="categoriasFiltro" href="#">${categoria}</a>
                     <a class="categoriasFiltro" href="#">${categoria}</a>

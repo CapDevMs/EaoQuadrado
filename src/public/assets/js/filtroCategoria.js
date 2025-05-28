@@ -3,13 +3,13 @@ import filtroComponent from './components/filtro-categoria.js';
 const div = document.querySelector('filtroComponent');
 
 
-let Categorias = [
+let filtroInfo = [
     {
         'categoria': ['Celulares', 'Computadores', 'Smartwatches', 'Câmera', 'Fones de ouvido','Games']
     }
 ]
 
-Categorias.forEach(element => {
+filtroInfo.forEach(element => {
     div.innerHTML += filtroComponent(element);
 });
 
