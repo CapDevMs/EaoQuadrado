@@ -38,7 +38,7 @@
 
                     <div id="div-descricao">
                         <label>Descrição do Chamado</label><br>
-                        <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" required></textarea><br><br>
+                        <textarea class="caixa2" id="descricao" placeholder="Sua mensagem" rows="15" required></textarea><br><br>
                     </div>
                 </form>
                 
@@ -46,10 +46,11 @@
                 <div class="anexar-arquivo">
                     <label for="arquivo">Anexar Arquivo</label>
                     <input type="file" id="arquivo" name="arquivo" accept="image/*" multiple>
-
-                    <button id="salvar" type="submit">Enviar Mensagem</button>
                 </div>
 
+                <div id="div-salvar">
+                    <button id="salvar" type="submit">Enviar Mensagem</button>
+                </div>
 
                 <div id="modalImagem" class="modal">
                     <div class="modal-content">

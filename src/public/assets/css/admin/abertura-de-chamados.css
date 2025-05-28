@@ -134,23 +134,27 @@ textarea{
 
 
 #salvar{
+    justify-self: end;
     background-color: var(--cor-principal);
-    width: 15%;
+    width: 150px;
     height: 56px;
     border-radius: 10px;
     border-color: transparent;
     color: white;
-    margin-left: 82.5%;
-    margin-bottom: 1%;
+    margin-top: 2%;
 }
 
+#div-salvar {
+    display: flex;
+    justify-content: end;
+}
 
 input[type="file"] {
     display: none;
 }
   
 .anexar-arquivo label {
-    width: 20%;
+    width: 100px;
     display: inline-block;
     background-color: #d3d3d3; 
     color: #000;
