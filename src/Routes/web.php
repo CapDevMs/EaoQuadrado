@@ -3,6 +3,7 @@
 use App\Controllers\AprovadosController;
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
+use App\Controllers\categoriaController;
 use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
 use App\Controllers\MeuPerfilAdmController;

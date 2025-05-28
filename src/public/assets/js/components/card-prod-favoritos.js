@@ -1,4 +1,3 @@
-// componente dos produtos favoritos
 const cardProdFavorito = ({titulo, imagem, preco, link }) => {   
     return `
     <div class="card-prod-favorito col-sm-12 col-md-6 col-lg-4 col-xl-3">
@@ -12,7 +11,7 @@ const cardProdFavorito = ({titulo, imagem, preco, link }) => {
                 </a>
             </div>
         </div>
-       <div class="card-footer">
+        <div class="card-footer">
             <div class="container-nome-produto">
                 <h3 class="nome-produto">${titulo}</h3>
             </div>
@@ -24,5 +23,5 @@ const cardProdFavorito = ({titulo, imagem, preco, link }) => {
     </div>    
     `;
 };
-                  
+
 export default cardProdFavorito ;
