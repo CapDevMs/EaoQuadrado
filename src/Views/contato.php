@@ -14,78 +14,89 @@ $titulo = 'Contato';
 
 <body>
     <?php get_header() ?>
-    <?php get_breadcrumbs()?>
+    <?php get_breadcrumbs() ?>
 
     <main>
-        <?php
-        // função para adicionar caminho no roadmap (primeiro caminho + segundo nome que irá ficar no roadmap)
-        breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/pages/contato.php' => 'Contato'));
-        ?>
-        <div class="container">
-            <?php if (isset($error)): ?>
-                    <div class="row">
-                        <div class="alert pb-2" role="alert">
-                            <?= $error; ?>
-                        </div>
-                    </div>
-                <?php endif; ?>
-
-                <?php if (isset($mensagem)): ?>
-                    <div class="row">
-                        <div class="success pb-2" role="success">
-                            <?= $mensagem; ?>
-                        </div>
-                    </div>
-                <?php endif; ?>
-        </div>
-        <div class="container pt-3 row">
-            <div class="info col-sm-12 col-md-4 pt-1">
-                <div class="contatos-group">
-                    <div class="contatos-title pb-1">
-                        <span class="round"></span>
-                        <h1>Entre em Contato</h1>
-                    </div>
-                    <p class="pb-1">Atendimento 24 horas</p>
-                    <p class="pb-1">Telefone: +67991377273</p>
-                </div>
-                <hr>
-                <div class="contatos-group">
-                    <div class="contatos-title pb-1 pt-1">
-                        <span class="round"></span>
-                        <h1>Mande um Email</h1>
-                    </div>
-                    <p class="pb-1">Respondemos e-mail em 24 horas</p>
-                    <p class="pb-1">Email: customer@exclusive.com</p>
-                    <p>Email: support@exclusive.com</p>
+        <div class="row">
+            <div class="container">
+                <div class="col-sm-12">
+                    <?php
+                    // função para adicionar caminho no roadmap (primeiro caminho + segundo nome que irá ficar no roadmap)
+                    breadcrumb(array(get_base_url() => 'Home', get_base_url() . '/contato' => 'Contato'));
+                    ?>
                 </div>
             </div>
-
-
-            <form action="" class="message col-sm-12 col-md-8" method="post">
-
-                <div class="caixa-container row">
-
-                    <div class="input-group col-md3 pb-2">
-                        <div class="titulo">
-                            <label for="nome">Nome</label>
-                            <input class="caixa" placeholder="John Doe" id="nome" name="nome"></input>
-                        </div>
-                        <div class="titulo">
-                            <label for="email">E-mail</label>
-                            <input class="caixa" id="email" name="email" placeholder="johndoe@gmail.com"></input>
-                        </div>
-                        <div class="titulo">
-                            <label for="telefone">Telefone/WhatsApp</label>
-                            <input class="caixa" id="telefone" name="telefone" placeholder="(67) 99999-9999"></input>
-                        </div>
-                    </div>
-
-                    <textarea class="caixa2" id="descricao" name="descricao" placeholder="Sua mensagem" rows="15" required></textarea>
-                    <div class="button-container pt-1">
-                        <button id="salvar" type="submit">Enviar Mensagem</button>
+        </div>
+        <div class="container">
+            <?php if (isset($error)): ?>
+                <div class="row">
+                    <div class="alert pb-2" role="alert">
+                        <?= $error; ?>
                     </div>
                 </div>
-            </form>
+            <?php endif; ?>
+
+            <?php if (isset($mensagem)): ?>
+                <div class="row">
+                    <div class="success pb-2" role="success">
+                        <?= $mensagem; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="col-sm-12 col-md-4 col-xl-3 pb-3">
+                    <div class="contatos-group">
+                        <div class="contatos-title pb-1">
+                            <span class="round"></span>
+                            <h1>Entre em Contato</h1>
+                        </div>
+                        <p class="pb-1">Atendimento 24 horas</p>
+                        <p class="pb-1">Telefone: +67991377273</p>
+                    </div>
+                    <hr>
+                    <div class="contatos-group">
+                        <div class="contatos-title pb-1 pt-1">
+                            <span class="round"></span>
+                            <h1>Mande um Email</h1>
+                        </div>
+                        <p class="pb-1">Respondemos e-mail em 24 horas</p>
+                        <p class="pb-1">Email: customer@exclusive.com</p>
+                        <p>Email: support@exclusive.com</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-xl-9 pb-3">
+                    <form action="" class="form" method="post">
+                        <div class="row pb-1">
+                            <div class="col-sm-12 col-md-4 pb-1">
+                                <label class="required" for="nome">Nome</label>
+                                <input class="input" placeholder="John Doe" id="nome" name="nome"></input>
+
+                            </div>
+                            <div class="col-sm-12 col-md-4 pb-1">
+                                <label class="required" for="email">E-mail</label>
+                                <input class="input" id="email" name="email" placeholder="johndoe@gmail.com"></input>
+                            </div>
+                            <div class="col-sm-12 col-md-4 pb-1">
+                                <label class="required" for="telefone">Telefone/WhatsApp</label>
+                                <input class="input" id="telefone" name="telefone" placeholder="(67) 99999-9999"></input>
+                            </div>
+                        </div>
+
+                        <div class="row pb-1">
+                            <div class="col-sm-12">
+                                <textarea class="input-textarea" id="descricao" name="descricao" placeholder="Sua mensagem" rows="15" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button id="salvar" class="btn" type="submit">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
 

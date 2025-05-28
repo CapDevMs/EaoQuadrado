@@ -55,12 +55,3 @@ function get_sidebar_cliente($page) {
 function get_sidebar_admin($page) {
     include_once(__DIR__ . '/../components/sidebar_adm.php');
 }
-
-
-function logout() {
-    if (isset($_SESSION['user'])) {
-        unset($_SESSION['user']);
-        session_destroy();
-    }
-    header('location: ' .  $route);
-}
