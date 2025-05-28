@@ -14,6 +14,7 @@ use App\Controllers\CarrinhoController;
 use App\Controllers\CadastrarProdutoVendedorController;
 use App\Controllers\CadastroVendedorController;
 use App\Controllers\MinhaLojaController;
+use App\Controllers\cadastroAdm;
 use Core\Router;
 
 $router = new Router();
@@ -49,6 +50,7 @@ $router->get('/carrinho', CarrinhoController::class, 'carrinho');
 
 $router->get('/', HomeController::class, 'index');
 $router->get('/historico-de-contas', AprovadosController::class, 'historicoDeContas');
+$router->get('/cadastrarAdm', cadastroAdm::class, 'cadastrarAdm');
 $router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
 
 
