@@ -17,12 +17,12 @@ const filtroComponent = (categoria) => {
 
                 <div class="row">
                     <h3 class="categoriasFiltro mb-1">Categorias</h3>
-                    <a class="categoriasFiltro" href="#">${categoria}</a>
-                    <a class="categoriasFiltro" href="#"${categoria}</a>
-                    <a class="categoriasFiltro" href="#">${categoria}</a>
-                    <a class="categoriasFiltro" href="#">${categoria}</a>
-                    <a class="categoriasFiltro" href="#">${categoria}</a>
-                    <a class="categoriasFiltro" href="#">${categoria}</a>
+                    <a class="categoriasFiltro" href="#">${categoria[0]}</a>
+                    <a class="categoriasFiltro" href="#"${categoria[1]}</a>
+                    <a class="categoriasFiltro" href="#">${categoria[2]}</a>
+                    <a class="categoriasFiltro" href="#">${categoria[3]}</a>
+                    <a class="categoriasFiltro" href="#">${categoria[4]}</a>
+                    <a class="categoriasFiltro" href="#">${categoria[5]}</a>
                 </div>
 
                 <div class="vendedoresAvaliation">
