@@ -48,14 +48,6 @@ function get_sidebar_vendedor($page) {
     include_once(__DIR__ . '/../components/sidebar_vendedor.php');
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-function get_sidebar_adm($page) {
-    include_once(__DIR__ . '/../components/sidebar-adm.php');
-=======
-=======
->>>>>>> b011d5c2f3352e708a6ed12531a91d48ab4bb3a4
 function get_sidebar_cliente($page) {
     include_once(__DIR__ . '/../components/sidebar_cliente.php');
 }
@@ -71,8 +63,4 @@ function logout() {
         session_destroy();
     }
     header('location: ' .  $route);
-<<<<<<< HEAD
->>>>>>> 7dc0a3cfe656848938c26b9789e05d50b3769615
-=======
->>>>>>> b011d5c2f3352e708a6ed12531a91d48ab4bb3a4
 }
