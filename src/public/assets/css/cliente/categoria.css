@@ -1,0 +1,84 @@
+.container-video {
+  position: relative;
+  margin-bottom: 2%;
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.container-video video {
+  display: flex;
+  
+  
+}
+.containerprodutofav{
+  display: flex;
+  flex-direction: column;
+}
+
+.containerLeft{
+  display: flex;
+}
+.container-main{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.containerRight{
+  display: flex;
+  
+}
+.buttonCategoria{
+  display: flex;
+  
+  
+}
+.containerCategoria{
+  margin-bottom: 2%;
+}
+.containerprodutofav{
+  display: flex;
+  margin: 0 auto;
+}
+.filtroCategoria{
+  display: flex;
+  
+}
+
+@media(max-width:1024px){
+  .buttonCategoria{
+    align-self: flex-start;
+
+  
+  }
+
+}
+@media(max-width:768px){
+  .buttonCategoria{
+    align-self: center;
+
+  
+  }
+  .container-main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5%;
+
+  }
+  .container-video {
+    position: relative;
+    margin-bottom: 0%;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .containerprodutofav{
+    display: flex;
+    align-self: center;
+  
+  }
+
+}
+
+
