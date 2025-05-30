@@ -6,14 +6,18 @@ $titulo = 'Carrinho';
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <?php get_css(['style', 'base', 'styleCarrinho', 'sidebar']) ?>
+</head>
+
 <?php get_base_head(); ?>
-<head><title>E ao quadrado</title></head>
 <body>
     <?php get_header() ?>
-    <?php get_css(['base','carrinho_cliente/style']) ?>
-    <!-- <link rel='stylesheet' href="../assets/css/carrinho_cliente/headerCarrinho.css">
-    <link rel='stylesheet' href="../assets/css/carrinho_cliente/footerCarrinho.css"> -->
-
 
 
     <main class = 'main'>
