@@ -22,6 +22,7 @@ $router = new Router();
 // área comum
 
 $router->get('/logout', AuthController::class, 'logout');
+$router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/loja', MinhaLojaController::class, 'loja');
