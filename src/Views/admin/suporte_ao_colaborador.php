@@ -17,21 +17,20 @@ $titulo = 'Suporte';
 
     <main>
         <div class="roadmap">Home / Painel do Administrador / Suporte ao Colaborador</div>
-        <div class="container col-sm-12">
+        <div class="container row col-sm-12">
             <?php get_sidebar_admin('suporte_colaborador') ?>
-            <div>
-            </div class="row">
-            <div class="chamados col-sm-12">
-                <h1>Chamados:</h1>
-                <button id="selected">Todas</button>
-                <button>Não Lidas</button>
-                <button>Respondidas</button>
-            </div>
+            <div class="row container col-sm-10">
+                <div class="chamados col-sm-12">
+                    <h1>Chamados:</h1>
+                    <button id="selected">Todas</button>
+                    <button>Não Lidas</button>
+                    <button>Respondidas</button>
+                </div>
 
-            <div class="container-accordion">
-                <suporteInfo></suporteInfo>
-            </div>
-        </div>
+                <div class="container-accordion col-sm-7">
+                    <suporteInfo></suporteInfo>
+                </div>
+           </div>
         </div>
     </main>
     <?php get_footer() ?>
