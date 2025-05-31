@@ -24,17 +24,18 @@ $appName = get_app_name();
     </div>
 
     <div class="container-main col-sm-12 ">
-        <div class="containerLeft col-sm-2">
+        <div class="containerLeft col-sm-2 col-md-hidden">
             <filtroComponent></filtroComponent>
         </div>
-        <div class="containerCategoria row col-sm-12">
-            <buttonCategoria class="buttonCategoria"></buttonCategoria>
-        </div>
-        <div class="containerprodutofav col-xl-10 col-lg-10 col-md-12 ">
-                <cardProduto class="cardProduto row "></cardProduto>
+        <div class="containerRight col-sm-9 col-md-11">
+            <div class="containerCategoria col-sm-8 col-lg-12">
+                <buttonCategoria class="buttonCategoria"></buttonCategoria>
+            </div>
+            <div class="containerprodutofav col-sm-12">
+                    <cardProduto class="cardProduto row "></cardProduto>
+            </div>
         </div>
         
-
     </div>
 
     <script type="module" src="assets/js/categoria.js?<?= time(); ?>" defer></script>

@@ -21,16 +21,18 @@
 }
 .container-main{
   display: flex;
-  flex-direction: column;
-  margin-left: 10%;
+  
 }
 .containerRight{
   display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  
   
 }
 .buttonCategoria{
   display: flex;
-  
+  align-items: end;
   
 }
 .containerCategoria{
@@ -45,40 +47,11 @@
   
 }
 
-@media(max-width:1024px){
-  .buttonCategoria{
-    align-self: flex-start;
-
+@media (max-width:600px) {
   
-  }
-
-}
-@media(max-width:768px){
-  .buttonCategoria{
-    align-self: center;
-
+  .filtroCategoria{
+  display: none;
   
-  }
-  .container-main{
-    display: flex;
-    flex-direction: row;
-    margin-left: 1.5%;
-
-  }
-  .container-video {
-    position: relative;
-    margin-bottom: 0%;
-    height: 500px;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-  }
-  .containerprodutofav{
-    display: flex;
-    align-self: center;
-  
-  }
-
 }
 
-
+}
