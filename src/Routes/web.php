@@ -29,7 +29,7 @@ $router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/loja', MinhaLojaController::class, 'loja');
-$router->get('/contasInativas', contasInativasController::class, 'contasInativas');
+$router->get('/contas-inativas', contasInativasController::class, 'contasInativas');
 
 $router->get('/faq', faqController::class, 'faq');
 $router->get('/faq', FaqController::class, 'faq');
