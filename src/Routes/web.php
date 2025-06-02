@@ -15,6 +15,7 @@ use App\Controllers\CarrinhoController;
 use App\Controllers\CadastrarProdutoVendedorController;
 use App\Controllers\CadastroVendedorController;
 use App\Controllers\MinhaLojaController;
+use App\Controllers\TrocaDevolucaoCancelamentoController;
 use App\Controllers\cadastroAdm;
 use Core\Router;
 
@@ -42,6 +43,7 @@ $router->get('/produto', ProdutoController::class, 'produto');
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
 $router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
 $router->get('/minha-loja', MinhaLojaController::class, 'loja');
+$router->get('/troca-devolucao-cancelamento', TrocaDevolucaoCancelamentoController::class, 'trocaDevolucaoCancelamento');
 
 
 // área cliente
