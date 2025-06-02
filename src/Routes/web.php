@@ -6,9 +6,11 @@ use App\Controllers\HomeController;
 use App\Controllers\categoriaController;
 use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
-use App\Controllers\MeuPerfilAdmController;
-use App\Controllers\FaqController;
-use App\Controllers\FavoritosController;
+use App\Controllers\meuPerfilAdmController;
+use App\Controllers\contasInativasController;
+use App\Controllers\faqController;
+use App\Controllers\favoritosController;
+use App\Controllers\cadastro_clienteController;
 use App\Controllers\CadastroClienteController;
 use App\Controllers\CarrinhoController;
 use App\Controllers\CadastrarProdutoVendedorController;
@@ -23,9 +25,13 @@ $router = new Router();
 // área comum
 
 $router->get('/logout', AuthController::class, 'logout');
+$router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/loja', MinhaLojaController::class, 'loja');
+$router->get('/contasInativas', contasInativasController::class, 'contasInativas');
+
+$router->get('/faq', faqController::class, 'faq');
 $router->get('/faq', FaqController::class, 'faq');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
