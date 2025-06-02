@@ -26,7 +26,7 @@ class Produto extends Model
             'cores' => $dados['cores'],
             'quantidade' => $dados['quantidade'],
             'id_loja' => $dados['id_loja'],
-            'id_categoria' => $dados['id_categoria'],
+            'id_categoria' => $dados['categoria-produto'],
             'frete' => $dados['frete'] ?? 0
         ]);
     
@@ -39,6 +39,18 @@ class Produto extends Model
             return false;
             }
         }
+
+            public function deleteProduto($id)
+    {
+        try {
+            $sql = "DELETE FROM Produtos WHERE id_produto = :id";
+            $this->query($sql, ['id' => $id]);
+            return true;
+        } catch (\PDOException $e) {
+            error_log("Erro ao deletar produto: " . $e->getMessage());
+            return false;
+        }
+    }
 }
 
 

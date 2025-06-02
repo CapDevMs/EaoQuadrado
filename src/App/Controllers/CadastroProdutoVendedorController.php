@@ -18,22 +18,22 @@ class CadastroProdutoVendedorController extends Controller
         View::render('vendedor/cadastrar_produto_vendedor', ['categorias' => $categorias]);
     }
 
-
     public function salvarProduto() 
     {
         $dados = $_POST;
         $erros = [];
-
+    
+        // Validações básicas
         if (empty($dados['nome'])) {
             $erros[] = 'O nome do produto é obrigatório.';
         }
-
+    
         if (!is_numeric($dados['preco']) || $dados['preco'] <= 0) {
             $erros[] = 'O preço deve ser um número positivo.';
         }
-
-        $categorias = Categoria::getCategorias(); // Para exibir novamente em caso de erro
-
+    
+        $categorias = Categoria::getCategorias();
+    
         if (!empty($erros)) {
             View::render('vendedor/cadastrar_produto_vendedor', [
                 'erros' => $erros,
@@ -42,9 +42,24 @@ class CadastroProdutoVendedorController extends Controller
             ]);
             return;
         }
-
+    
+        // TRATAR IMAGENS ENVIADAS
+        $imagens = [];
+        foreach ($_FILES['arquivo']['tmp_name'] as $key => $tmp_name) {
+            $nome_arquivo = $_FILES['arquivo']['name'][$key];
+            $caminho_final = 'uploads/' . uniqid() . '_' . $nome_arquivo;
+    
+            if (move_uploaded_file($tmp_name, $caminho_final)) {
+                $imagens[] = $caminho_final;
+            }
+        }
+    
+        // Adiciona as imagens ao array de dados
+        $dados['imagens'] = $imagens;
+    
+        // Cadastra no banco
         $produtoModel = new Produto();
-
+    
         try {
             $produtoModel->cadastrarProduto($dados);
             View::render('vendedor/sucesso', ['mensagem' => 'Produto cadastrado com sucesso!']);
@@ -55,4 +70,4 @@ class CadastroProdutoVendedorController extends Controller
             ]);
         }
     }
-}
+}    

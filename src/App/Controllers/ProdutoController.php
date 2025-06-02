@@ -18,4 +18,4 @@ class ProdutoController extends Controller
 
         View::render("produto", compact( 'todosProdutos'));
     }   
-}
+}   
