@@ -18,6 +18,7 @@ use App\Controllers\MinhaLojaController;
 use App\Controllers\TrocaDevolucaoCancelamentoController;
 use App\Controllers\SuporteAoColaboradorController;
 use App\Controllers\cadastroAdm;
+use App\Controllers\ValidacaoNovoVendedorController;
 use Core\Router;
 
 $router = new Router();
@@ -60,6 +61,7 @@ $router->get('/historico-de-contas', AprovadosController::class, 'historicoDeCon
 $router->get('/cadastrar-novo-adm', cadastroAdm::class, 'cadastrarAdm');
 $router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
 $router->get('/suporte-ao-colaborador', SuporteAoColaboradorController::class, 'suporteAoColaborador');
+$router->get('/validacao-novo-vendedor', ValidacaoNovoVendedorController::class, 'validacaoNovovendedor');
 
 
 
