@@ -3,6 +3,7 @@
 use App\Controllers\AprovadosController;
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
+use App\Controllers\categoriaController;
 use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
 use App\Controllers\meuPerfilAdmController;
@@ -23,6 +24,7 @@ $router = new Router();
 // área comum
 
 $router->get('/logout', AuthController::class, 'logout');
+$router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/loja', MinhaLojaController::class, 'loja');
