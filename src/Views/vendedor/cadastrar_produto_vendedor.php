@@ -65,7 +65,7 @@
                         <select id="id_produto" name="categoria-produto" required>
                             <option value="">Selecione uma categoria</option>
                                 <?php foreach ($categorias as $cat): ?>
-                                <option value="<?= $cat['id'] ?>" <?= (isset($dados['categoria-produto']) && $dados['categoria-produto'] == $cat['id']) ? 'selected' : '' ?>>
+                                <option value="<?= $cat['id_categoria'] ?>" <?= (isset($dados['categoria-produto']) && $dados['categoria-produto'] == $cat['id']) ? 'selected' : '' ?>>
                                 <?= htmlspecialchars($cat['nome']) ?>
                                 </option>
                             <?php endforeach; ?>
