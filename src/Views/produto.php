@@ -77,7 +77,6 @@ $appName = get_app_name();
                         praticidade,enquanto o forro interno personalizado oferece um toque de exclusividade.
                     </a>
 
-                   
                     <?php
                     foreach ($todosProdutos as $produto): ?>
                         <p>
@@ -164,7 +163,7 @@ $appName = get_app_name();
     <?php get_footer(); ?>
 
 </body>
-<script type="module" src="../assets/js/produto.js?<?= time() ?>"></script>
+<script type="module" src="../../assets/js/produto.js?<?= time() ?>"></script>
 <script src="../assets/js/carrinho/apiCarrinho.js"></script>
 
 </html>

@@ -24,12 +24,17 @@ class AuthController extends Controller
 
         $user = new User();
 
-        /*$user->where('email', $_POST['login'], '=')
-            ->andWhere('senha', $_POST['senha'])
-            ->get();*/
+        $login = filter_var($_POST['login'], FILTER_VALIDATE_EMAIL);
+        $senha = filter_var($_POST['senha'], FILTER_DEFAULT);
 
-        $user->insert(['nome' => 'Anna Lorena', 'email' => 'anna@gmail.com', 'senha' => '4321']);
-        return route('/produto');
+        if (!$login or !$senha){
+            $error = 'Usuário e/ou senha inválida';
+            return View::render('login', compact('error'));
+        }
+
+        $user->where('email', $login, '=')
+            ->andWhere('senha', $senha)
+            ->get();
         
         if(!empty($user->getData()))
         {
@@ -49,5 +54,32 @@ class AuthController extends Controller
         }
 
         return route('/login');
+    }
+
+    public function esqueciSenha()
+    {
+        return View::render('esqueci_senha');
+    }
+
+    public function recuperarSenha()
+    {
+        $login = filter_var($_POST['login'], FILTER_VALIDATE_EMAIL);
+
+        if (!$login){
+            $error = 'E-mail não pode estar vazio!';
+            return View::render('esqueci_senha', compact('error'));
+        }
+
+        $user = new User();
+
+        $user->findBy('email', $login);
+
+        $mensagem = 'Caso seja encontrado um e-mail cadastrado, será enviada as informações de recuperação de senha!';
+
+        if (is_null($user->getData())){
+            return View::render('esqueci_senha', compact('mensagem'));
+        }
+
+        // Lógica de envio do e-mail de recuperação de senha!
     }
 }

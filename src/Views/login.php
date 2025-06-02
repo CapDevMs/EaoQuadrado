@@ -1,6 +1,8 @@
 <?php
     $appName = get_app_name();
     $baseUrl = get_base_url();
+    $titulo = 'Login';
+
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +38,7 @@
                             <input class="form-input" type="password" name="senha" placeholder="********">
                         </div>
                         <div class="row">
-                            <a class="esqueceu-senha" href="<?= $baseUrl; ?>/cadastros/esqueci_senha">Esqueceu sua senha?</a>
+                            <a class="esqueceu-senha" href="<?= $baseUrl; ?>/esqueci-senha">Esqueceu sua senha?</a>
                         </div>
     
                         <div class="row">
