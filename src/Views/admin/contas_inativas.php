@@ -7,7 +7,7 @@ $titulo = 'EaoQuadrado - Contas Inativas';
 <?php
 $base_url = get_base_url();
 ?>
-<!-- <?= $base_url; ?> -->
+<?= $base_url; ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -26,9 +26,9 @@ $base_url = get_base_url();
 
     <main>
         <roadMap class='mt-1 mb-1 ml-1 roadMap'>
-            <a href="#" class='roadMap1'>Home /</a>
-            <a href="#" class='roadMap1'>Painel do administrador /</a>
-            <a href="#" class='roadMap2'>Contas inativas</a>
+            <a href="<?= $base_url; ?>" class='roadMap1'>Home /</a>
+            <a href="<?= $base_url; ?>painel_administrador" class='roadMap1'>Painel do administrador /</a>
+            <a href="<?= $base_url; ?>contas_inativas" class='roadMap2'>Contas inativas</a>
         </roadMap>
         <corpo class='corpo col-12 row'>
             <menuLateral class='col-md-3 col'>
