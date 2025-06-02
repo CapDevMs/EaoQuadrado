@@ -1,25 +1,27 @@
-<?php 
-    $appName = get_app_name();
-    $baseUrl = get_base_url();
-    $titulo = 'Chamados';
+<?php
+$appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Chamados';
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['base', 'style', '/vendedor/troca_devolucao_cancelamento']) ?>
+    <?php get_css(['sidebar','base', 'style', '/vendedor/troca_devolucao_cancelamento']) ?>
     <title>E ao Quadrado</title>
 </head>
+
 <body>
     <?php get_header() ?>
 
     <main>
         <div class="container-main">
-            <div class="coluna-menu">
-                <p></p>
-            </div>
+            <asside class="col-l-3 col-md-hidden col-sm-hidden">
+                <?php get_sidebar_vendedor('historico_vendas'); ?>
+            </asside>
             <div class="coluna-conteudo">
                 <div class="grid-cols-5 container-metade">
                     <div class="grid-itens">
@@ -55,11 +57,11 @@
                             <div class="card-meio"></div>
                             <div class="card-body">
                                 <p class="card-text">
-                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur. 
+                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur.
                                     Nesciunt, id magnam. Iste nam eos sed, illo maiores dicta labore.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur. 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur.
                                     Nesciunt, id magnam. Iste nam eos sed, illo maiores dicta labore.
                                 </p>
                             </div>
@@ -79,13 +81,13 @@
                             <div class="card-meio"></div>
                             <div class="card-body">
                                 <p class="card-text">
-                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur. 
+                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur.
                                     Nesciunt, id magnam. Iste nam eos sed, illo maiores dicta labore.
                                 </p>
                                 <p class="card-text">
-                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur. 
+                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur.
                                     Nesciunt, id magnam. Iste nam eos sed, illo maiores dicta labore.
                                 </p>
                             </div>
@@ -102,14 +104,14 @@
                                     <p>Cancelamento</p>
                                 </div>
                             </div>
-                            
+
                             <div class="card-body">
                                 <p class="card-text">
-                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur. 
+                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur.
                                     Nesciunt, id magnam. Iste nam eos sed, illo maiores dicta labore.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur. 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur.
                                     Nesciunt, id magnam. Iste nam eos sed, illo maiores dicta labore.
                                 </p>
                             </div>
@@ -129,8 +131,8 @@
                             <div class="card-meio"></div>
                             <div class="card-body">
                                 <p class="card-text">
-                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur. 
+                                    Motivo: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum, rem omnis. Unde commodi laborum quod a quae quis tenetur.
                                     Nesciunt, id magnam. Iste nam eos sed, illo maiores dicta labore.
                                 </p>
                             </div>
@@ -144,4 +146,5 @@
     <<?php get_footer() ?>
 </body>
 <script src="../../assets/js/script.js"></script>
+
 </html>
