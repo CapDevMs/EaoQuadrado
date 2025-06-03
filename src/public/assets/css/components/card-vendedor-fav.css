@@ -50,8 +50,9 @@ a.btn-visitar-loja {
     width: 100%;
 }
 
+.fa-star,
 .icone-star{
-    width: 0.85rem;
+    width: 16px;
     font-size: 16px;
     color: var(--cor-principal);
 }

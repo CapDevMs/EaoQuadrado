@@ -1,0 +1,48 @@
+
+.button {
+  max-width: 25%;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid #00BFA5;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
+.img-CategoriaButton {
+  height: 60px;
+  margin-bottom: 5%;
+}
+
+.nome-categoria {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--cor-verde-escuro);
+  text-align: center;
+  
+}
+
+@media (max-width:1024px)
+{
+  .button {
+    width: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .img-CategoriaButton {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5%;
+  }
+}
+
