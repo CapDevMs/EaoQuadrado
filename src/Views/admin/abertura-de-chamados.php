@@ -15,7 +15,7 @@
     <main>    
         <div class="row">
             <h1 id="abertura-title">Abertura de Chamados</h1>
-            <div class="col-md-2 col-sm-hidden">
+            <div class="col-md-3 col-sm-hidden">
 
                 <?php get_sidebar_admin('abrir_chamado'); ?> 
             </div>
@@ -46,9 +46,11 @@
                 <div class="anexar-arquivo">
                     <label for="arquivo">Anexar Arquivo</label>
                     <input type="file" id="arquivo" name="arquivo" accept="image/*" multiple>
-                    <button id="salvar" type="submit">Enviar Mensagem</button>
                 </div>
 
+                <div id="div-salvar">
+                    <button id="salvar" type="submit">Enviar Mensagem</button>
+                </div>
 
                 <div id="modalImagem" class="modal">
                     <div class="modal-content">
