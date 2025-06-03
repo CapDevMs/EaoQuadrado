@@ -19,6 +19,7 @@ use App\Controllers\TrocaDevolucaoCancelamentoController;
 use App\Controllers\SuporteAoColaboradorController;
 use App\Controllers\cadastroAdm;
 use App\Controllers\ValidacaoNovoVendedorController;
+use App\Controllers\CadastroAdminController;
 use Core\Router;
 
 $router = new Router();
@@ -26,8 +27,8 @@ $router = new Router();
 
 // área comum
 
+$router->get('/', HomeController::class, 'index');
 $router->get('/logout', AuthController::class, 'logout');
-$router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/faq', faqController::class, 'faq');
@@ -37,6 +38,7 @@ $router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
 $router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
 $router->get('/cadastro-cliente', CadastroClienteController::class, 'cadastroCliente');
 $router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
+$router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/produto', ProdutoController::class, 'produto');
 
 
@@ -55,10 +57,9 @@ $router->get('/carrinho', CarrinhoController::class, 'carrinho');
 
 // área adm
 
-$router->get('/', HomeController::class, 'index');
 $router->get('/contas-inativas', contasInativasController::class, 'contasInativas');
 $router->get('/historico-de-contas', AprovadosController::class, 'historicoDeContas');
-$router->get('/cadastrar-novo-adm', cadastroAdm::class, 'cadastrarAdm');
+$router->get('/cadastrar-novo-adm', CadastroAdminController::class, 'cadastroAdmin');
 $router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
 $router->get('/suporte-ao-colaborador', SuporteAoColaboradorController::class, 'suporteAoColaborador');
 $router->get('/validacao-novo-vendedor', ValidacaoNovoVendedorController::class, 'validacaoNovovendedor');
