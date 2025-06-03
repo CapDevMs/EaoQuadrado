@@ -1,3 +1,4 @@
+@import url("style.css");
 
 body{
     font-family: Poppins;
@@ -154,7 +155,7 @@ input[type="file"] {
 }
   
 .anexar-arquivo label {
-    width: 100px;
+    width: 200px;
     display: inline-block;
     background-color: #d3d3d3; 
     color: #000;
@@ -229,3 +230,14 @@ button{
     margin-bottom: 3%;
 }
 
+@media (max-width: 768px){
+    .area-side {
+        display: none;
+    }    
+    .row{
+        justify-content: center;
+    }
+    .col-sm-12{
+        margin-left: 0.5rem;
+    }
+}

@@ -15,7 +15,7 @@
     <main>    
         <div class="row">
             <h1 id="abertura-title">Abertura de Chamados</h1>
-            <div class="col-md-3 col-sm-hidden">
+            <div class="area-side col-md-3 col-sm-hidden">
 
                 <?php get_sidebar_admin('abrir_chamado'); ?> 
             </div>
