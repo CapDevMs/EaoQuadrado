@@ -23,6 +23,7 @@ $router = new Router();
 
 // área comum
 
+$router->get('/', HomeController::class, 'index');
 $router->get('/logout', AuthController::class, 'logout');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
@@ -51,7 +52,6 @@ $router->get('/carrinho', CarrinhoController::class, 'carrinho');
 
 // área adm
 
-$router->get('/', HomeController::class, 'index');
 $router->get('/contas-inativas', contasInativasController::class, 'contasInativas');
 $router->get('/historico-de-contas', AprovadosController::class, 'historicoDeContas');
 $router->get('/cadastrar-novo-adm', CadastroAdminController::class, 'cadastroAdmin');
