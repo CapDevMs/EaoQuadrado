@@ -27,8 +27,8 @@ $titulo = 'Suporte';
                     <button>Respondidas</button>
                 </div>
 
-                <div class="container-accordion col-sm-7">
-                    <suporteInfo></suporteInfo>
+                <div class="container-accordion col-sm-8">
+                    <suporteInfo id="suporteInfo"></suporteInfo>
                 </div>
            </div>
         </div>

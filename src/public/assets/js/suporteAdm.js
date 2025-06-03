@@ -9,14 +9,14 @@ let infoAccordion = [
         'descricao': 'venho relatar um bug na minha conta na...', 
         'data': '30 de junho, 2024', 
         'status' : 'Visto', 
-        'img_perfil' : '../../public/assets/img/image_icon.png'
+        'img_perfil' : '../../public/assets/img/icone_perfil.png'
     },
     {
         'nome' : 'Fernando Abreu', 
         'descricao': 'venho relatar um bug na minha conta na...', 
         'data': '30 de junho, 2024', 
         'status' : 'Não Visto', 
-        'img_perfil' : '../../public/assets/img/image_icon.png'
+        'img_perfil' : '../../public/assets/img/icone_perfil.png'
     }
 ]
 

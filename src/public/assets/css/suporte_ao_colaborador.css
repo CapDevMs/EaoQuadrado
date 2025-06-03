@@ -28,35 +28,6 @@ body {
     color: #00BFA5;
 }
 
-
-.menu-container {
-    grid-column: 1;
-    grid-row: span 2;
-    display: grid;
-    grid-template-rows: auto; 
-    grid-auto-flow: row; 
-    gap: 10px;
-    white-space: nowrap; 
-    width: fit-content;
-}
-
-.menu-container h1 {
-    font-size: 18px;
-    max-width: fit-content;
-    max-height: fit-content;
-}
-
-.menu-container a {
-    cursor: pointer;
-    font-size: 18px;
-    max-width: fit-content;
-    max-height: fit-content;
-    opacity: 50%;
-    text-decoration: none;
-    color: black;
-    white-space: nowrap;
-}
-
 .chamados-container{
     grid-column: 2;
     grid-row: 1;
@@ -82,11 +53,10 @@ body {
 }
 
 .container-accordion {
-    width: 800px;
-    height: 400px;
+    align-items: center;
+    justify-content: center;
     overflow-y: auto;
     border: 1px solid #ccc;
-    padding: 10px;
     background: white;
     position: relative;
     bottom: 8%;
@@ -100,8 +70,7 @@ body {
     border: 1px solid #F2F1F1;
     background: #F6F6F6;
     margin-bottom: 5px;
-    width: 762px;
-    margin-left: 1.5%;
+
     margin-bottom: 2%;
     margin-top: 1%;
 }
