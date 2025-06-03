@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use Core\View;
+use App\Models\Contato;
 
 class HomeController extends Controller
 {
@@ -40,7 +41,18 @@ class HomeController extends Controller
             return View::render('contato', compact('error'));
         }
 
-        return route('/contato');
+        $now = date('Y-m-d H:i:s');
 
+        $contato = new Contato();
+
+        $contato->insert([
+            'nome' => $nome,
+            'email' => $email,
+            'telefone' => $telefone,
+            'mensagem' => $descricao,
+            'data_envio' => $now,
+        ]);
+
+        return route('/contato');
     }
 }
