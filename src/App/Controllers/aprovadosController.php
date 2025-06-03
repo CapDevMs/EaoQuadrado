@@ -4,9 +4,9 @@ namespace App\Controllers;
 
 use Core\View;
 
-class aprovadosController extends Controller
+class AprovadosController extends Controller
 {
-    public function historico_de_contas()
+    public function historicoDeContas()
     {
         View::render('admin/contas_aprovadas_reprovadas');
         // View::render('homepage');

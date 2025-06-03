@@ -1,5 +1,7 @@
 <?php
-require_once('../../config/funcoes.php');
+$appName = get_app_name();
+$baseUrl = get_base_url();
+$titulo = 'Criar Categoria';
 ?>
 
 <!DOCTYPE html>
