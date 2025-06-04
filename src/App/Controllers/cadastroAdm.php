@@ -7,7 +7,7 @@ use Core\View;
 class cadastroAdm extends Controller
 {
 
-    public function cadastrarAdm()
+    public function cadastroAdm()
     {
         View::render('admin/cadastro_adm');
     }

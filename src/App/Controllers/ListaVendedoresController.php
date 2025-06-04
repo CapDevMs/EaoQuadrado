@@ -7,9 +7,9 @@ use Core\View;
 class ListaVendedoresController extends Controller
 {
 
-    public function lista()
+    public function listaDeVendedores()
     {
         View::render('admin/lista_de_vendedores');
-        //View::render('homepage');
+
     }
 }
