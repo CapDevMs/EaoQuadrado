@@ -35,7 +35,7 @@
     
         <?php get_sidebar_vendedor('cadastrar_produtos'); ?>
     
-            <form action="/cadastrar_prod_vend/salvarProduto" method="post" enctype="multipart/form-data">      
+            <form action="/cadastrarProdutoVendedor/salvarProduto" method="post" enctype="multipart/form-data">      
                 <div class="linha-horizontal">
                     <div class="linha-1">
                         <label for="nome-produto">Nome do Produto</label><br>
@@ -62,15 +62,17 @@
     
                 <div class="linha-horizontal">
                     <div class="linha-3">
-                        <select id="id_produto" name="categoria-produto" required>
+                       <select id="categoria" name="id_categoria" required>
                             <option value="">Selecione uma categoria</option>
-                                <?php foreach ($categorias as $cat): ?>
-                                <option value="<?= $cat['id_categoria'] ?>" <?= (isset($dados['categoria-produto']) && $dados['categoria-produto'] == $cat['id']) ? 'selected' : '' ?>>
-                                <?= htmlspecialchars($cat['nome']) ?>
+                            <?php foreach ($categorias as $cat): ?>
+                                <option value="<?= $cat['id_categoria'] ?>" 
+                                    <?= (isset($dados['id_categoria']) && $dados['id_categoria'] == $cat['id_categoria']) ? 'selected' : '' ?>>
+                                    <?= htmlspecialchars($cat['nome']) ?>
                                 </option>
                             <?php endforeach; ?>
                         </select>
                     </div>
+                </div>    
     
                     <div class="linha-3">
                         <label for="preco-produto" id="label-preco">Preço do Produto</label><br>

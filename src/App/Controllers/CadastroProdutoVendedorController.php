@@ -2,72 +2,121 @@
 
 namespace App\Controllers;
 
-use Core\View;
 use App\Models\Produto;
 use App\Models\Categoria;
+use Core\View;
 
-class CadastroProdutoVendedorController extends Controller
+class CadastrarProdutoVendedorController extends Controller
 {
+
     public function cadastrarProduto()
-    {   
-        
-        echo("Oi");
-        // var_dump($categoriaModel);
-        // $categorias = $categoriaModel->getCategorias();
-        // var_dump($categorias);
-        View::render('vendedor/cadastrar_produto_vendedor', ['categorias' => $categorias]);
+    {
+        View::render('vendedor/cadastrar_produto_vendedor');
     }
 
-    public function salvarProduto() 
+    // Exibe formulário
+    public function criar()
     {
-        $dados = $_POST;
-        $erros = [];
-    
-        // Validações básicas
-        if (empty($dados['nome'])) {
-            $erros[] = 'O nome do produto é obrigatório.';
-        }
-    
-        if (!is_numeric($dados['preco']) || $dados['preco'] <= 0) {
-            $erros[] = 'O preço deve ser um número positivo.';
-        }
-    
         $categorias = Categoria::getCategorias();
-    
-        if (!empty($erros)) {
-            View::render('vendedor/cadastrar_produto_vendedor', [
-                'erros' => $erros,
-                'dados' => $dados,
-                'categorias' => $categorias
-            ]);
-            return;
-        }
-    
-        // TRATAR IMAGENS ENVIADAS
-        $imagens = [];
+        View::render('produto/form', compact('categorias'));
+    }
+
+    // Salva produto
+   public function salvar()
+    {
+    $dados = $_POST;
+    $erros = [];
+
+    if (empty($dados['nome'])) {
+        $erros[] = 'O nome do produto é obrigatório.';
+    }
+
+    if (!is_numeric($dados['preco']) || $dados['preco'] <= 0) {
+        $erros[] = 'O preço deve ser um número positivo.';
+    }
+
+    $categorias = Categoria::getCategorias();
+
+    if (!empty($erros)) {
+        View::render('produto/form', [
+            'erros' => $erros,
+            'dados' => $dados,
+            'categorias' => $categorias
+        ]);
+        return;
+    }
+
+    $imagens = [];
+    if (isset($_FILES['arquivo'])) {
         foreach ($_FILES['arquivo']['tmp_name'] as $key => $tmp_name) {
             $nome_arquivo = $_FILES['arquivo']['name'][$key];
             $caminho_final = 'uploads/' . uniqid() . '_' . $nome_arquivo;
-    
+
             if (move_uploaded_file($tmp_name, $caminho_final)) {
                 $imagens[] = $caminho_final;
             }
         }
-    
-        // Adiciona as imagens ao array de dados
-        $dados['imagens'] = $imagens;
-    
-        // Cadastra no banco
-        $produtoModel = new Produto();
-    
-        try {
-            $produtoModel->cadastrarProduto($dados);
-            View::render('vendedor/sucesso', ['mensagem' => 'Produto cadastrado com sucesso!']);
-        } catch (\Exception $e) {
-            View::render('vendedor/cadastrar_produto_vendedor', [
-                'erros' => ['Erro ao salvar produto: ' . $e->getMessage()],
-                'categorias' => $categorias
-            ]);
-        }
     }
-}    
+
+    $dados['imagens'] = json_encode($imagens); // Se a coluna for JSON/text
+
+    $produto = new Produto();
+
+    try {
+        $produto->insert($dados);
+        View::render('produto/sucesso', ['mensagem' => 'Produto cadastrado com sucesso!']);
+    } catch (\Exception $e) {
+        View::render('produto/form', [
+            'erros' => ['Erro ao salvar produto: ' . $e->getMessage()],
+            'categorias' => $categorias
+        ]);
+    }
+    }
+
+
+   public function atualizar($id)
+    {
+    $dados = $_POST;
+    $erros = [];
+
+    if (empty($dados['nome'])) {
+        $erros[] = 'O nome do produto é obrigatório.';
+    }
+
+    if (!is_numeric($dados['preco']) || $dados['preco'] <= 0) {
+        $erros[] = 'O preço deve ser um número positivo.';
+    }
+
+    $categorias = Categoria::getCategorias();
+
+    if (!empty($erros)) {
+        View::render('produto/form', [
+            'erros' => $erros,
+            'dados' => $dados,
+            'categorias' => $categorias
+        ]);
+        return;
+    }
+
+    $produto = new Produto();
+
+    try {
+        $produto->update($id, $dados);
+        View::render('produto/sucesso', ['mensagem' => 'Produto atualizado com sucesso!']);
+    } catch (\Exception $e) {
+        View::render('produto/form', [
+            'erros' => ['Erro ao atualizar produto: ' . $e->getMessage()],
+            'categorias' => $categorias,
+            'dados' => $dados
+        ]);
+    }
+    }
+
+    public function deletar($id)
+    {
+        $produto = new Produto();
+        $produto->delete($id);
+        header('Location: /produtos');
+        exit;
+    }
+}
