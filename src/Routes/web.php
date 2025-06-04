@@ -2,6 +2,7 @@
 
 use App\Controllers\AprovadosController;
 use App\Controllers\AuthController;
+use App\Controllers\TelaGerenciamentoEstoqueController;
 use App\Controllers\HomeController;
 use App\Controllers\categoriaController;
 use App\Controllers\HistoricoVendasController;
@@ -40,6 +41,7 @@ $router->get('/produto', ProdutoController::class, 'produto');
 
 // área vendedor
 
+$router->get('/estoque', TelaGerenciamentoEstoqueController::class, 'estoque');
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
 $router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
 $router->get('/minha-loja', MinhaLojaController::class, 'loja');
