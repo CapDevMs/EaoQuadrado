@@ -33,7 +33,7 @@ $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
 $router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
 $router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
-$router->get('/cadastro-cliente', CadastroClienteController::class, 'cadastroCliente');
+$router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente');
 $router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
 $router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/produto', ProdutoController::class, 'produto');
