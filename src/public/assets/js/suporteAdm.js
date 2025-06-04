@@ -6,17 +6,17 @@ const div = document.querySelector('suporteInfo');
 let infoAccordion = [
     {
         'nome' : 'Fernando Abreu', 
-        'descricao': 'venho relatar um bug na minha conta na...', 
+        'descricao': 'Venho relatar um bug na minha conta na página inicial do sistema. Ao tentar acessar minha área de usuário, percebo que a página demora muito para carregar, ou, em alguns casos, fica totalmente em branco.', 
         'data': '30 de junho, 2024', 
         'status' : 'Visto', 
-        'img_perfil' : '../../public/assets/img/icone_perfil.png'
+        'img_perfil' : 'src/public/assets/img/icone_perfil.png'
     },
     {
         'nome' : 'Fernando Abreu', 
-        'descricao': 'venho relatar um bug na minha conta na...', 
+        'descricao': 'Venho relatar um bug na minha conta na página inicial do sistema. Ao tentar acessar minha área de usuário, percebo que a página demora muito para carregar, ou, em alguns casos, fica totalmente em branco.', 
         'data': '30 de junho, 2024', 
         'status' : 'Não Visto', 
-        'img_perfil' : '../../public/assets/img/icone_perfil.png'
+        'img_perfil' : 'src/public/assets/img/icone_perfil.png'
     }
 ]
 

@@ -1,14 +1,3 @@
-* {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
 
 .roadmap {
     font-family: 'Poppins', sans-serif;
@@ -48,6 +37,7 @@ body {
     color: black;
     background-color: transparent;
     border: none;
+    white-space: nowrap;
 } .chamados button{
     cursor: pointer;
 }
@@ -61,6 +51,7 @@ body {
     position: relative;
     bottom: 8%;
     border-radius: 20px;
+    margin-left: 3%;
 }
 
 .accordion {
@@ -70,8 +61,7 @@ body {
     border: 1px solid #F2F1F1;
     background: #F6F6F6;
     margin-bottom: 5px;
-
-    margin-bottom: 2%;
+    margin-left: 0.4%;
     margin-top: 1%;
 }
 
@@ -126,6 +116,7 @@ body {
 .buttons-container a {
     opacity: 0.5;
     width: fit-content;
+    text-decoration: none;
 }
 
 .file-container {
@@ -140,6 +131,8 @@ body {
 
 .file-label {
     display: flex;
+    white-space: nowrap;
+    width: fit-content;
     align-items: center;
     cursor: pointer;
     padding: 10px 10px;
@@ -160,9 +153,6 @@ body {
     column-gap: 30px;
 }
 
-.buttons-container a {
-    text-decoration: none;
-}
 
 .submit-button {
     flex-shrink: 0;
@@ -171,9 +161,7 @@ body {
     display: flex;             
     justify-content: center;     
     align-items: center;         
-    text-align: center;         
-    width: 165px;
-    height: 42px;              
+    text-align: center;                   
     background: #C0F894;
     border: 1px solid #D4D4D4;
 }
@@ -206,6 +194,10 @@ body {
     gap: 10px;
 }
 
+.content {
+    margin: 0;
+}
+
 #Visto {
     background-color: #C0F894;
 }
@@ -220,6 +212,8 @@ body {
 
 #texto {
     max-width: fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
