@@ -4,6 +4,7 @@
     border-radius: 20px;
     padding: 10px;
     align-items: center;
+    margin: 0 auto;
 }
 
 form {
@@ -22,6 +23,13 @@ form {
     justify-content: center;
 }
 
+.input-group input {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
 .button-confirm {
     background-color: var(--cor-botao-primario);
     color: white;
@@ -30,4 +38,27 @@ form {
     height: auto;
     padding: 5px 20px;
     border-radius: 5px;
+}
+
+.email {
+    height: 85%;
+}
+
+.email label {
+    height: min-content;
+} 
+
+
+
+.alt_senha {
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+@media (max-width: 768) {
+    .hidden-asside {
+        display: none;
+    }
 }
