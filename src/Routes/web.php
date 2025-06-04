@@ -16,6 +16,7 @@ use App\Controllers\CadastrarProdutoVendedorController;
 use App\Controllers\CadastroVendedorController;
 use App\Controllers\MinhaLojaController;
 use App\Controllers\CadastroAdminController;
+use App\Controllers\perfilVendedor;
 use Core\Router;
 
 $router = new Router();
@@ -32,7 +33,7 @@ $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
 $router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
 $router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
-$router->get('/cadastro-cliente', CadastroClienteController::class, 'cadastroCliente');
+$router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente');
 $router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
 $router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/produto', ProdutoController::class, 'produto');
@@ -43,6 +44,7 @@ $router->get('/produto', ProdutoController::class, 'produto');
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
 $router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
 $router->get('/minha-loja', MinhaLojaController::class, 'loja');
+$router->get('/vendedor', perfilVendedor::class, 'vendedor');
 
 
 // área cliente
