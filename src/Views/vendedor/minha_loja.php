@@ -27,7 +27,7 @@
                 
                 <div class="row">
                     <div class="col-12 pb-3">
-                        <img src="../../assets/img/Banner_loja.png" class="img" alt="Banner da Loja"> 
+                        <img src="<?php get_base_url(); ?>assets/img/Banner_loja.png" class="img" alt="Banner da Loja"> 
                     </div>
                 </div>
 
@@ -96,5 +96,5 @@
 
     <?php get_footer() ?>
 </body>
-<script src="../../assets/js/script.js"></script>
+<script src="<?php get_base_url(); ?>assets/js/script.js"></script>
 </html>

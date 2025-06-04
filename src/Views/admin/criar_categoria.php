@@ -9,7 +9,7 @@ $titulo = 'Criar Categoria';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/admin/criar_categoria.css">
+    <link rel="stylesheet" href="<?=get_base_url();?>assets/css/admin/criar_categoria.css">
     <?php get_css(['base', 'criar_categoria' , 'style']) ?>
     
     <title>Criar Categoria</title>
@@ -44,7 +44,7 @@ $titulo = 'Criar Categoria';
 
             <div class="create-container">
                 <div class="img-container">
-                    <img src="<?= get_base_url(); ?>/assets/img/image_color_icon.svg" alt="">
+                    <img src="<?=get_base_url();?>assets/img/image_color_icon.svg" alt="">
                     <p>Categoria</p>
                 </div>
 
