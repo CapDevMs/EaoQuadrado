@@ -1,0 +1,64 @@
+.body-perfil {
+    background-color: var(--cor-fundo);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+form {
+    justify-content: center;
+}
+
+.body-perfil img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.input-group input {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.button-confirm {
+    background-color: var(--cor-botao-primario);
+    color: white;
+    border: none;
+    width: 120px;
+    height: auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.email {
+    height: 85%;
+}
+
+.email label {
+    height: min-content;
+} 
+
+
+
+.alt_senha {
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+@media (max-width: 768) {
+    .hidden-asside {
+        display: none;
+    }
+}

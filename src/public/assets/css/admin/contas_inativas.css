@@ -1,0 +1,238 @@
+body {
+    min-height: 100vh;
+}
+
+:root {
+    --cinza--painel--inativa: rgb(250, 250, 250);
+}
+
+.centralizadorflex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.centralizar {
+    margin: 0 auto;
+}
+
+.roadMap1 {
+    text-decoration: none;
+    color: var(--cor-texto-deselecionado);
+}
+
+.roadMap2 {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.corpo {
+    width: 97%;
+    min-height: 70vh;
+    margin: 0 auto;
+}
+
+.painel {
+    display: flex;
+    border: 2px solid var(--cor-texto-deselecionado);
+    border-radius: 20px;
+    box-shadow: 2px 2px var(--cor-sombra-media);
+}
+
+.painelPrincipal {
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: start;
+    overflow: auto;
+}
+
+.painelCentral {
+    margin-top: 4px;
+}
+
+.acordeonFechado {
+    height: 220px;
+}
+
+
+.imagem {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 2px solid var(--cor-texto-deselecionado);
+    border-radius: 50px;
+}
+
+.painelCinza {
+    background-color: var(--cinza--painel--inativa);
+    height: 120px;
+    width: 98%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5%;
+}
+
+hr {
+    max-width: 99%;
+}
+
+.botao {
+    border: 1px solid black;
+    width: 95px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.blocoReativar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocoNome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.botao:active {
+    background-color: var(--cor-fundo-area-pesquisa);
+    border: 0px;
+}
+
+.status1 {
+    border: 0px;
+    border-radius: 5px;
+    width: 95px;
+    background-color: yellow;
+    text-align: center;
+}
+.status2 {
+    border: 0px;
+    border-radius: 5px; 
+    width: 95px;
+    background-color: var(--cor-botao-adm-vermelho);
+    text-align: center;
+}
+
+.campoTexto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 275px;
+    overflow: hidden;
+}
+
+.campoTexto2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 275px;
+    overflow: hidden;
+}
+
+.TextBox {
+    max-width: 98%;
+
+}
+
+.acordeonFechado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--cinza--painel--inativa);
+}
+
+.acordeonAberto {
+    display: flex;
+    height: 420px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--cinza--painel--inativa);
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+}
+
+.displayNone {
+    display: none;
+}
+
+
+/* .subBloco1 {
+    background-color: rebeccapurple;
+    height: 100%;
+}
+
+.subBloco0 {
+    background-color: red;
+    height: 100%;
+} */
+
+.blocoColuna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    align-items: center;
+}
+
+.seletor{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+    color: var(--cor-texto);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.seletorBase{
+    font-weight: 600;
+}
+.seletorInativo{
+    font-weight: 400;
+    color: var(--cor-texto-deselecionado);
+    cursor:pointer;
+}
+
+.seletorAtivo{
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    cursor:pointer;
+}
+
+p{
+    max-width: max-content;
+}
+@media (min-width: 768px) {
+    .blocoColuna{
+        flex-direction: row;
+    }
+}
+@media (max-width: 450px) {
+    .roadMap {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:425px) {
+    .miniFonte{
+        font-size: 14px;
+    }
+}
