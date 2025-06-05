@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Core\View;
 
-class cadastroAdm extends Controller
+class cadastroAdmController extends Controller
 {
 
     public function cadastroAdm()

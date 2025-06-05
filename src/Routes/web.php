@@ -3,20 +3,19 @@
 use App\Controllers\AprovadosController;
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
-use App\Controllers\categoriaController;
+use App\Controllers\CategoriaController;
 use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
-use App\Controllers\meuPerfilAdmController;
-use App\Controllers\contasInativasController;
-use App\Controllers\faqController;
-use App\Controllers\favoritosController;
-use App\Controllers\cadastro_clienteController;
+use App\Controllers\MeuPerfilAdmController;
+use App\Controllers\ContasInativasController;
+use App\Controllers\FaqController;
+use App\Controllers\FavoritosController;
 use App\Controllers\CadastroClienteController;
 use App\Controllers\CarrinhoController;
 use App\Controllers\CadastrarProdutoVendedorController;
 use App\Controllers\CadastroVendedorController;
 use App\Controllers\MinhaLojaController;
-use App\Controllers\cadastroAdm;
+use App\Controllers\CadastroAdmController;
 use App\Controllers\IndexAdmController;
 use App\Controllers\CriarCategoriaController;
 use App\Controllers\ListaVendedoresController;
@@ -28,13 +27,14 @@ use App\Controllers\GerenciamentoDeEstoqueController;
 use App\Controllers\TrocasDevolucoesController;
 use App\Controllers\ContatoController;
 use App\Controllers\HistoricoDePedidosController;
+use App\Controllers\TermosDeUsoController;
 use Core\Router;
 
 $router = new Router();
 
 // área adm
 
-$router->get('/cadastroAdm', cadastroAdm::class, 'cadastroAdm');
+$router->get('/cadastroAdm', cadastroAdmController::class, 'cadastroAdm');
 $router->get('/contasAprovadasReprovadas', AprovadosController::class, 'contasAprovadasReprovadas');
 $router->get('/contasInativas', contasInativasController::class, 'contasInativas'); 
 $router->get('/criarCategoria', CriarCategoriaController::class, 'criarCategoria'); 
@@ -64,9 +64,6 @@ $router->get('/gerenciamentoDeEstoque', GerenciamentoDeEstoqueController::class,
 $router->get('/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');
 
 
-// Problema
-
-$router->get('/paginaDoVendedor2', PaginaDoVendedorController2::class, 'paginaDoVendedor2'); 
 
 // área comum
 
@@ -75,17 +72,19 @@ $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
 $router->get('/faq', faqController::class, 'faq');
 $router->get('/historicoDePedidos', HistoricoDePedidosController::class, 'historicoDePedidos');
-$router->get('/logout', AuthController::class, 'logout');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
-$router->get('/sobre', HomeController::class, 'sobre');
-$router->get('/nossaPolitica', HomeController::class, 'nossaPolitica');
+$router->get('/logout', AuthController::class, 'logout');
 $router->post('/esqueciSenha', AuthController::class, 'recuperarSenha');
+$router->get('/nossaPolitica', HomeController::class, 'nossaPolitica');
+
+// Problema
+
+$router->get('/paginaDoVendedor2', PaginaDoVendedorController2::class, 'paginaDoVendedor2'); 
+
 $router->get('/produto', ProdutoController::class, 'produto');
-
-
-
-
+$router->get('/sobre', HomeController::class, 'sobre');
+$router->get('/termosDeUso', TermosDeUsoController::class, 'termosDeUso');
 
 
 // Home
