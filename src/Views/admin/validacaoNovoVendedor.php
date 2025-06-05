@@ -12,7 +12,7 @@ $base_url = get_base_url();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../assets/css/footer.css">
+  <link rel="stylesheet" href="<?= get_base_url(); ?>assets/css/footer.css">
   <?php get_css(['ValidacaoNovoVendedor', 'base', 'style']) ?>
   <title>E ao quadrado - Validar novo Vendedor</title>
 </head>

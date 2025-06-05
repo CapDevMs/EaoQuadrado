@@ -34,7 +34,7 @@ $base_url = get_base_url();
             <div>
                 <ul class="footer-links-list">
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>cadastro-cliente" class="footer-links-link">Minha Conta</a>
+                        <a href="<?=$base_url;?>cadastroCliente" class="footer-links-link">Minha Conta</a>
                     </li>
                     <li class="footer-links-item">
                         <a href="<?=$base_url;?>login" class="footer-links-link">Entre/Cadastre</a>
@@ -55,10 +55,10 @@ $base_url = get_base_url();
             <div>
                 <ul class="footer-links-list">
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>nossa-politica" class="footer-links-link">Nossa Política</a>
+                        <a href="<?=$base_url;?>nossaPolitica" class="footer-links-link">Nossa Política</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>termos_de_uso" class="footer-links-link">Termos de Uso</a>
+                        <a href="<?=$base_url;?>termosUso" class="footer-links-link">Termos de Uso</a>
                     </li>
                     <li class="footer-links-item">
                         <a href="<?=$base_url;?>faq" class="footer-links-link">FAQ</a>

@@ -26,7 +26,7 @@ $base_url = get_base_url();
     <main>
         <roadMap class='mt-1 mb-1 ml-1 roadMap'>
             <a href="<?=get_base_url();?>" class='roadMap1'>Home /</a>
-            <a href="<?=get_base_url();?>PainelDoAdministrador" class='roadMap1'>Painel do administrador /</a>
+            <a href="<?=get_base_url();?>admin/indexAdm" class='roadMap1'>Painel do administrador /</a>
             <a href="#" class='roadMap2'>Contas inativas</a>
         </roadMap>
         <corpo class='corpo col-12 row'>

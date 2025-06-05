@@ -28,8 +28,8 @@ $base_url = get_base_url();
                         <input type="checkbox" id="item1">
                         <label for="item1">Cadastro</label>
                         <div class="content">
-                            <a href="<?= get_base_url(); ?>produto">Cadastrar Novo Administrador</a>
-                            <a href="<?= get_base_url(); ?>meuPerfilAdm">Gerenciar Meu Perfil</a>
+                            <a href="<?= get_base_url(); ?>admin/cadastroAdm">Cadastrar Novo Administrador</a>
+                            <a href="<?= get_base_url(); ?>admin/meuPerfilAdm">Gerenciar Meu Perfil</a>
                         </div>
                     </li>
 
@@ -37,12 +37,12 @@ $base_url = get_base_url();
                         <input type="checkbox" id="item2">
                         <label for="item2">Colaboradores</label>
                         <div class="content">
-                            <a href="<?= get_base_url(); ?>validacaoNovoVendedor">Validar Novo Colaborador</a>
-                            <a href="<?= get_base_url(); ?>#">Validar Novo Colaborador</a>
-                            <a href="<?= get_base_url(); ?>historicoDeContas">Colaboradores Aprovados</a>
-                            <a href="<?= get_base_url(); ?>historicoDeContas">Colaboradores Reprovados</a>
-                            <a id="pagina_atual" href="<?=get_base_url();?>listaDeVendedores">Listar Colaboradores Ativos</a>
-                            <a href="<?= get_base_url(); ?>suporteAoColaborador">Suporte ao Colaborador</a>
+                            <a href="<?= get_base_url(); ?>admin/validacaoNovoVendedor">Validar Novo Colaborador</a>
+                            <a href="<?= get_base_url(); ?>admin/validacaoNovoVendedor">Validar Novo Colaborador</a>
+                            <a href="<?= get_base_url(); ?>admin/contasAprovadasReprovadas">Colaboradores Aprovados</a>
+                            <a href="<?= get_base_url(); ?>admin/contasAprovadasReprovadas">Colaboradores Reprovados</a>
+                            <a id="pagina_atual" href="<?=get_base_url();?>admin/listaVendedores">Listar Colaboradores Ativos</a>
+                            <a href="<?= get_base_url(); ?>admin/suporteColaborador">Suporte ao Colaborador</a>
                             <img src="<?=get_base_url();?>public/assets/img/" alt="">
                         </div>
                     </li>
@@ -51,7 +51,7 @@ $base_url = get_base_url();
                         <input type="checkbox" id="item3">
                         <label for="item3">Clientes</label>
                         <div class="content">
-                            <a href="<?=get_base_url();?>suporte"> Suporte ao Cliente</a>
+                            <a href="<?=get_base_url();?>contato"> Suporte ao Cliente</a>
                         </div>
                     </li>
 
@@ -59,8 +59,8 @@ $base_url = get_base_url();
                         <input type="checkbox" id="item4">
                         <label for="item4">Sistema</label>
                         <div class="content">
-                            <a href="<?= get_base_url(); ?>#">Abrir Chamado</a>
-                            <a href="<?= get_base_url(); ?>/pages/admin/criar_categoria.php">Criar Categoria</a>
+                            <a href="<?= get_base_url(); ?>contato">Abrir Chamado</a>
+                            <a href="<?= get_base_url(); ?>admin/criarCategoria">Criar Categoria</a>
                         </div>
                     </li>
                 </ul>

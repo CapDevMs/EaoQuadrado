@@ -50,7 +50,7 @@
                 <inserir_dados></inserir_dados>
             </div>
             <div class='frame-esquerda'>
-                 <img src="assets/img/foto_cliente.png" alt="foto do cliente">
+                 <img src="<?= get_base_url(); ?>assets/img/foto_cliente.png" alt="foto do cliente">
                  <permissoesAdm></permissoesAdm>
             </div>
         </div>
@@ -60,5 +60,5 @@
     <?php get_footer(); ?>    
     
 </body>
-<script type="module" src="assets/js/meu_perfil_adm.js?<?= time() ?>"></script>
+<script type="module" src="<?= get_base_url(); ?>assets/js/meu_perfil_adm.js?<?= time() ?>"></script>
 </html>

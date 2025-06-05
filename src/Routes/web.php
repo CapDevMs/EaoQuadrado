@@ -34,15 +34,15 @@ $router = new Router();
 
 // área adm
 
-$router->get('/cadastroAdm', cadastroAdmController::class, 'cadastroAdm');
-$router->get('/contasAprovadasReprovadas', AprovadosController::class, 'contasAprovadasReprovadas');
-$router->get('/contasInativas', contasInativasController::class, 'contasInativas'); 
-$router->get('/criarCategoria', CriarCategoriaController::class, 'criarCategoria'); 
-$router->get('/indexAdm', IndexAdmController::class, 'indexAdm');
-$router->get('/listaDeVendedores', ListaVendedoresController::class, 'listaDeVendedores');
-$router->get('/meuPerfilAdm', meuPerfilAdmController::class, 'perfilAdm');
-$router->get('/suporteAoColaborador', SuporteAoColaboradorController::class, 'suporteAoColaborador');
-$router->get('/validacaoNovoVendedor', ValidacaoNovoVendedorController::class, 'validacaoNovoVendedor');
+$router->get('/admin/cadastroAdm', cadastroAdmController::class, 'cadastroAdm');
+$router->get('/admin/contasAprovadasReprovadas', AprovadosController::class, 'contasAprovadasReprovadas');
+$router->get('/admin/contasInativas', contasInativasController::class, 'contasInativas'); 
+$router->get('/admin/criarCategoria', CriarCategoriaController::class, 'criarCategoria'); 
+$router->get('/admin/indexAdm', IndexAdmController::class, 'indexAdm');
+$router->get('/admin/listaVendedores', ListaVendedoresController::class, 'listaDeVendedores');
+$router->get('/admin/meuPerfilAdm', meuPerfilAdmController::class, 'perfilAdm');
+$router->get('/admin/suporteColaborador', SuporteAoColaboradorController::class, 'suporteAoColaborador');
+$router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::class, 'validacaoNovoVendedor');
 
 // cadastros
 
@@ -56,12 +56,12 @@ $router->get('/carrinho', CarrinhoController::class, 'carrinho');
 
 // área vendedor
 
-$router->get('/cadastrarProduto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
-$router->get('/historicoDeVendas', HistoricoVendasController::class, 'historicoDeVendas');
-$router->get('/minhaLoja', MinhaLojaController::class, 'minhaLoja');
-$router->get('/paginaDoVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');
-$router->get('/gerenciamentoDeEstoque', GerenciamentoDeEstoqueController::class, 'gerenciamentoDeEstoque');
-$router->get('/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');
+$router->get('/vendedor/cadastrarProduto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+$router->get('/vendedor/historicoVendas', HistoricoVendasController::class, 'historicoDeVendas');
+$router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja');
+$router->get('/vendedor/paginaVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');
+$router->get('/vendedor/gerenciamentoEstoque', GerenciamentoDeEstoqueController::class, 'gerenciamentoDeEstoque');
+$router->get('/vendedor/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');
 
 
 
@@ -71,7 +71,7 @@ $router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
 $router->get('/faq', faqController::class, 'faq');
-$router->get('/historicoDePedidos', HistoricoDePedidosController::class, 'historicoDePedidos');
+$router->get('/historicoPedidos', HistoricoDePedidosController::class, 'historicoDePedidos');
 $router->get('/login', AuthController::class, 'index');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/logout', AuthController::class, 'logout');
@@ -80,11 +80,14 @@ $router->get('/nossaPolitica', HomeController::class, 'nossaPolitica');
 
 // Problema
 
-$router->get('/paginaDoVendedor2', PaginaDoVendedorController2::class, 'paginaDoVendedor2'); 
+$router->get('/paginaVendedor', PaginaDoVendedorController2::class, 'paginaDoVendedor2'); 
+
+
+
 
 $router->get('/produto', ProdutoController::class, 'produto');
 $router->get('/sobre', HomeController::class, 'sobre');
-$router->get('/termosDeUso', TermosDeUsoController::class, 'termosDeUso');
+$router->get('/termosUso', TermosDeUsoController::class, 'termosDeUso');
 
 
 // Home
