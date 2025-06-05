@@ -14,7 +14,6 @@ const filtroComponent = (categoria) => {
                         <input class="numberInput" type="number" id="max">
                     </div> 
                 </div>
-
                 <div class="row">
                     <h3 class="categoriasFiltro mb-1">Categorias</h3>
                     <a class="categoriasFiltro" href="#">${categoria[0]}</a>
@@ -24,7 +23,6 @@ const filtroComponent = (categoria) => {
                     <a class="categoriasFiltro" href="#">${categoria[4]}</a>
                     <a class="categoriasFiltro" href="#">${categoria[5]}</a>
                 </div>
-
                 <div class="vendedoresAvaliation">
                     <h2>Avaliação Dos Vendedores</h2>
                     <div class="inputTodos row">
@@ -46,7 +44,6 @@ const filtroComponent = (categoria) => {
                             <i class="fa fa-star icone-star"></i>
                             <i class="fa fa-star icone-star"></i>
                         </div>
-
                     </div>
                     <div class="inputAvaliation row">
                         <label class="checkbox-radio col-sm-2">
@@ -60,7 +57,6 @@ const filtroComponent = (categoria) => {
                             <i class="fa fa-star icone-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
-
                     </div>
                     <div class="inputAvaliation row">
                         <label class="checkbox-radio col-sm-2">
@@ -100,11 +96,8 @@ const filtroComponent = (categoria) => {
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>                            
                         </div>
-
                     </div>
                 </div>
-                
-                
             </div>
     `;
 };
