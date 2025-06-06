@@ -6,10 +6,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
-    <?php get_css(['vendedor/cadastrar_produto_vendedor']) ?>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
+  <?php get_css(['sidebar','base', 'style', 'vendedor/cadastrar_produto_vendedor']) ?>
 </head>
 <body>
     <?php get_header() ?>
@@ -21,11 +21,11 @@
                 <h6>Conta</h6>
             </a>
             <span id="separator">/</span>
-            <a href="minha_loja.php" id="minha-conta">
+            <a href="<?= get_base_url(); ?>vendedor/minhaLoja" id="minha-conta">
                 <h6>Minha Conta</h6>
             </a>
             <span id="separator">/</span>
-            <a href="cadastrar_produto_vendedor.php" id="cadastrar-produto">
+            <a href="<?= get_base_url(); ?>vendedor/cadastrarProdutoVendedor" id="cadastrar-produto">
                 <h6>Cadastrar Produto</h6></a>
         </div>
     
@@ -91,7 +91,7 @@
                 </div>
             </form>
             <div class="botoes-container">
-                <button id="cancelar" type="button">Cancelar</button>
+                <button id="cancelar" type="button" onclick="voltarPagina()">Cancelar</button>
                 <button id="salvar" type="button">Salvar</button> 
             </div>
             <div id="mensagem-sucesso" style="display: none; color: green; padding: 10px; border: 1px solid green; margin-top: 20px;">
@@ -101,7 +101,7 @@
     </main>
     <?php get_footer() ?>
 
-    <script src="../../assets/js/script.js"></script>
+    <script src="<?= get_base_url(); ?>assets/js/script.js"></script>
     <script>
         document.getElementById('salvar').addEventListener('click', function() {
             

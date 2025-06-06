@@ -41,7 +41,7 @@
             
             </div>
             <a class="btn-home" href="<?=$base_url;?>">
-            <button id="retorno" type="button">Retorne ao início</button>
+            <button href = '<?= get_base_url(); ?>'id="retorno" type="button">Retorne ao início</button>
             </a>
     </main>
 

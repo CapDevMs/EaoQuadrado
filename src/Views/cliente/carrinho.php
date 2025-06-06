@@ -54,20 +54,12 @@ $titulo = 'Carrinho';
 
         <div class="totalLine">
             <button class='botao1' onclick="voltarPagina()">Retorne as compras</button>
-            <script>
-                function voltarPagina() {
-                    window.history.back();
-
-                }
-            </script>
+    
             <a href='https://web.whatsapp.com/' style="max-width: fit-content;"><button id='ApagarCarrinho' class='botao2' onclick='LimparCarrinho()'>Ir ao Whatsapp</button></a>
-            <script>
-                function LimparCarrinho() {
-                    localStorage.removeItem('listaProdutos')
-                }
-            </script>
+            
         </div>
     </div>
+    <script src="<?php get_base_head(); ?>assets/js/script.js"></script>
     <?php get_footer() ?>
     <script src="<?php get_base_head(); ?>assets/js/carrinho/script.js"></script>
     <script src="<?php get_base_head(); ?>assets/js/carrinho/apiCarrinho.js"></script>

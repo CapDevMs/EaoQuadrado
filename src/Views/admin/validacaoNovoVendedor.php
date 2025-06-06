@@ -23,8 +23,8 @@ $base_url = get_base_url();
   <main>
 
     <roadMap class='roadMap'>
-      <a href="<?= $base_url; ?>/src/index.php" class='roadMap1'>Home /</a>
-      <a href="#" class='roadMap1'>Painel do Administrador /</a>
+      <a href="<?= get_base_url(); ?>" class='roadMap1'>Home /</a>
+      <a href = "<?= get_base_url(); ?>admin/indexAdm" class='roadMap1'>Painel do Administrador /</a>
       <a class='roadMap2 redutor'>Validação de novos colaboradores</a>
     </roadMap>
 

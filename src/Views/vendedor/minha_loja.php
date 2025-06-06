@@ -83,7 +83,7 @@
                     
                     <div class="row pb-3 float-end">
                         <div class="col-3 col-sm-6">
-                            <button type="button" class="btn-cancel">Cancelar</button>
+                            <button type="button" class="btn-cancel" onclick="voltarPagina()" >Cancelar</button>
                         </div>
                         <div class="col-3 col-sm-6">
                             <button class="btn-save">Salvar Mudanças</button> 
@@ -96,5 +96,5 @@
 
     <?php get_footer() ?>
 </body>
-<script src="<?php get_base_url(); ?>assets/js/script.js"></script>
+<script src="<?php get_base_url(); ?>/assets/js/script.js"></script>
 </html>

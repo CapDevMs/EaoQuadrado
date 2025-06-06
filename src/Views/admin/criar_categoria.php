@@ -26,20 +26,20 @@ $titulo = 'Criar Categoria';
         <div class="container-geral">
             <div class="menu-container">
                 <h1>Cadastro</h1>
-                <a href="#" id="pagina_atual">Cadastrar Novo Administrador</a>
-                <a href="./meu_perfil_adm.php">Gerenciar Meu Perfil</a>
+                <a href="<?=get_base_url();?>admin/cadastroAdm" id="pagina_atual">Cadastrar Novo Administrador</a>
+                <a href="<?=get_base_url();?>admin/meuPerfilAdm">Gerenciar Meu Perfil</a>
                 <h1>Colaboradores</h1>
-                <a href="#">Validar Novo Colaborador</a>
-                <a href="#">Colaboradores Aprovados</a>
-                <a href="#">Colaboradores Reprovados</a>
-                <a href="#">Listar Colaboradores Ativos</a>
-                <a href="#">Suporte ao Colaborador</a>
+                <a href="<?=get_base_url();?>admin/validacaoNovoVendedor">Validar Novo Colaborador</a>
+                <a href="<?=get_base_url();?>admin/contasAprovadasReprovadas">Colaboradores Aprovados</a>
+                <a href="<?=get_base_url();?>admin/contasAprovadasReprovadas">Colaboradores Reprovados</a>
+                <a href="<?=get_base_url();?>admin/listaVendedores">Listar Colaboradores Ativos</a>
+                <a href="<?=get_base_url();?>admin/suporteColaborador">Suporte ao Colaborador</a>
                 <h1>Clientes</h1>
-                <a href="#">Suporte ao Cliente</a>
+                <a href="<?=get_base_url();?>admin/suporteColaborador">Suporte ao Cliente</a>
                 <h1>Sistema</h1>
-                <a href="#">Abrir Chamado</a>
-                <a href="#">Criar Categoria</a>
-                <a href="#">Editar Sistema</a>
+                <a href="<?=get_base_url();?>contato">Abrir Chamado</a>
+                <a href="<?=get_base_url();?>admin/criarCategoria">Criar Categoria</a>
+                <a href="<?=get_base_url();?>">Editar Sistema</a>
             </div>
 
             <div class="create-container">

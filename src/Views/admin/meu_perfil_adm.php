@@ -16,16 +16,16 @@
     <?php get_header(); ?>
     <main>
         <h5 class="map">
-            <a href="/">Home</a><span>/</span><a id="painel" href="">Painel do Administrador</a><span>/</span><a id="minha-conta" href="./meu_perfil_adm.php">Minha conta</a></h5>
+            <a href="<?=get_base_url();?>">Home</a><span>/</span><a id="painel" href="<?=get_base_url();?>admin/indexAdm">Painel do Administrador</a><span>/</span><a id="minha-conta" href="<?=get_base_url();?>admin/meuPerfilAdm">Minha conta</a></h5>
          <div id="menu-lateral">
             <div class="info-menu-lateral">
                 <h3>Cadastro</h3>
-                <a href="link">Cadastrar Novo Administrador</a>
-                <a href="link">Gerenciar Meu Perfil</a>
+                <a href="<?=get_base_url();?>admin/cadastrarAdm">Cadastrar Novo Administrador</a>
+                <a href="<?=get_base_url();?>admin/meuPerfilAdm">Gerenciar Meu Perfil</a>
             </div>
             <div class="info-menu-lateral">
             <h3>Colaboradores</h3>
-                <a href="link">Válidar Novo Colaborador</a>
+                <a href="<?=get_base_url();?>admin/validarNovoVendedor  ">Válidar Novo Colaborador</a>
                 <a href="link">Colaboradores Aprovados</a>
                 <a href="link">Colaboradores Reprovados</a>
                 <a href="link">Listar Colaboradores Ativos</a>
@@ -54,7 +54,7 @@
                  <permissoesAdm></permissoesAdm>
             </div>
         </div>
-        <button id="salvar" type="submit">Salvar</button>
+        <button id="salvar" type="submit" onclick = "window.location.href='<?=get_base_url();?>admin/meuPerfilAdm'" >Salvar</button>
     </main>
     
     <?php get_footer(); ?>    
