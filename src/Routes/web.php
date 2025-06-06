@@ -12,7 +12,7 @@ use App\Controllers\faqController;
 use App\Controllers\favoritosController;
 use App\Controllers\CadastroClienteController;
 use App\Controllers\CarrinhoController;
-use App\Controllers\CadastrarProdutoVendedorController;
+use App\Controllers\CadastroProdutoVendedorController;
 use App\Controllers\CadastroVendedorController;
 use App\Controllers\MinhaLojaController;
 use App\Controllers\CadastroAdminController;
@@ -43,6 +43,7 @@ $router->get('/produto', ProdutoController::class, 'produto');
 
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
 $router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+$router->post('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
 $router->get('/minha-loja', MinhaLojaController::class, 'loja');
 $router->get('/vendedor', perfilVendedor::class, 'vendedor');
 
