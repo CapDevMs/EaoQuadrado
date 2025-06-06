@@ -43,6 +43,7 @@ $router->get('/produto', ProdutoController::class, 'produto');
 
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
 $router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+$router->post('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
 $router->get('/minha-loja', MinhaLojaController::class, 'loja');
 $router->get('/vendedor', perfilVendedor::class, 'vendedor');
 
