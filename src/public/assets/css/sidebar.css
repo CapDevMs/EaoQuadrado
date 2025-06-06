@@ -19,9 +19,6 @@ ul {
     margin-bottom: 1em;
 }
 
-input[type="checkbox"] {
-    display: none;
-}
 
 label {
     width: max-content;
@@ -31,11 +28,8 @@ label {
     font-size: 16px;
 }
 
-.content {
-    display: none;
-}
 
-input[type="checkbox"]:checked + label + .content {
+.content {
     display: flex;
     flex-direction: column;
 }
@@ -46,7 +40,7 @@ input[type="checkbox"]:checked + label + .content {
     color: var(--cor-texto);
     font-size: 16px;
     opacity: 0.6;
-    margin-left: 1rem;
+    margin-left: 0rem;
     margin-top: 0.25rem;
 }
 
