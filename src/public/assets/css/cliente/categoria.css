@@ -1,7 +1,7 @@
 .container-video {
   position: relative;
   margin-bottom: 2%;
-  height: 600px;
+  height: 500px;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
@@ -23,35 +23,30 @@
   display: flex;
   
 }
-.containerRight{
+.containerRight {
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  
-  
+  margin-left: 8%;
 }
+
 .buttonCategoria{
   display: flex;
   align-items: end;
-  
 }
 .containerCategoria{
   margin-bottom: 2%;
 }
-.containerprodutofav{
-  display: flex;
-  margin: 0 auto;
+
+.button {
+  margin-bottom: 2%;
 }
+
 .filtroCategoria{
   display: flex;
   
 }
 
-@media (max-width:600px) {
-  
-  .filtroCategoria{
-  display: none;
-  
-}
+@media (max-width:768px) {
+
 
 }

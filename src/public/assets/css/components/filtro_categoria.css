@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 3rem;
 }
 
 .filtroCategoria > h2 {
@@ -51,7 +52,6 @@
     text-decoration: none;
     color: black;
     white-space: nowrap;
-    width: max-content;
     margin-bottom: 2%;
 }
 
@@ -105,18 +105,18 @@ background: var(--cor-principal);
     row-gap: 10px;
 }
 
-.vendedoresAvaliation > h2 {
+.categoriasFiltro, .vendedoresAvaliation > h2 {
     font-size: 18px;
 }
 
-.inputTodos {
-    display: block;
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .fa-star,.icone-star {
         width: 12px !important; 
         font-size: 12px !important;
+    }
+
+    .filtroCategoria {
+        margin-left: 1rem;
     }
 
     .checkmark {
@@ -124,12 +124,8 @@ background: var(--cor-principal);
         width: 16px;
     }
 
+    .categoriasFiltro, .vendedoresAvaliation > h2 {
+        font-size: 16px;
+    }
     
 }
-
-@media (max-width: 768px) {
-    .containerLeft {
-        display: none;
-    }
-}
-

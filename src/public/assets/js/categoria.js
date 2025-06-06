@@ -20,33 +20,27 @@ const docTagCategoria = document.querySelector('buttonCategoria');
 const categorias = [
     {
         imagem: 'assets/img/camera_icon.svg',
-        nome: 'Camera',
-        link: '#'
+        nome: 'Camera'
     },
     {
         imagem: 'assets/img/cellphone_icon.svg',
-        nome: 'Celulares',
-        link: '#'
+        nome: 'Celulares'
     },
     {
         imagem: 'assets/img/computer_icon.svg',
-        nome: 'Computador',
-        link: '#'
+        nome: 'Computador'
     },
     {
         imagem: 'assets/img/games_icon.svg',
-        nome: 'Games',
-        link: '#'
+        nome: 'Games'
     },
     {
         imagem: 'assets/img/headphone_icon.svg',
-        nome: 'Fone de Ouvido',
-        link: '#'
+        nome: 'Fone de Ouvido'
     },
     {
         imagem: 'assets/img/smartwatches_icon.svg',
-        nome: 'Smartwatch',
-        link: '#'
+        nome: 'Smartwatch'
     }
 ];
 

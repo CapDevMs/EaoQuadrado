@@ -1,15 +1,11 @@
-const buttonCategoria = ({ imagem, nome, link }) => {
+const buttonCategoria = ({ imagem, nome }) => {
     return `
-        <a href="${link}" >
-            <button class="button col-sm-2 col-md-3" type="button">
+            <button class="button col-sm-2 col-md-4 col-lg-2" type="button">
                 <div class="container-imagem col-sm-12">
                     <img class="img-CategoriaButton" src="${imagem}" alt="Ícone de ${nome}">
                 </div>
-                <div class="">
-                    <a class="nome-categoria">${nome}</a>
-                </div>
+                    <p class="nome-categoria">${nome}</p>
             </button>
-        </a>
     `;
 };
 
