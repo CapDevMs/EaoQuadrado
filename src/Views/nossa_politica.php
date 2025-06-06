@@ -62,6 +62,6 @@
  
     <?php get_footer() ?>
 </body>
-<script src="../assets/js/script.js"></script>
+<script src="<?= get_base_url(); ?>assets/js/script.js"></script>
  
 </html>

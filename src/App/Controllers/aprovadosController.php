@@ -6,9 +6,8 @@ use Core\View;
 
 class AprovadosController extends Controller
 {
-    public function historicoDeContas()
+    public function contasAprovadasReprovadas()
     {
         View::render('admin/contas_aprovadas_reprovadas');
-        // View::render('homepage');
     }
 }

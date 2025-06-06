@@ -1,5 +1,4 @@
 <?php
-
 $appName = get_app_name();
 $titulo = 'EaoQuadrado - Contas Inativas';
 ?>
@@ -17,6 +16,7 @@ $base_url = get_base_url();
     <title><?= $appName . ' - ' . $titulo ?? '' ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?php get_css(['style', 'base', 'admin/contas_inativas', 'sidebar']) ?>
+
 </head>
 
 <body>
@@ -26,8 +26,8 @@ $base_url = get_base_url();
 
     <main>
         <roadMap class='mt-1 mb-1 ml-1 roadMap'>
-            <a href="#" class='roadMap1'>Home /</a>
-            <a href="#" class='roadMap1'>Painel do administrador /</a>
+            <a href="<?=get_base_url();?>" class='roadMap1'>Home /</a>
+            <a href="<?=get_base_url();?>admin/indexAdm" class='roadMap1'>Painel do administrador /</a>
             <a href="#" class='roadMap2'>Contas inativas</a>
         </roadMap>
         <corpo class='corpo col-12 row'>
@@ -49,7 +49,7 @@ $base_url = get_base_url();
                         <AcordeonAberto type='button' class='painel painelCentral col-12 centralizar mt-3 acordeonAberto displayNone' onclick="fecharAcordeon('acordeonSuspenso1')">
                             <div class='painelCinza'>
                                 <div class='blocoReativar subBloco0 col-md-2'>
-                                    <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                    <img src="<?=get_base_url();?>public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
                                    </div>
                                 <div class="blocoNome miniFonte subBloco1">Nome da empresa</div>
 
@@ -72,7 +72,7 @@ $base_url = get_base_url();
                         <AcordeonFechado type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon('acordeonSuspenso1')">
                             <div class='painelCinza'>
                                 <div class='blocoReativar subBloco0 col-md-2'>
-                                    <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                    <img src="<?=get_base_url();?>public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
                                 </div>
                                 <div class=" blocoNome miniFonte subBloco1">Nome da empresa</div>
 
@@ -99,7 +99,7 @@ $base_url = get_base_url();
                         <AcordeonAberto type='button' class='painel painelCentral col-12 centralizar mt-3 acordeonAberto displayNone' onclick="fecharAcordeon('acordeonDesativado2')">
                             <div class='painelCinza'>
                                 <div class='blocoReativar subBloco0 col-md-2'>
-                                    <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                    <img src="<?=get_base_url();?>public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
                                 </div>
                                 <div class="blocoNome miniFonte subBloco1">Nome da empresa</div>
 
@@ -122,7 +122,7 @@ $base_url = get_base_url();
                         <AcordeonFechado type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon('acordeonDesativado2')">
                             <div class='painelCinza'>
                                 <div class='blocoReativar subBloco0 col-md-2'>
-                                    <img src="src/public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
+                                    <img src="<?=get_base_url();?>public/assets/img/foto-perfil.png" alt="foto-perfil" class='imagem'>
                                 </div>
                                 <div class=" blocoNome miniFonte subBloco1">Nome da empresa</div>
 
@@ -155,7 +155,7 @@ $base_url = get_base_url();
     <?php get_footer() ?>
 </body>
 
-<script src='<?php $base_url; ?>src/public/assets/js/contas_inativas.js'>
+<script src='<?=get_base_url();?>src/public/assets/js/contas_inativas.js'>
 
 </script>
 

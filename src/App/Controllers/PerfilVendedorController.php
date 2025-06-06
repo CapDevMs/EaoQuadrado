@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Core\View;
 
-class perfilVendedor extends Controller
+class PerfilVendedorController extends Controller
 {
 
     public function vendedor()

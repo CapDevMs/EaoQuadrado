@@ -1,6 +1,9 @@
 let arrayLocalStorage = JSON.parse(localStorage.getItem("listaProdutos")) || [];
 console.log(arrayLocalStorage);
 
+function LimparCarrinho() {
+    localStorage.removeItem('listaProdutos')
+}
 
 if (arrayLocalStorage.length == 0) {
     console.log('Carrinho vazio');

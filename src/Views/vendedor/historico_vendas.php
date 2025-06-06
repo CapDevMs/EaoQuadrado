@@ -41,7 +41,7 @@ $titulo = 'Histórico de Vendas';
   </main>
   <?php get_footer() ?>
 </body>
-<script type="module" src="<?= get_base_url(); ?>/assets/js/vendedor/historico_vendas.js"></script>
-<script type="module" src="<?= get_base_url(); ?>/assets/js/script.js"></script>
+<script type="module" src="<?= get_base_url(); ?>assets/js/vendedor/historico_vendas.js"></script>
+<script type="module" src="<?= get_base_url(); ?>assets/js/script.js"></script>
 
 </html>

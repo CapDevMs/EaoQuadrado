@@ -7,7 +7,7 @@ use Core\View;
 class HistoricoVendasController extends Controller
 {
 
-    public function vendas()
+    public function historicoDeVendas()
     {
         View::render('vendedor/historico_vendas');
     }

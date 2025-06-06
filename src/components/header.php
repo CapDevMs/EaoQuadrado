@@ -15,22 +15,22 @@ $base_url = get_base_url();
         </div>
         <ul class="menu-opcoes">
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>/login">
+                <a href="<?=$base_url;?>login">
                     <img src="<?=$base_url;?>/assets/img/pessoa.svg" alt="Pessoa">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>/carrinho">
+                <a href="<?=$base_url;?>carrinho">
                     <img src="<?=$base_url;?>/assets/img/carrinho.svg" alt="Carrinho">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>/cadastros/sobre">
+                <a href="<?=$base_url;?>sobre">
                     <img src="<?=$base_url;?>/assets/img/informacao.svg" alt="Informações">
                 </a>
             </li>
             <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>/cadastros/contato">
+                <a href="<?=$base_url;?>contato">
                     <img src="<?=$base_url;?>/assets/img/suporte.svg" alt="suporte">
                 </a>
             </li>
@@ -44,10 +44,10 @@ $base_url = get_base_url();
 <!-- Menu Mobile -->
 <div class="mobile-menu" id="mobileMenu">
     <ul>
-        <li><a href="<?=$base_url;?>/login">Login</a></li>
-        <li><a href="<?=$base_url;?>/carrinho">Carrinho</a></li>
-        <li><a href="<?=$base_url;?>/cadastros/sobre">Sobre</a></li>
-        <li><a href="<?=$base_url;?>/cadastros/contato">Contato</a></li>
+        <li><a href="<?=$base_url;?>login">Login</a></li>
+        <li><a href="<?=$base_url;?>carrinho">Carrinho</a></li>
+        <li><a href="<?=$base_url;?>sobre">Sobre</a></li>
+        <li><a href="<?=$base_url;?>contato">Contato</a></li>
     </ul>
 </div>
 

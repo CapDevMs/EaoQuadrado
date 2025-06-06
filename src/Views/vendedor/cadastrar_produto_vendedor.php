@@ -21,7 +21,7 @@
                 <h6>Conta</h6>
             </a>
             <span id="separator">/</span>
-            <a href="minha_loja.php" id="minha-conta">
+            <a href="<?= get_base_url(); ?>vendedor/minhaLoja" id="minha-conta">
                 <h6>Minha Conta</h6>
             </a>
             <span id="separator">/</span>
@@ -120,7 +120,7 @@
 
     <?php get_footer() ?>
 
-    <script src="../../assets/js/script.js"></script>
+    <script src="<?= get_base_url(); ?>assets/js/script.js"></script>
     <script>
         document.getElementById('salvar').addEventListener('click', function() {
             var mensagemSucesso = document.getElementById('mensagem-sucesso');

@@ -191,7 +191,7 @@ $titulo = 'Cadastro de Vendedor';
                     </div>
                     
                     <div class="buttons-cont">
-                        <button type="reset" class="button-cancel">Cancelar</button>
+                        <button type="reset" class="button-cancel" onclick="voltarPagina()">Cancelar</button>
                         <button type="submit" class="button-confirm">Registrar</button>
                     </div>
                 </div>

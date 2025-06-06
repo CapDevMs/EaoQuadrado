@@ -10,8 +10,8 @@ $appName = get_app_name();
     <title>E ao Quadrado - O melhor E-commerce</title>
     <!-- <title><?= $appName . ' - ' . $titulo ?? '' ?></title> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <?php get_css(['filtro_categoria', 'cliente/categoria']) ?>
-    <?php get_css(['style', 'base','cliente/categoria']) ?>
+    <?php get_css(['filtro_categoria', 'cliente/categoria']); ?>
+    <?php get_css(['style', 'base','cliente/categoria']); ?>
     <?php get_css_components() ?>
 </head>
 
@@ -19,7 +19,7 @@ $appName = get_app_name();
     <?php get_header() ?>
     <div class="container-video">
                 <video autoplay muted loop>
-                    <source src="assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">
+                    <source src="<?= get_base_url(); ?>assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">
                 </video>
     </div>
 
@@ -37,7 +37,7 @@ $appName = get_app_name();
 
     </div>
 
-    <script type="module" src="assets/js/categoria.js?<?= time(); ?>" defer></script>
+    <script type="module" src="<?= get_base_url(); ?>assets/js/categoria.js?<?= time(); ?>" defer></script>
     <script type="module" src="<?= get_base_url(); ?>assets/js/filtroCategoria.js"></script>
     <?php get_footer() ?>
 </body>

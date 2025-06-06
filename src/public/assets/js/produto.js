@@ -6,7 +6,7 @@ const docTagContador = document.querySelector("#contadorBtn");
 
 let images = [
     {
-        'image': '../assets/img/tela-produtos/bolsa.png',
+        'image': 'http://localhost/EaoQuadrado/src/public/assets/img/tela-produtos/bolsa.png',
     },
 ];
 

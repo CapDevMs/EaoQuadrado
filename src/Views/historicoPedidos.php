@@ -45,7 +45,7 @@ $titulo = 'Histórico de Pedidos';
                 <div>
                     <div class='produto row colum490'>
                         <div class='grandeBloco1 col-sm-12 col-lg-3 centralizar col-3'>
-                            <img class='col-lg-8 imagem' src="../assets/img/acer_nitro.png">
+                            <img class='col-lg-8 imagem' src="<?= get_base_url(); ?>assets/img/acer_nitro.png">
                         </div>
                         <div class='grandeBloco2 col-sm-12 col-lg-9 row column'>
                             <div class='col-lg-6 row col-12'>
