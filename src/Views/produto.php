@@ -34,10 +34,10 @@ $appName = get_app_name();
                         <div id="comprar">
                             <div id="btn-comprar"><a>Comprar</a></div>
                             <div id="icons-comprar">
-                                <button id="MandarCarrinho" value="gucci_bolsa_intense.png|Gucci intense|400,00">
-                                    <img class='icon iconCarrinho' src="<?= get_base_url(); ?>assets/img/carrinho-tela-produto.svg">
-                                </button>
-                                <img src="<?= get_base_url(); ?>assets/img/coracao-tela-produto.svg">
+                                
+                                <img class = 'cursor' onclick = "window.location.href='<?=get_base_url();?>admin/carrinho'" id="MandarCarrinho icon" src="<?= get_base_url(); ?>assets/img/carrinho-tela-produto.svg" value="gucci_bolsa_intense.png|Gucci intense|400,00">
+                                
+                                <img class = 'cursor' onclick = "window.location.href='<?=get_base_url();?>favoritos'" src="<?= get_base_url(); ?>assets/img/coracao-tela-produto.svg">
                             </div>
 
                         </div>
