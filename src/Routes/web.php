@@ -1,8 +1,9 @@
 <?php
-
+ 
 use App\Controllers\AprovadosController;
 use App\Controllers\AuthController;
 use App\Controllers\HomeController;
+use App\Controllers\AberturaChamadosController;
 use App\Controllers\categoriaController;
 use App\Controllers\HistoricoVendasController;
 use App\Controllers\ProdutoController;
@@ -18,10 +19,10 @@ use App\Controllers\MinhaLojaController;
 use App\Controllers\CadastroAdminController;
 use App\Controllers\perfilVendedor;
 use Core\Router;
-
+ 
 $router = new Router();
-
-
+ 
+ 
 // área comum
 
 $router->get('/', HomeController::class, 'index');
@@ -37,10 +38,10 @@ $router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroClie
 $router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
 $router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/produto', ProdutoController::class, 'produto');
-
-
+ 
+ 
 // área vendedor
-
+ 
 $router->get('/vendas', HistoricoVendasController::class, 'vendas');
 $router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
 $router->post('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
@@ -49,23 +50,29 @@ $router->get('/vendedor', perfilVendedor::class, 'vendedor');
 
 
 // área cliente
-
+ 
 $router->get('/favoritos', FavoritosController::class, 'favoritos');
 $router->get('/carrinho', CarrinhoController::class, 'carrinho');
-
+ 
 // área adm
 
 $router->get('/contas-inativas', contasInativasController::class, 'contasInativas');
 $router->get('/historico-de-contas', AprovadosController::class, 'historicoDeContas');
 $router->get('/cadastrar-novo-adm', CadastroAdminController::class, 'cadastroAdmin');
 $router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
+$router->get('/chamados', AberturaChamadosController::class, 'chamados');
 $router->get('/suporte_colaborador', suporteColaborador::class, 'suporte_colaborador');
-
-
-
-
-
-
+ 
+ 
+ 
+ 
 $router->get('/conta', aprovadosController::class, 'conta');
-
+ 
 $router->dispatch();
+ 
+ 
+
+
+
+
+
