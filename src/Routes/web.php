@@ -63,6 +63,8 @@ $router->get('/suporte_colaborador', suporteColaborador::class, 'suporte_colabor
 
 
 
+$router->get('/contato', HomeController::class, 'contato');
+$router->post('/contato', HomeController::class, 'enviarContato');
 
 
 

@@ -35,6 +35,10 @@ class Application {
         if (file_exists(BASE_PROJECT . 'config/funcoes.php')) {
             include_once BASE_PROJECT . 'config/funcoes.php';
         }
+        // Carrega as funções helpers
+        if (file_exists(BASE_PROJECT . 'config/helpers.php')) {
+            include_once BASE_PROJECT . 'config/helpers.php';
+        }
         // Carrega o arquivo de rotas
         if (file_exists(BASE_PROJECT . 'Routes/web.php')) {
             include_once BASE_PROJECT . 'Routes/web.php';

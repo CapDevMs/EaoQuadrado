@@ -228,6 +228,15 @@ CREATE TABLE Edit_Site(
     imagem_elemento varchar(255)
 );
 
+CREATE TABLE Contatos (
+    id_contato INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR (100) NOT NULL,    
+    email VARCHAR (100) NOT NULL,
+    telefone VARCHAR(50),
+    mensagem TEXT NOT NULL,
+    data_envio DATETIME
+);
+
 -- DELIMITER //
 -- CREATE TRIGGER valida_vendedor
 -- AFTER INSERT ON vendedores

@@ -1,34 +1,12 @@
-@import url("../base.css");
-
-body{
+body {
     font-family: Poppins;
 }
 
-
-#menu, span, #sub-menu{
-    width: 94%;
-    margin-top: 4%;
-    font-size: 17px; 
-    display: inline;
-    margin-left: 1%;
-}
-    
-#menu{
-    margin-left: 5%;
-    color: grey;
-    font-style: inherit;
-
-}
-
-a{
+a {
     text-decoration: none;
 }
 
-hr {
-    width: 70%;
-}
-
-.round{
+.round {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
@@ -53,45 +31,31 @@ hr {
     height: fit-content;
 }
 
-
-.titulo label{
-    display: block;
-    width: max-content;
-    height: max-content;
-}
-
-.caixa-container{
-    display: flex;
-    width: 100%;
-}
-
 .input-group {
-    display: flex;
-    gap: 20px;
-    justify-content: space-evenly;
+    display: block;
+    margin-bottom: 1rem;
 }
 
-.caixa{
+.input {
+    width: 100%;
     border-radius: 15px;
-    height: 25px;
-    width: 95%;
-    font-size: 16px;
+    font-size: 14px;
     background-color: var(--cor-fundo-img-produtos);
-    padding: 5px;
     border: 1px solid black;
+    padding: 0.5rem;
+    display: block;
 }
 
-.caixa2{
+.input-textarea {
     background-color: var(--cor-fundo-img-produtos);
     border-radius: 15px;
-    font-size: 16px;
-    padding: 5px;
-    width: 98.5%;
-    position: relative;
+    font-size: 14px;
+    padding: 0.5rem;
+    width: 100%;
     resize: none;
 }
 
-#salvar{
+#salvar {
     background-color: var(--cor-botao-primario);
     white-space: nowrap;
     height: auto;
@@ -103,15 +67,19 @@ hr {
     position: relative;
 }
 
-.button-container {
-    align-self: flex-end;
-    width: auto;
+.required::after {
+    content: '*';
+    margin-left: 0.2rem;
+    color: var(--cor-botao-adm-vermelho);
+}
+
+hr {
+    width: 90%;
 }
 
 @media (max-width: 768px) {
-    .container {
-        display: flex;
-        flex-direction: column;
+    hr {
+        width: 100%;
     }
 
     .contatos-title {
@@ -123,60 +91,8 @@ hr {
         white-space: nowrap;
     }
 
-    .info {
-        display: flex;
-        margin-bottom: 5%;
-        margin-left: 5rem;
-    }
-
     .contatos-group {
         width: fit-content;
     }
-
-
-    .info p {
-        white-space: nowrap;
-    }
-
-    .info hr {
-        background-color: black;
-        width: 1px;
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-
-    .message {
-        margin: 0 auto;
-        width: 100%;
-    }
 }
 
-@media (max-width: 425px) {
-    .input-group {
-        flex-direction: column;
-    }
-
-
-    .info hr {
-        width: 100%;
-        margin: 0;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-
-
-    .info {
-        flex-direction: column;
-        margin: 0 auto 0 15%;
-        width: calc(60% - 0.5rem);
-        margin-bottom: 10%;
-    } 
-
-    .container {
-        margin-bottom: 5%;
-    }
-
-    .caixa2 {
-        width: 95%;
-    }
-}
