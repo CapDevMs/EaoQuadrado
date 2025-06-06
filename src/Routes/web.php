@@ -1,7 +1,7 @@
 <?php
 // cadastroProdutoVendedor
 // area adm
-use App\Controllers\CadastroAdmController;
+use App\Controllers\CadastroAdminController;
 use App\Controllers\AprovadosController;
 use App\Controllers\ContasInativasController;
 use App\Controllers\CriarCategoriaController;
@@ -41,7 +41,7 @@ $router = new Router();
 
 // área adm
 
-$router->get('/admin/cadastroAdm', cadastroAdmController::class, 'cadastroAdm');
+$router->get('/admin/cadastroAdm', CadastroAdminController::class, 'cadastroAdmin');
 $router->get('/admin/contasAprovadasReprovadas', AprovadosController::class, 'contasAprovadasReprovadas');
 $router->get('/admin/contasInativas', contasInativasController::class, 'contasInativas'); 
 $router->get('/admin/criarCategoria', CriarCategoriaController::class, 'criarCategoria'); 
