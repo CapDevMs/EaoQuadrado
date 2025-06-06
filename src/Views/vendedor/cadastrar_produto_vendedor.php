@@ -35,7 +35,7 @@
     
         <?php get_sidebar_vendedor('cadastrar_produtos'); ?>
     
-            <form action="/cadastrarProdutoVendedor/salvarProduto" method="post" enctype="multipart/form-data">      
+            <form action="/cadastrar-produto" method="post" enctype="multipart/form-data">      
                 <div class="linha-horizontal">
                     <div class="linha-1">
                         <label for="nome-produto">Nome do Produto</label><br>
