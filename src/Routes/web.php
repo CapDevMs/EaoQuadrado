@@ -58,6 +58,7 @@ $router->get('/contas-inativas', contasInativasController::class, 'contasInativa
 $router->get('/historico-de-contas', AprovadosController::class, 'historicoDeContas');
 $router->get('/cadastrar-novo-adm', CadastroAdminController::class, 'cadastroAdmin');
 $router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
+$router->get('/suporte_colaborador', suporteColaborador::class, 'suporte_colaborador');
 
 
 
