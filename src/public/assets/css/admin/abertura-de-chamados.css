@@ -1,5 +1,9 @@
 @import url("style.css");
 
+.row{
+    margin-left: 3rem;
+}
+
 body{
     font-family: Poppins;
     display: grid;
@@ -30,7 +34,6 @@ a{
 .container {
     padding: 20px;
     width: 20%;
-    margin-left: 3.5%;
 }
 
 .pb-2 h2 {
@@ -96,7 +99,7 @@ label{
     height: 40%;
     width: 100%;
     color: #7D8184;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 #descricao{
@@ -148,6 +151,7 @@ textarea{
 #div-salvar {
     display: flex;
     justify-content: end;
+    margin-top: 4%;
 }
 
 input[type="file"] {
@@ -228,6 +232,7 @@ button{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 3%;
+
 }
 
 @media (max-width: 768px){
@@ -235,9 +240,18 @@ button{
         display: none;
     }    
     .row{
+        margin: 0;
         justify-content: center;
     }
     .col-sm-12{
         margin-left: 0.5rem;
+    }
+
+    #abertura-title{
+        margin-left: 3rem;
+    }
+
+    #div-salvar{
+        justify-content: center;
     }
 }
