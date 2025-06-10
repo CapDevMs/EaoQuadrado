@@ -1,6 +1,5 @@
 <?php
 
-
 function get_base_url() {
     $app_url = $_ENV['APP_URL'];
     if(substr($app_url, -1) !== '/'){
@@ -59,4 +58,9 @@ function get_sidebar_cliente($page) {
 
 function get_sidebar_admin($page) {
     include_once(__DIR__ . '/../components/sidebar_adm.php');
+}
+
+function route($location)
+{
+    return header("location: {$location}");
 }
