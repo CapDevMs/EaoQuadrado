@@ -1,6 +1,6 @@
 <?php
 
-$baseUrl = get_base_url();
+$base_url = get_base_url();
 $appName = get_app_name();
 $titulo = 'Contas Aprovadas e Reprovadas'
 ?>

@@ -1,6 +1,6 @@
 <?php 
    $appName = get_app_name();
-   $baseUrl = get_base_url();
+   $base_url = get_base_url();
    $titulo = 'Cadastro de Administrador';
 ?>
 
@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php get_css(['sidebar','cadastro_adm', 'base', 'style']) ?>
     <?php get_header(); ?>
-    <link rel = 'stylesheet' href="../../assets/css/cadastro_adm.css">
+    <link rel = 'stylesheet' href="<?=get_base_url();?>assets/css/cadastro_adm.css">
     <title>Eao Quadrado</title>
 </head>
     <main>
@@ -112,5 +112,5 @@
 
     <?php get_footer()?>    
 </body>
-<script src="assets/js/script.js"></script>
+<script src="<?=get_base_url();?>assets/js/script.js"></script>
 </html>

@@ -48,6 +48,10 @@ $base_url = get_base_url();
         <li><a href="<?=$base_url;?>carrinho">Carrinho</a></li>
         <li><a href="<?=$base_url;?>sobre">Sobre</a></li>
         <li><a href="<?=$base_url;?>contato">Contato</a></li>
+        <li><a href="<?=$base_url;?>login">Login</a></li>
+        <li><a href="<?=$base_url;?>carrinho">Carrinho</a></li>
+        <li><a href="<?=$base_url;?>sobre">Sobre</a></li>
+        <li><a href="<?=$base_url;?>contato">Contato</a></li>
     </ul>
 </div>
 

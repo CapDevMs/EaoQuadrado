@@ -12,7 +12,7 @@ $base_url = get_base_url();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../assets/css/footer.css">
+  <link rel="stylesheet" href="<?= get_base_url(); ?>assets/css/footer.css">
   <?php get_css(['ValidacaoNovoVendedor', 'base', 'style']) ?>
   <title>E ao quadrado - Validar novo Vendedor</title>
 </head>
@@ -23,8 +23,8 @@ $base_url = get_base_url();
   <main>
 
     <roadMap class='roadMap'>
-      <a href="<?= $base_url; ?>src/index.php" class='roadMap1'>Home /</a>
-      <a href="#" class='roadMap1'>Painel do Administrador /</a>
+      <a href="<?= get_base_url(); ?>" class='roadMap1'>Home /</a>
+      <a href = "<?= get_base_url(); ?>admin/indexAdm" class='roadMap1'>Painel do Administrador /</a>
       <a class='roadMap2 redutor'>Validação de novos colaboradores</a>
     </roadMap>
 

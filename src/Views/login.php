@@ -1,6 +1,6 @@
 <?php
     $appName = get_app_name();
-    $baseUrl = get_base_url();
+    $base_url = get_base_url();
     $titulo = 'Login';
 
 ?>
@@ -26,7 +26,7 @@
                 <?php endif; ?>
             <div class="row pt-2 m-auto">
                 <div class="col-sm-hidden col-md-6">
-                    <img class="img" src="../assets/img/foto_tela_login tras.png">
+                    <img class="img" src="<?=$base_url;?>assets/img/foto_tela_login tras.png">
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <h1 class="titulo">Entre no E².com</h1>
@@ -38,7 +38,7 @@
                             <input class="form-input" type="password" name="senha" placeholder="********">
                         </div>
                         <div class="row">
-                            <a class="esqueceu-senha" href="<?= $baseUrl; ?>esqueci-senha">Esqueceu sua senha?</a>
+                            <a class="esqueceu-senha" href="<?=$base_url;?>esqueciSenha">Esqueceu sua senha?</a>
                         </div>
     
                         <div class="row">
@@ -46,7 +46,7 @@
                                 <button class="btn button">Entrar</button>
                             </div>
                             <div class="col-sm-6">
-                                <a class="btn button" href="<?= $baseUrl; ?>cadastros/cadastro_cliente">Cadastrar</a>
+                                <a class="btn button" href="<?=$base_url;?>cadastroCliente">Cadastrar</a>
                             </div>
                         </div>
                     </form>
@@ -57,5 +57,5 @@
 
     <?php get_footer() ?>
 </body>
-<script src="assets/js/script.js"></script>
+<script src="<?=$base_url;?>assets/js/script.js"></script>
 </html>

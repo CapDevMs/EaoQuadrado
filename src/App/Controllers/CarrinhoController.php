@@ -9,6 +9,6 @@ class CarrinhoController extends Controller
 
     public function carrinho()
     {
-        View::render('/carrinho');
+        View::render('cliente/carrinho');
     }
 }

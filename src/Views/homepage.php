@@ -76,14 +76,14 @@ $titulo = 'Homepage';
                     <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a><h1>
                 </div>
             </div>
-            <div class="itens2" id="item2">
+            <div class="itens2" id="item2" onclick="window.location.href='<?=get_base_url();?>produto'">
                 <div class="texto">
                     <h1>Roupas</h1>
                     <p>Coleções  em destaque que dão outra vibe<p>
                     <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a><h1>
                 </div>
             </div>
-            <div class="itens3" id="item3">
+            <div class="itens3" id="item3" onclick="window.location.href='<?=get_base_url();?>produto'">
                 <div class="texto">
                     <h1>Caixa de Som</h1>
                     <p>Alto-falantes sem fio</p>
@@ -91,7 +91,7 @@ $titulo = 'Homepage';
                 </div>
             </div>
 
-            <div class="itens4" id="item4">
+            <div class="itens4" id="item4" onclick="window.location.href='<?=get_base_url();?>produto'">
                 <div class="texto">
                     <h1>Bolsa</h1>
                     <p>GUCCI INTENSE </p>
@@ -150,7 +150,7 @@ $titulo = 'Homepage';
     console.log(categorias);
 
     categorias.forEach(categoria => {
-        categoria.addEventListener('click', () => location = base_url + 'pages/categoria.php')
+        categoria.addEventListener('click', () => location = base_url + 'categoria')
     });
 </script>
 </html>

@@ -1,71 +1,101 @@
 <?php
-
-use App\Controllers\AprovadosController;
-use App\Controllers\AuthController;
-use App\Controllers\HomeController;
-use App\Controllers\categoriaController;
-use App\Controllers\HistoricoVendasController;
-use App\Controllers\ProdutoController;
-use App\Controllers\meuPerfilAdmController;
-use App\Controllers\contasInativasController;
-use App\Controllers\faqController;
-use App\Controllers\favoritosController;
-use App\Controllers\CadastroClienteController;
-use App\Controllers\CarrinhoController;
-use App\Controllers\CadastroProdutoVendedorController;
-use App\Controllers\CadastroVendedorController;
-use App\Controllers\MinhaLojaController;
+// cadastroProdutoVendedor
+// area adm
 use App\Controllers\CadastroAdminController;
-use App\Controllers\perfilVendedor;
+use App\Controllers\AprovadosController;
+use App\Controllers\ContasInativasController;
+use App\Controllers\CriarCategoriaController;
+use App\Controllers\IndexAdmController;
+use App\Controllers\ListaVendedoresController;
+use App\Controllers\MeuPerfilAdmController;
+use App\Controllers\SuporteAoColaboradorController;
+use App\Controllers\ValidacaoNovoVendedorController;
+// cadastros
+use App\Controllers\CadastroClienteController;
+use App\Controllers\CadastroVendedorController;
+use App\Controllers\AuthController;
+// area cliente
+use App\Controllers\CarrinhoController;
+use App\Controllers\FavoritosController;
+use App\Controllers\HistoricoDePedidosController;
+// area vendedor
+use App\Controllers\CadastrarProdutoVendedorController;
+use App\Controllers\HistoricoVendasController;
+use App\Controllers\PerfilVendedorController;
+use App\Controllers\PaginaDoVendedorController;
+use App\Controllers\MinhaLojaController;
+use App\Controllers\PaginaDoVendedorController2; 
+use App\Controllers\GerenciamentoDeEstoqueController;
+// area comum
+use App\Controllers\TrocasDevolucoesController;
+use App\Controllers\ProdutoController;
+use App\Controllers\HomeController;
+use App\Controllers\CategoriaController;
+use App\Controllers\FaqController;
+use App\Controllers\ContatoController;
+use App\Controllers\TermosDeUsoController;
+
 use Core\Router;
 
 $router = new Router();
 
+// área adm
 
-// área comum
+$router->get('/admin/cadastroAdm', CadastroAdminController::class, 'cadastroAdmin');
+$router->get('/admin/contasAprovadasReprovadas', AprovadosController::class, 'contasAprovadasReprovadas');
+$router->get('/admin/contasInativas', contasInativasController::class, 'contasInativas'); 
+$router->get('/admin/criarCategoria', CriarCategoriaController::class, 'criarCategoria'); 
+$router->get('/admin/indexAdm', IndexAdmController::class, 'indexAdm');
+$router->get('/admin/listaVendedores', ListaVendedoresController::class, 'listaDeVendedores');
+$router->get('/admin/meuPerfilAdm', meuPerfilAdmController::class, 'perfilAdm');
+$router->get('/admin/suporteColaborador', SuporteAoColaboradorController::class, 'suporteAoColaborador');
+$router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::class, 'validacaoNovoVendedor');
 
-$router->get('/', HomeController::class, 'index');
-$router->get('/logout', AuthController::class, 'logout');
-$router->get('/login', AuthController::class, 'index');
-$router->post('/login', AuthController::class, 'login');
-$router->get('/faq', faqController::class, 'faq');
-$router->get('/sobre', HomeController::class, 'sobre');
-$router->get('/nossa-politica', HomeController::class, 'nossaPolitica');
-$router->get('/esqueci-senha', AuthController::class, 'esqueciSenha');
-$router->post('/esqueci-senha', AuthController::class, 'recuperarSenha');
+// cadastros
+
 $router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente');
-$router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
-$router->get('/categoria', categoriaController::class, 'categoria');
-$router->get('/produto', ProdutoController::class, 'produto');
-
-
-// área vendedor
-
-$router->get('/vendas', HistoricoVendasController::class, 'vendas');
-$router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
-$router->post('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
-$router->get('/minha-loja', MinhaLojaController::class, 'loja');
-$router->get('/vendedor', perfilVendedor::class, 'vendedor');
-
+$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor');
 
 // área cliente
 
 $router->get('/favoritos', FavoritosController::class, 'favoritos');
 $router->get('/carrinho', CarrinhoController::class, 'carrinho');
 
-// área adm
+// área vendedor
 
-$router->get('/contas-inativas', contasInativasController::class, 'contasInativas');
-$router->get('/historico-de-contas', AprovadosController::class, 'historicoDeContas');
-$router->get('/cadastrar-novo-adm', CadastroAdminController::class, 'cadastroAdmin');
-$router->get('/meu-perfil-adm', meuPerfilAdmController::class, 'perfilAdm');
-$router->get('/suporte_colaborador', suporteColaborador::class, 'suporte_colaborador');
-
-
-
+$router->get('/vendedor/cadastrarProduto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+$router->get('/vendedor/historicoVendas', HistoricoVendasController::class, 'historicoDeVendas');
+$router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja');
+$router->get('/vendedor/paginaVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');
+$router->get('/vendedor/gerenciamentoEstoque', GerenciamentoDeEstoqueController::class, 'gerenciamentoDeEstoque');
+$router->get('/vendedor/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');
 
 
 
-$router->get('/conta', aprovadosController::class, 'conta');
+// área comum
+
+$router->get('/categoria', CategoriaController::class, 'categoria');
+$router->get('/contato', ContatoController::class, 'contato');
+$router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
+$router->get('/faq', faqController::class, 'faq');
+$router->get('/historicoPedidos', HistoricoDePedidosController::class, 'historicoDePedidos');
+$router->get('/login', AuthController::class, 'index');
+$router->post('/login', AuthController::class, 'login');
+$router->get('/logout', AuthController::class, 'logout');
+$router->post('/esqueciSenha', AuthController::class, 'recuperarSenha');
+$router->get('/nossaPolitica', HomeController::class, 'nossaPolitica');
+
+// Problema
+
+$router->get('/paginaVendedor', PaginaDoVendedorController2::class, 'paginaDoVendedor2'); 
+
+
+$router->get('/produto', ProdutoController::class, 'produto');
+$router->get('/sobre', HomeController::class, 'sobre');
+$router->get('/termosUso', TermosDeUsoController::class, 'termosDeUso');
+
+
+// Home
+$router->get('/', HomeController::class, 'index');
 
 $router->dispatch();

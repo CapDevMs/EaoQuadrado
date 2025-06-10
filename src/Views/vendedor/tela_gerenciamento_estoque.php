@@ -51,7 +51,7 @@
                     </div>
 
                     <div class="items">
-                        <img class="img-item" src="../../assets/img/img-gerenciamento_estoque/item-1.png" alt="erro">
+                        <img class="img-item" src="<?= get_base_url(); ?>assets/img/img-gerenciamento_estoque/item-1.png" alt="erro">
 
                         <h2 class="text-items">item1</h3>
 
@@ -69,12 +69,12 @@
                             <input type="radio">
                         </div>
                         
-                        <img id="icone_edicao" src="../../assets/img/Icone_edicao.png" alt="">
+                        <img id="icone_edicao" src="<?= get_base_url(); ?>assets/img/Icone_edicao.png" alt="">
                     </div>
                     
 
                     <div class="items">
-                        <img class="img-item" src="../../assets/img/img-gerenciamento_estoque/item-2.png" alt="erro">
+                        <img class="img-item" src="<?= get_base_url(); ?>assets/img/img-gerenciamento_estoque/item-2.png" alt="erro">
 
                         <h2 class="text-items">item2</h3>
 
@@ -92,12 +92,12 @@
                             <input type="radio">
                         </div>
                         
-                        <img id="icone_edicao" src="../../assets/img/Icone_edicao.png" alt="">
+                        <img id="icone_edicao" src="<?= get_base_url(); ?>assets/img/Icone_edicao.png" alt="">
                     </div>
 
 
                     <div class="items">
-                        <img class="img-item" src="../../assets/img/img-gerenciamento_estoque/item-3.png" alt="erro">
+                        <img class="img-item" src="<?= get_base_url(); ?>assets/img/img-gerenciamento_estoque/item-3.png" alt="erro">
 
                         <h2 class="text-items">item3</h3>
 
@@ -115,12 +115,12 @@
                             <input type="radio">
                         </div>
                         
-                        <img id="icone_edicao" src="../../assets/img/Icone_edicao.png" alt="">
+                        <img id="icone_edicao" src="<?= get_base_url(); ?>assets/img/Icone_edicao.png" alt="">
                     </div>
 
 
                     <div class="items">
-                        <img class="img-item" src="../../assets/img/img-gerenciamento_estoque/item-2.png" alt="erro">
+                        <img class="img-item" src="<?= get_base_url(); ?>assets/img/img-gerenciamento_estoque/item-2.png" alt="erro">
 
                         <h2 class="text-items">item4</h3>
 
@@ -138,7 +138,7 @@
                             <input type="radio">
                         </div>
                         
-                        <img id="icone_edicao" src="../../assets/img/Icone_edicao.png" alt="">
+                        <img id="icone_edicao" src="<?= get_base_url(); ?>assets/img/Icone_edicao.png" alt="">
                     </div>
                 </div>
             </div>
