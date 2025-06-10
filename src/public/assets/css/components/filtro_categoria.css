@@ -111,7 +111,7 @@ background: var(--cor-principal);
 
 @media (max-width: 1024px) {
     .fa-star,.icone-star {
-        width: 12px !important; 
+        width: 10px !important; 
         font-size: 12px !important;
     }
 

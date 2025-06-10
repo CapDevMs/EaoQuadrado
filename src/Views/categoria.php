@@ -38,7 +38,7 @@ $appName = get_app_name();
     </div>
 
     <script type="module" src="assets/js/categoria.js?<?= time(); ?>" defer></script>
-    <script type="module" src="<?= get_base_url(); ?>assets/js/filtroCategoria.js"></script>
+    <script type="module" src="<?= get_base_url(); ?>/assets/js/filtroCategoria.js"></script>
     <?php get_footer() ?>
 </body>
 
