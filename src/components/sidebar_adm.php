@@ -27,8 +27,8 @@
     <li>
         <label for="item4">Sistema</label>
         <div class="content">
-            <a href="<?= get_base_url(); ?>#" class="<?= $page == '#' ? 'ativo' : '' ?>">Abrir Chamado</a>
-            <a href="<?= get_base_url(); ?>#" class="<?= $page == 'criar_categoria' ? 'ativo' : '' ?>">Criar Categoria</a>
+            <a href="<?= get_base_url(); ?>/pages/admin/abertura-de-chamados.php" class="<?= $page == 'abrir_chamado' ? 'ativo' : '' ?>">Abrir Chamado</a>
+            <a href="<?= get_base_url(); ?>/pages/admin/criar_categoria.php" class="<?= $page == 'criar_categoria' ? 'ativo' : '' ?>">Criar Categoria</a>
         </div>
     </li>
 </ul>
