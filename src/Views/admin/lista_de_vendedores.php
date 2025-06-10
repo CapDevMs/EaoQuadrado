@@ -28,8 +28,8 @@ $base_url = get_base_url();
                         <input type="checkbox" id="item1">
                         <label for="item1">Cadastro</label>
                         <div class="content">
-                            <a href="<?= get_base_url(); ?>/pages/admin/produto.php">Cadastrar Novo Administrador</a>
-                            <a href="<?= get_base_url(); ?>/pages/admin/meu_perfil_adm.php">Gerenciar Meu Perfil</a>
+                            <a href="<?= get_base_url(); ?>pages/admin/produto.php">Cadastrar Novo Administrador</a>
+                            <a href="<?= get_base_url(); ?>pages/admin/meu_perfil_adm.php">Gerenciar Meu Perfil</a>
                         </div>
                     </li>
 
@@ -37,12 +37,12 @@ $base_url = get_base_url();
                         <input type="checkbox" id="item2">
                         <label for="item2">Colaboradores</label>
                         <div class="content">
-                            <a href="<?= get_base_url(); ?>/pages/admin/validacaoNovoVendedor.php">Validar Novo Colaborador</a>
+                            <a href="<?= get_base_url(); ?>pages/admin/validacaoNovoVendedor.php">Validar Novo Colaborador</a>
                             <a href="<?= get_base_url(); ?>#">Validar Novo Colaborador</a>
                             <a href="<?= get_base_url(); ?>#">Colaboradores Aprovados</a>
                             <a href="<?= get_base_url(); ?>#">Colaboradores Reprovados</a>
                             <a id="pagina_atual" href="<?= get_base_url(); ?>#">Listar Colaboradores Ativos</a>
-                            <a href="<?= get_base_url(); ?>/pages/admin/suporte_ao_colaborador">Suporte ao Colaborador</a>
+                            <a href="<?= get_base_url(); ?>pages/admin/suporte_ao_colaborador">Suporte ao Colaborador</a>
                             <img src="../../public/assets/img/" alt="">
                         </div>
                     </li>
@@ -60,7 +60,7 @@ $base_url = get_base_url();
                         <label for="item4">Sistema</label>
                         <div class="content">
                             <a href="<?= get_base_url(); ?>#">Abrir Chamado</a>
-                            <a href="<?= get_base_url(); ?>/pages/admin/criar_categoria.php">Criar Categoria</a>
+                            <a href="<?= get_base_url(); ?>pages/admin/criar_categoria.php">Criar Categoria</a>
                         </div>
                     </li>
                 </ul>
@@ -76,5 +76,5 @@ $base_url = get_base_url();
     </main>
     <?php get_footer(); ?>
 </body>
-<script type="module" src="<?= get_base_url(); ?>/assets/js/adm/vendedores.js"></script>
+<script type="module" src="<?= get_base_url(); ?>assets/js/adm/vendedores.js"></script>
 </html>

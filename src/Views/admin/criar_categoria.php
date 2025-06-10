@@ -44,7 +44,7 @@ $titulo = 'Criar Categoria';
 
             <div class="create-container">
                 <div class="img-container">
-                    <img src="<?= get_base_url(); ?>/assets/img/image_color_icon.svg" alt="">
+                    <img src="<?= get_base_url(); ?>assets/img/image_color_icon.svg" alt="">
                     <p>Categoria</p>
                 </div>
 

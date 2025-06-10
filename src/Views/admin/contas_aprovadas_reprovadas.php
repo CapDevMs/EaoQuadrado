@@ -46,8 +46,8 @@ $titulo = 'Contas Aprovadas e Reprovadas'
 
     <?php get_footer() ?>
 </body>
-    <script src=" <?= get_base_url(); ?>/assets/js/adm/filtro_aprovados.js"></script>
-    <script src="<?= get_base_url() ?>/assets/js/script.js"></script>
-    <script type="module" src="<?= get_base_url(); ?>/assets/js/adm/contas_status.js"></script>
+    <script src=" <?= get_base_url(); ?>assets/js/adm/filtro_aprovados.js"></script>
+    <script src="<?= get_base_url(); ?>assets/js/script.js"></script>
+    <script type="module" src="<?= get_base_url(); ?>assets/js/adm/contas_status.js"></script>
 
 </html>

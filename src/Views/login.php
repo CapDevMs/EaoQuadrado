@@ -38,7 +38,7 @@
                             <input class="form-input" type="password" name="senha" placeholder="********">
                         </div>
                         <div class="row">
-                            <a class="esqueceu-senha" href="<?= $baseUrl; ?>/esqueci-senha">Esqueceu sua senha?</a>
+                            <a class="esqueceu-senha" href="<?= $baseUrl; ?>esqueci-senha">Esqueceu sua senha?</a>
                         </div>
     
                         <div class="row">
@@ -46,7 +46,7 @@
                                 <button class="btn button">Entrar</button>
                             </div>
                             <div class="col-sm-6">
-                                <a class="btn button" href="<?= $baseUrl; ?>/cadastros/cadastro_cliente">Cadastrar</a>
+                                <a class="btn button" href="<?= $baseUrl; ?>cadastros/cadastro_cliente">Cadastrar</a>
                             </div>
                         </div>
                     </form>

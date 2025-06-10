@@ -23,7 +23,7 @@ $base_url = get_base_url();
   <main>
 
     <roadMap class='roadMap'>
-      <a href="<?= $base_url; ?>/src/index.php" class='roadMap1'>Home /</a>
+      <a href="<?= $base_url; ?>src/index.php" class='roadMap1'>Home /</a>
       <a href="#" class='roadMap1'>Painel do Administrador /</a>
       <a class='roadMap2 redutor'>Validação de novos colaboradores</a>
     </roadMap>
@@ -59,20 +59,20 @@ $base_url = get_base_url();
 
               <button class='abrirAcordeon' type="button" onclick="abrirAcordeon(0)"></button>
               <div class='acordeonFechado'>
-                <div class='bloco1'><img src="<?= $base_url; ?>/assets/img/logoEmpresaRica.jpg" class='logoEmpresa'>
+                <div class='bloco1'><img src="<?= $base_url; ?>assets/img/logoEmpresaRica.jpg" class='logoEmpresa'>
                   <div class='blocoTitulo'>
                     <p class='tituloLoja'>Nome da loja</p>
-                    <div><img src='<?= $base_url; ?>/assets/img/Group.png' class='iconLoja'> Loja 1</div>
+                    <div><img src='<?= $base_url; ?>assets/img/Group.png' class='iconLoja'> Loja 1</div>
                   </div>
                 </div>
                 <div class='blocoAcordeon'>
-                  <button class='abrirAcordeon' type="button" onclick="abrirAcordeon(0)"><img src="<?= $base_url; ?>/assets/img/fakepngCarret-fotor-bg-remover-202504029435.png" alt="carret" class='carret'></button>
+                  <button class='abrirAcordeon' type="button" onclick="abrirAcordeon(0)"><img src="<?= $base_url; ?>assets/img/fakepngCarret-fotor-bg-remover-202504029435.png" alt="carret" class='carret'></button>
                 </div>
               </div>
               <div class='acordeonAberto'>
 
                 <div class='acordeonAberto1'>
-                  <div class='bloco1'><img src="<?= $base_url; ?>/assets/img/logoEmpresaRica.jpg" class='logoEmpresa'>
+                  <div class='bloco1'><img src="<?= $base_url; ?>assets/img/logoEmpresaRica.jpg" class='logoEmpresa'>
                     <div class='blocoTitulo'><button style="border: 0px;background-color:rgb(0,0,0,0);" type='button' onclick='fecharAcordeon(0)'><span class='tituloLoja'>Nome da loja</span></button></div>
                   </div>
                 </div>
@@ -102,17 +102,17 @@ $base_url = get_base_url();
 
                     </div>
                     <div>
-                      <line class='linhaCinza'><img src='<?= $base_url; ?>/assets/img/camisaIcon.svg' class='icon'><span class='iconText'> Roupas</span></line>
-                      <line class='linhaCinza'><img src='<?= $base_url; ?>/assets/img/cameraIcon.svg' class='icon'><span class='iconText'> Câmeras</span></line>
-                      <line class='linhaCinza'><img src='<?= $base_url; ?>/assets/img/celularIcon.svg' class='icon'><span class='iconText'> Smartphones</span></line>
-                      <line class='linhaCinza'><img src='<?= $base_url; ?>/assets/img/computadorIcon.svg' class='icon'><span class='iconText'> Computadores</span></line>
-                      <line class='linhaCinza linhaCinzaBase'><img src='<?= $base_url; ?>/assets/img/ferramentasIcon.svg' class='icon'><span class='iconText'> Ferramentas</span></line>
+                      <line class='linhaCinza'><img src='<?= $base_url; ?>assets/img/camisaIcon.svg' class='icon'><span class='iconText'> Roupas</span></line>
+                      <line class='linhaCinza'><img src='<?= $base_url; ?>assets/img/cameraIcon.svg' class='icon'><span class='iconText'> Câmeras</span></line>
+                      <line class='linhaCinza'><img src='<?= $base_url; ?>assets/img/celularIcon.svg' class='icon'><span class='iconText'> Smartphones</span></line>
+                      <line class='linhaCinza'><img src='<?= $base_url; ?>assets/img/computadorIcon.svg' class='icon'><span class='iconText'> Computadores</span></line>
+                      <line class='linhaCinza linhaCinzaBase'><img src='<?= $base_url; ?>assets/img/ferramentasIcon.svg' class='icon'><span class='iconText'> Ferramentas</span></line>
                     </div>
                   </div>
                   <div class='miniPainel mini2'>
                     <div class='painelImagem'>
 
-                      <img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="produto" class="imagemPainel">
+                      <img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="produto" class="imagemPainel">
 
                     </div>
                   </div>
@@ -121,18 +121,18 @@ $base_url = get_base_url();
                   <div class='centralizadorVertical'>
                     <div class='painelCarrocel'>
 
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
-                      <button class='imagemBotao'><img src="<?= $base_url; ?>/assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
+                      <button class='imagemBotao'><img src="<?= $base_url; ?>assets/img/gucci_bolsa_intense.png" alt="" class='imagemCarrocel'></button>
 
 
                     </div>
@@ -171,4 +171,4 @@ $base_url = get_base_url();
 
 </html>
 
-<script src='<?= $base_url; ?>/assets/js/adm/validacaoNovoVendedor/funcoesAcordeon.js'></script>
+<script src='<?= $base_url; ?>assets/js/adm/validacaoNovoVendedor/funcoesAcordeon.js'></script>

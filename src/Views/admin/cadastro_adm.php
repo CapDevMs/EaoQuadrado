@@ -24,7 +24,7 @@
                 <form action="#">
                     <div class="register_client">
                         <h2>Cadastro de Administrador</h2>
-                        <img src="<?php get_base_url() ?>assets/img/foto_cliente.png" alt="foto do cliente">
+                        <img src="<?php get_base_url(); ?>assets/img/foto_cliente.png" alt="foto do cliente">
                         
                         <div class="container-inter">
                             <div class="inform-container">
