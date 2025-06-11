@@ -29,7 +29,7 @@ $titulo = 'Página do Vendedor';
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 pb-3">
-                        <img src="../assets/img/Banner_loja.png" class="img banner_loja" alt="Banner da Loja">
+                        <img src="<?= get_base_url(); ?>assets/img/Banner_loja.png" class="img banner_loja" alt="Banner da Loja">
                     </div>
                 </div>
                 <div class="row">
@@ -61,7 +61,7 @@ $titulo = 'Página do Vendedor';
     </main>
 
 
-    <script type="module" src="../assets/js/pagina_do_vendedor.js?<?= time(); ?>"></script>
+    <script type="module" src="<?= get_base_url(); ?>assets/js/pagina_do_vendedor.js?<?= time(); ?>"></script>
     <?php get_footer(); ?>
 </body>
 

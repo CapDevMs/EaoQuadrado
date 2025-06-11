@@ -1,6 +1,6 @@
 <?php 
    $appName = get_app_name();
-   $baseUrl = get_base_url();
+   $base_url = get_base_url();
    $titulo = 'Cadastro de Administrador';
 ?>
 
@@ -11,55 +11,20 @@
     <title>Cadastro ADM</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['cadastro_adm', 'base', 'style']) ?>
-</head>
-<?php
-require_once('../../config/funcoes.php');
-require('../../config/conexao.php');
-
-?>
-<?php get_base_head(); ?>
-<!DOCTYPE html>
-<html lang="pt-BR">
- 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body>
-    <header class="header">
-    <?php get_header() ?>
-    </header>
-<main>
-
+    <?php get_css(['sidebar','cadastro_adm', 'base', 'style']) ?>
     <?php get_header(); ?>
-    <link rel = 'stylesheet' href="../../assets/css/cadastro_adm.css">
+    <link rel = 'stylesheet' href="<?=get_base_url();?>assets/css/cadastro_adm.css">
     <title>Eao Quadrado</title>
 </head>
     <main>
     <div class="roadmap">Home / Painel do Administrador / Cadastrar Novo Administrador</div>
             <div class="container-geral">
-                <div class="menu-container">
-                    <h1>Cadastro</h1>
-                    <a href="#" id="pagina_atual">Cadastrar Novo Administrador</a>
-                    <a href="./meu_perfil_adm.php">Gerenciar Meu Perfil</a>
-                    <h1>Colaboradores</h1>
-                    <a href="#">Validar Novo Colaborador</a>
-                    <a href="#">Colaboradores Aprovados</a>
-                    <a href="#">Colaboradores Reprovados</a>
-                    <a href="#">Listar Colaboradores Ativos</a>
-                    <a href="#">Suporte ao Colaborador</a>
-                    <h1>Clientes</h1>
-                    <a href="#">Suporte ao Cliente</a>
-                    <h1>Sistema</h1>
-                    <a href="#">Abrir Chamado</a>
-                    <a href="#">Criar Categoria</a>
-                    <a href="#">Editar Sistema</a>
-                </div>
+            <?php get_sidebar_admin('cadastrarAdm') ?>
             
                 <form action="#">
                     <div class="register_client">
                         <h2>Cadastro de Administrador</h2>
-                        <img src="../../assets/img/foto_cliente.png" alt="foto do cliente">
+                        <img src="<?php get_base_url(); ?>assets/img/foto_cliente.png" alt="foto do cliente">
                         
                         <div class="container-inter">
                             <div class="inform-container">
@@ -147,5 +112,5 @@ require('../../config/conexao.php');
 
     <?php get_footer()?>    
 </body>
-<script src="assets/js/script.js"></script>
+<script src="<?=get_base_url();?>assets/js/script.js"></script>
 </html>

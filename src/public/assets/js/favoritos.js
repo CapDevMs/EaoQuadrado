@@ -68,22 +68,22 @@ let VendedoresFav = [
     {
         'titulo': 'Studio Center',
         'imagem': './assets/img/loja-favorita.png',
-        'link': './produto.php'
+        'link': './produto'
     },
     {
         'titulo': 'Studio Center',
         'imagem': './assets/img/loja-favorita.png',
-        'link': './produto.php'
+        'link': './produto'
     },
     {
         'titulo': 'Studio Center',
         'imagem': './assets/img/loja-favorita.png',
-        'link': './produto.php'
+        'link': './produto'
     },
     {   
         'titulo': 'Studio Center',
         'imagem': './assets/img/loja-favorita.png',
-        'link': './produto.php'
+        'link': './produto'
     },
 
 ]

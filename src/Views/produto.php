@@ -34,25 +34,25 @@ $appName = get_app_name();
                         <div id="comprar">
                             <div id="btn-comprar"><a>Comprar</a></div>
                             <div id="icons-comprar">
-                                <button id="MandarCarrinho" value="gucci_bolsa_intense.png|Gucci intense|400,00">
-                                    <img class='icon iconCarrinho' src="../assets/img/carrinho-tela-produto.svg">
-                                </button>
-                                <img src="../assets/img/coracao-tela-produto.svg">
+                                
+                                <img class = 'cursor' onclick = "window.location.href='<?=get_base_url();?>admin/carrinho'" id="MandarCarrinho icon" src="<?= get_base_url(); ?>assets/img/carrinho-tela-produto.svg" value="gucci_bolsa_intense.png|Gucci intense|400,00">
+                                
+                                <img class = 'cursor' onclick = "window.location.href='<?=get_base_url();?>favoritos'" src="<?= get_base_url(); ?>assets/img/coracao-tela-produto.svg">
                             </div>
 
                         </div>
                         <div id="troca">
-                            <img src="../assets/img/tela-produtos/Icon-return.png">
+                            <img src="<?= get_base_url(); ?>assets/img/tela-produtos/Icon-return.png">
                             <a>Troca e Devolução</a>
                             <a id="dias">Em até 30 dias</a>
                         </div>
                         <div>
                             <fieldset id="loja">
-                                <img id='imagem-loja' src="../assets/img/tela-produtos/loja.png">
+                                <img id='imagem-loja' src="<?= get_base_url(); ?>assets/img/tela-produtos/loja.png">
                                 <a><span style="color: #16A18E;">Loja</span> Studio Center</a>
                                 <div id="icons-loja">
-                                    <img src="../assets/img/coracao-tela-produto.svg" id="loja-coracao">
-                                    <img src="../assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
+                                    <img src="<?= get_base_url(); ?>assets/img/coracao-tela-produto.svg" id="loja-coracao">
+                                    <img src="<?= get_base_url(); ?>assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
                                 </div>
                             </fieldset>
                         </div>
@@ -76,7 +76,7 @@ $appName = get_app_name();
                         Além disso, seu fechamento com zíper personalizado da marca Gucci garante segurança e
                         praticidade,enquanto o forro interno personalizado oferece um toque de exclusividade.
                     </a>
-                   
+
                     <?php
                     foreach ($todosProdutos as $produto): ?>
                         <p>
@@ -97,10 +97,10 @@ $appName = get_app_name();
 
                     <div class="produto-recomendar">
                         <div class="img-small-recomendar">
-                            <img src="../assets/img/tela-produtos/bolsa.png">
+                            <img src="<?= get_base_url(); ?>assets/img/tela-produtos/bolsa.png">
                             <div class="icon">
-                                <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
-                                <img class='icon' src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                                <img src="<?= get_base_url(); ?>assets/img/tela-produtos/Vector.png" alt="coração-icon">
+                                <img class='icon' src="<?= get_base_url(); ?>assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
                             </div>
                         </div>
                         <div class="text-produto">
@@ -115,10 +115,10 @@ $appName = get_app_name();
 
                     <div class="produto-recomendar">
                         <div class="img-small-recomendar">
-                            <img src="../assets/img/tela-produtos/bolsa.png">
+                            <img src="<?= get_base_url(); ?>assets/img/tela-produtos/bolsa.png">
                             <div class="icon">
-                                <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
-                                <img class='icon' src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                                <img src="<?= get_base_url(); ?>assets/img/tela-produtos/Vector.png" alt="coração-icon">
+                                <img class='icon' src="<?= get_base_url(); ?>assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
                             </div>
                         </div>
 
@@ -130,10 +130,10 @@ $appName = get_app_name();
 
                     <div class="produto-recomendar">
                         <div class="img-small-recomendar">
-                            <img src="../assets/img/tela-produtos/bolsa.png">
+                            <img src="<?= get_base_url(); ?>assets/img/tela-produtos/bolsa.png">
                             <div class="icon">
-                                <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
-                                <img class='icon' src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                                <img src="<?= get_base_url(); ?>assets/img/tela-produtos/Vector.png" alt="coração-icon">
+                                <img class='icon' src="<?= get_base_url(); ?>assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
                             </div>
                         </div>
                         <div class="text-produto">
@@ -144,10 +144,10 @@ $appName = get_app_name();
 
                     <div class="produto-recomendar">
                         <div class="img-small-recomendar">
-                            <img src="../assets/img/tela-produtos/bolsa.png">
+                            <img src="<?= get_base_url(); ?>assets/img/tela-produtos/bolsa.png">
                             <div class="icon">
-                                <img src="../assets/img/tela-produtos/Vector.png" alt="coração-icon">
-                                <img class='icon' src="../assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
+                                <img src="<?= get_base_url(); ?>assets/img/tela-produtos/Vector.png" alt="coração-icon">
+                                <img class='icon' src="<?= get_base_url(); ?>assets/img/tela-produtos/Cart1.png" alt="Carrinho-icon">
                             </div>
                         </div>
                         <div class="text-produto">
@@ -163,7 +163,7 @@ $appName = get_app_name();
     <?php get_footer(); ?>
 
 </body>
-<script type="module" src="../../assets/js/produto.js?<?= time() ?>"></script>
-<script src="../assets/js/carrinho/apiCarrinho.js"></script>
+<script type="module" src="<?= get_base_url(); ?>assets/js/produto.js?<?= time() ?>"></script>
+<script src="<?= get_base_url(); ?>assets/js/carrinho/apiCarrinho.js"></script>
 
 </html>

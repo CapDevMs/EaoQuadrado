@@ -16,59 +16,59 @@ let produtos = [
         'titulo': 'Caneca especial Programador',
         'imagem': '../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': './produto'
     },
     {
         'id': 2,
         'titulo': 'Caneca especial Programador',
         'imagem': '../assets/img/caneca2.png',
         'preco': '119,90',
-        'link': './produto.php'
+        'link': './produto'
     },
     {
         'id': 3,
         'titulo': 'Caneca especial Programador',
         'imagem': '../assets/img/caneca1.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': './produto'
     },
     {
         'id': 4,
         'titulo': 'Caneca especial Programador',
         'imagem': '../assets/img/caneca3.png',
         'preco': '119,90',
-        'link': './produto.php'
+        'link': './produto'
     },
     {
         'id': 5,
         'titulo': 'Caneca especial Programador',
         'imagem': '../assets/img/caneca2.png',
         'preco': '119,90',
-        'link': './produto.php'
+        'link': './produto'
     },
     {
         'id': 6,
         'titulo': 'Caneca especial Programador',
         'imagem': '../assets/img/caneca3.png',
         'preco': '99,90',
-        'link': './produto.php'
+        'link': './produto'
     },
     {
         'id': 7,
         'titulo': 'Caneca especial Programador',
         'imagem': '../assets/img/caneca2.png',
         'preco': '119,90',
-        'link': './produto.php'
+        'link': './produto'
     },
     {
         'id': 8,
         'titulo': 'Caneca especial Programador',
         'imagem': '../assets/img/caneca1.png',
         'preco': '119,90',
-        'link': './produto.php'
+        'link': './produto'
     },
-]
 
+]
 await exibirProdutos();
 
 let likeBtns = document.querySelectorAll('i.like');
