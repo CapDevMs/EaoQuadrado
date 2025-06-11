@@ -9,7 +9,7 @@ class HistoricoDePedidosController extends Controller
 
     public function historicoDePedidos()
     {
-        View::render('/historicoPedidos');
+        View::render('/cliente/historicoPedidos');
 
     }
 }

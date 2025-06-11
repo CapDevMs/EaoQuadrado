@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
 use Core\View;
+use App\Controllers\Controller;
 
-class contasInativasController extends Controller
+class ContasInativasController extends Controller
 {
 
     public function contasInativas()
