@@ -74,6 +74,7 @@ const filtroComponent = (categoria) => {
                     <div class="inputAvaliation row">
                         <label class="checkbox-radio col-sm-2">
                             <input type="checkbox">
+                            <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
                         <div class="starsFiltro col-sm-7">

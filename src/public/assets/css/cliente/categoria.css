@@ -1,14 +1,15 @@
 .container-video {
   position: relative;
+  
   margin-bottom: 2%;
-  height: 500px;
+  max-height: 500px;
+  height: auto;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
 }
 .container-video video {
   display: flex;
-  
   
 }
 .containerprodutofav{
