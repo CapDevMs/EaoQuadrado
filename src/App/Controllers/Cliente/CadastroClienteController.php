@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Cliente;
 
 use Core\View;
+use App\Controllers\Controller;
+
 
 class CadastroClienteController extends Controller
 {

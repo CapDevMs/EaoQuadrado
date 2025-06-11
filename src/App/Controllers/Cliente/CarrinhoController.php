@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Cliente;
 
 use Core\View;
+use App\Controllers\Controller;
 
 class CarrinhoController extends Controller
 {

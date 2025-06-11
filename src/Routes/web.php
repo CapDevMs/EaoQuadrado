@@ -11,29 +11,28 @@ use App\Controllers\Admin\MeuPerfilAdmController;
 use App\Controllers\Admin\SuporteAoColaboradorController;
 use App\Controllers\Admin\ValidacaoNovoVendedorController;
 // cadastros
-use App\Controllers\CadastroClienteController;
-use App\Controllers\CadastroVendedorController;
-use App\Controllers\AuthController;
+use App\Controllers\Cliente\CadastroClienteController;
+use App\Controllers\Vendedor\CadastroVendedorController;
 // area cliente
-use App\Controllers\CarrinhoController;
-use App\Controllers\FavoritosController;
-use App\Controllers\HistoricoDePedidosController;
+use App\Controllers\Cliente\CarrinhoController;
+use App\Controllers\Cliente\FavoritosController;
+use App\Controllers\Cliente\HistoricoDePedidosController;
 // area vendedor
-use App\Controllers\CadastrarProdutoVendedorController;
-use App\Controllers\HistoricoVendasController;
-use App\Controllers\MeuPerfilVendedorController;
-use App\Controllers\PaginaDoVendedorController;
-use App\Controllers\MinhaLojaController;
-use App\Controllers\PaginaDoVendedorController2; 
-use App\Controllers\GerenciamentoDeEstoqueController;
+use App\Controllers\Vendedor\CadastrarProdutoVendedorController;
+use App\Controllers\Vendedor\HistoricoVendasController;
+use App\Controllers\Vendedor\MeuPerfilVendedorController;
+use App\Controllers\Vendedor\PaginaDoVendedorController;
+use App\Controllers\Vendedor\MinhaLojaController;
+use App\Controllers\Vendedor\GerenciamentoDeEstoqueController;
+use App\Controllers\Vendedor\TrocasDevolucoesController;
+
 // area comum
-use App\Controllers\TrocasDevolucoesController;
 use App\Controllers\ProdutoController;
 use App\Controllers\HomeController;
 use App\Controllers\CategoriaController;
-use App\Controllers\FaqController;
 use App\Controllers\ContatoController;
-use App\Controllers\TermosDeUsoController;
+use App\Controllers\AuthController;
+
 
 use Core\Router;
 
@@ -47,7 +46,7 @@ $router->get('/admin/contasInativas', ContasInativasController::class, 'contasIn
 $router->get('/admin/criarCategoria', CriarCategoriaController::class, 'criarCategoria'); 
 $router->get('/admin/indexAdm', IndexAdmController::class, 'indexAdm');
 $router->get('/admin/listaVendedores', ListaVendedoresController::class, 'listaDeVendedores');
-$router->get('/admin/meuPerfilAdm', meuPerfilAdmController::class, 'perfilAdm');
+$router->get('/admin/meuPerfilAdm', MeuPerfilAdmController::class, 'perfilAdm');
 $router->get('/admin/suporteColaborador', SuporteAoColaboradorController::class, 'suporteAoColaborador');
 $router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::class, 'validacaoNovoVendedor');
 
@@ -73,7 +72,6 @@ $router->get('/vendedor/gerenciamentoEstoque', GerenciamentoDeEstoqueController:
 $router->get('/vendedor/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');
 
 
-
 // área comum
 
 $router->get('/categoria', CategoriaController::class, 'categoria');
@@ -87,11 +85,6 @@ $router->get('/nossaPolitica', HomeController::class, 'nossaPolitica');
 $router->get('/faq', HomeController::class, 'faq');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/termosDeUso', HomeController::class, 'termosDeUso');
-
-
-// Problema
-
-$router->get('/paginaVendedor', PaginaDoVendedorController2::class, 'paginaDoVendedor2'); 
 $router->get('/produto', ProdutoController::class, 'produto');
 
 
