@@ -32,7 +32,7 @@ const cardProduto = ({ id, titulo, imagem, preco, link }) => {
                     <a href="${link}" class="btn btn-comprar">Comprar</a>
                 </div>
                 <div class="col-sm-6">
-                    <a href="${link}" class="btn btn-carrinho">Carrinho</a>
+                    <a href="./carrinho" class="btn btn-carrinho">Carrinho</a>
                 </div>
             </div>
         </div>

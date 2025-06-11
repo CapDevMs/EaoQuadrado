@@ -43,7 +43,7 @@
                         <div class="card-inside">
                             <div class="card-header">
                                 <div class="img-card">
-                                    <img src="../../assets/img/person.svg" alt="">
+                                    <img src="<?= get_base_url(); ?>assets/img/person.svg" alt="">
                                 </div>
                                 <div class="nome-card">
                                     <p>Mario Renato</p>
@@ -67,7 +67,7 @@
                         <div class="card-inside">
                             <div class="card-header">
                                 <div class="img-card">
-                                    <img src="../../assets/img/person.svg" alt="">
+                                    <img src="<?= get_base_url(); ?>assets/img/person.svg" alt="">
                                 </div>
                                 <div class="nome-card">
                                     <p>Mario Renato</p>
@@ -93,7 +93,7 @@
                         <div class="card-inside">
                             <div class="card-header">
                                 <div class="img-card">
-                                    <img src="../../assets/img/person.svg" alt="">
+                                    <img src="<?= get_base_url(); ?>assets/img/person.svg" alt="">
                                 </div>
                                 <div class="nome-card">
                                     <p>Mario Renato</p>
@@ -117,7 +117,7 @@
                         <div class="card-inside finalizado">
                             <div class="card-header">
                                 <div class="img-card">
-                                    <img src="../../assets/img/person.svg" alt="">
+                                    <img src="<?= get_base_url(); ?>assets/img/person.svg" alt="">
                                 </div>
                                 <div class="nome-card">
                                     <p>Mario Renato</p>
@@ -143,5 +143,5 @@
 
     <<?php get_footer() ?>
 </body>
-<script src="../../assets/js/script.js"></script>
+<script src="<?= get_base_url(); ?>assets/js/script.js"></script>
 </html>
