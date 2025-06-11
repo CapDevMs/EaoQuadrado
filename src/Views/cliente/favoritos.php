@@ -31,7 +31,7 @@
 
     <div class="header-favoritos">
         <p class="title-section-produtos">Produtos Favoritos</p>
-                <a href="./carrinho.php" class="btn-mover-tudo-carrinho">
+                <a href="<?= get_base_url(); ?>carrinho" class="btn-mover-tudo-carrinho">
                 <div>
             <p class="p-text-move-carrinho">Mover tudo ao carrinho</p>
         </div>  
@@ -47,8 +47,8 @@
 <pagina-seguinte class="pagina-seguinte"></pagina-seguinte>    
 
 </main> 
-<script type="module" src="assets/js/favoritos.js?<?= time(); ?> " defer ></script>
-<script type="module" src="assets/js/pagina-seguinte.js?<?= time(); ?>" defer></script>
+<script type="module" src="<?= get_base_url(); ?>assets/js/favoritos.js?<?= time(); ?> " defer ></script>
+<script type="module" src="<?= get_base_url(); ?>assets/js/pagina-seguinte.js?<?= time(); ?>" defer></script>
 
 <?php get_footer() ?>
 </body>

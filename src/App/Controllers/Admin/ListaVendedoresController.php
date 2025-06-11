@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
 use Core\View;
+use App\Controllers\Controller;
 
 class ListaVendedoresController extends Controller
 {
 
-    public function lista()
+    public function listaDeVendedores()
     {
         View::render('admin/lista_de_vendedores');
-        //View::render('homepage');
+
     }
 }
