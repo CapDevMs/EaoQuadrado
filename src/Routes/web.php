@@ -59,12 +59,7 @@ $router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVe
 
 $router->get('/favoritos', FavoritosController::class, 'favoritos');
 $router->get('/carrinho', CarrinhoController::class, 'carrinho');
-<<<<<<< HEAD
-$router->get('/cliente', perfilClienteController::class, 'cliente');
-
-=======
 $router->get('/historicoPedidos', HistoricoDePedidosController::class, 'historicoDePedidos');
->>>>>>> 29438e0ec5478677750f22842aef1e68bcbcda7e
 
 // área vendedor
 
