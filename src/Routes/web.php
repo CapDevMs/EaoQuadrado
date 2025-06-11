@@ -18,6 +18,7 @@ use App\Controllers\AuthController;
 use App\Controllers\CarrinhoController;
 use App\Controllers\FavoritosController;
 use App\Controllers\HistoricoDePedidosController;
+use App\Controllers\perfilClienteController;
 // area vendedor
 use App\Controllers\CadastrarProdutoVendedorController;
 use App\Controllers\HistoricoVendasController;
@@ -60,6 +61,8 @@ $router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVe
 
 $router->get('/favoritos', FavoritosController::class, 'favoritos');
 $router->get('/carrinho', CarrinhoController::class, 'carrinho');
+$router->get('/cliente', perfilClienteController::class, 'cliente');
+
 
 // área vendedor
 
