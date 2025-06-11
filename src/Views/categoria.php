@@ -26,11 +26,11 @@ $appName = get_app_name();
         <div class="containerLeft col-sm-2 col-sm-hidden">
             <filtroComponent></filtroComponent>
         </div>
-        <div class="containerRight col-sm-9">
-            <div class="containerCategoria col-sm-9">
+        <div class="containerRight col-sm-10 col-md-9">
+            <div class="containerCategoria col-sm-12 col-md-11">
                 <buttonCategoria class="buttonCategoria row"></buttonCategoria>
             </div>
-            <div class="containerprodutofav col-sm-9">
+            <div class="containerprodutofav col-sm-12 col-md-11">
                     <cardProduto class="cardProduto row "></cardProduto>
             </div>
         </div>
