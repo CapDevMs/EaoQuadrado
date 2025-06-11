@@ -104,7 +104,7 @@ $titulo = 'Cadastro de Cliente';
                 
 
                     <div class="buttons-container">
-                        <button type="reset" class="button-cancel">Cancelar</button>
+                        <button type="reset" class="button-cancel" onclick="voltarPagina()">Cancelar</button>
                         <button type="submit" class="button-confirm">Registrar</button>
                     </div>
                 </form>

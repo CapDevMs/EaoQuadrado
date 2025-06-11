@@ -52,11 +52,11 @@ $titulo = 'Esqueci a senha';
                     </div>
                 </div>
             </div>
-            <img src="../../assets/img/esqueci-senha.svg" class="imagem">
+            <img src="<?= get_base_url(); ?>assets/img/esqueci-senha.svg" class="imagem">
         </div>
     </main>
     <?php get_footer() ?>
 </body>
-<script src="../../assets/js/script.js"></script>
+<script src="<?= get_base_url(); ?>assets/js/script.js"></script>
 
 </html>

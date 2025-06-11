@@ -34,16 +34,16 @@ $base_url = get_base_url();
             <div>
                 <ul class="footer-links-list">
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>/pages/cadastros/cadastro_cliente.php" class="footer-links-link">Minha Conta</a>
+                        <a href="<?=$base_url;?>pages/cadastros/cadastro_cliente.php" class="footer-links-link">Minha Conta</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>/pages/login.php" class="footer-links-link">Entre/Cadastre</a>
+                        <a href="<?=$base_url;?>pages/login.php" class="footer-links-link">Entre/Cadastre</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>/pages/carrinho.php" class="footer-links-link">Carrinho</a>
+                        <a href="<?=$base_url;?>pages/carrinho.php" class="footer-links-link">Carrinho</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>/pages/cliente/favoritos.php" class="footer-links-link">Lista de Desejos</a>
+                        <a href="<?=$base_url;?>pages/cliente/favoritos.php" class="footer-links-link">Lista de Desejos</a>
                     </li>
                 </ul>
             </div>
@@ -55,16 +55,16 @@ $base_url = get_base_url();
             <div>
                 <ul class="footer-links-list">
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>/pages/nossa_politica.php" class="footer-links-link">Nossa Política</a>
+                        <a href="<?=$base_url;?>pages/nossa_politica.php" class="footer-links-link">Nossa Política</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>/pages/termos_de_uso.php" class="footer-links-link">Termos de Uso</a>
+                        <a href="<?=$base_url;?>pages/termos_de_uso.php" class="footer-links-link">Termos de Uso</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>/pages/cadastros/faq.php" class="footer-links-link">FAQ</a>
+                        <a href="<?=$base_url;?>pages/cadastros/faq.php" class="footer-links-link">FAQ</a>
                     </li>
                     <li class="footer-links-item">
-                        <a href="<?=$base_url;?>/pages/cadastros/contato.php" class="footer-links-link">Contato</a>
+                        <a href="<?=$base_url;?>pages/cadastros/contato.php" class="footer-links-link">Contato</a>
                     </li>
                 </ul>
             </div>

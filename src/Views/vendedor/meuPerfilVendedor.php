@@ -80,6 +80,6 @@ $titulo = 'Histórico de Vendas';
             <?php get_footer() ?>
 </body>
 
-<script type="module" src="<?= get_base_url(); ?>/assets/js/script.js"></script>
+<script type="module" src="<?= get_base_url(); ?>assets/js/script.js"></script>
 
 </html>
