@@ -4,11 +4,12 @@ namespace App\Controllers;
 
 use Core\View;
 
-class suporteColaborador extends Controller
+class SuporteAoColaboradorController extends Controller
 {
 
-    public function suporte_colaborador()
+    public function suporteAoColaborador()
     {
         View::render('admin/suporte_ao_colaborador');
+
     }
 }

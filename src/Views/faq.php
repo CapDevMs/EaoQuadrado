@@ -1,6 +1,6 @@
 <?php
     $appName = get_app_name();
-    $baseUrl = get_base_url();
+    $base_url = get_base_url();
     $titulo = 'FAQ';
 ?>
 <!DOCTYPE html>
@@ -40,12 +40,12 @@
             <p class = 'texto'>• Implementamos rigorosas medidas de segurança para proteger as transações e garantir a conformidade com nossos termos de serviço.</p><br><br>
             
             </div>
-            <a class="btn-home" href="index.php">
-            <button id="retorno" type="button">Retorne ao início</button>
+            <a class="btn-home" href="<?=$base_url;?>">
+            <button href = '<?= get_base_url(); ?>'id="retorno" type="button">Retorne ao início</button>
             </a>
     </main>
 
     <?php get_footer() ?>
 </body>
-<script src="../../assets/js/script.js"></script>
+<script src="<?=$base_url;?>assets/js/script.js"></script>
 </html>

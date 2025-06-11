@@ -2,7 +2,7 @@
     <li>
         <label for="item1">Cadastro</label>
         <div class="content">
-            <a href="<?= get_base_url(); ?>/pages/admin/cadastro_adm.php">Cadastrar Novo Administrador</a>
+            <a href="<?= get_base_url(); ?>pages/admin/cadastro_adm.php">Cadastrar Novo Administrador</a>
             <a href="<?= get_base_url(); ?>perfilAdm">Gerenciar Meu Perfil</a>
         </div>
     </li>
