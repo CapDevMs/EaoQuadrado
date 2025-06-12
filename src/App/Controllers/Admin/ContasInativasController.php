@@ -2,14 +2,18 @@
 
 namespace App\Controllers\Admin;
 
-use Core\View;
 use App\Controllers\Controller;
+use App\Models\ContasInativas;
+use Core\View;
 
 class ContasInativasController extends Controller
 {
 
     public function contasInativas()
     {
-        View::render('admin/contas_inativas');
+        $inativasModel = new ContasInativas();
+        $todasAsSuspensas = $inativasModel->contasInativas(1);
+        $todasAsDesativadas = $inativasModel->contasInativas(0);
+        View::render('admin/contas_inativas',['contasSuspensas' => $todasAsSuspensas,'contasDesativadas' => $todasAsDesativadas]);
     }
 }

@@ -25,7 +25,7 @@ function PuxarSuspensas(listaSuspensos) {
         
                     <div class='painelCinza'>
                         <div class='blocoReativar subBloco0 col-md-2'>
-                            <img src="src/public/assets/img/${imagem}" alt="foto-perfil" class='imagem'>
+                            <img src="../src/public/assets/img/${imagem}" alt="foto-perfil" class='imagem'>
                         </div>
                         <div class="blocoNome miniFonte subBloco1">${nomeEmpresa}</div>
                         <div class='col-5  blocoColuna'>
@@ -44,7 +44,7 @@ function PuxarSuspensas(listaSuspensos) {
                 <AcordeonFechado type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon('${id}')">
                     <div class='painelCinza'>
                         <div class='blocoReativar subBloco0 col-md-2'>
-                            <img src="src/public/assets/img/${imagem}" alt="foto-perfil" class='imagem'>
+                            <img src="../src/public/assets/img/${imagem}" alt="foto-perfil" class='imagem'>
                         </div>
                         <div class=" blocoNome miniFonte subBloco1">${nomeEmpresa}</div>
                         <div class='col-5 blocoColuna'>
@@ -86,7 +86,7 @@ function PuxarDesativadas(listaDesativados) {
         
                     <div class='painelCinza'>
                         <div class='blocoReativar subBloco0 col-md-2'>
-                            <img src="src/public/assets/img/${imagem}" alt="foto-perfil" class='imagem'>
+                            <img src="../src/public/assets/img/${imagem}" alt="foto-perfil" class='imagem'>
                         </div>
                         <div class="blocoNome miniFonte subBloco1">${nomeEmpresa}</div>
                         <div class='col-5  blocoColuna'>
@@ -105,7 +105,7 @@ function PuxarDesativadas(listaDesativados) {
                 <AcordeonFechado type="button" class='painel painelCentral col-12 centralizar mt-3 acordeonFechado' onclick="abrirAcordeon('${id}')">
                     <div class='painelCinza'>
                         <div class='blocoReativar subBloco0 col-md-2'>
-                            <img src="src/public/assets/img/${imagem}" alt="foto-perfil" class='imagem'>
+                            <img src="../src/public/assets/img/${imagem}" alt="foto-perfil" class='imagem'>
                         </div>
                         <div class=" blocoNome miniFonte subBloco1">${nomeEmpresa}</div>
                         <div class='col-5 blocoColuna'>

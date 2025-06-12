@@ -25,9 +25,35 @@ $base_url = get_base_url();
     ?>
 
     <main>
+
+        <?php foreach ($contasSuspensas as $conta): ?>
+            <button style="max-width: max-content;">
+                <td style="max-width: max-content;">IdContaInativa-<?= htmlspecialchars($conta['id_contaInativa']) ?></td>
+                <hr>
+                <td style="max-width: max-content;"><?= htmlspecialchars($conta['nome_empresa']) ?></td>
+                <hr>
+                <div style="max-width: max-content;margin:auto;" class="status<?= htmlspecialchars($conta['status']) ?> col-xl-1 subBloco0 miniFonte blocoReativar">Suspenso</div>
+                <hr>
+                <td style="max-width: max-content;"><?= htmlspecialchars($conta['justificativa']) ?></td>
+                <hr>
+            </button>
+        <?php endforeach; ?>
+        <?php foreach ($contasDesativadas as $conta): ?>
+            <button style="max-width: max-content;">
+                <td style="max-width: max-content;">IdContaInativa-<?= htmlspecialchars($conta['id_contaInativa']) ?></td>
+                <hr>
+                <td style="max-width: max-content;"><?= htmlspecialchars($conta['nome_empresa']) ?></td>
+                <hr>
+                <div style="max-width: max-content;margin:auto;" class="status<?= htmlspecialchars($conta['status']) ?> col-xl-1 subBloco0 miniFonte blocoReativar">Desativado</div>
+                <hr>
+                <td style="max-width: max-content;"><?= htmlspecialchars($conta['justificativa']) ?></td>
+                <hr>
+            </button>
+        <?php endforeach; ?>
+
         <roadMap class='mt-1 mb-1 ml-1 roadMap'>
-            <a href="<?=get_base_url();?>" class='roadMap1'>Home /</a>
-            <a href="<?=get_base_url();?>admin/indexAdm" class='roadMap1'>Painel do administrador /</a>
+            <a href="<?= get_base_url(); ?>" class='roadMap1'>Home /</a>
+            <a href="<?= get_base_url(); ?>admin/indexAdm" class='roadMap1'>Painel do administrador /</a>
             <a href="#" class='roadMap2'>Contas inativas</a>
         </roadMap>
         <corpo class='corpo col-12 row'>
@@ -52,7 +78,7 @@ $base_url = get_base_url();
     <?php get_footer() ?>
 </body>
 
-<script src='<?php $base_url; ?>src/public/assets/js/adm/contas_inativas.js'></script>
-<script src='<?php $base_url; ?>src/public/assets/js/components/componente_contasInativas.js'></script>
+<script src='<?= get_base_url(); ?>assets/js/adm/contas_inativas.js'></script>
+<script src='<?= get_base_url(); ?>assets/js/components/componente_contasInativas.js'></script>
 
 </html>
