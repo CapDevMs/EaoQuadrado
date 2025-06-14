@@ -9,6 +9,7 @@ class CategoriaController extends Controller
 
     public function categoria()
     {
-        View::render('/categoria');
+        View::render('categoria');
+
     }
 }

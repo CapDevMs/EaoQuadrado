@@ -228,7 +228,15 @@ CREATE TABLE Edit_Site(
     imagem_elemento varchar(255)
 );
 
--- DELIMITER //
+INSERT INTO Categorias (nome, descricao)
+VALUES ("Eletrônicos","Smartphones, laptops, tablets, acessórios e muito mais"),
+("Moda e acessórios","Roupas, calçados, bolsas, joias e outros."),
+("Casa e jardim","Móveis, decoração, utensílios domésticos, ferramentas de jardinagem e outros"),
+("Saúde e Beleza","Produtos de cuidados pessoais, cosméticos, suplementos e mais."),
+("Esportes e Lazer","Equipamentos esportivos, roupas de ginástica, brinquedos, jogos e outros"),
+("Livros e Entretenimento"," Livros, filmes, música, jogos de videogame e outros");
+
+-- DELIMITER // 
 -- CREATE TRIGGER valida_vendedor
 -- AFTER INSERT ON vendedores
 -- FOR EACH ROW
