@@ -4,11 +4,7 @@ const componenteEstoque = ({ imagem,nome,preco,imagem2 }) => {
 
     <h2 class="text-items">${nome}</h3>
 
-    <div id="botao_qtd">
-        <button class="quantidade" id="menos">-</button>
-        <input type="text" class="quantidade" id="quantidade">
-        <button class="quantidade" id="mais">+</button>
-    </div>
+    <contadorBtn></contadorBtn>
 
     <div>
         <h3 class="text-items">R$ ${preco}</h3>
