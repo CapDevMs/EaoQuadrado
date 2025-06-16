@@ -2,6 +2,14 @@ div {
     display: grid;
 }
 
+textarea:invalid {
+    border-color: red;
+}
+
+.validado {
+    border-color: green !important;
+}
+
 .sub-menu {
     background-color: white;
     grid-column: 1 / -1;
@@ -162,7 +170,37 @@ button:hover {
     margin-top: 20px;
 }
 
+/* pop-up apenas teste  */
+.popup-sucesso {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d4edda;
+    color: #155724;
+    padding: 20px 30px;
+    border: 2px solid #c3e6cb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.popup-sucesso button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #155724;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.oculto {
+    display: none;
+}
 
 
 

@@ -5,24 +5,33 @@ namespace App\Controllers\Vendedor;
 use Core\View;
 use App\Controllers\Controller;
 use App\Models\Produto;
+use App\Models\Categoria;
 
 class CadastroProdutoVendedorController extends Controller
 {
     public function cadastrarProduto()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-            return View::render('vendedor/cadastrar_produto_vendedor');
+            $categorias = (new Categoria())->findAll()->getData(); 
+            $sucesso = isset($_GET['sucesso']) && $_GET['sucesso'] == 1;
+
+            return View::render('vendedor/cadastrar_produto_vendedor', [
+                'sucesso' => $sucesso,
+                'categorias' => $categorias
+            ]);
         }
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $dados = $this->extrairDadosFormulario();
             $erros = $this->validarDados($dados);
             $imagens = $this->processarImagens($erros);
+            $categorias = (new Categoria())->findAll()->getData();
 
             if (!empty($erros)) {
                 return View::render('vendedor/cadastrar_produto_vendedor', [
                     'erros' => $erros,
-                    'dados' => $dados
+                    'dados' => $dados,
+                    'categorias' => $categorias
                 ]);
             }
 
@@ -30,14 +39,25 @@ class CadastroProdutoVendedorController extends Controller
 
             try {
                 $produtoModel = new Produto();
-                $produtoModel->insert($dados);
-                header("Location: /cadastrar-produto-vendedor?sucesso=1");
-                exit;
+                
+                $sucesso = $produtoModel->insert($dados);
+
+                if ($sucesso) {
+                    header("Location: " . get_base_url() . "vendedor/cadastrarProduto?sucesso=1");
+                    exit;
+
+                } else {
+                    var_dump($dados);
+                    die("❌ Erro: Falha ao salvar o produto no banco.");
+                }
+
             } catch (\Exception $e) {
-                $erros[] = "Erro ao salvar o produto. Tente novamente.";
-                View::render('vendedor/cadastrar_produto_vendedor', [
+                // ✅ DEBUG: Exibir erro real (em desenvolvimento)
+                $erros[] = "Erro ao salvar o produto. Tente novamente. [ERRO: " . $e->getMessage() . "]";
+                return View::render('vendedor/cadastrar_produto_vendedor', [
                     'erros' => $erros,
-                    'dados' => $dados
+                    'dados' => $dados,
+                    'categorias' => $categorias
                 ]);
             }
         }
@@ -50,10 +70,10 @@ class CadastroProdutoVendedorController extends Controller
             'marca' => trim($_POST['marca'] ?? ''),
             'modelo' => trim($_POST['modelo'] ?? ''),
             'id_categoria' => filter_var($_POST['id_categoria'] ?? null, FILTER_VALIDATE_INT),
-            'preco' => filter_var($_POST['preco'] ?? '', FILTER_VALIDATE_FLOAT),
+            'preco' => filter_var(str_replace(',', '.', $_POST['preco'] ?? ''), FILTER_VALIDATE_FLOAT),
             'quantidade' => filter_var($_POST['quantidade'] ?? 0, FILTER_VALIDATE_INT),
             'descricao' => trim($_POST['descricao'] ?? ''),
-            'link' => trim($_POST['link'] ?? ''),
+            // 'link' => trim($_POST['link'] ?? ''),
         ];
     }
 
@@ -68,9 +88,9 @@ class CadastroProdutoVendedorController extends Controller
         if ($dados['preco'] === false || $dados['preco'] <= 0) $erros[] = "Informe um preço válido.";
         if ($dados['quantidade'] === false || $dados['quantidade'] < 0) $erros[] = "Quantidade inválida.";
         if ($dados['descricao'] === '') $erros[] = "A descrição do produto é obrigatória.";
-        if ($dados['link'] && !filter_var($dados['link'], FILTER_VALIDATE_URL)) {
-            $erros[] = "O link informado é inválido.";
-        }
+        // if ($dados['link'] && !filter_var($dados['link'], FILTER_VALIDATE_URL)) {
+        //     $erros[] = "O link informado é inválido.";
+        // }
 
         return $erros;
     }
