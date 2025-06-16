@@ -114,7 +114,7 @@ $titulo = 'Homepage';
             <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/home_icon.svg" alt="smartwatches"><p>Casa</p></div>
             <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/ball_icon.svg" alt="cameras"><p>Sports</p></div>
             <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/ring_icon.svg" alt="headphone"><p>Acessorios</p></div>
-            <div class="categoria" href="https://teams.microsoft.com/v2/"><img src="<?= get_base_url(); ?>assets/img/games_icon.svg" alt="games"><p>Entretenimento</p></div>
+            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/games_icon.svg" alt="games"><p>Entretenimento</p></div>
         </div>
 
         <div class="frame_container_categoria">
