@@ -22,7 +22,7 @@ $titulo = 'Meu Perfil';
                 <?php get_sidebar_cliente('cliente'); ?>
             </div>
 
-            <section class="container row col-sm-12 col-xl-9">
+            <section class="container row col-sm-12 col-md-9 pb-2 pt-2">
                 <div class="container body-perfil col-sm-11 col-xl-9 pl-1">
                     <h2 class="col-sm-12">Edite Seu Perfil</h2>
                     <img src="src\public\assets\img\foto_cliente.png" alt="foto do cliente" class="client-image col-sm-12">
