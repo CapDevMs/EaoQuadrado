@@ -26,25 +26,13 @@ $base_url = get_base_url();
 
     <main>
 
-        <?php foreach ($contasSuspensas as $conta): ?>
+        <?php foreach ($contasInativas as $conta): ?>
             <button style="max-width: max-content;">
                 <td style="max-width: max-content;">IdContaInativa-<?= htmlspecialchars($conta['id_contaInativa']) ?></td>
                 <hr>
                 <td style="max-width: max-content;"><?= htmlspecialchars($conta['nome_empresa']) ?></td>
                 <hr>
                 <div style="max-width: max-content;margin:auto;" class="status<?= htmlspecialchars($conta['status']) ?> col-xl-1 subBloco0 miniFonte blocoReativar">Suspenso</div>
-                <hr>
-                <td style="max-width: max-content;"><?= htmlspecialchars($conta['justificativa']) ?></td>
-                <hr>
-            </button>
-        <?php endforeach; ?>
-        <?php foreach ($contasDesativadas as $conta): ?>
-            <button style="max-width: max-content;">
-                <td style="max-width: max-content;">IdContaInativa-<?= htmlspecialchars($conta['id_contaInativa']) ?></td>
-                <hr>
-                <td style="max-width: max-content;"><?= htmlspecialchars($conta['nome_empresa']) ?></td>
-                <hr>
-                <div style="max-width: max-content;margin:auto;" class="status<?= htmlspecialchars($conta['status']) ?> col-xl-1 subBloco0 miniFonte blocoReativar">Desativado</div>
                 <hr>
                 <td style="max-width: max-content;"><?= htmlspecialchars($conta['justificativa']) ?></td>
                 <hr>
@@ -58,17 +46,17 @@ $base_url = get_base_url();
         </roadMap>
         <corpo class='corpo col-12 row'>
             <menuLateral class='col-md-3 col'>
-
                 <?php get_sidebar_admin('contas_inativas'); ?>
             </menuLateral>
             <conteudo class='col-md-9 col-12'>
 
                 <seletor class='seletor'>
                     <p class='miniFonte seletorBase'>Contas:</p>
-                    <p type='button' onclick="mudarSeletor('seletor0'); todasContasInativas();" class='miniFonte seletorComponente seletorAtivo' id='seletor0'>Todas</p>
-                    <p type='button' onclick="mudarSeletor('seletor1'); suspensasContasInativas();" class='miniFonte seletorComponente seletorInativo' id='seletor1'>Suspensas</p>
-                    <p type='button' onclick="mudarSeletor('seletor2'); desativadasContasInativas();" class='miniFonte seletorComponente seletorInativo' id='seletor2'>Desativadas</p>
+                    <p type='button' onclick="mudarSeletor('seletor0'); todasContasInativas(lista);" class='miniFonte seletorComponente seletorAtivo' id='seletor0'>Todas</p>
+                    <p type='button' onclick="mudarSeletor('seletor1'); suspensasContasInativas(listaSuspensas);" class='miniFonte seletorComponente seletorInativo' id='seletor1'>Suspensas</p>
+                    <p type='button' onclick="mudarSeletor('seletor2'); desativadasContasInativas(listaDesativadas);" class='miniFonte seletorComponente seletorInativo' id='seletor2'>Desativadas</p>
                 </seletor>
+
                 <painel class='painel painelPrincipal col-md-12'>
                 </painel>
             </conteudo>
@@ -80,5 +68,11 @@ $base_url = get_base_url();
 
 <script src='<?= get_base_url(); ?>assets/js/adm/contas_inativas.js'></script>
 <script src='<?= get_base_url(); ?>assets/js/components/componente_contasInativas.js'></script>
+<script>
+    const lista = <?= json_encode($contasInativas) ?>;
+    const listaSuspensas = <?= json_encode($contasSuspensas) ?>;
+    const listaDesativadas = <?= json_encode($contasDesativadas) ?>;
+    todasContasInativas(lista);
+</script>
 
 </html>

@@ -14,6 +14,7 @@ class ContasInativasController extends Controller
         $inativasModel = new ContasInativas();
         $todasAsSuspensas = $inativasModel->contasInativas(1);
         $todasAsDesativadas = $inativasModel->contasInativas(0);
-        View::render('admin/contas_inativas',['contasSuspensas' => $todasAsSuspensas,'contasDesativadas' => $todasAsDesativadas]);
+        $todasAsInativas = $inativasModel->contasInativas('todasAsInativas');
+        View::render('admin/contas_inativas',['contasSuspensas' => $todasAsSuspensas,'contasDesativadas' => $todasAsDesativadas,'contasInativas' => $todasAsInativas]);
     }
 }
