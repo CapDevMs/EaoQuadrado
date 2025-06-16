@@ -1,4 +1,4 @@
-const componente_estoque = ({ imagem,nome,preco,imagem2 }) => {
+const componenteEstoque = ({ imagem,nome,preco,imagem2 }) => {
     return`<div class="items">
     <img class="img-item" src="${imagem}" alt="erro">
 
@@ -22,4 +22,4 @@ const componente_estoque = ({ imagem,nome,preco,imagem2 }) => {
 </div>`;
 }
 
-export default componente_estoque;
+export default componenteEstoque;
