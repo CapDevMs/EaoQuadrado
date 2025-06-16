@@ -101,7 +101,7 @@ $sobre_cards = [
                     </p>
                 </div>
                 <div class="col-sm-12 col-xl-6">
-                    <img src="../../assets/img/imagem-sobre-1.png">
+                    <img src="<?= get_base_url();?>assets/img/imagem-sobre-1.png">
                 </div>
             </div>
         </div>

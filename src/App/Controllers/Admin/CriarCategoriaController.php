@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
 use App\Models\Categoria;
 use Core\View;
+use App\Controllers\Controller;
 
-class CategoriaController extends Controller
+class CriarCategoriaController extends Controller
 {
     public function index()
     {

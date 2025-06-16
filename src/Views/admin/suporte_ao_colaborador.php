@@ -34,7 +34,7 @@ $titulo = 'Suporte';
     </main>
     <?php get_footer() ?>
 </body>
-<script src="<?php get_base_url() ?>assets/js/colaborador_sub.js"></script>
+<script src="<?php get_base_url(); ?>assets/js/colaborador_sub.js"></script>
 <script type="module" src="<?= get_base_url(); ?>assets/js/suporteAdm.js"></script>
 
 </html>

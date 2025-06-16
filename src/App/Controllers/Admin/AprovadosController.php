@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
 use Core\View;
+use App\Controllers\Controller;
 
 class AprovadosController extends Controller
 {
-    public function historicoDeContas()
+    public function contasAprovadasReprovadas()
     {
         View::render('admin/contas_aprovadas_reprovadas');
-        // View::render('homepage');
     }
 }

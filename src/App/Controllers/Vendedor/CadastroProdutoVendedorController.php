@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Vendedor;
 
 use Core\View;
+use App\Controllers\Controller;
 use App\Models\Produto;
 
 class CadastrarProdutoVendedorController extends Controller

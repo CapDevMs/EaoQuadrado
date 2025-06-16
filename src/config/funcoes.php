@@ -1,8 +1,12 @@
 <?php
 
-
 function get_base_url() {
-    return $_ENV['APP_URL'];
+    $app_url = $_ENV['APP_URL'];
+    if(substr($app_url, -1) !== '/'){
+        $app_url .= '/';
+    }
+
+    return $app_url;
 }
 
 function get_app_name(){
@@ -56,11 +60,7 @@ function get_sidebar_admin($page) {
     include_once(__DIR__ . '/../components/sidebar_adm.php');
 }
 
-
-function logout() {
-    if (isset($_SESSION['user'])) {
-        unset($_SESSION['user']);
-        session_destroy();
-    }
-    header('location: ' .  $route);
+function route($location)
+{
+    return header("location: {$location}");
 }
