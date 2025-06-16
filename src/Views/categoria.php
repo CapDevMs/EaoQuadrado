@@ -11,9 +11,7 @@ $appName = get_app_name();
     <!-- <title><?= $appName . ' - ' . $titulo ?? '' ?></title> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <?php get_css_components() ?>
-    <?php get_css([ 'cliente/categoria', 'filtro_categoria', 'style']); ?>
-    <?php get_css(['base','cliente/categoria']); ?>
-
+    <?php get_css([ 'cliente/categoria', 'components/filtro_categoria', 'style', 'base']); ?>
 </head>
 
 <body>
@@ -28,7 +26,7 @@ $appName = get_app_name();
         <div class="containerLeft col-sm-2 col-sm-hidden">
             <filtroComponent></filtroComponent>
         </div>
-        <div class="containerRight col-sm-11 col-md-9">
+        <div class="containerRight col-sm-11 col-md-9 pt-1">
             <div class="containerCategoria col-sm-12 col-md-11">
                 <buttonCategoria class="buttonCategoria row"></buttonCategoria>
             </div>

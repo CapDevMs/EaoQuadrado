@@ -7,7 +7,7 @@ const filtroComponent = (categoria) => {
                 <div class="priceCategoria col-sm-12 row">
                     <div class="mediaCategoria col-sm-12 col-lg-6 mb-1">
                         <label for="min">Minimo</label>
-                        <input class="numberInput" type="number" id=min">
+                        <input class="numberInput" type="number" id="min">
                     </div>
                     <div class="mediaCategoria col-sm-12 col-lg-6 mb-1">
                         <label for="max">Maximo</label>

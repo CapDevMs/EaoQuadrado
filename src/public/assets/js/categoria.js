@@ -19,28 +19,34 @@ for (let coisa in filtroInfo) {
 const docTagCategoria = document.querySelector('buttonCategoria');
 const categorias = [
     {
-        imagem: 'assets/img/camera_icon.svg',
-        nome: 'Camera'
-    },
-    {
-        imagem: 'assets/img/cellphone_icon.svg',
-        nome: 'Celulares'
-    },
-    {
         imagem: 'assets/img/computer_icon.svg',
-        nome: 'Computador'
+        nome: 'Eletrônicos',
+        link: './categoria'
+    },
+    {
+        imagem: 'assets/img/dress_icon.svg',
+        nome: 'Moda',
+        link: './categoria'
+    },
+    {
+        imagem: 'assets/img/home_icon.svg',
+        nome: 'Casa',
+        link: './categoria'
+    },
+    {
+        imagem: 'assets/img/ball_icon.svg',
+        nome: 'Esportes',
+        link: './categoria'
+    },
+    {
+        imagem: 'assets/img/ring_icon.svg',
+        nome: 'Acessorios',
+        link: './categoria'
     },
     {
         imagem: 'assets/img/games_icon.svg',
-        nome: 'Games'
-    },
-    {
-        imagem: 'assets/img/headphone_icon.svg',
-        nome: 'Fone de Ouvido'
-    },
-    {
-        imagem: 'assets/img/smartwatches_icon.svg',
-        nome: 'Smartwatch'
+        nome: 'Entretenimento',
+        link: './categoria'
     }
 ];
 
