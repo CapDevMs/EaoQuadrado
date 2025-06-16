@@ -47,7 +47,7 @@ namespace Core;
             return $table;
         }
 
-        protected function query(string $sql, array $params = []): PDOStatement
+        public function query(string $sql, array $params = []): PDOStatement
         {
             try {
                 $stmt = $this->db->prepare($sql);
