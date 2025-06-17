@@ -23,10 +23,14 @@ $titulo = 'Cadastro de Cliente';
         <div class="register_client">
             <h2>Cadastro de Cliente</h2>
             <div class="form-container">
-                <img src="src\public\assets\img\foto_cliente.png" alt="foto do cliente" class="client-image">
                 
-                <form class="form" id="vendedor_form" action="#">
+                <img src="src\public\assets\img\foto_cliente.png" alt="foto do cliente" class="client-image">
+                <form class="form" id="vendedor_form" action="/cadastroCliente" method="post" enctype="multipart/form-data">
  
+                    <div class="img-profile">
+                        <input type="file" name="imgProfile" required>
+                    </div>
+
                     <div class="nome-group">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" placeholder="John" required>
@@ -86,7 +90,7 @@ $titulo = 'Cadastro de Cliente';
 
                     <div class="confirm-group">
                         <label for="confirmar-senha">Confirmar Senha</label>
-                        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="*********" required>
+                        <input type="password" id="confirmar-senha" name="confirmarSenha" placeholder="*********" required>
                     </div>
         
        
