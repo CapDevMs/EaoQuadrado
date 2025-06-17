@@ -73,3 +73,13 @@ a.btn-visitar-loja {
     border: 0;
     border-radius: var(--bs-btn-border-radius);
 }
+
+@media (max-width: 425px) {
+    .nome-produto {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px !important;
+    }
+}

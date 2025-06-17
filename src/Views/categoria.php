@@ -10,31 +10,31 @@ $appName = get_app_name();
     <title>E ao Quadrado - O melhor E-commerce</title>
     <!-- <title><?= $appName . ' - ' . $titulo ?? '' ?></title> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <?php get_css(['filtro_categoria', 'cliente/categoria']); ?>
-    <?php get_css(['style', 'base','cliente/categoria']); ?>
     <?php get_css_components() ?>
+    <?php get_css([ 'cliente/categoria', 'components/filtro_categoria', 'style', 'base']); ?>
 </head>
 
 <body>
     <?php get_header() ?>
     <div class="container-video">
                 <video autoplay muted loop>
-                    <source src="<?= get_base_url(); ?>assets/videos/video-categoria_celular.mp4.mp4" type="video/mp4">
+                    <source src="<?= get_base_url(); ?>assets/videos/video-categoria_celular.mp4" type="video/mp4">
                 </video>
     </div>
 
     <div class="container-main col-sm-12 ">
-        <div class="containerLeft col-sm-2">
+        <div class="containerLeft col-sm-2 col-sm-hidden">
             <filtroComponent></filtroComponent>
         </div>
-        <div class="containerCategoria row col-sm-12">
-            <buttonCategoria class="buttonCategoria"></buttonCategoria>
-        </div>
-        <div class="containerprodutofav col-xl-10 col-lg-10 col-md-12 ">
-                <cardProduto class="cardProduto row "></cardProduto>
+        <div class="containerRight col-sm-11 col-md-9 pt-1">
+            <div class="containerCategoria col-sm-12 col-md-11">
+                <buttonCategoria class="buttonCategoria row"></buttonCategoria>
+            </div>
+            <div class="containerprodutofav col-sm-12 col-md-11">
+                    <cardProduto class="cardProduto row "></cardProduto>
+            </div>
         </div>
         
-
     </div>
 
     <script type="module" src="<?= get_base_url(); ?>assets/js/categoria.js?<?= time(); ?>" defer></script>
