@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <?php get_css(['base', 'style', 'vendedor/tela_gerenciamento_estoque', '']) ?>
+    <?php get_css(['base', 'style', 'vendedor/tela_gerenciamento_estoque']) ?>
     <?php get_css_components()?>
     <title>Document</title>
 </head>
@@ -25,7 +25,7 @@
                 
 
             <div class="container">
-                <componenteEstoqueContainer></componenteEstoqueContainer>
+                <div class="componenteEstoqueContainer"></div>
             </div>
             <div id="div-btn">
                 <button class="btn" id="btn1">Excluir</button>
