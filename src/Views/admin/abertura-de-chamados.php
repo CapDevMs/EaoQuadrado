@@ -65,5 +65,5 @@
 
     <?php get_footer() ?>
 </body>
-<script src="../../assets/js/abertura_de_chamados_adm.js"></script>
+<script src="../../public/assets/js/abertura_de_chamados_adm.js"></script>
 </html>

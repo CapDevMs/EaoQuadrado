@@ -1,13 +1,15 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
 use Core\View;
+use App\Controllers\Controller;
+
 
 class AberturaChamadosController extends Controller
 {
 
-    public function chamados()
+    public function aberturaChamados()
     {
         View::render('admin/abertura-de-chamados');
     }
