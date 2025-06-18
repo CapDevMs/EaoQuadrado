@@ -37,10 +37,11 @@ use App\Controllers\AuthController;
 
 
 use Core\Router;
-
+ 
 $router = new Router();
 
-// área adm
+
+// área comum
 
 $router->get('/admin/cadastroAdm', CadastroAdminController::class, 'cadastroAdmin');
 $router->get('/admin/contasAprovadasReprovadas', AprovadosController::class, 'contasAprovadasReprovadas');
@@ -55,10 +56,22 @@ $router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::cl
 // cadastros
 
 $router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente');
-$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor');
+$router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
+$router->get('/categoria', categoriaController::class, 'categoria');
+$router->get('/produto', ProdutoController::class, 'produto');
+
+
+// área vendedor
+
+$router->get('/vendas', HistoricoVendasController::class, 'vendas');
+$router->get('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+$router->post('/cadastrar-produto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+$router->get('/minha-loja', MinhaLojaController::class, 'loja');
+$router->get('/vendedor', perfilVendedor::class, 'vendedor');
+
 
 // área cliente
-
+ 
 $router->get('/favoritos', FavoritosController::class, 'favoritos');
 $router->get('/carrinho', CarrinhoController::class, 'carrinho');
 $router->get('/historicoPedidos', HistoricoDePedidosController::class, 'historicoDePedidos');
@@ -96,3 +109,10 @@ $router->get('/produto', ProdutoController::class, 'produto');
 $router->get('/', HomeController::class, 'index');
 
 $router->dispatch();
+ 
+ 
+
+
+
+
+

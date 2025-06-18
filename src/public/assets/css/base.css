@@ -336,7 +336,7 @@ body {
 
 /* Css do Main */
 main {
-  margin-top: calc(95px + 2vh);
+  margin-top: calc(95px + 2vh) !important;
   min-height: calc(100vh - (calc(95px + 2vh) + 280px));
 }
 
