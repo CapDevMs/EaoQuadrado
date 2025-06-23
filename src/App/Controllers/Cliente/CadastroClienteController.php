@@ -6,7 +6,7 @@ use App\Models\Cliente;
 use App\Models\User;
 use Core\View;
 use App\Controllers\Controller;
-
+use App\Services\Upload;
 
 class CadastroClienteController extends Controller
 {
@@ -19,7 +19,6 @@ class CadastroClienteController extends Controller
   public function cadastrarCliente()
   {
     $dados = [
-      $imagem = $_POST['imgProfile'],
       $nome = htmlspecialchars($_POST['nome']),
       $sobrenome = htmlspecialchars($_POST['sobrenome']),
       $nascimento = (int) $_POST['nascimento'],
@@ -34,7 +33,27 @@ class CadastroClienteController extends Controller
       $confirmarSenha = $_POST['confirmarSenha']
     ];
 
-    $erros = $this->validarDados($dados);
+    
+    $erros = [];
+
+    $nomeImagemSalva = null;
+    $uploadDir = __DIR__ . '../../../public/assets/uploads/';
+    
+    if (isset($_POST['registrar']) && !empty($_FILES['imgProfile']['name'])) {
+      $uploader = new Upload();
+      $uploadResult = $uploader->uploadImagem($_FILES['imgProfile'], $uploadDir);
+
+      if (!$uploadResult['success']) {
+          $erros = array_merge($erros, $uploadResult['errors']);
+      } else {
+          $nomeImagemSalva = $uploadResult['fileName'];
+      }
+    }
+
+    $dados['imagem'] = $nomeImagemSalva;
+
+    $errosValidacao = $this->validarDados($dados);
+    $erros = array_merge($erros, $errosValidacao);
 
     if (!empty($erros)) {
       return View::render('cadastros/cadastro_cliente', [
@@ -57,19 +76,19 @@ class CadastroClienteController extends Controller
 
       $cliente = new Cliente();
       $novoClienteCadastrado = [
-        'imagem' => $imagem,
-          'nome' => $nome,
-          'sobrenome' => $sobrenome,
-          'nascimento' => $nascimento,
-          'cpf' => $cpf,
-          'email' => $email,
-          'telefone' => $telefone,
-          'cep' => $cep,
-          'endereco' => $endereco,
-          'bairro' => $bairro,
-          'complemento' => $complemento,
-          'senha' => $senha,
-          'confirmarSenha' => $confirmarSenha
+        'imagem' => $nomeImagemSalva,
+        'nome' => $nome,
+        'sobrenome' => $sobrenome,
+        'nascimento' => $nascimento,
+        'cpf' => $cpf,
+        'email' => $email,
+        'telefone' => $telefone,
+        'cep' => $cep,
+        'endereco' => $endereco,
+        'bairro' => $bairro,
+        'complemento' => $complemento,
+        'senha' => $senha,
+        'confirmarSenha' => $confirmarSenha
       ];
 
       $sucesso = $cliente->insert($novoClienteCadastrado);
