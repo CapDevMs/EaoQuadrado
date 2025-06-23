@@ -28,5 +28,6 @@ class User extends Model
             return False;
         };
     }
+
     
 }
