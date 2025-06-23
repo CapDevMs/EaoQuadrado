@@ -20,14 +20,13 @@ use App\Controllers\Cliente\HistoricoDePedidosController;
 use App\Controllers\Cliente\PerfilClienteController;
 
 // area vendedor
-use App\Controllers\Vendedor\CadastrarProdutoVendedorController;
+use App\Controllers\Vendedor\CadastroProdutoVendedorController;
 use App\Controllers\Vendedor\HistoricoVendasController;
 use App\Controllers\Vendedor\MeuPerfilVendedorController;
 use App\Controllers\Vendedor\PaginaDoVendedorController;
 use App\Controllers\Vendedor\MinhaLojaController;
 use App\Controllers\Vendedor\GerenciamentoDeEstoqueController;
 use App\Controllers\Vendedor\TrocasDevolucoesController;
-
 // area comum
 use App\Controllers\ProdutoController;
 use App\Controllers\HomeController;
@@ -68,8 +67,8 @@ $router->get('/cliente', perfilClienteController::class, 'cliente');
 
 // área vendedor
 
-$router->get('/vendedor/meuPerfilVendedor', MeuPerfilVendedorController::class, 'meuPerfilVendedor');
-$router->get('/vendedor/cadastrarProduto', CadastrarProdutoVendedorController::class, 'cadastrarProduto');
+$router->get('/vendedor/cadastrarProduto', CadastroProdutoVendedorController::class, 'index');
+$router->post('/vendedor/cadastrarProduto', CadastroProdutoVendedorController::class, 'index');
 $router->get('/vendedor/historicoVendas', HistoricoVendasController::class, 'historicoDeVendas');
 $router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja');
 $router->get('/vendedor/paginaVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');
