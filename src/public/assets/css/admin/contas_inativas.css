@@ -48,6 +48,8 @@ body {
     flex-direction: column;
     justify-content: start;
     overflow: auto;
+    padding: 8px;
+    gap: 5px;
 }
 
 .painelCentral {
@@ -76,6 +78,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 0.5%;
+    cursor: pointer;
 }
 
 hr {
@@ -117,7 +120,7 @@ hr {
     background-color: yellow;
     text-align: center;
 }
-.status2 {
+.status0 {
     border: 0px;
     border-radius: 5px; 
     width: 95px;
@@ -145,7 +148,7 @@ hr {
 
 .TextBox {
     max-width: 98%;
-
+    overflow: auto;
 }
 
 .acordeonFechado {
