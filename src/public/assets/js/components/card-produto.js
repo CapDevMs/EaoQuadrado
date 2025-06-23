@@ -1,4 +1,4 @@
-const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) => {
+const cardProduto = ({ id_produto, nome, imagens, preco, link = './carrinho'}) => {
     return `
     <div class="card-produto col-sm-6 col-lg-4 col-xl-3">
         <div class="card-body pb-1">
