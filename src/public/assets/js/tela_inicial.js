@@ -9,36 +9,40 @@ async function renderProdutos() {
 }
 
 function exibirProdutos(produtos) {
+  let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
   produtos.forEach((produto) => {
     docTag.innerHTML += cardProduto(produto);
+  });
 
-    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+  const likeBtns = document.querySelectorAll(".like");
 
-    if (favoritos.includes(String(produto.id_produto))) {
-      const btn = document.getElementById("like");
-      if(btn.classList.contains("fa-regular")) {
-          btn.classList.toggle("fa-solid");
-      }
-    } else {
-      const likeBtns = document.querySelectorAll(".like");
-      likeBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          btn.classList.toggle("fa-solid");
+  likeBtns.forEach((btn) => {
+    const produtoId = btn.dataset.id;
 
-          const produtoId = btn.dataset.id;
 
-          if (btn.classList.contains("fa-solid")) {
-            if (!favoritos.includes(produtoId)) {
-              favoritos.push(produtoId);
-            }
-          } else {
-            favoritos = favoritos.filter((id) => id !== produtoId);
-          }
-
-          localStorage.setItem("favoritos", JSON.stringify(favoritos));
-        });
-      });
+    if (favoritos.includes(produtoId)) {
+      btn.classList.remove("fa-regular");
+      btn.classList.add("fa-solid");
     }
+
+    btn.addEventListener("click", () => {
+      if (btn.classList.contains("fa-solid")) {
+
+        btn.classList.remove("fa-solid");
+        btn.classList.add("fa-regular");
+        favoritos = favoritos.filter((id) => id !== produtoId);
+      } else {
+
+        btn.classList.remove("fa-regular");
+        btn.classList.add("fa-solid");
+        if (!favoritos.includes(produtoId)) {
+          favoritos.push(produtoId);
+        }
+      }
+
+      localStorage.setItem("favoritos", JSON.stringify(favoritos));
+    });
   });
 }
 

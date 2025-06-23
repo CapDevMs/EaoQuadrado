@@ -14,50 +14,50 @@ const docTagVendedoresFav = document.querySelector('.card-vendedor-favorito');
 
 let produtosFav = [
     {
-        'titulo': 'Caneca especial Programador',
-        'imagem': './assets/img/caneca1.png',
+        'nome': 'Caneca especial Programador',
+        'imagens': './assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../Views/produto.php'
     },
     {
-        'titulo': 'Caneca especial Programador',
-        'imagem': './assets/img/caneca1.png',
+        'nome': 'Caneca especial Programador',
+        'imagens': './assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../Views/produto.php'
     },
     {
-        'titulo': 'Caneca especial Programador',
-        'imagem': './assets/img/caneca1.png',
+        'nome': 'Caneca especial Programador',
+        'imagens': './assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../Views/produto.php'
     },
     {
-        'titulo': 'Caneca especial Programador',
-        'imagem': './assets/img/caneca1.png',
+        'nome': 'Caneca especial Programador',
+        'imagens': './assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../Views/produto.php'
     },
     {
-        'titulo': 'Caneca especial Programador',
-        'imagem': './assets/img/caneca1.png',
+        'nome': 'Caneca especial Programador',
+        'imagens': './assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../Views/produto.php'
     },
     {
-        'titulo': 'Caneca especial Programador',
-        'imagem': './assets/img/caneca1.png',
+        'nome': 'Caneca especial Programador',
+        'imagens': './assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../Views/produto.php'
     },
     {
-        'titulo': 'Caneca especial Programador',
-        'imagem': './assets/img/caneca1.png',
+        'nome': 'Caneca especial Programador',
+        'imagens': './assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../Views/produto.php'
     },
     {
-        'titulo': 'Caneca especial Programador',
-        'imagem': './assets/img/caneca1.png',
+        'nome': 'Caneca especial Programador',
+        'imagens': './assets/img/caneca1.png',
         'preco': '99,90',
         'link': '../../Views/produto.php'
     },
