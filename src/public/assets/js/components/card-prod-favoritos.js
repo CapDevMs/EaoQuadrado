@@ -1,6 +1,6 @@
 const cardProdFavorito = ({titulo, imagem, preco, link }) => {   
     return `
-    <div class="card-prod-favorito col-sm-12 col-md-6 col-lg-4 col-xl-3">
+    <div class="card-prod-favorito col-sm-6 col-lg-4 col-xl-3">
         <div class="card-body">
             <div class="imagem-produto-wrapper">
                 <a href="${link}">

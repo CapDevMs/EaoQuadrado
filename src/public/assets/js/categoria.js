@@ -1,39 +1,52 @@
-import filtroComponent from "./components/filtro-categoria.js";
 import buttonCategoria from "./components/button-categoria.js"
 import cardProdFavorito from "./components/card-prod-favoritos.js";
+import filtroComponent from './components/filtro-categoria.js';
+
+const div = document.querySelector('filtroComponent');
+
+
+let filtroInfo =
+    {
+        'categoria': ['Celulares', 'Computadores', 'Smartwatches', 'Câmera', 'Fones de ouvido','Games']
+    }
+
+
+for (let coisa in filtroInfo) {
+        div.innerHTML += filtroComponent(filtroInfo[coisa]);
+}
 
 
 const docTagCategoria = document.querySelector('buttonCategoria');
 const categorias = [
     {
-        imagem: 'assets/img/camera_icon.svg',
-        nome: 'Camera',
-        link: '#'
-    },
-    {
-        imagem: 'assets/img/cellphone_icon.svg',
-        nome: 'Celulares',
-        link: '#'
-    },
-    {
         imagem: 'assets/img/computer_icon.svg',
-        nome: 'Computador',
-        link: '#'
+        nome: 'Eletrônicos',
+        link: './categoria'
+    },
+    {
+        imagem: 'assets/img/dress_icon.svg',
+        nome: 'Moda',
+        link: './categoria'
+    },
+    {
+        imagem: 'assets/img/home_icon.svg',
+        nome: 'Casa',
+        link: './categoria'
+    },
+    {
+        imagem: 'assets/img/ball_icon.svg',
+        nome: 'Esportes',
+        link: './categoria'
+    },
+    {
+        imagem: 'assets/img/ring_icon.svg',
+        nome: 'Acessorios',
+        link: './categoria'
     },
     {
         imagem: 'assets/img/games_icon.svg',
-        nome: 'Games',
-        link: '#'
-    },
-    {
-        imagem: 'assets/img/headphone_icon.svg',
-        nome: 'Fone de Ouvido',
-        link: '#'
-    },
-    {
-        imagem: 'assets/img/smartwatches_icon.svg',
-        nome: 'Smartwatch',
-        link: '#'
+        nome: 'Entretenimento',
+        link: './categoria'
     }
 ];
 
