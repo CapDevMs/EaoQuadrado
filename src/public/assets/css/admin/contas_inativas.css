@@ -148,7 +148,7 @@ hr {
 
 .TextBox {
     max-width: 98%;
-
+    overflow: auto;
 }
 
 .acordeonFechado {

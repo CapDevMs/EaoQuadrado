@@ -26,19 +26,6 @@ $base_url = get_base_url();
 
     <main>
 
-        <?php foreach ($contasInativas as $conta): ?>
-            <button style="max-width: max-content;">
-                <td style="max-width: max-content;">IdContaInativa-<?= htmlspecialchars($conta['id_contaInativa']) ?></td>
-                <hr>
-                <td style="max-width: max-content;"><?= htmlspecialchars($conta['nome_empresa']) ?></td>
-                <hr>
-                <div style="max-width: max-content;margin:auto;" class="status<?= htmlspecialchars($conta['status']) ?> col-xl-1 subBloco0 miniFonte blocoReativar">Suspenso</div>
-                <hr>
-                <td style="max-width: max-content;"><?= htmlspecialchars($conta['justificativa']) ?></td>
-                <hr>
-            </button>
-        <?php endforeach; ?>
-
         <roadMap class='mt-1 mb-1 ml-1 roadMap'>
             <a href="<?= get_base_url(); ?>" class='roadMap1'>Home /</a>
             <a href="<?= get_base_url(); ?>admin/indexAdm" class='roadMap1'>Painel do administrador /</a>
@@ -52,9 +39,9 @@ $base_url = get_base_url();
 
                 <seletor class='seletor'>
                     <p class='miniFonte seletorBase'>Contas:</p>
-                    <p type='button' onclick="mudarSeletor('seletor0'); todasContasInativas(lista);" class='miniFonte seletorComponente seletorAtivo' id='seletor0'>Todas</p>
-                    <p type='button' onclick="mudarSeletor('seletor1'); suspensasContasInativas(listaSuspensas);" class='miniFonte seletorComponente seletorInativo' id='seletor1'>Suspensas</p>
-                    <p type='button' onclick="mudarSeletor('seletor2'); desativadasContasInativas(listaDesativadas);" class='miniFonte seletorComponente seletorInativo' id='seletor2'>Desativadas</p>
+                    <p type='button' onclick="mudarSeletor('seletor0',lista);" class='miniFonte seletorComponente seletorAtivo' id='seletor0'>Todas</p>
+                    <p type='button' onclick="mudarSeletor('seletor1',listaSuspensas);" class='miniFonte seletorComponente seletorInativo' id='seletor1'>Suspensas</p>
+                    <p type='button' onclick="mudarSeletor('seletor2',listaDesativadas);" class='miniFonte seletorComponente seletorInativo' id='seletor2'>Desativadas</p>
                 </seletor>
 
                 <painel class='painel painelPrincipal col-md-12'>
@@ -66,13 +53,21 @@ $base_url = get_base_url();
     <?php get_footer() ?>
 </body>
 
-<script src='<?= get_base_url(); ?>assets/js/adm/contas_inativas.js'></script>
-<script src='<?= get_base_url(); ?>assets/js/components/componente_contasInativas.js'></script>
 <script>
     const lista = <?= json_encode($contasInativas) ?>;
+    console.log('lista geral:')
+    console.log(lista)
     const listaSuspensas = <?= json_encode($contasSuspensas) ?>;
+    console.log('lista suspensas:')
+    console.log(listaSuspensas)
     const listaDesativadas = <?= json_encode($contasDesativadas) ?>;
-    todasContasInativas(lista);
+    console.log('lista desativadas:')
+    console.log(listaDesativadas)
+</script>
+<script src='<?= get_base_url(); ?>assets/js/adm/contas_inativas.js'></script>
+<!-- <script src='<?= get_base_url(); ?>assets/js/components/componente_contasInativas.js'></script> -->
+<script>
+    PuxarInativas(lista);
 </script>
 
 </html>

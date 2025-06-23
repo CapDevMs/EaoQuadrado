@@ -11,7 +11,7 @@ class ContasInativas extends Model
 
 	public function contasInativas($status)
 	{
-		if ($status == 1 or $status == 2) {
+		if ($status == 1 or $status == 0) {
 			$sql = "SELECT * FROM contas_inativas WHERE status = :status";
 			$stmt = $this->query($sql, ['status' => $status]);
 		} else {

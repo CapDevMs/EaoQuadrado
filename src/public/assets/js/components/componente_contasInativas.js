@@ -75,14 +75,17 @@ function PuxarInativas(listaSuspensos) {
 function todasContasInativas(lista) {
     limpaPainel();
     PuxarInativas(lista);
+    console.log('OI')
 };
 
 function suspensasContasInativas(lista) {
     limpaPainel();
     PuxarInativas(lista);
+    console.log('OI')
 };
 function desativadasContasInativas(lista) {
     limpaPainel();
     PuxarInativas(lista);
+    console.log('OI')
 };
 
