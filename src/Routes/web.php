@@ -65,8 +65,8 @@ $router->get('/historicoPedidos', HistoricoDePedidosController::class, 'historic
 
 // área vendedor
 
-$router->get('/vendedor/cadastrarProduto', CadastroProdutoVendedorController::class, 'cadastrarProduto');
-$router->post('/vendedor/cadastrarProduto', CadastroProdutoVendedorController::class, 'cadastrarProduto');
+$router->get('/vendedor/cadastrarProduto', CadastroProdutoVendedorController::class, 'index');
+$router->post('/vendedor/cadastrarProduto', CadastroProdutoVendedorController::class, 'index');
 $router->get('/vendedor/historicoVendas', HistoricoVendasController::class, 'historicoDeVendas');
 $router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja');
 $router->get('/vendedor/paginaVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');

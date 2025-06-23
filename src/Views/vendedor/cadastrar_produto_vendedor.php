@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <?php get_css(['style','cadastrar_produto_vendedor','base']) ?>
     <?php get_css_components() ?>
 </head>
@@ -113,10 +114,14 @@
         </form>
 
         <!-- POP-UP DE SUCESSO -->
-        <div id="popup-sucesso" class="popup-sucesso oculto">
+        <div id="popupSucesso" class="popup-sucesso oculto">
             <div class="popup-conteudo">
-                <p>Produto cadastrado com sucesso!</p>
-                <button id="fechar-popup">Fechar</button>
+                <div class="icone-wrapper">
+                <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h2>Sucesso</h2>
+                <p>Produto salvo com sucesso</p>
+                <button class="btn-ok" id="botao-ok">OK</button>
             </div>
         </div>
     </main>

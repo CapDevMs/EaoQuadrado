@@ -228,6 +228,8 @@ CREATE TABLE Edit_Site(
     imagem_elemento varchar(255)
 );
 
+ALTER TABLE produtos ADD COLUMN modelo VARCHAR(100); 
+
 INSERT INTO Categorias (nome, descricao)
 VALUES ("Eletrônicos","Smartphones, laptops, tablets, acessórios e muito mais"),
 ("Moda e acessórios","Roupas, calçados, bolsas, joias e outros."),

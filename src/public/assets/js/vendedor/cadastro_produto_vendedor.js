@@ -12,7 +12,9 @@ document.getElementById('arquivo').addEventListener('change', function(event) {
             img.alt = 'Imagem ' + (i + 1);
             img.style.width = '200px';
             img.style.height = '300px';
-            img.style.objectFit = 'cover';
+            img.style.objectFit = 'contain';
+            img.style.backgroundColor = '#f8f8f8'; //caso a imagem não preencha 100%
+
             container.appendChild(img);
         }
         reader.readAsDataURL(files[i]);
@@ -21,24 +23,25 @@ document.getElementById('arquivo').addEventListener('change', function(event) {
 
 // pop-up de sucesso
 document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const popup = document.getElementById('popup-sucesso');
-    const fecharBtn = document.getElementById('fechar-popup');
+  const urlParams = new URLSearchParams(window.location.search);
+  const popup = document.getElementById('popupSucesso');
+  const okBtn = document.getElementById('botao-ok');
 
-    if (popup && urlParams.get('sucesso') === '1') {
-        popup.classList.remove('oculto');
+  if (popup && urlParams.get('sucesso') === '1') {
+    popup.classList.remove('oculto');
 
-        // remove sucesso=1 da URL
-        const novaUrl = window.location.origin + window.location.pathname;
-        window.history.replaceState({}, document.title, novaUrl);
-    }
+    // remove sucesso=1 da URL
+    const novaUrl = window.location.origin + window.location.pathname;
+    window.history.replaceState({}, document.title, novaUrl);
+  }
 
-    if (fecharBtn && popup) {
-        fecharBtn.addEventListener('click', () => {
-            popup.classList.add('oculto');
-        });
-    }
+  if (okBtn) {
+    okBtn.addEventListener('click', () => {
+      popup.classList.add('oculto');
+    });
+  }
 });
+
 
 
 // validação com regex em tempo real
@@ -60,11 +63,11 @@ document.addEventListener('DOMContentLoaded', function () {
             regex: /^[A-Za-zÀ-ÿ0-9\s\-().\/]{2,100}$/,
             mensagem: 'O modelo deve ter entre 2 e 100 caracteres.'
         },
-        {
-            id: 'preco-produto',
-            regex: /^\d{1,6}([.,]\d{1,2})?$/,
-            mensagem: 'Preço inválido. Exemplo válido: 1234,56'
-        },
+        // {
+        //     id: 'preco-produto',
+        //     regex: /^\d{1,6}([.,]\d{1,2})?$/,
+        //     mensagem: 'Preço inválido. Exemplo válido: 1234,56'
+        // },
         {
             id: 'descricao-produto',
             regex: /^[A-Za-zÀ-ÿ0-9\s.,;:()\-"–\n]{10,1000}$/,
@@ -94,29 +97,47 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-// regex para o preço do produto
 
+// máscara para preço do produto + validação de regex
 document.addEventListener('DOMContentLoaded', function () {
-    const precoInput = document.getElementById('preco-produto');
+  const precoInput = document.getElementById('preco-produto');
 
-    precoInput.addEventListener('input', function (e) {
-        let valor = e.target.value;
+  precoInput.addEventListener('input', function (e) {
+    let valor = e.target.value.replace(/\D/g, ''); // Remove tudo que não for número
 
-        // Remove tudo que não for número
-        valor = valor.replace(/\D/g, '');
+    if (valor.length === 0) {
+      e.target.value = '';
+      return;
+    }
 
-        // Formata para real (ex: 2900 -> 29,00)
-        valor = (parseInt(valor, 10) / 100).toFixed(2);
+    valor = (parseInt(valor, 10) / 100).toFixed(2).replace('.', ','); // Formata
+    e.target.value = 'R$ ' + valor;
 
-        // Exibe com R$ e ponto como separador milhar
-        e.target.value = 'R$ ' + valor.replace('.', ',');
-    });
+    // Validação (usando vírgula como separador brasileiro)
+    const valorValidar = e.target.value.replace(/[^\d,]/g, ''); // Ex: "R$ 48,93" → "4893"
+    const regex = /^\d{1,6},\d{2}$/;
+    const avisoExistente = precoInput.parentNode.querySelector('.aviso-validacao');
 
-    // Isso para remover R$ e enviar tratado para o banco de dados
-    const form = document.getElementById('form-cadastro-produto');
-    form.addEventListener('submit', function () {
-        let raw = precoInput.value.replace(/\D/g, '');
-        precoInput.value = (parseInt(raw, 10) / 100).toFixed(2); // ex: "2900" → "29.00"
-    });
+    if (!regex.test(valorValidar)) {
+      if (!avisoExistente) {
+        const aviso = document.createElement('div');
+        aviso.textContent = 'Preço inválido. Exemplo válido: 1234,56';
+        aviso.classList.add('aviso-validacao');
+        aviso.style.color = 'red';
+        aviso.style.fontSize = '12px';
+        precoInput.parentNode.appendChild(aviso);
+      }
+      precoInput.style.borderColor = 'red';
+    } else {
+      if (avisoExistente) avisoExistente.remove();
+      precoInput.style.borderColor = '';
+    }
+  });
+
+  // Ao submeter, converte para o formato 1234.56 (ponto, para banco)
+  const form = document.getElementById('form-cadastro-produto');
+  form.addEventListener('submit', function () {
+    let raw = precoInput.value.replace(/[^\d]/g, ''); // Apenas números
+    precoInput.value = (parseInt(raw, 10) / 100).toFixed(2); // Ex: "4893" → "48.93"
+  });
 });
-
