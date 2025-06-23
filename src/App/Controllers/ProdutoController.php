@@ -10,13 +10,12 @@ class ProdutoController extends Controller
     public function produto()
 {
 
-    //    $todosProdutos = new Produto();
+       $todosProdutos = new Produto();
 
-    //    $todosProdutos->findAll();
+       $todosProdutos->findAll();
 
-    //     $todosProdutos = $todosProdutos->getData();
+        $todosProdutos = $todosProdutos->getData();
 
-    //     View::render("produto", compact( 'todosProdutos'));
-        View::render('produto');
+        View::render("produto", compact( 'todosProdutos'));
     }   
 }
