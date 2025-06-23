@@ -94,3 +94,8 @@ a.btn-add-carrinho {
     color: var(--cor-verde-principal);
 }
 
+@media (max-width: 425px) {
+    a.btn-add-carrinho {
+        font-size: 14px;
+    }
+}

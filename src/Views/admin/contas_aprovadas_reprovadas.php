@@ -20,7 +20,7 @@ $titulo = 'Contas Aprovadas e Reprovadas'
     <main>
 
         <div class="container row geral col-sm-12">
-            <?php get_sidebar_admin('algo') ?>
+            <?php get_sidebar_admin('contasAprovadasReprovadas') ?>
             <div class="historico col-sm-9">
                 <div class="selector col-sm-12">
                     <h1>Histórico de Contas</h1>
