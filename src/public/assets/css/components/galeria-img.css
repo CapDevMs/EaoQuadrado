@@ -30,3 +30,12 @@
 
     
 }
+
+@media(max-width:768px){
+    .img-small{
+        margin-bottom: 26%;
+    }
+    .img-large{
+        width: 100%;
+    }
+}

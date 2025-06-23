@@ -27,7 +27,7 @@ $appName = get_app_name();
                         <h2 class="nome-produto">Bolsa Gucci</h2>
                         <h1 class="preco">R$ 989,00</h1>
                         <div class="contador-container"></div>
-                        <div id="comprar">
+                        <div class="comprar col-sm-8">
                             <div id="btn-comprar"><a>Comprar</a></div>
                             <div id="icons-comprar">
                                 
@@ -37,17 +37,17 @@ $appName = get_app_name();
                             </div>
 
                         </div>
-                        <!--
+                        
                         <div>
-                            <fieldset id="loja">
-                                <img id='imagem-loja' src="<?= get_base_url(); ?>assets/img/tela-produtos/loja.png">
-                                <a><span style="color: #16A18E;">Loja</span> Studio Center</a>
-                                <div id="icons-loja">
+                            <fieldset class="loja col-sm-9 col-lg-10">
+                                <img class='imagem-loja col-sm-3' src="<?= get_base_url(); ?>assets/img/tela-produtos/loja.png">
+                                <p class="col-xl-6 col-lg-5"><span style="color: #16A18E;">Loja</span> Studio Center</p>
+                                <div class="icons-loja col-sm-2">
                                     <img src="<?= get_base_url(); ?>assets/img/coracao-tela-produto.svg" id="loja-coracao">
                                     <img src="<?= get_base_url(); ?>assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
                                 </div>
                             </fieldset>
-                        </div> -->
+                        </div>
 
                     </div>
                 </div>
@@ -75,8 +75,8 @@ $appName = get_app_name();
                     <a class="text-topico">Mais itens da loja Studio Center</a>
                 </div>
 
-                <div class="container-recomendar col-10">
-                    <div class="produto-recomendar"></div>
+                <div class="container-recomendar col-10 ">
+                    <div class="produto-recomendar row"></div>
                 </div>
             </div>
     </main>
