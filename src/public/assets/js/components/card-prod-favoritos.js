@@ -1,10 +1,10 @@
-const cardProdFavorito = ({id_produto, nome, imagens, preco, link = './produto'}) => {   
+const cardProdFavorito = ({id_produto, nome, imagens, preco, link = './carrinho'}) => {   
     return `
     <div class="card-prod-favorito col-sm-6 col-lg-4 col-xl-3">
         <div class="card-body">
-            <div class="imagem-produto-wrapper">
+            <div class="imagem-produto-wrapper" data-id="${id_produto}">
                 <a href="${link}">
-                    <img class="img-produto" src="${imagens}">
+                    <img class="img-produto" src=${imagens}>
                 </a>
                 <a class="shopping-link icon-top-right" href="${link}">
                     <i class="fa-solid fa-cart-shopping"></i>

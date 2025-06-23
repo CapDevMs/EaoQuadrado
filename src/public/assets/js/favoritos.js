@@ -12,56 +12,25 @@ const docTagVendedoresFav = document.querySelector('.card-vendedor-favorito');
 
 // const docTag = document.querySelector("card-prod-favorito");
 
-let produtosFav = [
-    {
-        'nome': 'Caneca especial Programador',
-        'imagens': './assets/img/caneca1.png',
-        'preco': '99,90',
-        'link': '../../Views/produto.php'
-    },
-    {
-        'nome': 'Caneca especial Programador',
-        'imagens': './assets/img/caneca1.png',
-        'preco': '99,90',
-        'link': '../../Views/produto.php'
-    },
-    {
-        'nome': 'Caneca especial Programador',
-        'imagens': './assets/img/caneca1.png',
-        'preco': '99,90',
-        'link': '../../Views/produto.php'
-    },
-    {
-        'nome': 'Caneca especial Programador',
-        'imagens': './assets/img/caneca1.png',
-        'preco': '99,90',
-        'link': '../../Views/produto.php'
-    },
-    {
-        'nome': 'Caneca especial Programador',
-        'imagens': './assets/img/caneca1.png',
-        'preco': '99,90',
-        'link': '../../Views/produto.php'
-    },
-    {
-        'nome': 'Caneca especial Programador',
-        'imagens': './assets/img/caneca1.png',
-        'preco': '99,90',
-        'link': '../../Views/produto.php'
-    },
-    {
-        'nome': 'Caneca especial Programador',
-        'imagens': './assets/img/caneca1.png',
-        'preco': '99,90',
-        'link': '../../Views/produto.php'
-    },
-    {
-        'nome': 'Caneca especial Programador',
-        'imagens': './assets/img/caneca1.png',
-        'preco': '99,90',
-        'link': '../../Views/produto.php'
-    },
-]
+const docTag = document.querySelector("card-prod-favorito");
+
+async function renderProdutos() {
+  const produtos = await fetch("getProdutos");
+  const info = await produtos.json();
+  exibirProdutos(info);
+}
+
+function exibirProdutos(produtos) {
+  let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+  produtos.forEach((produto) => {
+    if (favoritos.includes(String(produto.id_produto))) {
+        docTag.innerHTML += cardProdFavorito(produto);
+    }
+  });
+}
+
+renderProdutos();
 
 
 let VendedoresFav = [
@@ -88,14 +57,6 @@ let VendedoresFav = [
 
 ]
 await exibirProdutosVendFav();
-await exibirProdutosFav();
-
-
-async function exibirProdutosFav() {
-    produtosFav.forEach((produtos) => {
-        docTagProdutosFav.innerHTML += cardProdFavorito(produtos);
-    });
-}
 
 async function exibirProdutosVendFav() {
     VendedoresFav.forEach((vendedores) => {
