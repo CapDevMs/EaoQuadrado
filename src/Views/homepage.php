@@ -28,9 +28,9 @@ $titulo = 'Homepage';
                     <div class="bg_carrossel">
                     </div>
                     <img src="<?= get_base_url(); ?>assets/img/slide1.png" alt="">
-                    <div class="text_carrossel">
+                    <div class="text_carrossel"><a href="<?= get_base_url(); ?>produto">
                         <h1>Aproveite o melhor dos games!</h1>
-                        <a href="<?= get_base_url(); ?>produto">Compre Agora <i class="fas fa-arrow-right"></i></a>
+                        <p>Compre Agora<i class="fas fa-arrow-right"></i></p> </a>
                     </div>
                 </div>
 
@@ -59,8 +59,39 @@ $titulo = 'Homepage';
 
             </div>
         </div>
+        <div class="mosaico col-sm-12 row">
+            <div class="itens1 col-sm-6" id="item1">
+                <div class="texto">
+                    <h1>PlayStation 5</h1>
+                    <p>Versão em preto e branco do PS5 chegando à venda</p>
+                    <a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
+                </div>
+            </div>
 
+            <div class="itens2 col-sm-3" id="item2" onclick="window.location.href='<?=get_base_url();?>produto'">
+                <div class="texto">
+                    <h1>Roupas</h1>
+                    <p>Coleções  em destaque que dão outra vibe</p>
+                    <a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
+                </div>
+            </div>
+            <div class="itens3 col-sm-3" id="item3" onclick="window.location.href='<?=get_base_url();?>produto'">
+                <div class="texto">
+                    <h1>Caixa de Som</h1>
+                    <p>Alto-falantes sem fio</p>
+                    <a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
+                </div>
+            </div> 
 
+            <div class="itens4 col-sm-6" id="item4" onclick="window.location.href='<?=get_base_url();?>produto'">
+                <div class="texto">
+                    <h1>Bolsa</h1>
+                    <p>GUCCI INTENSE </p>
+                    <a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
+                </div>
+            </div>
+        </div>
+        <buttonCategoria class="buttonCategoria row col-sm-10"></buttonCategoria>
         <button id="prev">&#10094;</button>
         <button id="next">&#10095;</button>
         </div>
@@ -70,37 +101,7 @@ $titulo = 'Homepage';
         </div>
 
 
-        <div class="mosaico">
-            <div class="itens1" id="item1">
-                <div class="texto">
-                    <h1>PlayStation 5</h1>
-                    <p>Versão em preto e branco do PS5 chegando à venda</p>
-                    <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a><h1>
-                </div>
-            </div>
-            <div class="itens2" id="item2" onclick="window.location.href='<?=get_base_url();?>produto'">
-                <div class="texto">
-                    <h1>Roupas</h1>
-                    <p>Coleções  em destaque que dão outra vibe<p>
-                    <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a><h1>
-                </div>
-            </div>
-            <div class="itens3" id="item3" onclick="window.location.href='<?=get_base_url();?>produto'">
-                <div class="texto">
-                    <h1>Caixa de Som</h1>
-                    <p>Alto-falantes sem fio</p>
-                    <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a><h1>
-                </div>
-            </div>
 
-            <div class="itens4" id="item4" onclick="window.location.href='<?=get_base_url();?>produto'">
-                <div class="texto">
-                    <h1>Bolsa</h1>
-                    <p>GUCCI INTENSE </p>
-                    <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a><h1>
-                </div>
-            </div>
-        </div>
 
 
         <div class="frame_container_categoria">
@@ -108,14 +109,7 @@ $titulo = 'Homepage';
             <h1>Categorias</h1>
         </div>
 
-        <div class="categorias_container">
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/computer_icon.svg" alt="celulares"><p>Eletrônicos</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/dress_icon.svg" alt="computer"><p>Moda</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/home_icon.svg" alt="smartwatches"><p>Casa</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/ball_icon.svg" alt="cameras"><p>Sports</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/ring_icon.svg" alt="headphone"><p>Acessorios</p></div>
-            <div class="categoria" href="#"><img src="<?= get_base_url(); ?>assets/img/games_icon.svg" alt="games"><p>Entretenimento</p></div>
-        </div>
+        
 
         <div class="frame_container_categoria">
             <hr class="frame_categoria">
@@ -140,18 +134,11 @@ $titulo = 'Homepage';
     </main>
 
     <script src="<?= get_base_url(); ?>assets/js/slider.js"></script>
-    <script src="<?= get_base_url(); ?>assets/js/tela_inicial.js" type="module"></script>
+    <script type="module" src="<?= get_base_url(); ?>assets/js/tela_inicial.js?<?= time(); ?>" defer></script>
+    <script src="<?= get_base_url(); ?>assets/js/button_categoria.js" type="module"></script>
     
     <?php get_footer() ?>
 </body>
 <script src="<?= get_base_url(); ?>assets/js/script.js"></script>
-<script>
-    const base_url = '<?= get_base_url(); ?>';
-    const categorias = document.querySelectorAll('.categoria');
-
-    categorias.forEach(categoria => {
-        categoria.addEventListener('click', () => location = base_url + 'categoria')
-    });
-</script>
 
 </html>
