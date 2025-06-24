@@ -13,19 +13,22 @@ class User extends Model
     public function login($login, $senha)
     {
         
-        $sql = "SELECT * FROM users WHERE login = :login AND senha = :senha";
+        $sql = "SELECT * FROM Usuarios WHERE login = :login AND senha = :senha";
         $stmt = $this->query($sql, ['login' => $login, 'senha' => $senha]);
         return $stmt->fetch(\PDO::FETCH_ASSOC);
     }
 
     public function cadastroUsuarios($nome, $email, $senha): int {
+        echo $nome;
         try {
             $this->db->beginTransaction();
-            $sql = "INSERT INTO Usuarios VALUES(nome = :nome, email = :email, senha = :senha)";
-            $this->query(sql: $sql, params: ['nome' => $nome, 'email' => $email, 'senha' => $senha]);
+            $sql = "INSERT INTO Usuarios (nome, email, senha) VALUES(:nome, :email, :senha)";
+            $stmt = $this->query($sql, params: ['nome' => $nome, 'email' => $email, 'senha' => $senha]);
+            $stmt->execute();
+            $this->db->commit();
             return $this->db->lastInsertId();
         } catch (PDOException $e) {
-            return False;
+            return 0;
         };
     }
 

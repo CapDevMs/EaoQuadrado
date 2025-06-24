@@ -6,7 +6,7 @@ use App\Models\Cliente;
 use App\Models\User;
 use Core\View;
 use App\Controllers\Controller;
-use App\Services\Upload;
+// use App\Services\Upload;
 
 class CadastroClienteController extends Controller
 {
@@ -19,88 +19,93 @@ class CadastroClienteController extends Controller
   public function cadastrarCliente()
   {
     $dados = [
-      $nome = htmlspecialchars($_POST['nome']),
-      $sobrenome = htmlspecialchars($_POST['sobrenome']),
-      $nascimento = (int) $_POST['nascimento'],
-      $cpf = (int) $_POST['cpf'],
-      $email = $_POST['email'],
-      $telefone = (int) $_POST['telefone'],
-      $cep = (int) $_POST['cep'],
-      $endereco = htmlspecialchars($_POST['endereco']),
-      $bairro = htmlspecialchars($_POST['bairro']),
-      $complemento = htmlspecialchars($_POST['complemento']),
-      $senha = $_POST['senha'],
-      $confirmarSenha = $_POST['confirmarSenha']
+      'nome' => htmlspecialchars($_POST['nome']),
+      "sobrenome" => htmlspecialchars($_POST['sobrenome']),
+      "nascimento" => (int) $_POST['nascimento'],
+      "cpf" => (int) $_POST['cpf'],
+      "email" => $_POST['email'],
+      "telefone" => (int) $_POST['telefone'],
+      "cep" => (int) $_POST['cep'],
+      "endereco" => htmlspecialchars($_POST['endereco']),
+      "bairro" => htmlspecialchars($_POST['bairro']),
+      "complemento" => htmlspecialchars($_POST['complemento']),
+      "senha" => $_POST['senha'],
+      "confirmarSenha" => $_POST['confirmarSenha']
     ];
 
     
     $erros = [];
 
-    $nomeImagemSalva = null;
-    $uploadDir = __DIR__ . '../../../public/assets/uploads/';
+    // $nomeImagemSalva = null;
+    // $uploadDir = __DIR__ . '../../../public/assets/uploads/';
+    // $_FILES['imgProfile']['name'] = 'foto_cliente.png';
+    // $_FILES['imgProfile']['full_path'] = 'foto_cliente.png';
+    // var_dump($_FILES['imgProfile']);
     
-    if (isset($_POST['registrar']) && !empty($_FILES['imgProfile']['name'])) {
-      $uploader = new Upload();
-      $uploadResult = $uploader->uploadImagem($_FILES['imgProfile'], $uploadDir);
+    // if (isset($_POST['registrar']) && !empty($_FILES['imgProfile'])) {
+    //   echo 'a';
+    //   $uploader = new Upload();
+    //   $uploadResult = $uploader->uploadImagem($_FILES['imgProfile'], $uploadDir);
+    //   var_dump($uploadResult);
+    //   if (!$uploadResult['success']) {
+    //       $erros = array_merge($erros, $uploadResult['errors']);
+    //   } else {
+    //       $nomeImagemSalva = $uploadResult['fileName'];
+    //   }
+    // }
 
-      if (!$uploadResult['success']) {
-          $erros = array_merge($erros, $uploadResult['errors']);
-      } else {
-          $nomeImagemSalva = $uploadResult['fileName'];
-      }
-    }
+    // var_dump($nomeImagemSalva);
 
-    $dados['imagem'] = $nomeImagemSalva;
+    // $dados['imagem'] = $nomeImagemSalva;
 
     $errosValidacao = $this->validarDados($dados);
     $erros = array_merge($erros, $errosValidacao);
 
-    if (!empty($erros)) {
-      return View::render('cadastros/cadastro_cliente', [
-        'erros' => $erros,
-        'dados' => $dados
-      ]);
-    }
+    // if (!empty($erros)) {
+    //   return View::render('cadastros/cadastro_cliente', [
+    //     'erros' => $erros,
+    //     'dados' => $dados
+    //   ]);
+    // }
 
     try {
       $user = new User();
       $idUsuario = $user->cadastroUsuarios(
         $dados['nome'] . ' ' . $dados['sobrenome'],
         $dados['email'],
-        $senha
+        $dados['senha']
       );
 
-      if (!$idUsuario) {
-        throw new \Exception('Falha ao criar usuário');
-      }
+      var_dump($idUsuario);
+
+      // if (!$idUsuario) {
+      //   throw new \Exception('Falha ao criar usuário');
+      // }
 
       $cliente = new Cliente();
       $novoClienteCadastrado = [
-        'imagem' => $nomeImagemSalva,
-        'nome' => $nome,
-        'sobrenome' => $sobrenome,
-        'nascimento' => $nascimento,
-        'cpf' => $cpf,
-        'email' => $email,
-        'telefone' => $telefone,
-        'cep' => $cep,
-        'endereco' => $endereco,
-        'bairro' => $bairro,
-        'complemento' => $complemento,
-        'senha' => $senha,
-        'confirmarSenha' => $confirmarSenha
+        // 'imagem' => $nomeImagemSalva,
+        'nome' => $dados['nome'],
+        'sobrenome' => $dados['sobrenome'],
+        'nascimento' => $dados['nascimento'],
+        'cpf' => $dados['cpf'],
+        'email' => $dados['email'],
+        'numero_telefone' => $dados['telefone'],
+        'senha' => $dados['senha']
       ];
 
-      $sucesso = $cliente->insert($novoClienteCadastrado);
+      var_dump($novoClienteCadastrado);
 
-      if (!$sucesso) {
-        $user->delete($idUsuario);
-        throw new \Exception('Falha ao criar cliente');
-      }
+      $cliente->insert($novoClienteCadastrado);
 
-      return View::render('cadastros/cadastro_cliente', [
-        'sucesso' => 'Cadastro realizado com sucesso!'
-      ]);
+      // if (!$sucesso) {
+      //   $user->delete($idUsuario);
+      //   throw new \Exception('Falha ao criar cliente');
+      // }
+
+    //   return View::render('cadastros/cadastro_cliente', [
+    //     'sucesso' => 'Cadastro realizado com sucesso!'
+    //   ]);
 
     } catch (\PDOException $e) {
       $erros = ['Erro no banco de dados. Por favor, tente novamente.'];
@@ -108,10 +113,10 @@ class CadastroClienteController extends Controller
       $erros = [$e->getMessage()];
     }
 
-    return View::render('cadastro/cadastro_cliente', [
-      'erros' => $erros,
-      'dados' => $dados
-    ]);
+    // return View::render('cadastro/cadastro_cliente', [
+    //   'erros' => $erros,
+    //   'dados' => $dados
+    // ]);
   }
 
   private function validarDados($dados)

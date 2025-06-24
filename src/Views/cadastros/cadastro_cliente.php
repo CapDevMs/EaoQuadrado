@@ -13,7 +13,7 @@ $titulo = 'Cadastro de Cliente';
 </head>
 <body>
     <header class="header">
-    <?php get_header() ?>
+    <?php// get_header() ?>
     </header>
 
 <main>
@@ -23,10 +23,9 @@ $titulo = 'Cadastro de Cliente';
         <div class="register_client">
             <h2>Cadastro de Cliente</h2>
             <div class="form-container">
-                <form class="form" id="vendedor_form" action="/cliente/cadastroCliente" method="post" enctype="multipart/form-data">
-                    <img src="src\public\assets\img\foto_cliente.png" alt="foto do cliente" class="client-image">
+                <form class="form" id="vendedor_form" action="<?= get_base_url(); ?>cliente/cadastroCliente" method="post" enctype="multipart/form-data">
                     <div class="img-profile">
-                        <input type="file" name="imgProfile" required>
+                        <input type="file" name="imgProfile" >
                     </div>
 
                     <div class="nome-group">
@@ -106,7 +105,7 @@ $titulo = 'Cadastro de Cliente';
 
                     <div class="buttons-container">
                         <button type="reset" class="button-cancel" onclick="voltarPagina()">Cancelar</button>
-                        <button type="submit" class="button-confirm" name="registrar" onclick="cadastrarCliente()">Registrar</button>
+                        <button type="submit" class="button-confirm" name="registrar">Registrar</button>
                     </div>
                 </form>
             </div>
