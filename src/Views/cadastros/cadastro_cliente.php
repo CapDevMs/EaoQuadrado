@@ -23,6 +23,7 @@ $titulo = 'Cadastro de Cliente';
         <div class="register_client">
             <h2>Cadastro de Cliente</h2>
             <div class="form-container">
+                <!-- <img src="src/public/assets/img/foto_cliente.png" class="client-image" alt="foto cliente"> -->
                 <form class="form" id="vendedor_form" action="<?= get_base_url(); ?>cliente/cadastroCliente" method="post" enctype="multipart/form-data">
                     <div class="img-profile">
                         <input type="file" name="imgProfile" >

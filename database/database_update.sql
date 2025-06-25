@@ -252,3 +252,6 @@ VALUES ("Eletrônicos","Smartphones, laptops, tablets, acessórios e muito mais"
 -- END;
 -- //
 -- DELIMITER ;
+
+
+ALTER TABLE Clientes ADD COLUMN imagem VARCHAR(255);

@@ -6,7 +6,7 @@ use App\Models\Cliente;
 use App\Models\User;
 use Core\View;
 use App\Controllers\Controller;
-// use App\Services\Upload;
+use App\Services\Upload;
 
 class CadastroClienteController extends Controller
 {
@@ -19,7 +19,8 @@ class CadastroClienteController extends Controller
   public function cadastrarCliente()
   {
     $dados = [
-      'nome' => htmlspecialchars($_POST['nome']),
+      "imagem" => $_FILES['imgProfile'],
+      "nome" => htmlspecialchars($_POST['nome']),
       "sobrenome" => htmlspecialchars($_POST['sobrenome']),
       "nascimento" => (int) $_POST['nascimento'],
       "cpf" => (int) $_POST['cpf'],
@@ -36,37 +37,37 @@ class CadastroClienteController extends Controller
     
     $erros = [];
 
-    // $nomeImagemSalva = null;
-    // $uploadDir = __DIR__ . '../../../public/assets/uploads/';
-    // $_FILES['imgProfile']['name'] = 'foto_cliente.png';
-    // $_FILES['imgProfile']['full_path'] = 'foto_cliente.png';
-    // var_dump($_FILES['imgProfile']);
+    $nomeImagemSalva = null;
+    $uploadDir = __DIR__ . '../../../public/assets/uploads/';
+    $_FILES['imgProfile']['name'] = 'foto_cliente.png';
+    $_FILES['imgProfile']['full_path'] = 'foto_cliente.png';
+    var_dump($_FILES['imgProfile']);
     
-    // if (isset($_POST['registrar']) && !empty($_FILES['imgProfile'])) {
-    //   echo 'a';
-    //   $uploader = new Upload();
-    //   $uploadResult = $uploader->uploadImagem($_FILES['imgProfile'], $uploadDir);
-    //   var_dump($uploadResult);
-    //   if (!$uploadResult['success']) {
-    //       $erros = array_merge($erros, $uploadResult['errors']);
-    //   } else {
-    //       $nomeImagemSalva = $uploadResult['fileName'];
-    //   }
-    // }
+    if (isset($_POST['registrar']) && !empty($_FILES['imgProfile'])) {
+      echo 'a';
+      $uploader = new Upload();
+      $uploadResult = $uploader->uploadImagem($_FILES['imgProfile'], $uploadDir);
+      var_dump($uploadResult);
+      if (!$uploadResult['success']) {
+          $erros = array_merge($erros, $uploadResult['errors']);
+      } else {
+          $nomeImagemSalva = $uploadResult['fileName'];
+      }
+    }
 
-    // var_dump($nomeImagemSalva);
+    var_dump($nomeImagemSalva);
 
-    // $dados['imagem'] = $nomeImagemSalva;
+    $dados['imagem'] = $nomeImagemSalva;
 
     $errosValidacao = $this->validarDados($dados);
     $erros = array_merge($erros, $errosValidacao);
 
-    // if (!empty($erros)) {
-    //   return View::render('cadastros/cadastro_cliente', [
-    //     'erros' => $erros,
-    //     'dados' => $dados
-    //   ]);
-    // }
+    if (!empty($erros)) {
+      return View::render('cadastros/cadastro_cliente', [
+        'erros' => $erros,
+        'dados' => $dados
+      ]);
+    }
 
     try {
       $user = new User();
@@ -78,13 +79,13 @@ class CadastroClienteController extends Controller
 
       var_dump($idUsuario);
 
-      // if (!$idUsuario) {
-      //   throw new \Exception('Falha ao criar usuário');
-      // }
+      if (!$idUsuario) {
+        throw new \Exception('Falha ao criar usuário');
+      }
 
       $cliente = new Cliente();
       $novoClienteCadastrado = [
-        // 'imagem' => $nomeImagemSalva,
+        'imagem' => $nomeImagemSalva,
         'nome' => $dados['nome'],
         'sobrenome' => $dados['sobrenome'],
         'nascimento' => $dados['nascimento'],
@@ -96,16 +97,16 @@ class CadastroClienteController extends Controller
 
       var_dump($novoClienteCadastrado);
 
-      $cliente->insert($novoClienteCadastrado);
+      $sucesso = $cliente->insert($novoClienteCadastrado);
 
-      // if (!$sucesso) {
-      //   $user->delete($idUsuario);
-      //   throw new \Exception('Falha ao criar cliente');
-      // }
+      if (!$sucesso) {
+        $user->delete($idUsuario);
+        throw new \Exception('Falha ao criar cliente');
+      }
 
-    //   return View::render('cadastros/cadastro_cliente', [
-    //     'sucesso' => 'Cadastro realizado com sucesso!'
-    //   ]);
+      return View::render('cadastros/cadastro_cliente', [
+        'sucesso' => 'Cadastro realizado com sucesso!'
+      ]);
 
     } catch (\PDOException $e) {
       $erros = ['Erro no banco de dados. Por favor, tente novamente.'];
@@ -113,10 +114,10 @@ class CadastroClienteController extends Controller
       $erros = [$e->getMessage()];
     }
 
-    // return View::render('cadastro/cadastro_cliente', [
-    //   'erros' => $erros,
-    //   'dados' => $dados
-    // ]);
+    return View::render('cadastro/cadastro_cliente', [
+      'erros' => $erros,
+      'dados' => $dados
+    ]);
   }
 
   private function validarDados($dados)
