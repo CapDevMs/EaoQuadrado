@@ -242,33 +242,76 @@ button {
     }
 }
 
+.mosaico {
+    max-width: 1435px;
+    margin: 0 auto !important;
+    max-height: 450px;
+    margin: 0 auto !important;
+}
 .buttonCategoria {
     margin: 0 auto !important;
 }
 
 .itens4 {
-    
+    margin-right: 0 !important;
     margin-top: 0.5rem !important;
 }
+
 
 .itens1, .itens2, .itens3, .itens4 {
     background-color: black;
     border-radius: 8px;
 }
 
-.itens1{
-    /* height: 100px; */
+.itens1 {
+    height: 500px;
+}
+
+.itens2, .itens3, .itens4 {
+    height: 250px;
+}
+
+.mosaicoRight, .MosaicoLeft, .link_mosaico, .itens3{
+    margin: 0 !important;
+}
+
+.mosaicoImg1 {
+    max-height: 200px;
+    height: 80%;
+    width: auto;
+}
+
+.mosaicoImg2 {
+    max-height: 200px;
+    height: 80%;
+    width: auto;
 }
 
 
-.mosaico {
-    max-width: 1435px;
-    margin: 0 auto !important;
-    height: 350px;
+.mosaicoImg3 {
+    max-height: 200px;
+    height: 80%;
+    width: auto;
 }
 
-.texto > a, .texto > p {
+
+.mosaicoImg4 {
+    max-height: 200px;
+    height: 80%;
+    width: auto;
+}
+
+
+
+.itens1, .itens2, .itens3 {
+    height: 100%;
+}
+
+.link_mosaico {
     text-decoration: none;
+}
+
+.texto h1, .texto p {
     color: aliceblue;
 }
 

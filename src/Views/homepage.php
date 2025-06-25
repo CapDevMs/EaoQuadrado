@@ -60,38 +60,70 @@ $titulo = 'Homepage';
             </div>
         </div>
         <div class="mosaico col-sm-12 row">
-            <div class="itens1 col-sm-6" id="item1">
-                <div class="texto">
-                    <h1>PlayStation 5</h1>
-                    <p>Versão em preto e branco do PS5 chegando à venda</p>
-                    <a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
-                </div>
+            <div class="mosaicoRight col-sm-6">
+                <a href="<?= get_base_url(); ?>categoria" class="link_mosaico col-sm-12">
+                    <div class="itens1 col-sm-12 row" id="item1">
+                        <div class="texto col-sm-5">
+                            <h1>PlayStation 5</h1>
+                            <p>Versão digital do PS5 à venda</p>
+                            <p>Compre Agora!</p>
+                        </div>
+
+                        <div class="col-sm-7">
+                            <img class="mosaicoImg1 col-sm-12" src="<?= get_base_url(); ?>./assets/img/ps5_noBackground.png" alt="">
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <div class="itens2 col-sm-3" id="item2" onclick="window.location.href='<?=get_base_url();?>produto'">
-                <div class="texto">
-                    <h1>Roupas</h1>
-                    <p>Coleções  em destaque que dão outra vibe</p>
-                    <a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
-                </div>
-            </div>
-            <div class="itens3 col-sm-3" id="item3" onclick="window.location.href='<?=get_base_url();?>produto'">
-                <div class="texto">
-                    <h1>Caixa de Som</h1>
-                    <p>Alto-falantes sem fio</p>
-                    <a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
-                </div>
-            </div> 
+            <div class="mosaicoLeft col-sm-6 row">
+                <a href="<?= get_base_url(); ?>produto" class="link_mosaico col-sm-12">
+                    <div class="itens4 col-sm-12 row" id="item4" onclick="window.location.href='<?=get_base_url();?>produto'">
+                        <div class="texto col-sm-5">
+                            <h1>Bolsa</h1>
+                            <p>GUCCI INTENSE </p>
+                            <p>Compre Agora!</p>
+                        </div>
 
-            <div class="itens4 col-sm-6" id="item4" onclick="window.location.href='<?=get_base_url();?>produto'">
-                <div class="texto">
-                    <h1>Bolsa</h1>
-                    <p>GUCCI INTENSE </p>
-                    <a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
-                </div>
+                        <div class="col-sm-7">
+                            <img class="mosaicoImg2" src="<?= get_base_url(); ?>./assets/img/ps5_reflex.png" alt="">
+                        </div>
+                    </div>
+                </a>    
+            
+                <a href="<?= get_base_url(); ?>produto" class="link_mosaico col-sm-6">
+                    <div class="itens2 col-sm-12 row" id="item2" onclick="window.location.href='<?=get_base_url();?>produto'">
+                        <div class="texto col-sm-5">
+                            <h1>Roupas</h1>
+                            <img src="<?= get_base_url();?> " alt="">
+                            <p>Coleções  em destaque que dão outra vibe</p>
+                            <p>Compre Agora!</p>
+                        </div>
+
+                        <div class="col-sm-7">
+                            <img class="mosaicoImg3" src="<?= get_base_url(); ?>./assets/img/.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="<?= get_base_url(); ?>produto" class="link_mosaico col-sm-6">
+                    <div class="itens3 row" id="item3" onclick="window.location.href='<?=get_base_url();?>produto'">
+                        <div class="texto col-sm-5">
+                            <h1>Caixa de Som</h1>
+                            <p>Alto-falantes sem fio</p>
+                            <p>Compre Agora!</p>
+                        </div>
+
+                        <div class="col-sm-7">
+                            <img class="mosaicoImg4" src="<?= get_base_url(); ?>./assets/img/ps5_reflex.png" alt="">
+                        </div>
+                    </div>
+                    
+
             </div>
         </div>
-        <buttonCategoria class="buttonCategoria row col-sm-10"></buttonCategoria>
+
+        <buttonCategoria class="buttonCategoria row col-sm-10 pt-2"></buttonCategoria>
+
         <button id="prev">&#10094;</button>
         <button id="next">&#10095;</button>
         </div>
