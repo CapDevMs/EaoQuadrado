@@ -21,12 +21,13 @@ use App\Controllers\Cliente\PerfilClienteController;
 
 // area vendedor
 use App\Controllers\Vendedor\CadastroProdutoVendedorController;
-use App\Controllers\HistoricoVendasController;
-use App\Controllers\PerfilVendedorController;
-use App\Controllers\PaginaDoVendedorController;
-use App\Controllers\MinhaLojaController;
-use App\Controllers\PaginaDoVendedorController2; 
-use App\Controllers\GerenciamentoDeEstoqueController;
+use App\Controllers\Vendedor\HistoricoVendasController;
+use App\Controllers\Vendedor\PerfilVendedorController;
+use App\Controllers\Vendedor\PaginaDoVendedorController;
+use App\Controllers\Vendedor\MinhaLojaController;
+use App\Controllers\Vendedor\PaginaDoVendedorController2; 
+use App\Controllers\Vendedor\GerenciamentoDeEstoqueController;
+use App\Controllers\Vendedor\TrocasDevolucoesController;
 // area comum
 use App\Controllers\ProdutoController;
 use App\Controllers\HomeController;
