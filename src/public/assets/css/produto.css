@@ -4,13 +4,18 @@ html {
   font-family: Poppins;
 }
 
-
+.tela-produto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
 .map {
   width: 95%;
   margin: auto;
   font-size: 65%;
 }
-.container-produto{
+.container-produto {
   display: flex;
   justify-items: center;
 }
@@ -27,23 +32,23 @@ html {
   height: 1px;
   background-color: #000000;
   border-radius: 20%;
+  width: 100%;
 }
-.nome-produto{
+.nome-produto {
   font-family: 500;
 }
-.titulo-descricao{
+.titulo-descricao {
   font-weight: 600;
   color: #000000;
   margin-bottom: 2%;
 }
-.conteudo-descricao{
-  color: #7D8184;
+.conteudo-descricao {
+  color: #7d8184;
 }
 .preco {
   font-size: 55px;
   color: #16a18e;
 }
-
 
 .buttom-color {
   border: none;
@@ -51,11 +56,11 @@ html {
   padding: 1%;
 }
 
-.container-recomendar{
+.container-recomendar {
   margin-top: 3%;
   justify-self: center;
 }
-.produto-recomendar{
+.produto-recomendar {
   display: flex;
 }
 .topico {
@@ -70,9 +75,8 @@ html {
   position: relative;
   display: flex;
   margin-top: 6%;
-  margin-left: 9%;
   gap: 1%;
-
+  width: 85%;
 }
 
 .text-topico {
@@ -80,15 +84,13 @@ html {
   color: #00bfa5;
   align-self: center;
   font-weight: 600;
-  
 }
-
 
 .comprar {
   display: flex;
 }
 
-#btn-comprar {
+.btn-comprar {
   position: relative;
   padding: 3%;
   background-color: var(--cor-botao-primario);
@@ -99,7 +101,7 @@ html {
   color: white;
   cursor: pointer;
 }
-#icons-comprar {
+.icons-comprar {
   display: flex;
   width: 20%;
   gap: 5%;
@@ -121,30 +123,16 @@ html {
   padding-top: 4%;
 }
 
-.loja{
-  display: flex;
-  margin-top: 3%;
-  border-radius: 13px;
-  align-items: center;
-}
-
-.icons-loja {
-  display:flex;
-  gap: 5%;
-  width: 20%;
-  height: 20%;
-  
-}
-
-.imagem-loja{
-  width: 50%;
-}
-
-.cursor{
+.cursor {
   cursor: pointer;
 }
-@media(max-width:1024px){
-  .loja{
+@media (max-width: 1024px) {
+  .loja {
     font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .container-produto {
+    flex-direction: column;
   }
 }
