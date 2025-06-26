@@ -1,4 +1,4 @@
-const fieldsetLoja = ({ image, nomeLoja, linkLoja,linkFavorito, linkWpp }) => {
+const fieldsetLoja = ({ image, nomeLoja, linkLoja, linkWpp }) => {
     return `
     <div class="lojaFieldset">
         
@@ -11,9 +11,7 @@ const fieldsetLoja = ({ image, nomeLoja, linkLoja,linkFavorito, linkWpp }) => {
                 </a>
                 
                 <div class="icons-loja col-sm-2">
-                    <a class="" href="${linkFavorito}">
                         <img src="assets/img/coracao-tela-produto.svg" id="loja-coracao">
-                    </a>
                     <a class="" href="${linkWpp}">
                         <img src="assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
                     </a>
