@@ -31,6 +31,4 @@ class User extends Model
             return 0;
         };
     }
-
-    
 }

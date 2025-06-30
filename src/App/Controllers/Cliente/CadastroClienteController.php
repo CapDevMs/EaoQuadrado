@@ -19,7 +19,7 @@ class CadastroClienteController extends Controller
   public function cadastrarCliente()
   {
     $dados = [
-      "imagem" => $_FILES['imgProfile'],
+      "imagem" => $_FILES['imgProfile'] ?? null,
       "nome" => htmlspecialchars($_POST['nome']),
       "sobrenome" => htmlspecialchars($_POST['sobrenome']),
       "nascimento" => (int) $_POST['nascimento'],
@@ -36,26 +36,19 @@ class CadastroClienteController extends Controller
 
     
     $erros = [];
-
     $nomeImagemSalva = null;
-    $uploadDir = __DIR__ . '../../../public/assets/uploads/';
-    $_FILES['imgProfile']['name'] = 'foto_cliente.png';
-    $_FILES['imgProfile']['full_path'] = 'foto_cliente.png';
-    var_dump($_FILES['imgProfile']);
-    
-    if (isset($_POST['registrar']) && !empty($_FILES['imgProfile'])) {
-      echo 'a';
-      $uploader = new Upload();
-      $uploadResult = $uploader->uploadImagem($_FILES['imgProfile'], $uploadDir);
-      var_dump($uploadResult);
-      if (!$uploadResult['success']) {
-          $erros = array_merge($erros, $uploadResult['errors']);
-      } else {
-          $nomeImagemSalva = $uploadResult['fileName'];
-      }
-    }
+    $publicUploadDir = 'assets/uploads/';
+    $uploadDir = __DIR__ . '/../../../public/' . $publicUploadDir;
 
-    var_dump($nomeImagemSalva);
+    if (isset($_POST['registrar']) && !empty($_FILES['imgProfile'])) {
+      $uploader = new Upload();
+      $uploadResultado = $uploader->uploadImagem($dados['imagem'], $uploadDir);
+      if (!$uploadResultado['success']) {
+        $erros = array_merge($erros, $uploadResultado['errors']);
+      } else {
+        $nomeImagemSalva = $publicUploadDir . $uploadResultado['fileName'];
+    }
+  }
 
     $dados['imagem'] = $nomeImagemSalva;
 
@@ -85,7 +78,8 @@ class CadastroClienteController extends Controller
 
       $cliente = new Cliente();
       $novoClienteCadastrado = [
-        'imagem' => $nomeImagemSalva,
+        'id_usuario' => $idUsuario,
+        'imagem' => $dados['imagem'],
         'nome' => $dados['nome'],
         'sobrenome' => $dados['sobrenome'],
         'nascimento' => $dados['nascimento'],
@@ -98,7 +92,7 @@ class CadastroClienteController extends Controller
       var_dump($novoClienteCadastrado);
 
       $sucesso = $cliente->insert($novoClienteCadastrado);
-
+      var_dump($sucesso);
       if (!$sucesso) {
         $user->delete($idUsuario);
         throw new \Exception('Falha ao criar cliente');
@@ -120,10 +114,18 @@ class CadastroClienteController extends Controller
     ]);
   }
 
+/**
+ * Valida os dados do formulário de cadastro de cliente.
+ *
+ * @param array $dados Array associativo com os dados do formulário.
+ * @return array Array de strings contendo as mensagens de erro.
+ */
+
   private function validarDados($dados)
   {
     $erros = [];
     $cliente = new Cliente();
+    $user = new User();
 
     if (strlen($dados['nome']) < 2) {
       $erros[] = 'Nome deve ter pelo menos 2 caracteres.';
@@ -137,17 +139,21 @@ class CadastroClienteController extends Controller
       $erros[] = 'E-mail inválido.';
     }
 
+    if ($user->findBy('email', $dados['email'])->getData()) {
+      $erros[] = 'Este email já está cadastrado.';
+    }
+
     if ($cliente->findBy('email', $dados['email'])->getData()) {
       $erros[] = 'Este email já está cadastrado.';
     }
 
     if (strlen($dados['senha']) < 6) {
       $erros[] = 'Senha deve ter no mínimo 6 caracteres';
-    } elseif ($dados['senha'] !== $dados['confirmar_senha']) {
+    } elseif ($dados['senha'] !== $dados['confirmarSenha']) {
       $erros[] = 'As senhas não coincidem.';
     }
 
-    if (strlen((string) $dados['cpf']) !== 11) {
+    if (strlen((string) $dados['cpf']) !== 11 || !is_numeric($dados['cpf'])) {
       $erros[] = 'CPF inválido (deve conter 11 dígitos).';
     }
 
