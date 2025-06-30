@@ -35,7 +35,8 @@ html {
   width: 100%;
 }
 .nome-produto {
-  font-family: 500;
+  font-weight: 600;
+  font-size: 25px;
 }
 .titulo-descricao {
   font-weight: 600;
@@ -120,6 +121,7 @@ html {
 @media (max-width: 1023px) {
   .container-produto {
     flex-direction: column;
+    
   }
   .desc-produto{
     display: flex;
@@ -130,6 +132,30 @@ html {
     padding-top: 1%;
     position: relative;
     max-width: 90%;
+  }
+  
+
+}
+@media (max-width: 600px) {
+  .preco {
+    font-size: 40px;
+    color: #16a18e;
+  }
+  .container-produto{
+    margin: 0 auto;
+  }
+  .line {
+    margin-top:10%;
+    width: 94%;
+  }
+  
+  .grid-topico {
+    width: 95%;
+    margin-top: 10%;
+  }
+  .descricao {
+    padding-top: 2%;
+    
   }
   
 

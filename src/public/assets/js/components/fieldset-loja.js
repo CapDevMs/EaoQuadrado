@@ -1,7 +1,7 @@
 const fieldsetLoja = ({ image, nomeLoja, linkLoja }) => {
     return `
     <div class="lojaFieldset">
-            <fieldset class="loja col-xl-9 col-lg-10 col-sm-12">
+            <fieldset class="loja col-xl-9 col-lg-10 col-sm-11">
                 <a class="linkagem-loja col-lg-3 col-sm-4" href="${linkLoja}">
                     <img class='imagem-loja'src="${image}">
                 </a>

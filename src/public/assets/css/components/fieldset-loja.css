@@ -37,14 +37,14 @@
 }
 @media (max-width: 600px) {
     .texto-loja{
-        font-size: 10px;
+        font-size: 9px;
         
     }
     .imagem-loja{
         width: 58%;
     }
     .linkagem-loja{
-        width:29%;
+        width:33%;
     }
     
     

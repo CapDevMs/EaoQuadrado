@@ -2,8 +2,8 @@ const componenteTelaProduto = ({ nomeProduto,precoProduto,descricao,nomeLoja }) 
     return `
     <div class="container-produto col-lg-10 col-sm-11">
         <div class="galeria-container col-lg-8 col-sm-12"></div>
-            <div class="desc-produto col-lg-5 col-sm-10">
-                <h2 class="nome-produto">${nomeProduto}</h2>
+            <div class="desc-produto col-lg-5 col-sm-12">
+                <p class="nome-produto">${nomeProduto}</p>
                 <h1 class="preco">R$ ${precoProduto}</h1>
                 <div class="contador-container"></div>
                 <div class="comprar col-lg-8 col-sm-10">
