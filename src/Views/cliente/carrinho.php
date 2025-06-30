@@ -24,68 +24,84 @@ $base_url = get_base_url();
 <body>
     <?php get_header() ?>
 
-    <main class='main col-12'>
+    <main class="main">
         <roadMap>
             <?php breadcrumb(array('http://localhost/EaoQuadrado' => 'Home', 'carrinho' => 'Carrinho')); ?>
         </roadMap>
-        <bloco class=''>
-            <h3>Carrinho</h3>
-            <painel>
-                <produto class='col-10 produto row'>
-                    <div class='col-2'>
+
+        <blocoPrincipal class='blocoPrincipal col-11'>
+            <div class=''>
+                <h3 class='redutor '>Carrinho</h3>
+            </div>
+
+            <painelProdutos class='painelProdutos'>
+                <produto class="produto">
+                    <div class='col-2 baseBlocoIcone'>
                         <img src="src/public/assets/img/asus_notebook.png" alt="foto-produto" class='imagem'>
                     </div>
-                    <div class='col-2'>
-                        <titulo>Titulo Generico</titulo>
-                        <texto>Nome esquisito que o vendedor vai colocar</texto>
-                    </div>
-                    <div class='col-2'>
-                        <titulo>Titulo Generico</titulo>
-                        <texto>Nome esquisito que o vendedor vai colocar</texto>
+
+                    <div class="col-9 blocoCentralProduto">
+
+                        <div class='col-3 baseBlocoProduto'>
+                            <h4 class='miniBloco1 '>Nome</h4>
+                            <texto class='miniBloco2 '>Nome esquisito que o vendedor vai colocar</texto>
+                        </div>
+
+                        <div class='col-3 baseBlocoProduto'>
+                            <h4 class='miniBloco1 '>Preço</h4>
+                            <texto class='miniBloco2 '>Nome esquisito que o vendedor vai colocar</texto>
+    
+                        </div>
+
+                        <div class='col-3 baseBlocoProduto'>
+                            <h4 class='miniBloco1'>Quantidade</h4>
+                            <texto class='miniBloco2 '>Preço esquisito que o vendedor vai colocar</texto>
+                        </div>
+
+                        <div class='col-3 baseBlocoProduto'>
+                            <h4 class='miniBloco1'>Subtotal</h4>
+                            <texto class='miniBloco2 '>Subtotal esquisito que o sistema vai colocar</texto>
+                        </div>
 
                     </div>
-                    <div class='col-2'>
-                        <titulo>Titulo Generico</titulo>
-                        <texto>Nome esquisito que o vendedor vai colocar</texto>
-                    </div>
-                    <div class='col-2'>
-                        <titulo>Titulo Generico</titulo>
-                        <texto>Nome esquisito que o vendedor vai colocar</texto>
-                    </div>
-                    <div class='col-2'>
-                        <titulo>Titulo Generico</titulo>
-                        <texto>Nome esquisito que o vendedor vai colocar</texto>
+
+
+                    <div class="col-1 baseBlocoIcone">
+                        <img class='redutor icone' src="src/public/assets/img/icons/Icon_lixeira.png" alt="icone">
                     </div>
                 </produto>
-            </painel>
-        </bloco>
-        <div class="totalizador col-10">
-            <div class="totalLine">
-                <span class='span'>Subtotal</span>
-                <span class="span total">...</span>
+            </painelProdutos>
+        </blocoPrincipal>
+
+        <totalCompra class="totalCompra col-10 col-sm-11 ">
+
+            <div class="col-12 linhaTotalCompra">
+                <span class="col-3 col-sm-5">Subtotal</span>
+                <span class="col-3 col-sm-5 empurrarFinal">...</span>
+            </div>
+
+            <hr class='hr'>
+            <div class="col-12 linhaTotalCompra">
+                <span class="col-3 col-sm-5">Frete:</span>
+                <span class="col-3 col-sm-5 empurrarFinal">A combinar</span>
             </div>
             <hr class='hr'>
-            <div class="totalLine">
-                <span class='span'>Frete:</span>
-                <span class="span">A combinar</span>
-            </div>
-            <hr class='hr'>
-            <div class="totalLine">
-                <span class='span'>Total:</span>
-                <span class="span total2">...</span>
+            <div class="col-12 linhaTotalCompra">
+                <span class="col-3 col-sm-5">Total:</span>
+                <span class="col-3 col-sm-5 empurrarFinal">...</span>
             </div>
 
-            <div class="totalLine">
-                <button class='botao1' onclick="voltarPagina()">Retorne as compras</button>
-
-                <a href='https://web.whatsapp.com/' style="max-width: fit-content;"><button id='ApagarCarrinho' class='botao2' onclick='LimparCarrinho()'>Ir ao Whatsapp</button></a>
-
+            <div class="col-12 linhaTotalCompra">
+                <div class="flexCentro">
+                    <button class="baseBotao" onclick="voltarPagina()">Retorne as compras</button>
+                </div>
+                <div class="flexCentro">
+                    <button class="baseBotao botaoWhatsApp" onclick='LimparCarrinho()' id='ApagarCarrinho'>Ir ao Whatsapp</button>
+                </div>
             </div>
-        </div>
+
+        </totalCompra>
     </main>
 
-    <script src="<?php get_base_url(); ?>assets/js/script.js"></script>
-    <script src="<?php get_base_url(); ?>assets/js/carrinho/script.js"></script>
-    <script src="<?php get_base_url(); ?>assets/js/carrinho/apiCarrinho.js"></script>
     <?php get_footer() ?>
 </body>
