@@ -10,6 +10,6 @@ class ProdutoController extends Controller
     public function produto()
 {
 
-        View::render("produto", compact( 'todosProdutos'));
+        View::render("produto");
     }   
 }

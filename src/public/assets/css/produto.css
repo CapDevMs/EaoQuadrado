@@ -109,20 +109,6 @@ html {
   margin-left: 5%;
 }
 
-#troca {
-  display: grid;
-  grid-template-columns: 10% 50%;
-  grid-template-rows: 20% 20%;
-  gap: 2%;
-  padding-top: 7%;
-  align-self: center;
-  font-size: 80%;
-}
-#dias {
-  grid-column-start: 2;
-  padding-top: 4%;
-}
-
 .cursor {
   cursor: pointer;
 }
@@ -131,8 +117,20 @@ html {
     font-size: 10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .container-produto {
     flex-direction: column;
   }
+  .desc-produto{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .descricao {
+    padding-top: 1%;
+    position: relative;
+    max-width: 90%;
+  }
+  
+
 }

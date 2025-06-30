@@ -75,30 +75,23 @@ if (componenteTelaProdutoContainer) {
         console.error("Container '.fieldset-loja' não foi encontrado no DOM.");
     }
     iconeFavorito.addEventListener('click', function() {
-        // 1. Guarda o src atual e o src alternativo
+
         let srcAtual = iconeFavorito.src;
         let srcAlternativo = iconeFavorito.dataset.imagemAlternativa;
     
-        // 2. Troca as imagens
+
         iconeFavorito.src = srcAlternativo;
-    
-        // 3. Atualiza o atributo 'data' para a próxima troca
+
         iconeFavorito.dataset.imagemAlternativa = srcAtual;
     });
     if (iconeCarrinho) {
-        // Define os caminhos para as imagens original e de sucesso
+
         const imagemOriginalCarrinho = 'assets/img/carrinho-tela-produto.svg';
         const imagemSucesso = 'assets/img/tela-produtos/carrinhopreenchido.svg';
-    
-        // Adiciona o "escutador" de clique
+
         iconeCarrinho.addEventListener('click', function() {
-            // 1. Muda imediatamente para a imagem de sucesso
             iconeCarrinho.src = imagemSucesso;
-            
-            // Aqui você poderia adicionar a lógica real de adicionar ao carrinho
             console.log('Produto adicionado ao carrinho!');
-    
-            // 2. Agenda a imagem para voltar ao original após 2 segundos (2000 milissegundos)
             setTimeout(function() {
                 iconeCarrinho.src = imagemOriginalCarrinho;
             }, 500); 

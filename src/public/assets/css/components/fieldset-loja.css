@@ -24,3 +24,28 @@
 .texto-loja{
     color: var(--cor-texto-deselecionado);
 }
+
+@media (max-width: 1023px) {
+    .texto-loja{
+        font-size: 17px;
+    }
+    .imagem-loja{
+        width: 60%;
+    }
+    
+    
+}
+@media (max-width: 600px) {
+    .texto-loja{
+        font-size: 10px;
+        
+    }
+    .imagem-loja{
+        width: 58%;
+    }
+    .linkagem-loja{
+        width:29%;
+    }
+    
+    
+}

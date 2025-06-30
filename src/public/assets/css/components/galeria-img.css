@@ -39,3 +39,15 @@
         width: 100%;
     }
 }
+@media(max-width:600px){
+    .grid-image{
+        flex-direction: column;
+    }
+    .grid-lateral{
+        display: flex;
+        flex-direction: row;
+    }
+    .img-small{
+        margin-bottom: 10%;
+    }
+}
