@@ -1,17 +1,18 @@
-.container-video {
-  position: relative;
-  
+.container-img {
   margin-bottom: 2%;
-  max-height: 500px;
-  height: auto;
   width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-.container-video video {
+  height: 250px;
   display: flex;
+  justify-content: center;
+  background-color: #8ed6fe;
+}
+
+.container-img img {
+  height: 100%;
+  width: auto;
   
 }
+
 .containerprodutofav{
   display: flex;
   flex-direction: column;

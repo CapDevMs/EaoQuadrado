@@ -16,10 +16,8 @@ $appName = get_app_name();
 
 <body>
     <?php get_header() ?>
-    <div class="container-video">
-                <video autoplay muted loop>
-                    <source src="<?= get_base_url(); ?>assets/videos/video-categoria_celular.mp4" type="video/mp4">
-                </video>
+    <div class="container-img">
+                <img src="<?= get_base_url(); ?>assets/img/produtos_categorias.jpg">
     </div>
 
     <div class="container-main col-sm-12 ">
