@@ -10,11 +10,11 @@ class Produto extends Model {
 {
     $sql = "SELECT 
                 p.*, 
-                l.nome as nomeLoja,
+                l.nome_loja as nomeLoja,
                 c.nome as nomeCategoria 
             FROM {$this->table} p
-            LEFT JOIN lojas l ON p.id_loja_fk = l.id_loja
-            LEFT JOIN categorias c ON p.id_categoria_fk = c.id_categoria
+            LEFT JOIN lojas l ON p.id_loja = l.id_loja 
+            LEFT JOIN categorias c ON p.id_categoria = c.id_categoria
             WHERE p.{$this->primaryKey} = :id";
     
     $stmt = $this->query(sql: $sql, params: ['id' => $id]);
@@ -40,21 +40,25 @@ class Produto extends Model {
         // 3. Retorna TODAS as imagens encontradas como um array
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
-    public function findRecomendados(int $excludeId, int $limit = 4): array
-    {
-        $sql = "SELECT 
-                    id_produto as id, 
-                    nome as titulo, 
-                    imagem_url as imagem, 
-                    preco,
-                    './produto' as link -- Link fixo como no seu JS
-                FROM {$this->table} 
-                WHERE {$this->primaryKey} != :excludeId 
-                ORDER BY RAND() 
-                LIMIT :limit";
-        
-        $stmt = $this->query($sql, ['excludeId' => $excludeId, 'limit' => $limit]);
-        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
-    }
+    // Em App/Models/Produto.php
+public function findRecomendados(int $excludeId, int $limit = 4): array
+{
+    $limit = (int) $limit;
+
+    $sql = "SELECT
+                id_produto as id,
+                nome as titulo,
+                imagens as imagem, 
+                preco,
+                './produto' as link
+            FROM {$this->table}
+            WHERE {$this->primaryKey} != :excludeId
+            ORDER BY RAND()
+            LIMIT {$limit}";
+
+    $stmt = $this->query($sql, ['excludeId' => $excludeId]);
+    
+    return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+}
 }
 

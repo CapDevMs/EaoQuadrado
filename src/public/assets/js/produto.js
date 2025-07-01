@@ -7,6 +7,7 @@ import componenteTelaProduto from "./components/componente-tela-produto.js";
 document.addEventListener('DOMContentLoaded', () => {
      // 1. LER OS DADOS DINÂMICOS DA PÁGINA
     const jsonDataElement = document.getElementById('page-data');
+    console.log(jsonDataElement)
     if (!jsonDataElement) {
         console.error("Elemento com dados JSON #page-data não encontrado!");
         return;

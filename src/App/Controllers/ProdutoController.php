@@ -26,19 +26,16 @@ class ProdutoController extends Controller
         $recomendados = $produtoModel->findRecomendados($id, 4);
 
         // 4. Montar um array com TODOS os dados para a view
+        // Em ProdutoController.php
         $dadosParaView = [
             'produto' => [
-                'nomeProduto'  => $produto['nome'],
-                'precoProduto' => number_format($produto['preco'], 2, ',', '.'),
-                'descricao'    => $produto['descricao'],
-                'nomeLoja'     => $produto['nomeLoja'] ?? 'Loja não informada'
+                'nomeProduto'  => $produto['nome'] ?? 'Produto sem nome',
+                'precoProduto' => number_format($produto['preco'] ?? 0, 2, ',', '.'),
+                'descricao'    => $produto['descricao'] ?? '',
+                'nomeLoja'     => $produto['nomeLoja'] ?? 'Loja não informada',
+                'nomeCategoria'=> $produto['nomeCategoria'] ?? 'Sem categoria' // Exemplo de uso
             ],
-            'imagens' => $imagens,
-            'loja' => [
-                // Supondo que a imagem da loja venha de outro lugar ou seja fixa
-                'image' => 'assets/img/tela-produtos/loja.png', 
-                'nomeLoja' => $produto['nomeLoja'] ?? 'Loja não informada'
-            ],
+            'imagens'      => $imagens,
             'recomendados' => $recomendados
         ];
 
