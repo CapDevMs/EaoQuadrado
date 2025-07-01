@@ -56,7 +56,7 @@ $router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::cl
 $router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente');
 $router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
 $router->get('/categoria', categoriaController::class, 'categoria');
-$router->get('/produto', ProdutoController::class, 'produto');
+
 
 
 // área cliente
@@ -94,7 +94,7 @@ $router->get('/nossaPolitica', HomeController::class, 'nossaPolitica');
 $router->get('/faq', HomeController::class, 'faq');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/termosDeUso', HomeController::class, 'termosDeUso');
-$router->get('/produto', ProdutoController::class, 'produto');
+$router->get('/produto/{id}', ProdutoController::class, 'show');
 
 
 

@@ -30,5 +30,7 @@ $appName = get_app_name();
 </body>
 <script type="module" src="<?= get_base_url(); ?>assets/js/produto.js?<?= time() ?>"></script>
 <script src="<?= get_base_url(); ?>assets/js/carrinho/apiCarrinho.js"></script>
-
+<script id="page-data" type="application/json">
+        <?= json_encode($dadosParaView, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_QUOT); ?>
+    </script>
 </html>
