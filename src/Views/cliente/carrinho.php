@@ -40,27 +40,34 @@ $base_url = get_base_url();
                         <img src="src/public/assets/img/asus_notebook.png" alt="foto-produto" class='imagem'>
                     </div>
 
-                    <div class="col-9 blocoCentralProduto">
+                    <div class="col-md-9 col-12 blocoCentralProduto flexColuna-sr">
 
-                        <div class='col-3 baseBlocoProduto'>
-                            <h4 class='miniBloco1 '>Nome</h4>
-                            <texto class='miniBloco2 '>Nome esquisito que o vendedor vai colocar</texto>
+                        <div class="col-md-6 col-12 flexLinha-nr flexbetween-nr blocoNome">
+
+                            <div class='col-md-6 col-12 baseBlocoProduto'>
+                                <h4 class='miniBloco1 '>Nome</h4>
+                                <texto class='miniBloco2'><span class="redutor nomeGrande">Nome esquisito AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA BOLSONARO ME AJUDA EU SOU UM BEBÊ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAque o vendedor vai colocar e talvez seja tão filho da puta de grande que foda meu componente inteiro, isso não deveria ser meu problema mas aparentemente é pq eu n faço a mais puta ideia de como eles fazem em outros sites</span></texto>
+                            </div>
+
+                            <div class='col-6 sumidão baseBlocoProduto'>
+                                <h4 class='miniBloco1 '>Preço</h4>
+                                <texto class='miniBloco2'>R$ ...</texto>
+                            </div>
+
                         </div>
 
-                        <div class='col-3 baseBlocoProduto'>
-                            <h4 class='miniBloco1 '>Preço</h4>
-                            <texto class='miniBloco2 '>Nome esquisito que o vendedor vai colocar</texto>
-    
-                        </div>
+                        <div class="col-md-6 col-12 flexLinha-nr flexbetween-nr">
 
-                        <div class='col-3 baseBlocoProduto'>
-                            <h4 class='miniBloco1'>Quantidade</h4>
-                            <texto class='miniBloco2 '>Preço esquisito que o vendedor vai colocar</texto>
-                        </div>
+                            <div class='col-6 baseBlocoProduto'>
+                                <h4 class='miniBloco1'>Quantidade</h4>
+                                <texto class='miniBloco2'><input type="Number" class='counter' min='0' value=1></texto>
+                            </div>
 
-                        <div class='col-3 baseBlocoProduto'>
-                            <h4 class='miniBloco1'>Subtotal</h4>
-                            <texto class='miniBloco2 '>Subtotal esquisito que o sistema vai colocar</texto>
+                            <div class='col-6 baseBlocoProduto'>
+                                <h4 class='miniBloco1'>Subtotal</h4>
+                                <texto class='miniBloco2'>R$ ...</texto>
+                            </div>
+
                         </div>
 
                     </div>

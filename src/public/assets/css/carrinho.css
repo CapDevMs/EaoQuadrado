@@ -11,7 +11,7 @@
 }
 
 .redutor{
-    max-width: max-content;
+    max-width: fit-content;
 }
 
 .flexCentro{
@@ -27,6 +27,21 @@
     justify-content: end;
     padding-right:15px;
 }
+
+.flexLinha-nr{
+    display: flex;
+    flex-direction: line;
+}
+
+.flexColuna-nr{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbetween-nr{
+    justify-content: space-between;
+}
+
 /* main */
 
 .main{
@@ -47,15 +62,28 @@
 .painelProdutos{
     border: 2px solid var(--cor-texto-deselecionado);
     border-radius: 10px;
+    height: 80vh;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 
+.counter{
+    max-width: 120px;
+}
+
+
 .produto{
+    margin: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: solid 2px var(--cor-texto-deselecionado);
     border-radius: 20px;
     height: 160px;
+    width: 98%;
 }
 
 .blocoCentralProduto{
@@ -84,10 +112,16 @@
 }
 .miniBloco2{
     height: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.nomeGrande{
+    overflow: auto;
+    max-height: 100px;
 }
 
 /* total da compra */
@@ -127,6 +161,33 @@
     border-color: var(--cor-verde-escuro);
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 
+    .blocoNome{
+        margin: 10px;
+    }
+    .flexLinha-sr{
+        display: flex;
+        flex-direction: line;
+    }
+    
+    .flexColuna-sr{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flexbetween-sr{
+        justify-content: space-between;
+    }
+
+.sumidão{
+    display: none;
+}
+
+.produto{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
 }
