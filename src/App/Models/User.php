@@ -19,13 +19,18 @@ class User extends Model
     }
 
     public function cadastroUsuarios($nome, $email, $senha): int {
-        echo $nome;
         try {
-            $this->db->beginTransaction();
-            $sql = "INSERT INTO Usuarios (nome, email, senha) VALUES(:nome, :email, :senha)";
-            $stmt = $this->query($sql, params: ['nome' => $nome, 'email' => $email, 'senha' => $senha]);
-            $stmt->execute();
-            $this->db->commit();
+            $dadosLogin = [
+                'nome' => $nome,
+                'email' => $email,
+                'senha' => $senha
+            ];
+            $this->insert($dadosLogin);
+            // $this->db->beginTransaction();
+            // $sql = "INSERT INTO Usuarios (nome, email, senha) VALUES(:nome, :email, :senha)";
+            // $stmt = $this->query($sql, params: ['nome' => $nome, 'email' => $email, 'senha' => $senha]);
+            // $stmt->execute();
+            // $this->db->commit();
             return $this->db->lastInsertId();
         } catch (PDOException $e) {
             return 0;

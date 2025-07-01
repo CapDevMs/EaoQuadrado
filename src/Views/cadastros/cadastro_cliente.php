@@ -13,7 +13,7 @@ $titulo = 'Cadastro de Cliente';
 </head>
 <body>
     <header class="header">
-    <?php// get_header() ?>
+    <?php get_header() ?>
     </header>
 
 <main>

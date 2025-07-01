@@ -53,6 +53,7 @@ class CadastroClienteController extends Controller
     $dados['imagem'] = $nomeImagemSalva;
 
     $errosValidacao = $this->validarDados($dados);
+    var_dump($errosValidacao);
     $erros = array_merge($erros, $errosValidacao);
 
     if (!empty($erros)) {
@@ -70,30 +71,25 @@ class CadastroClienteController extends Controller
         $dados['senha']
       );
 
-      var_dump($idUsuario);
-
       if (!$idUsuario) {
         throw new \Exception('Falha ao criar usuário');
       }
 
       $cliente = new Cliente();
-      $novoClienteCadastrado = [
-        'id_usuario' => $idUsuario,
-        'imagem' => $dados['imagem'],
-        'nome' => $dados['nome'],
-        'sobrenome' => $dados['sobrenome'],
-        'nascimento' => $dados['nascimento'],
-        'cpf' => $dados['cpf'],
-        'email' => $dados['email'],
-        'numero_telefone' => $dados['telefone'],
-        'senha' => $dados['senha']
-      ];
+      $novoClienteCadastrado = $cliente->cadastroCliente(
+        $idUsuario,
+        $dados['imagem'],
+        $dados['nome'],
+        $dados['sobrenome'],
+        $dados['nascimento'],
+        $dados['cpf'],
+        $dados['email'],
+        $dados['telefone'],
+        $dados['senha']
+      );
 
       var_dump($novoClienteCadastrado);
-
-      $sucesso = $cliente->insert($novoClienteCadastrado);
-      var_dump($sucesso);
-      if (!$sucesso) {
+      if (!$novoClienteCadastrado) {
         $user->delete($idUsuario);
         throw new \Exception('Falha ao criar cliente');
       }
@@ -113,14 +109,6 @@ class CadastroClienteController extends Controller
       'dados' => $dados
     ]);
   }
-
-/**
- * Valida os dados do formulário de cadastro de cliente.
- *
- * @param array $dados Array associativo com os dados do formulário.
- * @return array Array de strings contendo as mensagens de erro.
- */
-
   private function validarDados($dados)
   {
     $erros = [];
@@ -157,17 +145,14 @@ class CadastroClienteController extends Controller
       $erros[] = 'CPF inválido (deve conter 11 dígitos).';
     }
 
-    $telLength = strlen((string) $dados['telefone']);
-    if ($telLength < 10 || $telLength > 11) {
-      $erros[] = 'Telefone inválido.';
+    $telefone = preg_replace('/\D/', '', $dados['telefone']); // remove tudo que não é número
+
+    if (!preg_match('/^[1-9]{2}(9\d{8}|\d{8})$/', $telefone)) {
+        $erros[] = 'Telefone inválido.';
     }
 
     if (strlen((string) $dados['cep']) !== 8) {
       $erros[] = 'CEP inválido.';
-    }
-
-    if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $dados['nascimento'])) {
-      $erros[] = 'Data de nascimento inválida.';
     }
 
     return $erros;
