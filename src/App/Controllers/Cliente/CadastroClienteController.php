@@ -4,6 +4,7 @@ namespace App\Controllers\Cliente;
 
 use App\Models\Cliente;
 use App\Models\User;
+use App\Models\Endereco;
 use Core\View;
 use App\Controllers\Controller;
 use App\Services\Upload;
@@ -89,9 +90,26 @@ class CadastroClienteController extends Controller
       );
 
       var_dump($novoClienteCadastrado);
+      
+
+      $endereco = new Endereco();
+      $idEndereco = $endereco->cadastroEndereco(
+        $idCidade,
+        $dados['cep'],
+        $dados['endereco'],
+        $dados['bairro'],
+        $dados['complemento'],
+      );
+
+      var_dump($idEndereco);
+      if (!$idEndereco) {
+        throw new \Exception('Falha ao criar usuário');
+      }
+
       if (!$novoClienteCadastrado) {
         $user->delete($idUsuario);
-        throw new \Exception('Falha ao criar cliente');
+        $endereco->delete($idEndereco);
+        throw new \Exception('Falha ao criar cliente.');
       }
 
       return View::render('cadastros/cadastro_cliente', [
