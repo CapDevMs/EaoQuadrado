@@ -2,17 +2,18 @@
 
 namespace App\Controllers\Admin;
 
-use App\Models\Categoria;
 use Core\View;
 use App\Controllers\Controller;
 
 class CriarCategoriaController extends Controller
 {
-    public function index()
+
+    public function categoria()
     {
-        $categorias = Categoria::getCategorias();
-        View::render('categoria/index', ['categorias' => $categorias]);
+        View::render('/categoria');
     }
+<<<<<<< HEAD:src/App/Controllers/categoriaController.php
+=======
 
     public function criar()
     {
@@ -66,4 +67,5 @@ class CriarCategoriaController extends Controller
 
         View::render('categoria/sucesso', ['mensagem' => 'Categoria deletada com sucesso!']);
     }
+>>>>>>> 29438e0ec5478677750f22842aef1e68bcbcda7e:src/App/Controllers/Admin/CriarCategoriaController.php
 }

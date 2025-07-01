@@ -1,11 +1,12 @@
 const contadorQuantidade = () => {
+    
     return `
-    <div id="botao_qtd">
-        <button class="quantidade" id="menos">-</button>
-        <input type="text" class="quantidade" id="quantidade" value="1">
-        <button class="quantidade" id="mais">+</button>
+    <div class="botao_qtd">
+        <button class="btn-menos">-</button>
+        <input type="text" class="input-quantidade" value="1">
+        <button class="btn-mais">+</button>
     </div>
     `;
-}
+};
 
 export default contadorQuantidade;

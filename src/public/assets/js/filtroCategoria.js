@@ -10,5 +10,5 @@ let filtroInfo =
 
 
 for (let coisa in filtroInfo) {
-        div.innerHTML += filtroComponent(filtroInfo[coisa]);
+        div.innerHTML = filtroComponent(filtroInfo[coisa]);
 }
