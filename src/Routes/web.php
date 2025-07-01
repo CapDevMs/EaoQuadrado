@@ -87,6 +87,7 @@ $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
 $router->get('/login', AuthController::class, 'index');
 $router->get('/getProdutos', HomeController::class, 'produtos');
+$router->get('/getCategorias', CategoriaController::class, 'categorias');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/logout', AuthController::class, 'logout');
 $router->post('/esqueciSenha', AuthController::class, 'recuperarSenha');
