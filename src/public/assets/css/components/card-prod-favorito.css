@@ -55,17 +55,32 @@
     color: var(--cor-verde-principal);
 }
 
-a.btn-add-carrinho {
+button.btn-carrinho {
     color: var(--cor-texto-botao);
     font-weight: bold;
     background-color: var(--cor-botao-primario);
     margin-top: 0.5rem;
     text-decoration: none;
-    padding: 0.375rem 1rem;
+    font-size: 12px;
+    padding: 5px;
 }
 
-.btn-add-carrinho:hover {
-    background-color: var(--cor-verde-principal);
+button.btn-remove {
+    color: var(--cor-texto-botao);
+    font-weight: bold;
+    background-color: var(--cor-botao-adm-vermelho);
+    margin-top: 0.5rem;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.btn-carrinho:hover {
+    background-color: var(--cor-texto-deselecionado);
+}
+
+.btn-remove:hover {
+    background-color: var(--cor-texto-deselecionado);
 }
 
 
@@ -95,7 +110,7 @@ a.btn-add-carrinho {
 }
 
 @media (max-width: 425px) {
-    a.btn-add-carrinho {
+    button.btn-add-carrinho {
         font-size: 14px;
     }
 }

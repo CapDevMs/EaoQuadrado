@@ -1,5 +1,5 @@
 import buttonCategoria from "./components/button-categoria.js"
-import cardProdFavorito from "./components/card-prod-favoritos.js";
+import cardProduto from "./components/card-produto.js";
 import filtroComponent from './components/filtro-categoria.js';
 
 const div = document.querySelector('filtroComponent');
@@ -56,84 +56,50 @@ categorias.forEach((categoria) => {
 
 
 
-const docTagProdutoFav = document.querySelector('cardProduto');
+const docTag = document.querySelector("cardProduto");
 
-const produtos = [
-    {
-        id: 1,
-        titulo: 'Caneca especial Programador',
-        imagem: 'assets/img/caneca1.png',
-        preco: '99,90',
-        link: './produto'
-    },
-    {
-        id: 2,
-        titulo: 'Caneca especial Programador',
-        imagem: 'assets/img/caneca2.png',
-        preco: '119,90',
-        link: './produto'
-    },
-    {
-        id: 3,
-        titulo: 'Caneca especial Programador',
-        imagem: 'assets/img/caneca1.png',
-        preco: '99,90',
-        link: './produto'
-    },
-    {
-        id: 4,
-        titulo: 'Caneca especial Programador',
-        imagem: 'assets/img/caneca3.png',
-        preco: '119,90',
-        link: './produto'
-    },
-    {
-        id: 5,
-        titulo: 'Caneca especial Programador',
-        imagem: 'assets/img/caneca2.png',
-        preco: '119,90',
-        link: './produto'
-    },
-    {
-        id: 6,
-        titulo: 'Caneca especial Programador',
-        imagem: 'assets/img/caneca3.png',
-        preco: '99,90',
-        link: './produto'
-    },
-    {
-        id: 7,
-        titulo: 'Caneca especial Programador',
-        imagem: 'assets/img/caneca2.png',
-        preco: '119,90',
-        link: './produto'
-    },
-    {
-        id: 8,
-        titulo: 'Caneca especial Programador',
-        imagem: 'assets/img/caneca1.png',
-        preco: '119,90',
-        link: './produto'
+async function renderProdutos() {
+  const produtos = await fetch("getProdutos");
+  const info = await produtos.json();
+  exibirProdutos(info);
+}
+
+function exibirProdutos(produtos) {
+  let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+  produtos.forEach((produto) => {
+    docTag.innerHTML += cardProduto(produto);
+  });
+
+  const likeBtns = document.querySelectorAll(".like");
+
+  likeBtns.forEach((btn) => {
+    const produtoId = btn.dataset.id;
+
+
+    if (favoritos.includes(produtoId)) {
+      btn.classList.remove("fa-regular");
+      btn.classList.add("fa-solid");
     }
-];
 
-produtos.forEach((produto) => {
-    docTagProdutoFav.innerHTML += cardProdFavorito(produto);
-});
+    btn.addEventListener("click", () => {
+      if (btn.classList.contains("fa-solid")) {
 
+        btn.classList.remove("fa-solid");
+        btn.classList.add("fa-regular");
+        favoritos = favoritos.filter((id) => id !== produtoId);
+      } else {
 
+        btn.classList.remove("fa-regular");
+        btn.classList.add("fa-solid");
+        if (!favoritos.includes(produtoId)) {
+          favoritos.push(produtoId);
+        }
+      }
 
-const likeBtns = document.querySelectorAll('i.like');
-likeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        alert('Produto favoritado com sucesso!');
+      localStorage.setItem("favoritos", JSON.stringify(favoritos));
     });
-});
+  });
+}
 
-
-// const docTagFiltro = document.querySelector("filtroCategoria");
-// docTagFiltro.innerHTML = filtroComponent();
-
-
-
-
+renderProdutos();
