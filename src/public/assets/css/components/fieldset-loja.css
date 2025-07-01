@@ -1,0 +1,51 @@
+
+.loja{
+    display: flex;
+    margin-top: 3%;
+    border-radius: 13px;
+    align-items: center;
+}
+
+.icons-loja {
+    display:flex;
+    gap: 5%;
+    width: 20%;
+    height: 20%;
+    
+}
+
+.imagem-loja{
+    width: 80%;
+}
+.linkagem-loja{
+    text-decoration: none;
+}
+
+.texto-loja{
+    color: var(--cor-texto-deselecionado);
+}
+
+@media (max-width: 1023px) {
+    .texto-loja{
+        font-size: 17px;
+    }
+    .imagem-loja{
+        width: 60%;
+    }
+    
+    
+}
+@media (max-width: 600px) {
+    .texto-loja{
+        font-size: 9px;
+        
+    }
+    .imagem-loja{
+        width: 58%;
+    }
+    .linkagem-loja{
+        width:33%;
+    }
+    
+    
+}
