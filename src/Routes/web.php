@@ -23,7 +23,7 @@ use App\Controllers\Cliente\PerfilClienteController;
 use App\Controllers\Vendedor\CadastroProdutoVendedorController;
 use App\Controllers\Vendedor\HistoricoVendasController;
 use App\Controllers\Vendedor\MeuPerfilVendedorController;
-use App\Controllers\Vendedor\PaginaDoVendedorController;
+use App\Controllers\Vendedor\PaginaDoVendedorController ;
 use App\Controllers\Vendedor\MinhaLojaController;
 use App\Controllers\Vendedor\GerenciamentoDeEstoqueController;
 use App\Controllers\Vendedor\TrocasDevolucoesController;
@@ -74,6 +74,8 @@ $router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja');
 $router->get('/vendedor/paginaVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');
 $router->get('/vendedor/gerenciamentoEstoque', GerenciamentoDeEstoqueController::class, 'gerenciamentoDeEstoque');
 $router->get('/vendedor/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');
+$router->get('/vendedor/meu_perfil_vendedor', MeuPerfilVendedorController::class, 'meu_perfil_vendedor');
+$router->get('/vendedor/troca_devolucao_cancelamento', MeuPerfilVendedorController::class, 'troca_devolucao_cancelamento');
 
 
 // área comum
@@ -82,6 +84,7 @@ $router->get('/categoria', CategoriaController::class, 'categoria');
 $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
 $router->get('/login', AuthController::class, 'index');
+$router->get('/getProdutos', HomeController::class, 'produtos');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/logout', AuthController::class, 'logout');
 $router->post('/esqueciSenha', AuthController::class, 'recuperarSenha');
@@ -90,6 +93,7 @@ $router->get('/faq', HomeController::class, 'faq');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/termosDeUso', HomeController::class, 'termosDeUso');
 $router->get('/produto', ProdutoController::class, 'produto');
+
 
 
 // Home
