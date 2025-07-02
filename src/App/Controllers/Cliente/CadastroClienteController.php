@@ -76,9 +76,24 @@ class CadastroClienteController extends Controller
         throw new \Exception('Falha ao criar usuário');
       }
 
+      
+      $endereco = new Endereco();
+      $idEndereco = $endereco->cadastroEndereco(
+        $dados['cep'],
+        $dados['endereco'],
+        $dados['bairro'],
+        $dados['complemento'],
+      );
+
+      var_dump($idEndereco);
+      if (!$idEndereco) {
+        throw new \Exception('Falha ao criar endereço.');
+      }
+
       $cliente = new Cliente();
       $novoClienteCadastrado = $cliente->cadastroCliente(
         $idUsuario,
+        $idEndereco,
         $dados['imagem'],
         $dados['nome'],
         $dados['sobrenome'],
@@ -90,20 +105,6 @@ class CadastroClienteController extends Controller
       );
 
       var_dump($novoClienteCadastrado);
-      
-
-      $endereco = new Endereco();
-      $idEndereco = $endereco->cadastroEndereco(
-        $dados['cep'],
-        $dados['endereco'],
-        $dados['bairro'],
-        $dados['complemento'],
-      );
-
-      var_dump($idEndereco);
-      if (!$idEndereco) {
-        throw new \Exception('Falha ao criar usuário');
-      }
 
       if (!$novoClienteCadastrado) {
         $user->delete($idUsuario);

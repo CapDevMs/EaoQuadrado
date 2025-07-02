@@ -10,10 +10,11 @@ class Cliente extends Model
   protected string $primaryKey = 'id_cliente';
   
 
-  public function cadastroCliente($idUsuario, $imagem, $nome, $sobrenome, $nascimento, $cpf, $email, $telefone, $senha) {
+  public function cadastroCliente($idUsuario, $idEndereco, $imagem, $nome, $sobrenome, $nascimento, $cpf, $email, $telefone, $senha) {
     try {
       $dadosCliente = [
         'id_usuario' => $idUsuario,
+        'id_endereco' => $idEndereco,
         'imagem' => $imagem,
         'nome' => $nome,
         'sobrenome' => $sobrenome,

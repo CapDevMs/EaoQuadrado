@@ -9,7 +9,7 @@ class Endereco extends Model
   protected string $table = 'Enderecos'; 
   protected string $primaryKey = 'id_endereco';
 
-  public function cadastroEndereco($cep, $endereco, $bairro, $complemento) {
+  public function cadastroEndereco($cep, $endereco, $bairro, $complemento): int {
   try {
     $dadosEndereco = [
       'cep' => $cep,
