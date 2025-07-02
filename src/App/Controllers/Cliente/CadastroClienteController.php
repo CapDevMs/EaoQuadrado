@@ -94,7 +94,6 @@ class CadastroClienteController extends Controller
 
       $endereco = new Endereco();
       $idEndereco = $endereco->cadastroEndereco(
-        $idCidade,
         $dados['cep'],
         $dados['endereco'],
         $dados['bairro'],
