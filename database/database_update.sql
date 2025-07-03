@@ -238,6 +238,17 @@ VALUES ("Eletrônicos","Smartphones, laptops, tablets, acessórios e muito mais"
 ("Esportes e Lazer","Equipamentos esportivos, roupas de ginástica, brinquedos, jogos e outros"),
 ("Livros e Entretenimento"," Livros, filmes, música, jogos de videogame e outros");
 
+CREATE TABLE Favoritos(
+    id_favorito INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT,
+    id_produto INT,
+    id_vendedor INT,
+    data_favorito TIMESTAMP
+    
+    CONSTRAINT fk_cliente_favoritos FOREIGN KEY (id_cliente) REFERENCES Clientes (id_cliente),
+    CONSTRAINT fk_produto_favoritos FOREIGN KEY (id_produto) REFERENCES Produtos (id_produto),
+    CONSTRAINT fk_vendedor_favoritos FOREIGN KEY (id_vendedor) REFERENCES Vendedores (id_vendedor)
+);
 -- DELIMITER // 
 -- CREATE TRIGGER valida_vendedor
 -- AFTER INSERT ON vendedores

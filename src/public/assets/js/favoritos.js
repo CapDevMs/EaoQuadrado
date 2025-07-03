@@ -1,10 +1,12 @@
+import cardVendFavorito from "./components/card-vendedor-fav";
+
 // java script e componentes
 let limpa_cache = Date.now();
 
 let { default: cardProdFavorito } = await import(
   `./components/card-prod-favoritos.js?v=${limpa_cache}`
 );
-let { default: cardVendFavorito } = await import(
+let { default: cardVendFavorito  } = await import(
   `./components/card-vendedor-fav.js?v=${limpa_cache}`
 );
 // import cardProduto from "./components/card-produto.js";
@@ -48,33 +50,50 @@ function exibirProdutos(produtos) {
 }
 
 renderProdutos();
+async function renderVendedores(){
+  let todosVendedoresFavoritos = [
+    {
+      titulo: "Studio Center",
+      imagem: "./assets/img/loja-favorita.png",
+      link: "./produto",
+    },
+    {
+      titulo: "Studio Center",
+      imagem: "./assets/img/loja-favorita.png",
+      link: "./produto",
+    },
+    {
+      titulo: "Studio Center",
+      imagem: "./assets/img/loja-favorita.png",
+      link: "./produto",
+    },
+    {
+      titulo: "Studio Center",
+      imagem: "./assets/img/loja-favorita.png",
+      link: "./produto",
+    },
+  ];
+  // busca no localstorage
+  let vendedoresFav = JSON.parse(localStorage.getItem("vendedores_favoritos")) || [];
+  // filtra e renderiza apenas os favoritos
+  const vendedoresFavoritados = todosVendedoresFavoritos.filter(vendedor =>
+    vendedoresFav.include(String(vendedor.id_vendedor))
+  );
 
-let VendedoresFav = [
-  {
-    titulo: "Studio Center",
-    imagem: "./assets/img/loja-favorita.png",
-    link: "./produto",
-  },
-  {
-    titulo: "Studio Center",
-    imagem: "./assets/img/loja-favorita.png",
-    link: "./produto",
-  },
-  {
-    titulo: "Studio Center",
-    imagem: "./assets/img/loja-favorita.png",
-    link: "./produto",
-  },
-  {
-    titulo: "Studio Center",
-    imagem: "./assets/img/loja-favorita.png",
-    link: "./produto",
-  },
-];
-await exibirProdutosVendFav();
+  vendedoresFavoritados.forEach(vendedor => {
+    docTagVendedoresFav.innerHTML += cardVendFavorito(vendedor);
+  });
 
-async function exibirProdutosVendFav() {
-  VendedoresFav.forEach((vendedores) => {
-    docTagVendedoresFav.innerHTML += cardVendFavorito(vendedores);
+  // espera o DOM carregar os botões para adicionar eventos
+  setTimeout(()=> {
+    const btnsRemove = document.querySelectorAll(".btn-remove");
+    btnsRemove.forEach(btn =>{
+      const id = btn.dataset.id;
+      vendedoresFav = vendedoresFav.filter(vid => vid !== id);
+      localStorage.setItem("vendedores_favoritos", JSON.stringify(vendedoresFav));
+      window.location.reload();
+    });
   });
 }
+await renderVendedores();
+
