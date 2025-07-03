@@ -1,96 +1,111 @@
-import buttonCategoria from "./components/button-categoria.js";
 import cardProduto from "./components/card-produto.js";
 import filtroComponent from "./components/filtro-categoria.js";
 
-const div = document.querySelector("filtroComponent");
+document.addEventListener("DOMContentLoaded", async () => {
+  const docTag = document.querySelector("cardProduto");
+  async function renderCategorias() {
+    const div = document.querySelector("filtrocomponent");
+    const categorias = await fetch("getCategorias");
+    const filtroInfo = await categorias.json();
+    div.innerHTML += filtroComponent(filtroInfo);
+  }
 
-async function renderCategorias() {
-  const categorias = await fetch("getCategorias");
-  const filtroInfo = await categorias.json();
-  div.innerHTML + filtroComponent(filtroInfo);
-}
+  await renderCategorias();
 
-renderCategorias();
+  const searchForm = document.getElementById("buscaProduto");
 
-const docTagCategoria = document.querySelector("buttonCategoria");
-const categoriasButtons = [
-  {
-    imagem: "assets/img/computer_icon.svg",
-    nome: "Eletrônicos",
-    link: "./categoria",
-  },
-  {
-    imagem: "assets/img/dress_icon.svg",
-    nome: "Moda",
-    link: "./categoria",
-  },
-  {
-    imagem: "assets/img/home_icon.svg",
-    nome: "Casa",
-    link: "./categoria",
-  },
-  {
-    imagem: "assets/img/ball_icon.svg",
-    nome: "Esportes",
-    link: "./categoria",
-  },
-  {
-    imagem: "assets/img/ring_icon.svg",
-    nome: "Acessorios",
-    link: "./categoria",
-  },
-  {
-    imagem: "assets/img/games_icon.svg",
-    nome: "Entretenimento",
-    link: "./categoria",
-  },
-];
+  searchForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-categoriasButtons.forEach((categoria) => {
-  docTagCategoria.innerHTML += buttonCategoria(categoria);
-});
+    let searchInput = document.getElementById("searchProduto").value;
 
-const docTag = document.querySelector("cardProduto");
+    // console.log(`searchProduto?BuscarProduto=${searchInput}`)
 
-async function renderProdutos() {
-  const produtos = await fetch("getProdutos");
-  const info = await produtos.json();
-  exibirProdutos(info);
-}
+    const request = await fetch(`searchProduto?BuscarProduto=${searchInput}`)
 
-function exibirProdutos(produtos) {
-  let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+    const json = await request.text();
+    
+    console.log(json)
 
-  produtos.forEach((produto) => {
-    docTag.innerHTML += cardProduto(produto);
+    // docTag.innerHTML = "";
+    // exibirProdutos(json);
   });
 
-  const likeBtns = document.querySelectorAll(".like");
+  const aplicarFiltro = document.getElementById("filtroPrice");
 
-  likeBtns.forEach((btn) => {
-    const produtoId = btn.dataset.id;
+  aplicarFiltro.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-    if (favoritos.includes(produtoId)) {
-      btn.classList.remove("fa-regular");
-      btn.classList.add("fa-solid");
+    let precoMin = document.getElementById("min").value;
+    let precoMax = document.getElementById("max").value;
+
+    precoMin = precoMin === "" ? 0 : precoMin;
+    precoMax = precoMax === "" ? 0 : precoMax;
+
+    const formData = new FormData();
+
+    formData.append("precoMax", parseFloat(precoMax));
+    formData.append("precoMin", parseFloat(precoMin));
+
+    const request = await fetch("filtroMaxMin", {
+      method: "POST",
+      body: formData,
+    });
+
+    const json = await request.json();
+
+    if (Object.keys(json).length == 0) {
+      docTag.innerHTML = "";
+      const p = document.createElement("p");
+      p.className = "categoriaVazia";
+      p.innerHTML = "Nenhum Produto Encontrado";
+      docTag.append(p);
+    } else {
+      docTag.innerHTML = "";
+      exibirProdutos(json);
     }
+  });
 
-    btn.addEventListener("click", () => {
-      if (btn.classList.contains("fa-solid")) {
-        btn.classList.remove("fa-solid");
-        btn.classList.add("fa-regular");
-        favoritos = favoritos.filter((id) => id !== produtoId);
-      } else {
+  async function renderProdutos() {
+    const produtos = await fetch("getProdutos");
+    const info = await produtos.json();
+    exibirProdutos(info);
+  }
+
+  function exibirProdutos(produtos) {
+    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+    produtos.forEach((produto) => {
+      docTag.innerHTML += cardProduto(produto);
+    });
+
+    const likeBtns = document.querySelectorAll(".like");
+
+    likeBtns.forEach((btn) => {
+      const produtoId = btn.dataset.id;
+
+      if (favoritos.includes(produtoId)) {
         btn.classList.remove("fa-regular");
         btn.classList.add("fa-solid");
-        if (!favoritos.includes(produtoId)) {
-          favoritos.push(produtoId);
-        }
       }
 
-      localStorage.setItem("favoritos", JSON.stringify(favoritos));
-    });
-  });
-}
+      btn.addEventListener("click", () => {
+        if (btn.classList.contains("fa-solid")) {
+          btn.classList.remove("fa-solid");
+          btn.classList.add("fa-regular");
+          favoritos = favoritos.filter((id) => id !== produtoId);
+        } else {
+          btn.classList.remove("fa-regular");
+          btn.classList.add("fa-solid");
+          if (!favoritos.includes(produtoId)) {
+            favoritos.push(produtoId);
+          }
+        }
 
-renderProdutos();
+        localStorage.setItem("favoritos", JSON.stringify(favoritos));
+      });
+    });
+  }
+
+  renderProdutos();
+});

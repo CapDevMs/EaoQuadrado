@@ -25,9 +25,7 @@ $appName = get_app_name();
             <filtroComponent></filtroComponent>
         </div>
         <div class="containerRight col-sm-11 col-md-9 pt-1">
-            <div class="containerCategoria col-sm-12 col-md-11">
-                <buttonCategoria class="buttonCategoria row"></buttonCategoria>
-            </div>
+
             <div class="containerprodutofav col-sm-12 col-md-11">
                     <cardProduto class="cardProduto row "></cardProduto>
             </div>
@@ -35,8 +33,7 @@ $appName = get_app_name();
         
     </div>
 
-    <script type="module" src="<?= get_base_url(); ?>assets/js/categoria.js?<?= time(); ?>" defer></script>
-    <script type="module" src="<?= get_base_url(); ?>assets/js/filtroCategoria.js"></script>
+    <script type="module" src="<?= get_base_url(); ?>assets/js/categoria.js" defer></script>
     <?php get_footer() ?>
 </body>
 
