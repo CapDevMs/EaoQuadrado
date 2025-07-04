@@ -3,27 +3,27 @@ const filtroComponent = (categorias) => {
             <div class="filtroCategoria col-sm-12">
                 <h2 class="col-sm-12 mb-1">Marcas</h2>
                 <form id="buscaProduto">
-                    <input class="searchCategoria col-sm-12 mb-1" type="search" name="buscarProduto" id="searchProduto" placeholder="Buscar Produto">
+                    <input class="searchCategoria col-sm-12 mb-1" type="search" name="BuscarProduto" id="searchProduto" placeholder="Buscar Produto">
                 </form>
                 <h2 class="price mb-1">Preço</h2>
                 <form class="priceCategoria col-sm-12 row" id="filtroPrice">
                     <div class="mediaCategoria col-sm-12 col-lg-6 mb-1">
                         <label for="min">Minimo</label>
-                        <input class="numberInput" type="text" id="min">
+                        <input class="numberInput" type="number" step="0.01" id="min">
                     </div>
                     <div class="mediaCategoria col-sm-12 col-lg-6 mb-1">
                         <label for="max">Maximo</label>
-                        <input class="numberInput" type="text" id="max">
+                        <input class="numberInput" type="number" step="0.01" id="max">
                     </div> 
                     <button class="buttonAplicar" type="submit">Aplicar</button>
                 </form>
-                    <h2 class="categoriasFiltro col-sm-12 mb-1">Categorias</h2>
+                    <h2 class="price col-sm-12 mb-1">Categorias</h2>
                     <div class="col-sm-12 row">`
 
     
     let array = []
     categorias.forEach(categoria => {
-        array.push(`<button class="categoriasFiltro"> ${categoria['nome']} </button>`)
+        array.push(`<button data-id="${categoria['id_categoria']}" class="categoriasFiltro"> ${categoria['nome']} </button>`)
     })
     
     return filtro + array.join("") + "</div>";

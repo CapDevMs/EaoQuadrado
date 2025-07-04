@@ -16,6 +16,14 @@ class Categoria extends Model
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
+    public function getByCategoria(int $categoria)
+    {
+        $sql = "SELECT * FROM produtos WHERE id_categoria = :categoria";
+        $stmt = $this->query($sql, [':categoria' => $categoria]);
+
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+    }
+
     public function getByPrice(float $precoMin, float $precoMax)
     {
         if ($precoMax > 0 && $precoMin < $precoMax) {
@@ -33,14 +41,16 @@ class Categoria extends Model
 
     public function searchByName(string $pesquisa)
     {
-        if ($pesquisa == "") {
-            exit;
-        }
-
         $searchTerm = '%' . $pesquisa . '%';
 
-        $sql = $this->findBy('nome', $searchTerm, 'like');
+        // $sql = $this->findBy('nome', $searchTerm, 'like');
+        $sql = "SELECT * FROM produtos WHERE nome LIKE :pesquisa";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue(':pesquisa', $searchTerm);
+        $stmt->execute();
 
-        return $sql;
+        $produtos = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+        return $produtos;
     }
 }

@@ -19,10 +19,18 @@ class CategoriaController extends Controller
         View::render('categoria');
     }
 
-    public function categorias()
+    public function sendCategorias()
     {
         $categorias = $this->model->getCategorias();
         echo json_encode($categorias);
+        exit;
+    }
+
+    public function searchProdutoByCategoria()
+    {
+        $categoria_id  = $_POST['categoria_id'];
+        $produtos = $this->model->getByCategoria($categoria_id);
+        echo json_encode($produtos);
         exit;
     }
 
@@ -38,8 +46,6 @@ class CategoriaController extends Controller
     public function searchProduto()
     {
         $produtos = $this->model->searchByName($_GET['BuscarProduto']);
-        echo $produtos;
-        exit;
         echo json_encode($produtos);
         exit;
     }

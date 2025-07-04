@@ -3,6 +3,7 @@ import filtroComponent from "./components/filtro-categoria.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const docTag = document.querySelector("cardProduto");
+
   async function renderCategorias() {
     const div = document.querySelector("filtrocomponent");
     const categorias = await fetch("getCategorias");
@@ -11,6 +12,26 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   await renderCategorias();
+  
+  document.querySelectorAll(".categoriasFiltro").forEach((btnCategoria) => {
+    btnCategoria.addEventListener("click",async () => {renderProdutoByCategoria(btnCategoria.dataset.id)});
+  })
+
+  async function renderProdutoByCategoria(id) {
+    const formData = new FormData();
+
+    formData.append("categoria_id", id);
+
+    const request = await fetch("searchProdutoByCategoria", {
+      method:"post",
+      body: formData
+    });
+
+    const json = await request.json();
+    console.log(json)
+    docTag.innerHTML = ""
+    exibirProdutos(json)
+  }
 
   const searchForm = document.getElementById("buscaProduto");
 
@@ -19,16 +40,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let searchInput = document.getElementById("searchProduto").value;
 
-    // console.log(`searchProduto?BuscarProduto=${searchInput}`)
+    const request = await fetch(
+      `searchProduto?BuscarProduto=${encodeURIComponent(searchInput)}`
+    );
 
-    const request = await fetch(`searchProduto?BuscarProduto=${searchInput}`)
+    const json = await request.json();
 
-    const json = await request.text();
-    
-    console.log(json)
-
-    // docTag.innerHTML = "";
-    // exibirProdutos(json);
+    if (Object.keys(json).length == 0) {
+      docTag.innerHTML = "";
+      const p = document.createElement("p");
+      p.className = "categoriaVazia";
+      p.innerHTML = "Nenhum Produto Encontrado";
+      docTag.append(p);
+    } else {
+      docTag.innerHTML = "";
+      exibirProdutos(json);
+    }
   });
 
   const aplicarFiltro = document.getElementById("filtroPrice");
