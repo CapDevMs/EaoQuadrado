@@ -23,10 +23,12 @@ $titulo = 'Cadastro de Cliente';
         <div class="register_client">
             <h2>Cadastro de Cliente</h2>
             <div class="form-container">
-                <img src="src\public\assets\img\foto_cliente.png" alt="foto do cliente" class="client-image">
-                
-                <form class="form" id="vendedor_form" action="#">
- 
+                <!-- <img src="src/public/assets/img/foto_cliente.png" class="client-image" alt="foto cliente"> -->
+                <form class="form" id="vendedor_form" action="<?= get_base_url(); ?>cliente/cadastroCliente" method="post" enctype="multipart/form-data">
+                    <div class="img-profile">
+                        <input type="file" name="imgProfile" >
+                    </div>
+
                     <div class="nome-group">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" placeholder="John" required>
@@ -86,10 +88,9 @@ $titulo = 'Cadastro de Cliente';
 
                     <div class="confirm-group">
                         <label for="confirmar-senha">Confirmar Senha</label>
-                        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="*********" required>
+                        <input type="password" id="confirmar-senha" name="confirmarSenha" placeholder="*********" required>
                     </div>
         
-       
                     <div class="terms-container">
                         <div class="checkbox-container">
                             <input type="checkbox" id="termos" name="termos" required>
@@ -105,7 +106,7 @@ $titulo = 'Cadastro de Cliente';
 
                     <div class="buttons-container">
                         <button type="reset" class="button-cancel" onclick="voltarPagina()">Cancelar</button>
-                        <button type="submit" class="button-confirm">Registrar</button>
+                        <button type="submit" class="button-confirm" name="registrar">Registrar</button>
                     </div>
                 </form>
             </div>
