@@ -1,4 +1,4 @@
-let arrayLocalStorage = JSON.parse(localStorage.getItem("listaProdutosCarrinho")) || [{"id": "1","quantidade": 1},{"id": "2","quantidade": 2}];
+let arrayLocalStorage = JSON.parse(localStorage.getItem("listaProdutosCarrinho")) || [];
 
 
 function LimparCarrinho() {
@@ -9,6 +9,9 @@ function LimparCarrinho() {
 function ExibirProdutos() {
     if (arrayLocalStorage.length == 0) {
         console.log('Carrinho vazio');
+        document.querySelector('painelProdutos').innerHTML += `
+        <h2 style="margin:auto;max-width:max-content;color:var(--cor-botao-primario);">Carrinho Vazio</h2>
+                    `;
     } else {
 
         arrayLocalStorage.forEach(product => {

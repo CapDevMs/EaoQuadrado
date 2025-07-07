@@ -145,6 +145,7 @@ $titulo = 'Homepage';
     <?php get_footer() ?>
 </body>
 <script src="<?= get_base_url(); ?>assets/js/script.js"></script>
+<script src="src/public/assets/js/script.js"></script>
 <script>
     const base_url = '<?= get_base_url(); ?>';
     const categorias = document.querySelectorAll('.categoria');
