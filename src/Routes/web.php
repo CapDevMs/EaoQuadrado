@@ -54,11 +54,9 @@ $router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::cl
 
 // cadastros
 
-$router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente');
-$router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
-$router->get('/categoria', categoriaController::class, 'categoria');
-$router->get('/produto', ProdutoController::class, 'produto');
-
+$router->get('/cadastroCliente', CadastroClienteController::class, 'index');
+$router->post('/cliente/cadastroCliente', CadastroClienteController::class, 'cadastrarCliente');
+$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor');
 
 // área cliente
 
@@ -88,6 +86,10 @@ $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
 $router->get('/login', AuthController::class, 'index');
 $router->get('/getProdutos', HomeController::class, 'produtos');
+$router->get('/getCategorias', CategoriaController::class, 'sendCategorias');
+$router->post('/filtroMaxMin', CategoriaController::class, 'filtroMaxMin');
+$router->get('/searchProduto', CategoriaController::class, 'searchProduto');
+$router->post('/searchProdutoByCategoria', CategoriaController::class, 'searchProdutoByCategoria');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/logout', AuthController::class, 'logout');
 $router->post('/esqueciSenha', AuthController::class, 'recuperarSenha');
