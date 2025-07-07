@@ -23,7 +23,7 @@ use App\Controllers\Cliente\PerfilClienteController;
 use App\Controllers\Vendedor\CadastroProdutoVendedorController;
 use App\Controllers\Vendedor\HistoricoVendasController;
 use App\Controllers\Vendedor\MeuPerfilVendedorController;
-use App\Controllers\Vendedor\PaginaDoVendedorController ;
+use App\Controllers\Vendedor\PaginaDoVendedorController;
 use App\Controllers\Vendedor\MinhaLojaController;
 use App\Controllers\Vendedor\GerenciamentoDeEstoqueController;
 use App\Controllers\Vendedor\TrocasDevolucoesController;
