@@ -11,14 +11,19 @@ function ExibirProdutos() {
         console.log('Carrinho vazio');
         document.querySelector('painelProdutos').innerHTML += `
         <h2 style="margin:auto;max-width:max-content;color:var(--cor-botao-primario);">Carrinho Vazio</h2>
-                    `;
+        `;
+        arrayLocalStorage = [{ id: 1, quantidade: 1 }, { id: 2, quantidade: 2 },{id:3,quantidade:3},{id:4,quantidade:4}];
+        let novoCarrinhoString = JSON.stringify(arrayLocalStorage);
+        localStorage.setItem("listaProdutosCarrinho", novoCarrinhoString);
+    
     } else {
+        document.querySelector('painelProdutos').innerHTML = ``
 
         arrayLocalStorage.forEach(product => {
             
             let id = `${product.id}`
             let imagem = `asus_notebook.png`
-            let nome = `Nome dummy`;
+            let nome = `Asus notebok ${product.id}`;
             let preco = `R$ 500,00`;
             let quantidade = `${product.quantidade}`
 
@@ -110,8 +115,24 @@ let classeComumContadores = document.querySelectorAll('.counter')
 function removeProdutoCarrinho(removeProduto) {
 
     const produtoRemovido = document.getElementById(removeProduto);
-    const botaoRemover = produtoRemovido.querySelector('btRemover')
+    let cont = 0
+
+        arrayLocalStorage.forEach(product => {
+            console.log(product)
+            console.log(removeProduto)
+          if (product.id == removeProduto){
+              arrayLocalStorage.splice(cont,1)
+              console.log('Item deletado');
+          } else {
+            cont+= 1;
+          }
+        });
+        let novoCarrinhoString = JSON.stringify(arrayLocalStorage);
+        localStorage.setItem("listaProdutosCarrinho", novoCarrinhoString);
+
     produtoRemovido.closest('produto').remove();
+    console.log('localStorage atualizado:', localStorage.getItem("listaProdutosCarrinho"));
+    ExibirProdutos()
     updateTotal();
 
 };
