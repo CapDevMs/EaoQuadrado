@@ -108,7 +108,7 @@ $titulo = 'Homepage';
             <h1>Categorias</h1>
         </div>
 
-        <buttonCategoria class="buttonCategoria col-sm-10 row"></buttonCategoria>
+        <buttonCategoria class=""></buttonCategoria>
 
 
         <div class="frame_container_categoria">
