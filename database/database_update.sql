@@ -252,3 +252,14 @@ VALUES ("Eletrônicos","Smartphones, laptops, tablets, acessórios e muito mais"
 -- END;
 -- //
 -- DELIMITER ;
+
+
+ALTER TABLE Clientes ADD COLUMN imagem VARCHAR(255);
+
+ALTER TABLE Clientes DROP FOREIGN KEY fk_sexo; 
+
+ALTER TABLE Clientes DROP COLUMN id_sexo;  
+
+ALTER TABLE Enderecos DROP FOREIGN KEY fk_cidade; 
+
+ALTER TABLE Enderecos DROP COLUMN id_cidade;  
