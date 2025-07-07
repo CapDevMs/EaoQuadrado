@@ -1,11 +1,11 @@
-const buttonCategoria = ({ imagem, nome, link }) => {
+const buttonCategoria = (categoria) => {
     return `
-            <a href="${link}" class="button col-sm-4 col-md-4 col-lg-2" type="button">
+            <button data-id=${categoria['id_categoria']} class="button categoria col-sm-4 col-md-4 col-lg-2">
                 <div class="container-imagem col-sm-12">
-                    <img class="img-CategoriaButton col-sm-12 pl-1" src="${imagem}" alt="Ícone de ${nome}">
+                    <img class="img-CategoriaButton col-sm-12 pl-1" src="${categoria['imagem_categoria']}" alt="Ícone de ${categoria['nome']}">
                 </div>
-                    <p class="nome-categoria">${nome}</p>
-            </a>
+                    <p class="nome-categoria">${categoria['nome']}</p>
+            </button>
     `;
 };
 

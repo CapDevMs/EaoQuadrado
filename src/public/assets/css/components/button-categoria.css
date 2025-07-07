@@ -1,5 +1,11 @@
+.buttonCategoria {
+  display: flex;
+  justify-self: center;
+}
 
 .button {
+  align-items: center;
+  justify-content: center;
   background-color: #f8f8f8;
   border-radius: 10px;
   text-decoration: none;
@@ -10,8 +16,8 @@
   justify-content: center;
   padding: 2px;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
-
 
 .img-CategoriaButton {
   height: 60px;
@@ -40,9 +46,10 @@
     height: 60px;
     margin-bottom: 0%;
 }
-  .button {
+
+.button {
     padding: 1px;
-  }
+}
   /* .nome-categoria {
   display: none;
   font-size: 9px;
