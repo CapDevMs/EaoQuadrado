@@ -55,7 +55,7 @@ class Session
     public function flash(string $key, mixed $value): void
     {
         $_SESSION['__flash'][$key] = $value;
-        $_SESSION['__flash_lifetime'][$key] = 2;
+        $_SESSION['__flash_lifetime'][$key] = 1;
     }
 
     public function getFlash(string $key, mixed $default = null): mixed

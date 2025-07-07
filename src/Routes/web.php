@@ -56,7 +56,8 @@ $router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::cl
 
 $router->get('/cadastroCliente', CadastroClienteController::class, 'index');
 $router->post('/cliente/cadastroCliente', CadastroClienteController::class, 'cadastrarCliente');
-$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor');
+$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor', 'cadastroVendedor');
+$router->post('/cadastroVendedor', CadastroVendedorController::class, 'salvarCadastroVendedor', 'salvarCadastroVendedor');
 
 // área cliente
 
