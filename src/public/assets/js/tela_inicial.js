@@ -5,6 +5,7 @@ const docTag = document.querySelector("card-produto");
 async function renderProdutos() {
   const produtos = await fetch("getProdutos");
   const info = await produtos.json();
+  console.log(info)
   exibirProdutos(info);
 }
 
