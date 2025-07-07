@@ -22,6 +22,9 @@ class Application {
                 require_once $file;
             }
         });
+
+        global $session;
+        $session = new Session();
         
         // Carrega o arquivo .env
         if (file_exists(BASE_PROJECT . '.env')) {

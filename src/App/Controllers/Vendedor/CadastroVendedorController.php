@@ -12,4 +12,14 @@ class CadastroVendedorController extends Controller
     {
         View::render('cadastros/cadastro_vendedor');
     }
+
+    public function salvarCadastroVendedor()
+    {
+        
+        $successMessage = "Cadastro de vendedor realizado com sucesso!";
+        
+        
+        session('success', $successMessage);
+        return redirect('/cadastro-vendedor');
+    }
 }

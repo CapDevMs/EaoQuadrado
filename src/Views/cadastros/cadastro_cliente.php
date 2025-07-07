@@ -13,20 +13,22 @@ $titulo = 'Cadastro de Cliente';
 </head>
 <body>
     <header class="header">
-    <?php get_header() ?>
+        <?php get_header() ?>
     </header>
 
-<main>
+    <main>
+        <div class="roadmap">
+            Home / Cadastro de Cliente
+        </div>
 
 
-<div class="roadmap">Home / Cadastro de Cliente</div>
         <div class="register_client">
             <h2>Cadastro de Cliente</h2>
             <div class="form-container">
                 <img src="src\public\assets\img\foto_cliente.png" alt="foto do cliente" class="client-image">
                 
                 <form class="form" id="vendedor_form" action="#">
- 
+
                     <div class="nome-group">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" placeholder="John" required>
@@ -48,7 +50,7 @@ $titulo = 'Cadastro de Cliente';
                         <label for="cpf">CPF</label>
                         <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
                     </div>
-  
+
                     <div class="email-group">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
@@ -89,7 +91,7 @@ $titulo = 'Cadastro de Cliente';
                         <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="*********" required>
                     </div>
         
-       
+    
                     <div class="terms-container">
                         <div class="checkbox-container">
                             <input type="checkbox" id="termos" name="termos" required>
@@ -110,9 +112,9 @@ $titulo = 'Cadastro de Cliente';
                 </form>
             </div>
         </div>
-        
+    </main>
     <footer>
-    <?php get_footer() ?>
+        <?php get_footer() ?>
     </footer>
 </body>
 <script src="assets/js/script.js"></script>

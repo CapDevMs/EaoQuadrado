@@ -1,5 +1,7 @@
 <?php
 
+use Core\Session;
+
 function get_base_url() {
     $app_url = $_ENV['APP_URL'];
     if(substr($app_url, -1) !== '/'){
@@ -63,4 +65,21 @@ function get_sidebar_admin($page) {
 function route($location)
 {
     return header("location: {$location}");
+}
+
+function session(): \Core\Session
+{
+    global $session;
+    return $session;
+}
+
+function redirect(): \Core\Redirector
+{
+    return new \Core\Redirector();
+}
+
+function router(): \Core\Router
+{
+    global $router;
+    return $router;
 }

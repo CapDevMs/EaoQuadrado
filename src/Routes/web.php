@@ -37,6 +37,7 @@ use App\Controllers\AuthController;
 
 use Core\Router;
 
+global $router;
 $router = new Router();
 
 // área adm
@@ -53,8 +54,9 @@ $router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::cl
 
 // cadastros
 
-$router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente');
-$router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor');
+$router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente', 'cadastroCliente');
+$router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor', 'cadastroVendedor');
+$router->post('/cadastro-vendedor', CadastroVendedorController::class, 'salvarCadastroVendedor');
 $router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/produto', ProdutoController::class, 'produto');
 

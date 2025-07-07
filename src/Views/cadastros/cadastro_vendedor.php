@@ -22,6 +22,8 @@ $titulo = 'Cadastro de Vendedor';
     <div class="roadmap"><?php
         breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/pages/contato.php' => 'Contato'));
         ?></div>
+
+        
         <form action="#">
             <div class="register_client" id="pessoal">
                 <h2>Cadastro de Vendedor</h2>
