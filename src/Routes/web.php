@@ -56,7 +56,7 @@ $router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::cl
 
 $router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroCliente', 'cadastroCliente');
 $router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor', 'cadastroVendedor');
-$router->post('/cadastro-vendedor', CadastroVendedorController::class, 'salvarCadastroVendedor');
+$router->post('/cadastro-vendedor', CadastroVendedorController::class, 'salvarCadastroVendedor', 'salvarCadastroVendedor');
 $router->get('/categoria', categoriaController::class, 'categoria');
 $router->get('/produto/{id}', ProdutoController::class, 'produto', 'produto-detalhes');
 
