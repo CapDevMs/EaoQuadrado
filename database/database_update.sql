@@ -9,6 +9,11 @@ CREATE TABLE Usuarios (
     senha VARCHAR(255) NOT NULL
 );
 
+create table Estados(
+    id_estado int auto_increment primary key,
+    estado varchar(100)
+);
+
 create table Cidades(
     id_cidade int auto_increment primary key,
     id_estado int,
@@ -92,7 +97,7 @@ create table Lojas(
 CREATE TABLE Categorias (
     id_categoria INT PRIMARY KEY auto_increment,
     nome VARCHAR (255),
-    imagem_categoria VARCHAR (255)
+    descricao VARCHAR (100)
 );
 
 CREATE TABLE Produtos (
@@ -102,6 +107,7 @@ CREATE TABLE Produtos (
     marca VARCHAR(100),
     preco DECIMAL(10, 2) NOT NULL,
     imagens JSON,  
+    cores VARCHAR(255),  
     quantidade INT NOT NULL,
     id_loja INT,  
     id_categoria INT,  
@@ -215,15 +221,22 @@ CREATE TABLE Mensagens (
     data_envio DATETIME
 );
 
-ALTER TABLE produtos ADD COLUMN modelo VARCHAR(100);
+CREATE TABLE Edit_Site(
+    id_edit_site INT AUTO_INCREMENT PRIMARY KEY,
+    id_elemento_site VARCHAR(100) NOT NULL,
+    texto_elemento varchar(255),
+    imagem_elemento varchar(255)
+);
 
-INSERT INTO Categorias (nome, imagem_categoria)
-VALUES ("Eletrônicos","assets/img/computer_icon.svg"),
-("Moda","assets/img/dress_icon.svg"),
-("Casa","assets/img/home_icon.svg"),
-("Sports","assets/img/ball_icon.svg"),
-("Acessorios","assets/img/ring_icon.svg"),
-("Entretenimento","assets/img/games_icon.svg");
+ALTER TABLE produtos ADD COLUMN modelo VARCHAR(100); 
+
+INSERT INTO Categorias (nome, descricao)
+VALUES ("Eletrônicos","Smartphones, laptops, tablets, acessórios e muito mais"),
+("Moda e acessórios","Roupas, calçados, bolsas, joias e outros."),
+("Casa e jardim","Móveis, decoração, utensílios domésticos, ferramentas de jardinagem e outros"),
+("Saúde e Beleza","Produtos de cuidados pessoais, cosméticos, suplementos e mais."),
+("Esportes e Lazer","Equipamentos esportivos, roupas de ginástica, brinquedos, jogos e outros"),
+("Livros e Entretenimento"," Livros, filmes, música, jogos de videogame e outros");
 
 -- DELIMITER // 
 -- CREATE TRIGGER valida_vendedor
@@ -239,14 +252,3 @@ VALUES ("Eletrônicos","assets/img/computer_icon.svg"),
 -- END;
 -- //
 -- DELIMITER ;
-
-
-ALTER TABLE Clientes ADD COLUMN imagem VARCHAR(255);
-
-ALTER TABLE Clientes DROP FOREIGN KEY fk_sexo; 
-
-ALTER TABLE Clientes DROP COLUMN id_sexo;  
-
-ALTER TABLE Enderecos DROP FOREIGN KEY fk_cidade; 
-
-ALTER TABLE Enderecos DROP COLUMN id_cidade;  
