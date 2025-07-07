@@ -1,5 +1,5 @@
 // componente card vendedor favorito
-const cardVendFavorito = ({id_vendedor, titulo, imagem, link }) => {
+const cardVendFavorito = ({id_vendedor, nomeLoja, imagem, link }) => {
     return `
     <div class="card-produto-vend col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card-body pb-1">
@@ -15,7 +15,7 @@ const cardVendFavorito = ({id_vendedor, titulo, imagem, link }) => {
             <div class="row">
                     <a href="${link}" class="btn btn-visitar-loja">Visitar Loja</a>
                     <div class="container-nome-produto">
-                        <h3 class="nome-loja">${titulo}</h3>
+                        <h3 class="nome-loja">${nomeLoja}</h3>
                     </div>
                     <div class ="avaliacao-vendedor">
                         <p class="text">
@@ -27,7 +27,7 @@ const cardVendFavorito = ({id_vendedor, titulo, imagem, link }) => {
                             <i class="fa fa-star icone-star"></i>
                         </p>
                     </div>
-                    <button class= "btn btn-remove col-sm-12 col-md-5" da-id="${id_vendedor}">
+                    <button class= "btn btn-remove col-sm-12 col-md-5" data-id="${id_vendedor}">
                         Remover dos Favoritos
                     </button>                    
             </div>

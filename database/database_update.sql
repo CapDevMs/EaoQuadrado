@@ -243,12 +243,19 @@ CREATE TABLE Favoritos(
     id_cliente INT,
     id_produto INT,
     id_vendedor INT,
-    data_favorito TIMESTAMP
+    data_favorito TIMESTAMP,
     
     CONSTRAINT fk_cliente_favoritos FOREIGN KEY (id_cliente) REFERENCES Clientes (id_cliente),
     CONSTRAINT fk_produto_favoritos FOREIGN KEY (id_produto) REFERENCES Produtos (id_produto),
     CONSTRAINT fk_vendedor_favoritos FOREIGN KEY (id_vendedor) REFERENCES Vendedores (id_vendedor)
 );
+
+ALTER TABLE vendedores
+ADD COLUMN link VARCHAR (255),
+ADD COLUMN nome VARCHAR (100),  
+ADD COLUMN imagem VARCHAR (255);    
+
+ALTER TABLE vendedores CHANGE COLUMN nome nomeLoja VARCHAR (100);
 -- DELIMITER // 
 -- CREATE TRIGGER valida_vendedor
 -- AFTER INSERT ON vendedores

@@ -22,78 +22,50 @@ const docTagVendedoresFav = document.querySelector(".card-vendedor-favorito");
 
 const docTag = document.querySelector("card-prod-favorito");
 
-async function renderProdutos() {
-  const produtos = await fetch("getProdutos");
-  const info = await produtos.json();
-  exibirProdutos(info);
-}
+async function renderVendedores() {
+  try {
+    const response = await fetch("/getVendedoresFavoritos");
+    const vendedoresFavoritados = await response.json();
 
-function exibirProdutos(produtos) {
-  let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+    vendedoresFavoritados.forEach(vendedor => {
+      docTagVendedoresFav.innerHTML += cardVendFavorito(vendedor);
+    });
 
-  produtos.forEach((produto) => {
-    if (favoritos.includes(String(produto.id_produto))) {
-      docTag.innerHTML += cardProdFavorito(produto);
-    }
+    setTimeout(() => {
+      const btnsRemove = document.querySelectorAll(".btn-remove-vendedor");
+      btnsRemove.forEach(btn => {
+        btn.addEventListener("click", async () => {
+          const id = btn.dataset.id;
 
-    const btnsRemove = document.querySelectorAll("#remove");
+          await fetch(`/removeVendedorFavorito/${id}`, {
+            method: "DELETE"
+          });
 
-    btnsRemove.forEach((btnRemove) => {
-      btnRemove.addEventListener("click", () => {
-        const id = btnRemove.dataset.id;
-        favoritos = favoritos.filter((idproduto) => idproduto !== id);
-        localStorage.setItem("favoritos", JSON.stringify(favoritos));
-        window.location.reload();
+          window.location.reload();
+        });
       });
-    });
-  });
+    }, 300);
+
+  } catch (error) {
+    console.error("Erro ao carregar vendedores favoritos", error);
+  }
 }
+// favoritar vendedor
+const likeBtn = document.querySelector(".fa-heart-vendedor");
+likeBtn.addEventListener("click", async () => {
+  const id = likeBtn.dataset.id;
 
-renderProdutos();
-async function renderVendedores(){
-  let todosVendedoresFavoritos = [
-    {
-      titulo: "Studio Center",
-      imagem: "./assets/img/loja-favorita.png",
-      link: "./produto",
-    },
-    {
-      titulo: "Studio Center",
-      imagem: "./assets/img/loja-favorita.png",
-      link: "./produto",
-    },
-    {
-      titulo: "Studio Center",
-      imagem: "./assets/img/loja-favorita.png",
-      link: "./produto",
-    },
-    {
-      titulo: "Studio Center",
-      imagem: "./assets/img/loja-favorita.png",
-      link: "./produto",
-    },
-  ];
-  // busca no localstorage
-  let vendedoresFav = JSON.parse(localStorage.getItem("vendedores_favoritos")) || [];
-  // filtra e renderiza apenas os favoritos
-  const vendedoresFavoritados = todosVendedoresFavoritos.filter(vendedor =>
-    vendedoresFav.include(String(vendedor.id_vendedor))
-  );
-
-  vendedoresFavoritados.forEach(vendedor => {
-    docTagVendedoresFav.innerHTML += cardVendFavorito(vendedor);
+  await fetch("/favoritarVendedor", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ id_vendedor: id })
   });
 
-  // espera o DOM carregar os botões para adicionar eventos
-  setTimeout(()=> {
-    const btnsRemove = document.querySelectorAll(".btn-remove");
-    btnsRemove.forEach(btn =>{
-      const id = btn.dataset.id;
-      vendedoresFav = vendedoresFav.filter(vid => vid !== id);
-      localStorage.setItem("vendedores_favoritos", JSON.stringify(vendedoresFav));
-      window.location.reload();
-    });
-  });
-}
+  alert("Favorito adicionado!");
+});
+
+
+
+// Chama ambas as renderizações
+await renderProdutos();
 await renderVendedores();
-

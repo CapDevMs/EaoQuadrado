@@ -61,7 +61,9 @@ $router->get('/produto', ProdutoController::class, 'produto');
 
 // área cliente
 
-$router->get('/favoritos', FavoritosController::class, 'favoritos');
+$router->get('/favoritos', FavoritosController::class, 'index');
+// teste com integração de favoritos ao banco de dados
+$router->get('/getVendedoresFavoritos', \App\Controllers\Cliente\FavoritosController::class, 'getVendedoresFavoritos');
 $router->get('/carrinho', CarrinhoController::class, 'carrinho');
 $router->get('/historicoPedidos', HistoricoDePedidosController::class, 'historicoDePedidos');
 $router->get('/cliente', perfilClienteController::class, 'cliente');
