@@ -1,4 +1,4 @@
-const cardProduto = ({ id_produto, nome, imagens, preco, link = './carrinho'}) => {
+const cardProduto = ({ id, titulo, imagem, preco, link }) => {
     return `
     <div class="card-produto col-sm-6 col-lg-4 col-xl-3">
         <div class="card-body pb-1">
@@ -9,7 +9,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './carrinho'}) =
                     </a>
                 </div>
                 <div class="col-sm-1 pt-2">
-                    <i class="fa-regular fa-heart pointer pb-1 like" id="like" data-id="${id_produto}"></i>
+                    <i class="fa-regular fa-heart pointer pb-1 like" data-id="like_prod_${id}"></i>
                     <a class="shopping-link" href="${link}">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
@@ -20,7 +20,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './carrinho'}) =
             <div class="row">
                 <div class="col-sm-12">
                     <div class="container-nome-produto">
-                        <h3 class="nome-produto">${nome}</h3>
+                        <h3 class="nome-produto">${titulo}</h3>
                     </div>
                     <div class="container-preco-produto">
                         <h3 class="preco-produto">R$ ${preco}</h3>

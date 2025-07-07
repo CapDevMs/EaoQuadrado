@@ -16,8 +16,10 @@ $appName = get_app_name();
 
 <body>
     <?php get_header() ?>
-    <div class="container-img">
-                <img src="<?= get_base_url(); ?>assets/img/produtos_categorias.jpg">
+    <div class="container-video">
+                <video autoplay muted loop>
+                    <source src="<?= get_base_url(); ?>assets/videos/video-categoria_celular.mp4" type="video/mp4">
+                </video>
     </div>
 
     <div class="container-main col-sm-12 ">
@@ -25,7 +27,9 @@ $appName = get_app_name();
             <filtroComponent></filtroComponent>
         </div>
         <div class="containerRight col-sm-11 col-md-9 pt-1">
-
+            <div class="containerCategoria col-sm-12 col-md-11">
+                <buttonCategoria class="buttonCategoria row"></buttonCategoria>
+            </div>
             <div class="containerprodutofav col-sm-12 col-md-11">
                     <cardProduto class="cardProduto row "></cardProduto>
             </div>
@@ -33,7 +37,8 @@ $appName = get_app_name();
         
     </div>
 
-    <script type="module" src="<?= get_base_url(); ?>assets/js/categoria.js" defer></script>
+    <script type="module" src="<?= get_base_url(); ?>assets/js/categoria.js?<?= time(); ?>" defer></script>
+    <script type="module" src="<?= get_base_url(); ?>assets/js/filtroCategoria.js"></script>
     <?php get_footer() ?>
 </body>
 
