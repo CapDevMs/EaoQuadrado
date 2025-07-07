@@ -32,7 +32,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './carrinho'}) =
                     <a href="${link}" class="btn btn-comprar">Comprar</a>
                 </div>
                 <div class="col-sm-6">
-                    <a href="./carrinho" class="btn btn-carrinho">Carrinho</a>
+                    <a class="btn btn-carrinho" onclick="adicionarAoCarrinho(${id})">Carrinho</a>
                 </div>
             </div>
         </div>
