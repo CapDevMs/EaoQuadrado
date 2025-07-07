@@ -13,7 +13,7 @@ class AuthController extends Controller
             
             $this->logout();
 
-            return route('/');
+            return route('homepage');
         }
 
         View::render('login');
@@ -39,7 +39,7 @@ class AuthController extends Controller
         if(!empty($user->getData()))
         {
             $_SESSION['user'] = $user->getData()[0];
-            return route('/produto');
+            return route('produto');
         }
 
         $error = 'Usuário e/ou senha inválida';
@@ -53,7 +53,7 @@ class AuthController extends Controller
             session_destroy();
         }
 
-        return route('/login');
+        return route('login');
     }
 
     public function esqueciSenha()

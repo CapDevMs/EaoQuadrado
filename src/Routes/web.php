@@ -58,7 +58,7 @@ $router->get('/cadastroCliente', CadastroClienteController::class, 'cadastroClie
 $router->get('/cadastro-vendedor', CadastroVendedorController::class, 'cadastroVendedor', 'cadastroVendedor');
 $router->post('/cadastro-vendedor', CadastroVendedorController::class, 'salvarCadastroVendedor');
 $router->get('/categoria', categoriaController::class, 'categoria');
-$router->get('/produto', ProdutoController::class, 'produto');
+$router->get('/produto/{id}', ProdutoController::class, 'produto', 'produto-detalhes');
 
 
 // área cliente
@@ -84,10 +84,10 @@ $router->get('/vendedor/troca_devolucao_cancelamento', MeuPerfilVendedorControll
 
 // área comum
 
-$router->get('/categoria', CategoriaController::class, 'categoria');
+$router->get('/categoria/{id}', CategoriaController::class, 'categoria', 'categoria');
 $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
-$router->get('/login', AuthController::class, 'index');
+$router->get('/login', AuthController::class, 'index', 'login');
 $router->get('/getProdutos', HomeController::class, 'produtos');
 $router->post('/login', AuthController::class, 'login');
 $router->get('/logout', AuthController::class, 'logout');
@@ -96,7 +96,7 @@ $router->get('/nossaPolitica', HomeController::class, 'nossaPolitica');
 $router->get('/faq', HomeController::class, 'faq');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/termosDeUso', HomeController::class, 'termosDeUso');
-$router->get('/produto', ProdutoController::class, 'produto');
+$router->get('/produto', ProdutoController::class, 'produto', 'produto');
 
 
 

@@ -1,6 +1,8 @@
 <?php
 
 use Core\Session;
+use Core\Redirector;
+use Core\Router;
 
 function get_base_url() {
     $app_url = $_ENV['APP_URL'];
@@ -62,23 +64,36 @@ function get_sidebar_admin($page) {
     include_once(__DIR__ . '/../components/sidebar_adm.php');
 }
 
-function route($location)
+function route(string $name, array $params = []): ?string
 {
-    return header("location: {$location}");
+    $router = router(); // função helper que retorna o Router singleton
+
+    $url = $router->route($name);
+
+    if (!$url) {
+        return null;
+    }
+
+    // Substitui os parâmetros no estilo {id}, {slug}
+    foreach ($params as $key => $value) {
+        $url = str_replace("{" . $key . "}", $value, $url);
+    }
+
+    return $url;
 }
 
-function session(): \Core\Session
+function session(): Session
 {
     global $session;
     return $session;
 }
 
-function redirect(): \Core\Redirector
+function redirect(): Redirector
 {
-    return new \Core\Redirector();
+    return new Redirector();
 }
 
-function router(): \Core\Router
+function router(): Router
 {
     global $router;
     return $router;
