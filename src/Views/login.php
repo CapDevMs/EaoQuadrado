@@ -46,10 +46,29 @@
                                 <button class="btn button">Entrar</button>
                             </div>
                             <div class="col-sm-6">
-                                <a class="btn button" href="<?=$base_url;?>cadastroCliente">Cadastrar</a>
+                                <a class="btn button" id="abrirModal">Cadastrar</a>
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalCadastrar" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 mb-3">
+                            <h2>Qual o tipo de cadastro deseja?</h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="<?= $base_url; ?>cadastroCliente" class="btn button">Cliente</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="<?= $base_url; ?>cadastro-vendedor" class="btn button">Vendedor</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,4 +77,5 @@
     <?php get_footer() ?>
 </body>
 <script src="<?=$base_url;?>assets/js/script.js"></script>
+<script src="<?=$base_url;?>assets/js/login.js"></script>
 </html>
