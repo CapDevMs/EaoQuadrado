@@ -55,7 +55,6 @@
 
 .numberInput {
   border-radius: 15px;
-  border: #000 solid 2px;
   color: #000;
   width: 100%;
   text-align: center;
@@ -70,31 +69,6 @@
   color: black;
   white-space: nowrap;
   margin-bottom: 2%;
-  background: transparent;
-  border: none;
-  text-align: left;
-  width: fit-content;
-  cursor: pointer;
-}
-
-.categoriaVazia{
-  text-align: center;
-  color: var(--cor-principal);
-  font-weight: bolder;
-  padding-top: 3rem;
-}
-
-.buttonAplicar {
-  border-radius: 10px;
-  cursor: pointer;
-  border: none;
-  transition: ease-in 0.1s;
-  height: 30px;
-}
-
-.buttonAplicar:hover{
-  background-color: var(--cor-verde-principal);
-  color: white;
 }
 
 .radioAvaliation {

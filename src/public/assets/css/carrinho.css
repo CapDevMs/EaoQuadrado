@@ -1,195 +1,185 @@
-/* gerais */
-
-.imagem{
-    max-width: 120px;
-    max-height: 120px;
+*{
+    font-family: 'Poppins', sans-serif;
 }
 
-.icone{
-    max-width: 35px;
-    max-height: 40px;
-    cursor: pointer;
+.trail-1{
+    text-decoration: none;
+    color: rgb(0, 0, 0,0.5);
 }
 
-.redutor{
-    max-width: fit-content;
+.image{
+
+    max-width: 80px;
+    max-height: 80px;
 }
 
-.flexCentro{
+.divImagem{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.empurrarFinal{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding-right:15px;
-}
-
-.flexLinha-nr{
-    display: flex;
-    flex-direction: line;
-}
-
-.flexColuna-nr{
-    display: flex;
-    flex-direction: column;
-}
-
-.flexbetween-nr{
-    justify-content: space-between;
-}
-
-/* main */
-
-.main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 80%;
-}
-
-.blocoPrincipal{
-    display: flex;
-    flex-direction: column;
-}
-
-/* painel de produtos */
-
-.painelProdutos{
-    border: 2px solid var(--cor-texto-deselecionado);
-    border-radius: 10px;
-    height: 80vh;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    overflow: auto;
+.icon{
+    max-width: 30px;
 }
 
 .counter{
-    max-width: 120px;
+    max-width: 100%;
 }
 
-
-.produto{
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid 2px var(--cor-texto-deselecionado);
+.product{
+    border: 2px solid rgb(0, 0, 0,0.5);
     border-radius: 20px;
-    height: 160px;
-    width: 98%;
-}
-
-.blocoCentralProduto{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.baseBlocoProduto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5px;
-}
-
-.baseBlocoIcone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    gap:0;
+    width: 84%;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    height: 90px;
+    
 }
 
-.miniBloco1{
-    max-width: max-content;
+.productDiv{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    width: 16.6666666667%;
 }
-.miniBloco2{
-    height: 80%;
+
+.cartProduct-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.counter{
+    width: 50%;
+    height: 25px;
+    border: solid rgb(0, 0, 0,0.5) 1px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.counterDiv{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.cartProducts{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
-.nomeGrande{
-    overflow: auto;
-    max-height: 100px;
-}
+.totalizador{
+    max-width: 80%;
+    border: 2px solid rgb(0, 0, 0,0.5);
+    border-radius: 15px;
 
-/* total da compra */
-
-
-.totalCompra{
     display: flex;
     flex-direction: column;
-    border:2px solid var(--cor-texto-deselecionado);
-    border-radius:20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    position: relative;
+    bottom:0px;
 }
 
-.linhaTotalCompra{
+
+.span{
+    max-width: max-content;
+    margin: 10px;
+}
+
+.totalLine{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 5px;
+    justify-content:space-between;
 }
 
 .hr{
-    width: 99%;
-    margin: auto;
+    max-width: 99%;
+    margin: 0 auto;
 }
 
-.baseBotao{
-    width: 160px;
-    height: 50px;
-    background:none;
-    border: solid 2px var(--cor-texto-deselecionado);
-    border-radius: 10px;
-    cursor: pointer;
+.main{
+    max-height:fit-content;
 }
 
-.botaoWhatsApp{
-    color:var(--cor-fundo) ;
-    background-color: var(--cor-verde-escuro);
-    border-color: var(--cor-verde-escuro);
+
+.nomeProduto{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow:ellipsis;
 }
-
-@media (max-width:767px) {
-
-    .blocoNome{
-        margin: 10px;
-    }
-    .flexLinha-sr{
-        display: flex;
-        flex-direction: line;
-    }
+.nomeProduto:hover {
+    white-space: inherit;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 10px;
+}   
+.botao1{
     
-    .flexColuna-sr{
-        display: flex;
-        flex-direction: column;
-    }
+        margin:0px;
+        padding: 0px;
+        gap: 0;
+        text-decoration: none;
+        list-style: none;    
     
-    .flexbetween-sr{
-        justify-content: space-between;
+    margin: 5px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10PX;
+    border-color: rgb(0, 0, 0,0.5);
+    background-color: rgb(0, 0, 0,0);
+}
+.botao1:hover{
+    background-color: rgb(0, 0, 0,0.1);
+}
+
+.botao2{
+    margin: 5px;
+    margin-left: 5px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10PX;
+    background-color: #00BFA5;
+    color: white;
+    border-color: rgb(0, 0, 0,0);
+    box-shadow: none;
+    border: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .sumivel{
+        display: none;
     }
-
-.sumidão{
-    display: none;
+    .productDiv{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .product{
+        width: 100%;
+    }
+    .totalizador{
+        max-width: 95%;
+    }
+    .nomeProduto{
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow:ellipsis;
+    }
 }
 
-.produto{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-}
+.logo{
+    margin-bottom: 8px;
 }

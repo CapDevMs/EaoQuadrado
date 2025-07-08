@@ -31,8 +31,12 @@
 
     <div class="header-favoritos">
         <p class="title-section-produtos">Produtos Favoritos</p>
-
-    </div>
+                <a href="<?= get_base_url(); ?>carrinho" class="btn-mover-tudo-carrinho">
+                <div>
+            <p class="p-text-move-carrinho">Mover tudo ao carrinho</p>
+        </div>  
+    </a>
+</div>
 
 <card-prod-favorito class="card-prod-favorito-container row"></card-prod-favorito>
 

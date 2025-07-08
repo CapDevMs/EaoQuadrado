@@ -348,6 +348,144 @@ button {
     }
 }
 
+/****************************
+
+    Container Categorias
+
+****************************/
+
+
+
+
+.categorias_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    column-gap: 20px;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+
+.categoria {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid var(--cor-principal);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 15%;
+    padding: 10px;
+    transition: transform 0.3s; 
+    cursor: pointer;
+}
+
+.categoria img {
+    width: 40%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.categoria p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1vw;
+    color: var(--cor-principal);
+    width: 100%;
+    white-space: nowrap;
+}
+
+@media (max-width: 1440px) {
+    .categoria {
+        width: 16.5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .categoria {
+        width: 18%;
+    }
+
+    .categoria img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 915px) {
+    .categoria {
+        width: 20%;
+    }
+
+    .categoria img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .categorias_container {
+        width: 35%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 1fr);    
+        column-gap: 20px;
+        row-gap: 10px;
+        padding: 20px;
+        max-width: 1040px;                  
+        margin: 0 auto;
+    }
+
+    .categoria {
+        width: 70%;
+    }
+
+    .categoria p {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 506px) {
+
+    .categorias_container {
+        width: 40%;
+    }
+
+
+    .categoria p {
+        font-size: 2vw;
+    }
+    
+}
+
+@media (max-width: 475px) {
+    .categorias_container {
+        width: 50%;
+    }
+}
+
+.categoria:hover{
+    background-color: var(--cor-verde-principal);
+    color: white;
+}
+
+.categoria:hover img{
+    filter: brightness(0) saturate(100%) contrast(100%) invert(100%);
+}
+
+.categoria:hover p{
+    color: white
+}
+
+
+/****************************/
+
+
+
+
 .img_container{
     display: flex;
     align-items: center;
