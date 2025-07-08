@@ -1,5 +1,5 @@
--- DROP DATABASE EAoQuadrado;
-CREATE DATABASE EAoQuadrado;
+DROP DATABASE IF EXISTS EAoQuadrado;
+CREATE DATABASE IF NOT EXISTS EAoQuadrado;
 USE EAoQuadrado;
 
 CREATE TABLE Usuarios (
@@ -12,8 +12,7 @@ CREATE TABLE Usuarios (
 create table Cidades(
     id_cidade int auto_increment primary key,
     id_estado int,
-    cidade varchar(100),
-    foreign key fk_estado(id_estado) references Estados(id_estado)
+    cidade varchar(100)
 );
 
 CREATE TABLE Enderecos (
@@ -105,7 +104,6 @@ CREATE TABLE Produtos (
     quantidade INT NOT NULL,
     id_loja INT,  
     id_categoria INT,  
-    frete DECIMAL(10, 2),  
     FOREIGN KEY fk_loja(id_loja) REFERENCES Lojas(id_loja),  
     FOREIGN KEY fk_categoria(id_categoria) REFERENCES Categorias(id_categoria)  
 );
@@ -218,12 +216,12 @@ CREATE TABLE Mensagens (
 ALTER TABLE produtos ADD COLUMN modelo VARCHAR(100);
 
 INSERT INTO Categorias (nome, imagem_categoria)
-VALUES ("Eletrônicos","assets/img/computer_icon.svg"),
-("Moda","assets/img/dress_icon.svg"),
-("Casa","assets/img/home_icon.svg"),
-("Sports","assets/img/ball_icon.svg"),
-("Acessorios","assets/img/ring_icon.svg"),
-("Entretenimento","assets/img/games_icon.svg");
+VALUES ("Eletrônicos","src/public/assets/img/computer_icon.svg"),
+("Moda","src/public/assets/img/dress_icon.svg"),
+("Casa","src/public/assets/img/home_icon.svg"),
+("Sports","src/public/assets/img/ball_icon.svg"),
+("Acessorios","src/public/assets/img/ring_icon.svg"),
+("Entretenimento","src/public/assets/img/games_icon.svg");
 
 -- DELIMITER // 
 -- CREATE TRIGGER valida_vendedor
@@ -250,3 +248,59 @@ ALTER TABLE Clientes DROP COLUMN id_sexo;
 ALTER TABLE Enderecos DROP FOREIGN KEY fk_cidade; 
 
 ALTER TABLE Enderecos DROP COLUMN id_cidade;  
+
+DROP TABLE Cidades;
+
+-- usuario
+INSERT INTO Usuarios (nome,email,senha) VALUES ('User teste cliente','usertestecliente@gmail.com','senhateste');
+INSERT INTO Usuarios (nome,email,senha) VALUES ('User teste vendedor','usertestevendedor@gmail.com','senhateste');
+INSERT INTO Usuarios (nome,email,senha) VALUES ('User teste admim','usertesteadmim@gmail.com','senhateste');
+
+-- Enderecos
+INSERT INTO Enderecos (cep,endereco,bairro,complemento) VALUES ('11111-111','Rua das margaridas, 690','União Brasil','Bloco 05 ap 301');
+INSERT INTO Enderecos (cep,endereco,bairro,complemento) VALUES ('22222-222','Rua das margaridas, 690','União Brasil','Bloco 05 ap 301');
+INSERT INTO Enderecos (cep,endereco,bairro,complemento) VALUES ('33333-333','Rua das margaridas, 690','União Brasil','Bloco 05 ap 301');
+
+-- Clientes
+
+INSERT INTO Clientes (nome, sobrenome, nascimento, cpf, numero_telefone, email, senha, id_endereco, id_usuario, imagem)
+VALUES ('Cliente','Usuario teste','1990-05-15','12345678901','67999887766','usertestecliente@gmail.com','senhateste',1,1,'src/public/assets/img/perfil_cliente.png');
+
+-- Vendedor
+
+INSERT INTO Vendedores (id_usuario) VALUES (2);
+
+-- Lojas
+-- Lojas
+INSERT INTO Lojas (nome_loja, email, telefone, id_endereco, cpf_cnpj, loja_imagem) VALUES (
+    'Lojinha Senac',
+    'contato@lojinhasecnac.com',
+    '119876543210',
+    2,
+    '12345678901234',
+    'src/public/assets/img/img-pagina-do-vendedor/logo_studio_center.png'
+);
+--  Produtos 
+-- Produtos
+INSERT INTO Produtos (id_produto,nome,descricao,marca,preco,imagens,quantidade,id_loja,id_categoria, modelo) VALUES
+('',
+ 'Caneca Programadora (Versão A)',
+'Caneca feita em procelana com designing artesanal inspirado em dor e sofrimento',
+'Filiviton',
+99.90,
+'["src/public/assets/img/caneca1.png"]',
+5,
+1,
+3,
+'Padrão'),
+
+('',
+ 'Caneca Programadora (Versão B)',
+'Caneca feita em procelana com designing artesanal inspirado em cafeína e sofrimento',
+'Filiviton',
+99.90,
+'["src/public/assets/img/caneca2.png"]',
+5,
+1,
+3,
+'Premium');
