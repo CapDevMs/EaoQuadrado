@@ -1,11 +1,11 @@
-const cardProduto = ({ id_produto, nome, imagens, preco, link = './carrinho'}) => {
+const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) => {
     return `
     <div class="card-produto col-sm-6 col-lg-4 col-xl-3">
         <div class="card-body pb-1">
             <div class="row">   
                 <div class="col-sm-11">
                     <a href="${link}">
-                        <img class="img-produto" src=${imagens}>
+                        <img class="img-produto" src="${imagens}">
                     </a>
                 </div>
                 <div class="col-sm-1 pt-2">
@@ -32,7 +32,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './carrinho'}) =
                     <a href="${link}" class="btn btn-comprar">Comprar</a>
                 </div>
                 <div class="col-sm-6">
-                    <a class="btn btn-carrinho" onclick="adicionarAoCarrinho(${id})">Carrinho</a>
+                    <a class="btn btn-carrinho" onclick="adicionarAoCarrinho(${id_produto})">Carrinho</a>
                 </div>
             </div>
         </div>
