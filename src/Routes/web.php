@@ -22,9 +22,10 @@ use App\Controllers\Cliente\PerfilClienteController;
 // area vendedor
 use App\Controllers\Vendedor\CadastroProdutoVendedorController;
 use App\Controllers\Vendedor\HistoricoVendasController;
-use App\Controllers\Vendedor\MeuPerfilVendedorController;
-use App\Controllers\Vendedor\PaginaDoVendedorController ;
+use App\Controllers\Vendedor\PerfilVendedorController;
+use App\Controllers\Vendedor\PaginaDoVendedorController;
 use App\Controllers\Vendedor\MinhaLojaController;
+use App\Controllers\Vendedor\PaginaDoVendedorController2; 
 use App\Controllers\Vendedor\GerenciamentoDeEstoqueController;
 use App\Controllers\Vendedor\TrocasDevolucoesController;
 // area comum
@@ -69,15 +70,15 @@ $router->get('/cliente', perfilClienteController::class, 'cliente');
 
 // área vendedor
 
-$router->get('/vendedor/cadastrarProduto', CadastroProdutoVendedorController::class, 'index');
-$router->post('/vendedor/cadastrarProduto', CadastroProdutoVendedorController::class, 'index');
+$router->get('/vendedor/cadastroProduto', CadastroProdutoVendedorController::class, 'index');
+$router->post('/vendedor/cadastroProduto', CadastroProdutoVendedorController::class, 'index');
 $router->get('/vendedor/historicoVendas', HistoricoVendasController::class, 'historicoDeVendas');
 $router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja');
 $router->get('/vendedor/paginaVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');
 $router->get('/vendedor/gerenciamentoEstoque', GerenciamentoDeEstoqueController::class, 'gerenciamentoDeEstoque');
 $router->get('/vendedor/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');
-$router->get('/vendedor/meu_perfil_vendedor', MeuPerfilVendedorController::class, 'meu_perfil_vendedor');
-$router->get('/vendedor/troca_devolucao_cancelamento', MeuPerfilVendedorController::class, 'troca_devolucao_cancelamento');
+$router->get('/vendedor/meu_perfil_vendedor', MeuPerfilVendedorController::class, 'meuPerfilVendedor');
+$router->get('/vendedor/troca_devolucao_cancelamento', TrocasDevolucoesController::class, 'trocasDevolucoes');
 
 
 // área comum
