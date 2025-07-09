@@ -1,19 +1,17 @@
-.container-img {
-  margin-top: 5.5%;
+.container-video {
+  position: relative;
+  
   margin-bottom: 2%;
+  max-height: 500px;
+  height: auto;
   width: 100%;
-  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.container-video video {
   display: flex;
-  justify-content: center;
-  background-color: #8ed6fe;
+  
 }
-
-.container-img img {
-  height: 100%;
-  width: auto;
-  border: none;
-}
-
 .containerprodutofav{
   display: flex;
   flex-direction: column;

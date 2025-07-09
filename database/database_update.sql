@@ -9,6 +9,11 @@ CREATE TABLE Usuarios (
     senha VARCHAR(255) NOT NULL
 );
 
+create table Estados(
+    id_estado int auto_increment primary key,
+    estado varchar(100)
+);
+
 create table Cidades(
     id_cidade int auto_increment primary key,
     id_estado int,
@@ -91,7 +96,7 @@ create table Lojas(
 CREATE TABLE Categorias (
     id_categoria INT PRIMARY KEY auto_increment,
     nome VARCHAR (255),
-    imagem_categoria VARCHAR (255)
+    descricao VARCHAR (100)
 );
 
 CREATE TABLE Produtos (
@@ -213,7 +218,12 @@ CREATE TABLE Mensagens (
     data_envio DATETIME
 );
 
-ALTER TABLE produtos ADD COLUMN modelo VARCHAR(100);
+CREATE TABLE Edit_Site(
+    id_edit_site INT AUTO_INCREMENT PRIMARY KEY,
+    id_elemento_site VARCHAR(100) NOT NULL,
+    texto_elemento varchar(255),
+    imagem_elemento varchar(255)
+);
 
 INSERT INTO Categorias (nome, imagem_categoria)
 VALUES ("Eletrônicos","src/public/assets/img/computer_icon.svg"),
@@ -236,6 +246,7 @@ VALUES ("Eletrônicos","src/public/assets/img/computer_icon.svg"),
 --     SET NEW.data_validacao = NOW();
 -- END;
 -- //
+
 -- DELIMITER ;
 
 
@@ -262,12 +273,10 @@ INSERT INTO Enderecos (cep,endereco,bairro,complemento) VALUES ('22222-222','Rua
 INSERT INTO Enderecos (cep,endereco,bairro,complemento) VALUES ('33333-333','Rua das margaridas, 690','União Brasil','Bloco 05 ap 301');
 
 -- Clientes
-
 INSERT INTO Clientes (nome, sobrenome, nascimento, cpf, numero_telefone, email, senha, id_endereco, id_usuario, imagem)
 VALUES ('Cliente','Usuario teste','1990-05-15','12345678901','67999887766','usertestecliente@gmail.com','senhateste',1,1,'src/public/assets/img/perfil_cliente.png');
 
 -- Vendedor
-
 INSERT INTO Vendedores (id_usuario) VALUES (2);
 
 -- Lojas
@@ -279,6 +288,7 @@ INSERT INTO Lojas (nome_loja, email, telefone, id_endereco, cpf_cnpj, loja_image
     '12345678901234',
     'src/public/assets/img/img-pagina-do-vendedor/logo_studio_center.png'
 );
+
 --  Produtos 
 INSERT INTO Produtos (nome,descricao,marca,preco,imagens,quantidade,id_loja,id_categoria, modelo) VALUES
 ('Caneca Programadora (Versão A)',
