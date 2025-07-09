@@ -48,4 +48,10 @@ const banner_vendedor = ({ titulo, email, endereco, telefone }) => {
     </div>`;
 }
 
+document.getElementById('btn-favoritar').addEventListener('click', function () {
+    this.classList.toggle('favoritado');
+    this.classList.toggle('fa-regular');
+    this.classList.toggle('fa-solid');
+  });
+  
 export default banner_vendedor;

@@ -1,4 +1,8 @@
 /* css do banner da pagina do vendedor */
+a{
+    text-decoration: none;
+}
+
 .card {
     position: relative;
     display: flex;
@@ -19,9 +23,10 @@
 }
   
   /* Avatar circular maior e com imagem contida */
-.avatar {
-    width: 100px;
-    height: 100px;
+  .avatar {
+    width: 25vw;                     
+    max-width: 110px;                
+    aspect-ratio: 1 / 1;             
     border-radius: 50%;
     background-color: white;
     overflow: hidden;
@@ -30,32 +35,89 @@
     justify-content: center;
     margin: 0 auto;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-}
+  }
   
-.avatar-img {
-    position: relative;
-    justify-content: center;
-    width: 50%;
-    height: auto;
+  .avatar-img {
+    width: 90%;
+    height: 90%;
     object-fit: contain;
+  }
+
+.position-icone-favoritar {
+    display: flex;
+    position: relative;
+    left: 95%;
+    display: flex;
+
 }
 
 .icone-favoritar{  
-    bottom: 1rem;
-    right: 1rem;
-    width: 22px;
+    font-size: 22px;
+    color: var( --cor-fundo-area-pesquisa); 
     cursor: pointer;
+    padding: 4px;
     opacity: 0.7;
+    transition: 0.2s ease;
+    width: fit-content;
+    height: auto;
 }
 
 .icone-favoritar:hover {
+    color: var(--cor-principal);
     opacity: 1;
-    transform: scale(1.1);
-    transition: 0.2s ease;
+    transform: scale(1.0);
+
 }
 
-.position-icone-favoritar{
-    display: flex;
-    justify-content: flex-end;
-    
+.icone-favoritar .favoritar{
+    background-color: var(--cor-principal);
 }
+
+/* Responsivo até 600px */
+@media (max-width: 600px) {
+    .avatar {
+      width: 80px;
+    }
+  
+    .avatar-img {
+      width: 100%;
+    }
+  
+    .icone-favoritar {
+      font-size: 20px;
+    }
+  }
+  
+  /* Responsivo até 350px */
+  @media (max-width: 350px) {
+    .avatar {
+      width: 65px;
+    }
+  
+    .avatar-img {
+      width: 100%;
+    }
+  
+    .icone-favoritar {
+      font-size: 18px;
+      padding: 4px;
+    }
+  
+    .card h2 {
+      font-size: 1rem; /* reduz o título */
+    }
+  
+    .card-body a,
+    .card-body p {
+      font-size: 0.8rem;
+    }
+  
+    .card_estrela_texto {
+      font-size: 0.8rem;
+    }
+  
+    .whatsapp {
+      width: 16px;
+      margin-right: 4px;
+    }
+  }

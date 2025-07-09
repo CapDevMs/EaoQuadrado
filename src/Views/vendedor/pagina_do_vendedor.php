@@ -61,7 +61,7 @@ $titulo = 'Página do Vendedor';
 
               <!-- Ícone de coração no canto inferior direito -->
                 <div class="position-icone-favoritar mb-2 pr-2">
-                  <img src="../assets/img/icons/coracao.svg" alt="Favoritar" class="icone-favoritar">
+                  <i class="fa-regular fa-heart icone-favoritar" alt="Favoritar" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
