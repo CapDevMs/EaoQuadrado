@@ -22,18 +22,6 @@ $titulo = 'Cadastro de Vendedor';
     <div class="roadmap"><?php
         breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/pages/contato.php' => 'Contato'));
         ?></div>
-
-        <?php
-
-        if (session()->has('success')) {
-            echo '<div class="toast success">' . session()->get('success') . '</div>';
-        }
-
-        if (session()->has('error')) {
-            echo '<div class="toast error">' . session()->get('error') . '</div>';
-        }
-
-        ?>
         
         <form method="post" action="<?php route('salvarCadastroVendedor') ?>" enctype="multipart/form-data">
             <div class="register_client" id="pessoal">

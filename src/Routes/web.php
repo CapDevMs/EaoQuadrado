@@ -86,7 +86,7 @@ $router->get('/vendedor/troca_devolucao_cancelamento', TrocasDevolucoesControlle
 $router->get('/categoria/{id}', CategoriaController::class, 'categoria', 'categoria');
 $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
-$router->get('/login', AuthController::class, 'index', 'login');
+$router->get('/login', AuthController::class, 'index', 'login', 'login');
 $router->get('/getProdutos', HomeController::class, 'produtos');
 $router->get('/getCategorias', CategoriaController::class, 'sendCategorias');
 $router->post('/filtroMaxMin', CategoriaController::class, 'filtroMaxMin');
@@ -104,6 +104,6 @@ $router->get('/produto', ProdutoController::class, 'produto', 'produto');
 
 
 // Home
-$router->get('/', HomeController::class, 'index');
+$router->get('/', HomeController::class, 'index', 'homepage');
 
 $router->dispatch();

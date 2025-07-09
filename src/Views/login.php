@@ -15,15 +15,21 @@
 </head>
 <body>
     <?php get_header() ?>
+
+    <?php
+
+        if (session()->has('success')) {
+            echo '<div class="toast success">' . session()->get('success') . '</div>';
+        }
+
+        if (session()->has('error')) {
+            echo '<div class="toast error">' . session()->get('error') . '</div>';
+        }
+
+        ?>
+
     <main>
         <div class="container">
-                <?php if (isset($error)): ?>
-                    <div class="row">
-                        <div class="alert pb-2" role="alert">
-                            <?= $error; ?>
-                        </div>
-                    </div>
-                <?php endif; ?>
             <div class="row pt-2 m-auto">
                 <div class="col-sm-hidden col-md-6">
                     <img class="img" src="<?=$base_url;?>assets/img/foto_tela_login tras.png">
