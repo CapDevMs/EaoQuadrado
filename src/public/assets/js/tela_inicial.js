@@ -1,4 +1,5 @@
 import cardProduto from "../js/components/card-produto.js";
+import mosaicoComp from "../js/components/componente-mosaico.js";
 
 const docTag = document.querySelector("card-produto");
 
@@ -44,3 +45,21 @@ function exibirProdutos(produtos) {
 }
 
 renderProdutos();
+
+// function exibirMosaico(div_mosaico) {
+//   const div_mosaico = document.querySelector('mosaico');
+//   let mosaicoInfo =
+//       {
+//           'nome': ['PlayStation 5','Roupas', 'Caixa de Som', 'Bolsa'],
+//           'descricao': ['Versão em preto e branco do PS5 chegando à venda','Coleções em destaque que dão outra vibe', 'Alto-falantes sem fio', 'GUCCI INTENSE'],
+//           'imagem': ['']
+//       }
+
+
+//   for (let itens in mosaicoInfo) {
+//           div.innerHTML = div_mosaico(mosaicoInfo[itens]);
+//   }
+
+// }
+
+// exibirMosaico()
