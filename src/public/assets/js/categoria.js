@@ -1,4 +1,4 @@
-import cardProduto from "./components/card-produto.js";
+import cardProduto from "./components/card-produto_categoria.js";
 import filtroComponent from "./components/filtro-categoria.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
