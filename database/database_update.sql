@@ -105,7 +105,7 @@ CREATE TABLE Produtos (
     descricao VARCHAR (255),
     marca VARCHAR(100),
     preco DECIMAL(10, 2) NOT NULL,
-    imagens VARCHAR(255),  
+    imagens VARCHAR(255),
     quantidade INT NOT NULL,
     id_loja INT,  
     id_categoria INT,  
@@ -289,7 +289,7 @@ INSERT INTO Lojas (nome_loja, email, telefone, id_endereco, cpf_cnpj, loja_image
     'src/public/assets/img/img-pagina-do-vendedor/logo_studio_center.png'
 );
 
--- Produtos
+--  Produtos 
 INSERT INTO Produtos (nome,descricao,marca,preco,imagens,quantidade,id_loja,id_categoria, modelo) VALUES
 ('Caneca Programadora (Versão A)',
 'Caneca feita em procelana com designing artesanal inspirado em dor e sofrimento',
