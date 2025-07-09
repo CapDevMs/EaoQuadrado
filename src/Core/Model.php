@@ -76,10 +76,11 @@ namespace Core;
             return $this;
         }
 
-        public function findBy(string $column, string|int $value, string $operator = '='): self
+        public function findBy(string $column, string $value, string $operator = '='): self
         {
             $sql = "SELECT * FROM {$this->getTable()} WHERE {$column} {$operator} :value";
             $stmt = $this->query($sql, ['value' => $value]);
+            $stmt->bindValue($value, PDO::PARAM_STR);
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
             $this->data = $result ?: null;
             return $this;

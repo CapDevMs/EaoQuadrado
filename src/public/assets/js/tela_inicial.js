@@ -1,27 +1,46 @@
-import cardProduto from '../js/components/card-produto.js';
+import cardProduto from "../js/components/card-produto.js";
 
-const docTag = document.querySelector('card-produto');
+const docTag = document.querySelector("card-produto");
 
 async function renderProdutos() {
   const produtos = await fetch("getProdutos");
   const info = await produtos.json();
-  console.log(info)
   exibirProdutos(info);
 }
 
-await exibirProdutos();
+function exibirProdutos(produtos) {
+  let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
 
-let likeBtns = document.querySelectorAll('i.like');
+  produtos.forEach((produto) => {
+    docTag.innerHTML += cardProduto(produto);
+  });
 
-likeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        alert('Produto favoritado com sucesso!');
-    })
-});
+  const likeBtns = document.querySelectorAll(".like");
 
+  likeBtns.forEach((btn) => {
+    const produtoId = btn.dataset.id;
 
-async function exibirProdutos() {
-    produtos.forEach((produto) => {
-        docTag.innerHTML += cardProduto(produto)
+    if (favoritos.includes(produtoId)) {
+      btn.classList.remove("fa-regular");
+      btn.classList.add("fa-solid");
+    }
+
+    btn.addEventListener("click", () => {
+      if (btn.classList.contains("fa-solid")) {
+        btn.classList.remove("fa-solid");
+        btn.classList.add("fa-regular");
+        favoritos = favoritos.filter((id) => id !== produtoId);
+      } else {
+        btn.classList.remove("fa-regular");
+        btn.classList.add("fa-solid");
+        if (!favoritos.includes(produtoId)) {
+          favoritos.push(produtoId);
+        }
+      }
+
+      localStorage.setItem("favoritos", JSON.stringify(favoritos));
     });
+  });
 }
+
+renderProdutos();

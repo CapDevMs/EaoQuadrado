@@ -46,8 +46,8 @@
 }
 
 .client-image {
-    margin-left: 30%;
-    max-width: 250px;
+    margin-left: 36%;
+    max-width: 15%;
     border-radius: 8px;
     margin-bottom: 5%;
 }
@@ -159,6 +159,7 @@
     display: grid;
     grid-template-columns: repeat(2,auto);
     gap: 5%;
+    
 }
 
 .buttons-container .button-cancel {
@@ -169,6 +170,7 @@
     height: 39px;
     padding: 5px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .buttons-container .button-confirm {
@@ -179,6 +181,7 @@
     height: 39px;
     padding: 5px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .content {
