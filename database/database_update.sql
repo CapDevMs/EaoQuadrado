@@ -100,7 +100,7 @@ CREATE TABLE Produtos (
     descricao VARCHAR (255),
     marca VARCHAR(100),
     preco DECIMAL(10, 2) NOT NULL,
-    imagens JSON,  
+    imagens VARCHAR(255),  
     quantidade INT NOT NULL,
     id_loja INT,  
     id_categoria INT,  
@@ -282,24 +282,22 @@ INSERT INTO Lojas (nome_loja, email, telefone, id_endereco, cpf_cnpj, loja_image
 );
 --  Produtos 
 -- Produtos
-INSERT INTO Produtos (id_produto,nome,descricao,marca,preco,imagens,quantidade,id_loja,id_categoria, modelo) VALUES
-('',
- 'Caneca Programadora (Versão A)',
+INSERT INTO Produtos (nome,descricao,marca,preco,imagens,quantidade,id_loja,id_categoria, modelo) VALUES
+('Caneca Programadora (Versão A)',
 'Caneca feita em procelana com designing artesanal inspirado em dor e sofrimento',
 'Filiviton',
 99.90,
-'["src/public/assets/img/caneca1.png"]',
+'src/public/assets/img/caneca1.png',
 5,
 1,
 3,
 'Padrão'),
 
-('',
- 'Caneca Programadora (Versão B)',
+('Caneca Programadora (Versão B)',
 'Caneca feita em procelana com designing artesanal inspirado em cafeína e sofrimento',
 'Filiviton',
 99.90,
-'["src/public/assets/img/caneca2.png"]',
+'src/public/assets/img/caneca2.png',
 5,
 1,
 3,
