@@ -12,10 +12,6 @@ function ExibirProdutos() {
         document.querySelector('painelProdutos').innerHTML += `
         <h2 style="margin:auto;max-width:max-content;color:var(--cor-botao-primario);">Carrinho Vazio</h2>
         `;
-        arrayLocalStorage = [{ id: 1, quantidade: 1 }, { id: 2, quantidade: 2 },{id:3,quantidade:3},{id:4,quantidade:4}];
-        let novoCarrinhoString = JSON.stringify(arrayLocalStorage);
-        localStorage.setItem("listaProdutosCarrinho", novoCarrinhoString);
-    
     } else {
         document.querySelector('painelProdutos').innerHTML = ``
 

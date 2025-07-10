@@ -23,6 +23,10 @@ $base_url = get_base_url();
 
 <body>
     <?php get_header() ?>
+    
+    <ul>
+            <li><?= htmlspecialchars($produto) ?></li>
+    </ul>
 
     <main class="main">
         <roadMap>
@@ -35,7 +39,7 @@ $base_url = get_base_url();
             </div>
 
             <painelProdutos class='painelProdutos'>
-                
+
             </painelProdutos>
         </blocoPrincipal>
 
