@@ -50,43 +50,17 @@ $titulo = 'Homepage';
                 </div>
 
                 <div class="mosaico">
-                    <div class="itens1" id="item1">
-                        <div class="texto">
-                            <h1>PlayStation 5</h1>
-                            <p>Versão em preto e branco do PS5 chegando à venda</p>
-                            <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
-                                <h1>
-                        </div>
-                    </div>
-                    <div class="itens2" id="item2" onclick="window.location.href='<?= get_base_url(); ?>produto'">
-                        <div class="texto">
-                            <h1>Roupas</h1>
-                            <p>Coleções em destaque que dão outra vibe
-                            <p>
-                            <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
-                                <h1>
-                        </div>
-                    </div>
-                    <div class="itens3-4">
-                        <div class="itens3" id="item3" onclick="window.location.href='<?= get_base_url(); ?>produto'">
-                            <div class="texto">
-                                <h1>Caixa de Som</h1>
-                                <p>Alto-falantes sem fio</p>
-                                <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
-                                    <h1>
-                            </div>
-                        </div>
 
-                        <div class="itens4" id="item4" onclick="window.location.href='<?= get_base_url(); ?>produto'">
-                            <div class="texto">
-                                <h1>Bolsa</h1>
-                                <p>GUCCI INTENSE </p>
-                                <h1><a href="<?= get_base_url(); ?>produto" class="link_mosaico">Compre Agora!</a>
-                                    <h1>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="src/public/assets/img/mosaico1.png" alt="imagem 1 do mosaico" class="itens1" id="item1" onclick="window.location.href='<?= get_base_url(); ?>produto'"></img>
+
+                    <img src="src/public/assets/img/mosaico2.png" alt="imagem 2 do mosaico" class="itens2" id="item2" onclick="window.location.href='<?= get_base_url(); ?>produto'"></img>
+
+                    <img src="src/public/assets/img/mosaico3.png" alt="imagem 3 do mosaico" class="itens3" id="item3" onclick="window.location.href='<?= get_base_url(); ?>produto'"></img>
+
+                    <img src="src/public/assets/img/mosaico4.png" alt="imagem 4 do mosaico" class="itens4" id="item4" onclick="window.location.href='<?= get_base_url(); ?>produto'"></img>
+                
                 </div>
+
             </div>
 
             

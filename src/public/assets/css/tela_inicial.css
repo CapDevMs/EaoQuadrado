@@ -77,24 +77,9 @@ button {
   height: 100%;
 }
 
-.mosaico > .itens1:hover,
-.mosaico > .itens2:hover,
-.itens3-4 > .itens3:hover,
-.itens3-4 > .itens4:hover {
-  transform: scale(1.02);
-}
 
-.texto {
-  margin-top: auto;
-  text-align: left;
-}
 
-.texto img {
-  object-fit: fill;
-}
-
-.mosaico h1,
-p {
+.mosaico h1, p {
   color: var(--cor-fundo);
   height: fit-content;
   width: fit-content;
@@ -114,32 +99,31 @@ p {
 .itens1,
 .itens2,
 .itens3,
-.itens4 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;
-  background-size: contain;
+.itens4 { 
   display: flex;
-  padding: 10px;
-  border-radius: 5px;
-  flex-direction: column;
-  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
   height: 200px;
+}
+
+.mosaico > .itens1:hover,
+.mosaico > .itens2:hover,
+.mosaico > .itens3:hover,
+.mosaico > .itens4:hover {
+  transform: scale(1.02);
 }
 
 .itens1 {
   height: 420px;
   grid-column: 1;
   grid-row: 1 / 3;
-  background-image: url("../img/ps5_reflex.png");
   background-position: center bottom;
 }
 
 .itens2 {
   grid-column: 2;
   grid-row: 1;
-  background-image: url("../img/woman_with_hat.png");
 }
 
 .itens3-4 {
@@ -147,12 +131,4 @@ p {
   display: flex;
   flex-direction: row;
   column-gap: 3%;
-}
-
-.itens3 {
-  background-image: url("../img/caixa_de_som.png");
-}
-
-.itens4 {
-  background-image: url("../img/gucci_bolsa_intense.png");
 }
