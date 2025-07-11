@@ -22,15 +22,15 @@ $base_url = get_base_url();
 
   <main>
 
-    <roadMap class='roadMap'>
+    <!-- <roadMap class='roadMap'>
       <a href="<?= get_base_url(); ?>" class='roadMap1'>Home /</a>
       <a href = "<?= get_base_url(); ?>admin/indexAdm" class='roadMap1'>Painel do Administrador /</a>
       <a class='roadMap2 redutor'>Validação de novos colaboradores</a>
-    </roadMap>
+    </roadMap> -->
 
     <div class='corpo'>
 
-      <div class='menuLateral'>
+      <!-- <div class='menuLateral'>
         <h3 class='redutor'>Cadastro</h3>
         <a class='roadMap1'>Cadastrar novo Administrador</a>
         <a class='roadMap1'>Gerenciar meu perfil</a>
@@ -46,7 +46,7 @@ $base_url = get_base_url();
         <a class='roadMap1'>Abrir chamado</a>
         <a class='roadMap1'>Criar categoria</a>
         <a class='roadMap1'>Editar sistema</a>
-      </div>
+      </div> -->
 
       <div class='subCorpo'>
 

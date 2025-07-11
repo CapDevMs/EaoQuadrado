@@ -14,7 +14,6 @@ const listaVendedores = ({ imagem, email, categorias, whatsapp}) => {
                                             <div class="name col-sm-12 col-md-2">
                                                 <h2>
                                                     Studio Center
-                                                    <i class="fa-regular fa-heart icone"></i>
                                                 </h2>
                                             </div>
                                             <div class="col-sm-12 ">

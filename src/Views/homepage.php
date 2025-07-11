@@ -110,16 +110,6 @@ $titulo = 'Homepage';
 
         <buttonCategoria class=""></buttonCategoria>
 
-
-        <div class="frame_container_categoria">
-            <hr class="frame_categoria">
-            <h1>Vendedor Destaque</h1>
-        </div>
-
-        <div class="img_container">
-            <img src="<?= get_base_url(); ?>assets/img/Banner_loja.png" class="img" alt="Banner da Loja">
-        </div>
-
         <div class="frame_container_categoria">
             <hr class="frame_categoria">
             <h1>Nossos Produtos</h1>
@@ -128,7 +118,6 @@ $titulo = 'Homepage';
         <div class="container">
             <card-produto class="row"></card-produto>
         </div>
-
 
         </section>
     </main>
