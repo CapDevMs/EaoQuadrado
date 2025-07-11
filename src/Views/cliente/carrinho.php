@@ -23,12 +23,10 @@ $base_url = get_base_url();
 
 <body>
     <?php get_header() ?>
-    
-    <ul>
-            <li><?= htmlspecialchars($produto) ?></li>
-    </ul>
+
 
     <main class="main">
+
         <roadMap>
             <?php breadcrumb(array('http://localhost/EaoQuadrado' => 'Home', 'carrinho' => 'Carrinho')); ?>
         </roadMap>
@@ -72,7 +70,10 @@ $base_url = get_base_url();
 
         </totalCompra>
     </main>
-    <script src="src/public/assets/js/carrinho.js">
+    <script>
+        const listaProdutosJS = <?= json_encode($listaProdutos, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
     </script>
+    <script src="src/public/assets/js/script.js"></script>
+    <script src="src/public/assets/js/carrinho.js"></script>
     <?php get_footer() ?>
 </body>

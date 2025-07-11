@@ -9,14 +9,16 @@ class Carrinho extends Model
     protected string $table = 'Produtos';
     protected string $primaryKey = 'id_produtos';
 
-    public function carrinho($ListaCarrinho)
+    public function carrinho()
     {
-        // foreach ($ListaCarrinho as $produto) {
-        //   echo $produto;  
-        // };
         $sql = "SELECT * FROM Produtos";
         $stmt = $this->query($sql);
 
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+    }
+    public function enviarCarrinho()
+    {
+        $sql = "INSERT () INTO Usuarios VALUES ()";
+        
     }
 }

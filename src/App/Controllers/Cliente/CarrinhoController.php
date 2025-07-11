@@ -17,7 +17,7 @@ class CarrinhoController extends Controller
         ];
 
         $carrinhoModel = new Carrinho();
-        $produtos = $carrinhoModel -> carrinho($dummy);
+        $produtos = $carrinhoModel -> carrinho();
         View::render('cliente/carrinho',['listaProdutos' => $produtos]);;
     }
 }

@@ -1,14 +1,11 @@
 let arrayLocalStorage = JSON.parse(localStorage.getItem("listaProdutosCarrinho")) || [];
 
-
 function LimparCarrinho() {
-    localStorage.removeItem('listaProdutosCarrinho')
+    localStorage.removeItem('listaProdutosCarrinho');
 }
-
 
 function ExibirProdutos() {
     if (arrayLocalStorage.length == 0) {
-        console.log('Carrinho vazio');
         document.querySelector('painelProdutos').innerHTML += `
         <h2 style="margin:auto;max-width:max-content;color:var(--cor-botao-primario);">Carrinho Vazio</h2>
         `;
@@ -17,17 +14,19 @@ function ExibirProdutos() {
 
         arrayLocalStorage.forEach(product => {
             
-            let id = `${product.id}`
-            let imagem = `asus_notebook.png`
-            let nome = `Asus notebok ${product.id}`;
-            let preco = `R$ 500,00`;
+            const produtoSelecionado = listaProdutosJS.find(produto => produto.id_produto === product.id)
+
+            let id = `${produtoSelecionado.id_produto}`
+            let imagem = `${produtoSelecionado.imagens}`
+            let nome = `${produtoSelecionado.nome}`;
+            let preco = `${produtoSelecionado.preco}`;
             let quantidade = `${product.quantidade}`
 
             document.querySelector('painelProdutos').innerHTML += `
         
                     <produto class="produto" id = '${id}'>
                      <div class='col-2 baseBlocoIcone'>
-                         <img src="src/public/assets/img/${imagem}" alt="foto-produto" class='imagem'>
+                         <img src="${imagem}" alt="foto-produto" class='imagem'>
                          </div>
         
                      <div class="col-md-9 col-12 blocoCentralProduto flexColuna-sr">
@@ -41,7 +40,7 @@ function ExibirProdutos() {
                                  
                              <div class='col-6 sumidão baseBlocoProduto'>
                              <h4 class='miniBloco1 '>Preço</h4>
-                                 <preco class='miniBloco2'>${preco}</preco>
+                                 <preco class='miniBloco2'>R$ ${preco}</preco>
                              </div>
                              
                          </div>
@@ -112,13 +111,11 @@ function removeProdutoCarrinho(removeProduto) {
 
     const produtoRemovido = document.getElementById(removeProduto);
     let cont = 0
+    console.log('localStorage antigo:', localStorage.getItem("listaProdutosCarrinho"));
 
         arrayLocalStorage.forEach(product => {
-            console.log(product)
-            console.log(removeProduto)
           if (product.id == removeProduto){
               arrayLocalStorage.splice(cont,1)
-              console.log('Item deletado');
           } else {
             cont+= 1;
           }
@@ -127,10 +124,9 @@ function removeProdutoCarrinho(removeProduto) {
         localStorage.setItem("listaProdutosCarrinho", novoCarrinhoString);
 
     produtoRemovido.closest('produto').remove();
-    console.log('localStorage atualizado:', localStorage.getItem("listaProdutosCarrinho"));
+    console.log('localStorage antigo:', localStorage.getItem("listaProdutosCarrinho"));
     ExibirProdutos()
     updateTotal();
-
 };
 
 updateTotal();
