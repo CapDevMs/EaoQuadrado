@@ -23,8 +23,11 @@ $titulo = 'Página do Vendedor';
 
   <main class="container">
     <section class="col-sm-12">
-      <imgLoja class="row"></imgLoja>
+      <div class ="container"></div>
         <div class="row">
+          <div class="col-sm-12 pb-3">
+            <img src="<?=get_base_url();?>assets/img/Banner_loja.png" class="" alt="Banner Loja">
+          </div>
           <banner_vendedor class="row"></banner_vendedor>
           <div class="col-sm-12">
             <div class="content-header-section">

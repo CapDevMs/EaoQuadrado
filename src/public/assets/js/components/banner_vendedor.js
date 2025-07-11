@@ -37,9 +37,7 @@ const banner_vendedor = ({ titulo, email, endereco, telefone }) => {
                 </div>
 
                 <!-- Ícone de coração no canto inferior direito -->
-                <div class="position-icone-favoritar mb-2 mr-4 pr-2">
-                    <i class="fa-regular fa-heart icone-favoritar" alt="Favoritar" aria-hidden="true"></i>
-                </div>
+
             </div>
         </div>
     </div>
