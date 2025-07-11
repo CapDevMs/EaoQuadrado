@@ -118,6 +118,7 @@ button {
   height: 420px;
   background-position: center bottom;
   padding-right: 1rem !important;
+  padding-bottom: 0.3rem !important;
 }
 
 .itens2-3-4 {
@@ -138,5 +139,9 @@ button {
   .mosaico {
     display: flex;
     flex-direction: column;
+  }
+
+  .itens1 {
+    padding-right: 0.2rem !important;
   }
 }
