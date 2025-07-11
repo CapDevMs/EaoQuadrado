@@ -37,6 +37,7 @@
     max-width: 95%;
     display: flex;
     justify-content: space-between;
+    margin-left: 12%;
 }
 .menuLateral{
     display: flex;

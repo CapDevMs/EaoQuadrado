@@ -107,7 +107,7 @@ $sobre_cards = [
         </div>
         
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <?php foreach ($comparativo as $informacao): ?>
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="card-status ptb-2 mb-2">
@@ -119,7 +119,7 @@ $sobre_cards = [
                         </div>
                     </div>
                 <?php endforeach; ?>
-            </div>
+            </div> -->
             
             <div class="row">
                 <?php foreach ($sobre_cards as $card): ?>
@@ -150,7 +150,7 @@ $sobre_cards = [
                 <?php endforeach; ?>
             </div>
 
-            <div class="row pt-2">
+            <!-- <div class="row pt-2">
                 <div class="col-sm-12 col-md-4 pb-2">
                     <div class="info-icon m-auto ptb-1">
                         <i class="fa-solid fa-truck"></i>
@@ -184,7 +184,7 @@ $sobre_cards = [
                         Devolução instatânea
                     </p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </main>
