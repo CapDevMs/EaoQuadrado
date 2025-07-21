@@ -4,7 +4,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
         <div class="card-body pb-1">
             <div class="row">   
                 <div class="col-sm-11">
-                    <a href="${link}">
+                    <a href="${link}?id=${id_produto}">
                         <img class="img-produto" src="${imagens}">
                     </a>
                 </div>
