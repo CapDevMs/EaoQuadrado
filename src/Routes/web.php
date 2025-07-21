@@ -86,6 +86,7 @@ $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
 $router->get('/login', AuthController::class, 'index');
 $router->get('/getProdutos', HomeController::class, 'produtos');
+$router->get('/getProduto', ProdutoController::class, 'getProduto');
 $router->get('/getCategorias', CategoriaController::class, 'sendCategorias');
 $router->post('/filtroMaxMin', CategoriaController::class, 'filtroMaxMin');
 $router->get('/searchProduto', CategoriaController::class, 'searchProduto');

@@ -4,6 +4,40 @@ import cardProduto from "./components/card-produto.js";
 import fieldsetLoja from "./components/fieldset-loja.js";
 import componenteTelaProduto from "./components/componente-tela-produto.js";
 
+
+async function carregarProduto() {
+    const params = new URLSearchParams(window.location.search);
+    const idProduto = params.get("id");
+
+    if (!idProduto) {
+        document.body.innerHTML = "<p>Produto não encontrado.</p>";
+        return;
+    }
+
+    const response = await fetch(`../api/getProduto?id=${idProduto}`);
+    const produto = await response.json();
+
+    const container = document.querySelector(".container-produto");
+    container.innerHTML = componenteTelaProduto({
+        nomeProduto: produto.nome,
+        precoProduto: produto.preco,
+        descricao: produto.descricao,
+        nomeLoja: produto.nome_loja
+    });
+
+    const galeria = galeriaImg({ image: produto.imagem });
+    document.querySelector(".galeria-container").innerHTML = galeria;
+
+    const loja = fieldsetLoja({
+        image: produto.logo_loja,
+        nomeLoja: produto.nome_loja,
+        linkLoja: produto.link_loja
+    });
+    document.querySelector(".fieldset-loja").innerHTML = loja;
+}
+
+carregarProduto();
+
 const componenteTelaProdutoContainer = document.querySelector(".tela-produto");
 
 let telaProdutoItens = [
@@ -44,6 +78,7 @@ if (componenteTelaProdutoContainer) {
     const fieldsetLojaContainer = componenteTelaProdutoContainer.querySelector(".fieldset-loja");
     const iconeFavorito = document.getElementById('icone-favorito');
     const iconeCarrinho = document.getElementById('icone-carrinho');
+    // const idProduto = <?= json_encode($idProduto) ?>;
 
     if (cardProdutoRecomendar) {
         let cardProdutoHTML = ""; 
@@ -138,3 +173,4 @@ if (componenteTelaProdutoContainer) {
 } else {
     console.error("Container principal '.tela-produto' não foi encontrado no DOM.");
 }
+

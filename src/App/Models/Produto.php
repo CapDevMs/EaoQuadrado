@@ -10,10 +10,10 @@ class Produto extends Model
     protected string $table = "Produtos";
     protected string $primaryKey = "id_produto";
 
-    public function getProdutos()
+    public function getProdutos($id)
     {
-        $sql = "SELECT * FROM produtos";
-        $stmt = $this->query($sql);
-        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        $sql = "SELECT * FROM produtos WHERE id_produto = :id";
+        $stmt = $this->query($sql, ['id' => $id]);
+        return $stmt->fetch(\PDO::FETCH_ASSOC);
     }
 }

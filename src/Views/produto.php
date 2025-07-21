@@ -1,6 +1,8 @@
 <?php
 
 $appName = get_app_name();
+// $idProduto = $_GET['id'] ?? null;
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
