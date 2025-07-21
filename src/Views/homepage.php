@@ -49,11 +49,10 @@ $titulo = 'Homepage';
                     <h1>Lançamentos</h1>
                 </div>
 
-                <div class="mosaico row">
-                    <img class="itens1 col-sm-12 col-md-12 col-xl-6" src="src/public/assets/img/mosaico1.png" alt="imagem 1 do mosaico" class="itens1" id="item1" onclick="window.location.href='<?= get_base_url(); ?>produto'"></img>
+                <div class="mosaico row col-sm-12">
+                    <img class="col-sm-12 col-md-12 col-xl-6 itens1" src="src/public/assets/img/mosaico1.png" alt="imagem 1 do mosaico" class="itens1" id="item1" onclick="window.location.href='<?= get_base_url(); ?>produto'"></img> 
                     <div class="col-sm-12 col-md-12 col-xl-6">
-                        <img class="itens2 col-sm-12" src="src/public/assets/img/mosaico2.png" alt="imagem 2 do mosaico" class="itens2" id="item2" onclick="window.location.href='<?= get_base_url(); ?>categoria'"></img>
-
+                        <img class="col-sm-12 itens2" src="src/public/assets/img/mosaico2.png" alt="imagem 2 do mosaico" class="itens2" id="item2" onclick="window.location.href='<?= get_base_url(); ?>categoria'"></img>
                         <div class="itens3-4 col-sm-12 pt-1">
                             <img class="col-sm-6 itens3" src="src/public/assets/img/mosaico3.png" alt="imagem 3 do mosaico" class="itens3" id="item3" onclick="window.location.href='<?= get_base_url(); ?>produto'"></img>
 

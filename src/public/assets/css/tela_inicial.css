@@ -39,7 +39,9 @@ button {
   width: auto;
 }
 
-.categorias_container, .container_mosaico, .produtos_container {
+.categorias_container,
+.container_mosaico,
+.produtos_container {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
@@ -72,22 +74,6 @@ button {
   display: flex;
   flex-direction: row;
   margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-
-.mosaico h1, p {
-  color: var(--cor-fundo);
-  height: fit-content;
-  width: fit-content;
-  position: relative;
-  font-size: 16px;
-}
-
-.mosaico p {
-  font-size: 13px;
 }
 
 .link_mosaico {
@@ -98,40 +84,35 @@ button {
 .itens1,
 .itens2,
 .itens3,
-.itens4 { 
+.itens4 {
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  height: 200px;
   margin: 0 !important;
+  object-fit: contain;
 }
 
-.mosaico > .itens1:hover,
-.mosaico > .itens2:hover,
-.itens3-4 > .itens3:hover,
-.itens3-4 > .itens4:hover {
+.itens1:hover,
+.itens2:hover,
+.itens3:hover,
+.itens4:hover {
   transform: scale(1.02);
 }
 
 .itens1 {
-  height: 420px;
-  background-position: center bottom;
+  height: 100%;
   padding-right: 1rem !important;
-  padding-bottom: 0.3rem !important;
 }
 
-.itens2-3-4 {
-  display: flex;
-  gap: 10px;
-}
 
 .itens3-4 {
   display: flex;
   gap: 18px;
 }
 
-.itens3, .itens4 {
+.itens3,
+.itens4 {
   margin: 0;
 }
 
