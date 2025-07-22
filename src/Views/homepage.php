@@ -71,6 +71,9 @@ $titulo = 'Homepage';
                 <card-produto class="row"></card-produto>
             </div>
         </div>
+
+
+
     </main>
 
     <script src="<?= get_base_url(); ?>assets/js/slider.js"></script>
