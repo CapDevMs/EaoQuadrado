@@ -4,24 +4,36 @@ namespace Core;
 
 use App\Controllers\Controller;
 
-
-class Router {
-    
+class Router
+{
     protected $routes = [];
+    protected $namedRoutes = [];
 
-    private function addRoute($route, $controller, $action, $method)
+    private function addRoute($route, $controller, $action, $method, $name = null)
     {
-        $this->routes[$method][$route] = ['controller' => $controller, 'action' => $action];
+        $this->routes[$method][$route] = [
+            'controller' => $controller,
+            'action' => $action
+        ];
+
+        if ($name) {
+            $this->namedRoutes[$name] = $route;
+        }
     }
 
-    public function get($route, $controller, $action)
+    public function get($route, $controller, $action, $name = null)
     {
-        $this->addRoute($route, $controller, $action, "GET");
+        $this->addRoute($route, $controller, $action, "GET", $name);
     }
 
-    public function post($route, $controller, $action)
+    public function post($route, $controller, $action, $name = null)
     {
-        $this->addRoute($route, $controller, $action, "POST");
+        $this->addRoute($route, $controller, $action, "POST", $name);
+    }
+
+    public function route(string $name): ?string
+    {
+        return $this->namedRoutes[$name] ?? null;
     }
 
     public function dispatch()
@@ -29,19 +41,31 @@ class Router {
         $uri = strtok($_SERVER['REQUEST_URI'], '?');
         $method = $_SERVER['REQUEST_METHOD'];
 
-        if(strpos($uri, 'EaoQuadrado')){
+        // Ajuste para path base (ex: localhost/EaoQuadrado/)
+        if(strpos($uri, 'EaoQuadrado')) {
             $uri = str_replace('EaoQuadrado/', '', $uri);
         }
 
-        if (array_key_exists($uri, $this->routes[$method])) {
-            $controller = $this->routes[$method][$uri]['controller'];
-            $action = $this->routes[$method][$uri]['action'];
+        $routes = $this->routes[$method] ?? [];
 
-            $controller = new $controller();
-            $controller->$action();
-            return;
+        foreach ($routes as $route => $handler) {
+            $pattern = preg_replace('#\{[\w]+\}#', '([\w-]+)', $route);
+            $pattern = "#^" . $pattern . "$#";
+
+            if (preg_match($pattern, $uri, $matches)) {
+                array_shift($matches); // Remove a URI completa
+
+                $controller = new $handler['controller']();
+                call_user_func_array([$controller, $handler['action']], $matches);
+                return;
+            }
         }
 
         Controller::errorPage();
+    }
+
+    public function getNamedRoutes(): array
+    {
+        return $this->namedRoutes;
     }
 }

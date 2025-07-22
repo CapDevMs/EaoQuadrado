@@ -35,10 +35,30 @@ $base_url = get_base_url();
 <!-- Menu Mobile -->
 <div class="mobile-menu" id="mobileMenu">
     <ul>
-        <li><a href="<?=$base_url;?>login">Login</a></li>
+        <?php if (session()->has('user')): ?>
+            <li><a href="<?=$base_url;?>perfil">Meu Perfil</a></li>
+            <li><a href="<?=$base_url;?>logout">Logout</a></li>
+        <?php else: ?>
+            <li><a href="<?=$base_url;?>login">Login</a></li>
+            <li><a href="<?=$base_url;?>cadastroCliente">Cadastro</a></li>
+        <?php endif; ?>
+
         <li><a href="<?=$base_url;?>carrinho">Carrinho</a></li>
         <li><a href="<?=$base_url;?>sobre">Sobre</a></li>
+        <li><a href="<?=$base_url;?>contato">Contato</a></li>
     </ul>
 </div>
+
+<?php
+
+    if (session()->has('success')) {
+        echo '<div class="toast success">' . session()->get('success') . '</div>';
+    }
+
+    if (session()->has('error')) {
+        echo '<div class="toast error">' . session()->get('error') . '</div>';
+    }
+
+?>
 
 <script src="<?=$base_url;?>assets/js/header.js"></script>
