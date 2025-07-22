@@ -1,3 +1,4 @@
+console.log(`abriu Script p[roduto]`)
 console.log(listaProdutosJS)
 import galeriaImg from "./components/galeria-img.js";   
 
@@ -11,6 +12,7 @@ const produtoSelecionado = listaProdutosJS.find(produto => produto.id_produto ==
 const lojaSelecionada = listaVendedoresJS.find(vendedor => vendedor.id_loja == produtoSelecionado.id_loja)
 let telaProdutoItens = [
     {
+        'id_produto':`${produtoSelecionado.id_produto}`,
         'nomeProduto': `${produtoSelecionado.nome}`,
         'precoProduto':`${produtoSelecionado.preco}`,
         'descricao':`${produtoSelecionado.descricao}`,
@@ -23,7 +25,9 @@ let images = [
 ];
 
 let fieldsetLojaitens = [
-    { 'image': `${lojaSelecionada.loja_imagem}`, 'nomeLoja':`${lojaSelecionada.nome_loja}` }
+    { 'image': `${lojaSelecionada.loja_imagem}`, 
+    'nomeLoja':`${lojaSelecionada.nome_loja}`,
+    'numeroLoja':`${lojaSelecionada.telefone}` }
 ];
 
 
@@ -35,7 +39,6 @@ if (componenteTelaProdutoContainer) {
     componenteTelaProdutoContainer.innerHTML = componenteTelaProdutoHTML; 
 
     const galeriaContainer = componenteTelaProdutoContainer.querySelector(".galeria-container");
-    const contadorContainer = componenteTelaProdutoContainer.querySelector(".contador-container");
     const fieldsetLojaContainer = componenteTelaProdutoContainer.querySelector(".fieldset-loja");
     const iconeCarrinho = document.getElementById('icone-carrinho');
 
@@ -76,3 +79,4 @@ if (componenteTelaProdutoContainer) {
 } else {
     console.error("Container principal '.tela-produto' não foi encontrado no DOM.");
 }
+

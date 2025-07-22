@@ -1,6 +1,6 @@
-const componenteTelaProduto = ({ nomeProduto,precoProduto,descricao,nomeLoja }) => {
+const componenteTelaProduto = ({ id_produto,nomeProduto,precoProduto,descricao,nomeLoja }) => {
     return `
-    <div class="container-produto col-lg-10 col-sm-11">
+    <div id = "${id_produto} " class="container-produto col-lg-10 col-sm-11">
         <div class="galeria-container col-lg-8 col-sm-12"></div>
             <div class="desc-produto col-lg-5 col-sm-12">
                 <p class="nome-produto">${nomeProduto}</p>
@@ -9,7 +9,7 @@ const componenteTelaProduto = ({ nomeProduto,precoProduto,descricao,nomeLoja }) 
                 <div class="comprar col-lg-8 col-sm-10">
                     <div class="btn-comprar"><a>Comprar</a></div>
                     <div class="icons-comprar">
-                        <img id="icone-carrinho" class="icon cursor" src="assets/img/carrinho-tela-produto.svg" data-imagem-alternativa="assets/img/tela-produtos/carrinhopreenchido.svg value="gucci_bolsa_intense.png|Gucci intense|400,00">
+                        <img id="icone-carrinho" class="icon cursor" src="assets/img/carrinho-tela-produto.svg" onclick = "adicionarCarrinho(${id_produto})">
                         <div></div>
             </div>
             </div>

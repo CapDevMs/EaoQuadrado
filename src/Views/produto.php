@@ -47,7 +47,7 @@ $appName = get_app_name();
         const listaProdutosJS = <?= json_encode($listaProdutos); ?>;
         const listaVendedoresJS = <?= json_encode($listaVendedores); ?>;
     </script>
+<script src="<?= get_base_url(); ?>assets/js/script.js"></script>
 <script type="module" src="<?= get_base_url(); ?>assets/js/produto.js?<?= time() ?>"></script>
-<script type="module" src="<?= get_base_url(); ?>assets/js/script.js"></script>
 
 </html>
