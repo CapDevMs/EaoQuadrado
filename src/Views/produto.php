@@ -29,5 +29,7 @@ $appName = get_app_name();
 
 </body>
 <script type="module" src="<?= get_base_url(); ?>assets/js/produto.js?<?= time() ?>"></script>
+<script type="module" src="<?= get_base_url(); ?>assets/js/script.js"></script>
+
 
 </html>

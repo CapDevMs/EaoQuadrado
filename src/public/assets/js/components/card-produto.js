@@ -1,6 +1,6 @@
 const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) => {
     return `
-    <div class="card-produto col-sm-6 col-lg-3 col-xl-2">
+    <divi class="card-produto col-sm-6 col-lg-3 col-xl-2">
         <div class="card-body pb-1">
             <div class="row">   
                 <div class="col-sm-11">
@@ -37,11 +37,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
                 </div>
             </div>
         </div>
-    </div>
+    </divi>
     `;
 }
-                    // <i class="fa-regular fa-heart pointer pb-1 like" id="like" data-id="${id_produto}"></i>
 export default cardProduto;
-
-
-// <i class="fa-regular fa-heart pointer pb-1 like" id="like" data-id="${id_produto}"></i>

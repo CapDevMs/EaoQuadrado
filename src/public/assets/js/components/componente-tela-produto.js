@@ -10,7 +10,7 @@ const componenteTelaProduto = ({ nomeProduto,precoProduto,descricao,nomeLoja }) 
                     <div class="btn-comprar"><a>Comprar</a></div>
                     <div class="icons-comprar">
                         <img id="icone-carrinho" class="icon cursor" src="assets/img/carrinho-tela-produto.svg" data-imagem-alternativa="assets/img/tela-produtos/carrinhopreenchido.svg value="gucci_bolsa_intense.png|Gucci intense|400,00">
-                        <img id="icone-favorito" class="favoritos cursor" src="assets/img/coracao-tela-produto.svg"data-imagem-alternativa="assets/img/tela-produtos/coracaopreenchido.svg">
+                        <div></div>
             </div>
             </div>
                 <div class="fieldset-loja"></div>

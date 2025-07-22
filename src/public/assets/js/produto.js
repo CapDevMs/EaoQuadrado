@@ -1,7 +1,7 @@
-import galeriaImg from "./components/galeria-img.js";
-import contadorQuantidade from "./components/contador-quantidade.js";
-import cardProduto from "./components/card-produto.js";
+import galeriaImg from "./components/galeria-img.js";   
+
 import fieldsetLoja from "./components/fieldset-loja.js";
+
 import componenteTelaProduto from "./components/componente-tela-produto.js";
 
 const componenteTelaProdutoContainer = document.querySelector(".tela-produto");
@@ -13,13 +13,6 @@ let telaProdutoItens = [
         'descricao':'Eleve o seu estilo com a deslumbrante Bolsa Feminina Gucci...',
         'nomeLoja':'studio center' 
     }
-];
-
-let produtosRecomendar = [
-    { 'id': 1, 'titulo': 'Caneca especial Programador', 'imagem': 'assets/img/caneca1.png', 'preco': '99,90', 'link': './produto' },
-    { 'id': 2, 'titulo': 'Caneca especial Programador', 'imagem': 'assets/img/caneca2.png', 'preco': '119,90', 'link': './produto' },
-    { 'id': 3, 'titulo': 'Caneca especial Programador', 'imagem': 'assets/img/caneca1.png', 'preco': '99,90', 'link': './produto' },
-    { 'id': 4, 'titulo': 'Caneca especial Programador', 'imagem': 'assets/img/caneca3.png', 'preco': '119,90', 'link': './produto' }
 ];
 
 let images = [
@@ -40,20 +33,8 @@ if (componenteTelaProdutoContainer) {
 
     const galeriaContainer = componenteTelaProdutoContainer.querySelector(".galeria-container");
     const contadorContainer = componenteTelaProdutoContainer.querySelector(".contador-container");
-    const cardProdutoRecomendar = componenteTelaProdutoContainer.querySelector(".produto-recomendar");
     const fieldsetLojaContainer = componenteTelaProdutoContainer.querySelector(".fieldset-loja");
-    const iconeFavorito = document.getElementById('icone-favorito');
     const iconeCarrinho = document.getElementById('icone-carrinho');
-
-    if (cardProdutoRecomendar) {
-        let cardProdutoHTML = ""; 
-        produtosRecomendar.forEach((produto) => {
-            cardProdutoHTML += cardProduto(produto); 
-        });
-        cardProdutoRecomendar.innerHTML = cardProdutoHTML; 
-    } else {
-        console.error("Container '.produto-recomendar' não foi encontrado no DOM.");
-    }
 
     if (galeriaContainer) {
         let galeriaHTML = ""; 
@@ -74,16 +55,7 @@ if (componenteTelaProdutoContainer) {
     } else {
         console.error("Container '.fieldset-loja' não foi encontrado no DOM.");
     }
-    iconeFavorito.addEventListener('click', function() {
-
-        let srcAtual = iconeFavorito.src;
-        let srcAlternativo = iconeFavorito.dataset.imagemAlternativa;
-    
-
-        iconeFavorito.src = srcAlternativo;
-
-        iconeFavorito.dataset.imagemAlternativa = srcAtual;
-    });
+   
     if (iconeCarrinho) {
 
         const imagemOriginalCarrinho = 'assets/img/carrinho-tela-produto.svg';
@@ -138,3 +110,4 @@ if (componenteTelaProdutoContainer) {
 } else {
     console.error("Container principal '.tela-produto' não foi encontrado no DOM.");
 }
+

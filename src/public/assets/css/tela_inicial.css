@@ -20,6 +20,7 @@ main {
 button {
   overflow: hidden;
   display: none;
+  background-color: transparent;
 }
 
 .content_container {

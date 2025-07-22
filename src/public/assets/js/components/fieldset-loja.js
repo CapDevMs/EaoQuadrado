@@ -10,7 +10,7 @@ const fieldsetLoja = ({ image, nomeLoja, linkLoja }) => {
                 </a>
                 
                 <div class="icons-loja col-lg-2">
-                        <img src="assets/img/coracao-tela-produto.svg" id="loja-coracao">
+                        <div></div>
                         <img src="assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
                     
                 </div>
