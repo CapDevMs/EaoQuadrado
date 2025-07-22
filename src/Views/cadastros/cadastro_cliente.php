@@ -9,7 +9,7 @@ $titulo = 'Cadastro de Cliente';
     <title>Cadastro Cliente</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['/cadastros/cadastro_cliente', 'base', 'style', 'components/pop_up_error', 'components/image-cadastro']) ?>
+    <?php get_css(['/cadastros/cadastro_cliente', 'base', 'style', 'components/pop_up_error']) ?>
 </head>
 <body>
     <header class="header">
@@ -38,8 +38,8 @@ $titulo = 'Cadastro de Cliente';
             <div class="form-container">
                 <form class="form" id="vendedor_form" action="<?= get_base_url(); ?>cliente/cadastroCliente" method="post" enctype="multipart/form-data">
                     <div class="client-image">
-                        <img id="imgPreview" src="https://via.placeholder.com/150" alt="Imagem do perfil">
-                        <input type="file" name="imgProfile" id="imgProfileInput" accept="image/*">
+                    <input type="file" name="imgProfile" id="imgProfileInput" accept="image/*">
+                    <img id="imgPreview" src="" alt="Preview da imagem" style="display:none; max-width: 200px; margin-top: 10px;">
                     </div>
 
                     <div class="nome-group">
@@ -129,5 +129,5 @@ $titulo = 'Cadastro de Cliente';
     <?php get_footer() ?>
     </footer>
 </body>
-<script src="<?php get_base_url() ?>../assets/js/cadastro_cliente.js"></script>
+<script src="<?php get_base_url() ?>assets/js/cadas"></script>
 </html>
