@@ -9,7 +9,7 @@ $titulo = 'Cadastro de Cliente';
     <title>Cadastro Cliente</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['/cadastros/cadastro_cliente', 'base', 'style', 'components/pop_up_error']) ?>
+    <?php get_css(['/cadastros/cadastro_cliente', 'base', 'style', 'components/pop_up_error', 'components/image-cadastro']) ?>
 </head>
 <body>
     <header class="header">
@@ -30,27 +30,16 @@ $titulo = 'Cadastro de Cliente';
       <button onclick="fecharPopup()">Fechar</button>
     </div>
   </div>
-
-  <script>
-    function fecharPopup(event) {
-      if (event && event.target.className !== 'popup-overlay') return;
-
-      const popup = document.querySelector('.popup-overlay');
-      if (popup) {
-        popup.style.display = 'none';
-      }
-    }
-  </script>
 <?php endif; ?>
 
 <div class="roadmap">Home / Cadastro de Cliente</div>
         <div class="register_client">
             <h2>Cadastro de Cliente</h2>
             <div class="form-container">
-                <!-- <img src="src/public/assets/img/foto_cliente.png" class="client-image" alt="foto cliente"> -->
                 <form class="form" id="vendedor_form" action="<?= get_base_url(); ?>cliente/cadastroCliente" method="post" enctype="multipart/form-data">
-                    <div class="img-profile">
-                        <input type="file" name="imgProfile" >
+                    <div class="client-image">
+                        <img id="imgPreview" src="https://via.placeholder.com/150" alt="Imagem do perfil">
+                        <input type="file" name="imgProfile" id="imgProfileInput" accept="image/*">
                     </div>
 
                     <div class="nome-group">
@@ -140,5 +129,5 @@ $titulo = 'Cadastro de Cliente';
     <?php get_footer() ?>
     </footer>
 </body>
-<script src="assets/js/script.js"></script>
+<script src="<?php get_base_url() ?>../assets/js/cadastro_cliente.js"></script>
 </html>
