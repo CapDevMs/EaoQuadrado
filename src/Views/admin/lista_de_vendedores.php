@@ -20,10 +20,10 @@ $base_url = get_base_url();
     <?php get_header(); ?>
  
     <main>
-    <div class="roadmap">Home / Painel do Administrador / Lista de Vendedores</div>
+    <!-- <div class="roadmap">Home / Painel do Administrador / Lista de Vendedores</div> -->
 
             <div class="all container row">
-                <ul class="menu-adm col-sm-3 col-xl-2">
+                <!-- <ul class="menu-adm col-sm-3 col-xl-2">
                     <li>
                         <input type="checkbox" id="item1">
                         <label for="item1">Cadastro</label>
@@ -63,10 +63,9 @@ $base_url = get_base_url();
                             <a href="<?= get_base_url(); ?>admin/criarCategoria">Criar Categoria</a>
                         </div>
                     </li>
-                </ul>
-                    
+                </ul> -->
+                <h3 class="col-sm-10 col-lg-8 ml-0 mb-1"> Lista de Vendedores</h3>
                 <div class="lista-vendedor container col-sm-10 col-lg-8 ml-0 mb-1">
-
                     <listaVendedores></listaVendedores>
 
                 </div>

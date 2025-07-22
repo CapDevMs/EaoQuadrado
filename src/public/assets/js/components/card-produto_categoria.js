@@ -1,6 +1,6 @@
 const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) => {
     return `
-    <div class="card-produto col-sm-6 col-lg-3 col-xl-2">
+    <div class="card-produto col-sm-6 col-lg-4 col-xl-3">
         <div class="card-body pb-1">
             <div class="row">   
                 <div class="col-sm-11">
@@ -10,8 +10,8 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
                 </div>
                 <div class="col-sm-1 pt-2">
                     <i class="fa-regular fa-heart pointer pb-1 like" id="like" data-id="${id_produto}"></i>
-                    <a class="shopping-link">
-                        <i class="fa-solid fa-cart-shopping" onclick="adicionarCarrinho(${id_produto})"></i>
+                    <a class="shopping-link" href="${link}">
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                 </div>
             </div>
@@ -32,7 +32,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
                     <a href="${link}" class="btn btn-comprar">Comprar</a>
                 </div>
                 <div class="col-sm-6">
-                    <a class="btn btn-carrinho" onclick="adicionarCarrinho(${id_produto})">Carrinho</a>
+                    <a class="btn btn-carrinho" onclick="adicionarAoCarrinho(${id_produto})">Carrinho</a>
                 </div>
             </div>
         </div>
