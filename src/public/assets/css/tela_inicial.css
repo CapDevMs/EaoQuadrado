@@ -101,7 +101,7 @@ button {
 }
 
 .itens1 {
-  height: 390px;
+  height: 448px;
   padding-right: 1rem !important;
 }
 
@@ -118,7 +118,7 @@ button {
 
 @media (max-width: 1440px) {
   .itens1 {
-    height: 100%;
+      height: 448px;
   }
 }
 
