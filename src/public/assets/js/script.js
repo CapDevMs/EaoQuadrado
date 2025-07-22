@@ -17,4 +17,5 @@ function adicionarCarrinho(idProduto) {
 
     localStorage.setItem("listaProdutosCarrinho", JSON.stringify(arrayLocalStorage));
     console.log("Estado atual do carrinho:", arrayLocalStorage);
+    console.log(`adicionado ao carrinho`)
 }
