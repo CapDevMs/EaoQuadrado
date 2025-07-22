@@ -16,6 +16,7 @@ class Carrinho extends Model
 
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
+    
     public function enviarCarrinho()
     {
         $sql = "INSERT () INTO Usuarios VALUES ()";
