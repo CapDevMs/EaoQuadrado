@@ -35,7 +35,6 @@
                 Produto salvo com sucesso!
             </div>
         <?php endif; ?> -->
-
         <!-- MENSAGEM DE ERRO -->
         <?php if (!empty($erros)): ?>
             <div style="background-color: #f8d7da; color: #721c24; padding: 10px; border: 1px solid #f5c6cb; margin-bottom: 20px; border-radius: 4px;">
@@ -48,7 +47,7 @@
             </div>
         <?php endif; ?>
 
-        <form action="<?= get_base_url(); ?>vendedor/cadastrarProduto" method="post" enctype="multipart/form-data" id="form-cadastro-produto">
+        <form action="<?= get_base_url(); ?>vendedor/cadastroProduto" method="post" enctype="multipart/form-data" id="form-cadastro-produto">
             <div class="linha-horizontal">
                 <div class="linha-1">
                     <label for="nome-produto">Nome do Produto</label><br>

@@ -11,7 +11,7 @@ class CadastroProdutoVendedorController extends Controller
 
     public function index()
     {
-        //tirar validação de método get futuramente 
+        // tirar validação de método get futuramente 
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $categorias = (new Categoria())->findAll()->getData();
 
@@ -32,6 +32,7 @@ class CadastroProdutoVendedorController extends Controller
 
     private function processarCadastro()
     {
+        // var_dump($_POST)
         // Extrai os dados enviados pelo formulário (já com limpeza e validações básicas)
         $dados = [
             'nome' => trim($_POST['nome'] ?? ''),
@@ -67,7 +68,7 @@ class CadastroProdutoVendedorController extends Controller
             $produto->insert($dados); // Salva no banco
 
             // Redireciona com sucesso se salvar corretamente
-            header("Location: " . get_base_url() . "vendedor/cadastrarProduto?sucesso=1");
+            header("Location: " . get_base_url() . "vendedor/cadastroProduto?sucesso=1");
             exit;
 
         } catch (\Exception $e) {
@@ -149,4 +150,3 @@ class CadastroProdutoVendedorController extends Controller
         return $imagens; 
     }
 }
-
