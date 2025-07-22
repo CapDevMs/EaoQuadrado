@@ -20,7 +20,7 @@
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.90);
     border-radius: 20px;
     width: 1000px;
-    height: 1300px;
+    height: 1400px;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
@@ -185,7 +185,7 @@
 @media (max-width: 1445px) {
     .register_client {
         max-width: 900px;
-        max-height: 1250px;
+        max-height: 1350px;
         margin-bottom: 5%;
     }
 

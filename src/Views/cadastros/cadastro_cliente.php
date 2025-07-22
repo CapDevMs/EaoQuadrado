@@ -59,12 +59,12 @@ $titulo = 'Cadastro de Cliente';
 
                 
                     <div class="cpf-group">
-                        <label for="cpf">CPF*</label>
+                        <label for="cpf">CPF</label>
                         <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
                     </div>
   
                     <div class="email-group">
-                        <label for="email">E-mail*</label>
+                        <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
                     </div>
 
