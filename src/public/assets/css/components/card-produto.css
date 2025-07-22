@@ -9,7 +9,6 @@
 .card-produto {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 3.75rem;
 }
 
 .card-body {
