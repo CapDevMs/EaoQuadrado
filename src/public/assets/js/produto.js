@@ -1,3 +1,4 @@
+console.log(listaProdutosJS)
 import galeriaImg from "./components/galeria-img.js";   
 
 import fieldsetLoja from "./components/fieldset-loja.js";
@@ -6,21 +7,23 @@ import componenteTelaProduto from "./components/componente-tela-produto.js";
 
 const componenteTelaProdutoContainer = document.querySelector(".tela-produto");
 
+const produtoSelecionado = listaProdutosJS.find(produto => produto.id_produto == idPego)
+const lojaSelecionada = listaVendedoresJS.find(vendedor => vendedor.id_loja == produtoSelecionado.id_loja)
 let telaProdutoItens = [
     {
-        'nomeProduto': 'Bolsa Gucci',
-        'precoProduto':'987,88',
-        'descricao':'Eleve o seu estilo com a deslumbrante Bolsa Feminina Gucci...',
-        'nomeLoja':'studio center' 
+        'nomeProduto': `${produtoSelecionado.nome}`,
+        'precoProduto':`${produtoSelecionado.preco}`,
+        'descricao':`${produtoSelecionado.descricao}`,
+        'nomeLoja':`${lojaSelecionada.nome}` 
     }
 ];
 
 let images = [
-    { 'image': 'assets/img/tela-produtos/bolsa.png' }
+    { 'image': `${produtoSelecionado.imagens}` }
 ];
 
 let fieldsetLojaitens = [
-    { 'image': 'src/public/assets/img/tela-produtos/loja.png', 'nomeLoja': 'Studio Center' }
+    { 'image': `${lojaSelecionada.loja_imagem}`, 'nomeLoja':`${lojaSelecionada.nome_loja}` }
 ];
 
 
@@ -70,44 +73,6 @@ if (componenteTelaProdutoContainer) {
         });
     }
 
-    if (contadorContainer) {
-        contadorContainer.innerHTML = contadorQuantidade();
-
-        const mais = contadorContainer.querySelector(".btn-mais"); 
-        const menos = contadorContainer.querySelector(".btn-menos"); 
-        const qtd = contadorContainer.querySelector(".input-quantidade"); 
-
-        if (mais && menos && qtd) {
-            let quantidadeProdutos = 1;
-
-            mais.addEventListener("click", () => {
-                quantidadeProdutos++;
-                qtd.value = quantidadeProdutos;
-            });
-
-            menos.addEventListener("click", () => {
-                if (quantidadeProdutos > 1) {
-                    quantidadeProdutos--;
-                }
-                qtd.value = quantidadeProdutos;
-            });
-
-            qtd.addEventListener("change", () => {
-                const novoValor = parseInt(qtd.value);
-                if (!isNaN(novoValor) && novoValor > 0) {
-                    quantidadeProdutos = novoValor;
-                } else {
-                    qtd.value = quantidadeProdutos; 
-                }
-            });
-        } else {
-            console.error("Elementos do contador não encontrados.");
-        }
-    } else {
-        console.error("Container '.contador-container' não foi encontrado no DOM.");
-    }
-
 } else {
     console.error("Container principal '.tela-produto' não foi encontrado no DOM.");
 }
-

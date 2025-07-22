@@ -16,4 +16,10 @@ class Produto extends Model
         $stmt = $this->query($sql);
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
+    public function getLojas()
+    {
+        $sql = "SELECT * FROM lojas";
+        $stmt = $this->query($sql);
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+    }
 }

@@ -1,4 +1,5 @@
-const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) => {
+const cardProduto = ({ id_produto, nome, imagens, preco, link = `./produto?id=${id_produto}`}) => {
+    imagens = imagens.replace('src/public/', ''); 
     return `
     <divi class="card-produto col-sm-6 col-lg-3 col-xl-2">
         <div class="card-body pb-1">

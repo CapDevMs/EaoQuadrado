@@ -1,5 +1,20 @@
 <?php
 
+if (isset($_GET['id'])) {
+    $produtoId = $_GET['id'];
+    ?>
+    <script>
+        const idPego = <?= json_encode($produtoId); ?>;
+    </script>
+    <?php
+    
+} else {
+    
+}
+?>
+<?php
+
+
 $appName = get_app_name();
 ?>
 <!DOCTYPE html>
@@ -28,8 +43,11 @@ $appName = get_app_name();
     <?php get_footer(); ?>
 
 </body>
+    <script>
+        const listaProdutosJS = <?= json_encode($listaProdutos); ?>;
+        const listaVendedoresJS = <?= json_encode($listaVendedores); ?>;
+    </script>
 <script type="module" src="<?= get_base_url(); ?>assets/js/produto.js?<?= time() ?>"></script>
 <script type="module" src="<?= get_base_url(); ?>assets/js/script.js"></script>
-
 
 </html>
