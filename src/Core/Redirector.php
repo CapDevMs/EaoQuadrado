@@ -46,7 +46,8 @@ class Redirector
     public function send(): void
     {
         http_response_code($this->statusCode);
-        header("Location: {$this->target}");
+        $url = $_ENV['APP_URL'] ?? '';
+        header("Location: {$url}{$this->target}");
         exit;
     }
 
