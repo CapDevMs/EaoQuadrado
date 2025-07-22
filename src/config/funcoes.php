@@ -1,5 +1,9 @@
 <?php
 
+use Core\Session;
+use Core\Redirector;
+use Core\Router;
+
 function get_base_url() {
     $app_url = $_ENV['APP_URL'];
     if(substr($app_url, -1) !== '/'){
