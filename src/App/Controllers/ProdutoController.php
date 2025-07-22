@@ -12,25 +12,26 @@ class ProdutoController extends Controller
 
         View::render("produto");
     }
+ 
+    public function exibirProduto()
+    
+    {
+        $idProduto = $_GET['id'] ?? null;
 
-    public function getProduto()
-{
-        if (!isset($_GET['id'])) {
-            http_response_code(400);
-            echo json_encode(['erro' => 'ID do produto não informado']);
+        if (!$idProduto) {
+            echo "Produto não encontrado.";
             return;
         }
 
-        $produtoModel = new Produto();
-        $produto = $produtoModel->getProdutoById($_GET['id']);
+        $produtoModel = new ProdutoModel();
+        $produto = $produtoModel->getProdutoPorId($idProduto);
 
         if (!$produto) {
-            http_response_code(404);
-            echo json_encode(['erro' => 'Produto não encontrado']);
+            echo "Produto não encontrado.";
             return;
         }
 
-        echo json_encode($produto);
+        $this->loadView('produto/produto', ['produto' => $produto]);
     }
 
 }
