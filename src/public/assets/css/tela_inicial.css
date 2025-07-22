@@ -90,7 +90,7 @@ button {
   background-size: cover;
   cursor: pointer;
   margin: 0 !important;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .itens1:hover,
@@ -101,7 +101,7 @@ button {
 }
 
 .itens1 {
-  height: 100%;
+  height: 390px;
   padding-right: 1rem !important;
 }
 
@@ -116,6 +116,12 @@ button {
   margin: 0;
 }
 
+@media (max-width: 1440px) {
+  .itens1 {
+    height: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .mosaico {
     display: flex;
@@ -124,5 +130,6 @@ button {
 
   .itens1 {
     padding-right: 0.2rem !important;
+    padding-bottom: 1rem;
   }
 }
