@@ -25,7 +25,15 @@ $base_url = get_base_url();
                     <img src="<?=$base_url;?>assets/img/informacao.svg" alt="Informações">
                 </a>
             </li>
+            <?php if (session()->has('user')): ?>
+                <li class="menu-opcoes-icons">
+                    <a href="<?=$base_url;?>logout">
+                        <img src="<?=$base_url;?>assets/img/logout.svg" alt="Sair">
+                    </a>
+                </li>
+            <?php endif; ?>
         </ul>
+
         <div class="header-mobile">
                 <img src="<?=$base_url;?>assets/img/menu-mobile.svg" alt="Menu" id="hamburguer">
 

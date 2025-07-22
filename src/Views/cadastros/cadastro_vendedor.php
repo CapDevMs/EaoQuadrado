@@ -23,7 +23,7 @@ $titulo = 'Cadastro de Vendedor';
         breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/pages/contato.php' => 'Contato'));
         ?></div>
         
-        <form method="post" action="<?php route('salvarCadastroVendedor') ?>" enctype="multipart/form-data">
+        <form method="post" action="<?= route('salvarCadastroVendedor') ?>" enctype="multipart/form-data">
             <div class="register_client" id="pessoal">
                 <h2>Cadastro de Vendedor</h2>
                 <div class="form-container">

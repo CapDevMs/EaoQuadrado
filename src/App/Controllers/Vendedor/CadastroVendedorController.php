@@ -53,7 +53,7 @@ class CadastroVendedorController extends Controller
 
             session()->flash('error', 'Alguns campos não foram preenchidos corretamente.');
 
-            return redirect()->route('cadastroVendedor')->with('errors', $validator->errors());
+            return redirect()->to($_ENV['APP_URL'] . 'cadastroVendedor')->with('errors', $validator->errors());
         }
         
         $vendedor = new Vendedor();

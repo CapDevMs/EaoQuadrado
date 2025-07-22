@@ -37,13 +37,16 @@ class AuthController extends Controller
 
         $login = filter_var($this->request->input('login'), FILTER_VALIDATE_EMAIL);
         $senha = filter_var($this->request->input('senha'), FILTER_DEFAULT);
+        
 
-
-        $user->where('email', $login)
-            ->andWhere('senha', $senha)
-            ->get();
+        $user->findBy('email', $login);
         
         if (empty($user->getData())) {
+            session()->flash('error', 'Usuário ou senha inválidos.');
+            return redirect()->route('login');
+        }
+
+        if (!password_verify($senha, $user->getData()['senha'])) {
             session()->flash('error', 'Usuário ou senha inválidos.');
             return redirect()->route('login');
         }
@@ -85,6 +88,5 @@ class AuthController extends Controller
             return View::render('esqueci_senha', compact('mensagem'));
         }
 
-        // Lógica de envio do e-mail de recuperação de senha!
     }
 }

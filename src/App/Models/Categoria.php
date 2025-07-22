@@ -11,7 +11,7 @@ class Categoria extends Model
 
     public function getCategorias()
     {
-        $sql = "SELECT * FROM Categorias";
+        $sql = "SELECT * FROM {$this->table}";
         $stmt = $this->query($sql);
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }

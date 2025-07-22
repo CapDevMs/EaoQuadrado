@@ -1,9 +1,5 @@
 <?php
 
-use Core\Session;
-use Core\Redirector;
-use Core\Router;
-
 function get_base_url() {
     $app_url = $_ENV['APP_URL'];
     if(substr($app_url, -1) !== '/'){
@@ -23,7 +19,6 @@ function get_base_head() {
 
 function get_header(){
     include_once(__DIR__ . '/../components/header.php');
-    echo 'teste';
 }
 function get_breadcrumbs(){
     include_once(__DIR__ . '/../components/breadcrumbs.php');
@@ -65,37 +60,7 @@ function get_sidebar_admin($page) {
     include_once(__DIR__ . '/../components/sidebar_adm.php');
 }
 
-function route(string $name, array $params = []): ?string
+function route($location)
 {
-    $router = router(); // função helper que retorna o Router singleton
-
-    $url = $router->route($name);
-
-    if (!$url) {
-        return null;
-    }
-
-    // Substitui os parâmetros no estilo {id}, {slug}
-    foreach ($params as $key => $value) {
-        $url = str_replace("{" . $key . "}", $value, $url);
-    }
-
-    return $url;
-}
-
-function session(): Session
-{
-    global $session;
-    return $session;
-}
-
-function redirect(): Redirector
-{
-    return new Redirector();
-}
-
-function router(): Router
-{
-    global $router;
-    return $router;
+    return header("location: {$location}");
 }

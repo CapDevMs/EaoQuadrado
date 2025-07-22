@@ -302,3 +302,13 @@ INSERT INTO Produtos (nome,descricao,marca,preco,imagens,quantidade,id_loja,id_c
 1,
 3,
 'Premium');
+
+
+-- Atualização da senha para o padrão bcrypt | Senha: "senhateste"
+update Usuarios set senha = '$2y$10$WG13Bt0Qi1WBez4jSz.vEuSSyJvtT9yEohlptu9KOaqBq/2bLrxHq' where id_usuario > 0;
+
+ALTER TABLE Usuarios ADD COLUMN tipo ENUM('cliente', 'vendedor', 'administrador') NOT NULL DEFAULT 'cliente';
+
+UPDATE Usuarios SET tipo = 'cliente' WHERE email = 'usertestecliente@gmail.com';
+UPDATE Usuarios SET tipo = 'vendedor' WHERE email = 'usertestevendedor@gmail.com';
+UPDATE Usuarios SET tipo = 'administrador' WHERE email = 'usertesteadmim@gmail.com';
