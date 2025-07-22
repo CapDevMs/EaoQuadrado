@@ -167,6 +167,11 @@ function levarWhatsapp(){
                 
                 mensagem += `
                 -  Nome: ${productoAchado.nome} / Marca: ${productoAchado.marca} / Loja: ${productoAchado.id_loja} / Quantidade: ${contador.value}`
+
+                mensagem = mensagem.replace(' ' , '%20');
+                urlMensagem = `https://wa.me/${5567984665576}?text=${mensagem}`;
+                
+                window.location.href = urlMensagem;
                 
             })
             console.log(mensagem)
