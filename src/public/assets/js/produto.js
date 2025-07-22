@@ -25,78 +25,82 @@ if (!idProduto) {
   carregarProduto(idProduto);
 }
 
-// Requisição real de produto via API
+// Função para carregar o produto da rota PHP
 async function carregarProduto(id) {
   try {
     const response = await fetch(`/getProduto?id=${id}`);
+
     if (!response.ok) throw new Error("Produto não encontrado");
 
     const produto = await response.json();
+
+    if (!produto || !produto.nome) throw new Error("Dados inválidos do produto");
+
     renderProduto(produto);
     renderProdutosRelacionados();
 
   } catch (error) {
-    console.error(error);
-    document.querySelector(".container-produto").innerHTML = `<p>Erro ao carregar produto.</p>`;
+    console.error("Erro ao carregar produto:", error);
+    document.querySelector(".container-produto").innerHTML = `<p class="text-danger">Erro ao carregar produto.</p>`;
   }
 }
 
-// Renderiza os dados principais do produto
+// Função para exibir os dados principais do produto
 function renderProduto(produto) {
   const container = document.querySelector(".container-produto");
+
   container.innerHTML = componenteTelaProduto(produto);
 
   document.querySelector(".galeria-container").innerHTML = galeriaImg({
-    image: produto.imagem
+    image: produto.imagem || "assets/img/default.png"
   });
 
   document.querySelector(".fieldset-loja").innerHTML = fieldsetLoja({
-    image: produto.logo_loja,
-    nomeLoja: produto.nome_loja,
-    linkLoja: produto.link_loja
+    image: produto.logo_loja || "assets/img/default-loja.png",
+    nomeLoja: produto.nome_loja || "Loja desconhecida",
+    linkLoja: produto.link_loja || "#"
   });
 
   contadorQuantidade();
 
   configurarFavoritos();
-  configurarCarrinho(produto.id || idProduto); // caso id esteja disponível
+  configurarCarrinho(produto.id || idProduto);
 }
 
-// Lógica do botão de favoritos
+// Função para configurar botão de favoritos
 function configurarFavoritos() {
   const iconeFavorito = document.querySelector("#btn-favorito i");
   if (!iconeFavorito) return;
 
-  iconeFavorito.addEventListener('click', function () {
-    const isFavoritado = iconeFavorito.classList.contains("bi-heart-fill");
+  iconeFavorito.addEventListener('click', () => {
+    const ativo = iconeFavorito.classList.contains("bi-heart-fill");
 
-    iconeFavorito.classList.toggle("bi-heart", isFavoritado);
-    iconeFavorito.classList.toggle("bi-heart-fill", !isFavoritado);
+    iconeFavorito.classList.toggle("bi-heart", ativo);
+    iconeFavorito.classList.toggle("bi-heart-fill", !ativo);
   });
 }
 
-// Lógica do botão de adicionar ao carrinho
+// Função para adicionar ao carrinho
 function configurarCarrinho(idProduto) {
   const iconeCarrinho = document.querySelector("#btn-carrinho i");
   const inputQtd = document.querySelector(".input-quantidade");
 
   if (!iconeCarrinho || !inputQtd) return;
 
-  iconeCarrinho.addEventListener('click', function () {
+  iconeCarrinho.addEventListener('click', () => {
     const qtd = Number(inputQtd.value) || 1;
-    
+
     iconeCarrinho.classList.replace("bi-bag-plus", "bi-bag-check");
 
     setTimeout(() => {
       iconeCarrinho.classList.replace("bi-bag-check", "bi-bag-plus");
     }, 1500);
 
-    // Aqui você pode salvar no carrinho com o ID real
     console.log(`Produto ${idProduto} adicionado com quantidade: ${qtd}`);
   });
 }
 
-// Produtos relacionados (estático por enquanto)
+// Produtos relacionados (estático)
 function renderProdutosRelacionados() {
   const produtos = [
     {
