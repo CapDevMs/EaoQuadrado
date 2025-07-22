@@ -10,7 +10,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
                 </div>
                 <div class="col-sm-1 pt-2">
 
-                    <i class="fa-regular fa-heart pointer pb-1 like" id="like" data-id="${id_produto}"></i>
+
                     <a class="shopping-link">
                         <i class="fa-solid fa-cart-shopping" onclick="adicionarCarrinho(${id_produto})"></i>
                     </a>
@@ -40,7 +40,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
     </div>
     `;
 }
-
+                    // <i class="fa-regular fa-heart pointer pb-1 like" id="like" data-id="${id_produto}"></i>
 export default cardProduto;
 
 

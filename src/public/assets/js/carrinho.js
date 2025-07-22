@@ -14,7 +14,7 @@ function ExibirProdutos() {
 
         arrayLocalStorage.forEach(product => {
             
-            const produtoSelecionado = listaProdutosJS.find(produto => produto.id_produto === product.id)
+            const produtoSelecionado = listaProdutosJS.find(produto => produto.id_produto == product.id)
 
             let id = `${produtoSelecionado.id_produto}`
             let imagem = `${produtoSelecionado.imagens}`
