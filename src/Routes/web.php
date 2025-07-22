@@ -16,7 +16,6 @@ use App\Controllers\Vendedor\CadastroVendedorController;
 // area cliente
 use App\Controllers\Cliente\CarrinhoController;
 use App\Controllers\Cliente\FavoritosController;
-use App\Controllers\Cliente\HistoricoDePedidosController;
 use App\Controllers\Cliente\PerfilClienteController;
 
 // area vendedor
@@ -37,6 +36,7 @@ use App\Controllers\AuthController;
 
 use Core\Router;
 
+global $router;
 $router = new Router();
 
 // área adm
@@ -55,14 +55,14 @@ $router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::cl
 
 $router->get('/cadastroCliente', CadastroClienteController::class, 'index');
 $router->post('/cliente/cadastroCliente', CadastroClienteController::class, 'cadastrarCliente');
-$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor');
+$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor', 'cadastroVendedor');
+$router->post('/cadastroVendedor', CadastroVendedorController::class, 'salvarCadastroVendedor', 'salvarCadastroVendedor');
 
 // área cliente
 
 $router->get('/favoritos', FavoritosController::class, 'favoritos');
 $router->get('/carrinho', CarrinhoController::class, 'carrinho');
-$router->get('/historicoPedidos', HistoricoDePedidosController::class, 'historicoDePedidos');
-$router->get('/cliente', perfilClienteController::class, 'cliente');
+$router->get('/cliente', PerfilClienteController::class, 'cliente');
 
 
 // área vendedor
@@ -70,7 +70,7 @@ $router->get('/cliente', perfilClienteController::class, 'cliente');
 $router->get('/vendedor/cadastroProduto', CadastroProdutoVendedorController::class, 'index');
 $router->post('/vendedor/cadastroProduto', CadastroProdutoVendedorController::class, 'index');
 $router->get('/vendedor/historicoVendas', HistoricoVendasController::class, 'historicoDeVendas');
-$router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja');
+$router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja', 'vendedor.minhaLoja');
 $router->get('/vendedor/paginaVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');
 $router->get('/vendedor/gerenciamentoEstoque', GerenciamentoDeEstoqueController::class, 'gerenciamentoDeEstoque');
 $router->get('/vendedor/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');
@@ -80,10 +80,10 @@ $router->get('/vendedor/troca_devolucao_cancelamento', TrocasDevolucoesControlle
 
 // área comum
 
-$router->get('/categoria', CategoriaController::class, 'categoria');
+$router->get('/categoria/{id}', CategoriaController::class, 'categoria', 'categoria');
 $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
-$router->get('/login', AuthController::class, 'index');
+$router->get('/login', AuthController::class, 'index', 'login', 'login');
 $router->get('/getProdutos', HomeController::class, 'produtos');
 $router->get('/getCategorias', CategoriaController::class, 'sendCategorias');
 $router->post('/filtroMaxMin', CategoriaController::class, 'filtroMaxMin');
@@ -96,11 +96,11 @@ $router->get('/nossaPolitica', HomeController::class, 'nossaPolitica');
 $router->get('/faq', HomeController::class, 'faq');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/termosDeUso', HomeController::class, 'termosDeUso');
-$router->get('/produto', ProdutoController::class, 'produto');
+$router->get('/produto', ProdutoController::class, 'produto', 'produto');
 
 
 
 // Home
-$router->get('/', HomeController::class, 'index');
+$router->get('/', HomeController::class, 'index', 'homepage');
 
 $router->dispatch();
