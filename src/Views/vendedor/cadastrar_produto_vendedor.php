@@ -102,7 +102,7 @@
             </div>
 
             <label for="arquivo">Inserir Imagens</label><br>
-            <input type="file" id="arquivo" name="imagens[]" accept="image/*" multiple><br><br>
+            <input type="file" id="arquivo" name="imagens[]" accept="image/*" multiple required><br><br>
 
             <div class="previas"></div>
 
