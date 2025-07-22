@@ -37,6 +37,7 @@ use App\Controllers\AuthController;
 
 use Core\Router;
 
+global $router;
 $router = new Router();
 
 // área adm
@@ -55,7 +56,8 @@ $router->get('/admin/validacaoNovoVendedor', ValidacaoNovoVendedorController::cl
 
 $router->get('/cadastroCliente', CadastroClienteController::class, 'index');
 $router->post('/cliente/cadastroCliente', CadastroClienteController::class, 'cadastrarCliente');
-$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor');
+$router->get('/cadastroVendedor', CadastroVendedorController::class, 'cadastroVendedor', 'cadastroVendedor');
+$router->post('/cadastroVendedor', CadastroVendedorController::class, 'salvarCadastroVendedor', 'salvarCadastroVendedor');
 
 // área cliente
 
@@ -80,10 +82,10 @@ $router->get('/vendedor/troca_devolucao_cancelamento', TrocasDevolucoesControlle
 
 // área comum
 
-$router->get('/categoria', CategoriaController::class, 'categoria');
+$router->get('/categoria/{id}', CategoriaController::class, 'categoria', 'categoria');
 $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
-$router->get('/login', AuthController::class, 'index');
+$router->get('/login', AuthController::class, 'index', 'login', 'login');
 $router->get('/getProdutos', HomeController::class, 'produtos');
 $router->get('/getCategorias', CategoriaController::class, 'sendCategorias');
 $router->post('/filtroMaxMin', CategoriaController::class, 'filtroMaxMin');
@@ -96,11 +98,11 @@ $router->get('/nossaPolitica', HomeController::class, 'nossaPolitica');
 $router->get('/faq', HomeController::class, 'faq');
 $router->get('/sobre', HomeController::class, 'sobre');
 $router->get('/termosDeUso', HomeController::class, 'termosDeUso');
-$router->get('/produto', ProdutoController::class, 'produto');
+$router->get('/produto', ProdutoController::class, 'produto', 'produto');
 
 
 
 // Home
-$router->get('/', HomeController::class, 'index');
+$router->get('/', HomeController::class, 'index', 'homepage');
 
 $router->dispatch();
