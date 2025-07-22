@@ -86,3 +86,6 @@
     color: var(--cor-secundaria);
 }
 
+.fa-solid{
+    cursor: pointer;
+}

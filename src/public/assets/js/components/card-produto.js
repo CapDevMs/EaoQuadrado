@@ -10,8 +10,9 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
                 </div>
                 <div class="col-sm-1 pt-2">
 
-                    <a class="shopping-link" href="${link}">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-regular fa-heart pointer pb-1 like" id="like" data-id="${id_produto}"></i>
+                    <a class="shopping-link">
+                        <i class="fa-solid fa-cart-shopping" onclick="adicionarCarrinho(${id_produto})"></i>
                     </a>
                 </div>
             </div>
@@ -32,7 +33,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
                     <a href="${link}" class="btn btn-comprar">Comprar</a>
                 </div>
                 <div class="col-sm-6">
-                    <a class="btn btn-carrinho" onclick="adicionarAoCarrinho(${id_produto})">Carrinho</a>
+                    <a class="btn btn-carrinho" onclick="adicionarCarrinho(${id_produto})">Carrinho</a>
                 </div>
             </div>
         </div>
