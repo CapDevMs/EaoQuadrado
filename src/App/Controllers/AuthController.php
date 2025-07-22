@@ -54,6 +54,11 @@ class AuthController extends Controller
         session()->set('user', $user->getData());
 
         session()->flash('success', 'Login realizado com sucesso!');
+        
+        if($user->getData()['tipo'] === 'vendedor') {
+            return redirect()->route('vendedor.minhaLoja');
+        }
+
         return redirect()->route('homepage');
     }
 

@@ -16,7 +16,6 @@ use App\Controllers\Vendedor\CadastroVendedorController;
 // area cliente
 use App\Controllers\Cliente\CarrinhoController;
 use App\Controllers\Cliente\FavoritosController;
-use App\Controllers\Cliente\HistoricoDePedidosController;
 use App\Controllers\Cliente\PerfilClienteController;
 
 // area vendedor
@@ -63,8 +62,7 @@ $router->post('/cadastroVendedor', CadastroVendedorController::class, 'salvarCad
 
 $router->get('/favoritos', FavoritosController::class, 'favoritos');
 $router->get('/carrinho', CarrinhoController::class, 'carrinho');
-$router->get('/historicoPedidos', HistoricoDePedidosController::class, 'historicoDePedidos');
-$router->get('/cliente', perfilClienteController::class, 'cliente');
+$router->get('/cliente', PerfilClienteController::class, 'cliente');
 
 
 // área vendedor
@@ -72,7 +70,7 @@ $router->get('/cliente', perfilClienteController::class, 'cliente');
 $router->get('/vendedor/cadastroProduto', CadastroProdutoVendedorController::class, 'index');
 $router->post('/vendedor/cadastroProduto', CadastroProdutoVendedorController::class, 'index');
 $router->get('/vendedor/historicoVendas', HistoricoVendasController::class, 'historicoDeVendas');
-$router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja');
+$router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja', 'vendedor.minhaLoja');
 $router->get('/vendedor/paginaVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');
 $router->get('/vendedor/gerenciamentoEstoque', GerenciamentoDeEstoqueController::class, 'gerenciamentoDeEstoque');
 $router->get('/vendedor/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');

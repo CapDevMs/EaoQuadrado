@@ -10,11 +10,19 @@ $base_url = get_base_url();
             </a>
         </div>
         <ul class="menu-opcoes">
-            <li class="menu-opcoes-icons">
-                <a href="<?=$base_url;?>login">
-                    <img src="<?=$base_url;?>assets/img/pessoa.svg" alt="Pessoa">
-                </a>
-            </li>
+            <?php if (!session()->has('user')): ?>
+                <li class="menu-opcoes-icons">
+                    <a href="<?=$base_url;?>login">
+                        <img src="<?=$base_url;?>assets/img/pessoa.svg" alt="Pessoa">
+                    </a>
+                </li>
+            <?php else: ?>
+                <li class="menu-opcoes-icons">
+                    <a href="<?=$base_url;?>cliente">
+                        <img src="<?=$base_url;?>assets/img/pessoa.svg" alt="Pessoa">
+                    </a>
+                </li>
+            <?php endif; ?>
             <li class="menu-opcoes-icons">
                 <a href="<?=$base_url;?>carrinho">
                     <img src="<?=$base_url;?>assets/img/carrinho.svg" alt="Carrinho">
@@ -44,7 +52,7 @@ $base_url = get_base_url();
 <div class="mobile-menu" id="mobileMenu">
     <ul>
         <?php if (session()->has('user')): ?>
-            <li><a href="<?=$base_url;?>perfil">Meu Perfil</a></li>
+            <li><a href="<?=$base_url;?>cliente">Meu Perfil</a></li>
             <li><a href="<?=$base_url;?>logout">Logout</a></li>
         <?php else: ?>
             <li><a href="<?=$base_url;?>login">Login</a></li>
@@ -53,7 +61,6 @@ $base_url = get_base_url();
 
         <li><a href="<?=$base_url;?>carrinho">Carrinho</a></li>
         <li><a href="<?=$base_url;?>sobre">Sobre</a></li>
-        <li><a href="<?=$base_url;?>contato">Contato</a></li>
     </ul>
 </div>
 
