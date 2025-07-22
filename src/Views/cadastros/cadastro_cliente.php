@@ -9,7 +9,7 @@ $titulo = 'Cadastro de Cliente';
     <title>Cadastro Cliente</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php get_css(['/cadastros/cadastro_cliente', 'base', 'style']) ?>
+    <?php get_css(['/cadastros/cadastro_cliente', 'base', 'style', 'components/pop_up_error']) ?>
 </head>
 <body>
     <header class="header">
@@ -18,6 +18,30 @@ $titulo = 'Cadastro de Cliente';
 
 <main>
 
+<?php if (!empty($erros)) : ?>
+  <div class="popup-overlay" onclick="fecharPopup(event)">
+    <div class="popup-erro" onclick="event.stopPropagation()">
+      <h3>Erro ao cadastrar:</h3>
+      <ul>
+        <?php foreach ($erros as $erro): ?>
+          <li><?= htmlspecialchars($erro, ENT_QUOTES, 'UTF-8') ?></li>
+        <?php endforeach; ?>
+      </ul>
+      <button onclick="fecharPopup()">Fechar</button>
+    </div>
+  </div>
+
+  <script>
+    function fecharPopup(event) {
+      if (event && event.target.className !== 'popup-overlay') return;
+
+      const popup = document.querySelector('.popup-overlay');
+      if (popup) {
+        popup.style.display = 'none';
+      }
+    }
+  </script>
+<?php endif; ?>
 
 <div class="roadmap">Home / Cadastro de Cliente</div>
         <div class="register_client">
@@ -47,12 +71,12 @@ $titulo = 'Cadastro de Cliente';
 
                 
                     <div class="cpf-group">
-                        <label for="cpf">CPF</label>
+                        <label for="cpf">CPF*</label>
                         <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
                     </div>
   
                     <div class="email-group">
-                        <label for="email">E-mail</label>
+                        <label for="email">E-mail*</label>
                         <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
                     </div>
 

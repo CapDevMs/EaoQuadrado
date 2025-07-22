@@ -9,7 +9,6 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
                     </a>
                 </div>
                 <div class="col-sm-1 pt-2">
-                    <i class="fa-regular fa-heart pointer pb-1 like" id="like" data-id="${id_produto}"></i>
                     <a class="shopping-link" href="${link}">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
@@ -39,5 +38,5 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
     </div>
     `;
 }
-
+    // <i class="fa-regular fa-heart pointer pb-1 like" id="like" data-id="${id_produto}"></i>
 export default cardProduto;

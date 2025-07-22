@@ -54,7 +54,6 @@ class CadastroClienteController extends Controller
     $dados['imagem'] = $nomeImagemSalva;
 
     $errosValidacao = $this->validarDados($dados);
-    var_dump($errosValidacao);
     $erros = array_merge($erros, $errosValidacao);
 
     if (!empty($erros)) {
