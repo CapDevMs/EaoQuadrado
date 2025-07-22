@@ -24,7 +24,7 @@ function ExibirProdutos() {
 
             document.querySelector('painelProdutos').innerHTML += `
         
-                    <produto class="produto" id = '${id}'>
+                    <produto class="produto" id = '${id}' onclick = "selecionarProduto(${id})">
                      <div class='col-2 baseBlocoIcone'>
                          <img src="${imagem}" alt="foto-produto" class='imagem'>
                          </div>
@@ -85,7 +85,7 @@ document.querySelectorAll('.counter').forEach(input => {
 
 function updateTotal() {
     let valorTotal = 0;
-    const produtosCarrinho = document.querySelectorAll('produto');
+    const produtosCarrinho = document.querySelectorAll('.selecionado');
 
     produtosCarrinho.forEach(product => {
 
@@ -111,8 +111,6 @@ function removeProdutoCarrinho(removeProduto) {
 
     const produtoRemovido = document.getElementById(removeProduto);
     let cont = 0
-    console.log('localStorage antigo:', localStorage.getItem("listaProdutosCarrinho"));
-
         arrayLocalStorage.forEach(product => {
           if (product.id == removeProduto){
               arrayLocalStorage.splice(cont,1)
@@ -124,7 +122,6 @@ function removeProdutoCarrinho(removeProduto) {
         localStorage.setItem("listaProdutosCarrinho", novoCarrinhoString);
 
     produtoRemovido.closest('produto').remove();
-    console.log('localStorage antigo:', localStorage.getItem("listaProdutosCarrinho"));
     ExibirProdutos()
     updateTotal();
 };
@@ -136,3 +133,42 @@ const contadores = document.querySelectorAll('.counter');
 contadores.forEach(contador => {
     contador.addEventListener('input', updateTotal);
 });
+
+function selecionarProduto(id) {
+
+    let produto = document.getElementById(`${id}`);
+    
+    if (produto.classList.contains('selecionado')){
+        produto.classList.remove('selecionado')
+    } else {
+        produto.classList.add('selecionado')
+    }
+
+    updateTotal()
+};
+
+function levarWhatsapp(){
+    let mensagem = `
+    Olá! Gostaria de fazer um pedido com os seguintes itens:
+    
+    `;
+
+    let produtosSelecionados = document.querySelectorAll('.selecionado')
+
+    if (produtosSelecionados.length === 0){
+        return alert(`Escolha um produto`)
+    } else {
+        
+            produtosSelecionados.forEach(produtoSelecionado => {
+        
+                removeProdutoCarrinho(produtoSelecionado.id)
+                let productoAchado = listaProdutosJS.find(produto => produto.id_produto == produtoSelecionado.id)
+                let contador  = produtoSelecionado.querySelector('.counter')
+                
+                mensagem += `
+                -  Nome: ${productoAchado.nome} / Marca: ${productoAchado.marca} / Loja: ${productoAchado.id_loja} / Quantidade: ${contador.value}`
+                
+            })
+            console.log(mensagem)
+    }
+};

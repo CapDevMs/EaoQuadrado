@@ -17,19 +17,5 @@ function adicionarCarrinho(idProduto) {
 
     localStorage.setItem("listaProdutosCarrinho", JSON.stringify(arrayLocalStorage));
     console.log("Estado atual do carrinho:", arrayLocalStorage);
-
-    const dadosLocalStorage = localStorage.getItem('listaProdutosCarrinho');
-    const arrayDeDicionarios = JSON.parse(dadosLocalStorage);
-
-    fetch('src/App/Cliente/CarrinhoController.php',{
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(arrayDeDicionarios)
-    })
-    .then(Response => Response.JSON())
-    .then(data => {
-        
-    })
+    console.log(`adicionado ao carrinho`)
 }
