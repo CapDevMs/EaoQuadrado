@@ -21,10 +21,10 @@ class CadastroVendedorController extends Controller
         $validacao = [
             'nome' => 'required|min:3|max:50',
             'sobrenome' => 'required|min:3|max:50',
-            'cpf' => 'required|cpf',
-            'nascimento' => 'required|date_format:Y-m-d',
-            'telefone' => 'required|phone',
-            'cep' => 'required|regex:/^\d{5}-\d{3}$/', // Formato: 12345-678
+            'cpf' => 'required',
+            'nascimento' => 'required',
+            'telefone' => 'required',
+            'cep' => 'required', // Formato: 12345-678
             'endereco' => 'required|min:5|max:100',
             'numero' => 'required|integer|min:1|max:99999',
             'complemento' => 'nullable|max:50',
@@ -34,17 +34,14 @@ class CadastroVendedorController extends Controller
 
             'nome_loja' => 'required|min:3|max:50',
             'endereco_loja' => 'required|min:5|max:100',
-            'cnpj' => 'required|regex:/^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/', // Formato: 12.345.678/0001-23
+            'cnpj' => 'required', // Formato: 12.345.678/0001-23
             'email_loja' => 'required|email|max:100',
-            'cep_loja' => 'required|regex:/^\d{5}-\d{3}$/', // Formato: 12345-678
+            'cep_loja' => 'required', // Formato: 12345-678
             'bairro_loja' => 'required|min:3|max:50',
             'cidade_loja' => 'required|min:3|max:50',
-            'telefone_loja' => 'required|phone',
+            'telefone_loja' => 'required',
             'numero_endereco' => 'required|integer|min:1|max:99999',
-            'rede_social' => 'required|string|max:255',
-
-            'termos' => 'required|accepted',
-            'politica' => 'required|accepted',
+            'rede_social' => 'required|string|max:255'
         ];
 
         $validator = new Validator($this->request->all(), $validacao);
@@ -78,6 +75,7 @@ class CadastroVendedorController extends Controller
                 'email_loja' => $this->request->input('email_loja'),
                 'cep_loja' => $this->request->input('cep_loja'),
                 'bairro_loja' => $this->request->input('bairro_loja'),
+                'complemento_loja' => $this->request->input('complemento_loja'),
                 'cidade_loja' => $this->request->input('cidade_loja'),
                 'telefone_loja' => $this->request->input('telefone_loja'),
                 'numero_endereco' => $this->request->input('numero_endereco'),

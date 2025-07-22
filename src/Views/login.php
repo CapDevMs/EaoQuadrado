@@ -72,7 +72,7 @@
                             <a href="<?= $base_url; ?>cadastroCliente" class="btn button">Cliente</a>
                         </div>
                         <div class="col-sm-6">
-                            <a href="<?= $base_url; ?>cadastro-vendedor" class="btn button">Vendedor</a>
+                            <a href="<?= $base_url; ?>cadastroVendedor" class="btn button">Vendedor</a>
                         </div>
                     </div>
                 </div>

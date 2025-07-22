@@ -302,3 +302,41 @@ INSERT INTO Produtos (nome,descricao,marca,preco,imagens,quantidade,id_loja,id_c
 1,
 3,
 'Premium');
+
+-- Atualização da senha para o padrão bcrypt | Senha: "senhateste"
+update Usuarios set senha = '$2y$10$WG13Bt0Qi1WBez4jSz.vEuSSyJvtT9yEohlptu9KOaqBq/2bLrxHq' where id_usuario > 0;
+
+ALTER TABLE Usuarios ADD COLUMN tipo ENUM('cliente', 'vendedor', 'administrador') NOT NULL DEFAULT 'cliente';
+
+UPDATE Usuarios SET tipo = 'cliente' WHERE email = 'usertestecliente@gmail.com';
+UPDATE Usuarios SET tipo = 'vendedor' WHERE email = 'usertestevendedor@gmail.com';
+UPDATE Usuarios SET tipo = 'administrador' WHERE email = 'usertesteadmim@gmail.com';
+
+CREATE TABLE Vendedores (
+    id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    sobrenome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(14) NOT NULL,
+    nascimento DATE NOT NULL,
+    telefone VARCHAR(14) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    numero VARCHAR(10) NOT NULL,
+    complemento VARCHAR(100) NOT NULL,
+    bairro VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+
+    nome_loja VARCHAR(150) NOT NULL,
+    endereco_loja VARCHAR(255) NOT NULL,
+    cnpj VARCHAR(18) NOT NULL,
+    email_loja VARCHAR(150) NOT NULL,
+    cep_loja VARCHAR(10) NOT NULL,
+    bairro_loja VARCHAR(100) NOT NULL,
+    complemento_loja VARCHAR(100) NOT NULL,
+    cidade_loja VARCHAR(100) NOT NULL,
+    telefone_loja VARCHAR(20) NOT NULL,
+    numero_endereco VARCHAR(10) NOT NULL,
+    rede_social VARCHAR(150) NOT NULL
+);
+
+

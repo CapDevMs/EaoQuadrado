@@ -23,7 +23,7 @@ $titulo = 'Cadastro de Vendedor';
         breadcrumb(array('http://localhost/EaoQuadrado/src/' => 'Home', 'http://localhost/EaoQuadrado/src/pages/contato.php' => 'Contato'));
         ?></div>
         
-        <form method="post" action="<?php route('salvarCadastroVendedor') ?>" enctype="multipart/form-data">
+        <form method="post" action="<?= route('salvarCadastroVendedor') ?>" enctype="multipart/form-data">
             <div class="register_client" id="pessoal">
                 <h2>Cadastro de Vendedor</h2>
                 <div class="form-container">
@@ -226,7 +226,7 @@ $titulo = 'Cadastro de Vendedor';
 
                     <div class="input_label">
                             <label for="complemento">Complemento (opcional)</label>
-                            <input type="text" name="complemento" class="input-shop-container" placeholder="">
+                            <input type="text" name="complemento_loja" class="input-shop-container" placeholder="">
                     </div>
 
                     <div class="input_label">
@@ -250,29 +250,6 @@ $titulo = 'Cadastro de Vendedor';
                         </div>
 
                     </div>
-
-                    <div class="categorias">
-                        <h3 class="subtitle">Categorias</h3>
-                        <div class="checkbox-container2"> 
-                            <input type="checkbox" name="categoria[]" value="celular" class="checkbox2"><p>Celulares</p>
-                            <input type="checkbox" name="categoria[]" value="computador" class="checkbox2"><p>Computadores</p>
-                            <input type="checkbox" name="categoria[]" value="smartwache" class="checkbox2"><p>Smartwatches</p>
-                            <input type="checkbox" name="categoria[]" value="camera" class="checkbox2"><p>Câmera</p>
-                            <input type="checkbox" name="categoria[]" value="fone" class="checkbox2"><p>Fones de Ouvido</p>
-                            <input type="checkbox" name="categoria[]" value="game" class="checkbox2"><p>Games</p>
-                            <input type="checkbox" name="categoria[]" value="roupa" class="checkbox2"><p>Roupas</p>
-                            <input type="checkbox" name="categoria[]" value="ferramenta" class="checkbox2"><p>Ferramentas</p>
-                        </div>
-                    </div>
-                    
-                    <div class="anexar_img">
-                        <h3 class="subtitle">Anexar Imagens (Selecionar até 5 Imagens)</h3>
-                        <div class="frame_file"> 
-                            <input type="file" name="imagens[]" multiple>
-                            <label for="file">Selecionar Arquivo</label> 
-                        </div>
-                    </div>
-                </div>
                 
                 <div class="content_vend">
                     <div class="terms">

@@ -79,7 +79,7 @@ function route(string $name, array $params = []): ?string
         $url = str_replace("{" . $key . "}", $value, $url);
     }
 
-    return $url;
+    return $_ENV['APP_URL'] . $url;
 }
 
 function session(): Session
