@@ -1,4 +1,5 @@
 const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) => {
+    // imagens = imagens.replace('src/public','');
     return `
     <div class="card-produto col-sm-6 col-lg-3 col-xl-2">
         <div class="card-body pb-1">
@@ -9,8 +10,6 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
                     </a>
                 </div>
                 <div class="col-sm-1 pt-2">
-
-
                     <a class="shopping-link">
                         <i class="fa-solid fa-cart-shopping" onclick="adicionarCarrinho(${id_produto})"></i>
                     </a>
