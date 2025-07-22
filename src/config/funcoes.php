@@ -19,6 +19,7 @@ function get_base_head() {
 
 function get_header(){
     include_once(__DIR__ . '/../components/header.php');
+    echo 'teste';
 }
 function get_breadcrumbs(){
     include_once(__DIR__ . '/../components/breadcrumbs.php');

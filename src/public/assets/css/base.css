@@ -166,6 +166,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  z-index: 9998;
 }
 
 .open {
