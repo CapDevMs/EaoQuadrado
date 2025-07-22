@@ -24,7 +24,9 @@ $base_url = get_base_url();
 <body>
     <?php get_header() ?>
 
+
     <main class="main">
+
         <roadMap>
             <?php breadcrumb(array('http://localhost/EaoQuadrado' => 'Home', 'carrinho' => 'Carrinho')); ?>
         </roadMap>
@@ -35,7 +37,7 @@ $base_url = get_base_url();
             </div>
 
             <painelProdutos class='painelProdutos'>
-                
+
             </painelProdutos>
         </blocoPrincipal>
 
@@ -62,13 +64,16 @@ $base_url = get_base_url();
                     <button class="baseBotao" onclick="voltarPagina()">Retorne as compras</button>
                 </div>
                 <div class="flexCentro">
-                    <button class="baseBotao botaoWhatsApp" onclick='LimparCarrinho()' id='ApagarCarrinho'>Ir ao Whatsapp</button>
+                    <button class="baseBotao botaoWhatsApp" onclick='levarWhatsapp()' id='ApagarCarrinho'>Ir ao Whatsapp</button>
                 </div>
             </div>
 
         </totalCompra>
     </main>
-    <script src="src/public/assets/js/carrinho.js">
+    <script>
+        const listaProdutosJS = <?= json_encode($listaProdutos, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
     </script>
+    <script src="src/public/assets/js/script.js"></script>
+    <script src="src/public/assets/js/carrinho.js"></script>
     <?php get_footer() ?>
 </body>

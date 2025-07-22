@@ -1,37 +1,32 @@
 let arrayLocalStorage = JSON.parse(localStorage.getItem("listaProdutosCarrinho")) || [];
 
-
 function LimparCarrinho() {
-    localStorage.removeItem('listaProdutosCarrinho')
+    localStorage.removeItem('listaProdutosCarrinho');
 }
-
 
 function ExibirProdutos() {
     if (arrayLocalStorage.length == 0) {
-        console.log('Carrinho vazio');
         document.querySelector('painelProdutos').innerHTML += `
         <h2 style="margin:auto;max-width:max-content;color:var(--cor-botao-primario);">Carrinho Vazio</h2>
         `;
-        arrayLocalStorage = [{ id: 1, quantidade: 1 }, { id: 2, quantidade: 2 },{id:3,quantidade:3},{id:4,quantidade:4}];
-        let novoCarrinhoString = JSON.stringify(arrayLocalStorage);
-        localStorage.setItem("listaProdutosCarrinho", novoCarrinhoString);
-    
     } else {
         document.querySelector('painelProdutos').innerHTML = ``
 
         arrayLocalStorage.forEach(product => {
             
-            let id = `${product.id}`
-            let imagem = `asus_notebook.png`
-            let nome = `Asus notebok ${product.id}`;
-            let preco = `R$ 500,00`;
+            const produtoSelecionado = listaProdutosJS.find(produto => produto.id_produto == product.id)
+
+            let id = `${produtoSelecionado.id_produto}`
+            let imagem = `${produtoSelecionado.imagens}`
+            let nome = `${produtoSelecionado.nome}`;
+            let preco = `${produtoSelecionado.preco}`;
             let quantidade = `${product.quantidade}`
 
             document.querySelector('painelProdutos').innerHTML += `
         
-                    <produto class="produto" id = '${id}'>
+                    <produto class="produto" id = '${id}' onclick = "selecionarProduto(${id})">
                      <div class='col-2 baseBlocoIcone'>
-                         <img src="src/public/assets/img/${imagem}" alt="foto-produto" class='imagem'>
+                         <img src="${imagem}" alt="foto-produto" class='imagem'>
                          </div>
         
                      <div class="col-md-9 col-12 blocoCentralProduto flexColuna-sr">
@@ -45,7 +40,7 @@ function ExibirProdutos() {
                                  
                              <div class='col-6 sumidão baseBlocoProduto'>
                              <h4 class='miniBloco1 '>Preço</h4>
-                                 <preco class='miniBloco2'>${preco}</preco>
+                                 <preco class='miniBloco2'>R$ ${preco}</preco>
                              </div>
                              
                          </div>
@@ -90,7 +85,7 @@ document.querySelectorAll('.counter').forEach(input => {
 
 function updateTotal() {
     let valorTotal = 0;
-    const produtosCarrinho = document.querySelectorAll('produto');
+    const produtosCarrinho = document.querySelectorAll('.selecionado');
 
     produtosCarrinho.forEach(product => {
 
@@ -116,13 +111,9 @@ function removeProdutoCarrinho(removeProduto) {
 
     const produtoRemovido = document.getElementById(removeProduto);
     let cont = 0
-
         arrayLocalStorage.forEach(product => {
-            console.log(product)
-            console.log(removeProduto)
           if (product.id == removeProduto){
               arrayLocalStorage.splice(cont,1)
-              console.log('Item deletado');
           } else {
             cont+= 1;
           }
@@ -131,10 +122,8 @@ function removeProdutoCarrinho(removeProduto) {
         localStorage.setItem("listaProdutosCarrinho", novoCarrinhoString);
 
     produtoRemovido.closest('produto').remove();
-    console.log('localStorage atualizado:', localStorage.getItem("listaProdutosCarrinho"));
     ExibirProdutos()
     updateTotal();
-
 };
 
 updateTotal();
@@ -144,3 +133,47 @@ const contadores = document.querySelectorAll('.counter');
 contadores.forEach(contador => {
     contador.addEventListener('input', updateTotal);
 });
+
+function selecionarProduto(id) {
+
+    let produto = document.getElementById(`${id}`);
+    
+    if (produto.classList.contains('selecionado')){
+        produto.classList.remove('selecionado')
+    } else {
+        produto.classList.add('selecionado')
+    }
+
+    updateTotal()
+};
+
+function levarWhatsapp(){
+    let mensagem = `
+    Olá! Gostaria de fazer um pedido com os seguintes itens:
+    
+    `;
+
+    let produtosSelecionados = document.querySelectorAll('.selecionado')
+
+    if (produtosSelecionados.length === 0){
+        return alert(`Escolha um produto`)
+    } else {
+        
+            produtosSelecionados.forEach(produtoSelecionado => {
+        
+                removeProdutoCarrinho(produtoSelecionado.id)
+                let productoAchado = listaProdutosJS.find(produto => produto.id_produto == produtoSelecionado.id)
+                let contador  = produtoSelecionado.querySelector('.counter')
+                
+                mensagem += `
+                -  Nome: ${productoAchado.nome} / Marca: ${productoAchado.marca} / Loja: ${productoAchado.id_loja} / Quantidade: ${contador.value}`
+
+                mensagem = mensagem.replace(' ' , '%20');
+                urlMensagem = `https://wa.me/${5567984665576}?text=${mensagem}`;
+                
+                window.location.href = urlMensagem;
+                
+            })
+            console.log(mensagem)
+    }
+};
