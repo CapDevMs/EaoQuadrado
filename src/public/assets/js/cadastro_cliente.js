@@ -1,21 +1,21 @@
 const input = document.getElementById('imgProfileInput');
-const preview = document.getElementById('imgPreview');
+const preview = document.getElementById('imgPrev');
 
 preview.addEventListener('click', function () {
-input.click();
+    input.click();
 });
 
 input.addEventListener('change', function () {
-const file = this.files[0];
-if (file) {
-    const reader = new FileReader();
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
 
-    reader.addEventListener('load', function () {
-    preview.src = reader.result;
-    });
+        reader.onload = function () {
+            preview.src = reader.result;
+        };
 
-    reader.readAsDataURL(file);
-}
+        reader.readAsDataURL(file);
+    }
 });
 
 function fecharPopup(event) {

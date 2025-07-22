@@ -38,15 +38,14 @@ $titulo = 'Cadastro de Cliente';
             <div class="form-container">
                 <form class="form" id="vendedor_form" action="<?= get_base_url(); ?>cliente/cadastroCliente" method="post" enctype="multipart/form-data">
                     <div class="client-image">
-                    <input type="file" name="imgProfile" id="imgProfileInput" accept="image/*">
-                    <img id="imgPreview" src="" alt="Preview da imagem" style="display:none; max-width: 200px; margin-top: 10px;">
+                        <input type="file" name="imgProfile" id="imgProfileInput" class="imgDis">
+                        <img id="imgPrev" src="<?php get_base_url() ?>assets/img/foto-perfil.png" class="imgPrev" alt="Imagem de perfil">
                     </div>
 
                     <div class="nome-group">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" placeholder="John" required>
                     </div>
-
 
                     <div class="sobrenome-group">
                         <label for="sobrenome">Sobrenome</label>
@@ -129,5 +128,5 @@ $titulo = 'Cadastro de Cliente';
     <?php get_footer() ?>
     </footer>
 </body>
-<script src="<?php get_base_url() ?>assets/js/cadas"></script>
+<script src="<?php get_base_url() ?>assets/js/cadastro_cliente.js"></script>
 </html>
