@@ -148,10 +148,7 @@ function selecionarProduto(id) {
 };
 
 function levarWhatsapp(){
-    let mensagem = `
-    Olá! Gostaria de fazer um pedido com os seguintes itens:
-    
-    `;
+    let mensagem = `Olá! Gostaria de fazer um pedido com os seguintes itens:`;
 
     let produtosSelecionados = document.querySelectorAll('.selecionado')
 
@@ -168,8 +165,11 @@ function levarWhatsapp(){
                 mensagem += `
                 -  Nome: ${productoAchado.nome} / Marca: ${productoAchado.marca} / Loja: ${productoAchado.id_loja} / Quantidade: ${contador.value}`
 
-                mensagem = mensagem.replace(' ' , '%20');
-                urlMensagem = `https://wa.me/${5567984665576}?text=${mensagem}`;
+                //mensagem = mensagem.replace(' ' , '%20');
+                //converter para url encoder
+                mensagem = encodeURIComponent(mensagem);
+
+                urlMensagem = `https://wa.me/556784665576?text=${mensagem}`;
                 
                 window.location.href = urlMensagem;
                 
