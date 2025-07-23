@@ -32,8 +32,8 @@ class HomeController extends Controller
     {
         View::render('/termos_de_uso');
     }
-
-    public function produtos()
+    
+   public function produtos()
     {
         $model = new Produto;
         $produtos = $model->findAll();

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Core\Model;
+use PDOException;
 
 class Produto extends Model
 
@@ -16,10 +17,23 @@ class Produto extends Model
         $stmt = $this->query($sql);
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
-    public function getLojas()
-    {
-        $sql = "SELECT * FROM lojas";
-        $stmt = $this->query($sql);
-        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+    public function cadastrarProduto($nome, $marca, $modelo, $id_categoria, $preco, $quantidade, $descricao, $imagens){
+        try{
+            $dadosProduto=[
+                'nome' => $nome,
+                'marca' => $marca,
+                'modelo' => $modelo,
+                'id_categoria' => $id_categoria,
+                'preco' => $preco,
+                'quantidade' => $quantidade,
+                'descricao' => $descricao,
+                'imagens' => $imagens
+            ];
+            $this->insert($dadosProduto);
+            return $this->db->lastInsertId();
+        }   catch (PDOException $e) {
+            return 0;
+        };
     }
 }
