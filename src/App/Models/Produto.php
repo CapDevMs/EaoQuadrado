@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Core\Model;
+use PDOException;
 
 class Produto extends Model
 
@@ -35,5 +36,4 @@ class Produto extends Model
             return 0;
         };
     }
-}        
-
+}

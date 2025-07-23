@@ -54,7 +54,7 @@ class Upload
       }
 
       if (move_uploaded_file($nomeTemporario, $caminhoCompleto)) {
-        return ['success' => true, 'fileName' => $nomeArquivo, 'errors' => []];
+        return ['success' => true, 'fileName' => $nomeUnico, 'errors'=>[]];
       } else {
         return ['success' => false, 'fileName' => null, 'errors' => $erros];
       }
