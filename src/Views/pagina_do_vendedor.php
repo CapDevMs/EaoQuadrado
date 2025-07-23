@@ -52,7 +52,7 @@ $titulo = 'Página do Vendedor';
 
                 </div>
 
-                <card-produto class="row"></card-produto>
+                <div id="lista-produtos"></div>
 
                 
 
