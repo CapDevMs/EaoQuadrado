@@ -216,12 +216,12 @@ CREATE TABLE Mensagens (
 ALTER TABLE produtos ADD COLUMN modelo VARCHAR(100);
 
 INSERT INTO Categorias (nome, imagem_categoria)
-VALUES ("Eletrônicos","src/public/assets/img/computer_icon.svg"),
-("Moda","src/public/assets/img/dress_icon.svg"),
-("Casa","src/public/assets/img/home_icon.svg"),
-("Sports","src/public/assets/img/ball_icon.svg"),
-("Acessorios","src/public/assets/img/ring_icon.svg"),
-("Entretenimento","src/public/assets/img/games_icon.svg");
+VALUES ("Eletrônicos","assets/img/computer_icon.svg"),
+("Moda","assets/img/dress_icon.svg"),
+("Casa","assets/img/home_icon.svg"),
+("Sports","assets/img/ball_icon.svg"),
+("Acessorios","assets/img/ring_icon.svg"),
+("Entretenimento","assets/img/games_icon.svg");
 
 -- DELIMITER // 
 -- CREATE TRIGGER valida_vendedor
@@ -264,7 +264,7 @@ INSERT INTO Enderecos (cep,endereco,bairro,complemento) VALUES ('33333-333','Rua
 -- Clientes
 
 INSERT INTO Clientes (nome, sobrenome, nascimento, cpf, numero_telefone, email, senha, id_endereco, id_usuario, imagem)
-VALUES ('Cliente','Usuario teste','1990-05-15','12345678901','67999887766','usertestecliente@gmail.com','senhateste',1,1,'src/public/assets/img/perfil_cliente.png');
+VALUES ('Cliente','Usuario teste','1990-05-15','12345678901','67999887766','usertestecliente@gmail.com','senhateste',1,1,'assets/img/perfil_cliente.png');
 
 -- Vendedor
 
@@ -278,31 +278,70 @@ INSERT INTO Lojas (nome_loja, email, telefone, id_endereco, cpf_cnpj, loja_image
     '119876543210',
     2,
     '12345678901234',
-    'src/public/assets/img/img-pagina-do-vendedor/logo_studio_center.png'
+    'assets/img/img-pagina-do-vendedor/logo_studio_center.png'
 );
 --  Produtos 
 -- Produtos
 INSERT INTO Produtos (nome,descricao,marca,preco,imagens,quantidade,id_loja,id_categoria, modelo) VALUES
-('Caneca Programadora (Versão A)',
-'Caneca feita em procelana com designing artesanal inspirado em dor e sofrimento',
-'Filiviton',
-99.90,
-'src/public/assets/img/caneca1.png',
+('Notebook ASUS',
+'Notebook gamer super potente que roda todos os jogos da atualidade',
+'ASUS',
+3999.90,
+'assets/img/acer_nitro.png',
 5,
 1,
-3,
+1,
 'Padrão'),
 
-('Caneca Programadora (Versão B)',
+('Chuteira Adidas',
+'Chuteira profissional de altissima qualidade',
+'Ardidas',
+395.90,
+'assets/img/caneca1.png',
+5,
+1,
+4,
+'Padrão'),
+
+('Caneca Programadora',
 'Caneca feita em procelana com designing artesanal inspirado em cafeína e sofrimento',
 'Filiviton',
 99.90,
-'src/public/assets/img/caneca2.png',
+'assets/img/caneca2.png',
 5,
 1,
 3,
-'Premium');
+'Premium'),
 
+('Bolsa Gucci intense',
+'Bolsa de luxo para damas sofisticadas',
+'Gucci',
+395.90,
+'assets/img/gucci_bolsa_intense.png',
+5,
+1,
+2,
+'Padrão'),
+
+('Colar Pure Nail Hollow Knigth',
+'Um colar personalizado do jogo hollow Knigth para exibir a seus amigos sua paixão por essa maravilhosa obra',
+'Cherry',
+11.00,
+'assets/img/colarHollowKnigth.jpg',
+5,
+1,
+5,
+'Padrão'),
+
+('DVD mídia fisica o espetacular homem aranha PS4',
+'Um colar personalizado do jogo hollow Knigth para exibir a seus amigos sua paixão por essa maravilhosa obra',
+'Sony',
+353.80,
+'assets/img/MidiaFisicaDVDHomemAranha.png',
+5,
+1,
+6,
+'Padrão');
 
 -- Atualização da senha para o padrão bcrypt | Senha: "senhateste"
 update Usuarios set senha = '$2y$10$WG13Bt0Qi1WBez4jSz.vEuSSyJvtT9yEohlptu9KOaqBq/2bLrxHq' where id_usuario > 0;
@@ -321,32 +360,3 @@ ALTER TABLE Usuarios ADD COLUMN tipo ENUM('cliente', 'vendedor', 'administrador'
 UPDATE Usuarios SET tipo = 'cliente' WHERE email = 'usertestecliente@gmail.com';
 UPDATE Usuarios SET tipo = 'vendedor' WHERE email = 'usertestevendedor@gmail.com';
 UPDATE Usuarios SET tipo = 'administrador' WHERE email = 'usertesteadmim@gmail.com';
-
-CREATE TABLE Vendedores (
-    id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    sobrenome VARCHAR(100) NOT NULL,
-    cpf VARCHAR(14) NOT NULL,
-    nascimento DATE NOT NULL,
-    telefone VARCHAR(14) NOT NULL,
-    cep VARCHAR(10) NOT NULL,
-    endereco VARCHAR(255) NOT NULL,
-    numero VARCHAR(10) NOT NULL,
-    complemento VARCHAR(100) NOT NULL,
-    bairro VARCHAR(100) NOT NULL,
-    email VARCHAR(150) NOT NULL,
-
-    nome_loja VARCHAR(150) NOT NULL,
-    endereco_loja VARCHAR(255) NOT NULL,
-    cnpj VARCHAR(18) NOT NULL,
-    email_loja VARCHAR(150) NOT NULL,
-    cep_loja VARCHAR(10) NOT NULL,
-    bairro_loja VARCHAR(100) NOT NULL,
-    complemento_loja VARCHAR(100) NOT NULL,
-    cidade_loja VARCHAR(100) NOT NULL,
-    telefone_loja VARCHAR(20) NOT NULL,
-    numero_endereco VARCHAR(10) NOT NULL,
-    rede_social VARCHAR(150) NOT NULL
-);
-
-
