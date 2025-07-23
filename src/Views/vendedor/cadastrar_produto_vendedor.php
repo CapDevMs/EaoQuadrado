@@ -102,13 +102,13 @@
             </div>
 
             <label for="arquivo">Inserir Imagens</label><br>
-            <input type="file" id="arquivo" name="imagens[]" accept="image/*" multiple required><br><br>
+            <input type="file" id="arquivo" name="imagemProduto" accept="image/*" multiple required><br><br>
 
             <div class="previas"></div>
 
             <div class="botoes-container">
-                <button id="cancelar" type="button">Cancelar</button>
-                <button id="salvar" type="submit">Salvar</button>
+                <button id="cancelar" name = "cancelar" type="button">Cancelar</button>
+                <button id="salvar" name="salvar" type="submit">Salvar</button>
             </div>
         </form>
 

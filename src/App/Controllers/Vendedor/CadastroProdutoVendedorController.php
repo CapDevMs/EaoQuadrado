@@ -5,6 +5,7 @@ use Core\View;
 use App\Controllers\Controller;
 use App\Models\Produto;
 use App\Models\Categoria; 
+use App\Services\Upload;
 
 class CadastroProdutoVendedorController extends Controller
 {
@@ -40,10 +41,26 @@ class CadastroProdutoVendedorController extends Controller
             'preco' => filter_var(str_replace(',', '.', $_POST['preco'] ?? ''), FILTER_VALIDATE_FLOAT),
             'quantidade' => filter_var($_POST['quantidade'] ?? 0, FILTER_VALIDATE_INT),
             'descricao' => trim($_POST['descricao'] ?? ''),
+            "imagens" => $_FILES['imagemProduto'] ?? null
+
         ];
+        $nomeImagemSalva = null;
+        $publicUploadDir = 'assets/uploads/';
+        $uploadDir = __DIR__ . '/../../../public/' . $publicUploadDir;
+
+        if (isset($_POST['salvar']) && !empty($_FILES['imagemProduto'])) {
+        $uploader = new Upload();
+        $uploadResultado = $uploader->uploadImagem($dados['imagens'], $uploadDir);
+        if (!$uploadResultado['success']) {
+            $erros = array_merge($erros, $uploadResultado['errors']);
+        } else {
+            $nomeImagemSalva = $publicUploadDir . $uploadResultado['fileName'];
+        }
+    }
+
+        $dados['imagens'] = $nomeImagemSalva;
 
         $erros = $this->validarDados($dados);
-        $imagens = $this->processarImagens($erros);
         $categorias = (new Categoria())->findAll()->getData();
 
         if (!empty($erros)) {
@@ -52,10 +69,6 @@ class CadastroProdutoVendedorController extends Controller
                 'dados' => $dados,
                 'categorias' => $categorias
             ]);
-        }
-
-        if (!empty($imagens)) {
-            $dados['imagens'] = $imagens[0]; // Aqui define a imagem principal que será salva no banco
         }
 
         try {
@@ -92,47 +105,5 @@ class CadastroProdutoVendedorController extends Controller
     }
 
     // Upload e validação de imagens
-   private function processarImagens(array &$erros): array
-    {
-        $imagens = [];
-
-        if (!empty($_FILES['imagens']['name'][0])) {
-            $permitidosMime = ['image/jpeg', 'image/png', 'image/webp'];
-            $permitidasExt = ['jpg', 'jpeg', 'png', 'webp'];
-            $uploadDir = 'src/public/assets/img/';
-
-            if (!is_dir($uploadDir)) {
-                mkdir($uploadDir, 0755, true);
-            }
-
-            foreach ($_FILES['imagens']['name'] as $index => $nomeImagem) {
-                $tmpName = $_FILES['imagens']['tmp_name'][$index];
-                $tipo = mime_content_type($tmpName); 
-                $extensao = strtolower(pathinfo($nomeImagem, PATHINFO_EXTENSION));
-                $tamanho = $_FILES['imagens']['size'][$index];
-
-                if (!in_array($tipo, $permitidosMime) || !in_array($extensao, $permitidasExt)) {
-                    $erros[] = "O arquivo '$nomeImagem' não é uma imagem válida.";
-                    continue;
-                }
-
-                if ($tamanho > 2 * 1024 * 1024) {
-                    $erros[] = "O arquivo '$nomeImagem' excede o limite de 2MB.";
-                    continue;
-                }
-
-                $nomeFinal = uniqid('caneca_', true) . '.' . $extensao;
-                $caminhoCompleto = $uploadDir . $nomeFinal;
-
-                if (move_uploaded_file($tmpName, $caminhoCompleto)) {
-                    $imagens[] = $caminhoCompleto; // Ex: src/public/assets/img/caneca_123abc.png
-                } else {
-                    $erros[] = "Falha ao fazer upload da imagem '$nomeImagem'.";
-                }
-            }
-        }
-
-        return $imagens;
-    }
-
+  
 }

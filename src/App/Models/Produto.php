@@ -17,25 +17,23 @@ class Produto extends Model
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
+    public function cadastrarProduto($nome, $marca, $modelo, $id_categoria, $preco, $quantidade, $descricao, $imagens){
+        try{
+            $dadosProduto=[
+                'nome' => $nome,
+                'marca' => $marca,
+                'modelo' => $modelo,
+                'id_categoria' => $id_categoria,
+                'preco' => $preco,
+                'quantidade' => $quantidade,
+                'descricao' => $descricao,
+                'imagens' => $imagens
+            ];
+            $this->insert($dadosProduto);
+            return $this->db->lastInsertId();
+        }   catch (PDOException $e) {
+            return 0;
+        };
+    }
+}        
 
-    public function insert(array $dados): bool
-    {
-    $sql = "INSERT INTO {$this->table} 
-        (nome, marca, modelo, id_categoria, preco, quantidade, descricao, imagens) 
-        VALUES (:nome, :marca, :modelo, :id_categoria, :preco, :quantidade, :descricao, :imagens)";
-    
-    $stmt = $this->db->prepare($sql);
-
-    return $stmt->execute([
-        ':nome' => $dados['nome'],
-        ':marca' => $dados['marca'],
-        ':modelo' => $dados['modelo'],
-        ':id_categoria' => $dados['id_categoria'],
-        ':preco' => $dados['preco'],
-        ':quantidade' => $dados['quantidade'],
-        ':descricao' => $dados['descricao'],
-        ':imagens' => $dados['imagens'] ?? null,
-    ]);
-}
-
-}
