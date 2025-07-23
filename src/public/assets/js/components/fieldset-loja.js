@@ -1,4 +1,5 @@
-const fieldsetLoja = ({ image, nomeLoja, linkLoja }) => {
+const fieldsetLoja = ({ image, nomeLoja, linkLoja , numeroLoja}) => {
+ console.log(numeroLoja)
     return `
     <div class="lojaFieldset">
             <fieldset class="loja col-xl-9 col-lg-10 col-sm-11">
@@ -10,14 +11,12 @@ const fieldsetLoja = ({ image, nomeLoja, linkLoja }) => {
                 </a>
                 
                 <div class="icons-loja col-lg-2">
-                        <img src="assets/img/coracao-tela-produto.svg" id="loja-coracao">
-                        <img src="assets/img/tela-produtos/Whatsapp.png" id="loja-whats">
-                    
+                        <div></div>
+                        <img src="assets/img/tela-produtos/Whatsapp.png" id="loja-whats" onclick = "levarWhatsapp(${numeroLoja})">
                 </div>
             </fieldset>
         
     </div>
     `;
 }
-
 export default fieldsetLoja;

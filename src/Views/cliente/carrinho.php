@@ -71,7 +71,7 @@ $base_url = get_base_url();
         </totalCompra>
     </main>
     <script>
-        const listaProdutosJS = <?= json_encode($listaProdutos, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
+        const listaProdutosJS = <?= json_encode($listaProdutos); ?>;
     </script>
     <script src="<?= $base_url ?>assets/js/script.js"></script>
     <script src="<?= $base_url ?>assets/js/carrinho.js"></script>

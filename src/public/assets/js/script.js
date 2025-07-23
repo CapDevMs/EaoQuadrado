@@ -1,3 +1,4 @@
+console.log(`abriu Script`)
 function voltarPagina() {
     window.history.back();
 };
@@ -18,4 +19,21 @@ function adicionarCarrinho(idProduto) {
     localStorage.setItem("listaProdutosCarrinho", JSON.stringify(arrayLocalStorage));
     console.log("Estado atual do carrinho:", arrayLocalStorage);
     console.log(`adicionado ao carrinho`)
+}
+
+function levarWhatsapp(numeroSelecionado) {
+
+    const produtoSelecionado = listaProdutosJS.find(produto => produto.id_produto == idPego)
+    const lojaSelecionada = listaVendedoresJS.find(vendedor => vendedor.id_loja == produtoSelecionado.id_loja)
+
+    let mensagem = `
+    Olá! Gostaria de fazer um pedido com os seguintes itens:`;
+    mensagem += `
+    -  Nome: ${produtoSelecionado.nome} / Marca: ${produtoSelecionado.marca}`
+    mensagem = mensagem.replace(' ' , '%20');
+    
+
+    urlMensagem = `https://wa.me/${numeroSelecionado}?text=${mensagem}`;
+    window.location.href = urlMensagem;
+
 }
