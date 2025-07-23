@@ -1,4 +1,5 @@
 const cardProduto = ({ id_produto, nome, imagens, preco, link = `./produto?id=${id_produto}`}) => {
+    imagens = imagens.replace('src/public/', ''); 
     return `
     <div class="card-produto col-sm-6 col-lg-4 col-xl-3">
         <div class="card-body pb-1">
