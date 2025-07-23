@@ -30,10 +30,20 @@ class Produto extends Model
                 'descricao' => $descricao,
                 'imagens' => $imagens
             ];
+            
             $this->insert($dadosProduto);
             return $this->db->lastInsertId();
         }   catch (PDOException $e) {
             return 0;
         };
+        
     }
+
+    public function getLojas()
+    {
+        $sql = "SELECT * FROM lojas";
+        $stmt = $this->query($sql);
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+    }
+
 }
