@@ -80,7 +80,7 @@ $router->get('/vendedor/troca_devolucao_cancelamento', TrocasDevolucoesControlle
 
 // área comum
 
-$router->get('/categoria/{id}', CategoriaController::class, 'categoria', 'categoria');
+$router->get('/categoria', CategoriaController::class, 'categoria', 'categoria');
 $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
 $router->get('/login', AuthController::class, 'index', 'login', 'login');

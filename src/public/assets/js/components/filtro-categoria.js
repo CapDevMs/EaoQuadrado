@@ -23,7 +23,7 @@ const filtroComponent = (categorias) => {
     
     let array = []
     categorias.forEach(categoria => {
-        array.push(`<button data-id="${categoria['id_categoria']}" class="categoriasFiltro"> ${categoria['nome']} </button>`)
+        array.push(`<a data-id="${categoria['id_categoria']}" class="categoriasFiltro" href = "categoria?id=${categoria["id_categoria"]}"> ${categoria['nome']} </a>`)
     })
     
     return filtro + array.join("") + "</div>";

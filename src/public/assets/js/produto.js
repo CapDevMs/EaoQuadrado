@@ -1,33 +1,33 @@
-import galeriaImg from "./components/galeria-img.js";
-import contadorQuantidade from "./components/contador-quantidade.js";
-import cardProduto from "./components/card-produto.js";
+console.log(`abriu Script p[roduto]`)
+console.log(listaProdutosJS)
+import galeriaImg from "./components/galeria-img.js";   
+
 import fieldsetLoja from "./components/fieldset-loja.js";
+
 import componenteTelaProduto from "./components/componente-tela-produto.js";
 
 const componenteTelaProdutoContainer = document.querySelector(".tela-produto");
 
+const produtoSelecionado = listaProdutosJS.find(produto => produto.id_produto == idPego)
+const lojaSelecionada = listaVendedoresJS.find(vendedor => vendedor.id_loja == produtoSelecionado.id_loja)
 let telaProdutoItens = [
     {
-        'nomeProduto': 'Bolsa Gucci',
-        'precoProduto':'987,88',
-        'descricao':'Eleve o seu estilo com a deslumbrante Bolsa Feminina Gucci...',
-        'nomeLoja':'studio center' 
+        'id_produto':`${produtoSelecionado.id_produto}`,
+        'nomeProduto': `${produtoSelecionado.nome}`,
+        'precoProduto':`${produtoSelecionado.preco}`,
+        'descricao':`${produtoSelecionado.descricao}`,
+        'nomeLoja':`${lojaSelecionada.nome}` 
     }
 ];
 
-let produtosRecomendar = [
-    { 'id': 1, 'titulo': 'Caneca especial Programador', 'imagem': 'assets/img/caneca1.png', 'preco': '99,90', 'link': './produto' },
-    { 'id': 2, 'titulo': 'Caneca especial Programador', 'imagem': 'assets/img/caneca2.png', 'preco': '119,90', 'link': './produto' },
-    { 'id': 3, 'titulo': 'Caneca especial Programador', 'imagem': 'assets/img/caneca1.png', 'preco': '99,90', 'link': './produto' },
-    { 'id': 4, 'titulo': 'Caneca especial Programador', 'imagem': 'assets/img/caneca3.png', 'preco': '119,90', 'link': './produto' }
-];
-
 let images = [
-    { 'image': 'assets/img/tela-produtos/bolsa.png' }
+    { 'image': `${produtoSelecionado.imagens}` }
 ];
 
 let fieldsetLojaitens = [
-    { 'image': 'src/public/assets/img/tela-produtos/loja.png', 'nomeLoja': 'Studio Center' }
+    { 'image': `${lojaSelecionada.loja_imagem}`, 
+    'nomeLoja':`${lojaSelecionada.nome_loja}`,
+    'numeroLoja':`${lojaSelecionada.telefone}` }
 ];
 
 
@@ -39,21 +39,8 @@ if (componenteTelaProdutoContainer) {
     componenteTelaProdutoContainer.innerHTML = componenteTelaProdutoHTML; 
 
     const galeriaContainer = componenteTelaProdutoContainer.querySelector(".galeria-container");
-    const contadorContainer = componenteTelaProdutoContainer.querySelector(".contador-container");
-    const cardProdutoRecomendar = componenteTelaProdutoContainer.querySelector(".produto-recomendar");
     const fieldsetLojaContainer = componenteTelaProdutoContainer.querySelector(".fieldset-loja");
-    const iconeFavorito = document.getElementById('icone-favorito');
     const iconeCarrinho = document.getElementById('icone-carrinho');
-
-    if (cardProdutoRecomendar) {
-        let cardProdutoHTML = ""; 
-        produtosRecomendar.forEach((produto) => {
-            cardProdutoHTML += cardProduto(produto); 
-        });
-        cardProdutoRecomendar.innerHTML = cardProdutoHTML; 
-    } else {
-        console.error("Container '.produto-recomendar' não foi encontrado no DOM.");
-    }
 
     if (galeriaContainer) {
         let galeriaHTML = ""; 
@@ -74,16 +61,7 @@ if (componenteTelaProdutoContainer) {
     } else {
         console.error("Container '.fieldset-loja' não foi encontrado no DOM.");
     }
-    iconeFavorito.addEventListener('click', function() {
-
-        let srcAtual = iconeFavorito.src;
-        let srcAlternativo = iconeFavorito.dataset.imagemAlternativa;
-    
-
-        iconeFavorito.src = srcAlternativo;
-
-        iconeFavorito.dataset.imagemAlternativa = srcAtual;
-    });
+   
     if (iconeCarrinho) {
 
         const imagemOriginalCarrinho = 'assets/img/carrinho-tela-produto.svg';
@@ -98,43 +76,7 @@ if (componenteTelaProdutoContainer) {
         });
     }
 
-    if (contadorContainer) {
-        contadorContainer.innerHTML = contadorQuantidade();
-
-        const mais = contadorContainer.querySelector(".btn-mais"); 
-        const menos = contadorContainer.querySelector(".btn-menos"); 
-        const qtd = contadorContainer.querySelector(".input-quantidade"); 
-
-        if (mais && menos && qtd) {
-            let quantidadeProdutos = 1;
-
-            mais.addEventListener("click", () => {
-                quantidadeProdutos++;
-                qtd.value = quantidadeProdutos;
-            });
-
-            menos.addEventListener("click", () => {
-                if (quantidadeProdutos > 1) {
-                    quantidadeProdutos--;
-                }
-                qtd.value = quantidadeProdutos;
-            });
-
-            qtd.addEventListener("change", () => {
-                const novoValor = parseInt(qtd.value);
-                if (!isNaN(novoValor) && novoValor > 0) {
-                    quantidadeProdutos = novoValor;
-                } else {
-                    qtd.value = quantidadeProdutos; 
-                }
-            });
-        } else {
-            console.error("Elementos do contador não encontrados.");
-        }
-    } else {
-        console.error("Container '.contador-container' não foi encontrado no DOM.");
-    }
-
 } else {
     console.error("Container principal '.tela-produto' não foi encontrado no DOM.");
 }
+

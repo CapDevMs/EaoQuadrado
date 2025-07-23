@@ -9,7 +9,9 @@ class ProdutoController extends Controller
 {
     public function produto()
 {
-
-        View::render("produto");
+        $produtoModel = new Produto();
+        $produtos = $produtoModel -> getProdutos();
+        $lojas = $produtoModel -> getLojas();
+        View::render("produto",['listaProdutos' => $produtos,'listaVendedores' => $lojas]);;
     }   
 }

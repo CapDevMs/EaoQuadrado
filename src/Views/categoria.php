@@ -1,4 +1,15 @@
 <?php
+if (isset($_GET['id'])) {
+    $produtoId = $_GET['id'];
+    ?>
+    <script>
+        const idPego = <?= json_encode($produtoId); ?>;
+    </script>
+    <?php
+    
+} else {
+    
+}
 $appName = get_app_name();
 ?>
 <!DOCTYPE html>
@@ -36,5 +47,4 @@ $appName = get_app_name();
     <script type="module" src="<?= get_base_url(); ?>assets/js/categoria.js" defer></script>
     <?php get_footer() ?>
 </body>
-
 </html>
