@@ -63,9 +63,11 @@ $base_url = get_base_url();
                 <div class="flexCentro">
                     <button class="baseBotao" onclick="voltarPagina()">Retorne as compras</button>
                 </div>
-                <div class="flexCentro">
-                    <button class="baseBotao botaoWhatsApp" onclick='levarWhatsapp()' id='ApagarCarrinho'>Ir ao Whatsapp</button>
-                </div>
+                <?php if(session()->has('user')): ?>
+                    <div class="flexCentro">
+                        <button class="baseBotao botaoWhatsApp" onclick='levarWhatsapp()' id='ApagarCarrinho'>Ir ao Whatsapp</button>
+                    </div>
+                <?php endif; ?>
             </div>
 
         </totalCompra>

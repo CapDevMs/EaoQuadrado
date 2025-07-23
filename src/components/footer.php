@@ -74,6 +74,10 @@ $base_url = get_base_url();
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+    showAndHideToast();
+});
+
+function showAndHideToast(){
     const toast = document.querySelector('.toast');
     if (toast) {
         setTimeout(() => {
@@ -82,5 +86,5 @@ $base_url = get_base_url();
         setTimeout(() => toast.remove(), 500);
         }, 3000); // some depois de 3 segundos
     }
-});
+}
 </script>
