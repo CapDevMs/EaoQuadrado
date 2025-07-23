@@ -308,26 +308,68 @@
     );
     --  Produtos 
     -- Produtos
-    INSERT INTO Produtos (nome,descricao,marca,preco,imagens,quantidade,id_loja,id_categoria, modelo) VALUES
-    ('Caneca Programadora (Versão A)',
-    'Caneca feita em procelana com designing artesanal inspirado em dor e sofrimento',
-    'Filiviton',
-    99.90,
-    'src/public/assets/img/caneca1.png',
-    5,
-    1,
-    3,
-    'Padrão'),
+use eaoquadrado;
 
-    ('Caneca Programadora (Versão B)',
-    'Caneca feita em procelana com designing artesanal inspirado em cafeína e sofrimento',
-    'Filiviton',
-    99.90,
-    'src/public/assets/img/caneca2.png',
-    5,
-    1,
-    3,
-    'Premium');
+INSERT INTO Produtos (nome,descricao,marca,preco,imagens,quantidade,id_loja,id_categoria, modelo) VALUES
+('Notebook ASUS',
+'Notebook gamer super potente que roda todos os jogos da atualidade',
+'ASUS',
+3999.90,
+'assets/img/acer_nitro.png',
+5,
+1,
+1,
+'Padrão'),
+
+('Chuteira Adidas',
+'Chuteira profissional de altissima qualidade',
+'Ardidas',
+395.90,
+'assets/img/chuteira_adidas.svg',
+5,
+1,
+4,
+'Padrão'),
+
+('Caneca Programadora',
+'Caneca feita em procelana com designing artesanal inspirado em cafeína e sofrimento',
+'Filiviton',
+99.90,
+'assets/img/caneca2.png',
+5,
+1,
+3,
+'Premium'),
+
+('Bolsa Gucci intense',
+'Bolsa de luxo para damas sofisticadas',
+'Gucci',
+395.90,
+'assets/img/gucci_bolsa_intense.png',
+5,
+1,
+2,
+'Padrão'),
+
+('Colar Pure Nail Hollow Knigth',
+'Um colar personalizado do jogo hollow Knigth para exibir a seus amigos sua paixão por essa maravilhosa obra',
+'Cherry',
+11.00,
+'assets/img/colarHollowKnigth.jpg',
+5,
+1,
+5,
+'Padrão'),
+
+('DVD mídia fisica o espetacular homem aranha PS4',
+'Um colar personalizado do jogo hollow Knigth para exibir a seus amigos sua paixão por essa maravilhosa obra',
+'Sony',
+353.80,
+'assets/img/MidiaFisicaDVDHomemAranha.png',
+5,
+1,
+6,
+'Padrão');
 
     -- Atualização da senha para o padrão bcrypt | Senha: "senhateste"
     update Usuarios set senha = '$2y$10$WG13Bt0Qi1WBez4jSz.vEuSSyJvtT9yEohlptu9KOaqBq/2bLrxHq' where id_usuario > 0;
