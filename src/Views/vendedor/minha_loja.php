@@ -15,7 +15,7 @@
     <?php get_header() ?>
 
     <main class="row">
-        <asside class="col-md-3 col-sm-hidden">
+        <asside class="col-md-3 col-sm-hidden mt-5">
             
             <?php get_sidebar_vendedor('minha_loja'); ?>
             
