@@ -24,10 +24,7 @@ const componenteTelaProduto = ({ id_produto,nomeProduto,precoProduto,descricao,n
                     </p>
                 </div>
 
-                <div class="grid-topico">
-                <div class="topico"></div>
-                    <a class="text-topico">Mais itens da ${nomeLoja}</a>
-                </div>
+
 
                 <div class="container-recomendar col-lg-10 ">
                 <div class="produto-recomendar row"></div>
@@ -37,3 +34,7 @@ const componenteTelaProduto = ({ id_produto,nomeProduto,precoProduto,descricao,n
 }
 
 export default componenteTelaProduto;
+    // <div class="grid-topico">
+    //     <div class="topico"></div>
+    //     <a class="text-topico">Mais itens da ${nomeLoja}</a>
+    // </div>
