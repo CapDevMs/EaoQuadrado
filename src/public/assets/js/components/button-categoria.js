@@ -2,7 +2,7 @@ const buttonCategoria = (categorias) => {
   const categoriasArray = [];
 
   categorias.forEach((categoria) => {
-    categoria["imagem_categoria"] = categoria["imagem_categoria"].replace("src/public", "");
+    categoria["imagem_categoria"] = categoria["imagem_categoria"].replace("src/public/", "");
     
     categoriasArray.push(`
         <a type="submit" data-id=${categoria["id_categoria"]} class="button col-sm-4 col-md-4 col-lg-2" href = "categoria?id=${categoria["id_categoria"]}">
