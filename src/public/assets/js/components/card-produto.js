@@ -1,7 +1,7 @@
-const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) => {
-    imagens = imagens.replace('src/public/', '');
+const cardProduto = ({ id_produto, nome, imagens, preco, link = `./produto?id=${id_produto}`}) => {
+    imagens = imagens.replace('src/public/', ''); 
     return `
-    <div class="card-produto col-sm-6 col-lg-3 col-xl-2">
+    <divi class="card-produto col-sm-6 col-lg-3 col-xl-2">
         <div class="card-body pb-1">
             <div class="row">   
                 <div class="col-sm-11">
@@ -36,7 +36,7 @@ const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) =>
                 </div>
             </div>
         </div>
-    </div>
+    </divi>
     `;
 }
                     
