@@ -48,15 +48,17 @@ class CadastroProdutoVendedorController extends Controller
         $publicUploadDir = 'assets/uploads/';
         $uploadDir = __DIR__ . '/../../../public/' . $publicUploadDir;
 
+        $erros = [];
+
         if (isset($_POST['salvar']) && !empty($_FILES['imagemProduto'])) {
-        $uploader = new Upload();
-        $uploadResultado = $uploader->uploadImagem($dados['imagens'], $uploadDir);
-        if (!$uploadResultado['success']) {
-            $erros = array_merge($erros, $uploadResultado['errors']);
-        } else {
-            $nomeImagemSalva = $publicUploadDir . $uploadResultado['fileName'];
+            $uploader = new Upload();
+            $uploadResultado = $uploader->uploadImagem($dados['imagens'], $uploadDir);
+            if (!$uploadResultado['success']) {
+                $erros = array_merge($erros, $uploadResultado['errors']);
+            } else {
+                $nomeImagemSalva = $publicUploadDir . $uploadResultado['fileName'];
+            }
         }
-    }
 
         $dados['imagens'] = $nomeImagemSalva;
 

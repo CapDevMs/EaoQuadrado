@@ -12,22 +12,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <?php get_css(['style','cadastrar_produto_vendedor','base']) ?>
     <?php get_css_components() ?>
+    <?php get_breadcrumbs() ?>
+
 </head>
 <body>
     <?php get_header() ?>
 
     <main>
         <div class="sub-menu">
-            <a href="meu_perfil_vendedor.php" id="conta"><h6>Conta</h6></a>
-            <span id="separator">/</span>
-            <a href="<?= $baseUrl ?>vendedor/minhaLoja" id="minha-conta"><h6>Minha Conta</h6></a>
-            <span id="separator">/</span>
-            <a href="cadastrar_produto_vendedor.php" id="cadastrar-produto"><h6>Cadastrar Produto</h6></a>
+            <?php    
+            breadcrumb(array('http://localhost/EaoQuadrado' => 'Pagina do Vendedor', 'cadastroProduto' => 'Cadastro de produto'));
+            ?>
         </div>
 
         <div id="titulo">Cadastrar Produto</div>
 
-        <?php get_sidebar_vendedor('cadastrar_produtos'); ?>
+        <!-- <?php get_sidebar_vendedor('cadastrar_produtos'); ?> -->
 
         <!-- MENSAGEM DE SUCESSO -->
         <!-- <?php if (!empty($sucesso)): ?>
