@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 const cardProduto = ({ id_produto, nome, imagens, preco, link = `./produto?id=${id_produto}`}) => {
     imagens = imagens.replace('src/public/', ''); 
+=======
+const cardProduto = ({ id_produto, nome, imagens, preco, link = './produto'}) => {
+    imagens = imagens.replace('src/public/', '');
+>>>>>>> 96099d05857cc33a2a42557bf917841137034895
     return `
     <divi class="card-produto col-sm-6 col-lg-3 col-xl-2">
         <div class="card-body pb-1">

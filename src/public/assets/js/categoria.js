@@ -132,7 +132,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
       });
     });
-  }
-
-  renderProdutos();
+  } 
+  renderProdutoByCategoria(idPego)
 });
