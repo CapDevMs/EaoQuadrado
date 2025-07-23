@@ -35,7 +35,6 @@
                 Produto salvo com sucesso!
             </div>
         <?php endif; ?> -->
-
         <!-- MENSAGEM DE ERRO -->
         <?php if (!empty($erros)): ?>
             <div style="background-color: #f8d7da; color: #721c24; padding: 10px; border: 1px solid #f5c6cb; margin-bottom: 20px; border-radius: 4px;">
@@ -48,7 +47,7 @@
             </div>
         <?php endif; ?>
 
-        <form action="<?= get_base_url(); ?>vendedor/cadastrarProduto" method="post" enctype="multipart/form-data" id="form-cadastro-produto">
+        <form action="<?= get_base_url(); ?>vendedor/cadastroProduto" method="post" enctype="multipart/form-data" id="form-cadastro-produto">
             <div class="linha-horizontal">
                 <div class="linha-1">
                     <label for="nome-produto">Nome do Produto</label><br>
@@ -103,13 +102,13 @@
             </div>
 
             <label for="arquivo">Inserir Imagens</label><br>
-            <input type="file" id="arquivo" name="imagens[]" accept="image/*" multiple><br><br>
+            <input type="file" id="arquivo" name="imagemProduto" accept="image/*" multiple required><br><br>
 
             <div class="previas"></div>
 
             <div class="botoes-container">
-                <button id="cancelar" type="button">Cancelar</button>
-                <button id="salvar" type="submit">Salvar</button>
+                <button id="cancelar" name = "cancelar" type="button">Cancelar</button>
+                <button id="salvar" name="salvar" type="submit">Salvar</button>
             </div>
         </form>
 

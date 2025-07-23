@@ -32,12 +32,12 @@ class HomeController extends Controller
     {
         View::render('/termos_de_uso');
     }
-
-    public function produtos()
+    
+   public function produtos()
     {
         $model = new Produto;
-        $produtos = $model->getProdutos();
-        echo json_encode($produtos);
+        $produtos = $model->findAll();
+        echo json_encode($produtos->getData());
         exit;
     }
 }

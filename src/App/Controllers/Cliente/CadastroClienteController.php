@@ -69,7 +69,8 @@ class CadastroClienteController extends Controller
       $idUsuario = $user->cadastroUsuarios(
         $dados['nome'] . ' ' . $dados['sobrenome'],
         $dados['email'],
-        $dados['senha']
+        password_hash($dados['senha'], PASSWORD_DEFAULT),
+        "cliente"
       );
 
       if (!$idUsuario) {
@@ -82,7 +83,7 @@ class CadastroClienteController extends Controller
         $dados['cep'],
         $dados['endereco'],
         $dados['bairro'],
-        $dados['complemento'],
+        $dados['complemento']
       );
 
       var_dump($idEndereco);
@@ -101,7 +102,7 @@ class CadastroClienteController extends Controller
         $dados['cpf'],
         $dados['email'],
         $dados['telefone'],
-        $dados['senha']
+        password_hash($dados['senha'], PASSWORD_DEFAULT)
       );
 
       var_dump($novoClienteCadastrado);

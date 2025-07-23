@@ -3,7 +3,9 @@
 html {
   font-family: Poppins;
 }
-
+#loja-whats{
+  cursor: pointer;
+}
 .tela-produto {
   display: flex;
   flex-direction: column;
