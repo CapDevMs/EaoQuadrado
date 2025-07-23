@@ -66,7 +66,7 @@
 
 
     CREATE TABLE Vendedores (
-        id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
+        id_vendedor INT PRIMARY KEY AUTO_INCREMENT,
         nome VARCHAR(100) NOT NULL,
         sobrenome VARCHAR(100) NOT NULL,
         cpf VARCHAR(14) NOT NULL,
@@ -92,8 +92,8 @@
         rede_social VARCHAR(150) NOT NULL,
         id_endereco int,
         id_usuario int,
-        foreign key fk_endereco(id_endereco) references Enderecos(id_endereco),
-        foreign key fk_usuario(id_usuario) references Usuarios(id_usuario)
+        foreign key fk_endereco_vendedores(id_endereco) references Enderecos(id_endereco),
+        foreign key fk_usuario_vendedores(id_usuario) references Usuarios(id_usuario)
     );
 
     CREATE TABLE Comentario (
