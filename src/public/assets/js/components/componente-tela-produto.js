@@ -7,7 +7,7 @@ const componenteTelaProduto = ({ id_produto,nomeProduto,precoProduto,descricao,n
                 <h1 class="preco">R$ ${precoProduto}</h1>
                 <div class="contador-container"></div>
                 <div class="comprar col-lg-8 col-sm-10">
-                    <div class="btn-comprar"><a>Comprar</a></div>
+                    <div class="btn-comprar"><a onclick = "adicionarCarrinho(${id_produto})">Comprar</a></div>
                     <div class="icons-comprar">
                         <img id="icone-carrinho" class="icon cursor" src="assets/img/carrinho-tela-produto.svg" onclick = "adicionarCarrinho(${id_produto})">
                         <div></div>

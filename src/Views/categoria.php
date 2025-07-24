@@ -44,6 +44,7 @@ $appName = get_app_name();
         
     </div>
 
+    <script type="module" src="<?= get_base_url(); ?>assets/js/script.js" defer></script>
     <script type="module" src="<?= get_base_url(); ?>assets/js/categoria.js" defer></script>
     <?php get_footer() ?>
 </body>

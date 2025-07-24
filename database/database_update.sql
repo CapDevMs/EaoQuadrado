@@ -380,6 +380,3 @@ INSERT INTO Produtos (nome,descricao,marca,preco,imagens,quantidade,id_loja,id_c
     UPDATE Usuarios SET tipo = 'vendedor' WHERE email = 'usertestevendedor@gmail.com';
     UPDATE Usuarios SET tipo = 'administrador' WHERE email = 'usertesteadmim@gmail.com';
 
-    ALTER TABLE Vendedores DROP FOREIGN KEY fk_usuario_vendedores; 
-
-    ALTER TABLE Vendedores DROP COLUMN id_usuario; 
