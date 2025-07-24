@@ -9,6 +9,9 @@ textarea:invalid {
 .validado {
     border-color: green !important;
 }
+a{
+    
+}
 
 .sub-menu {
     background-color: white;

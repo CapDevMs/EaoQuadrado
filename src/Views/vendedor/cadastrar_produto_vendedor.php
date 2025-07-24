@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $appName . ' - ' . $titulo ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <?php get_css(['style','cadastrar_produto_vendedor','base']) ?>
+    <?php get_css(['style','base','cadastrar_produto_vendedor']) ?>
     <?php get_css_components() ?>
     <?php get_breadcrumbs() ?>
 
@@ -21,7 +21,7 @@
     <main>
         <div class="sub-menu">
             <?php    
-            breadcrumb(array('http://localhost/EaoQuadrado' => 'Pagina do Vendedor', 'cadastroProduto' => 'Cadastro de produto'));
+            // breadcrumb(array('http://localhost/EaoQuadrado' => 'Pagina do Vendedor', 'cadastroProduto' => 'Cadastro de produto'));
             ?>
         </div>
 
