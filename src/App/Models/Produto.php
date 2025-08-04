@@ -13,7 +13,7 @@ class Produto extends Model
 
     public function getProdutos()
     {
-        $sql = "SELECT * FROM produtos";
+        $sql = "SELECT * FROM Produtos";
         $stmt = $this->query($sql);
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
@@ -41,7 +41,7 @@ class Produto extends Model
 
     public function getLojas()
     {
-        $sql = "SELECT * FROM lojas";
+        $sql = "SELECT * FROM Lojas";
         $stmt = $this->query($sql);
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }

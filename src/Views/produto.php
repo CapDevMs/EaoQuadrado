@@ -8,8 +8,6 @@ if (isset($_GET['id'])) {
     </script>
     <?php
     
-} else {
-    
 }
 ?>
 <?php

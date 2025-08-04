@@ -63,7 +63,7 @@ function ExibirProdutos() {
                              
                              
                      <btRemover class="col-1 baseBlocoIcone">
-                         <img onclick="removeProdutoCarrinho(${id})" class='redutor icone removeProductButton' src="src/public/assets/img/icons/Icon_lixeira.png" alt="icone">
+                         <img onclick="removeProdutoCarrinho(${id})" class='redutor icone removeProductButton' src="assets/img/icons/Icon_lixeira.png" alt="icone">
                      </btRemover>
                      </produto>
         
@@ -153,27 +153,34 @@ function levarWhatsapp(){
     let produtosSelecionados = document.querySelectorAll('.selecionado')
 
     if (produtosSelecionados.length === 0){
-        return alert(`Escolha um produto`)
+        let div = document.createElement("div")
+        div.innerHTML =
+        '<div class="toast error">Você deve escolher ao menos um produto!</div>'
+        document.body.appendChild(div);
+
+        showAndHideToast();
+        //return alert(`Escolha um produto`)
+        return;
     } else {
         
-            produtosSelecionados.forEach(produtoSelecionado => {
-        
-                removeProdutoCarrinho(produtoSelecionado.id)
-                let productoAchado = listaProdutosJS.find(produto => produto.id_produto == produtoSelecionado.id)
-                let contador  = produtoSelecionado.querySelector('.counter')
-                
-                mensagem += `
-                -  Nome: ${productoAchado.nome} / Marca: ${productoAchado.marca} / Loja: ${productoAchado.id_loja} / Quantidade: ${contador.value}`
+        produtosSelecionados.forEach(produtoSelecionado => {
+    
+            removeProdutoCarrinho(produtoSelecionado.id)
+            let productoAchado = listaProdutosJS.find(produto => produto.id_produto == produtoSelecionado.id)
+            let contador  = produtoSelecionado.querySelector('.counter')
+            
+            mensagem += `
+            -  Nome: ${productoAchado.nome} / Marca: ${productoAchado.marca} / Loja: ${productoAchado.id_loja} / Quantidade: ${contador.value}`
 
-                //mensagem = mensagem.replace(' ' , '%20');
-                //converter para url encoder
-                mensagem = encodeURIComponent(mensagem);
+            //mensagem = mensagem.replace(' ' , '%20');
+            //converter para url encoder
+            mensagem = encodeURIComponent(mensagem);
 
-                urlMensagem = `https://wa.me/556784665576?text=${mensagem}`;
-                
-                window.location.href = urlMensagem;
-                
-            })
-            console.log(mensagem)
+            urlMensagem = `https://wa.me/556784665576?text=${mensagem}`;
+            
+            window.location.href = urlMensagem;
+            
+        })
+        console.log(mensagem)
     }
 };

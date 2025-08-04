@@ -6,8 +6,8 @@ use Core\Model;
 
 class Categoria extends Model
 {
-    protected string $table = 'categorias';
-    protected string $primaryKey = 'id_categoria';
+    protected string $table = 'Categorias';
+    protected string $primaryKey = 'id_categorias';
 
     public function getCategorias()
     {
