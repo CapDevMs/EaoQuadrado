@@ -61,6 +61,41 @@ h1{
     vertical-align: top;
     accent-color: #16A18E;
 }
+form[type="file"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-file {
+    height: 50px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    border: #F5F5F5 1px solid;
+    color: #000;
+    text-indent: 16px;
+    margin-bottom: 1em;
+}
+.input-file::file-selector-button {
+    background-color: #16A18E;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+.input-file::file-selector-button:hover {
+    background-color: #148F7A;
+}
+.input-file::file-selector-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(22, 16138, 142, 0.5);
+}
+.input-file::file-selector-button:active {
+    background-color: #127B6A;
+}
+.btn {
+    cursor: pointer;
+}
 .btn-save, .btn-cancel{
     border-radius: 10px;
     width: 100%;

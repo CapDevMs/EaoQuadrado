@@ -71,6 +71,7 @@ $router->get('/vendedor/cadastroProduto', CadastroProdutoVendedorController::cla
 $router->post('/vendedor/cadastroProduto', CadastroProdutoVendedorController::class, 'index');
 $router->get('/vendedor/historicoVendas', HistoricoVendasController::class, 'historicoDeVendas');
 $router->get('/vendedor/minhaLoja', MinhaLojaController::class, 'minhaLoja', 'vendedor.minhaLoja');
+$router->post('/vendedor/minhaLoja', MinhaLojaController::class, 'saveMinhaLoja', 'vendedor.saveMinhaLoja');
 $router->get('/vendedor/paginaVendedor', PaginaDoVendedorController::class, 'paginaDoVendedor');
 $router->get('/vendedor/gerenciamentoEstoque', GerenciamentoDeEstoqueController::class, 'gerenciamentoDeEstoque');
 $router->get('/vendedor/trocasDevolucoes', TrocasDevolucoesController::class, 'trocasDevolucoes');
@@ -83,7 +84,7 @@ $router->get('/vendedor/troca_devolucao_cancelamento', TrocasDevolucoesControlle
 $router->get('/categoria', CategoriaController::class, 'categoria', 'categoria');
 $router->get('/contato', ContatoController::class, 'contato');
 $router->get('/esqueciSenha', AuthController::class, 'esqueciSenha');
-$router->get('/login', AuthController::class, 'index', 'login', 'login');
+$router->get('/login', AuthController::class, 'index', 'login');
 $router->get('/getProdutos', HomeController::class, 'produtos');
 $router->get('/getCategorias', CategoriaController::class, 'sendCategorias');
 $router->post('/filtroMaxMin', CategoriaController::class, 'filtroMaxMin');

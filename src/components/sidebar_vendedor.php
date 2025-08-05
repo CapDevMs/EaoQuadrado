@@ -1,5 +1,5 @@
-<ul class="menu-sidebar col-sm-3 col-xl-2 mt-5">
-    <li class= "mt-5">
+<ul class="col-sm-12">
+    <li class="">
         <label for="item1">Gerenciar Minha Conta</label>
         <div class="content">
             <!-- <a href="<?= get_base_url(); ?>#" class="<?= $page == 'meu_perfil' ? 'ativo' : '' ?>">Meu Perfil</a> -->

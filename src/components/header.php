@@ -17,11 +17,19 @@ $base_url = get_base_url();
                     </a>
                 </li>
             <?php else: ?>
-                <li class="menu-opcoes-icons">
-                    <a href="<?=$base_url;?>cliente">
-                        <img src="<?=$base_url;?>assets/img/pessoa.svg" alt="Pessoa">
-                    </a>
-                </li>
+                <?php if (session()->get('user')['tipo'] === 'vendedor'): ?>
+                    <li class="menu-opcoes-icons">
+                        <a href="<?=$base_url;?>vendedor/minhaLoja">
+                            <img src="<?=$base_url;?>assets/img/pessoa.svg" alt="Minha Loja">
+                        </a>
+                    </li>
+                <?php else: ?>
+                    <li class="menu-opcoes-icons">
+                        <a href="<?=$base_url;?>cliente">
+                            <img src="<?=$base_url;?>assets/img/pessoa.svg" alt="Pessoa">
+                        </a>
+                    </li>
+                <?php endif; ?>
             <?php endif; ?>
             <li class="menu-opcoes-icons">
                 <a href="<?=$base_url;?>carrinho">
@@ -51,9 +59,14 @@ $base_url = get_base_url();
 <!-- Menu Mobile -->
 <div class="mobile-menu" id="mobileMenu">
     <ul>
-        <?php if (session()->has('user')): ?>
-            <li><a href="<?=$base_url;?>cliente">Meu Perfil</a></li>
-            <li><a href="<?=$base_url;?>logout">Logout</a></li>
+        <?php if (session()->has('user')): 
+            if (session()->get('user')['tipo'] === 'vendedor'): ?>
+                <li><a href="<?= route('vendedor.minhaLoja') ?>">Minha Loja</a></li>
+                <li><a href="<?= route('vendedor.cadastroProduto') ?>">Cadastrar Produtos</a></li>
+            <?php else: ?>
+                <li><a href="<?= route('cliente.perfil') ?>">Meu Perfil</a></li>
+            <?php endif; ?>
+            <li><a href="<?= route('logout') ?>">Logout</a></li>
         <?php else: ?>
             <li><a href="<?=$base_url;?>login">Login</a></li>
             <li><a href="<?=$base_url;?>cadastroCliente">Cadastro</a></li>
