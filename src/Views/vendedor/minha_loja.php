@@ -32,7 +32,7 @@ $titulo = 'Minha Loja';
                         <?php if ($vendedor['banner_loja'] ?? false) : ?>
                             <div class="row">
                                 <div class="col-12 pb-3">
-                                    <img src="<?= $baseUrl . $vendedor['banner_loja'] ?>" class="img"
+                                    <img src="<?= $baseUrl . 'assets/uploads/vendedores/' . $vendedor['banner_loja'] ?>" class="img"
                                         alt="Banner da Loja">
                                 </div>
                             </div>
@@ -92,7 +92,7 @@ $titulo = 'Minha Loja';
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
-                                            <input id="cpf_cnpj" name="" class="input" type="text" placeholder="00.000.000/0000-00"
+                                            <input id="cpf_cnpj" name="cpf" class="input" type="text" placeholder="00.000.000/0000-00"
                                                 value="<?= isset($vendedor['cnpj']) ? $vendedor['cnpj'] : $vendedor['cpf'] ?? '' ?>">
                                         </div>
                                     </div>

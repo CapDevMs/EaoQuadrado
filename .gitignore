@@ -61,4 +61,7 @@ src/.env
 docker.env
 /db_data
 
+# Ignore uploads folder on public
+src/public/assets/uploads/*
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,linux

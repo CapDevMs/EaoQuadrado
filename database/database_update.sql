@@ -66,7 +66,7 @@ CREATE TABLE Administradores (
 
 
 CREATE TABLE Vendedores (
-    id_vendedor INT PRIMARY KEY AUTO_INCREMENT,
+    id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     sobrenome VARCHAR(100) NOT NULL,
     cpf VARCHAR(14) NOT NULL,
@@ -78,23 +78,12 @@ CREATE TABLE Vendedores (
     complemento VARCHAR(100) NOT NULL,
     bairro VARCHAR(100) NOT NULL,
     email VARCHAR(150) NOT NULL,
-
-    nome_loja VARCHAR(150) NOT NULL,
-    endereco_loja VARCHAR(255) NOT NULL,
-    cnpj VARCHAR(18) NOT NULL,
-    email_loja VARCHAR(150) NOT NULL,
-    cep_loja VARCHAR(10) NOT NULL,
-    bairro_loja VARCHAR(100) NOT NULL,
-    complemento_loja VARCHAR(100) NOT NULL,
-    cidade_loja VARCHAR(100) NOT NULL,
-    telefone_loja VARCHAR(20) NOT NULL,
-    numero_endereco VARCHAR(10) NOT NULL,
-    rede_social VARCHAR(150) NOT NULL,
-    id_endereco int,
-    id_usuario int,
-    foreign key fk_endereco_vendedores(id_endereco) references Enderecos(id_endereco),
-    foreign key fk_usuario_vendedores(id_usuario) references Usuarios(id_usuario)
+    id_endereco INT,
+    id_usuario INT,
+    FOREIGN KEY (id_endereco) REFERENCES Enderecos(id_endereco),
+    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario)
 );
+
 
 CREATE TABLE Comentario (
     id_comentario INT PRIMARY KEY AUTO_INCREMENT,
@@ -103,15 +92,23 @@ CREATE TABLE Comentario (
     FOREIGN KEY fk_cliente(id_cliente) REFERENCES Clientes(id_cliente)
 );
 
-create table Lojas(
-    id_loja int auto_increment primary key,
-    nome_loja varchar(100) not null,
-    email varchar(255) not null,
-    telefone varchar(14) not null,
-    id_endereco int,
-    cpf_cnpj varchar(14) unique not null,
-    loja_imagem varchar(255),
-    foreign key fk_endereco_lojas(id_endereco) references Enderecos(id_endereco)
+CREATE TABLE Lojas (
+    id_loja INT AUTO_INCREMENT PRIMARY KEY,
+    nome_loja VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    telefone VARCHAR(14) NOT NULL,
+    cpf_cnpj VARCHAR(18) UNIQUE NOT NULL,
+    loja_imagem VARCHAR(255),
+    id_endereco INT,
+    FOREIGN KEY (id_endereco) REFERENCES Enderecos(id_endereco)
+);
+
+CREATE TABLE Vendedor_Loja (
+    id_vendedor INT,
+    id_loja INT,
+    PRIMARY KEY (id_vendedor, id_loja),
+    FOREIGN KEY (id_vendedor) REFERENCES Vendedores(id_vendedor),
+    FOREIGN KEY (id_loja) REFERENCES Lojas(id_loja)
 );
 
 CREATE TABLE Categorias (
@@ -279,18 +276,18 @@ VALUES ('Cliente','Usuario teste','1990-05-15','12345678901','67999887766','user
 
 -- Vendedor
 
-INSERT INTO Vendedores (id_usuario) VALUES (2);
 
 -- Lojas
 -- Lojas
-INSERT INTO Lojas (nome_loja, email, telefone, id_endereco, cpf_cnpj, loja_imagem) VALUES (
-    'Lojinha Senac',
-    'contato@lojinhasecnac.com',
-    '119876543210',
-    2,
-    '12345678901234',
-    'src/public/assets/img/img-pagina-do-vendedor/logo_studio_center.png'
-);
+INSERT INTO Lojas (nome_loja, email, telefone, cpf_cnpj, loja_imagem, id_endereco) 
+VALUES ('Loja A', 'loja.a@email.com', '(11) 1234-5678', '12.345.678/0001-99', 'imagem_a.jpg', 1);
+
+INSERT INTO Vendedores (nome, sobrenome, cpf, nascimento, telefone, cep, endereco, numero, complemento, bairro, email, id_endereco, id_usuario) 
+VALUES ('João', 'Silva', '123.456.789-00', '1985-06-15', '(11) 98765-4321', '01010-010', 'Rua das Flores', '123', 'Apto 101', 'Jardim Paulista', 'joao.silva@email.com', 1, 2);
+
+INSERT INTO Vendedor_Loja (id_vendedor, id_loja)
+VALUES (1, 1);  -- Assume-se que o id_vendedor = 1 e id_loja = 1
+
 --  Produtos 
 -- Produtos
 

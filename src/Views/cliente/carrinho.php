@@ -6,7 +6,6 @@ $titulo = 'EaoQuadrado - Contas Inativas';
 <?php
 $base_url = get_base_url();
 ?>
-<?= $base_url; ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 

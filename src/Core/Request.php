@@ -8,7 +8,7 @@ class Request
 
     public function __construct()
     {
-        $this->data = array_merge($_GET, $_POST);
+        $this->data = array_merge($_GET, $_POST, $_FILES);
     }
 
     public function all()

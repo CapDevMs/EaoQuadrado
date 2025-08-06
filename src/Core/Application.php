@@ -11,6 +11,7 @@ class Application {
         }
 
         define('BASE_PROJECT', __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
+        define('UPLOAD_DIR', BASE_PROJECT . 'public' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR);
     }
 
     public function bootstrap(){

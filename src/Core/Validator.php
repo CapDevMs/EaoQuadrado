@@ -124,6 +124,55 @@ class Validator
         }
     }
 
+    protected function validateNullable($field, $params)
+    {
+        if (isset($this->data[$field])) {
+            unset($this->data[$field]);
+            return;
+        }
+
+        if (is_array($this->data) && empty($this->data[$field])) {
+            unset($this->data[$field]);
+            return;
+        }
+        if (is_string($this->data[$field]) && trim($this->data[$field]) === '') {
+            unset($this->data[$field]);
+            return;
+        }
+        if (is_numeric($this->data[$field]) && $this->data[$field] === 0) {
+            unset($this->data[$field]);
+            return;
+        }
+    }
+
+    protected function validateIn($field, $params)
+    {
+        if (isset($this->data[$field]) && !in_array($this->data[$field], $params)) {
+            $this->addError($field, "O campo deve ser um dos seguintes valores: " . implode(', ', $params));
+        }
+    }
+
+    protected function validateFile($field, $params)
+    {
+        if (isset($this->data[$field]) && !is_array($this->data[$field])) {
+            $this->addError($field, "O campo deve ser um arquivo.");
+            return;
+        }
+
+        if (isset($this->data[$field]['error']) && $this->data[$field]['error'] !== UPLOAD_ERR_OK) {
+            $this->addError($field, "Erro ao enviar o arquivo.");
+            return;
+        }
+
+        if (isset($this->data[$field]['size']) && $this->data[$field]['size'] > ($params[0] ?? 2048)) {
+            $this->addError($field, "O arquivo deve ter no máximo " . ($params[0] ?? 2048) . " bytes.");
+        }
+
+        if (isset($this->data[$field]['type']) && !in_array($this->data[$field]['type'], $params)) {
+            $this->addError($field, "Tipo de arquivo não permitido.");
+        }
+    }
+
     protected function addError($field, $message)
     {
         $this->errors[$field][] = $message;
