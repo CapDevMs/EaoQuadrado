@@ -23,6 +23,18 @@ services:
       - ./db_data:/var/lib/mysql
     restart: unless-stopped
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql_server
+      MYSQL_ROOT_PASSWORD: password
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
 volumes:
     db_data:
         driver: local
